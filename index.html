@@ -68,7 +68,7 @@ nav.tabs button.on{color:var(--chilli)} nav.tabs button.on .ic{filter:none;opaci
 /* chips */
 .chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 2px 4px;margin:0 -2px}
 .chips::-webkit-scrollbar{display:none}
-.chip{flex:none;padding:8px 13px;border-radius:99px;border:1px solid var(--line);background:var(--card);font-size:13px;font-weight:600;color:var(--ink2);white-space:nowrap;transition:all .12s}
+.chip{text-decoration:none;flex:none;padding:8px 13px;border-radius:99px;border:1px solid var(--line);background:var(--card);font-size:13px;font-weight:600;color:var(--ink2);white-space:nowrap;transition:all .12s}
 .chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .chip.person.on{background:var(--chilli);border-color:var(--chilli);color:#fff}
 .filter-label{font-size:12px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:.06em;margin:14px 2px 6px}
@@ -173,6 +173,19 @@ nav.tabs button.on{color:var(--chilli)} nav.tabs button.on .ic{filter:none;opaci
 .splash .logo{width:76px;height:76px;border-radius:24px;background:var(--chilli);display:grid;place-items:center;font-size:40px;margin-bottom:22px;box-shadow:0 10px 30px rgba(224,62,26,.35)}
 .splash h1{font-size:38px} .splash p{color:var(--ink2);font-size:16px}
 .toast{position:fixed;left:50%;bottom:calc(var(--nav) + var(--safe-b) + 14px);transform:translateX(-50%);z-index:200;background:var(--ink);color:var(--bg);padding:11px 16px;border-radius:14px;font-size:14px;font-weight:500;box-shadow:var(--shadow);max-width:calc(100% - 32px);animation:up .2s}
+.photos{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:2px 16px 4px}
+.photos::-webkit-scrollbar{display:none}
+.ph{flex:none;width:118px;height:118px;border-radius:14px;background:var(--card2) center/cover no-repeat;position:relative;cursor:pointer;border:1px solid var(--line);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph .tag{position:absolute;left:6px;bottom:6px;font-size:11px;font-weight:600;padding:2px 7px;border-radius:99px;background:rgba(0,0,0,.6);color:#fff}
+.ph.add{display:grid;place-items:center;text-align:center;font-size:12px;font-weight:600;color:var(--ink2);border:1.5px dashed var(--line);background:var(--card)}
+.ph.add b{display:block;font-size:24px}
+.hero-photo{height:190px;border-radius:18px;margin:0 46px 12px 0;overflow:hidden;background:var(--card2)} .hero-photo img{width:100%;height:100%;object-fit:cover}
+.viewer img{width:100%;max-height:68dvh;object-fit:contain;border-radius:16px;background:#000}
+.pemoji img{width:100%;height:100%;object-fit:cover;border-radius:14px}
+.pemoji{overflow:hidden}
+.listed-note{border:1.5px dashed var(--line);background:transparent;box-shadow:none}
+.feed-photos{display:flex;gap:6px;margin-top:6px} .feed-photos img{width:64px;height:64px;object-fit:cover;border-radius:10px;cursor:pointer}
 .empty{text-align:center;padding:28px 16px;color:var(--ink2)} .empty .e{font-size:40px;display:block;margin-bottom:6px}
 .search{position:relative} .search input{padding-left:38px;border-radius:14px} .search::before{content:"🔎";position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:15px;opacity:.6}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -224,13 +237,16 @@ const CONFIG = {
   // OAuth client (Google Cloud → APIs & Services → Credentials). Needs https://marvyeo.github.io as an
   // Authorized JavaScript origin, the Google Sheets API enabled, and family members added as test users.
   CLIENT_ID: '678456232174-ilpocmjaijsjsi4fr1or9r4o0to8vh9h.apps.googleusercontent.com',
-  SCOPES: 'https://www.googleapis.com/auth/spreadsheets openid email profile',
+  // drive.file = only files this app creates (used for family photos), never the rest of anyone's Drive.
+  SCOPES: 'https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/drive.file openid email profile',
+  PHOTO_FOLDER: 'Makan Map photos',
   SHEET_TITLE: 'Makan Map — family data',
   TABS: {
     members: ['member_id', 'email', 'name', 'emoji', 'at'],
     logs: ['log_id', 'at', 'member_id', 'place_id', 'dish', 'stars', 'again', 'mode', 'note', 'deleted'],
     wants: ['member_id', 'place_id', 'at', 'active'],
     places_added: ['id', 'at', 'member_id', 'json'],
+    photos: ['photo_id', 'at', 'member_id', 'place_id', 'file_id', 'kind', 'caption', 'deleted', 'log_id'],
   },
 };
 const SHEETS_API = 'https://sheets.googleapis.com/v4/spreadsheets';
@@ -261,7 +277,7 @@ let DB = null;                       // places.json
 let token = LS.get('token', null);   // {access_token, exp}
 let me = LS.get('me', null);         // {id, email, name, emoji, picture}
 let familyId = LS.get('familyId', null);
-let fam = LS.get('fam', { members: [], logs: [], wants: [], places_added: [] }); // raw rows (no header)
+let fam = Object.assign({ members: [], logs: [], wants: [], places_added: [], photos: [] }, LS.get('fam', {})); // raw rows (no header)
 let outbox = LS.get('outbox', []);   // [{tab,row}]
 let guest = LS.get('guest', false);
 let prefs = Object.assign({ meal: 'now', reach: 'near', budget: [1, 2, 3], mode: 'any', cuisines: [], untried: false, mustOnly: false, openOnly: true, eaters: null, spinMode: 'stall', home: null, useGps: false }, LS.get('prefs', {}));
@@ -300,7 +316,7 @@ function openAt(p, date) {
 }
 function hoursLabel(p, date = new Date()) {
   const o = openAt(p, date);
-  if (!o.known) return ['Hours unknown', ''];
+  if (!o.known) return ['Hours unconfirmed', ''];
   if (o.open) return [o.allDay ? 'Open 24h' : `Open · till ${fmtTime(o.closes)}`, 'open'];
   if (o.today) return [`Opens ${fmtTime(o.opens)}`, 'closed'];
   if (o.inDays === 1) return [`Opens tmr ${fmtTime(o.opens)}`, 'closed'];
@@ -330,9 +346,12 @@ function familyView() {
   const wants = latestBy([...fam.wants, ...(pending.wants || [])], r => r[0] + '|' + r[1]).filter(r => r[3] === '1').map(r => ({ member: r[0], place: r[1] }));
   const added = latestBy([...fam.places_added, ...(pending.places_added || [])], r => r[0]).map(r => { try { return JSON.parse(r[3]); } catch { return null; } }).filter(Boolean);
   for (const m of (pending.members || [])) if (!members.find(x => x.id === m[0])) members.push({ id: m[0], email: m[1], name: m[2], emoji: m[3] });
-  return { members, logs, wants, added };
+  const photos = latestBy([...(fam.photos || []), ...(pending.photos || [])], r => r[0]).filter(r => r[7] !== '1' && r[4])
+    .map(r => ({ id: r[0], at: r[1], member: r[2], place: r[3], file: r[4], kind: r[5] || 'food', caption: r[6], log: r[8] }))
+    .sort((a, b) => b.at.localeCompare(a.at));
+  return { members, logs, wants, added, photos };
 }
-let FV = { members: [], logs: [], wants: [], added: [] };
+let FV = { members: [], logs: [], wants: [], added: [], photos: [] };
 let PLACES = [], CLUSTERS = [];
 function rebuild() {
   FV = familyView();
@@ -362,13 +381,15 @@ function candidates() {
     if (prefs.cuisines.length && !prefs.cuisines.includes(p.cuisine)) return false;
     if (prefs.mustOnly && !p.must_try) return false;
     if (prefs.untried && triedBy(p.id, ids)) return false;
-    if (prefs.openOnly) { const op = openAt(p, date); if (op.known && !op.open) return false; }
+    if (prefs.openOnly) { const op = openAt(p, date); if (op.known ? !op.open : !typicalHours(date)) return false; }
     if (ids.some(m => logsFor(p.id, m).some(l => l.again === 'N' && l.stars <= 2))) return false; // someone vowed never again
     return true;
   });
 }
+const typicalHours = d => { const t = d.getHours() * 60 + d.getMinutes(); return t >= 420 && t < 1200; }; // 7am–8pm, for stalls with unknown hours
 function weight(p) {
   const ids = eaters(); let w = 1;
+  if (p.confidence === 'listed') w -= 0.4;
   const avg = avgStars(p.id, ids);
   if (avg != null) w += (avg - 3) * 0.6; else w += 0.8;      // untried gets a novelty bonus
   if (p.must_try) w += 0.5;
@@ -525,8 +546,9 @@ function viewExplore() {
 function matchQ(p, q) { if (!q) return true; q = q.toLowerCase(); return [p.name, p.name_zh, p.cuisine, cuisineName(p.cuisine), ...(p.dishes || []).map(d => d.name), p.address].some(s => s && String(s).toLowerCase().includes(q)); }
 function placeRow(p) {
   const [hl, hc] = hoursLabel(p); const d = km(origin(), p); const mine = me && logsFor(p.id, me.id)[0];
-  return `<div class="pcard" onclick="openPlace('${p.id}')"><div class="pemoji">${emojiOf(p)}</div><div class="grow">
-    <div class="pname ellipsis">${esc(p.name)}</div>
+  const ph = coverPhoto(p.id);
+  return `<div class="pcard" onclick="openPlace('${p.id}')"><div class="pemoji">${ph ? photoImg(ph, 160) : emojiOf(p)}</div><div class="grow">
+    <div class="pname ellipsis">${esc(p.name)}${p.confidence === 'listed' ? ' <span class="badge" title="Name and unit only — details unconfirmed">listed</span>' : ''}</div>
     <div class="meta"><span class="badge ${hc}">${hl}</span><span>${PRICE[p.price_band || 1]}</span><span>${d.toFixed(1)} km</span>${p.unit && p.cluster ? `<span>${esc(p.unit)}</span>` : ''}</div>
     <div class="meta">${p.dishes[0] ? `<span class="ellipsis">${esc(p.dishes.map(x => x.name).join(' · '))}</span>` : '<span class="faint">No dish info yet</span>'}</div>
   </div><div style="text-align:right;flex:none">${p.must_try ? '<div>⭐</div>' : ''}${mine ? `<span class="badge tried">★${mine.stars}</span>` : ''}${p.family ? '<div class="tiny faint">family-added</div>' : ''}</div></div>`;
@@ -564,17 +586,30 @@ function openPlace(id) {
   const [hl, hc] = hoursLabel(p); const c = p.cluster && CLUSTERS.find(x => x.id === p.cluster);
   const logs = FV.logs.filter(l => l.place === id);
   const src = (p.sources || []).map(s => DB.sources[s]).filter(Boolean);
-  sheet(`<div class="row" style="gap:14px;margin-right:46px"><div class="big-emoji pemoji" style="width:60px;height:60px;font-size:32px">${emojiOf(p)}</div><div class="grow"><h2>${esc(p.name)}</h2>${p.name_zh ? `<div class="muted small">${esc(p.name_zh)}</div>` : ''}</div></div>
+  const phs = photosFor(id); const hero = phs.find(x => x.kind === 'food') || phs[0];
+  const q = encodeURIComponent(p.name + ' ' + (c ? c.name : p.address || '') + ' Singapore');
+  sheet(`${hero ? `<div class="hero-photo" onclick="viewPhoto('${hero.id}')">${photoImg(hero, 1000)}</div>` : ''}<div class="row" style="gap:14px;margin-right:46px"><div class="big-emoji pemoji" style="width:60px;height:60px;font-size:32px">${emojiOf(p)}</div><div class="grow"><h2>${esc(p.name)}</h2>${p.name_zh ? `<div class="muted small">${esc(p.name_zh)}</div>` : ''}</div></div>
     <div class="row wrap" style="margin-top:12px;gap:6px"><span class="badge ${hc}">${hl}</span><span class="badge">${PRICE[p.price_band || 1]}</span><span class="badge">${cuisineName(p.cuisine)}</span>${p.must_try ? '<span class="badge must">⭐ Must-try</span>' : ''}${p.modes.includes('dine') ? '<span class="badge">🪑 Dine-in</span>' : ''}${p.modes.includes('takeaway') ? '<span class="badge">🥡 Tapau</span>' : ''}${p.travels_well === true ? '<span class="badge">Travels well</span>' : p.travels_well === false ? '<span class="badge">Best eaten there</span>' : ''}${(p.diet || []).map(d => `<span class="badge">${esc(d)}</span>`).join('')}</div>
     <div class="card" style="margin-top:14px">
       <div class="small">${c ? `<a href="#" onclick="event.preventDefault();openCluster('${c.id}')">${esc(c.name)}</a>` : esc(p.address || '')}${p.unit ? ' · ' + esc(p.unit) : ''}</div>
       <div class="small muted" style="margin-top:4px">${distanceLine(p)}</div>
       ${p.note ? `<div class="small" style="margin-top:8px">💡 ${esc(p.note)}</div>` : ''}
     </div>
+    ${p.confidence === 'listed' ? `<div class="card listed-note small" style="margin-top:10px">📋 <b>Listed only.</b> We know this stall is here, but not its dishes, prices or hours yet. Next time you pass, snap the signboard or menu below — that fills it in for everyone.</div>` : ''}
     <div class="actions"><a class="btn dark" href="${dirUrl(p)}" target="_blank" rel="noopener">🧭 Directions</a><button class="btn primary" onclick="openLog('${p.id}')">📝 Log a meal</button>
       <button class="btn" onclick="toggleWant('${p.id}')">${wanted(p.id) ? '🔖 Bookmarked' : '🔖 Want to try'}</button>
       <a class="btn" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name + ' ' + (p.address || ''))}" target="_blank" rel="noopener">📍 Google Maps</a></div>
     ${p.dishes.length ? `<div class="section-title"><h2>What to order</h2></div><div class="card">${p.dishes.map(dishRow).join('')}</div>` : ''}
+    <div class="section-title"><h2>Photos</h2><span class="small faint">${phs.length ? phs.length + ' from the family' : ''}</span></div>
+    <div class="photos">
+      <div class="ph add" onclick="addPhoto('${p.id}','food')"><div><b>📷</b>Food photo</div></div>
+      <div class="ph add" onclick="addPhoto('${p.id}','menu')"><div><b>🧾</b>Menu / signboard</div></div>
+      ${phs.map(x => `<div class="ph" onclick="viewPhoto('${x.id}')">${photoImg(x, 300)}${x.kind === 'menu' ? '<span class="tag">Menu</span>' : ''}${x.pending ? '<span class="tag">Uploading…</span>' : ''}</div>`).join('')}
+    </div>
+    <div class="row wrap small" style="gap:6px;margin-top:10px"><span class="faint">See photos online:</span>
+      <a class="chip" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">Google Maps</a>
+      <a class="chip" href="https://www.google.com/search?tbm=isch&q=${q}" target="_blank" rel="noopener">Google Images</a>
+      <a class="chip" href="https://www.burpple.com/search/sg?q=${encodeURIComponent(p.name)}" target="_blank" rel="noopener">Burpple</a></div>
     <div class="section-title"><h2>Family says</h2><span class="small faint">${logs.length} log${logs.length === 1 ? '' : 's'}</span></div>
     <div class="card">${logs.length ? logs.map(feedItem).join('') : '<div class="empty" style="padding:8px"><span class="e">🍽️</span>Nobody has logged this yet. Be the first.</div>'}</div>
     ${p.hours.length ? `<div class="section-title"><h2>Hours</h2></div><div class="card">${hoursTable(p)}</div>` : ''}
@@ -631,6 +666,7 @@ function feedItem(l) {
     <div class="small"><b>${esc(m.name)}</b> ${l.stars ? '★'.repeat(l.stars) : ''} ${l.again === 'Y' ? '· would queue again' : l.again === 'N' ? '· not again' : ''}</div>
     <div class="small">${p ? `<a href="#" onclick="event.preventDefault();openPlace('${p.id}')">${esc(p.name)}</a>` : 'A place'}${l.dish ? ' — ' + esc(l.dish) : ''}</div>
     ${l.note ? `<div class="small muted">“${esc(l.note)}”</div>` : ''}
+    ${(() => { const ps = allPhotos().filter(x => x.log === l.id); return ps.length ? `<div class="feed-photos">${ps.map(x => `<span onclick="viewPhoto('${x.id}')">${photoImg(x, 160)}</span>`).join('')}</div>` : ''; })()}
     <div class="tiny faint">${when}${l.mode ? ' · ' + (l.mode === 'dine' ? 'dine-in' : 'tapau') : ''}${me && l.member === me.id ? ` · <a href="#" onclick="event.preventDefault();openLog('${l.place}','${l.id}')">edit</a>` : ''}</div>
   </div></div>`;
 }
@@ -669,6 +705,7 @@ function openLog(pid, editId) {
       <div><div class="filter-label">Would you queue for it again?</div><div class="seg" id="lg_again">${[['Y', '🔁 Yes'], ['M', '🤷 Maybe'], ['N', '🚫 No']].map(([k, l]) => `<button class="${logDraft.again === k ? 'on' : ''}" onclick="logDraft.again='${k}';segPick(this)">${l}</button>`).join('')}</div></div>
       <div><div class="filter-label">Ate there or tapau'd</div><div class="seg">${[['dine', '🪑 Dine-in'], ['takeaway', '🥡 Tapau']].map(([k, l]) => `<button class="${logDraft.mode === k ? 'on' : ''}" onclick="logDraft.mode='${k}';segPick(this)">${l}</button>`).join('')}</div></div>
       <textarea id="lg_note" rows="2" placeholder="Notes — queue, portion, what changed, hours wrong?">${esc(logDraft.note)}</textarea>
+      <div class="row" style="gap:8px"><button class="btn sm" onclick="addPhoto('${pid}','food',logDraft.id,true)">📷 Add food photo</button><button class="btn sm" onclick="addPhoto('${pid}','menu',logDraft.id,true)">🧾 Add menu photo</button><span id="lg_ph" class="small faint"></span></div>
       <div id="lg_err" class="small" style="color:var(--chilli)"></div>
       <button class="btn primary block" onclick="saveLog()">${prev ? 'Save changes' : 'Save log'}</button>
       ${prev ? `<button class="btn ghost block" onclick="deleteLog()">Delete this log</button>` : ''}
@@ -705,7 +742,7 @@ function statsFor(mid) {
   return { logs, places, centres, cuisines, zones, visits, streak,
     hawker: places.filter(p => p.cluster).length, must: places.filter(p => p.must_try).length,
     owl: logs.some(l => hourOf(l) >= 22 || hourOf(l) < 3), bird: logs.some(l => hourOf(l) >= 4 && hourOf(l) < 8),
-    mapper: FV.added.some(a => a.added_by === mid), regular: Object.values(visits).some(v => v >= 5), rated: logs.filter(l => l.stars).length };
+    mapper: FV.added.some(a => a.added_by === mid), photos: allPhotos().filter(x => x.member === mid && x.kind === 'food').length, menus: allPhotos().filter(x => x.member === mid && x.kind === 'menu').length, regular: Object.values(visits).some(v => v >= 5), rated: logs.filter(l => l.stars).length };
 }
 function badgeState(mid) {
   const s = statsFor(mid);
@@ -724,6 +761,8 @@ function badgeState(mid) {
     { id: 'mapper', e: '🗺️', name: 'Mapper', how: 'Add a stall to the map', got: s.mapper },
     { id: 'critic', e: '🧐', name: 'Critic', how: 'Rate 20 meals', got: s.rated >= 20 },
     { id: 'streak', e: '🔥', name: 'On a roll', how: 'Try somewhere new 3 weeks running', got: s.streak >= 3 },
+    { id: 'photo', e: '📸', name: 'Food snapper', how: 'Share 5 food photos', got: s.photos >= 5 },
+    { id: 'menu', e: '🧾', name: 'Menu hunter', how: 'Snap 3 menus or signboards', got: s.menus >= 3 },
   ];
 }
 let passportWho = null;
@@ -798,6 +837,107 @@ function saveProfile() {
   closeSheet(); render();
 }
 
+/* ---------- Photos ----------
+   Each person's photos go to a "Makan Map photos" folder in their own Drive (drive.file scope = only files this app made),
+   shared as view-by-link so the family can see them; the Sheet's photos tab records which place each belongs to.
+   Photos taken offline wait in IndexedDB and upload on the next sync. */
+const idb = {
+  db: null,
+  open() { return this.db || (this.db = new Promise((res, rej) => { const r = indexedDB.open('makanmap', 1); r.onupgradeneeded = () => r.result.createObjectStore('photos', { keyPath: 'id' }); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); })); },
+  async tx(mode, fn) { const db = await this.open(); return new Promise((res, rej) => { const t = db.transaction('photos', mode); const out = fn(t.objectStore('photos')); t.oncomplete = () => res(out && out.result); t.onerror = () => rej(t.error); }); },
+  put(rec) { return this.tx('readwrite', s => s.put(rec)); },
+  del(id) { return this.tx('readwrite', s => s.delete(id)); },
+  all() { return this.tx('readonly', s => s.getAll()); },
+};
+let pendingPhotos = []; // [{id, place, kind, at, log, url, pending:true}]
+async function loadPendingPhotos() {
+  try { const recs = await idb.all(); pendingPhotos.forEach(x => URL.revokeObjectURL(x.url)); pendingPhotos = recs.map(r => ({ id: r.id, place: r.place, kind: r.kind, at: r.at, log: r.log, member: r.member, url: URL.createObjectURL(r.blob), pending: true })); } catch { pendingPhotos = []; }
+}
+const allPhotos = () => [...pendingPhotos, ...FV.photos];
+const photosFor = pid => allPhotos().filter(x => x.place === pid).sort((a, b) => (a.kind === 'menu') - (b.kind === 'menu') || b.at.localeCompare(a.at));
+const coverPhoto = pid => photosFor(pid).find(x => x.kind === 'food');
+function photoImg(x, w) {
+  if (x.url) return `<img src="${x.url}" alt="" loading="lazy">`;
+  return `<img src="https://drive.google.com/thumbnail?id=${encodeURIComponent(x.file)}&sz=w${w}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://lh3.googleusercontent.com/d/${encodeURIComponent(x.file)}=w${w}'}">`;
+}
+async function shrinkImage(file, max = 1600) {
+  const url = URL.createObjectURL(file);
+  try {
+    const img = new Image(); await new Promise((r, j) => { img.onload = r; img.onerror = j; img.src = url; });
+    const sc = Math.min(1, max / Math.max(img.naturalWidth, img.naturalHeight));
+    const c = document.createElement('canvas'); c.width = Math.round(img.naturalWidth * sc); c.height = Math.round(img.naturalHeight * sc);
+    c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+    return await new Promise(r => c.toBlob(b => r(b || file), 'image/jpeg', 0.82));
+  } catch { return file; } finally { URL.revokeObjectURL(url); }
+}
+function addPhoto(pid, kind, logId = '', fromLog = false) {
+  if (!me) return needSignIn();
+  const inp = document.createElement('input'); inp.type = 'file'; inp.accept = 'image/*'; inp.multiple = true;
+  inp.onchange = async () => {
+    const files = [...inp.files].slice(0, 6); if (!files.length) return;
+    for (const f of files) {
+      const blob = await shrinkImage(f);
+      await idb.put({ id: 'ph-' + uid(), place: pid, kind, at: new Date().toISOString(), log: logId, member: me.id, blob });
+    }
+    await loadPendingPhotos();
+    toast(`${files.length} photo${files.length > 1 ? 's' : ''} added${navigator.onLine ? '' : ' — will upload when online'}`);
+    if (fromLog) { const el = $('#lg_ph'); if (el) el.textContent = `📎 ${pendingPhotos.filter(x => x.log === logId).length} attached`; }
+    else openPlace(pid);
+    syncSoon();
+  };
+  inp.click();
+}
+async function driveFetch(url, opts = {}) {
+  if (!tokenValid()) throw Object.assign(new Error('auth'), { auth: true });
+  const res = await fetch(url, { ...opts, headers: { Authorization: 'Bearer ' + token.access_token, ...(opts.headers || {}) } });
+  if (res.status === 401) { token = null; LS.del('token'); throw Object.assign(new Error('auth'), { auth: true }); }
+  if (res.status === 403) { const t = await res.text(); if (/insufficient|scope/i.test(t)) throw Object.assign(new Error('scope'), { scope: true }); throw new Error('Drive 403 ' + t.slice(0, 160)); }
+  if (!res.ok) throw new Error(`Drive ${res.status}: ${(await res.text()).slice(0, 160)}`);
+  return res.json();
+}
+async function photoFolder() {
+  let id = LS.get('photoFolder:' + me.id, null); if (id) return id;
+  const q = encodeURIComponent(`name='${CONFIG.PHOTO_FOLDER}' and mimeType='application/vnd.google-apps.folder' and trashed=false`);
+  const found = await driveFetch(`https://www.googleapis.com/drive/v3/files?q=${q}&fields=files(id)&spaces=drive`);
+  id = found.files?.[0]?.id;
+  if (!id) id = (await driveFetch('https://www.googleapis.com/drive/v3/files?fields=id', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: CONFIG.PHOTO_FOLDER, mimeType: 'application/vnd.google-apps.folder' }) })).id;
+  LS.set('photoFolder:' + me.id, id); return id;
+}
+async function uploadPendingPhotos() {
+  const recs = (await idb.all().catch(() => [])).filter(r => r.member === me.id);
+  if (!recs.length) return;
+  const folder = await photoFolder();
+  for (const r of recs) {
+    const p = placeById(r.place);
+    const meta = { name: `${(p?.name || 'food').replace(/[^\w\s-]/g, '')} ${r.kind} ${r.at.slice(0, 10)}.jpg`, parents: [folder], description: `Makan Map · ${p?.name || r.place} · ${r.kind}` };
+    const form = new FormData();
+    form.append('metadata', new Blob([JSON.stringify(meta)], { type: 'application/json' }));
+    form.append('file', r.blob);
+    const f = await driveFetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id', { method: 'POST', body: form });
+    await driveFetch(`https://www.googleapis.com/drive/v3/files/${f.id}/permissions?fields=id`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ role: 'reader', type: 'anyone' }) });
+    outbox.push({ tab: 'photos', row: [r.id, r.at, me.id, r.place, f.id, r.kind, '', '0', r.log || ''] }); LS.set('outbox', outbox);
+    await idb.del(r.id);
+  }
+  await loadPendingPhotos();
+}
+function viewPhoto(id) {
+  const x = allPhotos().find(p => p.id === id); if (!x) return;
+  const m = memberById(x.member), p = placeById(x.place);
+  sheet(`<div class="viewer" style="margin-top:34px">${x.url ? `<img src="${x.url}" alt="">` : photoImg(x, 1600)}</div>
+    <div class="row between" style="margin-top:12px"><div><b>${esc(p?.name || '')}</b><div class="small muted">${m.emoji || ''} ${esc(m.name || '')} · ${new Date(x.at).toLocaleDateString('en-SG', { day: 'numeric', month: 'short', year: 'numeric' })} · ${x.kind === 'menu' ? 'Menu / signboard' : 'Food'}${x.pending ? ' · waiting to upload' : ''}</div></div>
+    ${me && x.member === me.id ? `<button class="btn sm ghost" onclick="deletePhoto('${x.id}')">Delete</button>` : ''}</div>
+    ${p ? `<button class="btn block" style="margin-top:12px" onclick="openPlace('${p.id}')">Back to ${esc(p.name)}</button>` : ''}`);
+}
+async function deletePhoto(id) {
+  const x = allPhotos().find(p => p.id === id); if (!x) return;
+  if (x.pending) { await idb.del(id); await loadPendingPhotos(); }
+  else {
+    enqueue('photos', [x.id, x.at, me.id, x.place, x.file, x.kind, x.caption || '', '1', x.log || '']);
+    driveFetch(`https://www.googleapis.com/drive/v3/files/${x.file}`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ trashed: true }) }).catch(() => {});
+  }
+  toast('Photo deleted'); x.place ? openPlace(x.place) : closeSheet();
+}
+
 /* ---------- Map ---------- */
 let mapFilter = 'all';
 function viewMap() {
@@ -854,6 +994,7 @@ function consumeRedirect() {
 }
 async function onToken(r) {
   if (r.error) return toast('Sign-in failed — please try again');
+  photoScopeNeeded = false;
   token = { access_token: r.access_token, exp: Date.now() + (Number(r.expires_in) || 3600) * 1000 }; LS.set('token', token);
   guest = false; LS.set('guest', false);
   try {
@@ -883,6 +1024,17 @@ async function createFamily() {
   await api(`${SHEETS_API}/${s.spreadsheetId}/values:batchUpdate`, { method: 'POST', body: JSON.stringify({ valueInputOption: 'RAW', data: Object.entries(CONFIG.TABS).map(([t, h]) => ({ range: `${t}!A1`, values: [h] })) }) });
   return s.spreadsheetId;
 }
+async function ensureTabs() {
+  if (LS.get('tabsOk:' + familyId, 0) >= Object.keys(CONFIG.TABS).length) return;
+  const meta = await api(`${SHEETS_API}/${familyId}?fields=sheets.properties.title`);
+  const have = new Set(meta.sheets.map(s => s.properties.title));
+  const missing = Object.keys(CONFIG.TABS).filter(t => !have.has(t));
+  if (missing.length) {
+    await api(`${SHEETS_API}/${familyId}:batchUpdate`, { method: 'POST', body: JSON.stringify({ requests: missing.map(t => ({ addSheet: { properties: { title: t, gridProperties: { frozenRowCount: 1 } } } })) }) });
+    await api(`${SHEETS_API}/${familyId}/values:batchUpdate`, { method: 'POST', body: JSON.stringify({ valueInputOption: 'RAW', data: missing.map(t => ({ range: `${t}!A1`, values: [CONFIG.TABS[t]] })) }) });
+  }
+  LS.set('tabsOk:' + familyId, Object.keys(CONFIG.TABS).length);
+}
 async function pull() {
   const ranges = Object.keys(CONFIG.TABS).map(t => 'ranges=' + encodeURIComponent(`${t}!A:J`)).join('&');
   const r = await api(`${SHEETS_API}/${familyId}/values:batchGet?${ranges}&majorDimension=ROWS`);
@@ -899,21 +1051,25 @@ async function pushOutbox() {
   }
 }
 function enqueue(tabName, row) { outbox.push({ tab: tabName, row }); LS.set('outbox', outbox); rebuild(); syncSoon(); }
-let syncTimer = null, syncing = false;
+let syncTimer = null, syncing = false, photoScopeNeeded = false;
 function syncSoon() { clearTimeout(syncTimer); syncTimer = setTimeout(() => syncNow(false), 800); }
 async function syncNow(manual) {
   if (!familyId || !me) { if (manual && !me) signIn(); return; }
   if (!navigator.onLine) { syncState = 'offline'; renderSync(); if (manual) toast("You're offline — changes are saved and will sync later"); return; }
   if (!tokenValid()) { syncState = 'auth'; renderSync(); if (manual) signIn(); return; }
   if (syncing) return; syncing = true; syncState = 'busy'; renderSync();
-  try { await pushOutbox(); await pull(); syncState = 'ok'; LS.set('lastSync', Date.now()); if (manual) toast('Synced ✓'); }
+  try {
+    await ensureTabs();
+    try { await uploadPendingPhotos(); }
+    catch (e) { if (e.scope) { photoScopeNeeded = true; if (manual) { toast('Allow photo uploads in the Google window'); tokenClient?.requestAccessToken({ prompt: 'consent' }); } } else if (e.auth) throw e; else console.warn(e); }
+    await pushOutbox(); await pull(); syncState = photoScopeNeeded && pendingPhotos.length ? 'photos' : 'ok'; LS.set('lastSync', Date.now()); if (manual) toast('Synced ✓'); }
   catch (e) { syncState = e.auth ? 'auth' : 'err'; if (manual || !e.auth) toast(e.auth ? 'Sign-in expired — tap the sync chip to reconnect' : 'Sync failed — will retry'); console.warn(e); }
   finally { syncing = false; renderSync(); if (tab !== 'map') { const y = scrollY; render(); scrollTo(0, y); } }
 }
 function renderSync() {
   const dot = $('#syncDot'), txt = $('#syncText'); if (!dot) return;
   const pending = outbox.length ? ` · ${outbox.length} waiting` : '';
-  const m = { ok: ['ok', 'Synced'], busy: ['warn', 'Syncing…'], auth: ['warn', 'Reconnect'], err: ['err', 'Sync error'], offline: ['', 'Offline'], idle: ['', me ? 'Tap to sync' : 'Guest'] }[syncState] || ['', ''];
+  const m = { photos: ['warn', 'Tap to allow photos'], ok: ['ok', 'Synced'], busy: ['warn', 'Syncing…'], auth: ['warn', 'Reconnect'], err: ['err', 'Sync error'], offline: ['', 'Offline'], idle: ['', me ? 'Tap to sync' : 'Guest'] }[syncState] || ['', ''];
   dot.className = 'dot ' + m[0]; txt.textContent = m[1] + pending;
 }
 
@@ -978,6 +1134,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.se
 
 (async () => {
   await loadPlaces();
+  await loadPendingPhotos();
   initGsi();
   if (!consumeRedirect()) boot();
 })();

@@ -1,12 +1,13 @@
 # Makan Map — project state
 
-_Last updated: 15 Oct 2026 (initial build)_
+_Last updated: 15 Oct 2026 (v1.1: OneMap basemap, photos, completeness pass)_
 
 A family food map of Singapore. You filter by when, how far, budget, dine-in/tapau and craving, then spin for a stall or a food centre. You log and rate meals, and you collect stamps and badges. The app is installable from GitHub Pages and works offline. Day-to-day use costs no AI tokens. Claude is only involved to build or refresh the places data.
 
 - **Repo:** `marvyeo/FoodGuide`
-- **App URL (once Pages is on):** https://marvyeo.github.io/FoodGuide/
-- **Status:** v1 built and tested in a headless browser (phone size, light and dark). Not yet tested against a real Google account (see Setup).
+- **App URL:** https://marvyeo.github.io/FoodGuide/ (GitHub Pages, live)
+- **Status:** v1.1 live. Photos and the completeness data are tested in a headless browser with mocked Google APIs, but not yet with a real Google account.
+- **Open PR:** *Data: Home ground completeness pass* (50 → 189 places). Merge it to publish the data.
 
 ---
 
@@ -14,10 +15,11 @@ A family food map of Singapore. You filter by when, how far, budget, dine-in/tap
 
 | Layer | Where | Notes |
 |---|---|---|
-| App | `index.html` (single file), `sw.js`, `manifest.json`, `icons/` | Vanilla JS, Leaflet map (cdnjs), CARTO/OSM tiles. Same patterns as TVWorld: Google Identity Services token client, redirect-sign-in fallback, network-first service worker. |
+| App | `index.html` (single file), `sw.js`, `manifest.json`, `icons/` | Vanilla JS, Leaflet map (cdnjs), **OneMap** tiles (SLA; free, no key, attribution with logo required). CARTO was dropped on 15 Oct 2026 because it began requiring an API key. Same patterns as TVWorld: Google Identity Services token client, redirect-sign-in fallback, network-first service worker. |
 | Places data | `data/places.json` | Curated in the repo and versioned. Every change goes in through a pull request, and **merging the PR is the approval step**. The service worker fetches it network-first, so a merged PR shows up the next time the app opens online. |
-| Family data | One Google Sheet in the family owner's Drive (title "Makan Map — family data") | Tabs: `members`, `logs`, `wants`, `places_added`. **Rows are only ever appended; the newest row per key wins**, so concurrent edits from several phones never conflict. Edits and deletes append a new row with the same id. |
-| Offline | `localStorage` (`mm.*` keys) | Cached copy of the sheet plus an **outbox** of unsent rows. The app is fully usable offline, and the outbox flushes when you're back online and signed in. |
+| Family data | One Google Sheet in the family owner's Drive (title "Makan Map — family data") | Tabs: `members`, `logs`, `wants`, `places_added`, `photos`. Missing tabs are added automatically on sync, so older family sheets upgrade themselves. **Rows are only ever appended; the newest row per key wins**, so concurrent edits from several phones never conflict. Edits and deletes append a new row with the same id. |
+| Offline | `localStorage` (`mm.*` keys) + IndexedDB (`makanmap`) | Cached copy of the sheet plus an **outbox** of unsent rows. Photos taken offline wait in IndexedDB. Everything flushes when you're back online and signed in. |
+| Photos | Each person's own Drive, folder "Makan Map photos" | Uploaded with the `drive.file` scope, which only covers files the app creates, never the rest of anyone's Drive. Photos are shrunk to 1600px JPEG on the phone first. Each is shared **view-by-link** so other family members can see it without extra setup. The `photos` tab records the place, kind (food/menu) and an optional log. Thumbnails load from `drive.google.com/thumbnail?id=…`, falling back to `lh3.googleusercontent.com/d/…`. |
 
 **Why a Sheet and not Drive JSON like TVWorld:** a file the app creates under the `drive.file` scope can't be opened by *other* family members' accounts without adding the Google Picker (and an API key). A shared Sheet plus the `spreadsheets` scope needs one extra API switched on and nothing else. Append-only rows also remove the need for TVWorld-style version merging.
 
@@ -35,6 +37,7 @@ A family food map of Singapore. You filter by when, how far, budget, dine-in/tap
 | logs | log_id, at, member_id, place_id, dish, stars (1–5), again (Y/M/N), mode (dine/takeaway), note, deleted (0/1) | log_id |
 | wants | member_id, place_id, at, active (1/0) | member_id + place_id |
 | places_added | id, at, member_id, json (a full place object) | id |
+| photos | photo_id, at, member_id, place_id, file_id (Drive), kind (food/menu), caption, deleted (0/1), log_id | photo_id |
 
 ### places.json schema
 - `home`: the default origin for distances (Bedok Reservoir Park). Each phone can override it via *Set home here*.
@@ -45,14 +48,19 @@ A family food map of Singapore. You filter by when, how far, budget, dine-in/tap
 - `places[]`: fields are
   - `id, cluster?, name, name_zh?, unit, cuisine` (see `CUISINES` in index.html), `dishes[{name, price?, price_note?}]`, `price_band` 1–4
   - `hours`: `[[days, ["HH:MM-HH:MM", …]], …]` with days as a string of `0`–`6` (0 = Sunday); an end time before the start time means the slot runs past midnight
-  - `modes` (`dine`/`takeaway`), `travels_well?, diet[], tags[]` (breakfast, supper, group, dessert, 24h, occasion), `must_try, status` (`open`/`closed`), `verified` (YYYY-MM), `sources[]`
+  - `modes` (`dine`/`takeaway`), `travels_well?, diet[], tags[]` (breakfast, supper, group, dessert, 24h, occasion), `must_try, status` (`open`/`closed`), `verified` (YYYY-MM, or `unconfirmed`), `sources[]`, `note?`
+  - `confidence`:
+    - `detailed`: dishes plus hours from a dated guide.
+    - `partial`: dishes and prices but no hours.
+    - `listed`: name and unit from a roster only. The app shows a "Listed only, snap the menu" prompt and gives these a lower spin weight.
+  - When **Only open** is on, stalls with unknown hours are assumed open 7am–8pm.
   - `lat/lng/zone/address` are inherited from the cluster when omitted
 
 Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 
 ---
 
-## 2. What's built (v1)
+## 2. What's built (v1.1)
 
 - **Spin:**
   - Weighted random pick: your family's ratings + a novelty bonus for untried places + must-try + bookmarks − distance. Anyone who rated a place 2★ or less with "not again" vetoes it.
@@ -68,10 +76,18 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
   - Dishes and prices, hours table, open-now status, walk/drive time, nearest MRT.
   - Family ratings, directions (Google Maps), bookmark, sources with dates.
 - **Centre sheet:** stall roster, coverage, and **Add a stall** (family mapping of stalls with no online presence → `places_added`).
-- **Map:** markers coloured by zone, hollow = not tried, ⭐ = has a must-try. Filters: untried, must-try, open now. Tiles are cached (600 max) for offline.
+- **Map:** OneMap basemap limited to Singapore, markers coloured by zone, hollow = not tried, ⭐ = has a must-try. Filters: untried, must-try, open now. Tiles are cached (600 max) for offline.
+- **Photos (v1.1):**
+  - Each place sheet has a photo strip with **📷 Food photo** and **🧾 Menu / signboard** buttons. On a phone these open the camera or the photo library.
+  - Photos can also be attached while logging a meal.
+  - Tapping a photo opens a viewer, where you can delete your own.
+  - The first food photo becomes the place's cover image and its thumbnail in lists.
+  - **See photos online** links open Google Maps, Google Images and Burpple searches. Photos from the web are linked out to, not copied into the app, because they're copyrighted.
+  - Badges: 📸 Food snapper (5 food photos) and 🧾 Menu hunter (3 menus).
+  - The first upload after this update asks each person to allow Drive access to the app's own files. The sync chip shows "Tap to allow photos".
 - **Log:** stars, "would you queue again", dine-in/tapau, dish, note. Edit and delete your own logs. Family feed.
 - **Passport:**
-  - Places tried, centres stamped, week streak, progress by zone, 16-square cuisine bingo, 14 badges.
+  - Places tried, centres stamped, week streak, progress by zone, 16-square cuisine bingo, 16 badges.
   - Family leaderboard and "hot takes" (where ratings differ by 2 or more stars).
   - Settings.
 
@@ -81,16 +97,18 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 
 | Zone | Centres | Stalls/places | Notes |
 |---|---|---|---|
-| Home ground | 5 (630 Bedok Reservoir, 216 Bedok North, 85 Fengshan, 511 Kaki Bukit, 538 Bedok North) | 50 | Built 15 Oct 2026 |
+| Home ground | 5 (630 Bedok Reservoir, 216 Bedok North, 85 Fengshan, 511 Kaki Bukit, 538 Bedok North) | 189 (91 detailed, 14 partial, 84 listed) | Built 15 Oct 2026; completeness pass same day (PR) |
 | East | – | – | Next |
 | North East, North, Central, West | – | – | Later |
 
-Per-centre coverage (mapped / NEA cooked-food stalls):
-- Blk 630: 11 / 36
-- Bedok 216: 13 / 82
-- Fengshan 85: 14 / 72
-- Kaki Bukit 511: 2 / 42
-- Blk 538: 0 / 40 (deliberately left blank for the family to map)
+Per-centre coverage after the completeness PR (mapped / NEA cooked-food stalls):
+- Blk 630: 31 / 36
+- Bedok 216: 48 / 82
+- Fengshan 85: 26 / 72. This is the weakest: there's no trustworthy online roster, so it relies on the family adding stalls.
+- Kaki Bukit 511: 34 / 42
+- Blk 538: 40 / 40. The NEA count is from 2024 and the roster lists 36 units; the extra entries come from guides.
+
+The NEA counts include stalls that sell drinks, and some units sit vacant, so 100% isn't always reachable.
 
 Standalones: 10 restaurants and cafés along Bedok Reservoir Rd and Bedok North.
 
@@ -101,9 +119,19 @@ Must-try flags so far: Seng Hiang BCM, Xing Ji BCM, Chai Chee Pork Porridge, Sen
   - Daniel Food Diary (May 2026) for 216.
   - kopitiam.com.sg (Apr/May 2026) for 630 and 85. Prices in their articles are sparse.
   - Eatbook (Jul 2023, Sep 2024) for prices and for 511 and the standalones.
+  - Completeness pass sources:
+    - Seth Lui: 85 (updated Jul 2025) and 216 (updated Aug 2025).
+    - HungryGoWhere 216 (Jul 2026).
+    - kopitiam.com.sg: 511 (Sep 2026) and 538 (Jan 2026).
+    - HawkerPedia 511 (Sep 2025), Singapore Verified 85 (Feb 2024), Burpple (undated).
   - Every place stores `verified` and `sources` with dates, and the app shows them.
 - **Older data:** entries verified 2024-09 (the standalones and the 511 stalls) are the most likely to be stale. Check those first on the next refresh.
-- **hawker.guide is unreliable.** Its "Blk 85 Bedok North St 4" page actually lists Redhill stalls, and its Blk 630 unit numbers disagree with May 2026 sources. Do not use it as a roster source.
+- **hawker.guide** (undated rosters with unit, name and cuisine) is **useful but must be cross-checked**:
+  - Its 216, 511 and 538 rosters match 2025–26 guides closely, so they're used for `listed` entries.
+  - Its "Blk 85 Bedok North St 4" page actually lists **Redhill** stalls, so it's not used for Fengshan.
+  - Its Blk 630 unit numbers partly disagree with kopitiam.com.sg.
+  - Where unit numbers conflict, the newer dated guide wins and the roster entry is kept without a unit.
+- **kopitiam.com.sg** articles are recent but sometimes contain obvious errors, such as two stalls sharing one unit. Cross-check their units against a roster.
 - **There is no official stall-level dataset.** data.gov.sg has:
   - Centre-level counts: *List of Government Markets & Hawker Centres*, 107 centres, 6,121 cooked-food stalls, last updated Jun 2024.
   - *NEA Licensed Eating Establishments*: restaurants and shops, not hawker stalls, last updated Jun 2024.
@@ -113,7 +141,7 @@ Must-try flags so far: Seng Hiang BCM, Xing Ji BCM, Chai Chee Pork Porridge, Sen
 
 ## 4. Setup still to do (owner)
 
-1. **GitHub Pages:** go to repo Settings → Pages → Deploy from branch → `main` / root.
+1. ~~**GitHub Pages:** go to repo Settings → Pages → Deploy from branch → `main` / root.~~ Done 15 Oct.
 2. **Google Cloud** (the project that owns the OAuth client in `CONFIG.CLIENT_ID`; it is currently the TVWorld client):
    - **Enable the Google Sheets API.** This is the one new thing needed.
    - Authorized JavaScript origin `https://marvyeo.github.io` should already be there from TVWorld.
@@ -131,9 +159,10 @@ Must-try flags so far: Seng Hiang BCM, Xing Ji BCM, Chai Chee Pork Porridge, Sen
 1. Read `PROJECT_STATE.md` and `data/places.json`.
 2. **Fold in family additions:** read the family Sheet's `places_added` tab and merge new stalls into `places.json`, keeping their `id`s so existing logs still point at them. This needs the Sheet ID, or the owner exports the tab.
 3. **Closure check:** take the ~10% of places with the oldest `verified` dates, search each one, and update hours and prices or set `status: "closed"`. Never delete a place, because logs reference it.
-4. **New openings:** search "new hawker stall / new restaurant <area> <month year>" for each mapped zone and add the confirmed ones.
-5. Bump `updated`, and set `verified` on everything that was touched.
-6. Validate: valid JSON, unique ids, every `sources` key exists, every hours slot matches `HH:MM-HH:MM`, days are `0`–`6`. Then open the PR with a summary.
+4. **Read family photos:** for each new `menu` photo in the Sheet's `photos` tab, open the public image (`drive.google.com/thumbnail?id=<file_id>&sz=w1600`) and transcribe the dishes and prices into that place. Upgrade `listed` to `partial` or `detailed`, and add a `family-photo` source dated with the photo date.
+5. **New openings:** search "new hawker stall / new restaurant <area> <month year>" for each mapped zone and add the confirmed ones.
+6. Bump `updated`, and set `verified` on everything that was touched.
+7. Validate: valid JSON, unique ids, every `sources` key exists, every hours slot matches `HH:MM-HH:MM`, days are `0`–`6`. Then open the PR with a summary.
 
 Rough cost: about 15–30 searches/fetches per run (one short session).
 
@@ -161,6 +190,10 @@ Home ground took about 40 fetches for 5 centres and 50 places.
 | 14 Oct | Diet info is only a minor tag (`diet[]`) | Not a household priority; shown as a badge when known |
 | 15 Oct | Spreadsheets scope instead of drive.file + Picker | Sharing one file across accounts with drive.file needs the Picker plus an API key |
 | 15 Oct | Reused TVWorld OAuth client for v1 | Origin and test users already set up; can swap later |
+| 15 Oct | OneMap basemap instead of CARTO | CARTO started requiring an API key; OneMap is free and more detailed for Singapore |
+| 15 Oct | Photos go in each uploader's Drive (`drive.file`), shared view-by-link | No API key, no Picker, and nobody grants access to their whole Drive; food photos are low-sensitivity |
+| 15 Oct | Web photos are linked out to (Google Maps, Images, Burpple), not copied in | They're copyrighted. Embedding Google Places photos would need a paid API key, so it was deferred |
+| 15 Oct | Roster-only stalls are included as `listed` | The owner wants to know what's at a centre even without details; family photos fill in the gaps |
 
 ## 7. Next up / ideas
 - [ ] Owner setup (section 4) and a real sign-in test with two accounts.
@@ -168,4 +201,7 @@ Home ground took about 40 fetches for 5 centres and 50 places.
 - [ ] Monthly refresh as a scheduled task (needs a decision on how it reads `places_added`).
 - [ ] "Worth the trip" island-wide must-try list (~20) ahead of full zone builds.
 - [ ] Possibly: NEA cleaning/closure dates per centre (data.gov.sg dataset) to hide centres during cleaning weeks.
-- [ ] Possibly: a photo per log (Drive upload). Not in v1 to keep the scope small.
+- [ ] Merge the completeness PR.
+- [ ] Fengshan 85: get a real roster, either by the family walking it with *Add a stall* plus signboard photos, or from a future source.
+- [ ] Possibly: Google Places photos inside the app. This needs a Google Maps Platform API key with billing, restricted to `marvyeo.github.io`.
+- [ ] Possibly: a "Still here ✓" quick confirm for `listed` stalls without a full log.
