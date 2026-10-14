@@ -1,0 +1,2320 @@
+{
+ "version": 1,
+ "updated": "2026-10-15",
+ "home": {
+  "name": "Bedok Reservoir",
+  "lat": 1.339104,
+  "lng": 103.922535
+ },
+ "zones": [
+  {
+   "id": "home",
+   "name": "Home ground",
+   "color": "#d9480f",
+   "desc": "Around Bedok Reservoir — Bedok North, Kaki Bukit, Tampines West"
+  },
+  {
+   "id": "east",
+   "name": "East",
+   "color": "#1971c2",
+   "desc": "Bedok, Tampines, Pasir Ris, Changi/airport, Simei, Kembangan, Marine Parade, Katong/Joo Chiat, Geylang, Paya Lebar"
+  },
+  {
+   "id": "northeast",
+   "name": "North East",
+   "color": "#2f9e44",
+   "desc": "Hougang, Sengkang, Punggol, Serangoon, Ang Mo Kio"
+  },
+  {
+   "id": "north",
+   "name": "North",
+   "color": "#9c36b5",
+   "desc": "Woodlands, Yishun, Sembawang"
+  },
+  {
+   "id": "central",
+   "name": "Central",
+   "color": "#e8590c",
+   "desc": "CBD, Chinatown, Tiong Bahru, Orchard, Novena, Toa Payoh, Bishan, Bukit Timah, Holland"
+  },
+  {
+   "id": "west",
+   "name": "West",
+   "color": "#0c8599",
+   "desc": "Jurong, Clementi, Bukit Batok, Choa Chu Kang, Bukit Panjang, West Coast"
+  }
+ ],
+ "mrt": [
+  {
+   "name": "Bedok Reservoir (DT30)",
+   "lat": 1.336608,
+   "lng": 103.932235
+  },
+  {
+   "name": "Bedok North (DT29)",
+   "lat": 1.334742,
+   "lng": 103.917978
+  },
+  {
+   "name": "Kaki Bukit (DT28)",
+   "lat": 1.334967,
+   "lng": 103.908459
+  },
+  {
+   "name": "Tampines West (DT31)",
+   "lat": 1.345515,
+   "lng": 103.938437
+  },
+  {
+   "name": "Bedok (EW5)",
+   "lat": 1.32398,
+   "lng": 103.929984
+  }
+ ],
+ "sources": {
+  "kt630": {
+   "name": "kopitiam.com.sg – Bedok Reservoir Market & Food Centre",
+   "url": "https://kopitiam.com.sg/2026/05/01/bedok-reservoir-market-food-centre-must-try-hawker-stalls/",
+   "date": "2026-05"
+  },
+  "dfd216": {
+   "name": "Daniel Food Diary – Bedok 216",
+   "url": "https://danielfooddiary.com/2026/05/06/bedok216foodcentre/",
+   "date": "2026-05"
+  },
+  "kt85": {
+   "name": "kopitiam.com.sg – 85 Fengshan",
+   "url": "https://kopitiam.com.sg/2026/04/17/85-fengshan-food-centre-must-try-hawker-stalls-at-bedok/",
+   "date": "2026-04"
+  },
+  "eb85": {
+   "name": "Eatbook – Bedok 85 guide",
+   "url": "https://eatbook.sg/bedok-85-food/",
+   "date": "2023-07"
+  },
+  "ebbedok": {
+   "name": "Eatbook – Bedok food guide",
+   "url": "https://eatbook.sg/bedok-food/",
+   "date": "2024-09"
+  },
+  "nea": {
+   "name": "data.gov.sg – List of Government Markets & Hawker Centres",
+   "url": "https://data.gov.sg/datasets/d_68a42f09f350881996d83f9cd73ab02f/view",
+   "date": "2024-06"
+  }
+ },
+ "clusters": [
+  {
+   "id": "c-630-bedok-reservoir",
+   "name": "Pasar Makan @ Reservoir (Blk 630)",
+   "type": "hawker",
+   "address": "630 Bedok Reservoir Road, S470630",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "stalls_total": 36,
+   "notes": "The neighbourhood centre. Mostly a breakfast-to-lunch crowd.",
+   "sources": [
+    "nea",
+    "kt630"
+   ]
+  },
+  {
+   "id": "c-216-bedok-north",
+   "name": "Bedok 216 Food Centre & Market",
+   "type": "hawker",
+   "address": "216 Bedok North Street 1, S460216",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "stalls_total": 82,
+   "notes": "Big, busy morning centre at Bedok Town. Many stalls close by early afternoon.",
+   "sources": [
+    "nea",
+    "dfd216"
+   ]
+  },
+  {
+   "id": "c-85-fengshan",
+   "name": "Bedok 85 Fengshan Centre",
+   "type": "hawker",
+   "address": "85 Bedok North Street 4, S460085",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "stalls_total": 72,
+   "notes": "The east's supper institution — bak chor mee, BBQ and porridge into the night.",
+   "sources": [
+    "nea",
+    "kt85",
+    "eb85"
+   ]
+  },
+  {
+   "id": "c-511-kaki-bukit",
+   "name": "Kaki Bukit 511 Market & Food Centre",
+   "type": "hawker",
+   "address": "511 Bedok North Street 3, S460511",
+   "lat": 1.33322,
+   "lng": 103.930582,
+   "zone": "home",
+   "stalls_total": 42,
+   "notes": "Neighbourhood centre between Bedok North and Bedok Reservoir MRT.",
+   "sources": [
+    "nea",
+    "ebbedok"
+   ]
+  },
+  {
+   "id": "c-538-bedok-north",
+   "name": "Blk 538 Bedok North St 3 Market & Food Centre",
+   "type": "hawker",
+   "address": "538 Bedok North Street 3, S460538",
+   "lat": 1.332067,
+   "lng": 103.924621,
+   "zone": "home",
+   "stalls_total": 40,
+   "notes": "Not mapped yet — a blank square on the passport. First family visit gets the Mapper stamp.",
+   "sources": [
+    "nea"
+   ]
+  }
+ ],
+ "places": [
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Cheng Jia Laksa Chicken Noodle",
+   "name_zh": "成加美味烧腊鸡饭",
+   "unit": "#01-17",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Roasted chicken rice"
+    },
+    {
+     "name": "Laksa"
+    },
+    {
+     "name": "Ipoh hor fun"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-16:00"
+     ]
+    ]
+   ],
+   "note": "Same price whether you ask for thigh or breast.",
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-cheng-jia-laksa-chicken-noodle",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Tai Seng Avenue Carrot Cake",
+   "name_zh": "大成巷菜头粿",
+   "unit": "#01-09",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Fried carrot cake (white/black)"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "06:00-13:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-tai-seng-avenue-carrot-cake",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Guang Seng Prawn Mee Soup Noodle",
+   "name_zh": "光成",
+   "unit": "#01-34",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn noodles"
+    }
+   ],
+   "hours": [
+    [
+     "01256",
+     [
+      "05:30-13:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-guang-seng-prawn-mee-soup-noodle",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Leong Huat Yong Tau Fu",
+   "name_zh": "隆發釀豆腐",
+   "unit": "#01-16",
+   "cuisine": "yong-tau-foo",
+   "dishes": [
+    {
+     "name": "Yong tau foo"
+    }
+   ],
+   "hours": [
+    [
+     "03456",
+     [
+      "07:00-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-leong-huat-yong-tau-fu",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Wang's Noodle & Dumpling House",
+   "name_zh": "好面王",
+   "unit": "#01-11",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Handmade noodles"
+    },
+    {
+     "name": "Dumplings"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-19:50"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-wang-s-noodle-dumpling-house",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Dian Zhan",
+   "name_zh": "點棧",
+   "unit": "#01-33",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Braised pork rice"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "06:00-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-dian-zhan",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Shan Yuan Vegetarian",
+   "name_zh": "善缘素食",
+   "unit": "#01-20",
+   "cuisine": "vegetarian",
+   "dishes": [
+    {
+     "name": "Vegetarian bee hoon"
+    },
+    {
+     "name": "Vegetarian kway chap"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "06:00-12:00"
+     ]
+    ]
+   ],
+   "diet": [
+    "vegetarian"
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-shan-yuan-vegetarian",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Amazing Braised Duck Rice Noodle Kway Chap",
+   "name_zh": "神奇卤鸭饭面粿汁",
+   "unit": "#01-21",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Braised duck rice"
+    },
+    {
+     "name": "Kway chap"
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "07:00-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-amazing-braised-duck-rice-noodle-kway-",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Granny's Pancake",
+   "unit": "#01-30",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Min jiang kueh (peanut, red bean, coconut)"
+    }
+   ],
+   "hours": [
+    [
+     "03456",
+     [
+      "05:00-13:30"
+     ]
+    ]
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "travels_well": true,
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-granny-s-pancake",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Green Kopi & Toast",
+   "unit": "#01-22",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi / teh"
+    },
+    {
+     "name": "Kaya toast"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:00-13:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-green-kopi-toast",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "cluster": "c-630-bedok-reservoir",
+   "name": "Yuan Li Shu Shi",
+   "name_zh": "源利熟食",
+   "unit": "#01-25",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Minced meat noodles"
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "04:00-12:30"
+     ]
+    ]
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "sources": [
+    "kt630"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-630-bedok-reservoir-yuan-li-shu-shi",
+   "lat": 1.332773,
+   "lng": 103.914191,
+   "zone": "home",
+   "address": "630 Bedok Reservoir Road, S470630"
+  },
+  {
+   "name": "Raffles Western Delight",
+   "unit": "631 Bedok Reservoir Rd",
+   "address": "631 Bedok Reservoir Road",
+   "lat": 1.33245,
+   "lng": 103.9138,
+   "zone": "home",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Chicken cutlet rice set",
+     "price": 5.8
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "11:15-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-raffles-western-delight"
+  },
+  {
+   "name": "US Pizza (Bedok Reservoir)",
+   "unit": "#01-840",
+   "address": "632 Bedok Reservoir Road",
+   "lat": 1.332051,
+   "lng": 103.914145,
+   "zone": "home",
+   "cuisine": "western",
+   "price_band": 3,
+   "dishes": [
+    {
+     "name": "Cheese boat pizza",
+     "price": 21.9
+    },
+    {
+     "name": "Salted egg pizza",
+     "price": 21.9
+    }
+   ],
+   "hours": [
+    [
+     "1234",
+     [
+      "10:30-21:30"
+     ]
+    ],
+    [
+     "560",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "group"
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "id": "p-us-pizza-bedok-reservoir"
+  },
+  {
+   "name": "Scoopy Doo",
+   "unit": "#01-3179",
+   "address": "740 Bedok Reservoir Road (Reservoir Village)",
+   "lat": 1.338026,
+   "lng": 103.922835,
+   "zone": "home",
+   "cuisine": "dessert",
+   "price_band": 2,
+   "dishes": [
+    {
+     "name": "Scoopy Two (2 scoops)",
+     "price": 11.8
+    },
+    {
+     "name": "Fizzy apple",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "01234",
+     [
+      "13:00-22:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "13:00-00:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "dessert"
+   ],
+   "modes": [
+    "dine"
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "id": "p-scoopy-doo"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Chris Kway Chap",
+   "unit": "#01-80",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Kway chap (pork belly, intestines, tau pok, egg)"
+    }
+   ],
+   "hours": [
+    [
+     "3456",
+     [
+      "08:30-13:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-chris-kway-chap",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Sin Ho",
+   "name_zh": "星河",
+   "unit": "#01-75",
+   "cuisine": "zi-char",
+   "price_band": 2,
+   "dishes": [
+    {
+     "name": "Prawn paste chicken"
+    },
+    {
+     "name": "Red grouper head with bittergourd"
+    },
+    {
+     "name": "Sambal lala"
+    },
+    {
+     "name": "Hor fun (after 5pm)"
+    }
+   ],
+   "hours": [
+    [
+     "34560",
+     [
+      "10:00-14:00",
+      "17:00-20:30"
+     ]
+    ]
+   ],
+   "tags": [
+    "group"
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "id": "p-c-216-bedok-north-sin-ho",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Prawn & Mee",
+   "unit": "#01-54",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Pork ribs prawn noodle",
+     "price": 5.5,
+     "price_note": "$5.50/$7.50/$9.50 (2024)"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "09:30-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "dfd216",
+    "ebbedok"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-prawn-mee",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Ah Fu Prawn Noodle",
+   "name_zh": "阿福虾面",
+   "unit": "#01-78",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn noodles (dry/soup)"
+    },
+    {
+     "name": "Add-ons: pork ribs, pig tail"
+    }
+   ],
+   "hours": [
+    [
+     "6012",
+     [
+      "07:00-11:30"
+     ]
+    ]
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-ah-fu-prawn-noodle",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "OMMA Chicken Soup",
+   "unit": "#01-58",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Ginseng / collagen chicken soup (also mee sua, porridge)",
+     "price_note": "under $10"
+    }
+   ],
+   "hours": [
+    [
+     "234",
+     [
+      "08:30-13:30"
+     ]
+    ],
+    [
+     "560",
+     [
+      "08:30-13:30",
+      "17:00-19:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-omma-chicken-soup",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "De Ming Char Siew Wan Ton Mee",
+   "name_zh": "德明叉烧云吞面",
+   "unit": "#01-08",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char siew wanton mee (normal or super spicy)"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-13:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-de-ming-char-siew-wan-ton-mee",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Han Kee Fish Soup",
+   "unit": "#01-46",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Sliced fish soup"
+    }
+   ],
+   "hours": [
+    [
+     "2360",
+     [
+      "10:00-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-han-kee-fish-soup",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Joo Chiat Chiap Kee",
+   "name_zh": "如切捷記",
+   "unit": "#01-31",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Handmade fishball noodles / mee pok"
+    },
+    {
+     "name": "Fish dumplings"
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "06:00-13:30"
+     ]
+    ]
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-joo-chiat-chiap-kee",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Chai Chee Cai Tou Guo",
+   "name_zh": "菜市菜头粿",
+   "unit": "#01-55",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Fried carrot cake sticks"
+    },
+    {
+     "name": "Yam cake"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "05:00-13:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-chai-chee-cai-tou-guo",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "What The Puff!",
+   "unit": "#01-27",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Curry puffs (potato, sardine, cheese curry, black pepper chicken)"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:30-14:00"
+     ]
+    ]
+   ],
+   "travels_well": true,
+   "modes": [
+    "takeaway"
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-what-the-puff",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Daoxiang Yummy",
+   "name_zh": "稻香",
+   "unit": "#01-77",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Chee cheong fun set",
+     "price": 4.3,
+     "price_note": "Set C $4.30 (2024)"
+    },
+    {
+     "name": "Yam cake, mock goose"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:00-13:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "breakfast"
+   ],
+   "sources": [
+    "dfd216",
+    "ebbedok"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-daoxiang-yummy",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Generation Coffee",
+   "unit": "#01-32",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Espresso kopi, lattes, dirty matcha"
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "07:30-10:30",
+      "11:15-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "dfd216"
+   ],
+   "verified": "2026-05",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-generation-coffee",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-216-bedok-north",
+   "name": "Ma Bo Lor Mee",
+   "unit": "#01-76",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Lor mee",
+     "price": 3.5
+    },
+    {
+     "name": "Fried fish lor mee",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "07:00-13:00"
+     ]
+    ]
+   ],
+   "travels_well": false,
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-216-bedok-north-ma-bo-lor-mee",
+   "lat": 1.327063,
+   "lng": 103.933218,
+   "zone": "home",
+   "address": "216 Bedok North Street 1, S460216"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Seng Hiang Bak Chor Mee",
+   "name_zh": "成香肉脞面",
+   "unit": "#01-08",
+   "cuisine": "noodles",
+   "must_try": true,
+   "dishes": [
+    {
+     "name": "Bak chor mee (dry)",
+     "price": 4.5,
+     "price_note": "$3.50/$4.50 (2023)"
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "15:30-00:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper"
+   ],
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-seng-hiang-bak-chor-mee",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Xing Ji Rou Cuo Mian",
+   "name_zh": "兴记肉脞面",
+   "unit": "#01-07",
+   "cuisine": "noodles",
+   "must_try": true,
+   "dishes": [
+    {
+     "name": "Bak chor mee (soup)",
+     "price": 4.0,
+     "price_note": "$4/$5 (2024)"
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "11:30-23:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper"
+   ],
+   "sources": [
+    "kt85",
+    "ebbedok"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-xing-ji-rou-cuo-mian",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Hougang Ming Ji Wanton Noodle",
+   "name_zh": "明记云吞面",
+   "unit": "#01-35",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton mee"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:15-20:45"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-hougang-ming-ji-wanton-noodle",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Chai Chee Pork Porridge",
+   "name_zh": "菜市猪肉粥",
+   "unit": "#01-23",
+   "cuisine": "porridge",
+   "must_try": true,
+   "dishes": [
+    {
+     "name": "Pork porridge",
+     "price": 4.5
+    },
+    {
+     "name": "Fish porridge",
+     "price": 5.5
+    },
+    {
+     "name": "Century egg porridge",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "16:00-00:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper"
+   ],
+   "travels_well": true,
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-chai-chee-pork-porridge",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Soon Mong Duck Rice & Porridge",
+   "name_zh": "顺茂鸭饭鸭粥",
+   "unit": "#01-72",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Duck rice"
+    },
+    {
+     "name": "Duck porridge"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "10:00-19:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-soon-mong-duck-rice-porridge",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Sing Soon Lee Hainanese Boneless Chicken Rice",
+   "name_zh": "新顺利海南去骨鸡饭",
+   "unit": "#01-61",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Boneless chicken rice"
+    }
+   ],
+   "hours": [
+    [
+     "012346",
+     [
+      "11:00-19:00"
+     ]
+    ]
+   ],
+   "travels_well": true,
+   "sources": [
+    "kt85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-sing-soon-lee-hainanese-boneless-chicken-rice",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Shanghai Xiao Long Bao",
+   "name_zh": "上海小笼包",
+   "unit": "#01-16",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Xiao long bao (6 pcs)",
+     "price": 6.0
+    },
+    {
+     "name": "Shui jiao",
+     "price": 5.0
+    },
+    {
+     "name": "Zha jiang noodles",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "08:00-17:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-shanghai-xiao-long-bao",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "85 Bedok North Fried Oyster",
+   "name_zh": "勿洛北蚝煎",
+   "unit": "#01-09",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Oyster omelette",
+     "price": 5.0,
+     "price_note": "from $5 (2023)"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "14:00-02:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper"
+   ],
+   "travels_well": false,
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-85-bedok-north-fried-oyster",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "75 Ah Balling Peanut Soup",
+   "name_zh": "花生汤圆",
+   "unit": "#01-25",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Tang yuan in peanut soup (3 pcs)",
+     "price": 2.2
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "dessert"
+   ],
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-75-ah-balling-peanut-soup",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Chomp Chomp BBQ",
+   "name_zh": "忠忠烧烤",
+   "unit": "#01-44",
+   "cuisine": "bbq-seafood",
+   "price_band": 2,
+   "dishes": [
+    {
+     "name": "BBQ stingray",
+     "price": 12.0,
+     "price_note": "from $12 (2023)"
+    },
+    {
+     "name": "Sambal dishes"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "16:30-01:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper",
+    "group"
+   ],
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "id": "p-c-85-fengshan-chomp-chomp-bbq",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "ONE.85 Big Prawn Mee",
+   "name_zh": "一顶味勿洛大虾面",
+   "unit": "#01-20",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Big prawn noodles"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "16:30-01:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper"
+   ],
+   "sources": [
+    "kt85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-one-85-big-prawn-mee",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "85 Ngor Hiang Hei Biar",
+   "name_zh": "五香虾饼",
+   "unit": "#01-14",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Ngoh hiang, prawn fritters",
+     "price": 3.5,
+     "price_note": "from $3.50 (2023)"
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "11:00-23:00"
+     ]
+    ]
+   ],
+   "travels_well": true,
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-85-ngor-hiang-hei-biar",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Ah Bee Fried Prawn Mee",
+   "name_zh": "阿B炒虾面",
+   "unit": "#01-43",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried Hokkien prawn mee",
+     "price": 5.0,
+     "price_note": "from $5 (2023)"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-14:00",
+      "16:00-20:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-ah-bee-fried-prawn-mee",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-85-fengshan",
+   "name": "Sin Bedok North BBQ Chicken Wing",
+   "name_zh": "鑫勿洛北烤鸡翅",
+   "unit": "#01-12",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "BBQ chicken wing",
+     "price": 1.4,
+     "price_note": "per wing (2023)"
+    },
+    {
+     "name": "Otah",
+     "price": 0.6
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "14:30-00:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper"
+   ],
+   "travels_well": true,
+   "sources": [
+    "kt85",
+    "eb85"
+   ],
+   "verified": "2026-04",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-85-fengshan-sin-bedok-north-bbq-chicken-wing",
+   "lat": 1.332005,
+   "lng": 103.938768,
+   "zone": "home",
+   "address": "85 Bedok North Street 4, S460085"
+  },
+  {
+   "cluster": "c-511-kaki-bukit",
+   "name": "511 Aliff Nasi Lemak",
+   "unit": "#01-19",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak set",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "12346",
+     [
+      "07:00-19:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "08:30-19:00"
+     ]
+    ]
+   ],
+   "travels_well": true,
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-511-kaki-bukit-511-aliff-nasi-lemak",
+   "lat": 1.33322,
+   "lng": 103.930582,
+   "zone": "home",
+   "address": "511 Bedok North Street 3, S460511"
+  },
+  {
+   "cluster": "c-511-kaki-bukit",
+   "name": "Seng Kee Black Chicken Herbal Soup",
+   "unit": "#01-31/32",
+   "cuisine": "soup",
+   "must_try": true,
+   "dishes": [
+    {
+     "name": "Kidney mee sua",
+     "price": 7.0,
+     "price_note": "$7/$9"
+    },
+    {
+     "name": "Black chicken herbal soup"
+    }
+   ],
+   "hours": [
+    [
+     "4",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "56012",
+     [
+      "12:30-23:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper"
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-511-kaki-bukit-seng-kee-black-chicken-herbal-soup",
+   "lat": 1.33322,
+   "lng": 103.930582,
+   "zone": "home",
+   "address": "511 Bedok North Street 3, S460511"
+  },
+  {
+   "name": "Takagi Ramen (Bedok)",
+   "unit": "#01-355",
+   "address": "206 Bedok North Street 1",
+   "lat": 1.326491,
+   "lng": 103.930883,
+   "zone": "home",
+   "cuisine": "japanese",
+   "dishes": [
+    {
+     "name": "Takagi ramen",
+     "price": 6.9
+    },
+    {
+     "name": "Karaka-men",
+     "price": 8.0
+    },
+    {
+     "name": "Chashu don",
+     "price": 4.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "00:00-24:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "supper",
+    "24h"
+   ],
+   "travels_well": false,
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-takagi-ramen-bedok"
+  },
+  {
+   "name": "Nakhon Kitchen (Bedok 136)",
+   "unit": "#01-162",
+   "address": "136 Bedok North Avenue 3",
+   "lat": 1.328155,
+   "lng": 103.935221,
+   "zone": "home",
+   "cuisine": "thai",
+   "price_band": 2,
+   "dishes": [
+    {
+     "name": "Phad thai",
+     "price": 5.0
+    },
+    {
+     "name": "Tom yum, green curry"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-14:30",
+      "16:30-21:30"
+     ]
+    ]
+   ],
+   "tags": [
+    "group"
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "id": "p-nakhon-kitchen-bedok-136"
+  },
+  {
+   "name": "Percolate Coffee",
+   "unit": "#01-152",
+   "address": "136 Bedok North Avenue 3",
+   "lat": 1.3282,
+   "lng": 103.9353,
+   "zone": "home",
+   "cuisine": "cafe",
+   "price_band": 2,
+   "dishes": [
+    {
+     "name": "Thai coco black",
+     "price": 7.5
+    },
+    {
+     "name": "Hae bee hiam croissant sandwich",
+     "price": 8.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-19:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "id": "p-percolate-coffee"
+  },
+  {
+   "name": "Chin Lee Restaurant",
+   "unit": "#01-285",
+   "address": "115 Bedok North Road",
+   "lat": 1.331434,
+   "lng": 103.936865,
+   "zone": "home",
+   "cuisine": "zi-char",
+   "price_band": 3,
+   "must_try": true,
+   "dishes": [
+    {
+     "name": "Chye poh kway teow",
+     "price": 14.0,
+     "price_note": "$14++/$21++/$28++"
+    },
+    {
+     "name": "Teochew dishes: orh nee, hei zhou"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:30-14:30",
+      "18:00-22:30"
+     ]
+    ],
+    [
+     "60",
+     [
+      "11:30-14:30",
+      "17:30-22:30"
+     ]
+    ]
+   ],
+   "tags": [
+    "group",
+    "occasion"
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "diet": [],
+   "status": "open",
+   "id": "p-chin-lee-restaurant"
+  },
+  {
+   "name": "Daily Mujo",
+   "unit": "#01-27",
+   "address": "84 Bedok North Street 4",
+   "lat": 1.331782,
+   "lng": 103.939208,
+   "zone": "home",
+   "cuisine": "cafe",
+   "price_band": 2,
+   "dishes": [
+    {
+     "name": "Laksa Hokkien mee",
+     "price": 11.0
+    },
+    {
+     "name": "Pandan chicken chop",
+     "price": 15.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "id": "p-daily-mujo"
+  },
+  {
+   "name": "Hao Lai Ke",
+   "unit": "#01-393",
+   "address": "204 Bedok North Street 1",
+   "lat": 1.326359,
+   "lng": 103.929996,
+   "zone": "home",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Pork ribs fried rice",
+     "price": 6.5
+    },
+    {
+     "name": "Pork chop rice"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-hao-lai-ke"
+  },
+  {
+   "name": "Arnold's Fried Chicken (Bedok)",
+   "unit": "#01-83",
+   "address": "215 Bedok North Street 1",
+   "lat": 1.326076,
+   "lng": 103.933497,
+   "zone": "home",
+   "cuisine": "western",
+   "price_band": 2,
+   "dishes": [
+    {
+     "name": "Whole spring chicken set",
+     "price": 18.8
+    },
+    {
+     "name": "4-piece meal",
+     "price": 25.9
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "tags": [
+    "group"
+   ],
+   "travels_well": true,
+   "sources": [
+    "ebbedok"
+   ],
+   "verified": "2024-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "must_try": false,
+   "status": "open",
+   "id": "p-arnold-s-fried-chicken-bedok"
+  }
+ ]
+}

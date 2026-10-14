@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Makan Map</title>
+<meta name="description" content="Our family's food map of Singapore — spin, log, rate, collect stamps.">
+<meta name="theme-color" content="#faf6ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14120f" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Makan Map">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<style>
+:root{
+  --bg:#faf6ef; --card:#ffffff; --card2:#f3ede2; --ink:#1d1a16; --ink2:#5e574d; --ink3:#968d80; --line:#e7dfd1;
+  --chilli:#e03e1a; --chilli-ink:#ffffff; --chilli-soft:#fde6df; --pandan:#2f7d4a; --pandan-soft:#e2f2e6;
+  --kaya:#e9a520; --kaya-soft:#fbf0d6; --sky:#1971c2; --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 24px rgba(40,30,10,.06);
+  --r:18px; --nav:68px; --safe-b:env(safe-area-inset-bottom,0px); --safe-t:env(safe-area-inset-top,0px);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#14120f; --card:#1e1b17; --card2:#28241e; --ink:#f3ede4; --ink2:#bdb3a5; --ink3:#857b6e; --line:#2f2a23;
+  --chilli:#ff5a36; --chilli-soft:#3a1d14; --pandan:#5cc282; --pandan-soft:#16291d; --kaya:#f2b43c; --kaya-soft:#33280f; --sky:#4dabf7;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px rgba(0,0,0,.25);
+}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{min-height:100dvh;overscroll-behavior-y:none}
+h1,h2,h3,.display{font-family:"Bricolage Grotesque",Inter,sans-serif;letter-spacing:-.01em;margin:0}
+h1{font-size:28px;font-weight:800;line-height:1.1} h2{font-size:20px;font-weight:700} h3{font-size:16px;font-weight:700}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer;padding:0}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 12px;width:100%;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--chilli)}
+a{color:inherit}
+.hidden{display:none!important}
+.muted{color:var(--ink2)} .faint{color:var(--ink3)} .small{font-size:13px} .tiny{font-size:12px}
+.row{display:flex;align-items:center;gap:8px} .between{justify-content:space-between} .wrap{flex-wrap:wrap} .grow{flex:1;min-width:0}
+.stack>*+*{margin-top:12px}
+.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* layout */
+#app{max-width:560px;margin:0 auto;padding:calc(var(--safe-t) + 14px) 16px calc(var(--nav) + var(--safe-b) + 24px)}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{width:34px;height:34px;border-radius:11px;background:var(--chilli);display:grid;place-items:center;color:#fff;font-size:18px}
+.sync{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink2);padding:6px 10px;border-radius:99px;background:var(--card);border:1px solid var(--line)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ink3)} .dot.ok{background:var(--pandan)} .dot.warn{background:var(--kaya)} .dot.err{background:var(--chilli)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px}
+.section-title{display:flex;align-items:baseline;justify-content:space-between;margin:22px 2px 10px}
+.section-title h2{font-size:18px}
+
+/* nav */
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:50;height:calc(var(--nav) + var(--safe-b));padding-bottom:var(--safe-b);
+  background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line);
+  display:flex;justify-content:center}
+nav.tabs .inner{display:flex;width:100%;max-width:560px}
+nav.tabs button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:11px;font-weight:600;color:var(--ink3)}
+nav.tabs button .ic{font-size:21px;line-height:1;filter:grayscale(1);opacity:.7;transition:transform .15s}
+nav.tabs button.on{color:var(--chilli)} nav.tabs button.on .ic{filter:none;opacity:1;transform:translateY(-1px) scale(1.08)}
+
+/* chips */
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 2px 4px;margin:0 -2px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:8px 13px;border-radius:99px;border:1px solid var(--line);background:var(--card);font-size:13px;font-weight:600;color:var(--ink2);white-space:nowrap;transition:all .12s}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip.person.on{background:var(--chilli);border-color:var(--chilli);color:#fff}
+.filter-label{font-size:12px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:.06em;margin:14px 2px 6px}
+.toggle{display:flex;align-items:center;justify-content:space-between;padding:10px 2px;font-size:14px}
+.switch{width:44px;height:26px;border-radius:99px;background:var(--line);position:relative;transition:background .15s;flex:none}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .15s}
+.switch.on{background:var(--pandan)} .switch.on::after{transform:translateX(18px)}
+
+/* buttons */
+.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:14px;font-weight:600;background:var(--card2);color:var(--ink);transition:transform .08s}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--chilli);color:#fff} .btn.dark{background:var(--ink);color:var(--bg)} .btn.ghost{background:transparent;border:1px solid var(--line)}
+.btn.sm{padding:8px 12px;font-size:13px;border-radius:11px} .btn.block{width:100%}
+.iconbtn{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);font-size:17px}
+
+/* spin */
+.spin-hero{position:relative;overflow:hidden;border-radius:24px;padding:20px;background:var(--chilli);color:#fff;box-shadow:var(--shadow)}
+.spin-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 110% -10%,rgba(255,255,255,.28),transparent 45%),radial-gradient(circle at -10% 120%,rgba(0,0,0,.18),transparent 50%);pointer-events:none}
+.spin-hero h1{color:#fff}
+.reel{height:64px;margin:16px 0 14px;border-radius:16px;background:rgba(0,0,0,.16);overflow:hidden;position:relative}
+.reel .names{position:absolute;inset:0;display:flex;flex-direction:column}
+.reel .name{height:64px;flex:none;display:flex;align-items:center;justify-content:center;font-family:"Bricolage Grotesque";font-weight:800;font-size:20px;padding:0 12px;text-align:center;line-height:1.1}
+.spin-btn{width:100%;padding:16px;border-radius:16px;background:#fff;color:var(--chilli);font-family:"Bricolage Grotesque";font-weight:800;font-size:19px;letter-spacing:.01em;box-shadow:0 4px 0 rgba(0,0,0,.18)}
+.spin-btn:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.mode-switch{display:flex;background:rgba(0,0,0,.16);border-radius:12px;padding:3px;gap:3px;margin-top:12px}
+.mode-switch button{flex:1;padding:8px;border-radius:9px;font-weight:600;font-size:13px;color:rgba(255,255,255,.8)}
+.mode-switch button.on{background:#fff;color:var(--chilli)}
+.match-count{font-size:13px;opacity:.9;margin-top:4px}
+
+/* place card */
+.pcard{display:flex;gap:12px;align-items:flex-start;padding:14px;cursor:pointer}
+.pcard+.pcard{border-top:1px solid var(--line)}
+.pemoji{width:46px;height:46px;flex:none;border-radius:14px;background:var(--card2);display:grid;place-items:center;font-size:24px}
+.pname{font-weight:600;font-size:15px;line-height:1.3}
+.meta{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:12.5px;color:var(--ink2);margin-top:3px}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:99px;font-size:11.5px;font-weight:600;background:var(--card2);color:var(--ink2)}
+.badge.open{background:var(--pandan-soft);color:var(--pandan)} .badge.closed{background:var(--chilli-soft);color:var(--chilli)}
+.badge.must{background:var(--kaya-soft);color:#9a6a00} @media (prefers-color-scheme:dark){.badge.must{color:var(--kaya)}}
+.badge.tried{background:var(--ink);color:var(--bg)} .badge.new{background:var(--sky);color:#fff}
+.list{padding:0;overflow:hidden}
+.result{margin-top:16px;animation:pop .35s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+.result .head{display:flex;gap:14px;align-items:center}
+.result .big-emoji{width:64px;height:64px;border-radius:18px;background:var(--card2);display:grid;place-items:center;font-size:34px;flex:none}
+.dish{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.dish:last-child{border-bottom:0}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.fam-scores{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+
+/* centre card */
+.coverage{height:6px;border-radius:99px;background:var(--card2);overflow:hidden;margin-top:8px}
+.coverage>i{display:block;height:100%;background:var(--pandan);border-radius:99px}
+
+/* sheet */
+.sheet-wrap{position:fixed;inset:0;z-index:100;display:flex;align-items:flex-end;justify-content:center;background:rgba(10,8,5,.45);animation:fade .15s}
+@keyframes fade{from{opacity:0}}
+.sheet{width:100%;max-width:560px;max-height:92dvh;overflow:auto;background:var(--bg);border-radius:24px 24px 0 0;padding:10px 16px calc(var(--safe-b) + 20px);animation:up .22s cubic-bezier(.2,.9,.3,1)}
+@keyframes up{from{transform:translateY(40px);opacity:.4}}
+.grab{width:40px;height:5px;border-radius:9px;background:var(--line);margin:4px auto 12px}
+.sheet .close{position:sticky;top:0;float:right;margin-top:-4px}
+
+/* stars */
+.stars{display:flex;gap:6px}
+.stars button{font-size:30px;line-height:1;filter:grayscale(1);opacity:.35;transition:transform .1s}
+.stars button.on{filter:none;opacity:1;transform:scale(1.05)}
+.seg{display:flex;background:var(--card2);border-radius:12px;padding:3px;gap:3px}
+.seg button{flex:1;padding:9px 6px;border-radius:9px;font-weight:600;font-size:13px;color:var(--ink2)}
+.seg button.on{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+
+/* map */
+#map{height:calc(100dvh - var(--nav) - var(--safe-b) - var(--safe-t) - 150px);min-height:380px;border-radius:var(--r);border:1px solid var(--line);overflow:hidden;z-index:1}
+.leaflet-container{background:var(--card2);font:inherit}
+.pin{display:grid;place-items:center;border-radius:50%;color:#fff;font-weight:700;font-size:12px;border:2.5px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.pin.hollow{background:#fff!important;color:var(--ink)}
+.home-pin{font-size:22px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.3))}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--ink2);margin-top:10px}
+.legend span{display:inline-flex;align-items:center;gap:5px} .legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+/* passport */
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;text-align:center}
+.stat b{display:block;font-family:"Bricolage Grotesque";font-size:26px;font-weight:800;line-height:1.1}
+.stat span{font-size:12px;color:var(--ink2)}
+.bingo{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.bingo div{aspect-ratio:1;border-radius:14px;background:var(--card);border:1.5px dashed var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10.5px;text-align:center;color:var(--ink3);padding:4px;line-height:1.15}
+.bingo div b{font-size:22px;filter:grayscale(1);opacity:.35;margin-bottom:3px}
+.bingo div.got{border:1.5px solid var(--pandan);background:var(--pandan-soft);color:var(--pandan);font-weight:600}
+.bingo div.got b{filter:none;opacity:1}
+.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.bdg{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 8px;text-align:center;font-size:12px}
+.bdg .e{font-size:30px;display:block;filter:grayscale(1);opacity:.3}
+.bdg.got .e{filter:none;opacity:1} .bdg.got{border-color:var(--kaya);background:var(--kaya-soft)}
+.bdg b{display:block;font-size:12.5px;margin-top:4px}
+.zonebar{display:flex;align-items:center;gap:10px;padding:8px 0}
+.zonebar .bar{flex:1;height:8px;border-radius:9px;background:var(--card2);overflow:hidden} .zonebar .bar i{display:block;height:100%}
+.lb{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)} .lb:last-child{border:0}
+.avatar{width:36px;height:36px;border-radius:50%;background:var(--card2);display:grid;place-items:center;font-size:19px;flex:none}
+.feed-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)} .feed-item:last-child{border:0}
+
+/* auth / setup */
+.splash{min-height:100dvh;display:flex;flex-direction:column;justify-content:center;max-width:440px;margin:0 auto;padding:32px 22px}
+.splash .logo{width:76px;height:76px;border-radius:24px;background:var(--chilli);display:grid;place-items:center;font-size:40px;margin-bottom:22px;box-shadow:0 10px 30px rgba(224,62,26,.35)}
+.splash h1{font-size:38px} .splash p{color:var(--ink2);font-size:16px}
+.toast{position:fixed;left:50%;bottom:calc(var(--nav) + var(--safe-b) + 14px);transform:translateX(-50%);z-index:200;background:var(--ink);color:var(--bg);padding:11px 16px;border-radius:14px;font-size:14px;font-weight:500;box-shadow:var(--shadow);max-width:calc(100% - 32px);animation:up .2s}
+.empty{text-align:center;padding:28px 16px;color:var(--ink2)} .empty .e{font-size:40px;display:block;margin-bottom:6px}
+.search{position:relative} .search input{padding-left:38px;border-radius:14px} .search::before{content:"🔎";position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:15px;opacity:.6}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- Splash / sign in -->
+<section id="splash" class="splash hidden">
+  <div class="logo">🍜</div>
+  <h1>Makan Map</h1>
+  <p style="margin:10px 0 28px">The family's food map of Singapore. Spin when nobody can decide, rate what you eat, collect stamps from every hawker centre.</p>
+  <button class="btn primary block" onclick="signIn()" style="padding:15px;font-size:16px">Sign in with Google</button>
+  <button class="btn ghost block" onclick="enterGuest()" style="margin-top:10px">Just browse for now</button>
+  <a href="#" class="small faint" onclick="event.preventDefault();redirectSignIn()" style="margin-top:18px;text-align:center">Sign-in window not opening? Try another way</a>
+</section>
+
+<!-- Family setup -->
+<section id="setup" class="splash hidden"></section>
+
+<main id="app" class="hidden">
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark">🍜</div><div><h2 style="font-size:19px">Makan Map</h2><div class="tiny faint" id="hello"></div></div></div>
+    <button class="sync" id="syncChip" onclick="syncNow(true)"><span class="dot" id="syncDot"></span><span id="syncText">Offline</span></button>
+  </header>
+  <div id="view"></div>
+</main>
+
+<nav class="tabs hidden" id="tabs"><div class="inner">
+  <button data-tab="spin" onclick="go('spin')"><span class="ic">🎰</span>Spin</button>
+  <button data-tab="explore" onclick="go('explore')"><span class="ic">🧭</span>Explore</button>
+  <button data-tab="map" onclick="go('map')"><span class="ic">🗺️</span>Map</button>
+  <button data-tab="log" onclick="go('log')"><span class="ic">📝</span>Log</button>
+  <button data-tab="passport" onclick="go('passport')"><span class="ic">🛂</span>Passport</button>
+</div></nav>
+
+<div id="sheetRoot"></div>
+<div id="toastRoot"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+/* =====================================================================
+   Makan Map — family food guide
+   Places:  data/places.json in this repo (curated; refreshed via pull requests)
+   Family:  a Google Sheet in the family owner's Drive (members, logs, wants, places_added)
+            Rows are only ever appended; the newest row for a key wins. Works offline via an outbox.
+   ===================================================================== */
+const CONFIG = {
+  // OAuth client (Google Cloud → APIs & Services → Credentials). Needs https://marvyeo.github.io as an
+  // Authorized JavaScript origin, the Google Sheets API enabled, and family members added as test users.
+  CLIENT_ID: '678456232174-ilpocmjaijsjsi4fr1or9r4o0to8vh9h.apps.googleusercontent.com',
+  SCOPES: 'https://www.googleapis.com/auth/spreadsheets openid email profile',
+  SHEET_TITLE: 'Makan Map — family data',
+  TABS: {
+    members: ['member_id', 'email', 'name', 'emoji', 'at'],
+    logs: ['log_id', 'at', 'member_id', 'place_id', 'dish', 'stars', 'again', 'mode', 'note', 'deleted'],
+    wants: ['member_id', 'place_id', 'at', 'active'],
+    places_added: ['id', 'at', 'member_id', 'json'],
+  },
+};
+const SHEETS_API = 'https://sheets.googleapis.com/v4/spreadsheets';
+
+const CUISINES = {
+  'chicken-rice': ['🍗', 'Chicken rice'], 'noodles': ['🍜', 'Noodles'], 'carrot-cake': ['🍳', 'Carrot cake'],
+  'yong-tau-foo': ['🥢', 'Yong tau foo'], 'rice': ['🍚', 'Rice plates'], 'vegetarian': ['🥬', 'Vegetarian'],
+  'braised': ['🦆', 'Braised & kway chap'], 'snacks': ['🥟', 'Kueh & snacks'], 'drinks': ['☕', 'Kopi & drinks'],
+  'western': ['🍕', 'Western'], 'dessert': ['🍧', 'Dessert'], 'zi-char': ['🥘', 'Zi char'], 'soup': ['🍲', 'Soups'],
+  'porridge': ['🥣', 'Porridge'], 'dumplings': ['🥟', 'Dumplings'], 'bbq-seafood': ['🍢', 'BBQ & seafood'],
+  'malay': ['🌶️', 'Malay'], 'indian': ['🫓', 'Indian'], 'japanese': ['🍣', 'Japanese'], 'korean': ['🥓', 'Korean'],
+  'thai': ['🌿', 'Thai'], 'cafe': ['🥐', 'Café'], 'other': ['🍽️', 'Other'],
+};
+const BINGO = ['chicken-rice', 'noodles', 'braised', 'zi-char', 'malay', 'indian', 'porridge', 'snacks', 'dessert', 'western', 'japanese', 'thai', 'vegetarian', 'bbq-seafood', 'soup', 'cafe'];
+const MEALS = { now: ['Now', null], breakfast: ['Breakfast', '08:30'], lunch: ['Lunch', '12:30'], dinner: ['Dinner', '19:00'], supper: ['Supper', '22:30'] };
+const REACH = { walk: ['Walkable', 1.3], near: ['Short ride', 4], any: ['Anywhere', 999] };
+const EMOJIS = ['🦊', '🐼', '🐯', '🐨', '🐸', '🐙', '🦄', '🐝', '🐳', '🦖', '🐧', '🦉'];
+const PRICE = ['', '$', '$$', '$$$', '$$$$'];
+const DAYN = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+/* ---------------- state ---------------- */
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem('mm.' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('mm.' + k, JSON.stringify(v)); } catch {} },
+  del(k) { try { localStorage.removeItem('mm.' + k); } catch {} },
+};
+let DB = null;                       // places.json
+let token = LS.get('token', null);   // {access_token, exp}
+let me = LS.get('me', null);         // {id, email, name, emoji, picture}
+let familyId = LS.get('familyId', null);
+let fam = LS.get('fam', { members: [], logs: [], wants: [], places_added: [] }); // raw rows (no header)
+let outbox = LS.get('outbox', []);   // [{tab,row}]
+let guest = LS.get('guest', false);
+let prefs = Object.assign({ meal: 'now', reach: 'near', budget: [1, 2, 3], mode: 'any', cuisines: [], untried: false, mustOnly: false, openOnly: true, eaters: null, spinMode: 'stall', home: null, useGps: false }, LS.get('prefs', {}));
+let tab = 'spin', syncState = 'idle', gps = null, lastResult = null, tokenClient = null, mapObj = null;
+
+/* ---------------- helpers ---------------- */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+const savePrefs = () => LS.set('prefs', prefs);
+function toast(msg) { const r = $('#toastRoot'); r.innerHTML = `<div class="toast">${esc(msg)}</div>`; clearTimeout(toast.t); toast.t = setTimeout(() => r.innerHTML = '', 2600); }
+const toMin = hm => { const [h, m] = hm.split(':').map(Number); return h * 60 + m; };
+const fmtTime = m => { m = ((m % 1440) + 1440) % 1440; const h = Math.floor(m / 60), mm = m % 60; const ap = h < 12 ? 'am' : 'pm'; const hh = h % 12 || 12; return mm ? `${hh}:${String(mm).padStart(2, '0')}${ap}` : `${hh}${ap}`; };
+function km(a, b) { const R = 6371, r = x => x * Math.PI / 180; const dLa = r(b.lat - a.lat), dLo = r(b.lng - a.lng); const h = Math.sin(dLa / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(dLo / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); }
+const origin = () => (prefs.useGps && gps) ? gps : (prefs.home || DB.home);
+const walkMin = d => Math.round(d * 1.3 / 4.8 * 60);
+const driveMin = d => Math.max(5, Math.round(d * 1.5 / 28 * 60 + 4));
+function nearestMrt(p) { let best = null; for (const s of DB.mrt) { const d = km(p, s); if (!best || d < best.d) best = { ...s, d }; } return best; }
+const emojiOf = p => (CUISINES[p.cuisine] || CUISINES.other)[0];
+const cuisineName = c => (CUISINES[c] || CUISINES.other)[1];
+const zone = id => DB.zones.find(z => z.id === id) || { name: id, color: '#888' };
+
+/* ---------------- opening hours ---------------- */
+// hours: [[days, ["HH:MM-HH:MM", ...]], ...]; days "0123456" (0 = Sunday). End before start = runs past midnight.
+function openAt(p, date) {
+  if (!p.hours || !p.hours.length) return { known: false };
+  const day = date.getDay(), t = date.getHours() * 60 + date.getMinutes();
+  const slotsFor = d => p.hours.filter(([ds]) => ds.includes(String(d))).flatMap(([, s]) => s).map(s => { const [a, b] = s.split('-').map(toMin); return [a, b <= a ? b + 1440 : b]; });
+  for (const [a, b] of slotsFor(day)) if (t >= a && t < b) return { known: true, open: true, closes: b, allDay: a === 0 && b === 1440 };
+  const yday = (day + 6) % 7;
+  for (const [a, b] of slotsFor(yday)) if (b > 1440 && t < b - 1440) return { known: true, open: true, closes: b - 1440 };
+  const later = slotsFor(day).filter(([a]) => a > t).sort((x, y) => x[0] - y[0])[0];
+  if (later) return { known: true, open: false, opens: later[0], today: true };
+  for (let i = 1; i <= 7; i++) { const d = (day + i) % 7; const s = slotsFor(d).sort((x, y) => x[0] - y[0])[0]; if (s) return { known: true, open: false, opens: s[0], inDays: i, dayName: DAYN[d] }; }
+  return { known: true, open: false };
+}
+function hoursLabel(p, date = new Date()) {
+  const o = openAt(p, date);
+  if (!o.known) return ['Hours unknown', ''];
+  if (o.open) return [o.allDay ? 'Open 24h' : `Open · till ${fmtTime(o.closes)}`, 'open'];
+  if (o.today) return [`Opens ${fmtTime(o.opens)}`, 'closed'];
+  if (o.inDays === 1) return [`Opens tmr ${fmtTime(o.opens)}`, 'closed'];
+  if (o.inDays) return [`Opens ${o.dayName} ${fmtTime(o.opens)}`, 'closed'];
+  return ['Closed', 'closed'];
+}
+function hoursTable(p) {
+  return [1, 2, 3, 4, 5, 6, 0].map(d => {
+    const s = p.hours.filter(([ds]) => ds.includes(String(d))).flatMap(([, s]) => s);
+    return `<div class="dish"><span>${DAYN[d]}</span><span class="${s.length ? '' : 'faint'}">${s.length ? s.map(x => { const [a, b] = x.split('-').map(toMin); return a === 0 && b === 1440 ? '24 hours' : `${fmtTime(a)}–${fmtTime(b)}`; }).join(', ') : 'Closed'}</span></div>`;
+  }).join('');
+}
+function mealDate() {
+  const d = new Date(); const t = MEALS[prefs.meal][1];
+  if (t) { const [h, m] = t.split(':').map(Number); d.setHours(h, m, 0, 0); }
+  return d;
+}
+
+/* ---------------- family data (derived) ---------------- */
+function latestBy(rows, keyFn) { const m = new Map(); for (const r of rows) m.set(keyFn(r), r); return [...m.values()]; }
+function familyView() {
+  const members = latestBy(fam.members, r => r[0]).map(r => ({ id: r[0], email: r[1], name: r[2] || (r[1] || '').split('@')[0], emoji: r[3] || '🙂' }));
+  const pending = outbox.reduce((a, o) => ((a[o.tab] = a[o.tab] || []).push(o.row), a), {});
+  const allLogs = [...fam.logs, ...(pending.logs || [])];
+  const logs = latestBy(allLogs, r => r[0]).filter(r => r[9] !== '1').map(r => ({ id: r[0], at: r[1], member: r[2], place: r[3], dish: r[4], stars: Number(r[5]) || 0, again: r[6], mode: r[7], note: r[8] }))
+    .sort((a, b) => b.at.localeCompare(a.at));
+  const wants = latestBy([...fam.wants, ...(pending.wants || [])], r => r[0] + '|' + r[1]).filter(r => r[3] === '1').map(r => ({ member: r[0], place: r[1] }));
+  const added = latestBy([...fam.places_added, ...(pending.places_added || [])], r => r[0]).map(r => { try { return JSON.parse(r[3]); } catch { return null; } }).filter(Boolean);
+  for (const m of (pending.members || [])) if (!members.find(x => x.id === m[0])) members.push({ id: m[0], email: m[1], name: m[2], emoji: m[3] });
+  return { members, logs, wants, added };
+}
+let FV = { members: [], logs: [], wants: [], added: [] };
+let PLACES = [], CLUSTERS = [];
+function rebuild() {
+  FV = familyView();
+  CLUSTERS = DB.clusters;
+  PLACES = [...DB.places, ...FV.added.filter(a => !DB.places.find(p => p.id === a.id)).map(a => ({ ...a, family: true }))];
+  const cl = Object.fromEntries(CLUSTERS.map(c => [c.id, c]));
+  for (const p of PLACES) { if (p.cluster && cl[p.cluster]) { const c = cl[p.cluster]; p.lat ??= c.lat; p.lng ??= c.lng; p.zone ??= c.zone; p.address ??= c.address; } p.dishes ||= []; p.hours ||= []; p.tags ||= []; p.modes ||= ['dine', 'takeaway']; }
+}
+const placeById = id => PLACES.find(p => p.id === id);
+const memberById = id => FV.members.find(m => m.id === id) || { id, name: 'Someone', emoji: '🙂' };
+const logsFor = (pid, mid) => FV.logs.filter(l => l.place === pid && (!mid || l.member === mid));
+function triedBy(pid, mids) { return mids.some(m => FV.logs.some(l => l.place === pid && l.member === m)); }
+function avgStars(pid, mids) { const ls = FV.logs.filter(l => l.place === pid && l.stars && (!mids || mids.includes(l.member))); return ls.length ? ls.reduce((a, l) => a + l.stars, 0) / ls.length : null; }
+const eaters = () => (prefs.eaters && prefs.eaters.length ? prefs.eaters : (me ? [me.id] : []));
+const wanted = (pid, mid = me?.id) => FV.wants.some(w => w.place === pid && w.member === mid);
+
+/* ---------------- filters + spin ---------------- */
+function candidates() {
+  const o = origin(), date = mealDate(), ids = eaters(), maxKm = REACH[prefs.reach][1];
+  return PLACES.filter(p => {
+    if (p.status === 'closed') return false;
+    p._d = km(o, p);
+    if (p._d > maxKm) return false;
+    if (prefs.budget.length && !prefs.budget.includes(p.price_band || 1)) return false;
+    if (prefs.mode === 'dine' && !p.modes.includes('dine')) return false;
+    if (prefs.mode === 'takeaway' && !p.modes.includes('takeaway')) return false;
+    if (prefs.cuisines.length && !prefs.cuisines.includes(p.cuisine)) return false;
+    if (prefs.mustOnly && !p.must_try) return false;
+    if (prefs.untried && triedBy(p.id, ids)) return false;
+    if (prefs.openOnly) { const op = openAt(p, date); if (op.known && !op.open) return false; }
+    if (ids.some(m => logsFor(p.id, m).some(l => l.again === 'N' && l.stars <= 2))) return false; // someone vowed never again
+    return true;
+  });
+}
+function weight(p) {
+  const ids = eaters(); let w = 1;
+  const avg = avgStars(p.id, ids);
+  if (avg != null) w += (avg - 3) * 0.6; else w += 0.8;      // untried gets a novelty bonus
+  if (p.must_try) w += 0.5;
+  if (ids.some(m => wanted(p.id, m))) w += 1;
+  w -= Math.min(p._d, 10) * 0.06;
+  return Math.max(0.15, w);
+}
+function pickWeighted(list) { const ws = list.map(weight); let r = Math.random() * ws.reduce((a, b) => a + b, 0); for (let i = 0; i < list.length; i++) { r -= ws[i]; if (r <= 0) return list[i]; } return list[list.length - 1]; }
+function clusterCandidates(cands) {
+  const by = {};
+  for (const p of cands) if (p.cluster) (by[p.cluster] = by[p.cluster] || []).push(p);
+  return Object.entries(by).map(([id, ps]) => ({ c: CLUSTERS.find(c => c.id === id), ps, cuisines: new Set(ps.map(p => p.cuisine)).size }))
+    .filter(x => x.c).sort((a, b) => (b.cuisines * 2 + b.ps.length) - (a.cuisines * 2 + a.ps.length));
+}
+
+/* ---------------- views ---------------- */
+function go(t) {
+  tab = t; document.querySelectorAll('nav.tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === t));
+  if (t !== 'map' && mapObj) { mapObj.remove(); mapObj = null; }
+  render(); window.scrollTo({ top: 0 });
+}
+function render() {
+  rebuild(); renderSync();
+  $('#hello').textContent = me ? `Hi ${me.name || 'there'} ${me.emoji || ''}` : (guest ? 'Browsing as guest' : '');
+  ({ spin: viewSpin, explore: viewExplore, map: viewMap, log: viewLog, passport: viewPassport })[tab]();
+}
+function chipRow(items, isOn, onclick, cls = '') { return `<div class="chips">${items.map(([k, label]) => `<button class="chip ${cls} ${isOn(k) ? 'on' : ''}" onclick="${onclick}('${k}')">${label}</button>`).join('')}</div>`; }
+
+function viewSpin() {
+  const cands = candidates();
+  const people = FV.members.length ? FV.members : (me ? [me] : []);
+  const ids = eaters();
+  const cuisinesHere = [...new Set(PLACES.map(p => p.cuisine))].sort((a, b) => cuisineName(a).localeCompare(cuisineName(b)));
+  const nClusters = clusterCandidates(cands).length;
+  $('#view').innerHTML = `
+  <div class="spin-hero">
+    <div class="row between"><h1>What's for ${MEALS[prefs.meal][0] === 'Now' ? 'makan' : MEALS[prefs.meal][0].toLowerCase()}?</h1></div>
+    <div class="match-count">${prefs.spinMode === 'stall' ? `${cands.length} place${cands.length === 1 ? '' : 's'} match` : `${nClusters} food centre${nClusters === 1 ? '' : 's'} match`} · from ${prefs.useGps && gps ? 'where you are' : esc((prefs.home && prefs.home.name) || DB.home.name)}</div>
+    <div class="reel"><div class="names" id="reel"><div class="name">${lastResult ? esc(lastResult.name || lastResult.c?.name) : 'Tap spin 🎲'}</div></div></div>
+    <button class="spin-btn" onclick="spin()">SPIN</button>
+    <div class="mode-switch"><button class="${prefs.spinMode === 'stall' ? 'on' : ''}" onclick="setP('spinMode','stall')">Pick a stall</button><button class="${prefs.spinMode === 'centre' ? 'on' : ''}" onclick="setP('spinMode','centre')">Pick a centre (groups)</button></div>
+  </div>
+  <div id="result"></div>
+  ${people.length > 1 ? `<div class="filter-label">Who's eating</div>${chipRow(people.map(m => [m.id, `${m.emoji || '🙂'} ${esc(m.name)}`]), k => ids.includes(k), 'toggleEater', 'person')}` : ''}
+  <div class="filter-label">When</div>${chipRow(Object.entries(MEALS).map(([k, v]) => [k, v[0]]), k => prefs.meal === k, 'setMeal')}
+  <div class="filter-label">How far</div>${chipRow(Object.entries(REACH).map(([k, v]) => [k, k === 'walk' ? '🚶 Walkable' : k === 'near' ? '🚌 Short ride' : '🚗 Anywhere']), k => prefs.reach === k, 'setReach')}
+  <div class="filter-label">Budget</div>${chipRow([[1, '$ <$8'], [2, '$$ $8–20'], [3, '$$$ $20–50'], [4, '$$$$ $50+']], k => prefs.budget.includes(+k), 'toggleBudget')}
+  <div class="filter-label">Eat there or tapau</div>${chipRow([['any', 'Either'], ['dine', '🪑 Dine in'], ['takeaway', '🥡 Tapau']], k => prefs.mode === k, 'setMode')}
+  <div class="filter-label">Craving <span class="faint" style="text-transform:none;letter-spacing:0">(none = anything)</span></div>${chipRow(cuisinesHere.map(c => [c, `${CUISINES[c]?.[0] || '🍽️'} ${cuisineName(c)}`]), k => prefs.cuisines.includes(k), 'toggleCuisine')}
+  <div class="card" style="margin-top:16px;padding:6px 14px">
+    ${toggleRow('openOnly', 'Only places open at that time')}
+    ${toggleRow('untried', ids.length > 1 ? 'Only places none of us have tried' : "Only places I haven't tried")}
+    ${toggleRow('mustOnly', 'Must-try places only ⭐')}
+  </div>`;
+  if (lastResult) showResult(lastResult, false);
+}
+function toggleRow(k, label) { return `<div class="toggle"><span>${label}</span><button class="switch ${prefs[k] ? 'on' : ''}" onclick="flip('${k}')" aria-label="${esc(label)}"></button></div>`; }
+function setP(k, v) { prefs[k] = v; savePrefs(); lastResult = null; render(); }
+function flip(k) { prefs[k] = !prefs[k]; savePrefs(); if (k === 'useGps' && prefs[k]) watchGps(); render(); }
+let gpsWatch = null;
+function watchGps() {
+  if (!navigator.geolocation || gpsWatch != null) return;
+  gpsWatch = navigator.geolocation.watchPosition(p => { const first = !gps; gps = { lat: p.coords.latitude, lng: p.coords.longitude }; if (first && tab !== 'map') render(); }, () => toast('Location is off — using home instead'), { maximumAge: 120000 });
+}
+function setMeal(k) { prefs.meal = k; savePrefs(); render(); }
+function setReach(k) { prefs.reach = k; savePrefs(); render(); }
+function setMode(k) { prefs.mode = k; savePrefs(); render(); }
+function toggleBudget(k) { k = +k; prefs.budget = prefs.budget.includes(k) ? prefs.budget.filter(x => x !== k) : [...prefs.budget, k]; savePrefs(); render(); }
+function toggleCuisine(k) { prefs.cuisines = prefs.cuisines.includes(k) ? prefs.cuisines.filter(x => x !== k) : [...prefs.cuisines, k]; savePrefs(); render(); }
+function toggleEater(k) { let e = eaters(); e = e.includes(k) ? e.filter(x => x !== k) : [...e, k]; prefs.eaters = e.length ? e : null; savePrefs(); render(); }
+
+function spin() {
+  const cands = candidates();
+  let winner, pool;
+  if (prefs.spinMode === 'centre') {
+    const cc = clusterCandidates(cands);
+    if (!cc.length) return toast('No food centre matches — loosen a filter');
+    pool = cc.map(x => x.c.name);
+    const top = cc.slice(0, 3); winner = top[Math.floor(Math.random() * top.length)];
+  } else {
+    if (!cands.length) return toast('Nothing matches — loosen a filter');
+    pool = cands.map(p => p.name); winner = pickWeighted(cands);
+  }
+  const reel = $('#reel'), reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const seq = []; for (let i = 0; i < 14; i++) seq.push(pool[Math.floor(Math.random() * pool.length)]);
+  seq.push(winner.name || winner.c.name);
+  reel.innerHTML = seq.map(n => `<div class="name">${esc(n)}</div>`).join('');
+  reel.style.transition = 'none'; reel.style.transform = 'translateY(0)';
+  requestAnimationFrame(() => {
+    reel.style.transition = reduce ? 'none' : 'transform 1.4s cubic-bezier(.12,.75,.2,1)';
+    reel.style.transform = `translateY(-${(seq.length - 1) * 64}px)`;
+  });
+  if (navigator.vibrate) navigator.vibrate(20);
+  setTimeout(() => { lastResult = winner; showResult(winner, true); if (navigator.vibrate) navigator.vibrate([30, 40, 30]); }, reduce ? 0 : 1450);
+}
+function showResult(w, scroll) {
+  const box = $('#result'); if (!box) return;
+  box.innerHTML = w.c ? centreResult(w) : placeResult(w);
+  if (scroll) box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function distanceLine(p) {
+  const d = km(origin(), p), m = nearestMrt(p);
+  const parts = [d < 1.3 ? `🚶 ${walkMin(d)} min walk` : `🚗 ${driveMin(d)} min drive`, `${d.toFixed(1)} km`];
+  if (m && m.d < 1.5) parts.push(`🚇 ${m.name.replace(/ \(.*/, '')} ${walkMin(m.d)} min`);
+  return parts.join(' · ');
+}
+function placeResult(p) {
+  const [hl, hc] = hoursLabel(p, mealDate()); const c = p.cluster && CLUSTERS.find(x => x.id === p.cluster);
+  const fam = FV.logs.filter(l => l.place === p.id);
+  return `<div class="card result">
+    <div class="head"><div class="big-emoji">${emojiOf(p)}</div><div class="grow">
+      <h2>${esc(p.name)}</h2>${p.name_zh ? `<div class="muted small">${esc(p.name_zh)}</div>` : ''}
+      <div class="meta"><span>${c ? esc(c.name) : esc(p.address || '')}${p.unit ? ' · ' + esc(p.unit) : ''}</span></div>
+    </div></div>
+    <div class="row wrap" style="margin-top:10px;gap:6px"><span class="badge ${hc}">${hl}</span><span class="badge">${PRICE[p.price_band || 1]}</span><span class="badge">${CUISINES[p.cuisine]?.[1] || 'Food'}</span>${p.must_try ? '<span class="badge must">⭐ Must-try</span>' : ''}${triedBy(p.id, eaters()) ? '' : '<span class="badge new">New to you</span>'}</div>
+    <div class="small muted" style="margin-top:8px">${distanceLine(p)}</div>
+    <div style="margin-top:10px">${p.dishes.map(dishRow).join('')}</div>
+    ${fam.length ? `<div class="fam-scores">${famSummary(p.id)}</div>` : ''}
+    <div class="actions">
+      <a class="btn dark" href="${dirUrl(p)}" target="_blank" rel="noopener">🧭 Let's go</a>
+      <button class="btn" onclick="spin()">🎲 Spin again</button>
+      <button class="btn" onclick="openPlace('${p.id}')">Details</button>
+      <button class="btn" onclick="openLog('${p.id}')">📝 Log it</button>
+    </div></div>`;
+}
+function centreResult(x) {
+  const groups = {}; for (const p of x.ps) (groups[p.cuisine] = groups[p.cuisine] || []).push(p);
+  return `<div class="card result">
+    <div class="head"><div class="big-emoji">🏮</div><div class="grow"><h2>${esc(x.c.name)}</h2><div class="small muted">${x.ps.length} matching stalls · ${x.cuisines} kinds of food</div></div></div>
+    <div class="small muted" style="margin-top:8px">${distanceLine(x.c)}</div>
+    <div style="margin-top:10px">${Object.entries(groups).map(([c, ps]) => `<div class="dish"><span>${CUISINES[c]?.[0] || '🍽️'} ${cuisineName(c)}</span><span class="muted" style="text-align:right">${ps.map(p => `<a href="#" onclick="event.preventDefault();openPlace('${p.id}')">${esc(p.name)}</a>`).join(', ')}</span></div>`).join('')}</div>
+    <div class="actions"><a class="btn dark" href="${dirUrl(x.c)}" target="_blank" rel="noopener">🧭 Let's go</a><button class="btn" onclick="openCluster('${x.c.id}')">All stalls</button></div></div>`;
+}
+const dishRow = d => `<div class="dish"><span>${esc(d.name)}</span><span class="muted">${d.price ? '$' + d.price.toFixed(2) : ''}${d.price_note ? `<span class="faint tiny"> ${esc(d.price_note)}</span>` : ''}</span></div>`;
+function famSummary(pid) {
+  const per = {}; for (const l of FV.logs.filter(l => l.place === pid)) if (!per[l.member]) per[l.member] = l;
+  return Object.values(per).map(l => { const m = memberById(l.member); return `<span class="badge">${m.emoji} ${esc(m.name)} ${l.stars ? '★' + l.stars : ''}${l.again === 'Y' ? ' 🔁' : l.again === 'N' ? ' 🚫' : ''}</span>`; }).join('');
+}
+function dirUrl(p) {
+  const d = km(origin(), p); const mode = d < 1.3 ? 'walking' : 'driving';
+  return `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}&travelmode=${mode}`;
+}
+
+/* ---------- Explore ---------- */
+let exploreSeg = 'centres', exploreQ = '';
+function viewExplore() {
+  const segs = [['centres', 'Food centres'], ['places', 'All places'], ['wants', 'Want to try']];
+  $('#view').innerHTML = `<h1 style="margin-bottom:12px">Explore</h1>
+    <div class="search"><input id="q" placeholder="Search stalls, dishes, places…" value="${esc(exploreQ)}" oninput="exploreQ=this.value;exploreList()"></div>
+    <div class="seg" style="margin-top:12px">${segs.map(([k, l]) => `<button class="${exploreSeg === k ? 'on' : ''}" onclick="exploreSeg='${k}';viewExplore()">${l}</button>`).join('')}</div>
+    <div id="exList" style="margin-top:14px"></div>`;
+  exploreList();
+}
+function matchQ(p, q) { if (!q) return true; q = q.toLowerCase(); return [p.name, p.name_zh, p.cuisine, cuisineName(p.cuisine), ...(p.dishes || []).map(d => d.name), p.address].some(s => s && String(s).toLowerCase().includes(q)); }
+function placeRow(p) {
+  const [hl, hc] = hoursLabel(p); const d = km(origin(), p); const mine = me && logsFor(p.id, me.id)[0];
+  return `<div class="pcard" onclick="openPlace('${p.id}')"><div class="pemoji">${emojiOf(p)}</div><div class="grow">
+    <div class="pname ellipsis">${esc(p.name)}</div>
+    <div class="meta"><span class="badge ${hc}">${hl}</span><span>${PRICE[p.price_band || 1]}</span><span>${d.toFixed(1)} km</span>${p.unit && p.cluster ? `<span>${esc(p.unit)}</span>` : ''}</div>
+    <div class="meta">${p.dishes[0] ? `<span class="ellipsis">${esc(p.dishes.map(x => x.name).join(' · '))}</span>` : '<span class="faint">No dish info yet</span>'}</div>
+  </div><div style="text-align:right;flex:none">${p.must_try ? '<div>⭐</div>' : ''}${mine ? `<span class="badge tried">★${mine.stars}</span>` : ''}${p.family ? '<div class="tiny faint">family-added</div>' : ''}</div></div>`;
+}
+function exploreList() {
+  const box = $('#exList'); const q = exploreQ.trim();
+  const o = origin();
+  if (exploreSeg === 'centres') {
+    const rows = CLUSTERS.map(c => ({ c, ps: PLACES.filter(p => p.cluster === c.id), d: km(o, c) })).filter(x => !q || x.c.name.toLowerCase().includes(q.toLowerCase()) || x.ps.some(p => matchQ(p, q))).sort((a, b) => a.d - b.d);
+    const solo = PLACES.filter(p => !p.cluster && matchQ(p, q)).sort((a, b) => km(o, a) - km(o, b));
+    box.innerHTML = rows.map(({ c, ps, d }) => {
+      const openN = ps.filter(p => openAt(p, new Date()).open).length, total = c.stalls_total || ps.length;
+      const tried = me ? ps.filter(p => logsFor(p.id, me.id).length).length : 0;
+      return `<div class="card" style="margin-bottom:10px;cursor:pointer" onclick="openCluster('${c.id}')">
+        <div class="row between"><div class="grow"><h3>${esc(c.name)}</h3><div class="small muted">${d.toFixed(1)} km · ${openN} open now${tried ? ` · you've tried ${tried}` : ''}</div></div><span class="badge" style="background:${zone(c.zone).color}22;color:${zone(c.zone).color}">${esc(zone(c.zone).name)}</span></div>
+        <div class="coverage"><i style="width:${Math.min(100, ps.length / total * 100)}%"></i></div>
+        <div class="tiny faint" style="margin-top:5px">${ps.length} of ~${total} stalls mapped</div></div>`;
+    }).join('') + (solo.length ? `<div class="section-title"><h2>Restaurants &amp; cafés</h2></div><div class="card list">${solo.map(placeRow).join('')}</div>` : '');
+  } else {
+    let ps = PLACES.filter(p => matchQ(p, q));
+    if (exploreSeg === 'wants') ps = ps.filter(p => FV.wants.some(w => w.place === p.id));
+    ps.sort((a, b) => km(o, a) - km(o, b));
+    box.innerHTML = ps.length ? `<div class="card list">${ps.map(placeRow).join('')}</div>` : `<div class="empty"><span class="e">${exploreSeg === 'wants' ? '🔖' : '🤷'}</span>${exploreSeg === 'wants' ? 'Nothing bookmarked yet. Tap “Want to try” on any place.' : 'No matches.'}</div>`;
+  }
+}
+
+/* ---------- sheets: place / cluster ---------- */
+function sheet(html) {
+  $('#sheetRoot').innerHTML = `<div class="sheet-wrap" onclick="if(event.target===this)closeSheet()"><div class="sheet"><div class="grab"></div><button class="iconbtn close" onclick="closeSheet()" aria-label="Close">✕</button>${html}</div></div>`;
+  document.body.style.overflow = 'hidden';
+}
+function closeSheet() { $('#sheetRoot').innerHTML = ''; document.body.style.overflow = ''; }
+function openPlace(id) {
+  const p = placeById(id); if (!p) return;
+  const [hl, hc] = hoursLabel(p); const c = p.cluster && CLUSTERS.find(x => x.id === p.cluster);
+  const logs = FV.logs.filter(l => l.place === id);
+  const src = (p.sources || []).map(s => DB.sources[s]).filter(Boolean);
+  sheet(`<div class="row" style="gap:14px;margin-right:46px"><div class="big-emoji pemoji" style="width:60px;height:60px;font-size:32px">${emojiOf(p)}</div><div class="grow"><h2>${esc(p.name)}</h2>${p.name_zh ? `<div class="muted small">${esc(p.name_zh)}</div>` : ''}</div></div>
+    <div class="row wrap" style="margin-top:12px;gap:6px"><span class="badge ${hc}">${hl}</span><span class="badge">${PRICE[p.price_band || 1]}</span><span class="badge">${cuisineName(p.cuisine)}</span>${p.must_try ? '<span class="badge must">⭐ Must-try</span>' : ''}${p.modes.includes('dine') ? '<span class="badge">🪑 Dine-in</span>' : ''}${p.modes.includes('takeaway') ? '<span class="badge">🥡 Tapau</span>' : ''}${p.travels_well === true ? '<span class="badge">Travels well</span>' : p.travels_well === false ? '<span class="badge">Best eaten there</span>' : ''}${(p.diet || []).map(d => `<span class="badge">${esc(d)}</span>`).join('')}</div>
+    <div class="card" style="margin-top:14px">
+      <div class="small">${c ? `<a href="#" onclick="event.preventDefault();openCluster('${c.id}')">${esc(c.name)}</a>` : esc(p.address || '')}${p.unit ? ' · ' + esc(p.unit) : ''}</div>
+      <div class="small muted" style="margin-top:4px">${distanceLine(p)}</div>
+      ${p.note ? `<div class="small" style="margin-top:8px">💡 ${esc(p.note)}</div>` : ''}
+    </div>
+    <div class="actions"><a class="btn dark" href="${dirUrl(p)}" target="_blank" rel="noopener">🧭 Directions</a><button class="btn primary" onclick="openLog('${p.id}')">📝 Log a meal</button>
+      <button class="btn" onclick="toggleWant('${p.id}')">${wanted(p.id) ? '🔖 Bookmarked' : '🔖 Want to try'}</button>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name + ' ' + (p.address || ''))}" target="_blank" rel="noopener">📍 Google Maps</a></div>
+    ${p.dishes.length ? `<div class="section-title"><h2>What to order</h2></div><div class="card">${p.dishes.map(dishRow).join('')}</div>` : ''}
+    <div class="section-title"><h2>Family says</h2><span class="small faint">${logs.length} log${logs.length === 1 ? '' : 's'}</span></div>
+    <div class="card">${logs.length ? logs.map(feedItem).join('') : '<div class="empty" style="padding:8px"><span class="e">🍽️</span>Nobody has logged this yet. Be the first.</div>'}</div>
+    ${p.hours.length ? `<div class="section-title"><h2>Hours</h2></div><div class="card">${hoursTable(p)}</div>` : ''}
+    <div class="tiny faint" style="margin-top:14px">${p.family ? 'Added by the family.' : `Info last checked ${esc(p.verified || '—')}. Sources: ${src.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> (${esc(s.date)})`).join('; ')}`}. Hours change — if something's wrong, note it when you log.</div>`);
+}
+function openCluster(id) {
+  const c = CLUSTERS.find(x => x.id === id); if (!c) return;
+  const ps = PLACES.filter(p => p.cluster === id).sort((a, b) => (openAt(b, new Date()).open - openAt(a, new Date()).open) || a.name.localeCompare(b.name));
+  const total = c.stalls_total || ps.length;
+  sheet(`<div style="margin-right:46px"><span class="badge" style="background:${zone(c.zone).color}22;color:${zone(c.zone).color}">${esc(zone(c.zone).name)}</span><h2 style="margin-top:6px">${esc(c.name)}</h2><div class="small muted">${esc(c.address)}</div></div>
+    <div class="small muted" style="margin-top:6px">${distanceLine(c)}</div>
+    ${c.notes ? `<div class="small" style="margin-top:8px">💡 ${esc(c.notes)}</div>` : ''}
+    <div class="card" style="margin-top:12px"><div class="row between"><b>${ps.length} of ~${total} stalls mapped</b><span class="small faint">${Math.round(ps.length / total * 100)}%</span></div><div class="coverage"><i style="width:${Math.min(100, ps.length / total * 100)}%"></i></div>
+      <div class="small muted" style="margin-top:8px">Spotted a stall that isn't here? Add it — you get the 🗺️ Mapper badge.</div>
+      <button class="btn sm" style="margin-top:10px" onclick="openAddStall('${c.id}')">＋ Add a stall</button></div>
+    <div class="actions"><a class="btn dark" href="${dirUrl(c)}" target="_blank" rel="noopener">🧭 Directions</a><button class="btn" onclick="closeSheet();prefs.spinMode='stall';lastResult=null;go('spin')">🎲 Spin</button></div>
+    <div class="section-title"><h2>Stalls</h2></div>
+    <div class="card list">${ps.length ? ps.map(placeRow).join('') : '<div class="empty"><span class="e">🗺️</span>No stalls mapped yet.</div>'}</div>`);
+}
+function openAddStall(cid) {
+  if (!me) return needSignIn();
+  const c = CLUSTERS.find(x => x.id === cid);
+  sheet(`<h2 style="margin-right:46px">Add a stall</h2><div class="small muted">${esc(c.name)}</div>
+    <div class="stack" style="margin-top:14px">
+      <input id="as_name" placeholder="Stall name (as on the signboard)">
+      <div class="row"><input id="as_unit" placeholder="Unit e.g. #01-23" style="flex:1"><select id="as_cuisine" style="flex:1">${Object.entries(CUISINES).map(([k, v]) => `<option value="${k}">${v[0]} ${v[1]}</option>`).join('')}</select></div>
+      <div class="row"><input id="as_dish" placeholder="Main dish" style="flex:2"><input id="as_price" placeholder="$" inputmode="decimal" style="flex:1"></div>
+      <div class="seg" id="as_band">${[1, 2, 3, 4].map(b => `<button class="${b === 1 ? 'on' : ''}" data-v="${b}" onclick="segPick(this)">${PRICE[b]}</button>`).join('')}</div>
+      <input id="as_hours" placeholder="Hours if you saw them, e.g. 7am–2pm, closed Mon">
+      <div id="as_err" class="small" style="color:var(--chilli)"></div>
+      <button class="btn primary block" onclick="saveStall('${cid}')">Add to the map</button>
+    </div>`);
+}
+function segPick(b) { b.parentElement.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b)); }
+function saveStall(cid) {
+  const name = $('#as_name').value.trim(); if (!name) { $('#as_err').textContent = 'Enter the stall name first'; return; }
+  const price = parseFloat($('#as_price').value);
+  const p = { id: 'f-' + uid(), cluster: cid, name, unit: $('#as_unit').value.trim(), cuisine: $('#as_cuisine').value, price_band: +$('#as_band .on').dataset.v,
+    dishes: $('#as_dish').value.trim() ? [{ name: $('#as_dish').value.trim(), ...(isFinite(price) ? { price } : {}) }] : [], hours: [], hours_note: $('#as_hours').value.trim(), added_by: me.id, verified: new Date().toISOString().slice(0, 7) };
+  enqueue('places_added', [p.id, new Date().toISOString(), me.id, JSON.stringify(p)]);
+  toast('Stall added — 🗺️ Mapper badge earned'); openCluster(cid);
+}
+function toggleWant(pid) {
+  if (!me) return needSignIn();
+  enqueue('wants', [me.id, pid, new Date().toISOString(), wanted(pid) ? '0' : '1']);
+  toast(wanted(pid) ? 'Bookmarked 🔖' : 'Removed bookmark'); openPlace(pid);
+}
+
+/* ---------- Log ---------- */
+function feedItem(l) {
+  const m = memberById(l.member), p = placeById(l.place);
+  const when = new Date(l.at).toLocaleDateString('en-SG', { day: 'numeric', month: 'short' });
+  return `<div class="feed-item"><div class="avatar">${m.emoji}</div><div class="grow">
+    <div class="small"><b>${esc(m.name)}</b> ${l.stars ? '★'.repeat(l.stars) : ''} ${l.again === 'Y' ? '· would queue again' : l.again === 'N' ? '· not again' : ''}</div>
+    <div class="small">${p ? `<a href="#" onclick="event.preventDefault();openPlace('${p.id}')">${esc(p.name)}</a>` : 'A place'}${l.dish ? ' — ' + esc(l.dish) : ''}</div>
+    ${l.note ? `<div class="small muted">“${esc(l.note)}”</div>` : ''}
+    <div class="tiny faint">${when}${l.mode ? ' · ' + (l.mode === 'dine' ? 'dine-in' : 'tapau') : ''}${me && l.member === me.id ? ` · <a href="#" onclick="event.preventDefault();openLog('${l.place}','${l.id}')">edit</a>` : ''}</div>
+  </div></div>`;
+}
+function viewLog() {
+  const mineN = me ? FV.logs.filter(l => l.member === me.id).length : 0;
+  $('#view').innerHTML = `<h1>Log</h1><p class="muted" style="margin:4px 0 14px">Ate somewhere? Rate it — it trains the spinner for the whole family.</p>
+    <button class="btn primary block" style="padding:15px;font-size:16px" onclick="pickPlaceToLog()">📝 Log a meal</button>
+    <div class="section-title"><h2>Family feed</h2><span class="small faint">${FV.logs.length} meals · you ${mineN}</span></div>
+    <div class="card">${FV.logs.length ? FV.logs.slice(0, 60).map(feedItem).join('') : '<div class="empty"><span class="e">🥢</span>No meals logged yet.</div>'}</div>`;
+}
+function pickPlaceToLog() {
+  if (!me) return needSignIn();
+  const o = origin(); const recent = [...new Set(FV.logs.filter(l => l.member === me.id).map(l => l.place))].slice(0, 5);
+  sheet(`<h2 style="margin-right:46px">Where did you eat?</h2>
+    <div class="search" style="margin-top:12px"><input id="lq" placeholder="Search…" oninput="logPickList()"></div>
+    <div id="lpl" style="margin-top:12px"></div>`);
+  window._recent = recent; logPickList();
+}
+function logPickList() {
+  const q = ($('#lq')?.value || '').trim(); const o = origin();
+  const ps = PLACES.filter(p => matchQ(p, q)).sort((a, b) => (window._recent.indexOf(b.id) > -1) - (window._recent.indexOf(a.id) > -1) || km(o, a) - km(o, b)).slice(0, 40);
+  $('#lpl').innerHTML = `<div class="card list">${ps.map(p => `<div class="pcard" onclick="openLog('${p.id}')"><div class="pemoji">${emojiOf(p)}</div><div class="grow"><div class="pname ellipsis">${esc(p.name)}</div><div class="meta">${esc(p.cluster ? CLUSTERS.find(c => c.id === p.cluster)?.name : p.address || '')}</div></div></div>`).join('')}</div>
+    <div class="small muted" style="margin-top:10px;text-align:center">Not listed? Open its food centre in Explore and add the stall.</div>`;
+}
+let logDraft = null;
+function openLog(pid, editId) {
+  if (!me) return needSignIn();
+  const p = placeById(pid); const prev = editId && FV.logs.find(l => l.id === editId);
+  logDraft = prev ? { id: prev.id, at: prev.at, place: pid, stars: prev.stars, again: prev.again, mode: prev.mode, dish: prev.dish, note: prev.note }
+    : { id: uid(), at: new Date().toISOString(), place: pid, stars: 0, again: '', mode: p.modes.includes('dine') ? 'dine' : 'takeaway', dish: '', note: '' };
+  sheet(`<h2 style="margin-right:46px">${esc(p.name)}</h2><div class="small muted">${prev ? 'Edit your log' : 'How was it?'}</div>
+    <div class="stack" style="margin-top:16px">
+      <div><div class="filter-label" style="margin-top:0">What did you have</div>
+        <input id="lg_dish" list="dl_dishes" placeholder="Dish" value="${esc(logDraft.dish)}"><datalist id="dl_dishes">${p.dishes.map(d => `<option value="${esc(d.name)}">`).join('')}</datalist></div>
+      <div><div class="filter-label">Rating</div><div class="stars" id="lg_stars">${[1, 2, 3, 4, 5].map(n => `<button class="${n <= logDraft.stars ? 'on' : ''}" onclick="setStars(${n})" aria-label="${n} stars">⭐</button>`).join('')}</div></div>
+      <div><div class="filter-label">Would you queue for it again?</div><div class="seg" id="lg_again">${[['Y', '🔁 Yes'], ['M', '🤷 Maybe'], ['N', '🚫 No']].map(([k, l]) => `<button class="${logDraft.again === k ? 'on' : ''}" onclick="logDraft.again='${k}';segPick(this)">${l}</button>`).join('')}</div></div>
+      <div><div class="filter-label">Ate there or tapau'd</div><div class="seg">${[['dine', '🪑 Dine-in'], ['takeaway', '🥡 Tapau']].map(([k, l]) => `<button class="${logDraft.mode === k ? 'on' : ''}" onclick="logDraft.mode='${k}';segPick(this)">${l}</button>`).join('')}</div></div>
+      <textarea id="lg_note" rows="2" placeholder="Notes — queue, portion, what changed, hours wrong?">${esc(logDraft.note)}</textarea>
+      <div id="lg_err" class="small" style="color:var(--chilli)"></div>
+      <button class="btn primary block" onclick="saveLog()">${prev ? 'Save changes' : 'Save log'}</button>
+      ${prev ? `<button class="btn ghost block" onclick="deleteLog()">Delete this log</button>` : ''}
+    </div>`);
+}
+function setStars(n) { logDraft.stars = n; document.querySelectorAll('#lg_stars button').forEach((b, i) => b.classList.toggle('on', i < n)); $('#lg_err').textContent = ''; }
+function saveLog() {
+  if (!logDraft.stars) { $('#lg_err').textContent = 'Tap a star rating first'; return; }
+  const before = badgeState(me.id);
+  const d = logDraft; d.dish = $('#lg_dish').value.trim(); d.note = $('#lg_note').value.trim();
+  enqueue('logs', [d.id, d.at, me.id, d.place, d.dish, String(d.stars), d.again, d.mode, d.note, '0']);
+  closeSheet(); rebuild();
+  const newB = badgeState(me.id).filter(b => b.got && !before.find(x => x.id === b.id).got);
+  toast(newB.length ? `New badge: ${newB[0].e} ${newB[0].name}!` : 'Logged ✓');
+  render();
+}
+function deleteLog() { const d = logDraft; enqueue('logs', [d.id, d.at, me.id, d.place, d.dish, String(d.stars), d.again, d.mode, d.note, '1']); closeSheet(); toast('Deleted'); render(); }
+
+/* ---------- Passport ---------- */
+function statsFor(mid) {
+  const logs = FV.logs.filter(l => l.member === mid);
+  const places = [...new Set(logs.map(l => l.place))].map(placeById).filter(Boolean);
+  const centres = new Set(places.filter(p => p.cluster).map(p => p.cluster));
+  const cuisines = new Set(places.map(p => p.cuisine));
+  const zones = new Set(places.map(p => p.zone));
+  const visits = {}; logs.forEach(l => visits[l.place] = (visits[l.place] || 0) + 1);
+  const hourOf = l => new Date(l.at).getHours();
+  // streak: consecutive weeks (up to now) with at least one new place
+  const firstSeen = {}; [...logs].reverse().forEach(l => { firstSeen[l.place] ??= l.at; });
+  const wk = d => Math.floor((new Date(d).getTime() - 4 * 864e5) / (7 * 864e5));
+  const newWeeks = new Set(Object.values(firstSeen).map(wk)); let streak = 0, w = wk(new Date());
+  if (!newWeeks.has(w)) w--;            // this week isn't over yet, so the streak can still be alive from last week
+  while (newWeeks.has(w)) { streak++; w--; }
+  return { logs, places, centres, cuisines, zones, visits, streak,
+    hawker: places.filter(p => p.cluster).length, must: places.filter(p => p.must_try).length,
+    owl: logs.some(l => hourOf(l) >= 22 || hourOf(l) < 3), bird: logs.some(l => hourOf(l) >= 4 && hourOf(l) < 8),
+    mapper: FV.added.some(a => a.added_by === mid), regular: Object.values(visits).some(v => v >= 5), rated: logs.filter(l => l.stars).length };
+}
+function badgeState(mid) {
+  const s = statsFor(mid);
+  return [
+    { id: 'first', e: '🥢', name: 'First bite', how: 'Log your first meal', got: s.logs.length >= 1 },
+    { id: 'ex10', e: '🧭', name: 'Explorer', how: 'Try 10 different places', got: s.places.length >= 10 },
+    { id: 'ex25', e: '🏅', name: 'Food scout', how: 'Try 25 different places', got: s.places.length >= 25 },
+    { id: 'stamps', e: '🏮', name: 'Stamp collector', how: 'Eat at 3 food centres', got: s.centres.size >= 3 },
+    { id: 'hero', e: '🦸', name: 'Hawker hero', how: 'Try 15 hawker stalls', got: s.hawker >= 15 },
+    { id: 'bingo', e: '🎯', name: 'Bingo!', how: 'Fill 8 squares of cuisine bingo', got: BINGO.filter(c => s.cuisines.has(c)).length >= 8 },
+    { id: 'pilgrim', e: '⭐', name: 'Pilgrim', how: 'Try 3 must-try places', got: s.must >= 3 },
+    { id: 'zones', e: '🚗', name: 'Zone hopper', how: 'Eat in 3 different zones', got: s.zones.size >= 3 },
+    { id: 'owl', e: '🦉', name: 'Night owl', how: 'Log a meal after 10pm', got: s.owl },
+    { id: 'bird', e: '🐓', name: 'Early bird', how: 'Log a meal before 8am', got: s.bird },
+    { id: 'regular', e: '🔁', name: 'The regular', how: 'Go back to one place 5 times', got: s.regular },
+    { id: 'mapper', e: '🗺️', name: 'Mapper', how: 'Add a stall to the map', got: s.mapper },
+    { id: 'critic', e: '🧐', name: 'Critic', how: 'Rate 20 meals', got: s.rated >= 20 },
+    { id: 'streak', e: '🔥', name: 'On a roll', how: 'Try somewhere new 3 weeks running', got: s.streak >= 3 },
+  ];
+}
+let passportWho = null;
+function viewPassport() {
+  const people = FV.members.length ? FV.members : (me ? [me] : []);
+  const who = passportWho || me?.id; const person = people.find(m => m.id === who) || me;
+  if (!person) { $('#view').innerHTML = `<h1>Passport</h1><div class="empty"><span class="e">🛂</span>Sign in to start collecting stamps.<br><br><button class="btn primary" onclick="signIn()">Sign in with Google</button></div>${settingsCard()}`; return; }
+  const s = statsFor(person.id); const badges = badgeState(person.id);
+  const zoneRows = DB.zones.map(z => { const tot = PLACES.filter(p => p.zone === z.id).length; const got = s.places.filter(p => p.zone === z.id).length; return { z, tot, got }; });
+  const lb = people.map(m => ({ m, s: statsFor(m.id) })).sort((a, b) => b.s.places.length - a.s.places.length);
+  const disagree = disagreements();
+  $('#view').innerHTML = `<h1>Passport</h1>
+    ${people.length > 1 ? `<div style="margin-top:12px">${chipRow(people.map(m => [m.id, `${m.emoji} ${esc(m.name)}`]), k => k === person.id, 'setPassport', 'person')}</div>` : ''}
+    <div class="stat-grid" style="margin-top:14px">
+      <div class="stat"><b>${s.places.length}</b><span>places tried</span></div>
+      <div class="stat"><b>${s.centres.size}</b><span>centres stamped</span></div>
+      <div class="stat"><b>${s.streak}🔥</b><span>week streak</span></div>
+    </div>
+    <div class="section-title"><h2>Zones</h2><span class="small faint">places tried / mapped</span></div>
+    <div class="card">${zoneRows.map(({ z, tot, got }) => `<div class="zonebar"><span style="width:96px" class="small">${esc(z.name)}</span><div class="bar"><i style="width:${tot ? got / tot * 100 : 0}%;background:${z.color}"></i></div><span class="small muted" style="width:52px;text-align:right">${tot ? `${got}/${tot}` : 'soon'}</span></div>`).join('')}</div>
+    <div class="section-title"><h2>Cuisine bingo</h2><span class="small faint">${BINGO.filter(c => s.cuisines.has(c)).length}/16</span></div>
+    <div class="bingo">${BINGO.map(c => `<div class="${s.cuisines.has(c) ? 'got' : ''}"><b>${CUISINES[c][0]}</b>${CUISINES[c][1]}</div>`).join('')}</div>
+    <div class="section-title"><h2>Badges</h2><span class="small faint">${badges.filter(b => b.got).length}/${badges.length}</span></div>
+    <div class="badges">${badges.map(b => `<div class="bdg ${b.got ? 'got' : ''}"><span class="e">${b.e}</span><b>${b.name}</b><span class="faint">${b.how}</span></div>`).join('')}</div>
+    ${people.length > 1 ? `<div class="section-title"><h2>Family leaderboard</h2></div><div class="card">${lb.map(({ m, s }, i) => `<div class="lb"><span class="display" style="width:20px;font-weight:800">${i + 1}</span><div class="avatar">${m.emoji}</div><div class="grow"><b>${esc(m.name)}</b><div class="tiny faint">${s.centres.size} centres · ${s.logs.length} meals · ${badgeState(m.id).filter(b => b.got).length} badges</div></div><b class="display" style="font-size:20px">${s.places.length}</b></div>`).join('')}</div>` : ''}
+    ${disagree.length ? `<div class="section-title"><h2>Hot takes 🌶️</h2><span class="small faint">where the family disagrees</span></div><div class="card">${disagree.slice(0, 6).map(d => `<div class="dish" onclick="openPlace('${d.p.id}')" style="cursor:pointer"><span>${esc(d.p.name)}</span><span>${d.r.map(r => `${memberById(r.member).emoji}★${r.stars}`).join(' ')}</span></div>`).join('')}</div>` : ''}
+    ${settingsCard()}`;
+}
+function setPassport(id) { passportWho = id; render(); }
+function disagreements() {
+  const out = [];
+  for (const p of PLACES) { const per = {}; FV.logs.filter(l => l.place === p.id && l.stars).forEach(l => { if (!per[l.member]) per[l.member] = l; }); const r = Object.values(per); if (r.length > 1) { const st = r.map(x => x.stars); if (Math.max(...st) - Math.min(...st) >= 2) out.push({ p, r, gap: Math.max(...st) - Math.min(...st) }); } }
+  return out.sort((a, b) => b.gap - a.gap);
+}
+function settingsCard() {
+  const home = prefs.home || DB.home;
+  return `<div class="section-title"><h2>Settings</h2></div><div class="card stack">
+    ${me ? `<div class="row between"><div class="row"><div class="avatar">${me.emoji || '🙂'}</div><div><b>${esc(me.name || '')}</b><div class="tiny faint">${esc(me.email || '')}</div></div></div><button class="btn sm" onclick="openProfile()">Edit</button></div>` : ''}
+    <div class="row between"><div><b class="small">Distances from</b><div class="tiny faint">${prefs.useGps ? 'Your current location' : esc(home.name)}</div></div><div class="row"><button class="btn sm" onclick="setHomeHere()">Set home here</button></div></div>
+    ${toggleRow('useGps', 'Use my live location when available')}
+    ${familyId ? `<div class="row between"><div><b class="small">Family data</b><div class="tiny faint">Google Sheet · ${FV.members.length} member${FV.members.length === 1 ? '' : 's'}</div></div><a class="btn sm" href="https://docs.google.com/spreadsheets/d/${familyId}/edit" target="_blank" rel="noopener">Open sheet</a></div>
+      <button class="btn block" onclick="copyInvite()">👨‍👩‍👧 Copy family invite link</button>` : ''}
+    <div class="tiny faint">Places data updated ${esc(DB.updated)} · ${PLACES.length} places, ${CLUSTERS.length} centres. ${outbox.length ? outbox.length + ' change(s) waiting to sync.' : ''}</div>
+    ${me ? `<button class="btn ghost block" onclick="signOut()">Sign out</button>` : `<button class="btn primary block" onclick="signIn()">Sign in with Google</button>`}
+  </div>`;
+}
+function setHomeHere() {
+  if (!navigator.geolocation) return toast('Location not available');
+  navigator.geolocation.getCurrentPosition(pos => { prefs.home = { name: 'Home (set on this device)', lat: pos.coords.latitude, lng: pos.coords.longitude }; savePrefs(); toast('Home set 🏠'); render(); }, () => toast('Could not get your location'), { enableHighAccuracy: true, timeout: 10000 });
+}
+function copyInvite() {
+  const link = location.origin + location.pathname + '?family=' + familyId;
+  (navigator.clipboard?.writeText(link) || Promise.reject()).then(() => toast('Invite link copied'), () => prompt('Copy this invite link', link));
+  sheet(`<h2 style="margin-right:46px">Invite the family</h2><ol class="small" style="padding-left:18px;line-height:1.7">
+    <li><b>Share the sheet</b> with them as <b>Editor</b> — <a href="https://docs.google.com/spreadsheets/d/${familyId}/edit" target="_blank" rel="noopener">open it</a> and tap Share.</li>
+    <li><b>Send them the invite link</b> (copied):<br><code style="word-break:break-all;font-size:12px">${esc(link)}</code></li>
+    <li>They open it, sign in with Google and pick a name.</li></ol>
+    <div class="tiny faint">Their Google account must also be on the app's test-user list in Google Cloud (same as your other apps).</div>`);
+}
+function openProfile(first) {
+  sheet(`<h2 style="margin-right:46px">${first ? 'What should the family call you?' : 'Your profile'}</h2>
+    <div class="stack" style="margin-top:14px"><input id="pf_name" maxlength="20" placeholder="Name" value="${esc(me.name || '')}">
+    <div class="chips wrap" id="pf_emoji" style="flex-wrap:wrap">${EMOJIS.map(e => `<button class="chip ${e === (me.emoji || '🦊') ? 'on' : ''}" style="font-size:20px;padding:6px 10px" onclick="segPickChip(this)">${e}</button>`).join('')}</div>
+    <div id="pf_err" class="small" style="color:var(--chilli)"></div>
+    <button class="btn primary block" onclick="saveProfile()">Save</button></div>`);
+}
+function segPickChip(b) { b.parentElement.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b)); }
+function saveProfile() {
+  const name = $('#pf_name').value.trim(); if (!name) { $('#pf_err').textContent = 'Enter a name first'; return; }
+  me.name = name; me.emoji = $('#pf_emoji .on')?.textContent || '🦊'; LS.set('me', me);
+  enqueue('members', [me.id, me.email, me.name, me.emoji, new Date().toISOString()]);
+  closeSheet(); render();
+}
+
+/* ---------- Map ---------- */
+let mapFilter = 'all';
+function viewMap() {
+  $('#view').innerHTML = `<div class="row between" style="margin-bottom:10px"><h1>Map</h1></div>
+    ${chipRow([['all', 'Everything'], ['untried', 'Not tried yet'], ['must', '⭐ Must-try'], ['open', 'Open now']], k => mapFilter === k, 'setMapFilter')}
+    <div id="map" style="margin-top:10px"></div>
+    <div class="legend">${DB.zones.map(z => `<span><i style="background:${z.color}"></i>${esc(z.name)}</span>`).join('')}<span>◯ = not tried</span></div>`;
+  if (typeof L === 'undefined') { $('#map').innerHTML = '<div class="empty"><span class="e">📡</span>The map needs a connection the first time.</div>'; return; }
+  const o = origin();
+  mapObj = L.map('map', { zoomControl: false, attributionControl: true }).setView([o.lat, o.lng], 14);
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? 'dark_all' : 'rastertiles/voyager'}/{z}/{x}/{y}{r}.png`, { maxZoom: 19, attribution: '© OpenStreetMap © CARTO' }).addTo(mapObj);
+  L.marker([o.lat, o.lng], { icon: L.divIcon({ className: '', html: '<div class="home-pin">🏠</div>', iconSize: [26, 26] }) }).addTo(mapObj);
+  const ids = me ? [me.id] : [];
+  const keep = p => mapFilter === 'all' || (mapFilter === 'untried' && !triedBy(p.id, ids)) || (mapFilter === 'must' && p.must_try) || (mapFilter === 'open' && openAt(p, new Date()).open);
+  for (const c of CLUSTERS) {
+    const ps = PLACES.filter(p => p.cluster === c.id && keep(p));
+    if (!ps.length && mapFilter !== 'all') continue;
+    const tried = ps.some(p => triedBy(p.id, ids)); const col = zone(c.zone).color; const must = ps.some(p => p.must_try);
+    L.marker([c.lat, c.lng], { icon: L.divIcon({ className: '', html: `<div class="pin ${tried ? '' : 'hollow'}" style="width:36px;height:36px;background:${col};border-color:${col}">${must ? '⭐' : ps.length || '?'}</div>`, iconSize: [36, 36] }) })
+      .addTo(mapObj).on('click', () => openCluster(c.id));
+  }
+  for (const p of PLACES.filter(p => !p.cluster && keep(p))) {
+    const tried = triedBy(p.id, ids); const col = zone(p.zone).color;
+    L.marker([p.lat, p.lng], { icon: L.divIcon({ className: '', html: `<div class="pin ${tried ? '' : 'hollow'}" style="width:28px;height:28px;font-size:14px;background:${col};border-color:${col}">${p.must_try ? '⭐' : emojiOf(p)}</div>`, iconSize: [28, 28] }) })
+      .addTo(mapObj).on('click', () => openPlace(p.id));
+  }
+  setTimeout(() => mapObj && mapObj.invalidateSize(), 60);
+}
+function setMapFilter(k) { mapFilter = k; if (mapObj) { mapObj.remove(); mapObj = null; } viewMap(); }
+
+/* =====================================================================
+   Google sign-in + Sheets sync
+   ===================================================================== */
+const tokenValid = () => token && token.exp > Date.now() + 30000;
+function initGsi() {
+  if (typeof google === 'undefined' || !google.accounts?.oauth2) return setTimeout(initGsi, 150);
+  tokenClient = google.accounts.oauth2.initTokenClient({ client_id: CONFIG.CLIENT_ID, scope: CONFIG.SCOPES, callback: onToken });
+}
+function signIn() { if (!tokenClient) return toast('Still loading — try again in a moment'); tokenClient.requestAccessToken({ prompt: me ? '' : 'select_account' }); }
+function redirectSignIn() {
+  const p = new URLSearchParams({ client_id: CONFIG.CLIENT_ID, redirect_uri: location.origin + location.pathname, response_type: 'token', scope: CONFIG.SCOPES, include_granted_scopes: 'true', prompt: 'select_account', state: 'makanmap' });
+  LS.set('pendingFamily', new URLSearchParams(location.search).get('family') || LS.get('pendingFamily', null));
+  location.href = 'https://accounts.google.com/o/oauth2/v2/auth?' + p;
+}
+function consumeRedirect() {
+  if (!location.hash.includes('access_token=')) return false;
+  const h = new URLSearchParams(location.hash.slice(1)); history.replaceState(null, '', location.pathname + location.search);
+  if (h.get('state') !== 'makanmap') return false;
+  onToken({ access_token: h.get('access_token'), expires_in: h.get('expires_in') }); return true;
+}
+async function onToken(r) {
+  if (r.error) return toast('Sign-in failed — please try again');
+  token = { access_token: r.access_token, exp: Date.now() + (Number(r.expires_in) || 3600) * 1000 }; LS.set('token', token);
+  guest = false; LS.set('guest', false);
+  try {
+    const u = await (await fetch('https://www.googleapis.com/oauth2/v3/userinfo', { headers: { Authorization: 'Bearer ' + token.access_token } })).json();
+    const prev = me && me.id === u.sub ? me : null;
+    me = { id: u.sub, email: u.email, name: prev?.name || '', emoji: prev?.emoji || '', picture: u.picture }; LS.set('me', me);
+  } catch { toast('Could not read your Google profile'); }
+  boot();
+}
+function signOut() {
+  try { if (token) google.accounts.oauth2.revoke(token.access_token, () => {}); } catch {}
+  ['token', 'me', 'fam', 'outbox', 'familyId'].forEach(LS.del); location.href = location.pathname;
+}
+function enterGuest() { guest = true; LS.set('guest', true); boot(); }
+function needSignIn() { sheet(`<h2 style="margin-right:46px">Sign in first</h2><p class="muted">Logging, ratings and stamps are saved to the family's Google Sheet, so you need to sign in.</p><button class="btn primary block" onclick="closeSheet();signIn()">Sign in with Google</button>`); }
+
+async function api(url, opts = {}) {
+  if (!tokenValid()) throw Object.assign(new Error('auth'), { auth: true });
+  const res = await fetch(url, { ...opts, headers: { Authorization: 'Bearer ' + token.access_token, 'Content-Type': 'application/json', ...(opts.headers || {}) } });
+  if (res.status === 401) { token = null; LS.del('token'); throw Object.assign(new Error('auth'), { auth: true }); }
+  if (!res.ok) { const t = await res.text(); throw Object.assign(new Error(`Sheets ${res.status}: ${t.slice(0, 200)}`), { status: res.status }); }
+  return res.json();
+}
+async function createFamily() {
+  const body = { properties: { title: CONFIG.SHEET_TITLE }, sheets: Object.keys(CONFIG.TABS).map(t => ({ properties: { title: t, gridProperties: { frozenRowCount: 1 } } })) };
+  const s = await api(SHEETS_API, { method: 'POST', body: JSON.stringify(body) });
+  await api(`${SHEETS_API}/${s.spreadsheetId}/values:batchUpdate`, { method: 'POST', body: JSON.stringify({ valueInputOption: 'RAW', data: Object.entries(CONFIG.TABS).map(([t, h]) => ({ range: `${t}!A1`, values: [h] })) }) });
+  return s.spreadsheetId;
+}
+async function pull() {
+  const ranges = Object.keys(CONFIG.TABS).map(t => 'ranges=' + encodeURIComponent(`${t}!A:J`)).join('&');
+  const r = await api(`${SHEETS_API}/${familyId}/values:batchGet?${ranges}&majorDimension=ROWS`);
+  const out = {}; Object.keys(CONFIG.TABS).forEach((t, i) => { out[t] = (r.valueRanges[i].values || []).slice(1).map(row => row.map(String)); });
+  fam = out; LS.set('fam', fam);
+}
+async function pushOutbox() {
+  while (outbox.length) {
+    const byTab = {}; for (const o of outbox) (byTab[o.tab] = byTab[o.tab] || []).push(o.row);
+    const n = outbox.length;
+    for (const [t, rows] of Object.entries(byTab)) await api(`${SHEETS_API}/${familyId}/values/${encodeURIComponent(t + '!A1')}:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`, { method: 'POST', body: JSON.stringify({ values: rows }) });
+    for (const [t, rows] of Object.entries(byTab)) fam[t] = [...(fam[t] || []), ...rows];
+    outbox = outbox.slice(n); LS.set('outbox', outbox); LS.set('fam', fam);
+  }
+}
+function enqueue(tabName, row) { outbox.push({ tab: tabName, row }); LS.set('outbox', outbox); rebuild(); syncSoon(); }
+let syncTimer = null, syncing = false;
+function syncSoon() { clearTimeout(syncTimer); syncTimer = setTimeout(() => syncNow(false), 800); }
+async function syncNow(manual) {
+  if (!familyId || !me) { if (manual && !me) signIn(); return; }
+  if (!navigator.onLine) { syncState = 'offline'; renderSync(); if (manual) toast("You're offline — changes are saved and will sync later"); return; }
+  if (!tokenValid()) { syncState = 'auth'; renderSync(); if (manual) signIn(); return; }
+  if (syncing) return; syncing = true; syncState = 'busy'; renderSync();
+  try { await pushOutbox(); await pull(); syncState = 'ok'; LS.set('lastSync', Date.now()); if (manual) toast('Synced ✓'); }
+  catch (e) { syncState = e.auth ? 'auth' : 'err'; if (manual || !e.auth) toast(e.auth ? 'Sign-in expired — tap the sync chip to reconnect' : 'Sync failed — will retry'); console.warn(e); }
+  finally { syncing = false; renderSync(); if (tab !== 'map') { const y = scrollY; render(); scrollTo(0, y); } }
+}
+function renderSync() {
+  const dot = $('#syncDot'), txt = $('#syncText'); if (!dot) return;
+  const pending = outbox.length ? ` · ${outbox.length} waiting` : '';
+  const m = { ok: ['ok', 'Synced'], busy: ['warn', 'Syncing…'], auth: ['warn', 'Reconnect'], err: ['err', 'Sync error'], offline: ['', 'Offline'], idle: ['', me ? 'Tap to sync' : 'Guest'] }[syncState] || ['', ''];
+  dot.className = 'dot ' + m[0]; txt.textContent = m[1] + pending;
+}
+
+/* ---------- setup flow ---------- */
+function showSetup() {
+  $('#splash').classList.add('hidden'); $('#app').classList.add('hidden'); $('#tabs').classList.add('hidden');
+  const s = $('#setup'); s.classList.remove('hidden');
+  s.innerHTML = `<div class="logo">👨‍👩‍👧</div><h1>Your family</h1>
+    <p style="margin:10px 0 22px">Ratings and stamps live in one Google Sheet that everyone shares. Start a new one, or join with the invite link someone sent you.</p>
+    <button class="btn primary block" style="padding:15px" onclick="doCreateFamily(this)">Start a new family</button>
+    <div class="filter-label" style="margin-top:22px">Or paste an invite link</div>
+    <input id="inv" placeholder="https://…?family=…">
+    <div id="inv_err" class="small" style="color:var(--chilli);margin-top:6px"></div>
+    <button class="btn block" style="margin-top:10px" onclick="doJoin(this)">Join family</button>`;
+}
+async function doCreateFamily(btn) {
+  btn.disabled = true; btn.textContent = 'Creating…';
+  try { familyId = await createFamily(); LS.set('familyId', familyId); fam = { members: [], logs: [], wants: [], places_added: [] }; LS.set('fam', fam); boot(); }
+  catch (e) { btn.disabled = false; btn.textContent = 'Start a new family'; toast(e.auth ? 'Please sign in again' : 'Could not create the sheet — is the Google Sheets API enabled?'); console.warn(e); }
+}
+async function doJoin(btn) {
+  const v = $('#inv').value.trim(); const id = (v.match(/family=([\w-]{20,})/) || v.match(/\/d\/([\w-]{20,})/) || v.match(/^([\w-]{20,})$/) || [])[1];
+  if (!id) { $('#inv_err').textContent = 'That doesn’t look like an invite link'; return; }
+  await joinFamily(id, btn);
+}
+async function joinFamily(id, btn) {
+  if (btn) { btn.disabled = true; btn.textContent = 'Joining…'; }
+  familyId = id;
+  try { await pull(); LS.set('familyId', familyId); LS.del('pendingFamily'); boot(); }
+  catch (e) {
+    familyId = LS.get('familyId', null);
+    if (btn) { btn.disabled = false; btn.textContent = 'Join family'; }
+    const msg = e.status === 403 || e.status === 404 ? 'You don’t have access to that family sheet yet — ask them to share it with your Google account as Editor.' : e.auth ? 'Please sign in again' : 'Could not open the family sheet.';
+    if ($('#inv_err')) $('#inv_err').textContent = msg; else toast(msg);
+  }
+}
+
+/* ---------- boot ---------- */
+async function loadPlaces() {
+  try { const r = await fetch('data/places.json', { cache: 'no-cache' }); DB = await r.json(); LS.set('placesCache', DB); }
+  catch { DB = LS.get('placesCache', null); }
+  if (!DB) { document.body.innerHTML = '<div class="splash"><h1>Offline</h1><p>Open the app once with a connection so the food list can be saved on this phone.</p></div>'; throw new Error('no data'); }
+}
+async function boot() {
+  const invite = new URLSearchParams(location.search).get('family') || LS.get('pendingFamily', null);
+  if (!me && !guest) { $('#splash').classList.remove('hidden'); if (invite) { LS.set('pendingFamily', invite); $('#splash p').innerHTML = "You've been invited to a family food map. Sign in with Google to join."; } return; }
+  if (me && invite && invite !== familyId) { if (tokenValid()) { history.replaceState(null, '', location.pathname); return joinFamily(invite); } }
+  if (me && !familyId) { if (!tokenValid()) { $('#splash').classList.remove('hidden'); return; } return showSetup(); }
+  $('#splash').classList.add('hidden'); $('#setup').classList.add('hidden'); $('#app').classList.remove('hidden'); $('#tabs').classList.remove('hidden');
+  if (location.search.includes('family=')) history.replaceState(null, '', location.pathname);
+  go(tab);
+  if (me && familyId) {
+    await syncNow(false);
+    if (!FV.members.find(m => m.id === me.id) && !outbox.some(o => o.tab === 'members')) { if (!me.name) me.name = (me.email || '').split('@')[0]; openProfile(true); }
+  }
+}
+window.addEventListener('online', () => syncNow(false));
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncNow(false); });
+setInterval(() => syncNow(false), 5 * 60 * 1000);
+if (prefs.useGps) watchGps();
+if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+
+(async () => {
+  await loadPlaces();
+  initGsi();
+  if (!consumeRedirect()) boot();
+})();
+</script>
+</body>
+</html>
