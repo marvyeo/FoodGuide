@@ -356,6 +356,46 @@
    "name": "HungryGoWhere – Geylang food guide",
    "url": "https://hungrygowhere.com/what-to-eat/geylang-food/",
    "date": "2025-07"
+  },
+  "hg-b16": {
+   "name": "hawker.guide – Pasar 16 @ Bedok South (Blk 16) roster",
+   "url": "https://hawker.guide/centres/blk-16-bedok-south-road",
+   "date": "undated"
+  },
+  "hg-tr": {
+   "name": "hawker.guide – Tampines Round Market & Food Centre (Blk 137) roster",
+   "url": "https://hawker.guide/centres/blk-137-tampines-street-11",
+   "date": "undated"
+  },
+  "hg-mp": {
+   "name": "hawker.guide – Marine Parade Central Market & Food Centre roster",
+   "url": "https://hawker.guide/centres/blk-84-marine-parade-central",
+   "date": "undated"
+  },
+  "hg-eunos": {
+   "name": "hawker.guide – Eunos Crescent Market & Food Centre (4A) roster",
+   "url": "https://hawker.guide/centres/blk-4a-eunos-crescent",
+   "date": "undated"
+  },
+  "hg-dun": {
+   "name": "hawker.guide – Dunman Food Centre roster",
+   "url": "https://hawker.guide/centres/dunman-food-centre",
+   "date": "undated"
+  },
+  "hg-eclfv": {
+   "name": "hawker.guide – East Coast Lagoon Food Village roster",
+   "url": "https://hawker.guide/centres/east-coast-lagoon-food-village",
+   "date": "undated"
+  },
+  "hg-cv": {
+   "name": "hawker.guide – Changi Village Hawker Centre roster",
+   "url": "https://hawker.guide/centres/blks-2-3-changi-village-road",
+   "date": "undated"
+  },
+  "hg-gs": {
+   "name": "hawker.guide – Geylang Serai Market & Food Centre roster",
+   "url": "https://hawker.guide/centres/geylang-serai-market",
+   "date": "undated"
   }
  },
  "clusters": [
@@ -17303,6 +17343,3141 @@
    "verified": "2025-07",
    "confidence": "detailed",
    "id": "p-sia-kee-duck-rice"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Enak",
+   "unit": "#01-04",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-enak"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Noorul Afrah Thosai Stall",
+   "unit": "#01-12",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Thosai"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-noorul-afrah-thosai-stall"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "The Pancake Garden",
+   "unit": "#01-13",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Min jiang kueh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-the-pancake-garden"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Warong Jawa",
+   "unit": "#01-17",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-warong-jawa"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Bedok Minced Meat Noodle",
+   "unit": "#01-23",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Minced meat noodles"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-bedok-minced-meat-noodle"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Hung Kang Bedok Fish Soup",
+   "unit": "#01-24",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Fish soup"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-hung-kang-bedok-fish-soup"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Blue Lagoon Western Food",
+   "unit": "#01-27",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-blue-lagoon-western-food"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Korat Thai Food",
+   "unit": "#01-28",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-korat-thai-food"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Original Changi Ten Mile Fried Carrot Cake (Bedok South)",
+   "unit": "#01-32",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Fried carrot cake"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-original-changi-ten-mile-fried-carrot-cake"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Welcome Coffee Stall",
+   "unit": "#01-34",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi / teh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-welcome-coffee-stall"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Teochew Braised Meats",
+   "unit": "",
+   "cuisine": "braised",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-teochew-braised-meats"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Ah Wah Rojak",
+   "unit": "#01-36",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Rojak"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-ah-wah-rojak"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Hock Seng Choon Fish Ball Kway Teow Mee",
+   "unit": "#01-50",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fishball noodles"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-hock-seng-choon-fish-ball-kway-teow-mee"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Yong Hwa Delights Handmade Fishball Meatball Noodle",
+   "unit": "#01-59",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Handmade fishball noodles"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-yong-hwa-delights-handmade-fishball-meatbal"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Zhen Jie Spinach Soup",
+   "unit": "#01-62",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Spinach soup"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-b16"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-16-bedok-south-zhen-jie-spinach-soup"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Hakka Yong Tau Fu (Tampines)",
+   "unit": "#01-01",
+   "cuisine": "yong-tau-foo",
+   "dishes": [
+    {
+     "name": "Yong tau foo"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-hakka-yong-tau-fu-tampines"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Lucky Soya Bean",
+   "unit": "#01-08",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Soya bean"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-lucky-soya-bean"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Hup Lee Fried Beehoon",
+   "unit": "#01-16",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried bee hoon"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-hup-lee-fried-beehoon"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Black Carrot Cake Stall",
+   "unit": "#01-17",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Black carrot cake"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-black-carrot-cake-stall"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "137 Market Pancake",
+   "unit": "#01-19",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Min jiang kueh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-137-market-pancake"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Swee Bee Coffee Stall",
+   "unit": "#01-25",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi / teh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-swee-bee-coffee-stall"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Pu Ti Vegetarian",
+   "unit": "#01-30",
+   "cuisine": "vegetarian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-pu-ti-vegetarian"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Quan Fang Coffee Stall",
+   "unit": "#01-34",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi / teh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-quan-fang-coffee-stall"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Tok Ayah Nasi Padang",
+   "unit": "#01-36",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi padang"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-tok-ayah-nasi-padang"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Tiong Bahru Fried Fish Ball",
+   "unit": "#01-38",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried fishball noodles"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-tiong-bahru-fried-fish-ball"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Armenian Street Char Kway Teow",
+   "unit": "#01-40",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-armenian-street-char-kway-teow"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Tiong Bahru Meng Kee Roast Duck",
+   "unit": "",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Roast duck rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-tiong-bahru-meng-kee-roast-duck"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Hui Lai Soft Bone Noodles",
+   "unit": "#01-23",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Soft bone noodles"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-hui-lai-soft-bone-noodles"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Xin Xing Carrot Cake",
+   "unit": "#01-44",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Carrot cake"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-tr"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-137-tampines-round-xin-xing-carrot-cake"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Teh Tarik Cafe",
+   "unit": "#01-01",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Teh tarik"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-mp"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-teh-tarik-cafe"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Hai Nan Xu Ji Chicken Rice",
+   "unit": "",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-mp"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-hai-nan-xu-ji-chicken-rice"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Soon Soon Soon Wanton Noodles",
+   "unit": "#01-16",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-mp"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-soon-soon-soon-wanton-noodles"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Ma Bo Lor Mee (Marine Parade)",
+   "unit": "#01-18",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Lor mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-mp"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-ma-bo-lor-mee-marine-parade"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Zengji Hainanese Chicken Rice (Marine Parade)",
+   "unit": "#01-28",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-mp"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-zengji-hainanese-chicken-rice-marine-para"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Feng Xin Dim Sum",
+   "unit": "#01-32",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Dim sum"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-mp"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-feng-xin-dim-sum"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Pang Pang Western Food",
+   "unit": "#01-50",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-mp"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-pang-pang-western-food"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Al-Nazeer Prata Stall",
+   "unit": "#01-06",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Prata"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-al-nazeer-prata-stall"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Victory Canton Wok",
+   "unit": "#01-09",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-victory-canton-wok"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "133 Traditional Coffee and Toast",
+   "unit": "",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi, kaya toast"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-133-traditional-coffee-and-toast"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Belirub",
+   "unit": "",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-belirub"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Xin Xing Hainan Chicken Rice",
+   "unit": "#01-15",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-xin-xing-hainan-chicken-rice"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Kampung Pancake",
+   "unit": "#01-16",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Min jiang kueh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-kampung-pancake"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Mei Hua Garden Fishball Noodle",
+   "unit": "",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fishball noodles"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-mei-hua-garden-fishball-noodle"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Nazriyan Kitchen",
+   "unit": "#01-19",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-nazriyan-kitchen"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Feng Ji Kway Chap",
+   "unit": "#01-20",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Kway chap"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-feng-ji-kway-chap"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Economical Bee Hoon (Eunos)",
+   "unit": "",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Economic bee hoon"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-economical-bee-hoon-eunos"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "The Plug Food Co.",
+   "unit": "#01-25",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-the-plug-food-co"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Xue Hua Vegetarian",
+   "unit": "#01-31",
+   "cuisine": "vegetarian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-xue-hua-vegetarian"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Ah May Prawn Mee",
+   "unit": "#01-33",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-ah-may-prawn-mee"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Boon Seng Curry Rice",
+   "unit": "#01-34",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Hainanese curry rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-boon-seng-curry-rice"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Hua Kee Hougang Famous Wanton Mee",
+   "unit": "",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-hua-kee-hougang-famous-wanton-mee"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Eunos YTF",
+   "unit": "#01-36",
+   "cuisine": "yong-tau-foo",
+   "dishes": [
+    {
+     "name": "Yong tau foo"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-eunos-ytf"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Fu Chun Laksa Lor Mee",
+   "unit": "#01-37",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Laksa, lor mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-fu-chun-laksa-lor-mee"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Eunos Chwee Kueh",
+   "unit": "#01-42",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Chwee kueh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eunos"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-4a-eunos-crescent-eunos-chwee-kueh"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Dunman Wanton Mee",
+   "unit": "#01-01",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-dunman-wanton-mee"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Daun Limau Cuisine",
+   "unit": "#01-02",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-daun-limau-cuisine"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Joo Chiat Ah Huat Wanton Noodle",
+   "unit": "#01-04",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-joo-chiat-ah-huat-wanton-noodle"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "First Delight",
+   "unit": "#01-08",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-first-delight"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Ah Huat Cafe",
+   "unit": "#01-09",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi / teh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-ah-huat-cafe"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "OK Mei Shi (Steamed Fish Head)",
+   "unit": "#02-02",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Steamed fish head"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-ok-mei-shi-steamed-fish-head"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Tekong Soya Bean Drinks & Curd",
+   "unit": "#02-15",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Soya milk, beancurd"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-tekong-soya-bean-drinks-curd"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Sheng Xiang Kitchen",
+   "unit": "#02-16",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Sliced fish in chilli oil, san lou hor fun"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-sheng-xiang-kitchen"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "OK Zhen Hao Wei",
+   "unit": "#02-20",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-ok-zhen-hao-wei"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Long Yuan Curry Roast Meats",
+   "unit": "#02-21",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Char siew & roast pork rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-long-yuan-curry-roast-meats"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Dunman B.B.Q.",
+   "unit": "#02-24",
+   "cuisine": "bbq-seafood",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-dunman-b-b-q"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "915 Western Food",
+   "unit": "#02-25",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Black pepper chicken chop"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-915-western-food"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Tekong Tea Stall",
+   "unit": "#02-27",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi / teh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-dun"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-dunman-tekong-tea-stall"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "245 Beer Place",
+   "unit": "#01-02",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Beer"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-245-beer-place"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Leng Heng Chicken Rice",
+   "unit": "#01-07",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-leng-heng-chicken-rice"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "East Coast Lagoon Fishball Noodle",
+   "unit": "#01-08",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fishball noodles"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-east-coast-lagoon-fishball-noodle"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Fresh Sugar Cane Coconut Beer",
+   "unit": "#01-13",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Sugar cane, coconut, beer"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-fresh-sugar-cane-coconut-beer"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Soon Huat Satay Bee Hoon",
+   "unit": "#01-17",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Satay bee hoon"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-soon-huat-satay-bee-hoon"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Chong Pang Huat BBQ Chicken",
+   "unit": "#01-18",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "BBQ chicken wings"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-chong-pang-huat-bbq-chicken"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Lagoon Chicken Curry Puff",
+   "unit": "#01-28",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Curry puff"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-lagoon-chicken-curry-puff"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Eastern Red Seafood BBQ",
+   "unit": "#01-37",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "BBQ seafood"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-eastern-red-seafood-bbq"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Lagoon Porridge",
+   "unit": "#01-39",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Porridge"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-lagoon-porridge"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Rahim Ayam Penyet",
+   "unit": "#01-54",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Ayam penyet"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-rahim-ayam-penyet"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Sixty BBQ Seafood",
+   "unit": "#01-60",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "BBQ seafood"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-sixty-bbq-seafood"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Makanz",
+   "unit": "#01-61",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-eclfv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-east-coast-lagoon-makanz"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Changi Village Carrot Cake",
+   "unit": "#01-13",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Fried carrot cake"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-changi-village-carrot-cake"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Mizzy Corner Nasi Lemak",
+   "unit": "#01-26",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-mizzy-corner-nasi-lemak"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Changi Famous Nasi Lemak",
+   "unit": "#01-28",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-changi-famous-nasi-lemak"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Guang Xing Original Taste Fish Head Bee Hoon",
+   "unit": "#01-31",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Fish head bee hoon"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-guang-xing-original-taste-fish-head-bee-hoo"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Amigo Chicken Chop Hor Fun",
+   "unit": "#01-34",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Chicken chop hor fun"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-amigo-chicken-chop-hor-fun"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Wong Hing Kitchenette",
+   "unit": "#01-43",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-wong-hing-kitchenette"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Kampong Lor Mee",
+   "unit": "#01-46",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Lor mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-kampong-lor-mee"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Kun Kee Fried Oyster",
+   "unit": "#01-47",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Fried oyster"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-kun-kee-fried-oyster"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Glory Fried Banana",
+   "unit": "#01-49",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Goreng pisang"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-glory-fried-banana"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "International Muslim Food Stall (#01-51)",
+   "unit": "#01-51",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-international-muslim-food-stall-01-51"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Changi Village Fried Hokkien Mee",
+   "unit": "#01-53",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried Hokkien mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-changi-village-fried-hokkien-mee"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Woon Woon Pek Beehoon",
+   "unit": "#01-54",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "White bee hoon"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-woon-woon-pek-beehoon"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Mei Lin Leng Re Yin Pin",
+   "unit": "#01-57",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Drinks"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-mei-lin-leng-re-yin-pin"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Ho Guan Satay Bee Hoon",
+   "unit": "#01-61",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Satay bee hoon"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-ho-guan-satay-bee-hoon"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Jason's Place",
+   "unit": "#01-66",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-jason-s-place"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Charlie's Corner",
+   "unit": "#01-70",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Fish & chips, beer"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-charlie-s-corner"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Sari Bistari Changi Village Famous Ayam Penyet",
+   "unit": "#01-71",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Ayam penyet"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-cv"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-changi-village-sari-bistari-changi-village-famous-ayam-pen"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Nur Kidayah & Family Goreng Pisang & Kueh Mueh",
+   "unit": "#01-11",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Goreng pisang, kueh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-nur-kidayah-family-goreng-pisang-kueh-mueh"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Mr Teh Tarik Eating House",
+   "unit": "",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Teh tarik"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-mr-teh-tarik-eating-house"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Sajian Mak Dara",
+   "unit": "#02-108",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-sajian-mak-dara"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "D'Original Bumbu",
+   "unit": "#02-109",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-d-original-bumbu"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Warong Keluarga",
+   "unit": "#02-112",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-warong-keluarga"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Sajisi Tradisi",
+   "unit": "#02-117",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-sajisi-tradisi"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Kacang Pool Mustafa",
+   "unit": "#02-118",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Kacang pool"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-kacang-pool-mustafa"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Biryani Express",
+   "unit": "#02-119",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Biryani"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-biryani-express"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Geylang Corner Food Stall",
+   "unit": "#02-121",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-geylang-corner-food-stall"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Hainan Kaya Toast",
+   "unit": "#02-125",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kaya toast, kopi"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-hainan-kaya-toast"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Azizah Hyderabadi Dumm Briyani",
+   "unit": "#02-127",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Dum briyani"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-azizah-hyderabadi-dumm-briyani"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "A H Food Corner",
+   "unit": "#02-130",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-a-h-food-corner"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Geylang Serai Nasi Ayam Bubur Ayam",
+   "unit": "#02-131",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi ayam, bubur ayam"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-geylang-serai-nasi-ayam-bubur-ayam"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "An Ji Traditional",
+   "unit": "#02-134",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-an-ji-traditional"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Gerai Nenek Obek",
+   "unit": "#02-136",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-gerai-nenek-obek"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Sinar Pagi Nasi Padang",
+   "unit": "#02-137",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi padang"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-sinar-pagi-nasi-padang"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Shaliza Kitchen",
+   "unit": "#02-147",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-shaliza-kitchen"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Geylang Serai Chee Kong Cheng Tng",
+   "unit": "#02-149",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Cheng tng"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-geylang-serai-chee-kong-cheng-tng"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Traditional Beverages Stall",
+   "unit": "#02-155",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-traditional-beverages-stall"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "House of Gandos",
+   "unit": "#02-157",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Kueh gandos"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-house-of-gandos"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Ali's Corner",
+   "unit": "#02-159",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-ali-s-corner"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Muhabbat Setia Hati Roti Chapati",
+   "unit": "#02-162",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Chapati"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-muhabbat-setia-hati-roti-chapati"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Hajjah Sadiah Othman Muslim Food",
+   "unit": "#02-163",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-hajjah-sadiah-othman-muslim-food"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Hajjah Mona Nasi Padang",
+   "unit": "",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi padang"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-hajjah-mona-nasi-padang"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Haji Mohammad Yusoff Warung",
+   "unit": "#02-169",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hg-gs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-haji-mohammad-yusoff-warung"
   }
  ]
 }
