@@ -1,8 +1,8 @@
 // Makan Map service worker — lets the installed app open offline.
 // App files and data/places.json: network first, cached copy when offline (so a merged data PR shows up on next open).
-// Fonts, Leaflet and map tiles: cache first. Google sign-in and Sheets always go to the network.
-const CACHE = 'makanmap-v1';
-const TILES = 'makanmap-tiles-v1';
+// Fonts, Leaflet and OneMap tiles: cache first. Google sign-in and Sheets always go to the network.
+const CACHE = 'makanmap-v2';
+const TILES = 'makanmap-tiles-v2';
 const SHELL = ['./', './index.html', './manifest.json', './data/places.json', './icons/icon-192.png', './icons/icon-512.png'];
 const CDN_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com', 'cdnjs.cloudflare.com'];
 const MAX_TILES = 600;
@@ -31,8 +31,8 @@ self.addEventListener('fetch', (e) => {
       .then(hit => hit || (req.mode === 'navigate' ? caches.match('./index.html') : Response.error()))));
     return;
   }
-  if (CDN_HOSTS.includes(url.hostname) || url.hostname.endsWith('basemaps.cartocdn.com')) {
-    const tile = url.hostname.endsWith('basemaps.cartocdn.com');
+  if (CDN_HOSTS.includes(url.hostname) || (url.hostname === 'www.onemap.gov.sg' && url.pathname.startsWith('/maps/tiles/'))) {
+    const tile = (url.hostname === 'www.onemap.gov.sg' && url.pathname.startsWith('/maps/tiles/'));
     e.respondWith(caches.open(tile ? TILES : CACHE).then(async c => {
       const hit = await c.match(req);
       if (hit) return hit;

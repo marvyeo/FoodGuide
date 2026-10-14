@@ -807,9 +807,12 @@ function viewMap() {
     <div class="legend">${DB.zones.map(z => `<span><i style="background:${z.color}"></i>${esc(z.name)}</span>`).join('')}<span>◯ = not tried</span></div>`;
   if (typeof L === 'undefined') { $('#map').innerHTML = '<div class="empty"><span class="e">📡</span>The map needs a connection the first time.</div>'; return; }
   const o = origin();
-  mapObj = L.map('map', { zoomControl: false, attributionControl: true }).setView([o.lat, o.lng], 14);
+  // OneMap (Singapore Land Authority) basemap: free, no API key, Singapore-detailed. Attribution with logo is required.
+  const sg = L.latLngBounds([1.144, 103.535], [1.494, 104.1147]);
+  mapObj = L.map('map', { zoomControl: false, attributionControl: true, minZoom: 11, maxZoom: 19, maxBounds: sg, maxBoundsViscosity: 1 }).setView([o.lat, o.lng], 14);
   const dark = matchMedia('(prefers-color-scheme: dark)').matches;
-  L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? 'dark_all' : 'rastertiles/voyager'}/{z}/{x}/{y}{r}.png`, { maxZoom: 19, attribution: '© OpenStreetMap © CARTO' }).addTo(mapObj);
+  L.tileLayer(`https://www.onemap.gov.sg/maps/tiles/${dark ? 'Night' : 'Default'}_HD/{z}/{x}/{y}.png`, { minZoom: 11, maxZoom: 19, detectRetina: true,
+    attribution: '<img src="https://www.onemap.gov.sg/web-assets/images/logo/om_logo.png" style="height:14px;width:14px;vertical-align:middle"> <a href="https://www.onemap.gov.sg/" target="_blank" rel="noopener">OneMap</a> © contributors | <a href="https://www.sla.gov.sg/" target="_blank" rel="noopener">Singapore Land Authority</a>' }).addTo(mapObj);
   L.marker([o.lat, o.lng], { icon: L.divIcon({ className: '', html: '<div class="home-pin">🏠</div>', iconSize: [26, 26] }) }).addTo(mapObj);
   const ids = me ? [me.id] : [];
   const keep = p => mapFilter === 'all' || (mapFilter === 'untried' && !triedBy(p.id, ids)) || (mapFilter === 'must' && p.must_try) || (mapFilter === 'open' && openAt(p, new Date()).open);
