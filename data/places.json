@@ -357,6 +357,26 @@
    "url": "https://hungrygowhere.com/what-to-eat/geylang-food/",
    "date": "2025-07"
   },
+  "to-oar": {
+   "name": "Time Out – Old Airport Road Food Centre",
+   "url": "https://timeout.com/singapore/old-airport-road-food-centre-stalls",
+   "date": "2022-09"
+  },
+  "mtc-oar": {
+   "name": "Miss Tam Chiak – Old Airport Road Food Centre",
+   "url": "https://www.misstamchiak.com/old-airport-road-food-centre/",
+   "date": "2022-02"
+  },
+  "mtc-bi": {
+   "name": "Miss Tam Chiak – Bedok Interchange Hawker Centre",
+   "url": "https://www.misstamchiak.com/bedok-interchange-hawker-centre",
+   "date": "2020-02"
+  },
+  "mtc-haig": {
+   "name": "Miss Tam Chiak – Haig Road Market & Food Centre",
+   "url": "https://www.misstamchiak.com/haig-road-market-food-centre/",
+   "date": "2019-05"
+  },
   "hg-b16": {
    "name": "hawker.guide – Pasar 16 @ Bedok South (Blk 16) roster",
    "url": "https://hawker.guide/centres/blk-16-bedok-south-road",
@@ -8724,6 +8744,241 @@
    "id": "p-c-51-old-airport-road-siam-cuisine"
   },
   {
+   "cluster": "c-51-old-airport-road",
+   "name": "Albert Street Prawn Noodle",
+   "unit": "#01-10",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn noodles",
+     "price": 5.5,
+     "price_note": "from $5.50 (big prawns up to $20)"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "to-oar"
+   ],
+   "verified": "2022-09",
+   "confidence": "partial",
+   "id": "p-c-51-old-airport-road-albert-street-prawn-noodle"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Lao Fu Zi Fried Kway Teow",
+   "unit": "#01-12",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow, black or white,",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "to-oar"
+   ],
+   "verified": "2022-09",
+   "confidence": "partial",
+   "id": "p-c-51-old-airport-road-lao-fu-zi-fried-kway-teow"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Hock Lam Street Popular Beef Kway Teow",
+   "unit": "#01-22",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Supreme mix beef kway teow",
+     "price": 6.5,
+     "price_note": "$6.50/$7.50"
+    },
+    {
+     "name": "Sliced beef & shank noodles",
+     "price": 5.0,
+     "price_note": "$5/$6"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-oar"
+   ],
+   "verified": "2022-02",
+   "confidence": "partial",
+   "id": "p-c-51-old-airport-road-hock-lam-street-popular-beef-kway-teow"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Hua Kee Hougang Famous Wanton Mee",
+   "unit": "#01-02",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-oar"
+   ],
+   "verified": "2022-02",
+   "confidence": "listed",
+   "id": "p-c-51-old-airport-road-hua-kee-hougang-famous-wanton-mee"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Chuan Kee Satay",
+   "unit": "#01-85",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "Chicken and pork satay"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-oar"
+   ],
+   "verified": "2022-02",
+   "confidence": "listed",
+   "id": "p-c-51-old-airport-road-chuan-kee-satay"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "132 Claypot Rice",
+   "unit": "#01-132",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Claypot chicken rice (+",
+     "price": 1.0,
+     "price_note": "$1 salted fish / salted egg)"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-oar"
+   ],
+   "verified": "2022-02",
+   "confidence": "listed",
+   "id": "p-c-51-old-airport-road-132-claypot-rice"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Tan Beng Otah Delights",
+   "unit": "#01-74",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Otah"
+    },
+    {
+     "name": "Nasi lemak packets"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-oar"
+   ],
+   "verified": "2022-02",
+   "confidence": "listed",
+   "travels_well": true,
+   "id": "p-c-51-old-airport-road-tan-beng-otah-delights"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Unkai Japanese Cuisine",
+   "unit": "#01-89",
+   "cuisine": "japanese",
+   "dishes": [
+    {
+     "name": "Tempura, soba, udon, sashimi"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-oar"
+   ],
+   "verified": "2022-02",
+   "confidence": "listed",
+   "id": "p-c-51-old-airport-road-unkai-japanese-cuisine"
+  },
+  {
    "cluster": "c-208b-bedok-interchange",
    "name": "Kin Khao Yang Authentic Thai Food",
    "unit": "#01-02",
@@ -9328,6 +9583,93 @@
    "confidence": "listed",
    "travels_well": true,
    "id": "p-c-208b-bedok-interchange-lee-kee-goreng-pisang"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Fatt Soon Kueh",
+   "unit": "#01-18",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Soon kueh"
+    },
+    {
+     "name": "Png kueh"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-bi"
+   ],
+   "verified": "2020-02",
+   "confidence": "listed",
+   "travels_well": true,
+   "id": "p-c-208b-bedok-interchange-fatt-soon-kueh"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Jimmy People's Park Char Kway Teow",
+   "unit": "#01-47",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-bi"
+   ],
+   "verified": "2020-02",
+   "confidence": "listed",
+   "id": "p-c-208b-bedok-interchange-jimmy-people-s-park-char-kway-teow"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "99 Dessert in Cup",
+   "unit": "#01-60",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Chendol"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-bi"
+   ],
+   "verified": "2020-02",
+   "confidence": "listed",
+   "id": "p-c-208b-bedok-interchange-99-dessert-in-cup"
   },
   {
    "cluster": "c-16-bedok-south",
@@ -12693,6 +13035,65 @@
    "verified": "2022-05",
    "confidence": "partial",
    "id": "p-c-14-haig-road-chef-chik"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Chin Heng Desserts",
+   "unit": "#01-46",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Red ruby"
+    },
+    {
+     "name": "Green bean soup with coconut milk"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-haig"
+   ],
+   "verified": "2019-05",
+   "confidence": "listed",
+   "id": "p-c-14-haig-road-chin-heng-desserts"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Tong Kee Traditional Braised Duck Rice",
+   "unit": "#01-58",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Braised duck rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mtc-haig"
+   ],
+   "verified": "2019-05",
+   "confidence": "listed",
+   "id": "p-c-14-haig-road-tong-kee-traditional-braised-duck-rice"
   },
   {
    "cluster": "c-geylang-serai",
