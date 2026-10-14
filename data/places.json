@@ -1,5 +1,5 @@
 {
- "version": 2,
+ "version": 3,
  "updated": "2026-10-15",
  "home": {
   "name": "Bedok Reservoir",
@@ -69,6 +69,86 @@
    "name": "Bedok (EW5)",
    "lat": 1.32398,
    "lng": 103.929984
+  },
+  {
+   "name": "Tampines (EW2/DT32)",
+   "lat": 1.354226,
+   "lng": 103.944077
+  },
+  {
+   "name": "Tampines East (DT33)",
+   "lat": 1.356191,
+   "lng": 103.954634
+  },
+  {
+   "name": "Pasir Ris (EW1)",
+   "lat": 1.373043,
+   "lng": 103.949285
+  },
+  {
+   "name": "Simei (EW3)",
+   "lat": 1.343197,
+   "lng": 103.953377
+  },
+  {
+   "name": "Tanah Merah (EW4)",
+   "lat": 1.327187,
+   "lng": 103.946349
+  },
+  {
+   "name": "Kembangan (EW6)",
+   "lat": 1.321038,
+   "lng": 103.912948
+  },
+  {
+   "name": "Eunos (EW7)",
+   "lat": 1.319784,
+   "lng": 103.903226
+  },
+  {
+   "name": "Paya Lebar (EW8/CC9)",
+   "lat": 1.317679,
+   "lng": 103.892661
+  },
+  {
+   "name": "Aljunied (EW9)",
+   "lat": 1.316433,
+   "lng": 103.882906
+  },
+  {
+   "name": "Mountbatten (CC7)",
+   "lat": 1.306202,
+   "lng": 103.882528
+  },
+  {
+   "name": "Dakota (CC8)",
+   "lat": 1.308548,
+   "lng": 103.889065
+  },
+  {
+   "name": "Marine Parade (TE26)",
+   "lat": 1.302612,
+   "lng": 103.904983
+  },
+  {
+   "name": "Marine Terrace (TE27)",
+   "lat": 1.306665,
+   "lng": 103.915107
+  },
+  {
+   "name": "Siglap (TE28)",
+   "lat": 1.310009,
+   "lng": 103.930026
+  },
+  {
+   "name": "Tanjong Katong (TE25)",
+   "lat": 1.299319,
+   "lng": 103.897369
+  },
+  {
+   "name": "Upper Changi (DT34)",
+   "lat": 1.34174,
+   "lng": 103.961473
   }
  ],
  "sources": {
@@ -166,6 +246,116 @@
    "name": "Burpple – 85 Fengshan Centre",
    "url": "https://www.burpple.com/bedok-85-market",
    "date": "undated"
+  },
+  "sl-oar": {
+   "name": "Seth Lui – Old Airport Road Food Centre",
+   "url": "https://sethlui.com/old-airport-road-food-centre-guide-singapore/",
+   "date": "2026-08"
+  },
+  "eb-oar": {
+   "name": "Eatbook – Old Airport Road Food Centre",
+   "url": "https://eatbook.sg/old-airport-road-food/",
+   "date": "2024-09"
+  },
+  "eb-bi": {
+   "name": "Eatbook – Bedok Interchange Hawker Centre",
+   "url": "https://eatbook.sg/bedok-interchange-hawker/",
+   "date": "2025-12"
+  },
+  "sl-bi": {
+   "name": "Seth Lui – Bedok Interchange Hawker Centre",
+   "url": "https://sethlui.com/bedok-interchange-hawker-centre-food-guide-singapore/",
+   "date": "2019-12"
+  },
+  "sl-b16": {
+   "name": "Seth Lui – Pasar 16 @ Bedok South",
+   "url": "https://sethlui.com/pasar-16-bedok-south-food-guide-singapore/",
+   "date": "2023-12"
+  },
+  "sl-tr": {
+   "name": "Seth Lui – Tampines Round Market & Food Centre",
+   "url": "https://sethlui.com/tampines-round-market-food-centre-singapore/",
+   "date": "2025-07"
+  },
+  "eb-tamp": {
+   "name": "Eatbook – Tampines hawker food guide",
+   "url": "https://eatbook.sg/tampines-hawker-food/",
+   "date": "2025-08"
+  },
+  "sl-oth": {
+   "name": "Seth Lui – Our Tampines Hub Hawker Centre",
+   "url": "https://sethlui.com/our-tampines-hub-hawker-centre-singapore/",
+   "date": "2022-07"
+  },
+  "sl-prc": {
+   "name": "Seth Lui – Pasir Ris Central Hawker Centre",
+   "url": "https://sethlui.com/pasir-ris-central-hawker-centre-guide-singapoe/",
+   "date": "2025-06"
+  },
+  "sl-cv": {
+   "name": "Seth Lui – Changi Village Hawker Centre",
+   "url": "https://sethlui.com/changi-village-hawker-centre-food-guide-singapore/",
+   "date": "2026-08"
+  },
+  "ww-mp": {
+   "name": "Women's Weekly – Marine Parade Central Food Centre",
+   "url": "https://www.womensweekly.com.sg/food/marine-parade-central-food-centre-best-hawker-stalls",
+   "date": "2022-03"
+  },
+  "sl-mp": {
+   "name": "Seth Lui – Marine Parade Central Market & Food Centre",
+   "url": "https://sethlui.com/marine-parade-central-market-and-food-centre-food-guide-singapore/",
+   "date": "2019-10"
+  },
+  "eb-haig": {
+   "name": "Eatbook – Haig Road Market & Food Centre",
+   "url": "https://eatbook.sg/haig-road-market-food-centre/",
+   "date": "2022-05"
+  },
+  "ww-gs": {
+   "name": "Women's Weekly – Geylang Serai Food Centre",
+   "url": "https://www.womensweekly.com.sg/food/geylang-serai-food-centre-best-hawker-stalls1",
+   "date": "2023-08"
+  },
+  "sl-gs": {
+   "name": "Seth Lui – Geylang Serai Market",
+   "url": "https://sethlui.com/geylang-serai-market-food-centre-guide-singapore/",
+   "date": "2019-06"
+  },
+  "hgw-dun": {
+   "name": "HungryGoWhere – Dunman Food Centre",
+   "url": "https://hungrygowhere.com/what-to-eat/dunman-food-centre/",
+   "date": "2024-03"
+  },
+  "ww-dun": {
+   "name": "Women's Weekly – Dunman Food Centre",
+   "url": "https://www.womensweekly.com.sg/food/dunman-food-centre-best-hawker-stalls",
+   "date": "2023-02"
+  },
+  "eb-eclfv": {
+   "name": "Eatbook – East Coast Lagoon Food Village",
+   "url": "https://eatbook.sg/east-coast-lagoon/",
+   "date": "2024-02"
+  },
+  "sl-eunos": {
+   "name": "Seth Lui – Eunos Crescent Market & Food Centre",
+   "url": "https://sethlui.com/eunos-crescent-market-and-food-centre-guide-singapore/",
+   "date": "2022-05"
+  },
+  "sl-bc": {
+   "name": "Seth Lui – Bedok Corner Food Centre",
+   "url": "https://sethlui.com/bedok-corner-food-centre-guide-singapore/",
+   "date": "2023-09"
+  },
+  "eb-katong": {
+   "name": "Eatbook – Katong food guide",
+   "url": "https://eatbook.sg/katong-food/",
+   "date": "2026-09"
+  },
+  "hgw-gey": {
+   "name": "HungryGoWhere – Geylang food guide",
+   "url": "https://hungrygowhere.com/what-to-eat/geylang-food/",
+   "date": "2025-07"
   }
  },
  "clusters": [
@@ -254,6 +444,222 @@
     "kt538",
     "hg538"
    ]
+  },
+  {
+   "id": "c-51-old-airport-road",
+   "name": "Old Airport Road Food Centre",
+   "type": "hawker",
+   "address": "51 Old Airport Road, S390051",
+   "zone": "east",
+   "stalls_total": 168,
+   "notes": "One of Singapore's biggest and most famous hawker centres — two long rows of legends. Many stalls close by mid-afternoon or on Mondays.",
+   "sources": [
+    "nea",
+    "sl-oar",
+    "eb-oar"
+   ],
+   "lat": 1.308252,
+   "lng": 103.885809
+  },
+  {
+   "id": "c-208b-bedok-interchange",
+   "name": "Bedok Interchange Hawker Centre (208B)",
+   "type": "hawker",
+   "address": "208B New Upper Changi Road, S462208",
+   "zone": "home",
+   "stalls_total": 70,
+   "notes": "Right beside Bedok MRT and bus interchange; open late, good for a quick bite on the way home.",
+   "sources": [
+    "nea",
+    "eb-bi",
+    "sl-bi"
+   ],
+   "lat": 1.324782,
+   "lng": 103.93057
+  },
+  {
+   "id": "c-16-bedok-south",
+   "name": "Pasar 16 @ Bedok South (Blk 16)",
+   "type": "hawker",
+   "address": "16 Bedok South Road, S460016",
+   "zone": "east",
+   "stalls_total": 64,
+   "notes": "Morning-heavy neighbourhood centre; famous for Hill Street Char Kway Teow.",
+   "sources": [
+    "nea",
+    "sl-b16",
+    "ebbedok"
+   ],
+   "lat": 1.320552,
+   "lng": 103.935539
+  },
+  {
+   "id": "c-137-tampines-round",
+   "name": "Tampines Round Market & Food Centre (Blk 137)",
+   "type": "hawker",
+   "address": "137 Tampines Street 11, S521137",
+   "zone": "east",
+   "stalls_total": 45,
+   "notes": "Tampines' classic breakfast centre — most stalls close by early afternoon.",
+   "sources": [
+    "nea",
+    "sl-tr",
+    "eb-tamp"
+   ],
+   "lat": 1.345373,
+   "lng": 103.944629
+  },
+  {
+   "id": "c-our-tampines-hub",
+   "name": "Hawker Centre @ Our Tampines Hub",
+   "type": "hawker",
+   "address": "1 Tampines Walk, S528523",
+   "zone": "east",
+   "stalls_total": null,
+   "notes": "Air-conditioned-feel modern hawker centre inside the Our Tampines Hub sports & community complex; open late.",
+   "sources": [
+    "sl-oth",
+    "eb-tamp"
+   ],
+   "lat": 1.353134,
+   "lng": 103.940408
+  },
+  {
+   "id": "c-pasir-ris-central",
+   "name": "Pasir Ris Central Hawker Centre",
+   "type": "hawker",
+   "address": "110 Pasir Ris Central, S519641",
+   "zone": "east",
+   "stalls_total": null,
+   "notes": "Two-storey newer-generation hawker centre beside Pasir Ris MRT and White Sands; lots of young hawkers.",
+   "sources": [
+    "sl-prc"
+   ],
+   "lat": 1.373473,
+   "lng": 103.951571
+  },
+  {
+   "id": "c-changi-village",
+   "name": "Changi Village Hawker Centre",
+   "type": "hawker",
+   "address": "2 Changi Village Road, S500002",
+   "zone": "east",
+   "stalls_total": 87,
+   "notes": "A weekend trip out east — nasi lemak, beef kway teow and dessert by the sea, next to the Pulau Ubin ferry terminal.",
+   "sources": [
+    "nea",
+    "sl-cv"
+   ],
+   "lat": 1.389152,
+   "lng": 103.988245
+  },
+  {
+   "id": "c-84-marine-parade",
+   "name": "Marine Parade Central Market & Food Centre",
+   "type": "hawker",
+   "address": "84 Marine Parade Central, S440084",
+   "zone": "east",
+   "stalls_total": 55,
+   "notes": "Mixed Chinese and Malay neighbourhood centre; Neptune dim sum has run round the clock.",
+   "sources": [
+    "nea",
+    "ww-mp",
+    "sl-mp"
+   ],
+   "lat": 1.302297,
+   "lng": 103.906344
+  },
+  {
+   "id": "c-14-haig-road",
+   "name": "Haig Road Market & Food Centre",
+   "type": "hawker",
+   "address": "14 Haig Road, S430014",
+   "zone": "east",
+   "stalls_total": 72,
+   "notes": "Strong on Malay food — putu piring, mee rebus, soto, satay — plus kolo mee and claypot rice.",
+   "sources": [
+    "nea",
+    "eb-haig"
+   ],
+   "lat": 1.315425,
+   "lng": 103.895479
+  },
+  {
+   "id": "c-geylang-serai",
+   "name": "Geylang Serai Market & Food Centre",
+   "type": "hawker",
+   "address": "1 Geylang Serai, S402001",
+   "zone": "east",
+   "stalls_total": 63,
+   "notes": "The heart of Malay food in Singapore — upstairs food centre above the wet market. Busiest during Hari Raya.",
+   "sources": [
+    "nea",
+    "ww-gs",
+    "sl-gs"
+   ],
+   "lat": 1.316736,
+   "lng": 103.898228
+  },
+  {
+   "id": "c-dunman",
+   "name": "Dunman Food Centre",
+   "type": "hawker",
+   "address": "271 Onan Road, S424768",
+   "zone": "east",
+   "stalls_total": 30,
+   "notes": "Small Joo Chiat-side centre that runs late — rojak, kway teow and zi char at night.",
+   "sources": [
+    "nea",
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "lat": 1.309418,
+   "lng": 103.901825
+  },
+  {
+   "id": "c-east-coast-lagoon",
+   "name": "East Coast Lagoon Food Village",
+   "type": "hawker",
+   "address": "1220 East Coast Parkway, S468960",
+   "zone": "east",
+   "stalls_total": 63,
+   "notes": "Seaside hawker centre in East Coast Park — BBQ seafood, satay and evening breeze. Best in the evening; parking can be tight on weekends.",
+   "sources": [
+    "nea",
+    "eb-eclfv"
+   ],
+   "lat": 1.307261,
+   "lng": 103.9348
+  },
+  {
+   "id": "c-4a-eunos-crescent",
+   "name": "Eunos Crescent Market & Food Centre (4A)",
+   "type": "hawker",
+   "address": "4A Eunos Crescent, S402004",
+   "zone": "east",
+   "stalls_total": 42,
+   "notes": "Neighbourhood centre near Eunos MRT — prata, briyani and desserts.",
+   "sources": [
+    "nea",
+    "sl-eunos"
+   ],
+   "lat": 1.320331,
+   "lng": 103.904256
+  },
+  {
+   "id": "c-bedok-corner",
+   "name": "Bedok Corner Food Centre",
+   "type": "hawker",
+   "address": "1 Bedok Road, S469572",
+   "zone": "east",
+   "stalls_total": 32,
+   "notes": "Small open-air centre at the Upper East Coast end of Bedok Road — lots of Malay food, BBQ and laksa.",
+   "sources": [
+    "nea",
+    "sl-bc"
+   ],
+   "lat": 1.32035,
+   "lng": 103.955478
   }
  ],
  "places": [
@@ -6817,6 +7223,10086 @@
    "confidence": "listed",
    "note": "Next to 75 Ah Balling Peanut Soup.",
    "id": "p-c-85-fengshan-old-amoy-chendol"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Western Barbeque",
+   "unit": "#01-53",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Pork chop",
+     "price": 7.0
+    },
+    {
+     "name": "Lamb chop",
+     "price": 12.0
+    },
+    {
+     "name": "Sirloin steak",
+     "price": 12.0
+    },
+    {
+     "name": "Mixed grill",
+     "price": 12.0
+    },
+    {
+     "name": "English breakfast",
+     "price": 6.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-western-barbeque"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Xiang Ji Lor Mee",
+   "unit": "#01-81",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Lor mee",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "07:00-15:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-xiang-ji-lor-mee"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Qiu Rong Ban Mian",
+   "unit": "#01-64",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Sliced fish ban mian",
+     "price": 5.0
+    },
+    {
+     "name": "You mian",
+     "price": 3.5
+    },
+    {
+     "name": "Chicken mee sua in red wine",
+     "price": 4.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-23:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-qiu-rong-ban-mian"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Whitley Road Big Prawn Noodle",
+   "unit": "#01-98",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Big prawn pig's tail noodle",
+     "price": 6.8
+    },
+    {
+     "name": "Pork rib / pig liver noodle",
+     "price": 5.5,
+     "price_note": "$5.50/$8.50"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "09:30-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-whitley-road-big-prawn-noodle"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Freshly Made Chee Cheong Fun",
+   "unit": "#01-155",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Char siew / chicken / prawn CCF",
+     "price": 2.5
+    },
+    {
+     "name": "Scallop CCF",
+     "price": 4.0
+    },
+    {
+     "name": "Pork liver mee sua",
+     "price": 4.5,
+     "price_note": "$4.50/$5.50"
+    }
+   ],
+   "hours": [
+    [
+     "234",
+     [
+      "08:00-14:30"
+     ]
+    ],
+    [
+     "056",
+     [
+      "08:00-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-freshly-made-chee-cheong-fun"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Nam Sing Hokkien Fried Mee",
+   "unit": "#01-32",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Hokkien fried mee",
+     "price": 5.0,
+     "price_note": "$5/$8"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "10:00-18:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "note": "Also closed on the 1st and 15th of the lunar month.",
+   "id": "p-c-51-old-airport-road-nam-sing-hokkien-fried-mee"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "To-Ricos Guo Shi (Kway Chap)",
+   "unit": "#01-135/136",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Kway chap platter",
+     "price": 8.0,
+     "price_note": "from $8"
+    },
+    {
+     "name": "Pig intestine / stomach / belly",
+     "price": 5.0
+    },
+    {
+     "name": "Braised peanuts",
+     "price": 2.0
+    }
+   ],
+   "hours": [
+    [
+     "23456",
+     [
+      "10:00-14:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-to-ricos-guo-shi-kway-chap"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Cho Kee Noodles",
+   "unit": "#01-04",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried wanton noodle",
+     "price": 5.0,
+     "price_note": "$5/$6"
+    },
+    {
+     "name": "Mushroom noodle",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Dumpling soup",
+     "price": 4.0,
+     "price_note": "$4/$5.50"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-15:00",
+      "18:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-cho-kee-noodles"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Wang Wang Crispy Curry Puff",
+   "unit": "#01-126",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Crispy curry puff",
+     "price": 1.6
+    },
+    {
+     "name": "Sardine puff",
+     "price": 1.6
+    },
+    {
+     "name": "Black pepper chicken puff",
+     "price": 1.8
+    },
+    {
+     "name": "Yam paste puff",
+     "price": 1.6
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "10:00-17:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-51-old-airport-road-wang-wang-crispy-curry-puff"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Roast Paradise",
+   "unit": "#01-121",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Char siew noodle/rice",
+     "price": 4.5,
+     "price_note": "$4.50/$5.50"
+    },
+    {
+     "name": "Roast duck rice",
+     "price": 4.8,
+     "price_note": "$4.80/$5.80"
+    },
+    {
+     "name": "Roast pork (100g)",
+     "price": 6.5
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "10:30-18:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-51-old-airport-road-roast-paradise"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "J&J Special Beef Noodle",
+   "unit": "#01-162",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Braised beef noodle",
+     "price": 6.0,
+     "price_note": "$6/$8"
+    },
+    {
+     "name": "Sliced beef noodle",
+     "price": 7.0
+    },
+    {
+     "name": "Oxtail soup",
+     "price": 9.0
+    },
+    {
+     "name": "Wagyu beef rice",
+     "price": 13.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "10:30-16:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-j-j-special-beef-noodle"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Xin Mei Xiang Zheng Zong Lor Mee",
+   "unit": "#01-116",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Signature lor mee",
+     "price": 6.0,
+     "price_note": "$6/$8"
+    },
+    {
+     "name": "Chicken cutlet lor mee",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    },
+    {
+     "name": "Cod nugget lor mee",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-16:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-xin-mei-xiang-zheng-zong-lor-mee"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Toa Payoh Rojak",
+   "unit": "#01-108",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Rojak",
+     "price": 4.0
+    },
+    {
+     "name": "Add cuttlefish",
+     "price": 2.0
+    },
+    {
+     "name": "Add century egg",
+     "price": 1.0
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "10:00-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-51-old-airport-road-toa-payoh-rojak"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Rong Yi Local Handmade Pau",
+   "unit": "#01-01",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Big pau",
+     "price": 1.8
+    },
+    {
+     "name": "Coffee pau",
+     "price": 0.9
+    },
+    {
+     "name": "Siew mai",
+     "price": 1.3
+    },
+    {
+     "name": "Har gao",
+     "price": 1.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-16:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-51-old-airport-road-rong-yi-local-handmade-pau"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Famous Old Airport Road Oyster Omelette",
+   "unit": "#01-101",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Oyster / sotong / prawn omelette",
+     "price": 6.0,
+     "price_note": "$6/$8/$10"
+    },
+    {
+     "name": "3-in-1 omelette",
+     "price": 10.0,
+     "price_note": "$10/$12/$14"
+    }
+   ],
+   "hours": [
+    [
+     "2345",
+     [
+      "11:00-14:00",
+      "17:30-21:30"
+     ]
+    ],
+    [
+     "06",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": false,
+   "id": "p-c-51-old-airport-road-famous-old-airport-road-oyster-omelett"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Salt",
+   "unit": "#01-128",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Chicken cutlet with soy garlic fried rice",
+     "price": 7.5,
+     "price_note": "$7.50/$8.90"
+    },
+    {
+     "name": "Fried salmon steak with fried rice",
+     "price": 9.9
+    },
+    {
+     "name": "Mushroom carbonara",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "12346",
+     [
+      "12:00-14:30",
+      "17:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-salt"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Yan Ji Seafood Soup",
+   "unit": "#01-152",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Seafood soup",
+     "price": 7.5,
+     "price_note": "$7.50/$9.50"
+    },
+    {
+     "name": "Crayfish seafood soup",
+     "price": 13.5
+    },
+    {
+     "name": "Premium seafood soup",
+     "price": 32.0,
+     "price_note": "$32/$42"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:00-15:00",
+      "17:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-yan-ji-seafood-soup"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Sky JB Mian Fen Kueh",
+   "unit": "#01-39",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Spicy pumpkin mian fen kueh",
+     "price": 5.0
+    },
+    {
+     "name": "Yuanbao dumplings (10)",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "012346",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-sky-jb-mian-fen-kueh"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Nyonya Chendol",
+   "unit": "#01-115",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Original chendol",
+     "price": 2.0
+    },
+    {
+     "name": "Red bean / sweet corn chendol",
+     "price": 2.5
+    },
+    {
+     "name": "D24 durian chendol",
+     "price": 3.5
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "09:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-nyonya-chendol"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Hougang Otah",
+   "unit": "#01-166",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Banana leaf otah",
+     "price": 1.2
+    },
+    {
+     "name": "Fish otah",
+     "price": 0.7
+    },
+    {
+     "name": "Prawn / sotong otah",
+     "price": 1.9
+    },
+    {
+     "name": "Nasi lemak",
+     "price": 1.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-51-old-airport-road-hougang-otah"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Bai Nian Niang Dou Fu",
+   "unit": "#01-154",
+   "cuisine": "yong-tau-foo",
+   "dishes": [
+    {
+     "name": "Yong tau foo bowl",
+     "price": 5.9
+    },
+    {
+     "name": "YTF set",
+     "price": 7.9
+    },
+    {
+     "name": "Golden fried trotter",
+     "price": 4.9
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-20:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-bai-nian-niang-dou-fu"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Shi Nian",
+   "unit": "#01-63",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Pig trotter rice",
+     "price": 5.9
+    },
+    {
+     "name": "Pig leg rice",
+     "price": 5.9
+    },
+    {
+     "name": "Prawn cake",
+     "price": 4.9
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-shi-nian"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Dong Ji Fried Kway Teow",
+   "unit": "#01-138",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried kway teow with prawn",
+     "price": 5.0
+    },
+    {
+     "name": "Without prawn",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "11:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oar",
+    "eb-oar"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-dong-ji-fried-kway-teow"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "New Eastern Kim Tee (Xin Dong Fang)",
+   "unit": "#01-112",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Fried intestines",
+     "price": 7.0
+    }
+   ],
+   "hours": [
+    [
+     "0456",
+     [
+      "07:00-18:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-new-eastern-kim-tee-xin-dong-fang"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Hua Ji XO Fish Head Bee Hoon",
+   "unit": "#01-118",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Fish head soup",
+     "price": 7.0
+    },
+    {
+     "name": "Fried fish soup",
+     "price": 7.0
+    },
+    {
+     "name": "Sliced fish soup",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "12:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-hua-ji-xo-fish-head-bee-hoon"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Munchi Pancakes Signature",
+   "unit": "#01-150",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Min jiang kueh",
+     "price": 1.6,
+     "price_note": "from $1.60"
+    },
+    {
+     "name": "Munchi pancakes",
+     "price": 1.8,
+     "price_note": "from $1.80"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "08:00-17:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-51-old-airport-road-munchi-pancakes-signature"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Mama Recipe Briyani Rice",
+   "unit": "#01-18",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Chicken briyani",
+     "price": 4.3,
+     "price_note": "from $4.30"
+    },
+    {
+     "name": "Ayam masak merah",
+     "price": 2.8,
+     "price_note": "from $2.80"
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "11:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-mama-recipe-briyani-rice"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Toast Hut",
+   "unit": "#01-52",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kaya butter toast",
+     "price": 2.0
+    },
+    {
+     "name": "Tuna / ham & egg sandwich",
+     "price": 2.5
+    },
+    {
+     "name": "Kopi / teh",
+     "price": 1.1,
+     "price_note": "from $1.10"
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "06:30-12:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-toast-hut"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Minced Pork Bros",
+   "unit": "#01-113",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Seafood minced pork noodles",
+     "price": 6.0
+    },
+    {
+     "name": "Mee pok tah",
+     "price": 5.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-17:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-minced-pork-bros"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Tong Kee Charcoal BBQ",
+   "unit": "#01-24",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "BBQ chicken wings",
+     "price": 1.5,
+     "price_note": "from $1.50 each (min 2)"
+    }
+   ],
+   "hours": [
+    [
+     "2345",
+     [
+      "16:00-22:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "12:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-tong-kee-charcoal-bbq"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Whampoa Soya Bean",
+   "unit": "#01-68",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Tau huey with grass jelly",
+     "price": 2.0
+    },
+    {
+     "name": "Tau huey with lotus seeds",
+     "price": 3.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-whampoa-soya-bean"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Wooga Bimbowl And Kalguksu",
+   "unit": "#01-72",
+   "cuisine": "korean",
+   "dishes": [
+    {
+     "name": "Spicy lala kalguksu",
+     "price": 8.0
+    },
+    {
+     "name": "Kimchi dumpling kalguksu",
+     "price": 9.5
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:00-14:00",
+      "17:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "detailed",
+   "id": "p-c-51-old-airport-road-wooga-bimbowl-and-kalguksu"
+  },
+  {
+   "cluster": "c-51-old-airport-road",
+   "name": "Siam Cuisine",
+   "unit": "#01-65",
+   "cuisine": "thai",
+   "dishes": [
+    {
+     "name": "Thai yellow curry chicken rice",
+     "price": 5.5
+    },
+    {
+     "name": "Basil chicken rice",
+     "price": 5.5
+    },
+    {
+     "name": "Thai omelette",
+     "price": 3.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-oar"
+   ],
+   "verified": "2024-09",
+   "confidence": "partial",
+   "id": "p-c-51-old-airport-road-siam-cuisine"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Kin Khao Yang Authentic Thai Food",
+   "unit": "#01-02",
+   "cuisine": "thai",
+   "dishes": [
+    {
+     "name": "Basil minced meat rice",
+     "price": 6.0
+    },
+    {
+     "name": "Tom yum seafood soup",
+     "price": 6.0
+    },
+    {
+     "name": "Thai sweet & sour fish",
+     "price": 22.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "id": "p-c-208b-bedok-interchange-kin-khao-yang-authentic-thai-food"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Ma La Xiang Guo",
+   "unit": "#01-48",
+   "cuisine": "other",
+   "dishes": [
+    {
+     "name": "Mala xiang guo, about",
+     "price": 10.0,
+     "price_note": "$10-$15 per person (veg $1.50, meat $2.50, seafood $3 per portion)"
+    },
+    {
+     "name": "Chongqing grilled fish",
+     "price": 25.0
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-bi",
+    "sl-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "id": "p-c-208b-bedok-interchange-ma-la-xiang-guo"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Ming Hui Nasi Lemak",
+   "unit": "#01-34",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak set",
+     "price": 2.5
+    },
+    {
+     "name": "Fish nasi lemak",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "05:00-19:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "05:00-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-208b-bedok-interchange-ming-hui-nasi-lemak"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Hock Hai (Hong Lim) Curry Chicken Noodle",
+   "unit": "#01-58",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Curry chicken bee hoon mee",
+     "price": 5.0
+    },
+    {
+     "name": "Satay bee hoon",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "03456",
+     [
+      "09:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi",
+    "sl-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "id": "p-c-208b-bedok-interchange-hock-hai-hong-lim-curry-chicken-noo"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Xue Hua Fei Cold & Hot Drinks",
+   "unit": "#01-56",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Watermelon ice",
+     "price": 5.0,
+     "price_note": "from $5"
+    },
+    {
+     "name": "Calamansi",
+     "price": 1.5
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi",
+    "sl-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "id": "p-c-208b-bedok-interchange-xue-hua-fei-cold-hot-drinks"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Mei Xiang Lor Mee",
+   "unit": "#01-10",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Lor mee",
+     "price": 4.0
+    },
+    {
+     "name": "Prawn noodles",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "07:30-15:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi",
+    "sl-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "id": "p-c-208b-bedok-interchange-mei-xiang-lor-mee"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Jefri The Original Botak Chicken Rice",
+   "unit": "#01-07",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi goreng ayam",
+     "price": 4.5
+    },
+    {
+     "name": "Nasi ayam",
+     "price": 4.0
+    },
+    {
+     "name": "Mee Hong Kong",
+     "price": 4.0
+    },
+    {
+     "name": "Mee soup",
+     "price": 4.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi",
+    "sl-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "partial",
+   "id": "p-c-208b-bedok-interchange-jefri-the-original-botak-chicken-ri"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Pin Xiang Hainanese Chicken Rice",
+   "unit": "#01-03",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice",
+     "price": 3.8,
+     "price_note": "from $3.80"
+    },
+    {
+     "name": "Char siew rice",
+     "price": 4.0
+    },
+    {
+     "name": "Crispy pork rice",
+     "price": 4.0
+    },
+    {
+     "name": "Chicken cutlet rice",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi",
+    "sl-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-208b-bedok-interchange-pin-xiang-hainanese-chicken-rice"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Inspirasi",
+   "unit": "#01-64",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee rebus",
+     "price": 3.0
+    },
+    {
+     "name": "Soto ayam",
+     "price": 3.0
+    },
+    {
+     "name": "Chicken porridge",
+     "price": 3.0
+    },
+    {
+     "name": "Begedil",
+     "price": 0.5
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi",
+    "sl-bi",
+    "ebbedok"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "id": "p-c-208b-bedok-interchange-inspirasi"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Bedok Chwee Kueh",
+   "unit": "#01-19",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Chwee kueh",
+     "price": 1.0,
+     "price_note": "from $1"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-19:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-bi",
+    "sl-bi"
+   ],
+   "verified": "2025-12",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-208b-bedok-interchange-bedok-chwee-kueh"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Yu Kee Duck Rice",
+   "unit": "#01-28",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Duck rice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bi"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-208b-bedok-interchange-yu-kee-duck-rice"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Song Zhou Luo Bo Gao",
+   "unit": "#01-37",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Fried carrot cake"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bi"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-208b-bedok-interchange-song-zhou-luo-bo-gao"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Zhong Xing Ban Mian",
+   "unit": "#01-46",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Mee hoon kueh soup"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bi"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-208b-bedok-interchange-zhong-xing-ban-mian"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Teo's Noodles",
+   "unit": "#01-26",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Bak chor mee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bi"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-208b-bedok-interchange-teo-s-noodles"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Xin Mei Congee",
+   "unit": "#01-22",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Century egg / minced meat / fish congee"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bi"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-c-208b-bedok-interchange-xin-mei-congee"
+  },
+  {
+   "cluster": "c-208b-bedok-interchange",
+   "name": "Lee Kee Goreng Pisang",
+   "unit": "#01-70",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Goreng pisang"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bi"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "travels_well": true,
+   "id": "p-c-208b-bedok-interchange-lee-kee-goreng-pisang"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Hill Street Fried Kway Teow",
+   "unit": "#01-41",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    }
+   ],
+   "hours": [
+    [
+     "23456",
+     [
+      "11:00-16:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16",
+    "ebbedok"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "note": "Expect a long queue.",
+   "id": "p-c-16-bedok-south-hill-street-fried-kway-teow"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Wong Porridge",
+   "unit": "#01-55",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Pork / chicken / century egg / fish porridge",
+     "price": 4.0,
+     "price_note": "$4/$4.50"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:00-15:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-16-bedok-south-wong-porridge"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Yong Hua You Tiao",
+   "unit": "#01-20",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "You tiao",
+     "price": 1.1
+    }
+   ],
+   "hours": [
+    [
+     "124",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "06:00-21:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-16-bedok-south-yong-hua-you-tiao"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Bedok South Love Heart Prawn Mee Soup",
+   "unit": "#01-91",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn mee",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Hokkien mee",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "05:30-16:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "id": "p-c-16-bedok-south-bedok-south-love-heart-prawn-mee-soup"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Hong Kong Soy Sauce Chicken Rice & Noodle",
+   "unit": "#01-22",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Soy sauce chicken rice",
+     "price": 3.5,
+     "price_note": "$3.50/$4.50"
+    },
+    {
+     "name": "Chicken noodle / hor fun",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Shrimp wanton noodle",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "07:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "id": "p-c-16-bedok-south-hong-kong-soy-sauce-chicken-rice-noodle"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "You & Me Coffee",
+   "unit": "#01-45",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Traditional bread set",
+     "price": 3.8
+    },
+    {
+     "name": "Kaya butter bun set",
+     "price": 3.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "05:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "id": "p-c-16-bedok-south-you-me-coffee"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Kun Qi Kway Chap & Duck Rice",
+   "unit": "#01-35",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Braised duck rice",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Pig stomach",
+     "price": 3.0,
+     "price_note": "$3/$4/$5"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "09:45-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "id": "p-c-16-bedok-south-kun-qi-kway-chap-duck-rice"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Bedok South Teochew Porridge Rice",
+   "unit": "#01-63",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Teochew porridge with 3 sides, under",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "id": "p-c-16-bedok-south-bedok-south-teochew-porridge-rice"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Xiang Xiang Chwee Kueh",
+   "unit": "#01-38",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Chwee kueh (5)",
+     "price": 2.3
+    },
+    {
+     "name": "Chee cheong fun (2)",
+     "price": 2.2
+    },
+    {
+     "name": "Combo",
+     "price": 2.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-16-bedok-south-xiang-xiang-chwee-kueh"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Wak Ana",
+   "unit": "#01-08",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi sambal goreng set",
+     "price": 6.0
+    },
+    {
+     "name": "Rice set meals",
+     "price": 6.0,
+     "price_note": "$6-$7.50"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "06:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "id": "p-c-16-bedok-south-wak-ana"
+  },
+  {
+   "cluster": "c-16-bedok-south",
+   "name": "Moli Food Stall",
+   "unit": "#01-18",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Plain thosai",
+     "price": 1.5
+    },
+    {
+     "name": "Samosa / vadai",
+     "price": 0.7
+    },
+    {
+     "name": "Egg cheese masala",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "07:00-12:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-b16"
+   ],
+   "verified": "2023-12",
+   "confidence": "detailed",
+   "id": "p-c-16-bedok-south-moli-food-stall"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "137 Lor Mee Prawn Mee",
+   "unit": "#01-09",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Lor mee",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "06:30-13:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr",
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-137-lor-mee-prawn-mee"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Yummy Sarawak Kolo Mee",
+   "unit": "#01-45",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Kolo mee set",
+     "price": 5.5,
+     "price_note": "from $5.50"
+    },
+    {
+     "name": "Spare ribs noodle",
+     "price": 6.0,
+     "price_note": "$6-$12"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr",
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-yummy-sarawak-kolo-mee"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Chai Chee Pork Porridge (Tampines)",
+   "unit": "#01-39",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Pork porridge",
+     "price": 4.0
+    },
+    {
+     "name": "Chicken / cuttlefish porridge",
+     "price": 4.0
+    },
+    {
+     "name": "Fish porridge",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "06:00-13:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "06:30-13:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr",
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-137-tampines-round-chai-chee-pork-porridge-tampines"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Lao Lee Pig's Viscera Pork Ribs Prawn Noodle",
+   "unit": "#01-43",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Pig's tail noodle",
+     "price": 6.0,
+     "price_note": "$6/$7/$8"
+    },
+    {
+     "name": "Prawn noodle",
+     "price": 5.0,
+     "price_note": "$5/$6"
+    },
+    {
+     "name": "Pork ribs prawn noodle",
+     "price": 5.0,
+     "price_note": "$5/$6"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "07:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-lao-lee-pig-s-viscera-pork-ribs-prawn-n"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Rajarani Thosai",
+   "unit": "#01-33",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Plain thosai",
+     "price": 2.5
+    },
+    {
+     "name": "Masala thosai",
+     "price": 4.0
+    },
+    {
+     "name": "Butter appam",
+     "price": 2.0
+    },
+    {
+     "name": "Puttu mayam",
+     "price": 2.5
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "07:00-13:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr",
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-rajarani-thosai"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Yong Huat Chicken Rice",
+   "unit": "#01-12",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Char siew / roast pork rice",
+     "price": 3.5
+    },
+    {
+     "name": "Chicken laksa",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "09:15-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-yong-huat-chicken-rice"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Jie Shen Shou Gong Bao",
+   "unit": "#01-42",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Nine-layer kueh",
+     "price": 1.0
+    },
+    {
+     "name": "Egg tart",
+     "price": 1.5
+    },
+    {
+     "name": "Mung bean cake",
+     "price": 2.3
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:30-15:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-137-tampines-round-jie-shen-shou-gong-bao"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Xing Ji Wanton Mee (Tampines)",
+   "unit": "#01-35",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton mee",
+     "price": 5.0,
+     "price_note": "from $5"
+    },
+    {
+     "name": "Curry chicken noodle",
+     "price": 5.0,
+     "price_note": "from $5"
+    },
+    {
+     "name": "Shredded chicken noodle",
+     "price": 5.0,
+     "price_note": "$5/$6/$7"
+    }
+   ],
+   "hours": [
+    [
+     "456",
+     [
+      "06:00-13:00"
+     ]
+    ],
+    [
+     "1",
+     [
+      "06:00-10:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr",
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-xing-ji-wanton-mee-tampines"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "House of Dessert",
+   "unit": "",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Tau suan",
+     "price": 1.7
+    },
+    {
+     "name": "Bubur pulut hitam",
+     "price": 1.7
+    }
+   ],
+   "hours": [
+    [
+     "02356",
+     [
+      "07:00-13:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr",
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-house-of-dessert"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Song Han Carrot Cake",
+   "unit": "#01-07",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Black / white carrot cake",
+     "price": 2.5,
+     "price_note": "$2.50/$3.50/$4.50"
+    }
+   ],
+   "hours": [
+    [
+     "02356",
+     [
+      "06:00-12:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-tr",
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-song-han-carrot-cake"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Shen Li Restaurant",
+   "unit": "#01-15",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Claypot tau huay",
+     "price": 10.0
+    }
+   ],
+   "hours": [
+    [
+     "2345",
+     [
+      "11:30-14:00",
+      "16:30-21:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "16:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-tr"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-shen-li-restaurant"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Nasi Lemak Specialist",
+   "unit": "#01-14",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak",
+     "price": 5.5
+    },
+    {
+     "name": "Lontong",
+     "price": 3.5
+    },
+    {
+     "name": "Mee rebus",
+     "price": 3.5
+    }
+   ],
+   "hours": [
+    [
+     "23456",
+     [
+      "07:30-13:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "07:30-12:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-nasi-lemak-specialist"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Teo Kee Mushroom Minced Pork Noodle",
+   "unit": "#01-05",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Mushroom minced meat noodles",
+     "price": 4.0,
+     "price_note": "from $4"
+    },
+    {
+     "name": "Pork ribs noodles",
+     "price": 6.0,
+     "price_note": "from $6"
+    }
+   ],
+   "hours": [
+    [
+     "03456",
+     [
+      "06:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-teo-kee-mushroom-minced-pork-noodle"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Hai Chang Fish Head Steamboat",
+   "unit": "#01-03",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Fish head steamboat",
+     "price": 26.0,
+     "price_note": "from $26"
+    }
+   ],
+   "hours": [
+    [
+     "03456",
+     [
+      "17:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-hai-chang-fish-head-steamboat"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Yi Le Shu Shi",
+   "unit": "#01-10",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Economic bee hoon",
+     "price": 1.5,
+     "price_note": "from $1.50"
+    },
+    {
+     "name": "Rice cake",
+     "price": 1.2
+    },
+    {
+     "name": "Soon kueh",
+     "price": 1.0
+    }
+   ],
+   "hours": [
+    [
+     "0156",
+     [
+      "07:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-c-137-tampines-round-yi-le-shu-shi"
+  },
+  {
+   "cluster": "c-137-tampines-round",
+   "name": "Granny's Pancake (Kim San Leng)",
+   "unit": "#01-148",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Min jiang kueh",
+     "price": 1.0,
+     "price_note": "from $1"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "07:30-16:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "note": "In the Kim San Leng coffeeshop in the same block.",
+   "id": "p-c-137-tampines-round-granny-s-pancake-kim-san-leng"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Botak Cantonese Porridge",
+   "unit": "#01-65",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Minced pork century egg porridge",
+     "price": 4.0
+    },
+    {
+     "name": "Seafood porridge",
+     "price": 6.5
+    },
+    {
+     "name": "Braised pork rice",
+     "price": 3.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oth",
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-our-tampines-hub-botak-cantonese-porridge"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Munchi Pancakes (Our Tampines Hub)",
+   "unit": "#01-67",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Min jiang kueh",
+     "price": 1.8,
+     "price_note": "from $1.80"
+    },
+    {
+     "name": "Black sesame",
+     "price": 2.2
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-our-tampines-hub-munchi-pancakes-our-tampines-hub"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Yong Seng Heng Prawn Noodle",
+   "unit": "#01-43",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn noodles",
+     "price": 2.8,
+     "price_note": "from $2.80"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "partial",
+   "id": "p-c-our-tampines-hub-yong-seng-heng-prawn-noodle"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Indian Cuisine (Our Tampines Hub)",
+   "unit": "#01-59",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Chole bhature",
+     "price": 6.9
+    },
+    {
+     "name": "Butter chicken",
+     "price": 9.8
+    },
+    {
+     "name": "Fish masala",
+     "price": 8.8
+    },
+    {
+     "name": "Mutton rogan josh",
+     "price": 11.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "detailed",
+   "id": "p-c-our-tampines-hub-indian-cuisine-our-tampines-hub"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Jue Shi Lor Mee",
+   "unit": "#01-45",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Traditional lor mee",
+     "price": 4.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "detailed",
+   "id": "p-c-our-tampines-hub-jue-shi-lor-mee"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Japanese Curry House",
+   "unit": "#01-34",
+   "cuisine": "japanese",
+   "dishes": [
+    {
+     "name": "Pork cutlet curry rice",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "detailed",
+   "id": "p-c-our-tampines-hub-japanese-curry-house"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Ofanz Rojak Popiah",
+   "unit": "#01-39",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Chinese rojak",
+     "price": 3.5,
+     "price_note": "from $3.50"
+    },
+    {
+     "name": "Popiah",
+     "price": 3.6
+    }
+   ],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-20:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "09:00-20:00"
+     ]
+    ],
+    [
+     "3456",
+     [
+      "10:00-20:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-our-tampines-hub-ofanz-rojak-popiah"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "The Fish Soup (Yi De)",
+   "unit": "#01-44",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Fried fish soup",
+     "price": 4.8
+    },
+    {
+     "name": "Seafood soup",
+     "price": 5.8
+    },
+    {
+     "name": "Sliced fish porridge",
+     "price": 2.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "detailed",
+   "id": "p-c-our-tampines-hub-the-fish-soup-yi-de"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Warung Wak Dindang",
+   "unit": "#01-58",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak",
+     "price": 4.5
+    },
+    {
+     "name": "Nasi ambeng",
+     "price": 9.6
+    },
+    {
+     "name": "Ayam penyet",
+     "price": 9.6
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "partial",
+   "id": "p-c-our-tampines-hub-warung-wak-dindang"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "Social Bite",
+   "unit": "#01-63",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Signature laksa",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Mee siam",
+     "price": 4.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "partial",
+   "id": "p-c-our-tampines-hub-social-bite"
+  },
+  {
+   "cluster": "c-our-tampines-hub",
+   "name": "P&J Western Food",
+   "unit": "#01-69",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Chicken chop",
+     "price": 10.6
+    },
+    {
+     "name": "Fish & chips",
+     "price": 11.3
+    },
+    {
+     "name": "Mixed grill",
+     "price": 21.3
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-oth"
+   ],
+   "verified": "2022-07",
+   "confidence": "partial",
+   "id": "p-c-our-tampines-hub-p-j-western-food"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Wild Olives",
+   "unit": "#02-19",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Spaghetti marinara",
+     "price": 3.5
+    },
+    {
+     "name": "Grilled pork chop",
+     "price": 7.2
+    },
+    {
+     "name": "NZ sirloin steak",
+     "price": 13.9
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "12:00-15:00",
+      "17:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "id": "p-c-pasir-ris-central-wild-olives"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Ah Yi Lao Huo Tang",
+   "unit": "#02-14",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Lotus root peanut pork ribs soup",
+     "price": 5.0
+    },
+    {
+     "name": "Buddha jumps over the wall",
+     "price": 7.5
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "11:30-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "id": "p-c-pasir-ris-central-ah-yi-lao-huo-tang"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Liang Liang Collagen PaoFan and Ramen",
+   "unit": "#02-11",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Batang fish collagen pao fan",
+     "price": 10.5
+    },
+    {
+     "name": "Braised pork rice combo",
+     "price": 9.3
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:00-14:00",
+      "17:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "id": "p-c-pasir-ris-central-liang-liang-collagen-paofan-and-ramen"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Nyonya Pok Pok Kay",
+   "unit": "#02-23",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Ayam curry kapitan set",
+     "price": 8.2
+    }
+   ],
+   "hours": [
+    [
+     "23456",
+     [
+      "11:30-14:30",
+      "17:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "note": "Peranakan food.",
+   "id": "p-c-pasir-ris-central-nyonya-pok-pok-kay"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Chi Sen Ramen",
+   "unit": "#02-21",
+   "cuisine": "japanese",
+   "dishes": [
+    {
+     "name": "Clam prawn ramen",
+     "price": 8.9
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "id": "p-c-pasir-ris-central-chi-sen-ramen"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Divine Bites",
+   "unit": "#02-16",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Longan walnut muffin",
+     "price": 1.9
+    },
+    {
+     "name": "Basque burnt cheesecake",
+     "price": 6.7
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-pasir-ris-central-divine-bites"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Simful Nasi Lemak",
+   "unit": "#02-20",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Simful nasi lemak set",
+     "price": 6.5
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "11:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "id": "p-c-pasir-ris-central-simful-nasi-lemak"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Yon Ho Hainanese Cuisine",
+   "unit": "#01-09",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Claypot herbal mutton soup",
+     "price": 14.0
+    },
+    {
+     "name": "Braised knuckles",
+     "price": 10.5
+    },
+    {
+     "name": "Braised pork skin",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "id": "p-c-pasir-ris-central-yon-ho-hainanese-cuisine"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Jun Yuan House Of Fish",
+   "unit": "#01-11",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Herbal grouper soup",
+     "price": 13.8
+    },
+    {
+     "name": "XO fried fish soup",
+     "price": 10.8
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "11:30-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "id": "p-c-pasir-ris-central-jun-yuan-house-of-fish"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Authentic Hakka Yong Tau Foo (Jia)",
+   "unit": "#01-20",
+   "cuisine": "yong-tau-foo",
+   "dishes": [
+    {
+     "name": "6-pc yong tau foo",
+     "price": 5.0
+    },
+    {
+     "name": "With bee hoon",
+     "price": 5.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "name_zh": "家",
+   "id": "p-c-pasir-ris-central-authentic-hakka-yong-tau-foo-jia"
+  },
+  {
+   "cluster": "c-pasir-ris-central",
+   "name": "Uncle Penyet",
+   "unit": "#01-02",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi ayam penyet",
+     "price": 9.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-prc"
+   ],
+   "verified": "2025-06",
+   "confidence": "detailed",
+   "id": "p-c-pasir-ris-central-uncle-penyet"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "International Muslim Food Stall Nasi Lemak",
+   "unit": "#01-03",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Chicken wing nasi lemak",
+     "price": 5.0
+    },
+    {
+     "name": "Fish nasi lemak",
+     "price": 5.0
+    },
+    {
+     "name": "Ikan bilis nasi lemak",
+     "price": 3.0
+    }
+   ],
+   "hours": [
+    [
+     "15",
+     [
+      "18:00-21:30"
+     ]
+    ],
+    [
+     "234",
+     [
+      "11:30-14:00",
+      "18:00-21:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "16:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-changi-village-international-muslim-food-stall-nasi-lemak"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Hassan Stall",
+   "unit": "#01-29",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee rebus",
+     "price": 4.0
+    },
+    {
+     "name": "Laksa",
+     "price": 4.0
+    },
+    {
+     "name": "Lontong",
+     "price": 4.0
+    },
+    {
+     "name": "Mee siam",
+     "price": 4.0
+    },
+    {
+     "name": "Curry puff",
+     "price": 1.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:00-14:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-changi-village-hassan-stall"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Weng Kee Original Taste Ipoh Hor Fun",
+   "unit": "#01-19",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Chicken chop hor fun",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Wanton noodles",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Fried wanton",
+     "price": 2.0,
+     "price_note": "$2/$4"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-changi-village-weng-kee-original-taste-ipoh-hor-fun"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "What The Puff! (Changi Village)",
+   "unit": "#01-52",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Original curry puff",
+     "price": 2.0
+    },
+    {
+     "name": "Sardine",
+     "price": 2.0
+    },
+    {
+     "name": "Cheese curry",
+     "price": 2.5
+    },
+    {
+     "name": "Black pepper chicken",
+     "price": 2.5
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "07:30-15:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-changi-village-what-the-puff-changi-village"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Million Star Fried Banana",
+   "unit": "#01-35",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Banana raja",
+     "price": 1.2,
+     "price_note": "$1.20/$1.50"
+    },
+    {
+     "name": "Cempedak (3)",
+     "price": 2.5
+    },
+    {
+     "name": "Sweet potato",
+     "price": 1.2
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "10:00-17:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-changi-village-million-star-fried-banana"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Hjh. Salbiah",
+   "unit": "#01-04",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Beef rendang",
+     "price": 4.0
+    },
+    {
+     "name": "Ayam merah",
+     "price": 4.0
+    },
+    {
+     "name": "Sotong",
+     "price": 4.0,
+     "price_note": "$4/$6"
+    },
+    {
+     "name": "Lontong",
+     "price": 4.0
+    }
+   ],
+   "hours": [
+    [
+     "0126",
+     [
+      "07:00-15:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "note": "Nasi padang.",
+   "id": "p-c-changi-village-hjh-salbiah"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Dao Xiang (Changi Village)",
+   "unit": "#01-30",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Sambal petai prawn with rice",
+     "price": 7.9
+    },
+    {
+     "name": "Sesame oil chicken rice",
+     "price": 5.5
+    },
+    {
+     "name": "Prawn fritters",
+     "price": 1.6,
+     "price_note": "$1.60 each"
+    }
+   ],
+   "hours": [
+    [
+     "0134",
+     [
+      "10:00-20:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-changi-village-dao-xiang-changi-village"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "W Kitchen Western Food",
+   "unit": "#01-33",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Chicken / pork chop",
+     "price": 7.0
+    },
+    {
+     "name": "Cutlet",
+     "price": 7.5
+    },
+    {
+     "name": "Fish & chips",
+     "price": 7.5
+    }
+   ],
+   "hours": [
+    [
+     "01256",
+     [
+      "12:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-changi-village-w-kitchen-western-food"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "King Grouper Fish Soup",
+   "unit": "#01-64",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Fried / sliced grouper fish soup",
+     "price": 6.0,
+     "price_note": "$6/$9"
+    },
+    {
+     "name": "Batang fish soup",
+     "price": 6.0,
+     "price_note": "$6/$9"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-changi-village-king-grouper-fish-soup"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Bedok Beef Kway Teow",
+   "unit": "#01-45",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Beef kway teow",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    },
+    {
+     "name": "Mixed beef kway teow",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "09:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-changi-village-bedok-beef-kway-teow"
+  },
+  {
+   "cluster": "c-changi-village",
+   "name": "Changi V. Dessert House",
+   "unit": "#01-08",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Chendol",
+     "price": 2.5
+    },
+    {
+     "name": "Ice kachang",
+     "price": 2.5
+    },
+    {
+     "name": "Soursop ice jelly",
+     "price": 2.5
+    },
+    {
+     "name": "Chendol with ice cream",
+     "price": 3.5
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-cv"
+   ],
+   "verified": "2026-08",
+   "confidence": "detailed",
+   "id": "p-c-changi-village-changi-v-dessert-house"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Neptune Hong Kong Dim Sum",
+   "unit": "#01-26",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Siew mai",
+     "price": 3.6
+    },
+    {
+     "name": "Har gow",
+     "price": 3.6
+    },
+    {
+     "name": "Xiao long bao",
+     "price": 3.8
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp",
+    "sl-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "note": "Was open 24 hours in 2019 — check.",
+   "id": "p-c-84-marine-parade-neptune-hong-kong-dim-sum"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Yok Mari Yok",
+   "unit": "#01-03",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee rebus",
+     "price": 3.5
+    },
+    {
+     "name": "Mee siam / mee soto / lontong",
+     "price": 3.5
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp",
+    "sl-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "id": "p-c-84-marine-parade-yok-mari-yok"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "New World Congee",
+   "unit": "#01-45",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Happiness congee",
+     "price": 3.5,
+     "price_note": "from $3.50"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "id": "p-c-84-marine-parade-new-world-congee"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Apollo Fresh Cockle Fried Kway Teow",
+   "unit": "",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow",
+     "price": 4.0,
+     "price_note": "from $4"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp",
+    "sl-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "note": "Ask for the spicy version.",
+   "id": "p-c-84-marine-parade-apollo-fresh-cockle-fried-kway-teow"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Xin Long Cooked Food",
+   "unit": "#01-20",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Economical rice (chap chye png)",
+     "price": 3.0,
+     "price_note": "from $3"
+    },
+    {
+     "name": "Beef rendang",
+     "price": 3.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp",
+    "sl-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "id": "p-c-84-marine-parade-xin-long-cooked-food"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "D'Authentic Nasi Lemak",
+   "unit": "#01-36",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak set",
+     "price": 3.5
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp",
+    "sl-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "travels_well": true,
+   "id": "p-c-84-marine-parade-d-authentic-nasi-lemak"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Kun Ji Duck Rice",
+   "unit": "#01-25",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Braised duck rice",
+     "price": 3.5,
+     "price_note": "from $3.50"
+    },
+    {
+     "name": "Duck porridge",
+     "price": 3.5
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp",
+    "sl-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "id": "p-c-84-marine-parade-kun-ji-duck-rice"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Tip Top Western Food",
+   "unit": "#01-22",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Chicken cutlet",
+     "price": 6.5
+    },
+    {
+     "name": "Fish & chips",
+     "price": 6.5
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp",
+    "sl-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "id": "p-c-84-marine-parade-tip-top-western-food"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Aziza Putu Piring",
+   "unit": "#01-02",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Gula melaka putu piring (3)",
+     "price": 2.7
+    },
+    {
+     "name": "Curry puff",
+     "price": 1.8
+    },
+    {
+     "name": "Goreng pisang",
+     "price": 1.8
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp",
+    "sl-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "travels_well": true,
+   "id": "p-c-84-marine-parade-aziza-putu-piring"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Emmanuel Peranakan Cuisine",
+   "unit": "#01-30",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nyonya nasi lemak",
+     "price": 5.5
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-mp"
+   ],
+   "verified": "2022-03",
+   "confidence": "partial",
+   "note": "Peranakan food.",
+   "id": "p-c-84-marine-parade-emmanuel-peranakan-cuisine"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Whampoa Soya Bean (Marine Parade)",
+   "unit": "#01-19",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Soya beancurd",
+     "price": 1.3
+    },
+    {
+     "name": "Grass jelly",
+     "price": 1.5
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-mp"
+   ],
+   "verified": "2019-10",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-whampoa-soya-bean-marine-parade"
+  },
+  {
+   "cluster": "c-84-marine-parade",
+   "name": "Four Seasons Cendol",
+   "unit": "#01-31",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Cendol"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-mp"
+   ],
+   "verified": "2019-10",
+   "confidence": "listed",
+   "id": "p-c-84-marine-parade-four-seasons-cendol"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Traditional Haig Road Putu Piring",
+   "unit": "",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Original putu piring (5)",
+     "price": 2.5
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "travels_well": true,
+   "id": "p-c-14-haig-road-traditional-haig-road-putu-piring"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Warong Sudi Mampir",
+   "unit": "#01-19",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Satay",
+     "price": 0.6,
+     "price_note": "$0.60 per stick"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-warong-sudi-mampir"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "T.G Fish Porridge",
+   "unit": "#01-50",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Fish soup",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    },
+    {
+     "name": "Seafood porridge",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    },
+    {
+     "name": "Fish head porridge",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-t-g-fish-porridge"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Afandi Hawa & Family Mee Rebus",
+   "unit": "#01-21",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee rebus",
+     "price": 3.0
+    },
+    {
+     "name": "Soto ayam",
+     "price": 3.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-afandi-hawa-family-mee-rebus"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "HJ Waliti HJ Mazuki",
+   "unit": "#01-18",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Soto ayam",
+     "price": 3.0
+    },
+    {
+     "name": "Mee rebus",
+     "price": 3.0
+    },
+    {
+     "name": "Bubur ayam",
+     "price": 3.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-hj-waliti-hj-mazuki"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Hougang Jing Jia Mutton Soup",
+   "unit": "#01-44",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Mixed mutton soup",
+     "price": 6.0,
+     "price_note": "$6/$8"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-hougang-jing-jia-mutton-soup"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Zhenguang Wantan Noodles",
+   "unit": "#01-67",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton noodles",
+     "price": 3.0,
+     "price_note": "$3/$4"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-zhenguang-wantan-noodles"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Rosy & Nora",
+   "unit": "#01-15",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Roti john",
+     "price": 4.0
+    },
+    {
+     "name": "Kentang ball",
+     "price": 4.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-rosy-nora"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "V2 Claypot Corner",
+   "unit": "#01-52",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Claypot rice",
+     "price": 4.0,
+     "price_note": "$4/$8"
+    },
+    {
+     "name": "Claypot bak kut teh",
+     "price": 4.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-v2-claypot-corner"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Lin Yu Mei Kolo Mee",
+   "unit": "#01-33",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Kolo mee",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Sarawak laksa",
+     "price": 6.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-lin-yu-mei-kolo-mee"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Soon Lee Cooked Food",
+   "unit": "#01-57",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Oyster omelette",
+     "price": 6.0,
+     "price_note": "$6/$8/$10"
+    },
+    {
+     "name": "Carrot cake",
+     "price": 3.0,
+     "price_note": "$3/$4/$5"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-soon-lee-cooked-food"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Anisah's Curry Puff",
+   "unit": "#01-08",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Curry puff / sardine puff, 4 for",
+     "price": 2.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "travels_well": true,
+   "id": "p-c-14-haig-road-anisah-s-curry-puff"
+  },
+  {
+   "cluster": "c-14-haig-road",
+   "name": "Chef Chik",
+   "unit": "#01-36",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Cordyceps white fungus chicken soup",
+     "price": 6.0
+    },
+    {
+     "name": "Steamed threadfin belly"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-haig"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-14-haig-road-chef-chik"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Otak-Otak Kampung",
+   "unit": "#02-165",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Otak-otak (3) under",
+     "price": 3.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs",
+    "sl-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "travels_well": true,
+   "id": "p-c-geylang-serai-otak-otak-kampung"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Geylang Briyani Stall",
+   "unit": "#02-146",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi briyani ayam / kambing about",
+     "price": 7.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs",
+    "sl-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "id": "p-c-geylang-serai-geylang-briyani-stall"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Nasi Ayam Sambal",
+   "unit": "#02-129",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Malay-style chicken rice from about",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs",
+    "sl-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "id": "p-c-geylang-serai-nasi-ayam-sambal"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Rojak & Mee Siam",
+   "unit": "#02-126",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee siam about",
+     "price": 3.0
+    },
+    {
+     "name": "Indian rojak items",
+     "price": 0.8,
+     "price_note": "$0.80-$1.50"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs",
+    "sl-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "id": "p-c-geylang-serai-rojak-mee-siam"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Kueh Talam Asli",
+   "unit": "#02-148",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Kueh talam / kueh salat, 5 pieces about",
+     "price": 5.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs",
+    "sl-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "travels_well": true,
+   "id": "p-c-geylang-serai-kueh-talam-asli"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Iqbal Soup Kambing",
+   "unit": "#02-128",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Soup kambing from about",
+     "price": 6.0,
+     "price_note": "from $6"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs",
+    "sl-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "id": "p-c-geylang-serai-iqbal-soup-kambing"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Geylang Apam Pulau Pinang",
+   "unit": "#02-144",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Apam balik about",
+     "price": 3.0,
+     "price_note": "$3 a slice"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "id": "p-c-geylang-serai-geylang-apam-pulau-pinang"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Warong Solo",
+   "unit": "#02-123",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee rebus",
+     "price": 3.0,
+     "price_note": "from $3"
+    },
+    {
+     "name": "Mee soto"
+    },
+    {
+     "name": "Nasi lemak"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs",
+    "sl-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "id": "p-c-geylang-serai-warong-solo"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "G. S. Oli Thosei & Food Stall",
+   "unit": "#02-138",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Thosai / appam from about",
+     "price": 3.0,
+     "price_note": "from $3"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "id": "p-c-geylang-serai-g-s-oli-thosei-food-stall"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Pak Din Nasi Ayam Bakar",
+   "unit": "#02-151",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi ayam bakar about",
+     "price": 7.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-gs"
+   ],
+   "verified": "2023-08",
+   "confidence": "partial",
+   "id": "p-c-geylang-serai-pak-din-nasi-ayam-bakar"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Alhambra Heritage & Original Satay Club",
+   "unit": "#02-145",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "Satay (chicken, mutton, beef)"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-gs"
+   ],
+   "verified": "2019-06",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-alhambra-heritage-original-satay-club"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Alrahman Kitchen",
+   "unit": "#02-139",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee rebus"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-gs"
+   ],
+   "verified": "2019-06",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-alrahman-kitchen"
+  },
+  {
+   "cluster": "c-geylang-serai",
+   "name": "Cendol Geylang Serai",
+   "unit": "#02-107",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Cendol"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-gs"
+   ],
+   "verified": "2019-06",
+   "confidence": "listed",
+   "id": "p-c-geylang-serai-cendol-geylang-serai"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Lau Hong Ser Rojak",
+   "unit": "#02-14",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Rojak",
+     "price": 3.0,
+     "price_note": "from $3"
+    }
+   ],
+   "hours": [
+    [
+     "145",
+     [
+      "15:00-01:00"
+     ]
+    ],
+    [
+     "26",
+     [
+      "15:00-00:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-dunman-lau-hong-ser-rojak"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Dunman Road Char Siew Wanton Mee",
+   "unit": "#02-19",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton noodles",
+     "price": 4.0,
+     "price_note": "from $4"
+    }
+   ],
+   "hours": [
+    [
+     "01256",
+     [
+      "09:30-16:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "id": "p-c-dunman-dunman-road-char-siew-wanton-mee"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Say Seng Tau Kwa Pau",
+   "unit": "#01-05",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Tau kwa pau",
+     "price": 2.0
+    }
+   ],
+   "hours": [
+    [
+     "03456",
+     [
+      "07:00-16:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "id": "p-c-dunman-say-seng-tau-kwa-pau"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Gina's Vadai",
+   "unit": "#01-06",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Prawn vadai",
+     "price": 1.2
+    },
+    {
+     "name": "Ikan bilis vadai",
+     "price": 1.5
+    },
+    {
+     "name": "Dhal vadai",
+     "price": 1.2
+    }
+   ],
+   "hours": [
+    [
+     "345",
+     [
+      "09:00-15:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "09:00-15:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-dunman-gina-s-vadai"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Fu Xing Mei Shi",
+   "unit": "#02-30",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Special sauce steamed fish head",
+     "price": 20.0
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "11:00-23:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group",
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "id": "p-c-dunman-fu-xing-mei-shi"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Dunman Duck Rice",
+   "unit": "#01-10",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Duck rice",
+     "price": 4.0,
+     "price_note": "from $4"
+    },
+    {
+     "name": "Duck porridge",
+     "price": 3.5
+    },
+    {
+     "name": "Kway chap",
+     "price": 3.5
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "07:00-23:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "id": "p-c-dunman-dunman-duck-rice"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Rong Ji Chicken Rice and Porridge",
+   "unit": "#02-13",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice",
+     "price": 3.5
+    },
+    {
+     "name": "Fish porridge",
+     "price": 4.0
+    },
+    {
+     "name": "Pork porridge",
+     "price": 3.0
+    }
+   ],
+   "hours": [
+    [
+     "01456",
+     [
+      "06:00-15:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "id": "p-c-dunman-rong-ji-chicken-rice-and-porridge"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "28 Fried Kway Teow",
+   "unit": "#02-28",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried kway teow",
+     "price": 4.0,
+     "price_note": "from $4"
+    },
+    {
+     "name": "Oyster omelette",
+     "price": 6.0,
+     "price_note": "from $6"
+    },
+    {
+     "name": "Fried Hokkien prawn noodle",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "id": "p-c-dunman-28-fried-kway-teow"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Lin's Braised",
+   "unit": "#02-29",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Hakka braised pork rice",
+     "price": 6.0
+    },
+    {
+     "name": "Braised pig trotter rice bowl",
+     "price": 9.0
+    },
+    {
+     "name": "Fish soup",
+     "price": 6.0,
+     "price_note": "from $6"
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "10:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "id": "p-c-dunman-lin-s-braised"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Jia Dong Shu Shi Popiah",
+   "unit": "#02-17",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Popiah",
+     "price": 1.8,
+     "price_note": "$1.80 a roll"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "13:00-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-dun",
+    "ww-dun"
+   ],
+   "verified": "2024-03",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-dunman-jia-dong-shu-shi-popiah"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "Heng Heng Prawn Mee Soup",
+   "unit": "#02-12",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn noodles from about",
+     "price": 4.0,
+     "price_note": "from $4"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-dun"
+   ],
+   "verified": "2023-02",
+   "confidence": "partial",
+   "id": "p-c-dunman-heng-heng-prawn-mee-soup"
+  },
+  {
+   "cluster": "c-dunman",
+   "name": "My Pancake",
+   "unit": "#02-18",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Min jiang kueh from about",
+     "price": 1.0,
+     "price_note": "from $1"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ww-dun"
+   ],
+   "verified": "2023-02",
+   "confidence": "partial",
+   "travels_well": true,
+   "id": "p-c-dunman-my-pancake"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Lagoon Famous Carrot Cake",
+   "unit": "#01-40",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Black & white carrot cake",
+     "price": 7.0,
+     "price_note": "from $7"
+    },
+    {
+     "name": "Popiah",
+     "price": 2.4
+    }
+   ],
+   "hours": [
+    [
+     "1345",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "08:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-lagoon-famous-carrot-cake"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Stingray Forever BBQ Seafood",
+   "unit": "#01-43",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "Hottest stingray",
+     "price": 18.0
+    },
+    {
+     "name": "Sambal lala",
+     "price": 13.0
+    },
+    {
+     "name": "Gong gong",
+     "price": 13.0
+    },
+    {
+     "name": "BBQ sea prawns",
+     "price": 16.0
+    }
+   ],
+   "hours": [
+    [
+     "012",
+     [
+      "16:30-23:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group",
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-stingray-forever-bbq-seafood"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Haron Satay 55",
+   "unit": "#01-55",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "Chicken / beef / mutton satay",
+     "price": 1.0,
+     "price_note": "$1 a stick"
+    }
+   ],
+   "hours": [
+    [
+     "03",
+     [
+      "15:00-20:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "14:00-20:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "15:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-haron-satay-55"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Zuo Ji Duck Rice",
+   "unit": "#01-29",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Braised duck rice / porridge",
+     "price": 4.5,
+     "price_note": "from $4.50"
+    }
+   ],
+   "hours": [
+    [
+     "1345",
+     [
+      "10:00-17:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "09:30-17:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "09:30-19:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-zuo-ji-duck-rice"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Choon Hiang",
+   "unit": "#01-46",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow",
+     "price": 4.0,
+     "price_note": "from $4"
+    },
+    {
+     "name": "Fried Hokkien prawn mee",
+     "price": 4.0,
+     "price_note": "from $4"
+    },
+    {
+     "name": "Mee goreng",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-choon-hiang"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Ah Hwee BBQ Chicken",
+   "unit": "#01-14",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "Charcoal BBQ wings",
+     "price": 1.4,
+     "price_note": "$1.40 each"
+    },
+    {
+     "name": "Spring chicken",
+     "price": 9.0
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "15:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-ah-hwee-bbq-chicken"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Han Jia Bak Kut Teh Pork Leg",
+   "unit": "#01-42",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Bak kut teh",
+     "price": 6.5
+    },
+    {
+     "name": "Braised pork trotters",
+     "price": 6.9
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-20:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "09:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-han-jia-bak-kut-teh-pork-leg"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Song Kee Fried Oyster",
+   "unit": "#01-15",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Oyster egg",
+     "price": 7.0,
+     "price_note": "from $7"
+    },
+    {
+     "name": "Fried oyster",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "01456",
+     [
+      "16:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-song-kee-fried-oyster"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Hwa Kee BBQ Pork Noodle",
+   "unit": "#01-45",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton noodle",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "12456",
+     [
+      "17:00-00:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "12:00-00:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-hwa-kee-bbq-pork-noodle"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Lagoon Leng Kee Beef Kway Teow",
+   "unit": "#01-33",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Beef kway teow",
+     "price": 6.0,
+     "price_note": "$6/$8/$10"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "16:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-lagoon-leng-kee-beef-kway-teow"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Ahmad Spring",
+   "unit": "#01-58",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "Chicken wings",
+     "price": 1.6,
+     "price_note": "$1.60 each"
+    },
+    {
+     "name": "Satay",
+     "price": 0.9,
+     "price_note": "$0.90 a stick"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "16:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-ahmad-spring"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "BBQ Seafood Kitchen",
+   "unit": "#01-04",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Fried seafood bee hoon",
+     "price": 8.0,
+     "price_note": "from $8"
+    },
+    {
+     "name": "White bee hoon",
+     "price": 10.0,
+     "price_note": "from $10"
+    }
+   ],
+   "hours": [
+    [
+     "1234",
+     [
+      "14:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "14:00-22:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "13:00-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "13:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-bbq-seafood-kitchen"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Geylang 29 Charcoal Fried Hokkien Mee",
+   "unit": "#01-32",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Hokkien prawn noodles",
+     "price": 6.0,
+     "price_note": "from $6"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "16:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-geylang-29-charcoal-fried-hokkien-mee"
+  },
+  {
+   "cluster": "c-east-coast-lagoon",
+   "name": "Oleh Oleh Bandung",
+   "unit": "#01-50",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee rebus / mee hoon soto / nasi lemak",
+     "price": 4.0
+    },
+    {
+     "name": "Gado-gado",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "16:30-22:30"
+     ]
+    ],
+    [
+     "06",
+     [
+      "10:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-eclfv"
+   ],
+   "verified": "2024-02",
+   "confidence": "detailed",
+   "id": "p-c-east-coast-lagoon-oleh-oleh-bandung"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Fen Xiang Fried Kway Teow",
+   "unit": "#01-21",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow",
+     "price": 3.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-fen-xiang-fried-kway-teow"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "S.J Sickander Ammal Muslim Foods",
+   "unit": "#01-05",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Plain prata",
+     "price": 1.2
+    },
+    {
+     "name": "Egg prata",
+     "price": 1.8
+    },
+    {
+     "name": "Coin prata",
+     "price": 4.0
+    },
+    {
+     "name": "Maggi goreng",
+     "price": 4.5
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast",
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-s-j-sickander-ammal-muslim-foods"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "San Chao",
+   "unit": "#01-11",
+   "cuisine": "carrot-cake",
+   "dishes": [
+    {
+     "name": "Carrot cake",
+     "price": 3.0,
+     "price_note": "$3/$4/$5"
+    },
+    {
+     "name": "Fried kway teow",
+     "price": 3.5
+    },
+    {
+     "name": "Oyster omelette",
+     "price": 6.0,
+     "price_note": "$6/$8/$10"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-san-chao"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Handmade Noodles (Eunos)",
+   "unit": "#01-12",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Handmade noodle",
+     "price": 3.5
+    },
+    {
+     "name": "Beef brisket ban mian",
+     "price": 6.0
+    },
+    {
+     "name": "Guo tie (10)",
+     "price": 6.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-handmade-noodles-eunos"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Nasi Lemak Kukus",
+   "unit": "#01-26",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak chicken set",
+     "price": 3.5
+    },
+    {
+     "name": "Epok epok",
+     "price": 0.8
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-nasi-lemak-kukus"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Mami Midah Briyani",
+   "unit": "#01-17",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Chicken briyani",
+     "price": 7.0
+    },
+    {
+     "name": "Lamb shank briyani",
+     "price": 16.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-mami-midah-briyani"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Keng Huat Cold & Hot Dessert",
+   "unit": "#01-23",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Cheng tng",
+     "price": 1.7
+    },
+    {
+     "name": "Ice jelly cocktail",
+     "price": 1.7
+    },
+    {
+     "name": "Mango pudding",
+     "price": 2.7
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-keng-huat-cold-hot-dessert"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "San Xi Hainanese Chicken Rice",
+   "unit": "#01-41",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice",
+     "price": 3.3,
+     "price_note": "$3.30/$4.30"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-san-xi-hainanese-chicken-rice"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Hai Xian Zhi Jia",
+   "unit": "#01-38",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Sliced fish soup",
+     "price": 5.0
+    },
+    {
+     "name": "Red grouper fish head soup",
+     "price": 7.0
+    },
+    {
+     "name": "Sambal lala",
+     "price": 8.0
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-hai-xian-zhi-jia"
+  },
+  {
+   "cluster": "c-4a-eunos-crescent",
+   "name": "Whampoa Soya Bean (Eunos)",
+   "unit": "#01-35",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Soya bean",
+     "price": 1.3,
+     "price_note": "$1.30/$1.50"
+    },
+    {
+     "name": "Grass jelly"
+    },
+    {
+     "name": "Beancurd"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-eunos"
+   ],
+   "verified": "2022-05",
+   "confidence": "partial",
+   "id": "p-c-4a-eunos-crescent-whampoa-soya-bean-eunos"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Bedok Corner Hokkien Fried Squid Prawn Mee",
+   "unit": "#01-29",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried Hokkien prawn mee",
+     "price": 5.0,
+     "price_note": "$5/$7/$10/$12"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "11:00-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "note": "Halal.",
+   "id": "p-c-bedok-corner-bedok-corner-hokkien-fried-squid-prawn-mee"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Yang's Epok-Epok",
+   "unit": "#01-04",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Epok-epok (potato / sardine)",
+     "price": 0.6
+    },
+    {
+     "name": "Goreng pisang",
+     "price": 0.6
+    }
+   ],
+   "hours": [
+    [
+     "03456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-c-bedok-corner-yang-s-epok-epok"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "LaksaMana",
+   "unit": "#01-19",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Laksa Singapura",
+     "price": 4.0
+    },
+    {
+     "name": "With prawn or cockles",
+     "price": 5.5
+    },
+    {
+     "name": "Penang and Johor laksa"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "09:00-21:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "09:00-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "id": "p-c-bedok-corner-laksamana"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Persian Tandoor",
+   "unit": "#01-18",
+   "cuisine": "other",
+   "dishes": [
+    {
+     "name": "Mediterranean set with fish shashlik",
+     "price": 9.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "12:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "id": "p-c-bedok-corner-persian-tandoor"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Green Sky Fried Kway Teow",
+   "unit": "#01-14",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Cockles fried kway teow",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Seafood fried kway teow",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    },
+    {
+     "name": "Fried oysters",
+     "price": 5.0,
+     "price_note": "$5/$8"
+    },
+    {
+     "name": "Carrot cake",
+     "price": 3.0,
+     "price_note": "$3/$4"
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "12:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "id": "p-c-bedok-corner-green-sky-fried-kway-teow"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Bamboo Nasi Rendang",
+   "unit": "#01-01",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi rendang daging",
+     "price": 7.0
+    },
+    {
+     "name": "Ayam",
+     "price": 6.0
+    },
+    {
+     "name": "Rusuk",
+     "price": 10.0
+    },
+    {
+     "name": "Lamb shank",
+     "price": 20.0
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "08:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-17:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "id": "p-c-bedok-corner-bamboo-nasi-rendang"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Noi Kassim Barbeque",
+   "unit": "#01-27",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "BBQ stingray",
+     "price": 16.0,
+     "price_note": "$16/$19/$23"
+    },
+    {
+     "name": "BBQ prawn",
+     "price": 9.0,
+     "price_note": "$9/$11/$16"
+    },
+    {
+     "name": "BBQ sotong",
+     "price": 9.0,
+     "price_note": "$9/$11/$16"
+    }
+   ],
+   "hours": [
+    [
+     "03456",
+     [
+      "12:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "id": "p-c-bedok-corner-noi-kassim-barbeque"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Mala Wok",
+   "unit": "#01-28",
+   "cuisine": "other",
+   "dishes": [
+    {
+     "name": "Boiled beef",
+     "price": 12.0
+    },
+    {
+     "name": "Griddle-cooked chicken",
+     "price": 12.0
+    },
+    {
+     "name": "Griddle-cooked prawn",
+     "price": 16.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "id": "p-c-bedok-corner-mala-wok"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Satay Solo",
+   "unit": "#01-09",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi rawon",
+     "price": 7.0
+    },
+    {
+     "name": "Nasi jenganan",
+     "price": 7.0,
+     "price_note": "$7 (Sundays)"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "id": "p-c-bedok-corner-satay-solo"
+  },
+  {
+   "cluster": "c-bedok-corner",
+   "name": "Suka Ramai Mama Power",
+   "unit": "#01-26",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Mee goreng",
+     "price": 3.8,
+     "price_note": "from $3.80"
+    },
+    {
+     "name": "Roti john steak"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "sl-bc"
+   ],
+   "verified": "2023-09",
+   "confidence": "detailed",
+   "id": "p-c-bedok-corner-suka-ramai-mama-power"
+  },
+  {
+   "name": "Old World Bakuteh (T-Space)",
+   "unit": "#01-34",
+   "address": "T-Space, 1 Tampines North Drive 1, S528559",
+   "lat": 1.371532,
+   "lng": 103.934204,
+   "zone": "east",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Pork ribs soup",
+     "price": 7.5
+    },
+    {
+     "name": "Pig organ porridge",
+     "price": 6.0
+    },
+    {
+     "name": "Large intestine mee sua",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "234",
+     [
+      "09:30-20:00"
+     ]
+    ],
+    [
+     "056",
+     [
+      "09:30-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-old-world-bakuteh-t-space"
+  },
+  {
+   "name": "Ho Yun Tim Sum",
+   "unit": "#01-80",
+   "address": "419 Tampines Street 41, S520419",
+   "lat": 1.357833,
+   "lng": 103.946727,
+   "zone": "east",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Prawn chee cheong fun",
+     "price": 3.5
+    },
+    {
+     "name": "Century egg lean pork porridge",
+     "price": 3.5
+    },
+    {
+     "name": "Carrot cake",
+     "price": 1.2
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "05:30-15:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-ho-yun-tim-sum"
+  },
+  {
+   "name": "Fu Yuan Teochew Bak Chor Mee",
+   "unit": "",
+   "address": "201C Tampines Street 21 (coffeeshop), S523201",
+   "lat": 1.35282,
+   "lng": 103.952976,
+   "zone": "east",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Teochew bak chor mee",
+     "price": 4.5
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "05:30-13:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-fu-yuan-teochew-bak-chor-mee"
+  },
+  {
+   "name": "Mui Kee Hainanese Chicken Rice",
+   "unit": "",
+   "address": "264 Tampines Street 21 (coffeeshop), S521264",
+   "lat": 1.352805,
+   "lng": 103.951146,
+   "zone": "east",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice / char siew rice",
+     "price": 4.0,
+     "price_note": "$4-$5"
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "09:00-15:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-mui-kee-hainanese-chicken-rice"
+  },
+  {
+   "name": "Al Mahboob Indian Rojak",
+   "unit": "#01-02",
+   "address": "NTUC Income @ Tampines Junction, 300 Tampines Avenue 5, S529653",
+   "lat": 1.352336,
+   "lng": 103.941943,
+   "zone": "east",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Indian rojak, about",
+     "price": 3.5,
+     "price_note": "$3.50-$10 per person"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-al-mahboob-indian-rojak"
+  },
+  {
+   "name": "Soi Thai Kitchen",
+   "unit": "#01-28",
+   "address": "824 Tampines Street 81, S520824",
+   "lat": 1.349037,
+   "lng": 103.932715,
+   "zone": "home",
+   "cuisine": "thai",
+   "dishes": [
+    {
+     "name": "Drunken noodles",
+     "price": 7.0
+    },
+    {
+     "name": "Tom yum fried rice",
+     "price": 7.0
+    },
+    {
+     "name": "Thai kang kong",
+     "price": 8.0
+    },
+    {
+     "name": "Seabass with mango salad",
+     "price": 25.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-14:15",
+      "17:30-01:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper",
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-soi-thai-kitchen"
+  },
+  {
+   "name": "Shun Shun Prawn Noodles",
+   "unit": "#01-38",
+   "address": "824 Tampines Street 81, S520824",
+   "lat": 1.349037,
+   "lng": 103.932715,
+   "zone": "home",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn noodles",
+     "price": 5.5,
+     "price_note": "$5.50 (dry +$0.50)"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "07:00-13:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-shun-shun-prawn-noodles"
+  },
+  {
+   "name": "Tokyo Western Food",
+   "unit": "",
+   "address": "823A Tampines Street 81 (coffeeshop), S521823",
+   "lat": 1.348929,
+   "lng": 103.933492,
+   "zone": "home",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Chicken chop",
+     "price": 7.5
+    },
+    {
+     "name": "Pork chop",
+     "price": 8.0
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "12:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-tokyo-western-food"
+  },
+  {
+   "name": "Jin Hock Seafood",
+   "unit": "#01-131",
+   "address": "844 Tampines Street 82, S520844",
+   "lat": 1.352106,
+   "lng": 103.936531,
+   "zone": "home",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "White bee hoon",
+     "price": 6.5,
+     "price_note": "from $6.50"
+    },
+    {
+     "name": "BBQ stingray",
+     "price": 15.0,
+     "price_note": "from $15"
+    },
+    {
+     "name": "Prawn paste chicken",
+     "price": 12.0,
+     "price_note": "from $12"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group",
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-jin-hock-seafood"
+  },
+  {
+   "name": "JIN Kimchi Express",
+   "unit": "#01-66",
+   "address": "Kopitiam Corner, 878C Tampines Avenue 8, S523878",
+   "lat": 1.351264,
+   "lng": 103.929364,
+   "zone": "home",
+   "cuisine": "korean",
+   "dishes": [
+    {
+     "name": "Mul naengmyeon",
+     "price": 8.8
+    },
+    {
+     "name": "Kimchi stew set",
+     "price": 6.0
+    },
+    {
+     "name": "Kimchi fried rice",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-jin-kimchi-express"
+  },
+  {
+   "name": "The Only Burger",
+   "unit": "#01-01",
+   "address": "Happy Hawkers, 602B Tampines Avenue 9, S522602",
+   "lat": 1.361389,
+   "lng": 103.937648,
+   "zone": "east",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Oklahoma beef burger",
+     "price": 9.5,
+     "price_note": "$9.50/$12.50"
+    },
+    {
+     "name": "Spicy chicken burger",
+     "price": 9.1
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-tamp"
+   ],
+   "verified": "2025-08",
+   "confidence": "detailed",
+   "id": "p-the-only-burger"
+  },
+  {
+   "name": "Yong Huat Hokkien Mee",
+   "unit": "",
+   "address": "125 East Coast Road, S428810",
+   "lat": 1.306056,
+   "lng": 103.904751,
+   "zone": "east",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Hokkien mee / mee sua",
+     "price": 7.0,
+     "price_note": "from $7"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-yong-huat-hokkien-mee"
+  },
+  {
+   "name": "Awfully Chocolate Bakery & Cafe (Katong)",
+   "unit": "",
+   "address": "131 East Coast Road, S428816",
+   "lat": 1.306138,
+   "lng": 103.904889,
+   "zone": "east",
+   "cuisine": "cafe",
+   "dishes": [
+    {
+     "name": "Dinner set",
+     "price": 38.0
+    },
+    {
+     "name": "Weekend brunch buffet",
+     "price": 38.0
+    }
+   ],
+   "hours": [
+    [
+     "1234",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert",
+    "occasion"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-awfully-chocolate-bakery-cafe-katong"
+  },
+  {
+   "name": "Janggut Laksa (Roxy Square)",
+   "unit": "#01-64",
+   "address": "Roxy Square, 50 East Coast Road, S428769",
+   "lat": 1.303357,
+   "lng": 103.904686,
+   "zone": "east",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Katong-style laksa",
+     "price": 6.0,
+     "price_note": "from $6"
+    }
+   ],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "partial",
+   "id": "p-janggut-laksa-roxy-square"
+  },
+  {
+   "name": "Wabi Sabi (Joo Chiat)",
+   "unit": "#01-00",
+   "address": "283 Joo Chiat Road, S427537",
+   "lat": 1.310102,
+   "lng": 103.902111,
+   "zone": "east",
+   "cuisine": "cafe",
+   "dishes": [
+    {
+     "name": "Pork katsu medama sando",
+     "price": 20.9
+    },
+    {
+     "name": "Salmon mentai don",
+     "price": 25.9
+    }
+   ],
+   "hours": [
+    [
+     "1234",
+     [
+      "09:30-21:00"
+     ]
+    ],
+    [
+     "056",
+     [
+      "08:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-wabi-sabi-joo-chiat"
+  },
+  {
+   "name": "Katong Mei Wei Boneless Chicken Rice",
+   "unit": "#B1-85/87",
+   "address": "Katong Shopping Centre, 865 Mountbatten Road, S437844",
+   "lat": 1.304097,
+   "lng": 103.901516,
+   "zone": "east",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Boneless chicken rice",
+     "price": 7.7,
+     "price_note": "from $7.70"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:00-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-katong-mei-wei-boneless-chicken-rice"
+  },
+  {
+   "name": "Seng House",
+   "unit": "",
+   "address": "214 Tanjong Katong Road, S437007",
+   "lat": 1.307305,
+   "lng": 103.895239,
+   "zone": "east",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Claypot chicken rice",
+     "price": 19.8
+    },
+    {
+     "name": "Hainanese pork chop",
+     "price": 23.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-seng-house"
+  },
+  {
+   "name": "Smokey's BBQ",
+   "unit": "",
+   "address": "73 Joo Chiat Place, S427790",
+   "lat": 1.313729,
+   "lng": 103.901564,
+   "zone": "east",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Baby back pork ribs",
+     "price": 40.0,
+     "price_note": "from $40"
+    }
+   ],
+   "hours": [
+    [
+     "1234",
+     [
+      "15:00-23:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "11:30-00:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "diet": [],
+   "tags": [
+    "group",
+    "occasion"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 4,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-smokey-s-bbq"
+  },
+  {
+   "name": "Guan Hoe Soon",
+   "unit": "#01-01",
+   "address": "200 Joo Chiat Road, S427471",
+   "lat": 1.312206,
+   "lng": 103.900197,
+   "zone": "east",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Ngoh hiang",
+     "price": 16.8,
+     "price_note": "from $16.80"
+    },
+    {
+     "name": "Nonya chap chye",
+     "price": 15.8,
+     "price_note": "from $15.80"
+    },
+    {
+     "name": "Ayam buah keluak",
+     "price": 18.8,
+     "price_note": "from $18.80"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-15:00",
+      "17:30-21:30"
+     ]
+    ],
+    [
+     "06",
+     [
+      "11:00-15:00",
+      "17:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group",
+    "occasion"
+   ],
+   "must_try": true,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "note": "Peranakan food; one of Singapore's oldest Nyonya restaurants.",
+   "id": "p-guan-hoe-soon"
+  },
+  {
+   "name": "Stirling Steaks",
+   "unit": "",
+   "address": "115 East Coast Road, S428764",
+   "lat": 1.3059,
+   "lng": 103.904527,
+   "zone": "east",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Lunch steak buffet",
+     "price": 40.0
+    },
+    {
+     "name": "Dinner buffet",
+     "price": 45.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-15:00",
+      "18:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "diet": [],
+   "tags": [
+    "occasion"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-stirling-steaks"
+  },
+  {
+   "name": "328 Katong Laksa",
+   "unit": "",
+   "address": "51 East Coast Road, S428770",
+   "lat": 1.305096,
+   "lng": 103.903211,
+   "zone": "east",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Katong laksa",
+     "price": 7.3,
+     "price_note": "from $7.30"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-328-katong-laksa"
+  },
+  {
+   "name": "Li'l Chef (Parkway Parade)",
+   "unit": "#B1-84",
+   "address": "Parkway Parade, 80 Marine Parade Road, S449269",
+   "lat": 1.30107,
+   "lng": 103.905279,
+   "zone": "east",
+   "cuisine": "cafe",
+   "dishes": [
+    {
+     "name": "Scones (6)",
+     "price": 9.0
+    },
+    {
+     "name": "Pain au chocolat",
+     "price": 4.5
+    },
+    {
+     "name": "Kouign amann (2)",
+     "price": 4.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-li-l-chef-parkway-parade"
+  },
+  {
+   "name": "Wan Mei Dessert (The Odeon)",
+   "unit": "#01-14",
+   "address": "The Odeon, 11 East Coast Road, S428722",
+   "lat": 1.304685,
+   "lng": 103.901889,
+   "zone": "east",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Snow ice set",
+     "price": 13.9
+    },
+    {
+     "name": "Yuzu ice dessert",
+     "price": 6.9
+    },
+    {
+     "name": "Cheng tng",
+     "price": 5.9
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "12:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-wan-mei-dessert-the-odeon"
+  },
+  {
+   "name": "Prince of Hokkien Mee",
+   "unit": "",
+   "address": "936 East Coast Road, S459129",
+   "lat": 1.312285,
+   "lng": 103.925354,
+   "zone": "east",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Hokkien mee",
+     "price": 6.0,
+     "price_note": "$6/$10/$15/$20"
+    },
+    {
+     "name": "Pork belly satay",
+     "price": 1.6
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-prince-of-hokkien-mee"
+  },
+  {
+   "name": "June Coffee",
+   "unit": "",
+   "address": "49 East Coast Road, S428768",
+   "lat": 1.304988,
+   "lng": 103.903118,
+   "zone": "east",
+   "cuisine": "cafe",
+   "dishes": [
+    {
+     "name": "Ricotta French toast",
+     "price": 17.0
+    },
+    {
+     "name": "Truffle mushroom pappardelle",
+     "price": 21.0
+    },
+    {
+     "name": "Black sesame latte",
+     "price": 8.0
+    }
+   ],
+   "hours": [
+    [
+     "234",
+     [
+      "10:30-18:30"
+     ]
+    ],
+    [
+     "56",
+     [
+      "10:00-19:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-18:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-june-coffee"
+  },
+  {
+   "name": "Cilantro The Biryani Club",
+   "unit": "",
+   "address": "102 Joo Chiat Road, S427396",
+   "lat": 1.314108,
+   "lng": 103.89886,
+   "zone": "east",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Hyderabad dum lamb biryani",
+     "price": 21.0
+    },
+    {
+     "name": "Wagyu brisket biryani",
+     "price": 29.0
+    },
+    {
+     "name": "Tandoori chicken",
+     "price": 19.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-cilantro-the-biryani-club"
+  },
+  {
+   "name": "Five Star Kampung Chicken Rice (East Coast Rd)",
+   "unit": "",
+   "address": "191 East Coast Road, S428897",
+   "lat": 1.307171,
+   "lng": 103.906378,
+   "zone": "east",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Kampung chicken rice",
+     "price": 7.0,
+     "price_note": "from $7"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-02:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-five-star-kampung-chicken-rice-east-coast-rd"
+  },
+  {
+   "name": "Al Forno (East Coast)",
+   "unit": "",
+   "address": "400 East Coast Road, S428996",
+   "lat": 1.30872,
+   "lng": 103.912043,
+   "zone": "east",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Spaghetti al forno",
+     "price": 29.0
+    },
+    {
+     "name": "Grilled lamb chops",
+     "price": 37.0
+    }
+   ],
+   "hours": [
+    [
+     "1234",
+     [
+      "11:30-14:00",
+      "18:00-22:00"
+     ]
+    ],
+    [
+     "056",
+     [
+      "11:30-14:00",
+      "17:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "diet": [],
+   "tags": [
+    "occasion"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-al-forno-east-coast"
+  },
+  {
+   "name": "Sin Hoi Sai Eating House",
+   "unit": "",
+   "address": "187 East Coast Road, S428893",
+   "lat": 1.307109,
+   "lng": 103.906287,
+   "zone": "east",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Chilli crab (market price)"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "16:00-03:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group",
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-sin-hoi-sai-eating-house"
+  },
+  {
+   "name": "Sta Western",
+   "unit": "",
+   "address": "197 East Coast Road, S428901",
+   "lat": 1.307275,
+   "lng": 103.906507,
+   "zone": "east",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Chicken chop",
+     "price": 9.9
+    },
+    {
+     "name": "Onion rings",
+     "price": 11.9
+    },
+    {
+     "name": "Baked potato",
+     "price": 3.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-sta-western"
+  },
+  {
+   "name": "Joo Chiat Banh Mi Caphe",
+   "unit": "",
+   "address": "263 Joo Chiat Road, S427517",
+   "lat": 1.31048,
+   "lng": 103.901767,
+   "zone": "east",
+   "cuisine": "other",
+   "dishes": [
+    {
+     "name": "Mackerel otah banh mi",
+     "price": 6.5
+    },
+    {
+     "name": "Honey grilled chicken banh mi",
+     "price": 8.0
+    },
+    {
+     "name": "Lemongrass beef banh mi",
+     "price": 8.5
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "09:00-19:30"
+     ]
+    ],
+    [
+     "06",
+     [
+      "09:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "travels_well": true,
+   "note": "Vietnamese.",
+   "id": "p-joo-chiat-banh-mi-caphe"
+  },
+  {
+   "name": "Chilli Padi Nonya Restaurant",
+   "unit": "#01-03",
+   "address": "11 Joo Chiat Place, S427744",
+   "lat": 1.313424,
+   "lng": 103.900077,
+   "zone": "east",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Ayam buah keluak",
+     "price": 19.0,
+     "price_note": "from $19"
+    },
+    {
+     "name": "Curry assam ikan",
+     "price": 22.0
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:30-14:30",
+      "17:30-21:30"
+     ]
+    ],
+    [
+     "06",
+     [
+      "11:30-14:30",
+      "17:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group",
+    "occasion"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "note": "Peranakan food.",
+   "id": "p-chilli-padi-nonya-restaurant"
+  },
+  {
+   "name": "Ponggol Nasi Lemak Centre (Tanjong Katong)",
+   "unit": "",
+   "address": "238 Tanjong Katong Road, S437026",
+   "lat": 1.30675,
+   "lng": 103.89547,
+   "zone": "east",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Coconut rice",
+     "price": 1.5
+    },
+    {
+     "name": "Chicken wing",
+     "price": 2.0
+    },
+    {
+     "name": "Fish fillet",
+     "price": 1.7
+    },
+    {
+     "name": "Otah",
+     "price": 1.7
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "16:30-23:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": true,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-ponggol-nasi-lemak-centre-tanjong-katong"
+  },
+  {
+   "name": "Ah Yee's Soon Kueh",
+   "unit": "",
+   "address": "124 Tembeling Road, S423623",
+   "lat": 1.311076,
+   "lng": 103.902286,
+   "zone": "east",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Soon kueh",
+     "price": 1.8
+    },
+    {
+     "name": "Png kueh",
+     "price": 1.8
+    },
+    {
+     "name": "Yam cake",
+     "price": 3.9,
+     "price_note": "from $3.90"
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "07:00-17:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "travels_well": true,
+   "id": "p-ah-yee-s-soon-kueh"
+  },
+  {
+   "name": "Doongji Korean Restaurant",
+   "unit": "",
+   "address": "222 East Coast Road, S428919",
+   "lat": 1.307404,
+   "lng": 103.907474,
+   "zone": "east",
+   "cuisine": "korean",
+   "dishes": [
+    {
+     "name": "Hot stone rice bowl",
+     "price": 14.9
+    },
+    {
+     "name": "Jokbal rice",
+     "price": 14.9
+    },
+    {
+     "name": "Rose tteokbokki",
+     "price": 18.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-14:30",
+      "17:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-doongji-korean-restaurant"
+  },
+  {
+   "name": "Long Phung Vietnamese Cuisine",
+   "unit": "",
+   "address": "159 Joo Chiat Road, S427436",
+   "lat": 1.312753,
+   "lng": 103.900213,
+   "zone": "east",
+   "cuisine": "other",
+   "dishes": [
+    {
+     "name": "Hu tieu bo kho",
+     "price": 10.9
+    },
+    {
+     "name": "Seafood fried noodles",
+     "price": 11.0
+    },
+    {
+     "name": "Vietnamese ham bread",
+     "price": 6.4
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "note": "Vietnamese.",
+   "id": "p-long-phung-vietnamese-cuisine"
+  },
+  {
+   "name": "Katsuya (Tanjong Katong)",
+   "unit": "",
+   "address": "258 Tanjong Katong Road, S437046",
+   "lat": 1.30607,
+   "lng": 103.895724,
+   "zone": "east",
+   "cuisine": "japanese",
+   "dishes": [
+    {
+     "name": "Hire tonkatsu set",
+     "price": 38.0
+    },
+    {
+     "name": "Tokujyo rosu set",
+     "price": 46.0
+    },
+    {
+     "name": "Unagi katsu",
+     "price": 36.0
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "12:00-14:30",
+      "18:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine"
+   ],
+   "diet": [],
+   "tags": [
+    "occasion"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "eb-katong"
+   ],
+   "verified": "2026-09",
+   "confidence": "detailed",
+   "id": "p-katsuya-tanjong-katong"
+  },
+  {
+   "name": "Eminent Frog Porridge Seafood Restaurant",
+   "unit": "",
+   "address": "323 Geylang Road",
+   "lat": 1.312813,
+   "lng": 103.879239,
+   "zone": "east",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Frog porridge, frog",
+     "price": 8.0,
+     "price_note": "from $8"
+    },
+    {
+     "name": "Gong bao frog"
+    },
+    {
+     "name": "Sweet and sour pork",
+     "price": 10.0,
+     "price_note": "from $10"
+    }
+   ],
+   "hours": [
+    [
+     "0134",
+     [
+      "16:00-03:30"
+     ]
+    ],
+    [
+     "56",
+     [
+      "16:00-04:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper",
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-eminent-frog-porridge-seafood-restaurant"
+  },
+  {
+   "name": "Leong Kee (Klang) Bak Kut Teh",
+   "unit": "",
+   "address": "251 Geylang Road",
+   "lat": 1.312462,
+   "lng": 103.877245,
+   "zone": "east",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Klang bak kut teh",
+     "price": 8.8
+    },
+    {
+     "name": "Dry bak kut teh",
+     "price": 12.0
+    },
+    {
+     "name": "Stewed pork leg",
+     "price": 8.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-23:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-leong-kee-klang-bak-kut-teh"
+  },
+  {
+   "name": "Swee Guan Hokkien Mee",
+   "unit": "",
+   "address": "5 Lorong 29 Geylang",
+   "lat": 1.314221,
+   "lng": 103.885444,
+   "zone": "east",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Charcoal Hokkien mee",
+     "price": 8.0,
+     "price_note": "from $8"
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "16:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": true,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-swee-guan-hokkien-mee"
+  },
+  {
+   "name": "Gong He Guan",
+   "unit": "",
+   "address": "217 Geylang Road",
+   "lat": 1.312057,
+   "lng": 103.876098,
+   "zone": "east",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Gui ling gao",
+     "price": 8.6
+    },
+    {
+     "name": "Mixed pastes",
+     "price": 3.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-02:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert",
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-gong-he-guan"
+  },
+  {
+   "name": "Mongkok Dim Sum",
+   "unit": "",
+   "address": "214 Geylang Road",
+   "lat": 1.311926,
+   "lng": 103.876838,
+   "zone": "east",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Liu sha bao",
+     "price": 5.0
+    },
+    {
+     "name": "Har gow",
+     "price": 3.5
+    },
+    {
+     "name": "Three-yolk crab porridge",
+     "price": 9.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "00:00-24:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper",
+    "24h",
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-mongkok-dim-sum"
+  },
+  {
+   "name": "Donburi Maruya",
+   "unit": "",
+   "address": "56 Lorong 25A Geylang",
+   "lat": 1.315328,
+   "lng": 103.883217,
+   "zone": "east",
+   "cuisine": "japanese",
+   "dishes": [
+    {
+     "name": "Tonkatsu teishoku",
+     "price": 7.5
+    },
+    {
+     "name": "Deluxe unagi don",
+     "price": 14.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-donburi-maruya"
+  },
+  {
+   "name": "Lor 9 Beef Kway Teow",
+   "unit": "",
+   "address": "237 Geylang Road",
+   "lat": 1.312324,
+   "lng": 103.876664,
+   "zone": "east",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Beef hor fun",
+     "price": 8.0,
+     "price_note": "from $8"
+    },
+    {
+     "name": "Seafood hor fun",
+     "price": 6.0,
+     "price_note": "from $6"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-00:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": true,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-lor-9-beef-kway-teow"
+  },
+  {
+   "name": "Penang Seafood Restaurant",
+   "unit": "",
+   "address": "32 Aljunied Road",
+   "lat": 1.314753,
+   "lng": 103.882137,
+   "zone": "east",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Assam laksa",
+     "price": 8.0
+    },
+    {
+     "name": "Penang char kway teow",
+     "price": 8.0,
+     "price_note": "from $8"
+    },
+    {
+     "name": "Crabs (seasonal price)"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-00:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-penang-seafood-restaurant"
+  },
+  {
+   "name": "Tan Ser Seng Herbs (Turtle) Restaurant",
+   "unit": "",
+   "address": "29 Lorong Bachok",
+   "lat": 1.314158,
+   "lng": 103.879934,
+   "zone": "east",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Claypot turtle soup",
+     "price": 31.1,
+     "price_note": "from $31.10"
+    },
+    {
+     "name": "Cordyceps chicken soup",
+     "price": 16.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-tan-ser-seng-herbs-turtle-restaurant"
+  },
+  {
+   "name": "Liu Da Ma BBQ",
+   "unit": "",
+   "address": "26 Lorong 11 Geylang",
+   "lat": 1.313322,
+   "lng": 103.877016,
+   "zone": "east",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "Lamb skewers (5)",
+     "price": 6.8
+    },
+    {
+     "name": "Whole lamb shoulder",
+     "price": 78.0,
+     "price_note": "$78-$88"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-00:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group",
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-liu-da-ma-bbq"
+  },
+  {
+   "name": "Hong Qin Fish and Duck Porridge",
+   "unit": "#01-217",
+   "address": "134 Geylang East Avenue 1",
+   "lat": 1.315994,
+   "lng": 103.886009,
+   "zone": "east",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Sliced fish soup",
+     "price": 8.0
+    },
+    {
+     "name": "Braised pig trotters",
+     "price": 8.0
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "05:30-15:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-hong-qin-fish-and-duck-porridge"
+  },
+  {
+   "name": "L32 Handmade Noodles",
+   "unit": "",
+   "address": "558 Geylang Road",
+   "lat": 1.313866,
+   "lng": 103.886968,
+   "zone": "east",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Ban mian",
+     "price": 7.0,
+     "price_note": "from $7"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-l32-handmade-noodles"
+  },
+  {
+   "name": "Banh Mi Thit by Star Baguette",
+   "unit": "",
+   "address": "543 Geylang Road",
+   "lat": 1.313959,
+   "lng": 103.885347,
+   "zone": "east",
+   "cuisine": "other",
+   "dishes": [
+    {
+     "name": "Banh mi",
+     "price": 5.0
+    },
+    {
+     "name": "Vietnamese coffee",
+     "price": 1.5
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "travels_well": true,
+   "note": "Vietnamese.",
+   "id": "p-banh-mi-thit-by-star-baguette"
+  },
+  {
+   "name": "Sia Kee Duck Rice",
+   "unit": "",
+   "address": "659 Lorong 35 Geylang",
+   "lat": 1.314548,
+   "lng": 103.888386,
+   "zone": "east",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Duck rice",
+     "price": 5.0
+    },
+    {
+     "name": "Mixed duck platter",
+     "price": 18.0
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "11:30-16:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "hgw-gey"
+   ],
+   "verified": "2025-07",
+   "confidence": "detailed",
+   "id": "p-sia-kee-duck-rice"
   }
  ]
 }
