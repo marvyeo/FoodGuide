@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 <style>
 :root{
@@ -143,6 +144,7 @@ nav.tabs button.on{color:var(--chilli)} nav.tabs button.on .ic{filter:none;opaci
 .leaflet-container{background:var(--card2);font:inherit}
 .pin{display:grid;place-items:center;border-radius:50%;color:#fff;font-weight:700;font-size:12px;border:2.5px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3)}
 .pin.hollow{background:#fff!important;color:var(--ink)}
+.pin.solo-group{width:32px;height:32px;background:var(--ink);color:var(--bg);border-color:var(--bg);font-size:12px}
 .home-pin{font-size:22px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.3))}
 .legend{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--ink2);margin-top:10px}
 .legend span{display:inline-flex;align-items:center;gap:5px} .legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
@@ -226,6 +228,7 @@ nav.tabs button.on{color:var(--chilli)} nav.tabs button.on .ic{filter:none;opaci
 <div id="toastRoot"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
 /* =====================================================================
    Makan Map — family food guide
@@ -401,8 +404,11 @@ function pickWeighted(list) { const ws = list.map(weight); let r = Math.random()
 function clusterCandidates(cands) {
   const by = {};
   for (const p of cands) if (p.cluster) (by[p.cluster] = by[p.cluster] || []).push(p);
+  // Rank by stalls we KNOW are open (hours confirmed); roster-only stalls with unknown hours count for little.
+  const date = mealDate();
+  const score = x => { const sure = x.ps.filter(p => openAt(p, date).known); return new Set(sure.map(p => p.cuisine)).size * 2 + sure.length + 0.2 * (x.ps.length - sure.length); };
   return Object.entries(by).map(([id, ps]) => ({ c: CLUSTERS.find(c => c.id === id), ps, cuisines: new Set(ps.map(p => p.cuisine)).size }))
-    .filter(x => x.c).sort((a, b) => (b.cuisines * 2 + b.ps.length) - (a.cuisines * 2 + a.ps.length));
+    .filter(x => x.c && x.ps.some(p => openAt(p, date).known)).sort((a, b) => score(b) - score(a));
 }
 
 /* ---------------- views ---------------- */
@@ -534,12 +540,14 @@ function dirUrl(p) {
 }
 
 /* ---------- Explore ---------- */
-let exploreSeg = 'centres', exploreQ = '';
+let exploreSeg = 'centres', exploreQ = '', exploreZone = 'all';
+function setExploreZone(z) { exploreZone = z; viewExplore(); }
 function viewExplore() {
   const segs = [['centres', 'Food centres'], ['places', 'All places'], ['wants', 'Want to try']];
   $('#view').innerHTML = `<h1 style="margin-bottom:12px">Explore</h1>
     <div class="search"><input id="q" placeholder="Search stalls, dishes, places…" value="${esc(exploreQ)}" oninput="exploreQ=this.value;exploreList()"></div>
     <div class="seg" style="margin-top:12px">${segs.map(([k, l]) => `<button class="${exploreSeg === k ? 'on' : ''}" onclick="exploreSeg='${k}';viewExplore()">${l}</button>`).join('')}</div>
+    <div style="margin-top:10px">${chipRow([['all', 'All zones'], ...DB.zones.filter(z => PLACES.some(p => p.zone === z.id)).map(z => [z.id, z.name])], k => exploreZone === k, 'setExploreZone')}</div>
     <div id="exList" style="margin-top:14px"></div>`;
   exploreList();
 }
@@ -557,18 +565,19 @@ function exploreList() {
   const box = $('#exList'); const q = exploreQ.trim();
   const o = origin();
   if (exploreSeg === 'centres') {
-    const rows = CLUSTERS.map(c => ({ c, ps: PLACES.filter(p => p.cluster === c.id), d: km(o, c) })).filter(x => !q || x.c.name.toLowerCase().includes(q.toLowerCase()) || x.ps.some(p => matchQ(p, q))).sort((a, b) => a.d - b.d);
-    const solo = PLACES.filter(p => !p.cluster && matchQ(p, q)).sort((a, b) => km(o, a) - km(o, b));
+    const inZone = x => exploreZone === 'all' || x.zone === exploreZone;
+    const rows = CLUSTERS.filter(inZone).map(c => ({ c, ps: PLACES.filter(p => p.cluster === c.id), d: km(o, c) })).filter(x => !q || x.c.name.toLowerCase().includes(q.toLowerCase()) || x.ps.some(p => matchQ(p, q))).sort((a, b) => a.d - b.d);
+    const solo = PLACES.filter(p => !p.cluster && inZone(p) && matchQ(p, q)).sort((a, b) => km(o, a) - km(o, b));
     box.innerHTML = rows.map(({ c, ps, d }) => {
-      const openN = ps.filter(p => openAt(p, new Date()).open).length, total = c.stalls_total || ps.length;
+      const openN = ps.filter(p => openAt(p, new Date()).open).length, total = c.stalls_total;
       const tried = me ? ps.filter(p => logsFor(p.id, me.id).length).length : 0;
       return `<div class="card" style="margin-bottom:10px;cursor:pointer" onclick="openCluster('${c.id}')">
         <div class="row between"><div class="grow"><h3>${esc(c.name)}</h3><div class="small muted">${d.toFixed(1)} km · ${openN} open now${tried ? ` · you've tried ${tried}` : ''}</div></div><span class="badge" style="background:${zone(c.zone).color}22;color:${zone(c.zone).color}">${esc(zone(c.zone).name)}</span></div>
-        <div class="coverage"><i style="width:${Math.min(100, ps.length / total * 100)}%"></i></div>
-        <div class="tiny faint" style="margin-top:5px">${ps.length} of ~${total} stalls mapped</div></div>`;
+        ${total ? `<div class="coverage"><i style="width:${Math.min(100, ps.length / total * 100)}%"></i></div>` : ''}
+        <div class="tiny faint" style="margin-top:5px">${total ? `${ps.length} of ~${total} stalls mapped` : `${ps.length} stalls mapped`}</div></div>`;
     }).join('') + (solo.length ? `<div class="section-title"><h2>Restaurants &amp; cafés</h2></div><div class="card list">${solo.map(placeRow).join('')}</div>` : '');
   } else {
-    let ps = PLACES.filter(p => matchQ(p, q));
+    let ps = PLACES.filter(p => (exploreZone === 'all' || p.zone === exploreZone) && matchQ(p, q));
     if (exploreSeg === 'wants') ps = ps.filter(p => FV.wants.some(w => w.place === p.id));
     ps.sort((a, b) => km(o, a) - km(o, b));
     box.innerHTML = ps.length ? `<div class="card list">${ps.map(placeRow).join('')}</div>` : `<div class="empty"><span class="e">${exploreSeg === 'wants' ? '🔖' : '🤷'}</span>${exploreSeg === 'wants' ? 'Nothing bookmarked yet. Tap “Want to try” on any place.' : 'No matches.'}</div>`;
@@ -618,11 +627,11 @@ function openPlace(id) {
 function openCluster(id) {
   const c = CLUSTERS.find(x => x.id === id); if (!c) return;
   const ps = PLACES.filter(p => p.cluster === id).sort((a, b) => (openAt(b, new Date()).open - openAt(a, new Date()).open) || a.name.localeCompare(b.name));
-  const total = c.stalls_total || ps.length;
+  const total = c.stalls_total;
   sheet(`<div style="margin-right:46px"><span class="badge" style="background:${zone(c.zone).color}22;color:${zone(c.zone).color}">${esc(zone(c.zone).name)}</span><h2 style="margin-top:6px">${esc(c.name)}</h2><div class="small muted">${esc(c.address)}</div></div>
     <div class="small muted" style="margin-top:6px">${distanceLine(c)}</div>
     ${c.notes ? `<div class="small" style="margin-top:8px">💡 ${esc(c.notes)}</div>` : ''}
-    <div class="card" style="margin-top:12px"><div class="row between"><b>${ps.length} of ~${total} stalls mapped</b><span class="small faint">${Math.round(ps.length / total * 100)}%</span></div><div class="coverage"><i style="width:${Math.min(100, ps.length / total * 100)}%"></i></div>
+    <div class="card" style="margin-top:12px">${total ? `<div class="row between"><b>${ps.length} of ~${total} stalls mapped</b><span class="small faint">${Math.min(100, Math.round(ps.length / total * 100))}%</span></div><div class="coverage"><i style="width:${Math.min(100, ps.length / total * 100)}%"></i></div>` : `<b>${ps.length} stalls mapped</b>`}
       <div class="small muted" style="margin-top:8px">Spotted a stall that isn't here? Add it — you get the 🗺️ Mapper badge.</div>
       <button class="btn sm" style="margin-top:10px" onclick="openAddStall('${c.id}')">＋ Add a stall</button></div>
     <div class="actions"><a class="btn dark" href="${dirUrl(c)}" target="_blank" rel="noopener">🧭 Directions</a><button class="btn" onclick="closeSheet();prefs.spinMode='stall';lastResult=null;go('spin')">🎲 Spin</button></div>
@@ -944,7 +953,7 @@ function viewMap() {
   $('#view').innerHTML = `<div class="row between" style="margin-bottom:10px"><h1>Map</h1></div>
     ${chipRow([['all', 'Everything'], ['untried', 'Not tried yet'], ['must', '⭐ Must-try'], ['open', 'Open now']], k => mapFilter === k, 'setMapFilter')}
     <div id="map" style="margin-top:10px"></div>
-    <div class="legend">${DB.zones.map(z => `<span><i style="background:${z.color}"></i>${esc(z.name)}</span>`).join('')}<span>◯ = not tried</span></div>`;
+    <div class="legend">${DB.zones.filter(z => PLACES.some(p => p.zone === z.id)).map(z => `<span><i style="background:${z.color}"></i>${esc(z.name)}</span>`).join('')}<span>◯ = not tried</span><span>● number = restaurants nearby</span></div>`;
   if (typeof L === 'undefined') { $('#map').innerHTML = '<div class="empty"><span class="e">📡</span>The map needs a connection the first time.</div>'; return; }
   const o = origin();
   // OneMap (Singapore Land Authority) basemap: free, no API key, Singapore-detailed. Attribution with logo is required.
@@ -963,11 +972,15 @@ function viewMap() {
     L.marker([c.lat, c.lng], { icon: L.divIcon({ className: '', html: `<div class="pin ${tried ? '' : 'hollow'}" style="width:36px;height:36px;background:${col};border-color:${col}">${must ? '⭐' : ps.length || '?'}</div>`, iconSize: [36, 36] }) })
       .addTo(mapObj).on('click', () => openCluster(c.id));
   }
+  // Restaurants/cafés group into bubbles when zoomed out (food centres stay as their own markers).
+  const group = L.markerClusterGroup ? L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45, spiderfyOnMaxZoom: true,
+    iconCreateFunction: cl => L.divIcon({ className: '', html: `<div class="pin solo-group">${cl.getChildCount()}</div>`, iconSize: [32, 32] }) }) : mapObj;
   for (const p of PLACES.filter(p => !p.cluster && keep(p))) {
     const tried = triedBy(p.id, ids); const col = zone(p.zone).color;
     L.marker([p.lat, p.lng], { icon: L.divIcon({ className: '', html: `<div class="pin ${tried ? '' : 'hollow'}" style="width:28px;height:28px;font-size:14px;background:${col};border-color:${col}">${p.must_try ? '⭐' : emojiOf(p)}</div>`, iconSize: [28, 28] }) })
-      .addTo(mapObj).on('click', () => openPlace(p.id));
+      .addTo(group).on('click', () => openPlace(p.id));
   }
+  if (group !== mapObj) group.addTo(mapObj);
   setTimeout(() => mapObj && mapObj.invalidateSize(), 60);
 }
 function setMapFilter(k) { mapFilter = k; if (mapObj) { mapObj.remove(); mapObj = null; } viewMap(); }
