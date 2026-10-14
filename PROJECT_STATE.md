@@ -1,13 +1,15 @@
 # Makan Map — project state
 
-_Last updated: 15 Oct 2026 (v1.1: OneMap basemap, photos, completeness pass)_
+_Last updated: 15 Oct 2026, ~01:40 SGT (v1.2: East zone build, clustered map, zone filter)_
 
 A family food map of Singapore. You filter by when, how far, budget, dine-in/tapau and craving, then spin for a stall or a food centre. You log and rate meals, and you collect stamps and badges. The app is installable from GitHub Pages and works offline. Day-to-day use costs no AI tokens. Claude is only involved to build or refresh the places data.
 
 - **Repo:** `marvyeo/FoodGuide`
 - **App URL:** https://marvyeo.github.io/FoodGuide/ (GitHub Pages, live)
 - **Status:** v1.1 live. Photos and the completeness data are tested in a headless browser with mocked Google APIs, but not yet with a real Google account.
-- **Open PR:** *Data: Home ground completeness pass* (50 → 189 places). Merge it to publish the data.
+- **Open PRs (merge in this order):**
+  1. #1 *Home ground completeness* (50 → 189 places).
+  2. #2 *East zone* (stacked on #1; 189 → 567 places). GitHub retargets #2 to `main` once #1 is merged.
 
 ---
 
@@ -98,7 +100,7 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 | Zone | Centres | Stalls/places | Notes |
 |---|---|---|---|
 | Home ground | 5 (630 Bedok Reservoir, 216 Bedok North, 85 Fengshan, 511 Kaki Bukit, 538 Bedok North) | 189 (91 detailed, 14 partial, 84 listed) | Built 15 Oct 2026; completeness pass same day (PR) |
-| East | – | – | Next |
+| East | 14 (Old Airport Rd, Bedok Interchange*, Bedok South, Bedok Corner, Tampines Round, Our Tampines Hub, Pasir Ris Central, Changi Village, Marine Parade, Haig Rd, Geylang Serai, Dunman, East Coast Lagoon, Eunos) | 378 incl. 61 restaurants/cafés (Tampines, Katong/Joo Chiat, Geylang) | Built 15 Oct 2026 (PR #2). *Within 2.5 km of home, so zoned Home ground |
 | North East, North, Central, West | – | – | Later |
 
 Per-centre coverage after the completeness PR (mapped / NEA cooked-food stalls):
@@ -113,6 +115,11 @@ The NEA counts include stalls that sell drinks, and some units sit vacant, so 10
 Standalones: 10 restaurants and cafés along Bedok Reservoir Rd and Bedok North.
 
 Must-try flags so far: Seng Hiang BCM, Xing Ji BCM, Chai Chee Pork Porridge, Seng Kee Black Chicken Herbal Soup, Chin Lee Restaurant.
+
+**East gaps:**
+- No recent guide (newest is 2019–2023), so no confirmed hours: Marine Parade, Haig Road, Geylang Serai, Eunos.
+- Biggest centre is the least covered: Old Airport Road, 41 of 168 stalls.
+- Not built yet: Geylang-area centres (Sims Place, Circuit Road ×3, Aljunied, Geylang Bahru, Upper Boon Keng), Blk 58 New Upper Changi Rd, Marine Terrace 50A, and Kallang Estate.
 
 ### Source notes (read before refreshing)
 - **Most current sources used:**
@@ -131,6 +138,12 @@ Must-try flags so far: Seng Hiang BCM, Xing Ji BCM, Chai Chee Pork Porridge, Sen
   - Its "Blk 85 Bedok North St 4" page actually lists **Redhill** stalls, so it's not used for Fengshan.
   - Its Blk 630 unit numbers partly disagree with kopitiam.com.sg.
   - Where unit numbers conflict, the newer dated guide wins and the roster entry is kept without a unit.
+- More hawker.guide roster pages, checked 15 Oct:
+  - Usable: Blk 16 Bedok South, Blk 137 Tampines, Blk 84 Marine Parade (some odd 3-digit units, which were dropped), Blk 4A Eunos, Dunman, East Coast Lagoon, Changi Village, Geylang Serai.
+  - Geylang Serai has generic "#02-01…#02-45 Geylang Serai <dish>" rows, which were skipped.
+  - `bedok-food-centre` mixes Bedok Corner with Bedok Interchange, so it wasn't used.
+  - Old Airport Road, 208B and Haig Road pages didn't load.
+- **Data-entry tooling:** the East build used a small compact-spec helper (hours like `"Tue-Sun 10:00-18:00; Sat 11:00-21:00"`, dishes like `"Lor mee $4/$5 | ..."`). It isn't in the repo. Re-create a similar helper for the next zone, or edit `places.json` directly.
 - **kopitiam.com.sg** articles are recent but sometimes contain obvious errors, such as two stalls sharing one unit. Cross-check their units against a roster.
 - **There is no official stall-level dataset.** data.gov.sg has:
   - Centre-level counts: *List of Government Markets & Hawker Centres*, 107 centres, 6,121 cooked-food stalls, last updated Jun 2024.
@@ -193,6 +206,10 @@ Home ground took about 40 fetches for 5 centres and 50 places.
 | 15 Oct | OneMap basemap instead of CARTO | CARTO started requiring an API key; OneMap is free and more detailed for Singapore |
 | 15 Oct | Photos go in each uploader's Drive (`drive.file`), shared view-by-link | No API key, no Picker, and nobody grants access to their whole Drive; food photos are low-sensitivity |
 | 15 Oct | Web photos are linked out to (Google Maps, Images, Burpple), not copied in | They're copyrighted. Embedding Google Places photos would need a paid API key, so it was deferred |
+| 15 Oct | Zone by distance: ≤2.5 km from home = Home ground | Keeps 'home' meaning walkable or a short ride, whatever the planning area |
+| 15 Oct | Guides older than Sep 2023: keep dishes, drop hours | Wrong hours are worse than none; the app assumes 7am–8pm for unknown hours when *Only open* is on |
+| 15 Oct | 'Pick a centre' needs ≥2 stalls with confirmed hours open | Stops morning centres full of roster-only stalls winning at dinner |
+| 15 Oct | Map groups restaurants into bubbles (Leaflet.markercluster via jsDelivr) | 61 Katong/Geylang restaurants were unreadable as separate pins |
 | 15 Oct | Roster-only stalls are included as `listed` | The owner wants to know what's at a centre even without details; family photos fill in the gaps |
 
 ## 7. Next up / ideas
@@ -201,7 +218,12 @@ Home ground took about 40 fetches for 5 centres and 50 places.
 - [ ] Monthly refresh as a scheduled task (needs a decision on how it reads `places_added`).
 - [ ] "Worth the trip" island-wide must-try list (~20) ahead of full zone builds.
 - [ ] Possibly: NEA cleaning/closure dates per centre (data.gov.sg dataset) to hide centres during cleaning weeks.
-- [ ] Merge the completeness PR.
+- [ ] Merge PR #1, then PR #2.
+- [ ] Next session: "Worth the trip" list from the **Michelin Bib Gourmand 2026** hawker selection. The session ran out of usage while fetching it. Sources found:
+  - Daniel Food Diary, 28 Jul 2026: https://danielfooddiary.com/2026/07/28/bibgourmand2026/
+  - The official Michelin page: https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/singapore-bib-gourmand-2026
+- [ ] Then: the Geylang-area centres (see East gaps), and recent guides for Marine Parade, Haig Road, Geylang Serai and Eunos.
+- [ ] Zones still to build: North East, North, Central, West.
 - [ ] Fengshan 85: get a real roster, either by the family walking it with *Add a stall* plus signboard photos, or from a future source.
 - [ ] Possibly: Google Places photos inside the app. This needs a Google Maps Platform API key with billing, restricted to `marvyeo.github.io`.
 - [ ] Possibly: a "Still here ✓" quick confirm for `listed` stalls without a full log.
