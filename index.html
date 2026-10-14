@@ -406,9 +406,10 @@ function clusterCandidates(cands) {
   for (const p of cands) if (p.cluster) (by[p.cluster] = by[p.cluster] || []).push(p);
   // Rank by stalls we KNOW are open (hours confirmed); roster-only stalls with unknown hours count for little.
   const date = mealDate();
-  const score = x => { const sure = x.ps.filter(p => openAt(p, date).known); return new Set(sure.map(p => p.cuisine)).size * 2 + sure.length + 0.2 * (x.ps.length - sure.length); };
+  const sureOf = x => x.ps.filter(p => openAt(p, date).known);
+  const score = x => { const sure = sureOf(x); return new Set(sure.map(p => p.cuisine)).size * 2 + sure.length + 0.05 * (x.ps.length - sure.length); };
   return Object.entries(by).map(([id, ps]) => ({ c: CLUSTERS.find(c => c.id === id), ps, cuisines: new Set(ps.map(p => p.cuisine)).size }))
-    .filter(x => x.c && x.ps.some(p => openAt(p, date).known)).sort((a, b) => score(b) - score(a));
+    .filter(x => x.c && sureOf(x).length >= 2).sort((a, b) => score(b) - score(a));
 }
 
 /* ---------------- views ---------------- */
