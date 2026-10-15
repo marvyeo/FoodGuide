@@ -7,7 +7,7 @@ A family food map of Singapore. You filter by when, how far, budget, dine-in/tap
 - **Repo:** `marvyeo/FoodGuide`
 - **App URL:** https://marvyeo.github.io/FoodGuide/ (GitHub Pages, live)
 - **Status:** v1.1 live. Photos and the completeness data are tested in a headless browser with mocked Google APIs, but not yet with a real Google account.
-- **Data:** PRs #1 (Home ground completeness) and #2 (East zone) merged 15 Oct, 08:30. Live: 567 places, 19 food centres.
+- **Data:** PRs #1 (Home ground completeness), #2 (East zone) and #3 (East malls) merged 15 Oct. Live: 773 places, 19 food centres, 15 malls.
 
 ---
 
@@ -77,6 +77,12 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
   - How far: walkable ≤1.3 km, short ride ≤4 km, anywhere.
   - Budget, dine-in/tapau, cravings.
   - Toggles for open-only, untried-only, must-try only.
+- **Explore and Map filters (v1.3):**
+  - Venue type: Hawker, Malls or Restaurants.
+  - Multi-select cuisine chips.
+  - Both are shared between Explore and Map, and remembered on the device in `prefs.browseKind` and `prefs.browseCuisines`.
+  - Centre cards show which stalls match. Malls are 🛍️ in lists and square pins on the map.
+- **Place sheet links:** 🧾 *Menu (Google)* opens a Google search for "<name> <centre> menu". Google offers no stable deep link to its Menu tab, so the search is the closest; it usually shows the Menu tab in the results panel.
 - **Explore:** food centres sorted by distance, each with a coverage bar ("14 of ~72 stalls mapped"); all places; bookmarks; search by name, dish or cuisine.
 - **Place sheet:**
   - Dishes and prices, hours table, open-now status, walk/drive time, nearest MRT.
@@ -104,6 +110,7 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 | Zone | Centres | Stalls/places | Notes |
 |---|---|---|---|
 | Home ground | 5 (630 Bedok Reservoir, 216 Bedok North, 85 Fengshan, 511 Kaki Bukit, 538 Bedok North) | 189 (91 detailed, 14 partial, 84 listed) | Built 15 Oct 2026; completeness pass same day (PR) |
+| East malls | 15: Bedok Mall*, Tampines Mall, Tampines 1, Century Square, Jewel, White Sands, Pasir Ris Mall, Eastpoint, Changi City Point, Parkway Parade, i12 Katong, PLQ, Paya Lebar Square, SingPost Centre, Downtown East | 206 (158 detailed) | Built 15 Oct (PR #3). `clusters[].type = "mall"`, `stalls_total` null. Gaps: Eastpoint's Hawkers' Street food court; i12 and Downtown East have old or undated guides |
 | East | 14 (Old Airport Rd, Bedok Interchange*, Bedok South, Bedok Corner, Tampines Round, Our Tampines Hub, Pasir Ris Central, Changi Village, Marine Parade, Haig Rd, Geylang Serai, Dunman, East Coast Lagoon, Eunos) | 378 incl. 61 restaurants/cafés (Tampines, Katong/Joo Chiat, Geylang) | Built 15 Oct 2026 (PR #2). *Within 2.5 km of home, so zoned Home ground |
 | North East, North, Central, West | – | – | Later |
 
@@ -215,6 +222,8 @@ Home ground took about 40 fetches for 5 centres and 50 places.
 | 15 Oct | 'Pick a centre' needs ≥2 stalls with confirmed hours open | Stops morning centres full of roster-only stalls winning at dinner |
 | 15 Oct | Map groups restaurants into bubbles (Leaflet.markercluster via jsDelivr) | 61 Katong/Geylang restaurants were unreadable as separate pins |
 | 15 Oct | Find the family sheet via a Drive search on new devices | localStorage-only family id made each device start a new family |
+| 15 Oct | Malls as clusters with `type: "mall"` | Reuses centre UI (stall list, spin by centre, map pins) |
+| 15 Oct | Chain outlets named "Brand (Mall)" | Ids must be unique and lists need to tell outlets apart; the app strips the brackets for web searches and match previews |
 | 15 Oct | Roster-only stalls are included as `listed` | The owner wants to know what's at a centre even without details; family photos fill in the gaps |
 
 ## 7. Next up / ideas
