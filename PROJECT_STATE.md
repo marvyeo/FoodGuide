@@ -1,13 +1,21 @@
 # Makan Map — project state
 
-_Last updated: 15 Oct 2026, ~01:40 SGT (v1.2: East zone build, clustered map, zone filter)_
+_Last updated: 15 Oct 2026, ~09:30 SGT (v1.3: malls + mall directories, cuisine/venue filters, data pipeline in `tools/`)_
+
+> **New chat? Start here.**
+> 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
+> 2. The repo is `marvyeo/FoodGuide`: attach it with push access and clone it. GitHub's REST API works via `gh api` (unset `GH_TOKEN` first; GraphQL is blocked).
+> 3. Data changes go on a branch and into a PR. App changes (`index.html`, `sw.js`; bump `CACHE` in `sw.js`) can go straight to `main`.
+> 4. The owner's next likely asks are in section 7.
 
 A family food map of Singapore. You filter by when, how far, budget, dine-in/tapau and craving, then spin for a stall or a food centre. You log and rate meals, and you collect stamps and badges. The app is installable from GitHub Pages and works offline. Day-to-day use costs no AI tokens. Claude is only involved to build or refresh the places data.
 
 - **Repo:** `marvyeo/FoodGuide`
 - **App URL:** https://marvyeo.github.io/FoodGuide/ (GitHub Pages, live)
-- **Status:** v1.1 live. Photos and the completeness data are tested in a headless browser with mocked Google APIs, but not yet with a real Google account.
-- **Data:** PRs #1 (Home ground completeness), #2 (East zone) and #3 (East malls) merged 15 Oct. Live: 773 places, 19 food centres, 15 malls.
+- **Status:** v1.3 live.
+  - The owner signs in with Google on PC and phone. The family sheet exists.
+  - Photos are tested only against mocked Google APIs.
+- **Data:** PRs #1–#4 merged on 15 Oct. Live: **1,268 places** (19 hawker centres, 15 malls, 61 standalones), Home ground and East zones only.
 
 ---
 
@@ -48,9 +56,10 @@ A family food map of Singapore. You filter by when, how far, budget, dine-in/tap
 ### places.json schema
 - `home`: the default origin for distances (Bedok Reservoir Park). Each phone can override it via *Set home here*.
 - `zones[]`: `home`, `east`, `northeast`, `north`, `central`, `west`, each with a colour and description.
-- `mrt[]`: stations used for the "nearest MRT" line. Currently only Home ground stations; add more with each zone.
+- `mrt[]`: stations used for the "nearest MRT" line. Home ground and East stations so far (21); add each new zone's stations.
 - `sources{}`: key → {name, url, date}. Places cite these keys.
-- `clusters[]`: food centres / coffeeshops. Fields: `id, name, type, address, lat, lng, zone, stalls_total` (NEA cooked-food stall count, used for the coverage bar), `notes, sources`.
+- `clusters[]`: food centres and malls. Fields: `id, name, type` (`hawker` / `mall` / `coffeeshop`), `address, lat, lng, zone, stalls_total` (roster count: NEA for hawker centres, directory count for malls; the coverage-bar denominator; null = unknown), `roster?` ({source, count, snapshot, fetched}, set by `merge_roster.py`), `notes, sources`.
+- Places in malls are named `Brand (Mall)`, e.g. "Genki Sushi (Tampines Mall)".
 - `places[]`: fields are
   - `id, cluster?, name, name_zh?, unit, cuisine` (see `CUISINES` in index.html), `dishes[{name, price?, price_note?}]`, `price_band` 1–4
   - `hours`: `[[days, ["HH:MM-HH:MM", …]], …]` with days as a string of `0`–`6` (0 = Sunday); an end time before the start time means the slot runs past midnight
@@ -66,7 +75,7 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 
 ---
 
-## 2. What's built (v1.1)
+## 2. What's built (v1.3)
 
 - **Spin:**
   - Weighted random pick: your family's ratings + a novelty bonus for untried places + must-try + bookmarks − distance. Anyone who rated a place 2★ or less with "not again" vetoes it.
@@ -83,7 +92,7 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
   - Both are shared between Explore and Map, and remembered on the device in `prefs.browseKind` and `prefs.browseCuisines`.
   - Centre cards show which stalls match. Malls are 🛍️ in lists and square pins on the map.
 - **Place sheet links:** 🧾 *Menu (Google)* opens a Google search for "<name> <centre> menu". Google offers no stable deep link to its Menu tab, so the search is the closest; it usually shows the Menu tab in the results panel.
-- **Explore:** food centres sorted by distance, each with a coverage bar ("14 of ~72 stalls mapped"); all places; bookmarks; search by name, dish or cuisine.
+- **Explore:** centres and malls sorted by distance, zone filter, each with a coverage bar ("14 of ~72 stalls mapped"); all places; bookmarks; search by name, dish or cuisine.
 - **Place sheet:**
   - Dishes and prices, hours table, open-now status, walk/drive time, nearest MRT.
   - Family ratings, directions (Google Maps), bookmark, sources with dates.
@@ -107,59 +116,82 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 
 ## 3. Data coverage
 
-| Zone | Centres | Stalls/places | Notes |
-|---|---|---|---|
-| Home ground | 5 (630 Bedok Reservoir, 216 Bedok North, 85 Fengshan, 511 Kaki Bukit, 538 Bedok North) | 189 (91 detailed, 14 partial, 84 listed) | Built 15 Oct 2026; completeness pass same day (PR) |
-| East malls | 15: Bedok Mall*, Tampines Mall, Tampines 1, Century Square, Jewel, White Sands, Pasir Ris Mall, Eastpoint, Changi City Point, Parkway Parade, i12 Katong, PLQ, Paya Lebar Square, SingPost Centre, Downtown East | 206 (158 detailed) | Built 15 Oct (PR #3). `clusters[].type = "mall"`, `stalls_total` null. Gaps: Eastpoint's Hawkers' Street food court; i12 and Downtown East have old or undated guides |
-| East | 14 (Old Airport Rd, Bedok Interchange*, Bedok South, Bedok Corner, Tampines Round, Our Tampines Hub, Pasir Ris Central, Changi Village, Marine Parade, Haig Rd, Geylang Serai, Dunman, East Coast Lagoon, Eunos) | 378 incl. 61 restaurants/cafés (Tampines, Katong/Joo Chiat, Geylang) | Built 15 Oct 2026 (PR #2). *Within 2.5 km of home, so zoned Home ground |
-| North East, North, Central, West | – | – | Later |
+**Live (15 Oct 2026, 09:30):** 1,268 places: 19 hawker centres, 15 malls and 61 standalone restaurants/cafés, in the **Home ground** and **East** zones. North East, North, Central and West aren't built yet.
 
-Per-centre coverage after the completeness PR (mapped / NEA cooked-food stalls):
-- Blk 630: 31 / 36
-- Bedok 216: 48 / 82
-- Fengshan 85: 26 / 72. This is the weakest: there's no trustworthy online roster, so it relies on the family adding stalls.
-- Kaki Bukit 511: 34 / 42
-- Blk 538: 40 / 40. The NEA count is from 2024 and the roster lists 36 units; the extra entries come from guides.
+Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the known total: the NEA cooked-food stall count for hawker centres, the directory count for malls. `?` means no roster yet, i.e. a completeness gap.
 
-The NEA counts include stalls that sell drinks, and some units sit vacant, so 100% isn't always reachable.
+| Zone | Type | Name | Mapped | Roster | Detailed | Partial | Listed | Roster source |
+|---|---|---|---|---|---|---|---|---|
+| east | hawker | Bedok Corner Food Centre | 10 | 32 (31%) | 10 | 0 | 0 | NEA count |
+| east | hawker | Changi Village Hawker Centre | 28 | 87 (32%) | 11 | 0 | 17 | NEA count |
+| east | hawker | Dunman Food Centre | 25 | 30 (83%) | 10 | 2 | 13 | NEA count |
+| east | hawker | East Coast Lagoon Food Village | 26 | 63 (41%) | 14 | 0 | 12 | NEA count |
+| east | hawker | Eunos Crescent Market & Food Centre (4A) | 28 | 42 (67%) | 0 | 10 | 18 | NEA count |
+| east | hawker | Geylang Serai Market & Food Centre | 38 | 63 (60%) | 0 | 10 | 28 | NEA count |
+| east | hawker | Haig Road Market & Food Centre | 15 | 72 (21%) | 0 | 13 | 2 | NEA count |
+| east | hawker | Hawker Centre @ Our Tampines Hub | 11 | ? (?) | 7 | 4 | 0 | — |
+| east | hawker | Marine Parade Central Market & Food Centre | 19 | 55 (35%) | 0 | 10 | 9 | NEA count |
+| east | hawker | Old Airport Road Food Centre | 41 | 168 (24%) | 32 | 4 | 5 | NEA count |
+| east | hawker | Pasar 16 @ Bedok South (Blk 16) | 26 | 64 (41%) | 11 | 0 | 15 | NEA count |
+| east | hawker | Pasir Ris Central Hawker Centre | 11 | ? (?) | 11 | 0 | 0 | — |
+| east | hawker | Tampines Round Market & Food Centre (Blk 137) | 30 | 45 (67%) | 16 | 0 | 14 | NEA count |
+| east | mall | Century Square | 48 | 50 (96%) | 10 | 0 | 38 | singmalls-m-century-square |
+| east | mall | Changi City Point | 63 | 61 (100%) | 24 | 0 | 39 | singmalls-m-changi-city-point |
+| east | mall | Downtown East (E!Hub & E!Avenue) | 9 | ? (?) | 0 | 0 | 9 | — |
+| east | mall | Eastpoint Mall | 5 | ? (?) | 5 | 0 | 0 | — |
+| east | mall | Jewel Changi Airport | 129 | 134 (96%) | 25 | 0 | 104 | singmalls-m-jewel |
+| east | mall | Parkway Parade | 52 | 49 (100%) | 10 | 0 | 42 | singmalls-m-parkway-parade |
+| east | mall | Pasir Ris Mall | 12 | ? (?) | 12 | 0 | 0 | — |
+| east | mall | Paya Lebar Quarter (PLQ) | 76 | 78 (97%) | 18 | 0 | 58 | singmalls-m-plq |
+| east | mall | Paya Lebar Square | 53 | 53 (100%) | 9 | 0 | 44 | singmalls-m-paya-lebar-square |
+| east | mall | SingPost Centre | 18 | ? (?) | 0 | 17 | 1 | — |
+| east | mall | Tampines 1 | 11 | ? (?) | 11 | 0 | 0 | — |
+| east | mall | Tampines Mall | 56 | 56 (100%) | 17 | 0 | 39 | singmalls-m-tampines-mall |
+| east | mall | White Sands | 53 | 53 (100%) | 9 | 0 | 44 | singmalls-m-white-sands |
+| east | mall | i12 Katong | 44 | 39 (100%) | 0 | 13 | 31 | singmalls-m-i12-katong |
+| home | hawker | Bedok 216 Food Centre & Market | 48 | 82 (59%) | 17 | 8 | 23 | NEA count |
+| home | hawker | Bedok 85 Fengshan Centre | 26 | 72 (36%) | 24 | 1 | 1 | NEA count |
+| home | hawker | Bedok Interchange Hawker Centre (208B) | 19 | 70 (27%) | 9 | 1 | 9 | NEA count |
+| home | hawker | Blk 538 Bedok North St 3 Market & Food Centre | 40 | 40 (100%) | 13 | 0 | 27 | NEA count |
+| home | hawker | Kaki Bukit 511 Market & Food Centre | 34 | 42 (81%) | 16 | 0 | 18 | NEA count |
+| home | hawker | Pasar Makan @ Reservoir (Blk 630) | 31 | 36 (86%) | 11 | 5 | 15 | NEA count |
+| home | mall | Bedok Mall | 72 | 69 (100%) | 8 | 8 | 56 | singmalls-m-bedok-mall |
 
-Standalones: 10 restaurants and cafés along Bedok Reservoir Rd and Bedok North.
+Standalone restaurants/cafés: 61 | Total places: 1268 | Gaps (no roster): 7
 
-Must-try flags so far: Seng Hiang BCM, Xing Ji BCM, Chai Chee Pork Porridge, Seng Kee Black Chicken Herbal Soup, Chin Lee Restaurant.
-
-**East gaps:**
-- No recent guide (newest is 2019–2023), so no confirmed hours: Marine Parade, Haig Road, Geylang Serai, Eunos.
-- Biggest centre is the least covered: Old Airport Road, 41 of 168 stalls.
-- Not built yet: Geylang-area centres (Sims Place, Circuit Road ×3, Aljunied, Geylang Bahru, Upper Boon Keng), Blk 58 New Upper Changi Rd, Marine Terrace 50A, and Kallang Estate.
+Notes:
+- **Hawker coverage %:** NEA counts include drinks stalls and vacant units, so 100% isn't always reachable.
+- **Mall coverage %:**
+  - It can read ≥100%: the directories are ~2024 snapshots and newer guides add tenants the directory doesn't know about.
+  - 43 directory entries were dropped as superseded (see the PR #4 description).
+- **Gaps, in priority order:**
+  1. **No mall directory yet:** Tampines 1, Pasir Ris Mall, Eastpoint (plus its Hawkers' Street food court), SingPost Centre, Downtown East. Their SingMalls pages failed to fetch on 15 Oct. Retry them, or try the mall's own site, or Little Day Out.
+  2. **Hawker centres under 40%:** Old Airport Rd (41/168), Haig Rd (15/72), Bedok Interchange (19/70), Changi Village (28/87), Bedok Corner (10/32), Marine Parade (19/55), Fengshan 85 (26/72). They need a stall roster; see the source notes.
+  3. **No NEA count:** Our Tampines Hub and Pasir Ris Central (both new-generation centres not on the 2024 list).
+  4. **East centres not built at all:** Sims Place, Circuit Road ×3, Aljunied Ave 2, Geylang Bahru, Upper Boon Keng, Blk 58 New Upper Changi Rd, Marine Terrace 50A, Kallang Estate. Plus coffeeshops, which have no official list.
+  5. **No recent guide, so no hours:** Marine Parade, Haig Road, Geylang Serai, Eunos.
+- **Must-try flags (27):** e.g. Seng Hiang & Xing Ji BCM, Chai Chee Pork Porridge, Chin Lee, Nam Sing Hokkien Mee, To-Ricos Kway Chap, Roast Paradise, 328 Katong Laksa, Lor 9 Beef Kway Teow, Lau Hong Ser Rojak, Changi Village nasi lemak, Haron Satay.
 
 ### Source notes (read before refreshing)
-- **Most current sources used:**
-  - Daniel Food Diary (May 2026) for 216.
-  - kopitiam.com.sg (Apr/May 2026) for 630 and 85. Prices in their articles are sparse.
-  - Eatbook (Jul 2023, Sep 2024) for prices and for 511 and the standalones.
-  - Completeness pass sources:
-    - Seth Lui: 85 (updated Jul 2025) and 216 (updated Aug 2025).
-    - HungryGoWhere 216 (Jul 2026).
-    - kopitiam.com.sg: 511 (Sep 2026) and 538 (Jan 2026).
-    - HawkerPedia 511 (Sep 2025), Singapore Verified 85 (Feb 2024), Burpple (undated).
-  - Every place stores `verified` and `sources` with dates, and the app shows them.
-- **Older data:** entries verified 2024-09 (the standalones and the 511 stalls) are the most likely to be stale. Check those first on the next refresh.
-- **hawker.guide** (undated rosters with unit, name and cuisine) is **useful but must be cross-checked**:
-  - Its 216, 511 and 538 rosters match 2025–26 guides closely, so they're used for `listed` entries.
-  - Its "Blk 85 Bedok North St 4" page actually lists **Redhill** stalls, so it's not used for Fengshan.
-  - Its Blk 630 unit numbers partly disagree with kopitiam.com.sg.
-  - Where unit numbers conflict, the newer dated guide wins and the roster entry is kept without a unit.
-- More hawker.guide roster pages, checked 15 Oct:
-  - Usable: Blk 16 Bedok South, Blk 137 Tampines, Blk 84 Marine Parade (some odd 3-digit units, which were dropped), Blk 4A Eunos, Dunman, East Coast Lagoon, Changi Village, Geylang Serai.
-  - Geylang Serai has generic "#02-01…#02-45 Geylang Serai <dish>" rows, which were skipped.
-  - `bedok-food-centre` mixes Bedok Corner with Bedok Interchange, so it wasn't used.
-  - Old Airport Road, 208B and Haig Road pages didn't load.
-- **Data-entry tooling:** the East build used a small compact-spec helper (hours like `"Tue-Sun 10:00-18:00; Sat 11:00-21:00"`, dishes like `"Lor mee $4/$5 | ..."`). It isn't in the repo. Re-create a similar helper for the next zone, or edit `places.json` directly.
-- **kopitiam.com.sg** articles are recent but sometimes contain obvious errors, such as two stalls sharing one unit. Cross-check their units against a roster.
-- **There is no official stall-level dataset.** data.gov.sg has:
-  - Centre-level counts: *List of Government Markets & Hawker Centres*, 107 centres, 6,121 cooked-food stalls, last updated Jun 2024.
-  - *NEA Licensed Eating Establishments*: restaurants and shops, not hawker stalls, last updated Jun 2024.
-- **Geocoding:** the OneMap search API (`onemap.gov.sg/api/common/elastic/search?searchVal=<postal>&returnGeom=Y`) works without a token.
+- **Freshness rule:**
+  - Guides dated Sep 2023 or later: keep dishes, prices and hours.
+  - Older guides: keep dishes, drop hours (`partial`).
+  - Rosters and directories: name and unit only (`listed`).
+- **Hawker rosters, hawker.guide** (undated):
+  - Usable for 216, 511, 538, Bedok South, Tampines Round, Marine Parade, Eunos, Dunman, East Coast Lagoon, Changi Village and Geylang Serai, after cross-checking against dated guides.
+  - **Wrong for Fengshan 85**: it lists Redhill stalls.
+  - Its `bedok-food-centre` page mixes Bedok Corner with Bedok Interchange.
+  - Skip Geylang Serai's generic "#02-01…#02-45 Geylang Serai <dish>" rows.
+  - The Old Airport Road, 208B and Haig Road pages don't load.
+- **Mall rosters, SingMalls** (`singmalls.app/en/malls/<slug>/directory`):
+  - Complete food & beverage lists, but an undated ~2024 snapshot.
+  - CapitaLand's own store pages load their content with JavaScript, so a plain page fetch gets nothing.
+- **Dated guides:**
+  - Eatbook, Seth Lui (check the "Updated" date), Daniel Food Diary, HungryGoWhere, kopitiam.com.sg (recent, but sometimes two stalls share one unit), Ordinary Patrons.
+  - Women's Weekly and Miss Tam Chiak are often 2019–2023.
+- **NEA:** data.gov.sg *List of Government Markets & Hawker Centres*, `d_68a42f09f350881996d83f9cd73ab02f`. It has 107 centres and stall counts (Jun 2024). Query it via WebFetch on `data.gov.sg/api/action/datastore_search?resource_id=…&limit=200`.
+- **Geocoding:** OneMap search, `onemap.gov.sg/api/common/elastic/search?searchVal=<postal or address>&returnGeom=Y&getAddrDetails=Y`. No token needed, though it shows an "auth token missing" note.
+- **Network:** the shell in Claude's workspace can't reach these sites. All fetching goes through WebFetch/WebSearch.
 
 ---
 
@@ -177,29 +209,50 @@ Must-try flags so far: Seng Hiang BCM, Xing Ji BCM, Chai Chee Pork Porridge, Sen
 
 ---
 
-## 5. Refresh runs (the only recurring token cost)
+## 5. Data pipeline (completeness first)
 
-**Monthly refresh**, as a scheduled task or on request. Output is **one PR** against `data/places.json`.
-1. Read `PROJECT_STATE.md` and `data/places.json`.
-2. **Fold in family additions:** read the family Sheet's `places_added` tab and merge new stalls into `places.json`, keeping their `id`s so existing logs still point at them. This needs the Sheet ID, or the owner exports the tab.
-3. **Closure check:** take the ~10% of places with the oldest `verified` dates, search each one, and update hours and prices or set `status: "closed"`. Never delete a place, because logs reference it.
-4. **Read family photos:** for each new `menu` photo in the Sheet's `photos` tab, open the public image (`drive.google.com/thumbnail?id=<file_id>&sz=w1600`) and transcribe the dishes and prices into that place. Upgrade `listed` to `partial` or `detailed`, and add a `family-photo` source dated with the photo date.
-5. **New openings:** search "new hawker stall / new restaurant <area> <month year>" for each mapped zone and add the confirmed ones.
-6. Bump `updated`, and set `verified` on everything that was touched.
-7. Validate: valid JSON, unique ids, every `sources` key exists, every hours slot matches `HH:MM-HH:MM`, days are `0`–`6`. Then open the PR with a summary.
+The tools are in `tools/` (Python 3, standard library only). Run them from the repo root.
 
-Rough cost: about 15–30 searches/fetches per run (one short session).
+| Tool | What it does |
+|---|---|
+| `tools/speclib.py` | Helpers: `hours("Tue-Sun 10:00-18:00; Sat 11:00-14:00,17:00-21:00")`, `dishes("Lor mee $4/$5 \| Rojak from $3")`, `band()`, `guess_cuisine()` (keywords plus a `KNOWN` brand map; extend it), `norm()` brand matching, `unit_key()`, `km()`. |
+| `tools/merge_roster.py` | Merges `data/rosters/<cluster-id>.txt` into `places.json` (see rules below). Use `--all` for every roster file. Safe to re-run. |
+| `tools/validate.py` | Schema and integrity checks. **Run before every push**; it exits non-zero on problems. |
+| `tools/coverage.py` | Coverage report per centre or mall (`--md` for markdown). |
 
-**Zone build**, one session per zone, done the same way as Home ground:
-1. Pull the NEA centre list for the zone (for `stalls_total`) and geocode with OneMap.
-2. Find the 2025–26 food guide for each centre (DFD, Eatbook, Seth Lui, kopitiam.com.sg) and record stall, unit, dishes, prices and hours.
-3. Add the area's notable restaurants and cafés, plus MRT stations.
+**Roster file format** (`data/rosters/<cluster-id>.txt`):
 
-Home ground took about 40 fetches for 5 centres and 50 places.
+```
+# source: <kind> | <url> | <snapshot description> | fetched YYYY-MM-DD
+Stall or outlet name|#unit
+```
 
-### Effort to map Singapore
-- **Centres and well-known stalls:** about 107 NEA centres; at 4–8 fetches each, roughly 10–14 sessions. Expect ~15–25% of stalls per centre to come with good detail, because only the notable ones are written about.
-- **Every stall** (~6,100 cooked-food stalls in NEA centres alone, plus coffeeshops): not achievable from online sources. The long tail comes from **family mapping**, using *Add a stall* during visits, which a refresh then folds into `places.json`. The coverage bars and the Mapper badge exist to drive this.
+**Merge rules:**
+- The roster count becomes the cluster's `stalls_total`.
+- Names already in that cluster are matched and skipped.
+- A roster entry whose unit is held by a different shop from a dated guide is dropped as **superseded** (an old tenant).
+- Everything else is added as `listed`, with display name `Name (Mall)` and a guessed cuisine.
+
+### Building a new area (do it in this order)
+1. **Roster first, for completeness:**
+   - **Hawker centres:** take the NEA count as `stalls_total`, plus a stall list (hawker.guide or another roster) saved to `data/rosters/c-<id>.txt`.
+   - **Malls:** the SingMalls directory, saved to `data/rosters/m-<id>.txt`.
+   - Note what you couldn't get as a gap in section 3.
+2. **Enrich from dated guides:** dishes, prices and hours for the notable stalls. Write a small script with the `speclib` specs that appends places (see the East build in git history, PR #2 and #3). Apply the freshness rule.
+3. **Geocode clusters and standalones** with OneMap. `zone`: ≤2.5 km from `home` means `home`, otherwise the zone of the area. Add the zone's MRT stations to `mrt[]`.
+4. **Merge the roster** with `python3 tools/merge_roster.py data/rosters/<file>.txt`. Read the superseded list; it's a free freshness check.
+5. **Run `python3 tools/validate.py`** and `python3 tools/coverage.py`.
+6. **One PR per area.** Put the coverage table in the PR description. The owner merges, or asks Claude to merge.
+
+Rough effort: about 1 session per zone of ~15 centres plus malls. The East took about 120 fetches.
+
+### Monthly refresh (the only recurring token cost)
+1. **Re-fetch rosters for changed centres and malls**, then diff against the `data/rosters/` file. New names are openings. Names that disappeared are likely closures: set `status: "closed"`, never delete (family logs reference ids). Update the roster file.
+2. **Fold in family additions:** the family Sheet's `places_added` tab. Keep their ids. Needs the Sheet ID or an export.
+3. **Read family menu photos** (`photos` tab, kind `menu`) and transcribe dishes and prices. Upgrade `listed` to `partial` or `detailed`.
+4. **Closure/price check:** the oldest ~10% by `verified`.
+5. **New openings:** search "new hawker stall / new restaurant <area> <month year>".
+6. **Finish:** validate, run coverage, open a PR.
 
 ---
 
@@ -224,20 +277,26 @@ Home ground took about 40 fetches for 5 centres and 50 places.
 | 15 Oct | Find the family sheet via a Drive search on new devices | localStorage-only family id made each device start a new family |
 | 15 Oct | Malls as clusters with `type: "mall"` | Reuses centre UI (stall list, spin by centre, map pins) |
 | 15 Oct | Chain outlets named "Brand (Mall)" | Ids must be unique and lists need to tell outlets apart; the app strips the brackets for web searches and match previews |
+| 15 Oct | Completeness first: get a full roster (NEA count + stall list, or the mall directory) before enriching from guides | Guides only cover ~10–15 picks per place; the owner wants to know everything that's there |
+| 15 Oct | Mall rosters from SingMalls; a dated guide's tenant beats the directory for the same unit | Directories are ~2024 snapshots; the clash is reported as superseded |
+| 15 Oct | Data tooling committed in `tools/` | So any session (or a scheduled refresh) can build or refresh the same way |
 | 15 Oct | Roster-only stalls are included as `listed` | The owner wants to know what's at a centre even without details; family photos fill in the gaps |
 
 ## 7. Next up / ideas
-- [ ] Owner setup (section 4) and a real sign-in test with two accounts.
-- [ ] Build the East zone (Bedok Interchange, Bedok South, Chai Chee, Tampines, Simei, Pasir Ris, Changi Village, Marine Parade, Katong/Joo Chiat, Geylang).
-- [ ] Monthly refresh as a scheduled task (needs a decision on how it reads `places_added`).
-- [ ] "Worth the trip" island-wide must-try list (~20) ahead of full zone builds.
-- [ ] Possibly: NEA cleaning/closure dates per centre (data.gov.sg dataset) to hide centres during cleaning weeks.
-- [ ] Merge PR #1, then PR #2.
-- [ ] Next session: "Worth the trip" list from the **Michelin Bib Gourmand 2026** hawker selection. The session ran out of usage while fetching it. Sources found:
-  - Daniel Food Diary, 28 Jul 2026: https://danielfooddiary.com/2026/07/28/bibgourmand2026/
-  - The official Michelin page: https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/singapore-bib-gourmand-2026
-- [ ] Then: the Geylang-area centres (see East gaps), and recent guides for Marine Parade, Haig Road, Geylang Serai and Eunos.
-- [ ] Zones still to build: North East, North, Central, West.
-- [ ] Fengshan 85: get a real roster, either by the family walking it with *Add a stall* plus signboard photos, or from a future source.
-- [ ] Possibly: Google Places photos inside the app. This needs a Google Maps Platform API key with billing, restricted to `marvyeo.github.io`.
-- [ ] Possibly: a "Still here ✓" quick confirm for `listed` stalls without a full log.
+**Most likely next asks (in order):**
+- [ ] **Close the East gaps** in section 3:
+  - Mall directories for Tampines 1, Pasir Ris Mall, Eastpoint (+ Hawkers' Street), SingPost and Downtown East.
+  - Stall rosters for Old Airport Rd, Haig Rd, Bedok Interchange, Changi Village and Fengshan.
+  - The unbuilt Geylang-area centres.
+- [ ] **"Worth the trip" island-wide list** from the **Michelin Bib Gourmand 2026** hawker selection. These would be `must_try` places in other zones, and the zone map already supports them. Sources:
+  - https://danielfooddiary.com/2026/07/28/bibgourmand2026/
+  - https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/singapore-bib-gourmand-2026
+- [ ] **Next zones:** North East, North, Central, West. Use the section 5 pipeline: roster first.
+- [ ] **Monthly refresh as a scheduled task.** It needs a decision on how it reads the family Sheet's `places_added` and `photos` tabs.
+
+**Later / ideas:**
+- [ ] Coffeeshops: there's no official list. Map them per area from guides, plus the family's *Add a stall*.
+- [ ] NEA cleaning/closure dates per centre (data.gov.sg) to hide centres during cleaning weeks.
+- [ ] A "Still here ✓" quick confirm for `listed` stalls; it would feed the refresh.
+- [ ] Google Places photos/menus in-app. This needs a paid Google Maps Platform key, so it's deferred.
+- [ ] Owner: real two-account test of the family invite flow; photo upload on a phone.
