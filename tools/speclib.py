@@ -7,7 +7,7 @@ Compact specs used by data-entry scripts:
   band(dishes) -> 1..4 price band from the lower-median price ($<8, <20, <50, 50+)
   guess_cuisine("Ajisen Ramen") -> "japanese"  (keyword heuristic for roster-only entries; default "other")
 """
-import re, json, math
+import re, json, math, unicodedata
 
 DAYS = {"sun": 0, "mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6}
 CUISINES = ["chicken-rice", "noodles", "carrot-cake", "yong-tau-foo", "rice", "vegetarian", "braised", "snacks", "drinks", "western",
@@ -93,7 +93,8 @@ KNOWN = {
  "soul alife": "western", "xycd": "drinks", "fun toast": "drinks", "kaffe & toast": "drinks", "toast box": "drinks", "wine connection": "western",
  "the coffee bean": "cafe", "starbucks": "cafe", "huggs": "cafe", "flash coffee": "cafe", "luckin": "cafe", "another bean": "cafe", "arabica": "cafe",
  "hoshino coffee": "japanese", "o'coffee club": "cafe", "paul": "cafe", "delifrance": "cafe", "pazzion": "cafe", "tim hortons": "cafe",
- "tamjai": "noodles", "57°c mala": "other", "ipot mala": "other", "big fish": "western", "tai er": "zi-char",
+ "tamjai": "noodles",
+ "battercatch": "western", "eighteen plum": "snacks", "hainan second street": "rice", "ji xiang": "snacks", "little pond": "soup", "nespresso": "cafe", "shanghai tan": "dumplings", "xiang xiang hunan": "zi-char", "alchemist": "cafe", "im qalb": "korean", "kenangan": "cafe", "kuan zhai alley": "zi-char", "ygf malatang": "noodles", "delibowl": "rice", "toast & roll": "drinks", "cut butchery": "other", "sgfr": "other", "cellarbration": "other", "57°c mala": "other", "ipot mala": "other", "big fish": "western", "tai er": "zi-char",
 }
 def guess_cuisine(name):
     n = name.lower()
@@ -105,6 +106,7 @@ def guess_cuisine(name):
 
 def norm(s):
     """Brand key for matching: lowercase, drop (...) labels, punctuation, 'the', common suffixes."""
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode() if s.isascii() is False else s
     s = re.sub(r"\([^)]*\)", "", s.lower())
     s = re.sub(r"[’'`]", "", s)
     s = re.sub(r"[^a-z0-9]+", " ", s)

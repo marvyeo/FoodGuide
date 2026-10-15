@@ -7,7 +7,14 @@ Roster files live in data/rosters/<cluster-id>.txt:
     ...
 Usage:  python3 tools/merge_roster.py data/rosters/m-bedok-mall.txt [more files...]   (or --all)
 
-Rules (completeness first, freshness wins):
+Rows may carry an optional third field, a directory note: "Opening Soon" / "New Store" (tagged "new"),
+"Temporarily Closed" (kept open, noted in status_note).
+
+Official live directories (snapshot field starts with "live", e.g. CapitaLand's own store list) are
+authoritative: every row is added (no superseding), and mapped places in that cluster that the directory
+no longer lists are set to status "closed" (never deleted) with a closed_note. Pass --dry-run to preview.
+
+Rules for other rosters (completeness first, freshness wins):
   * Sets the cluster's stalls_total to the roster count (the coverage-bar denominator) and records cluster.roster.
   * A roster name that matches an existing place in that cluster (brand match, ignoring "(Mall)" labels) is
     skipped; its unit fills in an empty unit.
@@ -29,8 +36,8 @@ def parse(path):
             if head is None: head = [x.strip() for x in line[1:].split("|")]
             continue
         if not line.strip(): continue
-        name, _, unit = line.partition("|")
-        rows.append((name.strip(), unit.strip()))
+        parts = [x.strip() for x in line.split("|")] + ["", ""]
+        rows.append((parts[0], parts[1], parts[2]))
     return head, rows
 
 def merge(D, path):
@@ -48,16 +55,27 @@ def merge(D, path):
     short = c.get("short") or re.sub(r"\s*\(.*?\)", "", c["name"])
     places = [p for p in D["places"] if p.get("cluster") == cid]
     ids = {p["id"] for p in D["places"]}
-    stats = {"matched": 0, "added": 0, "superseded": []}
-    for name, unit in rows:
+    official = bool(head and len(head) > 2 and head[2].lower().startswith("live"))
+    fetched = c["roster"]["fetched"]
+    stats = {"matched": 0, "added": 0, "superseded": [], "closed": [], "reopened": []}
+    seen = set()
+    def note_it(p, note):
+        nl = note.lower()
+        if nl in ("opening soon", "new store") and "new" not in p.setdefault("tags", []): p["tags"].append("new")
+        if nl == "temporarily closed": p["status_note"] = f"Temporarily closed (directory, {fetched})"
+        elif p.get("status_note", "").startswith("Temporarily closed"): p.pop("status_note")
+    for name, unit, note in rows:
         n = norm(name)
         hit = next((p for p in places if n and (n == norm(p["name"]) or (len(n) >= 5 and (n in norm(p["name"]) or norm(p["name"]) in n)))), None)
         if hit:
-            stats["matched"] += 1
-            if not hit.get("unit") and unit: hit["unit"] = unit
+            stats["matched"] += 1; seen.add(hit["id"])
+            if unit and (not hit.get("unit") or official): hit["unit"] = unit
+            if official and hit.get("status") == "closed":
+                hit["status"] = "open"; hit.pop("closed_note", None); stats["reopened"].append(hit["name"])
+            note_it(hit, note)
             continue
         uk = unit_key(unit)
-        clash = next((p for p in places if uk and unit_key(p.get("unit")) == uk and p.get("confidence") != "listed"), None)
+        clash = None if official else next((p for p in places if uk and unit_key(p.get("unit")) == uk and p.get("confidence") != "listed"), None)
         if clash:
             stats["superseded"].append(f"{name} ({unit}) → now {clash['name']}"); continue
         display = f"{name} ({short})"
@@ -66,17 +84,26 @@ def merge(D, path):
         p = {"cluster": cid, "name": display, "unit": unit, "cuisine": guess_cuisine(name), "dishes": [], "hours": [],
              "modes": ["dine", "takeaway"], "diet": [], "tags": [], "must_try": False, "status": "open", "price_band": 1,
              "sources": [key], "verified": "unconfirmed", "confidence": "listed", "id": pid}
-        D["places"].append(p); places.append(p); ids.add(pid); stats["added"] += 1
+        note_it(p, note)
+        D["places"].append(p); places.append(p); ids.add(pid); seen.add(pid); stats["added"] += 1
+    if official:
+        for p in places:
+            if p["id"] not in seen and p.get("status") != "closed":
+                p["status"] = "closed"; p["closed_note"] = f"Not in the official {c['name']} directory on {fetched}"
+                stats["closed"].append(f"{p['name']} ({p.get('unit') or 'no unit'}, {p['confidence']})")
     return cid, len(rows), stats
 
 if __name__ == "__main__":
-    args = sys.argv[1:]
+    args = [a for a in sys.argv[1:] if a != "--dry-run"]; dry = "--dry-run" in sys.argv
     files = sorted(glob.glob("data/rosters/*.txt")) if args == ["--all"] else args
     D = load()
     for f in files:
         cid, total, s = merge(D, f)
         print(f"{cid}: roster {total} | already mapped {s['matched']} | added {s['added']} | superseded {len(s['superseded'])}")
         for x in s["superseded"]: print("   superseded:", x)
+        for x in s["closed"]: print("   closed (not in official directory):", x)
+        for x in s["reopened"]: print("   reopened:", x)
     errs = validate(D)
     if errs: raise SystemExit("validation failed: " + "; ".join(errs[:5]))
-    save(D); print("saved")
+    if dry: print("dry run — nothing saved")
+    else: save(D); print("saved")
