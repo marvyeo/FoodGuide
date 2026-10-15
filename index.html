@@ -568,7 +568,13 @@ function viewExplore() {
     <div id="exList" style="margin-top:14px"></div>`;
   exploreList();
 }
-function matchQ(p, q) { if (!q) return true; q = q.toLowerCase(); return [p.name, p.name_zh, p.cuisine, cuisineName(p.cuisine), ...(p.dishes || []).map(d => d.name), p.address].some(s => s && String(s).toLowerCase().includes(q)); }
+// Search ignores case, apostrophes (straight or curly), punctuation and spaces, so "stuffd", "Stuff’d" and "stuff'd" all match "CRAVE/Stuff'd".
+const fold = s => String(s || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\u4e00-\u9fff]+/g, '');
+function matchQ(p, q) {
+  if (!q) return true; const f = fold(q); if (!f) return true;
+  const c = p.cluster && CLUSTERS.find(x => x.id === p.cluster);
+  return [p.name, p.name_zh, p.cuisine, cuisineName(p.cuisine), ...(p.dishes || []).map(d => d.name), p.address, p.unit, c && c.name].some(s => s && fold(s).includes(f));
+}
 function placeRow(p) {
   const [hl, hc] = hoursLabel(p); const d = km(origin(), p); const mine = me && logsFor(p.id, me.id)[0];
   const ph = coverPhoto(p.id);

@@ -183,9 +183,17 @@ Notes:
   - Its `bedok-food-centre` page mixes Bedok Corner with Bedok Interchange.
   - Skip Geylang Serai's generic "#02-01…#02-45 Geylang Serai <dish>" rows.
   - The Old Airport Road, 208B and Haig Road pages don't load.
-- **Mall rosters, SingMalls** (`singmalls.app/en/malls/<slug>/directory`):
-  - Complete food & beverage lists, but an undated ~2024 snapshot.
-  - CapitaLand's own store pages load their content with JavaScript, so a plain page fetch gets nothing.
+- **Mall rosters: the official mall directory is the preferred source.** For example: https://www.capitaland.com/sg/malls/bedokmall/en/stores.html?category=foodandbeverage
+  - **It needs a real browser.** The page loads its list with JavaScript, so WebFetch only sees "Loading / 0 listing".
+  - **The workspace shell can't reach capitaland.com** (the network policy returns 403).
+  - **No sitemap or JSON endpoint was found.**
+  - **How to pull it:** with the owner's desktop app or Chrome extension connected, open the page in the browser tools. Read the list with `get_page_text`, or find the store-list XHR with `read_network_requests` and fetch its JSON. Save it as `data/rosters/<id>.txt` with `# source: capitaland | <url> | live YYYY-MM-DD | fetched …`.
+  - Individual store pages are static, e.g. `/bedokmall/en/stores/zhang-liang-malatang.html`, and can confirm one tenant.
+  - Other landlords (Frasers: Tampines 1, White Sands, Eastpoint, Changi City Point; Lendlease: PLQ, Parkway Parade; Mercatus: Jewel) likely work the same way. Check each.
+- **Fallback mall rosters, SingMalls** (`singmalls.app/en/malls/<slug>/directory`):
+  - Complete lists, but an **undated ~2024 snapshot**. It's what we have today for 10 malls.
+  - It is stale. Bedok Mall's official site shows Zhang Liang Mala Tang, which SingMalls lacks.
+  - Replace these with official directories when a browser session is available.
 - **Dated guides:**
   - Eatbook, Seth Lui (check the "Updated" date), Daniel Food Diary, HungryGoWhere, kopitiam.com.sg (recent, but sometimes two stalls share one unit), Ordinary Patrons.
   - Women's Weekly and Miss Tam Chiak are often 2019–2023.
@@ -279,11 +287,16 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 | 15 Oct | Chain outlets named "Brand (Mall)" | Ids must be unique and lists need to tell outlets apart; the app strips the brackets for web searches and match previews |
 | 15 Oct | Completeness first: get a full roster (NEA count + stall list, or the mall directory) before enriching from guides | Guides only cover ~10–15 picks per place; the owner wants to know everything that's there |
 | 15 Oct | Mall rosters from SingMalls; a dated guide's tenant beats the directory for the same unit | Directories are ~2024 snapshots; the clash is reported as superseded |
+| 15 Oct | Official mall directories preferred over SingMalls, but they need a live browser session | CapitaLand's store list loads with JavaScript and the workspace can't reach the site; SingMalls is a ~2024 snapshot |
+| 15 Oct | Search ignores case, apostrophes, punctuation and spaces, and also matches unit and centre name | "Stuff’d" typed on a phone didn't match "Stuff'd" |
 | 15 Oct | Data tooling committed in `tools/` | So any session (or a scheduled refresh) can build or refresh the same way |
 | 15 Oct | Roster-only stalls are included as `listed` | The owner wants to know what's at a centre even without details; family photos fill in the gaps |
 
 ## 7. Next up / ideas
 **Most likely next asks (in order):**
+- [ ] **Swap mall rosters to official directories** (fresher than SingMalls).
+  - Needs the owner's desktop app or Chrome extension connected in that chat.
+  - Then re-run `merge_roster.py`. Names that disappear from a roster are candidates for `status: "closed"`, so check them.
 - [ ] **Close the East gaps** in section 3:
   - Mall directories for Tampines 1, Pasir Ris Mall, Eastpoint (+ Hawkers' Street), SingPost and Downtown East.
   - Stall rosters for Old Airport Rd, Haig Rd, Bedok Interchange, Changi Village and Fengshan.
