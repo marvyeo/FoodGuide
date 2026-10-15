@@ -1088,20 +1088,37 @@ function renderSync() {
 }
 
 /* ---------- setup flow ---------- */
-function showSetup() {
+// The family id used to live only in this device's storage, so a new phone/PC couldn't find the family.
+// Now we look in Google Drive for family sheets this app made (drive.file scope) before offering to create one.
+async function findFamilies() {
+  const q = encodeURIComponent(`name='${CONFIG.SHEET_TITLE}' and mimeType='application/vnd.google-apps.spreadsheet' and trashed=false`);
+  const r = await driveFetch(`https://www.googleapis.com/drive/v3/files?q=${q}&spaces=drive&orderBy=createdTime&fields=files(id,createdTime,modifiedTime,ownedByMe,owners(displayName,emailAddress))`);
+  return r.files || [];
+}
+async function showSetup() {
   $('#splash').classList.add('hidden'); $('#app').classList.add('hidden'); $('#tabs').classList.add('hidden');
   const s = $('#setup'); s.classList.remove('hidden');
+  s.innerHTML = `<div class="logo">👨‍👩‍👧</div><h1>Your family</h1><p style="margin:10px 0 22px">Looking for your family in Google Drive…</p>`;
+  let found = [], scopeMissing = false;
+  try { found = await findFamilies(); } catch (e) { if (e.scope) scopeMissing = true; else if (e.auth) { $('#setup').classList.add('hidden'); $('#splash').classList.remove('hidden'); return; } console.warn(e); }
+  if (found.length === 1) { s.innerHTML = `<div class="logo">👨‍👩‍👧</div><h1>Found your family</h1><p style="margin:10px 0 22px">Opening it…</p>`; return joinFamily(found[0].id); }
+  const fmt = d => new Date(d).toLocaleDateString('en-SG', { day: 'numeric', month: 'short', year: 'numeric' });
   s.innerHTML = `<div class="logo">👨‍👩‍👧</div><h1>Your family</h1>
-    <p style="margin:10px 0 22px">Ratings and stamps live in one Google Sheet that everyone shares. Start a new one, or join with the invite link someone sent you.</p>
-    <button class="btn primary block" style="padding:15px" onclick="doCreateFamily(this)">Start a new family</button>
+    ${found.length > 1 ? `<p style="margin:10px 0 14px">You have ${found.length} family sheets. Pick the one the family uses (usually the oldest):</p>
+      ${found.map((f, i) => `<button class="btn block ${i === 0 ? 'primary' : ''}" style="margin-bottom:8px;justify-content:space-between" onclick="joinFamily('${f.id}', this)"><span>Family sheet ${i + 1}</span><span class="small" style="opacity:.8">made ${fmt(f.createdTime)} · edited ${fmt(f.modifiedTime)}</span></button>`).join('')}
+      <div class="small muted" style="margin:6px 0 18px">Tip: delete the extra sheet in Google Drive afterwards so this doesn't come up again.</div>`
+    : `<p style="margin:10px 0 22px">${scopeMissing ? 'Allow access to Makan Map’s own Drive files so this device can find your family.' : 'No family found for this Google account. Start a new one, or join with the invite link someone sent you.'}</p>
+      ${scopeMissing ? `<button class="btn primary block" style="padding:15px;margin-bottom:12px" onclick="tokenClient.requestAccessToken({ prompt: 'consent' })">Allow &amp; find my family</button>` : ''}
+      <button class="btn ${scopeMissing ? '' : 'primary'} block" style="padding:15px" onclick="doCreateFamily(this)">Start a new family</button>`}
     <div class="filter-label" style="margin-top:22px">Or paste an invite link</div>
     <input id="inv" placeholder="https://…?family=…">
     <div id="inv_err" class="small" style="color:var(--chilli);margin-top:6px"></div>
-    <button class="btn block" style="margin-top:10px" onclick="doJoin(this)">Join family</button>`;
+    <button class="btn block" style="margin-top:10px" onclick="doJoin(this)">Join family</button>
+    <div class="tiny faint" style="margin-top:16px">Joined someone else's family before? Use their invite link again — only the person who started the family is found automatically.</div>`;
 }
 async function doCreateFamily(btn) {
   btn.disabled = true; btn.textContent = 'Creating…';
-  try { familyId = await createFamily(); LS.set('familyId', familyId); fam = { members: [], logs: [], wants: [], places_added: [] }; LS.set('fam', fam); boot(); }
+  try { familyId = await createFamily(); LS.set('familyId', familyId); fam = { members: [], logs: [], wants: [], places_added: [], photos: [] }; LS.set('fam', fam); boot(); }
   catch (e) { btn.disabled = false; btn.textContent = 'Start a new family'; toast(e.auth ? 'Please sign in again' : 'Could not create the sheet — is the Google Sheets API enabled?'); console.warn(e); }
 }
 async function doJoin(btn) {
@@ -1115,7 +1132,7 @@ async function joinFamily(id, btn) {
   try { await pull(); LS.set('familyId', familyId); LS.del('pendingFamily'); boot(); }
   catch (e) {
     familyId = LS.get('familyId', null);
-    if (btn) { btn.disabled = false; btn.textContent = 'Join family'; }
+    if (btn) { btn.disabled = false; btn.textContent = btn.dataset.label || 'Join family'; }
     const msg = e.status === 403 || e.status === 404 ? 'You don’t have access to that family sheet yet — ask them to share it with your Google account as Editor.' : e.auth ? 'Please sign in again' : 'Could not open the family sheet.';
     if ($('#inv_err')) $('#inv_err').textContent = msg; else toast(msg);
   }

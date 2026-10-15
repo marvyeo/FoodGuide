@@ -1,7 +1,7 @@
 // Makan Map service worker — lets the installed app open offline.
 // App files and data/places.json: network first, cached copy when offline (so a merged data PR shows up on next open).
 // Fonts, Leaflet and OneMap tiles: cache first. Google sign-in and Sheets always go to the network.
-const CACHE = 'makanmap-v4';
+const CACHE = 'makanmap-v5';
 const TILES = 'makanmap-tiles-v2';
 const SHELL = ['./', './index.html', './manifest.json', './data/places.json', './icons/icon-192.png', './icons/icon-512.png'];
 const CDN_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com', 'cdnjs.cloudflare.com', 'cdn.jsdelivr.net'];

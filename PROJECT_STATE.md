@@ -7,9 +7,7 @@ A family food map of Singapore. You filter by when, how far, budget, dine-in/tap
 - **Repo:** `marvyeo/FoodGuide`
 - **App URL:** https://marvyeo.github.io/FoodGuide/ (GitHub Pages, live)
 - **Status:** v1.1 live. Photos and the completeness data are tested in a headless browser with mocked Google APIs, but not yet with a real Google account.
-- **Open PRs (merge in this order):**
-  1. #1 *Home ground completeness* (50 → 189 places).
-  2. #2 *East zone* (stacked on #1; 189 → 567 places). GitHub retargets #2 to `main` once #1 is merged.
+- **Data:** PRs #1 (Home ground completeness) and #2 (East zone) merged 15 Oct, 08:30. Live: 567 places, 19 food centres.
 
 ---
 
@@ -31,6 +29,12 @@ A family food map of Singapore. You filter by when, how far, budget, dine-in/tap
 3. On first join, each person picks a display name and emoji (stored in `members`, keyed by Google `sub`).
 4. Owner: Passport → Settings → **Copy family invite link**, then share the Sheet with each member as **Editor**.
 5. Without signing in you can still browse and spin as a guest; logging requires sign-in.
+6. **New device, same Google account (fixed 15 Oct):** the family id used to live only in the device's localStorage, so a second device was asked to start a new family. Now, when signed in with no family on the device, the app searches Drive (`drive.file`) for sheets it created named "Makan Map — family data":
+   - One found: it opens automatically.
+   - Several found: you pick one, usually the oldest.
+   - None found: start or join a family as before.
+
+   Limitation: `drive.file` only sees sheets the app created *for that account*, so **members who joined someone else's family still need the invite link on each new device**.
 
 ### Sheet schema
 | Tab | Columns | Key |
@@ -210,6 +214,7 @@ Home ground took about 40 fetches for 5 centres and 50 places.
 | 15 Oct | Guides older than Sep 2023: keep dishes, drop hours | Wrong hours are worse than none; the app assumes 7am–8pm for unknown hours when *Only open* is on |
 | 15 Oct | 'Pick a centre' needs ≥2 stalls with confirmed hours open | Stops morning centres full of roster-only stalls winning at dinner |
 | 15 Oct | Map groups restaurants into bubbles (Leaflet.markercluster via jsDelivr) | 61 Katong/Geylang restaurants were unreadable as separate pins |
+| 15 Oct | Find the family sheet via a Drive search on new devices | localStorage-only family id made each device start a new family |
 | 15 Oct | Roster-only stalls are included as `listed` | The owner wants to know what's at a centre even without details; family photos fill in the gaps |
 
 ## 7. Next up / ideas
