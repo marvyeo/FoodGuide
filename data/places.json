@@ -551,6 +551,16 @@
    "name": "singmalls – White Sands directory",
    "url": "https://singmalls.app/en/malls/white-sands/directory",
    "date": "snapshot c.2024 (page undated)"
+  },
+  "capitaland-m-bedok-mall": {
+   "name": "capitaland – Bedok Mall directory",
+   "url": "https://www.capitaland.com/sg/malls/bedokmall/en/stores.html?category=foodandbeverage",
+   "date": "live directory (Food & Beverage)"
+  },
+  "capitaland-m-tampines-mall": {
+   "name": "capitaland – Tampines Mall directory",
+   "url": "https://www.capitaland.com/sg/malls/tampinesmall/en/stores.html?category=foodandbeverage",
+   "date": "live directory (Food & Beverage)"
   }
  },
  "clusters": [
@@ -864,17 +874,18 @@
    "lat": 1.324736,
    "lng": 103.929256,
    "zone": "home",
-   "stalls_total": 69,
+   "stalls_total": 78,
    "notes": "Above Bedok MRT and bus interchange. Basement 1–2 are mostly food.",
    "sources": [
     "eb-bedokmall",
     "sl-bedokmall",
-    "singmalls-m-bedok-mall"
+    "singmalls-m-bedok-mall",
+    "capitaland-m-bedok-mall"
    ],
    "roster": {
-    "source": "singmalls-m-bedok-mall",
-    "count": 69,
-    "snapshot": "snapshot c.2024 (page undated)",
+    "source": "capitaland-m-bedok-mall",
+    "count": 78,
+    "snapshot": "live directory (Food & Beverage)",
     "fetched": "2026-10-15"
    }
   },
@@ -886,17 +897,18 @@
    "lat": 1.352527,
    "lng": 103.944699,
    "zone": "east",
-   "stalls_total": 56,
+   "stalls_total": 52,
    "notes": "Tampines' main mall beside the MRT; restaurants spread over B1 to Level 4.",
    "sources": [
     "eb-tm",
     "sl-tm",
-    "singmalls-m-tampines-mall"
+    "singmalls-m-tampines-mall",
+    "capitaland-m-tampines-mall"
    ],
    "roster": {
-    "source": "singmalls-m-tampines-mall",
-    "count": 56,
-    "snapshot": "snapshot c.2024 (page undated)",
+    "source": "capitaland-m-tampines-mall",
+    "count": 52,
+    "snapshot": "live directory (Food & Beverage)",
     "fetched": "2026-10-15"
    }
   },
@@ -21338,7 +21350,7 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 2,
    "sources": [
     "eb-bedokmall"
@@ -21346,7 +21358,8 @@
    "verified": "2023-12",
    "confidence": "detailed",
    "note": "Halal-certified.",
-   "id": "p-m-bedok-mall-smile-martabak"
+   "id": "p-m-bedok-mall-smile-martabak",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -21384,14 +21397,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 2,
    "sources": [
     "eb-bedokmall"
    ],
    "verified": "2023-12",
    "confidence": "detailed",
-   "id": "p-m-bedok-mall-kebabchi-biryani"
+   "id": "p-m-bedok-mall-kebabchi-biryani",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -21740,14 +21754,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 2,
    "sources": [
     "sl-bedokmall"
    ],
    "verified": "2023-02",
    "confidence": "partial",
-   "id": "p-m-bedok-mall-so-ramen"
+   "id": "p-m-bedok-mall-so-ramen",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -21879,14 +21894,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 2,
    "sources": [
     "sl-bedokmall"
    ],
    "verified": "2023-02",
    "confidence": "partial",
-   "id": "p-m-bedok-mall-nene-chicken-bedok-mall"
+   "id": "p-m-bedok-mall-nene-chicken-bedok-mall",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -21966,7 +21982,7 @@
   {
    "cluster": "m-tampines-mall",
    "name": "So Pho (Tampines Mall)",
-   "unit": "#04-30",
+   "unit": "#04-30/31",
    "cuisine": "other",
    "dishes": [
     {
@@ -22241,7 +22257,7 @@
   {
    "cluster": "m-tampines-mall",
    "name": "Ging Sun Ho King of Bun",
-   "unit": "#B1-K17/18",
+   "unit": "#B1-K17/#B1-K18",
    "cuisine": "dumplings",
    "dishes": [
     {
@@ -22280,7 +22296,7 @@
   {
    "cluster": "m-tampines-mall",
    "name": "Wingstop (Tampines Mall)",
-   "unit": "#04-23",
+   "unit": "#04-23/24/25",
    "cuisine": "western",
    "dishes": [
     {
@@ -22368,7 +22384,7 @@
   {
    "cluster": "m-tampines-mall",
    "name": "Lola's Cafe (Tampines)",
-   "unit": "#01-50",
+   "unit": "#01-50/#02-32",
    "cuisine": "cafe",
    "dishes": [
     {
@@ -22417,7 +22433,7 @@
   {
    "cluster": "m-tampines-mall",
    "name": "Alley Wei",
-   "unit": "#B1-K21",
+   "unit": "#B1-K21/#B1-K22",
    "cuisine": "snacks",
    "dishes": [
     {
@@ -22546,7 +22562,8 @@
    ],
    "verified": "2026-08",
    "confidence": "detailed",
-   "id": "p-m-tampines-mall-swensen-s-tampines-mall"
+   "id": "p-m-tampines-mall-swensen-s-tampines-mall",
+   "status_note": "Temporarily closed (directory, 2026-10-15)"
   },
   {
    "cluster": "m-tampines-mall",
@@ -22621,14 +22638,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 2,
    "sources": [
     "sl-tm"
    ],
    "verified": "2026-08",
    "confidence": "detailed",
-   "id": "p-m-tampines-mall-tokyo-shokudo"
+   "id": "p-m-tampines-mall-tokyo-shokudo",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -29533,14 +29551,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-ajisen-ramen"
+   "id": "p-m-bedok-mall-ajisen-ramen",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -29556,19 +29575,20 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-au-croissant"
+   "id": "p-m-bedok-mall-au-croissant",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
    "name": "Baskin Robbins (Bedok Mall)",
-   "unit": "#B1-K1",
+   "unit": "#B1-K1/K2/K3",
    "cuisine": "dessert",
    "dishes": [],
    "hours": [],
@@ -29752,7 +29772,7 @@
   {
    "cluster": "m-bedok-mall",
    "name": "Dian Xiao Er (Bedok Mall)",
-   "unit": "#01-71",
+   "unit": "#01-73/74",
    "cuisine": "zi-char",
    "dishes": [],
    "hours": [],
@@ -29924,14 +29944,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-haidilao-hot-pot"
+   "id": "p-m-bedok-mall-haidilao-hot-pot",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -29970,14 +29991,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-hong-kong-sheng-kee-dessert"
+   "id": "p-m-bedok-mall-hong-kong-sheng-kee-dessert",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -29993,19 +30015,20 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-itacho-sushi"
+   "id": "p-m-bedok-mall-itacho-sushi",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
    "name": "Jollibee (Bedok Mall)",
-   "unit": "#B2-06",
+   "unit": "#B2-06/33",
    "cuisine": "western",
    "dishes": [],
    "hours": [],
@@ -30039,14 +30062,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-juewei"
+   "id": "p-m-bedok-mall-juewei",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -30062,14 +30086,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-junshin-express"
+   "id": "p-m-bedok-mall-junshin-express",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -30269,14 +30294,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-paik-s-bibimbap"
+   "id": "p-m-bedok-mall-paik-s-bibimbap",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -30315,14 +30341,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-pepper-lunch"
+   "id": "p-m-bedok-mall-pepper-lunch",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -30361,14 +30388,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-pizza-hut"
+   "id": "p-m-bedok-mall-pizza-hut",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -30591,19 +30619,20 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-tamjai-samgor-mixian"
+   "id": "p-m-bedok-mall-tamjai-samgor-mixian",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
    "name": "Toast Box (Bedok Mall)",
-   "unit": "#B2-25/26",
+   "unit": "#B2-26",
    "cuisine": "drinks",
    "dishes": [],
    "hours": [],
@@ -30683,14 +30712,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-twelve-cupcakes"
+   "id": "p-m-bedok-mall-twelve-cupcakes",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -30706,14 +30736,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-wingstop"
+   "id": "p-m-bedok-mall-wingstop",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -30752,14 +30783,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-ximenjie"
+   "id": "p-m-bedok-mall-ximenjie",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -30775,14 +30807,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-bedok-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-bedok-mall-yole"
+   "id": "p-m-bedok-mall-yole",
+   "closed_note": "Not in the official Bedok Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-bedok-mall",
@@ -39009,14 +39042,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-ajisen-ramen"
+   "id": "p-m-tampines-mall-ajisen-ramen",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39032,14 +39066,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-bbq-express"
+   "id": "p-m-tampines-mall-bbq-express",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39101,14 +39136,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-big-fish-small-fish"
+   "id": "p-m-tampines-mall-big-fish-small-fish",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39124,14 +39160,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-blackball"
+   "id": "p-m-tampines-mall-blackball",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39170,14 +39207,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-burger-king"
+   "id": "p-m-tampines-mall-burger-king",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39193,19 +39231,20 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-butter-studio"
+   "id": "p-m-tampines-mall-butter-studio",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
    "name": "Din Tai Fung (Tampines Mall)",
-   "unit": "#02-01",
+   "unit": "#02-01/#02-31",
    "cuisine": "dumplings",
    "dishes": [],
    "hours": [],
@@ -39262,14 +39301,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-express-teppan-yaki"
+   "id": "p-m-tampines-mall-express-teppan-yaki",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39354,14 +39394,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-ho-kee-pau"
+   "id": "p-m-tampines-mall-ho-kee-pau",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39377,19 +39418,20 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-j-co"
+   "id": "p-m-tampines-mall-j-co",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
    "name": "Kaffe & Toast (Tampines Mall)",
-   "unit": "#01-45",
+   "unit": "#B1-K1",
    "cuisine": "drinks",
    "dishes": [],
    "hours": [],
@@ -39435,7 +39477,7 @@
   {
    "cluster": "m-tampines-mall",
    "name": "KOI The (Tampines Mall)",
-   "unit": "#02-K3B",
+   "unit": "#02-K10",
    "cuisine": "drinks",
    "dishes": [],
    "hours": [],
@@ -39458,7 +39500,7 @@
   {
    "cluster": "m-tampines-mall",
    "name": "Kopitiam (Tampines Mall)",
-   "unit": "#04-27",
+   "unit": "#04-27/28/29",
    "cuisine": "drinks",
    "dishes": [],
    "hours": [],
@@ -39538,14 +39580,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-mcdonald-s"
+   "id": "p-m-tampines-mall-mcdonald-s",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39561,14 +39604,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-mos-burger"
+   "id": "p-m-tampines-mall-mos-burger",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39584,14 +39628,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-osaka-ohsho"
+   "id": "p-m-tampines-mall-osaka-ohsho",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39653,19 +39698,20 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-proofer"
+   "id": "p-m-tampines-mall-proofer",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
    "name": "Ritz Apple Strudel (Tampines Mall)",
-   "unit": "#B1-K24",
+   "unit": "#B1-K11",
    "cuisine": "dessert",
    "dishes": [],
    "hours": [],
@@ -39688,7 +39734,7 @@
   {
    "cluster": "m-tampines-mall",
    "name": "Royce (Tampines Mall)",
-   "unit": "#01-31B",
+   "unit": "#B1-21",
    "cuisine": "snacks",
    "dishes": [],
    "hours": [],
@@ -39722,14 +39768,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-shihlin-taiwan-street-snacks"
+   "id": "p-m-tampines-mall-shihlin-taiwan-street-snacks",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39768,14 +39815,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-tai-chong-kok"
+   "id": "p-m-tampines-mall-tai-chong-kok",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39791,14 +39839,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-tamago-en"
+   "id": "p-m-tampines-mall-tamago-en",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39814,14 +39863,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-the-soup-spoon"
+   "id": "p-m-tampines-mall-the-soup-spoon",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-tampines-mall",
@@ -39883,14 +39933,15 @@
    "diet": [],
    "tags": [],
    "must_try": false,
-   "status": "open",
+   "status": "closed",
    "price_band": 1,
    "sources": [
     "singmalls-m-tampines-mall"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
-   "id": "p-m-tampines-mall-yomie-s-rice-x-yogurt"
+   "id": "p-m-tampines-mall-yomie-s-rice-x-yogurt",
+   "closed_note": "Not in the official Tampines Mall directory on 2026-10-15"
   },
   {
    "cluster": "m-white-sands",
@@ -40903,6 +40954,940 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-white-sands-yuba-hut"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "4Fingers Crispy Chicken (Bedok Mall)",
+   "unit": "#B1-53",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-4fingers-crispy-chicken"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "A&W (Bedok Mall)",
+   "unit": "#01-05/06/07/08",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-a-w"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "BatterCatch (Bedok Mall)",
+   "unit": "#B1-52",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-battercatch"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Bibimbap! / Dosirak! (Bedok Mall)",
+   "unit": "#01-95",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-bibimbap-dosirak"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Chagee (Bedok Mall)",
+   "unit": "#01-39/#01-40",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-chagee"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Cut Butchery (Bedok Mall)",
+   "unit": "#B2-52",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-cut-butchery"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Delibowl Express (Bedok Mall)",
+   "unit": "#01-03",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-delibowl-express"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Eighteen Plum (Bedok Mall)",
+   "unit": "#B2-24",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-eighteen-plum"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Hainan Second Street (Bedok Mall)",
+   "unit": "#B2-05/34",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-hainan-second-street"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Ji Xiang Everton (Bedok Mall)",
+   "unit": "#B2-Kiosk 01",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-ji-xiang-everton"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Little Pond 小鱼塘 (Bedok Mall)",
+   "unit": "#B2-42/43",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-little-pond"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Munchi Pancakes (Bedok Mall)",
+   "unit": "#B2-K12",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-munchi-pancakes"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Nespresso (Bedok Mall)",
+   "unit": "#01-31A",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-nespresso"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Panda Chan Snack (Bedok Mall)",
+   "unit": "#B2-20",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-panda-chan-snack"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Paradise Hotpot (Bedok Mall)",
+   "unit": "#01-13–14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-paradise-hotpot"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Paris Baguette (Bedok Mall)",
+   "unit": "#01-31",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-paris-baguette"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "PastaGo (Bedok Mall)",
+   "unit": "#B2-K13",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-pastago"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "PlayMade (Bedok Mall)",
+   "unit": "#01-09",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-playmade"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "SGFR Store (Bedok Mall)",
+   "unit": "#B2-57",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-sgfr-store"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Shanghai Tan Pan-Fried Buns (Bedok Mall)",
+   "unit": "#02-02",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-shanghai-tan-pan-fried-buns"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Steak 99 (Bedok Mall)",
+   "unit": "#01-69/70",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-steak-99"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Toast & Roll (Bedok Mall)",
+   "unit": "#B2-15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-toast-roll"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Xiang Xiang Hunan Cuisine 湘香·湖南菜 (Bedok Mall)",
+   "unit": "#01-15–16A",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-xiang-xiang-hunan-cuisine"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Ya Kun Kaya Toast (Bedok Mall)",
+   "unit": "#B2-K17–K19",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-bedok-mall",
+   "name": "Zhang Liang Mala Tang (Bedok Mall)",
+   "unit": "#B1-09",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-bedok-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-bedok-mall-zhang-liang-mala-tang"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Alchemist (Tampines Mall)",
+   "unit": "#01-40–41",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-alchemist"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Cellarbration (Tampines Mall)",
+   "unit": "#B1-K24/#B1-K8",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-cellarbration"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Cut Butchery (Tampines Mall)",
+   "unit": "#B1-16",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-cut-butchery"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Gokoku Japanese Bakery (Tampines Mall)",
+   "unit": "#B1-K7",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-gokoku-japanese-bakery"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Im Qalb by Pun Im (Tampines Mall)",
+   "unit": "#04-02",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-im-qalb-by-pun-im"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Kenangan Coffee (Tampines Mall)",
+   "unit": "#01-48",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-kenangan-coffee"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Kuan Zhai Alley 宽窄巷子 (Tampines Mall)",
+   "unit": "#01-44–49",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-kuan-zhai-alley"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Paris Baguette (Tampines Mall)",
+   "unit": "#01-33",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-paris-baguette"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Ruxu 入续 & Charlie's Tea 茶理宜世 (Tampines Mall)",
+   "unit": "#B1-K2–K3",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-ruxu-charlie-s-tea"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Steak 99 Plus (Tampines Mall)",
+   "unit": "#04-19/20",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-steak-99-plus"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Super Sushi (Tampines Mall)",
+   "unit": "#B1-K4",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-super-sushi"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Talad Thai Banana (Tampines Mall)",
+   "unit": "#B1-K19",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-talad-thai-banana"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Tanjong Rhu Pau (Tampines Mall)",
+   "unit": "#B1-K10",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-tanjong-rhu-pau"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "Yeah Gelato 野人先生 (Tampines Mall)",
+   "unit": "#01-31C",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-yeah-gelato"
+  },
+  {
+   "cluster": "m-tampines-mall",
+   "name": "YGF Malatang (Tampines Mall)",
+   "unit": "#B1-10",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-m-tampines-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tampines-mall-ygf-malatang"
   }
  ]
 }

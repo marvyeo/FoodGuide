@@ -116,54 +116,54 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 
 ## 3. Data coverage
 
-**Live (15 Oct 2026, 09:30):** 1,268 places: 19 hawker centres, 15 malls and 61 standalone restaurants/cafés, in the **Home ground** and **East** zones. North East, North, Central and West aren't built yet.
+**Live (15 Oct 2026, 09:30) + PR pending (15 Oct, 23:30):** 1,308 places (38 of them closed), 19 hawker centres, 15 malls and 61 standalone restaurants/cafés, in the **Home ground** and **East** zones. North East, North, Central and West aren't built yet.
 
-Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the known total: the NEA cooked-food stall count for hawker centres, the directory count for malls. `?` means no roster yet, i.e. a completeness gap.
+Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the known total: the NEA cooked-food stall count for hawker centres, the directory count for malls. "Mapped" counts open places only; "Closed" are kept for family logs. `?` means no roster yet, i.e. a completeness gap.
 
-| Zone | Type | Name | Mapped | Roster | Detailed | Partial | Listed | Roster source |
-|---|---|---|---|---|---|---|---|---|
-| east | hawker | Bedok Corner Food Centre | 10 | 32 (31%) | 10 | 0 | 0 | NEA count |
-| east | hawker | Changi Village Hawker Centre | 28 | 87 (32%) | 11 | 0 | 17 | NEA count |
-| east | hawker | Dunman Food Centre | 25 | 30 (83%) | 10 | 2 | 13 | NEA count |
-| east | hawker | East Coast Lagoon Food Village | 26 | 63 (41%) | 14 | 0 | 12 | NEA count |
-| east | hawker | Eunos Crescent Market & Food Centre (4A) | 28 | 42 (67%) | 0 | 10 | 18 | NEA count |
-| east | hawker | Geylang Serai Market & Food Centre | 38 | 63 (60%) | 0 | 10 | 28 | NEA count |
-| east | hawker | Haig Road Market & Food Centre | 15 | 72 (21%) | 0 | 13 | 2 | NEA count |
-| east | hawker | Hawker Centre @ Our Tampines Hub | 11 | ? (?) | 7 | 4 | 0 | — |
-| east | hawker | Marine Parade Central Market & Food Centre | 19 | 55 (35%) | 0 | 10 | 9 | NEA count |
-| east | hawker | Old Airport Road Food Centre | 41 | 168 (24%) | 32 | 4 | 5 | NEA count |
-| east | hawker | Pasar 16 @ Bedok South (Blk 16) | 26 | 64 (41%) | 11 | 0 | 15 | NEA count |
-| east | hawker | Pasir Ris Central Hawker Centre | 11 | ? (?) | 11 | 0 | 0 | — |
-| east | hawker | Tampines Round Market & Food Centre (Blk 137) | 30 | 45 (67%) | 16 | 0 | 14 | NEA count |
-| east | mall | Century Square | 48 | 50 (96%) | 10 | 0 | 38 | singmalls-m-century-square |
-| east | mall | Changi City Point | 63 | 61 (100%) | 24 | 0 | 39 | singmalls-m-changi-city-point |
-| east | mall | Downtown East (E!Hub & E!Avenue) | 9 | ? (?) | 0 | 0 | 9 | — |
-| east | mall | Eastpoint Mall | 5 | ? (?) | 5 | 0 | 0 | — |
-| east | mall | Jewel Changi Airport | 129 | 134 (96%) | 25 | 0 | 104 | singmalls-m-jewel |
-| east | mall | Parkway Parade | 52 | 49 (100%) | 10 | 0 | 42 | singmalls-m-parkway-parade |
-| east | mall | Pasir Ris Mall | 12 | ? (?) | 12 | 0 | 0 | — |
-| east | mall | Paya Lebar Quarter (PLQ) | 76 | 78 (97%) | 18 | 0 | 58 | singmalls-m-plq |
-| east | mall | Paya Lebar Square | 53 | 53 (100%) | 9 | 0 | 44 | singmalls-m-paya-lebar-square |
-| east | mall | SingPost Centre | 18 | ? (?) | 0 | 17 | 1 | — |
-| east | mall | Tampines 1 | 11 | ? (?) | 11 | 0 | 0 | — |
-| east | mall | Tampines Mall | 56 | 56 (100%) | 17 | 0 | 39 | singmalls-m-tampines-mall |
-| east | mall | White Sands | 53 | 53 (100%) | 9 | 0 | 44 | singmalls-m-white-sands |
-| east | mall | i12 Katong | 44 | 39 (100%) | 0 | 13 | 31 | singmalls-m-i12-katong |
-| home | hawker | Bedok 216 Food Centre & Market | 48 | 82 (59%) | 17 | 8 | 23 | NEA count |
-| home | hawker | Bedok 85 Fengshan Centre | 26 | 72 (36%) | 24 | 1 | 1 | NEA count |
-| home | hawker | Bedok Interchange Hawker Centre (208B) | 19 | 70 (27%) | 9 | 1 | 9 | NEA count |
-| home | hawker | Blk 538 Bedok North St 3 Market & Food Centre | 40 | 40 (100%) | 13 | 0 | 27 | NEA count |
-| home | hawker | Kaki Bukit 511 Market & Food Centre | 34 | 42 (81%) | 16 | 0 | 18 | NEA count |
-| home | hawker | Pasar Makan @ Reservoir (Blk 630) | 31 | 36 (86%) | 11 | 5 | 15 | NEA count |
-| home | mall | Bedok Mall | 72 | 69 (100%) | 8 | 8 | 56 | singmalls-m-bedok-mall |
+| Zone | Type | Name | Mapped (open) | Roster | Detailed | Partial | Listed | Closed | Roster source |
+|---|---|---|---|---|---|---|---|---|---|
+| east | hawker | Bedok Corner Food Centre | 10 | 32 (31%) | 10 | 0 | 0 | 0 | NEA count |
+| east | hawker | Changi Village Hawker Centre | 28 | 87 (32%) | 11 | 0 | 17 | 0 | NEA count |
+| east | hawker | Dunman Food Centre | 25 | 30 (83%) | 10 | 2 | 13 | 0 | NEA count |
+| east | hawker | East Coast Lagoon Food Village | 26 | 63 (41%) | 14 | 0 | 12 | 0 | NEA count |
+| east | hawker | Eunos Crescent Market & Food Centre (4A) | 28 | 42 (67%) | 0 | 10 | 18 | 0 | NEA count |
+| east | hawker | Geylang Serai Market & Food Centre | 38 | 63 (60%) | 0 | 10 | 28 | 0 | NEA count |
+| east | hawker | Haig Road Market & Food Centre | 15 | 72 (21%) | 0 | 13 | 2 | 0 | NEA count |
+| east | hawker | Hawker Centre @ Our Tampines Hub | 11 | ? (?) | 7 | 4 | 0 | 0 | — |
+| east | hawker | Marine Parade Central Market & Food Centre | 19 | 55 (35%) | 0 | 10 | 9 | 0 | NEA count |
+| east | hawker | Old Airport Road Food Centre | 41 | 168 (24%) | 32 | 4 | 5 | 0 | NEA count |
+| east | hawker | Pasar 16 @ Bedok South (Blk 16) | 26 | 64 (41%) | 11 | 0 | 15 | 0 | NEA count |
+| east | hawker | Pasir Ris Central Hawker Centre | 11 | ? (?) | 11 | 0 | 0 | 0 | — |
+| east | hawker | Tampines Round Market & Food Centre (Blk 137) | 30 | 45 (67%) | 16 | 0 | 14 | 0 | NEA count |
+| east | mall | Century Square | 48 | 50 (96%) | 10 | 0 | 38 | 0 | singmalls-m-century-square |
+| east | mall | Changi City Point | 63 | 61 (100%) | 24 | 0 | 39 | 0 | singmalls-m-changi-city-point |
+| east | mall | Downtown East (E!Hub & E!Avenue) | 9 | ? (?) | 0 | 0 | 9 | 0 | — |
+| east | mall | Eastpoint Mall | 5 | ? (?) | 5 | 0 | 0 | 0 | — |
+| east | mall | Jewel Changi Airport | 129 | 134 (96%) | 25 | 0 | 104 | 0 | singmalls-m-jewel |
+| east | mall | Parkway Parade | 52 | 49 (100%) | 10 | 0 | 42 | 0 | singmalls-m-parkway-parade |
+| east | mall | Pasir Ris Mall | 12 | ? (?) | 12 | 0 | 0 | 0 | — |
+| east | mall | Paya Lebar Quarter (PLQ) | 76 | 78 (97%) | 18 | 0 | 58 | 0 | singmalls-m-plq |
+| east | mall | Paya Lebar Square | 53 | 53 (100%) | 9 | 0 | 44 | 0 | singmalls-m-paya-lebar-square |
+| east | mall | SingPost Centre | 18 | ? (?) | 0 | 17 | 1 | 0 | — |
+| east | mall | Tampines 1 | 11 | ? (?) | 11 | 0 | 0 | 0 | — |
+| east | mall | Tampines Mall | 52 | 52 (100%) | 16 | 0 | 36 | 19 | capitaland-m-tampines-mall |
+| east | mall | White Sands | 53 | 53 (100%) | 9 | 0 | 44 | 0 | singmalls-m-white-sands |
+| east | mall | i12 Katong | 44 | 39 (100%) | 0 | 13 | 31 | 0 | singmalls-m-i12-katong |
+| home | hawker | Bedok 216 Food Centre & Market | 48 | 82 (59%) | 17 | 8 | 23 | 0 | NEA count |
+| home | hawker | Bedok 85 Fengshan Centre | 26 | 72 (36%) | 24 | 1 | 1 | 0 | NEA count |
+| home | hawker | Bedok Interchange Hawker Centre (208B) | 19 | 70 (27%) | 9 | 1 | 9 | 0 | NEA count |
+| home | hawker | Blk 538 Bedok North St 3 Market & Food Centre | 40 | 40 (100%) | 13 | 0 | 27 | 0 | NEA count |
+| home | hawker | Kaki Bukit 511 Market & Food Centre | 34 | 42 (81%) | 16 | 0 | 18 | 0 | NEA count |
+| home | hawker | Pasar Makan @ Reservoir (Blk 630) | 31 | 36 (86%) | 11 | 5 | 15 | 0 | NEA count |
+| home | mall | Bedok Mall | 78 | 78 (100%) | 6 | 6 | 66 | 19 | capitaland-m-bedok-mall |
 
-Standalone restaurants/cafés: 61 | Total places: 1268 | Gaps (no roster): 7
+Standalone restaurants/cafés: 61 | Total places: 1308 | Gaps (no roster): 7
 
 Notes:
 - **Hawker coverage %:** NEA counts include drinks stalls and vacant units, so 100% isn't always reachable.
 - **Mall coverage %:**
-  - It can read ≥100%: the directories are ~2024 snapshots and newer guides add tenants the directory doesn't know about.
-  - 43 directory entries were dropped as superseded (see the PR #4 description).
+  - **Bedok Mall and Tampines Mall use CapitaLand's official live directory (15 Oct 2026)** and match it exactly (78/78, 52/52). That run closed 19 + 19 old tenants and added 40.
+  - The other 8 malls still use SingMalls (~2024). They can read ≥100% because newer guides add tenants the directory doesn't know about. 43 SingMalls entries were dropped as superseded (see the PR #4 description).
 - **Gaps, in priority order:**
   1. **No mall directory yet:** Tampines 1, Pasir Ris Mall, Eastpoint (plus its Hawkers' Street food court), SingPost Centre, Downtown East. Their SingMalls pages failed to fetch on 15 Oct. Retry them, or try the mall's own site, or Little Day Out.
   2. **Hawker centres under 40%:** Old Airport Rd (41/168), Haig Rd (15/72), Bedok Interchange (19/70), Changi Village (28/87), Bedok Corner (10/32), Marine Parade (19/55), Fengshan 85 (26/72). They need a stall roster; see the source notes.
@@ -183,16 +183,15 @@ Notes:
   - Its `bedok-food-centre` page mixes Bedok Corner with Bedok Interchange.
   - Skip Geylang Serai's generic "#02-01…#02-45 Geylang Serai <dish>" rows.
   - The Old Airport Road, 208B and Haig Road pages don't load.
-- **Mall rosters: the official mall directory is the preferred source.** For example: https://www.capitaland.com/sg/malls/bedokmall/en/stores.html?category=foodandbeverage
-  - **It needs a real browser.** The page loads its list with JavaScript, so WebFetch only sees "Loading / 0 listing".
-  - **The workspace shell can't reach capitaland.com** (the network policy returns 403).
-  - **No sitemap or JSON endpoint was found.**
-  - **How to pull it:** with the owner's desktop app or Chrome extension connected, open the page in the browser tools. Read the list with `get_page_text`, or find the store-list XHR with `read_network_requests` and fetch its JSON. Save it as `data/rosters/<id>.txt` with `# source: capitaland | <url> | live YYYY-MM-DD | fetched …`.
+- **Mall rosters: the official mall directory is the preferred source.** Done for CapitaLand (Bedok Mall, Tampines Mall) on 15 Oct.
+  - **It needs the owner's browser.** The workspace shell gets 403 from capitaland.com, and WebFetch only sees "Loading / 0 listing". It worked through the **built-in browser** (desktop app linked to the chat, owner on the PC; capitaland.com is now allowed for the browser pane). Claude in Chrome wasn't connected.
+  - **CapitaLand recipe (one minute per mall):** open `https://www.capitaland.com/sg/malls/<slug>/en/stores.html?category=foodandbeverage` (slugs: `bedokmall`, `tampinesmall`). In `read_network_requests`, find the `api-v1/sg/en/properties/<slug>/cl%3Aentity/tenants/…foodandbeverage…/cl%3Apgcursor/1/100.json` call. In `javascript_tool`, re-fetch it with the slug swapped and `pgcursor/1/300`. Take `jcr:title`, `unitnumber` (tag `…/unit-b1-53` → `#B1-53`) and `storeStatusName` ("Opening Soon", "New Store", "Temporarily Closed"). Same-origin fetch, no auth. The JSON gives `totalcount`.
+  - Turn that into `name|#unit|note` rows; the scratch converter tidied units (`01-05-06` → `#01-05/06`, `-TO-` → `–`) and ALL-CAPS names.
   - Individual store pages are static, e.g. `/bedokmall/en/stores/zhang-liang-malatang.html`, and can confirm one tenant.
-  - Other landlords (Frasers: Tampines 1, White Sands, Eastpoint, Changi City Point; Lendlease: PLQ, Parkway Parade; Mercatus: Jewel) likely work the same way. Check each.
+  - **Other landlords still to try:** Frasers (Tampines 1, White Sands, Century Square, Changi City Point, Eastpoint), Lendlease (PLQ, Parkway Parade), Jewel (jewelchangiairport.com), Pasir Ris Mall, i12 Katong, Paya Lebar Square, SingPost. Look for a similar XHR on each mall's store page.
 - **Fallback mall rosters, SingMalls** (`singmalls.app/en/malls/<slug>/directory`):
   - Complete lists, but an **undated ~2024 snapshot**. It's what we have today for 10 malls.
-  - It is stale. Bedok Mall's official site shows Zhang Liang Mala Tang, which SingMalls lacks.
+  - It is stale. Bedok Mall's official list differed by 19 closures and 25 new tenants (incl. Zhang Liang Mala Tang).
   - Replace these with official directories when a browser session is available.
 - **Dated guides:**
   - Eatbook, Seth Lui (check the "Updated" date), Daniel Food Diary, HungryGoWhere, kopitiam.com.sg (recent, but sometimes two stalls share one unit), Ordinary Patrons.
@@ -233,18 +232,23 @@ The tools are in `tools/` (Python 3, standard library only). Run them from the r
 ```
 # source: <kind> | <url> | <snapshot description> | fetched YYYY-MM-DD
 Stall or outlet name|#unit
+Stall or outlet name|#unit|Opening Soon        (optional note: Opening Soon / New Store → tag "new"; Temporarily Closed → status_note)
 ```
+
+A snapshot field starting with `live` (e.g. `live directory (Food & Beverage)`) marks an **official, current directory**.
 
 **Merge rules:**
 - The roster count becomes the cluster's `stalls_total`.
 - Names already in that cluster are matched and skipped.
 - A roster entry whose unit is held by a different shop from a dated guide is dropped as **superseded** (an old tenant).
-- Everything else is added as `listed`, with display name `Name (Mall)` and a guessed cuisine.
+- Everything else is added as `listed`, with display name `Name (Mall)` and a guessed cuisine. Check the guesses and extend `KNOWN` in `speclib.py`.
+- **Official live directories are authoritative:** no superseding (every row is added), units are refreshed, and places in that cluster the directory no longer lists are set to `status: "closed"` with a `closed_note`. A closed place that reappears is reopened.
+- Use `--dry-run` first and read the closed list. `norm()` folds accents (Yolé = Yole).
 
 ### Building a new area (do it in this order)
 1. **Roster first, for completeness:**
    - **Hawker centres:** take the NEA count as `stalls_total`, plus a stall list (hawker.guide or another roster) saved to `data/rosters/c-<id>.txt`.
-   - **Malls:** the SingMalls directory, saved to `data/rosters/m-<id>.txt`.
+   - **Malls:** the mall's official directory (see source notes); SingMalls only as a fallback. Save to `data/rosters/m-<id>.txt`.
    - Note what you couldn't get as a gap in section 3.
 2. **Enrich from dated guides:** dishes, prices and hours for the notable stalls. Write a small script with the `speclib` specs that appends places (see the East build in git history, PR #2 and #3). Apply the freshness rule.
 3. **Geocode clusters and standalones** with OneMap. `zone`: ≤2.5 km from `home` means `home`, otherwise the zone of the area. Add the zone's MRT stations to `mrt[]`.
@@ -290,13 +294,16 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 | 15 Oct | Official mall directories preferred over SingMalls, but they need a live browser session | CapitaLand's store list loads with JavaScript and the workspace can't reach the site; SingMalls is a ~2024 snapshot |
 | 15 Oct | Search ignores case, apostrophes, punctuation and spaces, and also matches unit and centre name | "Stuff’d" typed on a phone didn't match "Stuff'd" |
 | 15 Oct | Data tooling committed in `tools/` | So any session (or a scheduled refresh) can build or refresh the same way |
+| 15 Oct | Official live directory beats everything: unlisted mall places are closed, not superseded | It's the landlord's current tenant list; dated guides are older than it |
+| 15 Oct | Closed places hidden from Explore, Map, Spin and coverage; shown under "Moved out / closed" on the centre sheet, with a Closed note on the place | Never delete (family logs), but don't send anyone to a shop that's gone |
+| 15 Oct | "New" badge from the directory's Opening Soon / New Store flags (`tags: ["new"]`) | A cheap first step towards the "what's new" ask |
 | 15 Oct | Roster-only stalls are included as `listed` | The owner wants to know what's at a centre even without details; family photos fill in the gaps |
 
 ## 7. Next up / ideas
 **Most likely next asks (in order):**
-- [ ] **Swap mall rosters to official directories** (fresher than SingMalls).
-  - Needs the owner's desktop app or Chrome extension connected in that chat.
-  - Then re-run `merge_roster.py`. Names that disappear from a roster are candidates for `status: "closed"`, so check them.
+- [x] Official directories for CapitaLand malls (Bedok Mall, Tampines Mall), 15 Oct. PR "Official CapitaLand directories".
+- [ ] **Official directories for the other 8 malls** (see source notes). Needs the owner on the PC with the desktop app linked to the chat (built-in browser).
+- [ ] A **"What's new" view** listing places tagged `new` and recent openings; and clearing `new` tags after ~2 months.
 - [ ] **Close the East gaps** in section 3:
   - Mall directories for Tampines 1, Pasir Ris Mall, Eastpoint (+ Hawkers' Street), SingPost and Downtown East.
   - Stall rosters for Old Airport Rd, Haig Rd, Bedok Interchange, Changi Village and Fengshan.
