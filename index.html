@@ -649,7 +649,7 @@ function openPlace(id) {
 }
 function openCluster(id) {
   const c = CLUSTERS.find(x => x.id === id); if (!c) return;
-  const ps = PLACES.filter(p => p.cluster === id).sort((a, b) => (browseActive() ? browseOK(b) - browseOK(a) : 0) || (openAt(b, new Date()).open - openAt(a, new Date()).open) || a.name.localeCompare(b.name));
+  const ps = PLACES.filter(p => p.cluster === id).sort((a, b) => (browseActive() ? browseOK(b) - browseOK(a) : 0) || (!!openAt(b, new Date()).open - !!openAt(a, new Date()).open) || a.name.localeCompare(b.name));
   const total = c.stalls_total;
   sheet(`<div style="margin-right:46px"><span class="badge" style="background:${zone(c.zone).color}22;color:${zone(c.zone).color}">${esc(zone(c.zone).name)}</span><h2 style="margin-top:6px">${esc(c.name)}</h2><div class="small muted">${esc(c.address)}</div></div>
     <div class="small muted" style="margin-top:6px">${distanceLine(c)}</div>
