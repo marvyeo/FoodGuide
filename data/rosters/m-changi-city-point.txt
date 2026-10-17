@@ -1,62 +1,80 @@
-# source: singmalls | https://singmalls.app/en/malls/changi-city-point/directory | snapshot c.2024 (page undated) | fetched 2026-10-15
-Aburi-EN|#01-36
-Another Bean|#B1-K5
-BLVD|#01-72/73
-Boost Juice Bars|#01-42
-Canopy|#01-70/71
-Chagee|#B1-04
-Delifrance|#01-45/46
-Dough Culture|#B1-K3
-Flash Coffee|#B1-37
-Fragrance|#B1-19
-Gong Yuan Ma La Tang|#B1-51/52
-Han's|#01-51
-Hey Long Cha|#01-K11
-Huggs Coffee|#01-50
-Ichiban Sushi|#B1-12
-Idaten Udon|#B1-12/13
-Jollibee|#01-37/38
-KOI The Express|#B1-18
-Kopitiam|#02-01/02
-Li Xin The Fishball Folks|#B1-50
-LiHO TEA|#B1-41
-Manna Bistro & Grill|#01-30/31
-ManNa Korean Restaurant|#01-39/40
-McDonald's|#01-10/11
-Menzo Butao|#B1-34
-Mmmm!|#B1-23
-Monster Chili Grilled Fish & Mala Hotpot|#01-43/44
-MOS Burger|#B1-35A
-Mr Bean|#B1-21
-Mr Coconut|#01-K7
-MuYoo Bakery|#B1-22
-Old Chang Kee|#B1-K2
-Old Tea Hut|#01-K6
-Paper Rice Vietnamese Kitchen|#B1-26/27
-Potato Corner|#B1-06
-PrimaDeli|#B1-05
-Proofer Bakery & Pizzeria|#B1-39
-Real Thai|#B1-36
-Saizeriya|#B1-44/45
-Seoul Garden HotPot|#01-18/19
-SF Fruits & Juices|#B1-38
-Shabu Sai|#B1-28/29
-Snackz It!|#B1-40
-Soul ALife|#02-40
-Starbucks|#01-25
-Stuff'd|#B1-20
-Suki-Ya|#01-12
-Tamago-EN|#01-35
-The Coffee Bean & Tea Leaf|#01-41
-The Dim Sum Place|#B1-30/31
-The Original Boat Noodle|#B1-34A
-The Soup Spoon Union|#B1-24/25
-The White Tiffin|#01-44
-Twelve Cupcakes|#B1-K4
-Viva Loca|#01-68/69
-Wee Nam Kee Chicken Rice|#B1-35
-Wine Connection|#B1-17
-Wok Hey|#B1-07
-Wok Master|#01-28
-Ya Kun Kaya Toast|#B1-K1
-Yakiniku Shokudo|#B1-32/33
+# source: changicitypoint | https://changicitypoint.com.sg/stores/ | live directory (Food & Beverages) | fetched 2026-10-18
+50年 Taste of Tradition|#B1-K7||7am-10pm
+Aburi-En|#01-36||11am-10pm
+Baskin Robbins|#01-K06/K31||10am-9.30pm
+Bingxue Tea & Ice Cream|#01-40A||11am-8pm
+BLVD|#01-72/73||11am-10.30pm
+Bread Kingdom|#B1-17||7.30am-9.30pm
+Burger King|#01-30/31||8am-10pm
+Canopy|#01-70/71||11am-10pm
+Clean Salad Bar|#01-K27||Mon-Fri: 10.30am-8.30pm; Sat-Sun: 11am-9.30pm
+Coffee Bee|#02-K2||8.30am-8.30pm
+Crave|#B1-04||7am-10pm
+Dabba Street|#B1-K4||10.30am-9.30pm
+Dandelions|#02-24A||8.30am-9pm
+Dough Culture|#B1-K8||8.30am-8.30pm
+En Yeoh's Bak Kut Teh|#B1-30||11am-10pm
+Express Teppan-Yaki|#01-26|Opening Soon
+Food Arena|#02-01||8am-9.30pm
+Fragrance|#B1-19||10am-9pm
+Gigi Gastrobar & Bistro|#01-66/67||Mon-Fri: 10.30am-12am; Sat-Sun: 10.30am-10pm
+Gin Khao|#B1-36||11am-9:30pm
+Gong Yuan Ma La Tang|#B1-51/52||11am-9.30pm
+Great Nanyang Heritage Cafe|#B1-26||8am-9pm
+Hey Long Cha|#01-K20||10.30am-9.30pm
+Huggs Coffee|#01-50||Mon-Fri: 8am-8pm; Sat-Sun: 9am-9pm
+i•tea|#B1-K6||10am-8.45pm
+Ichiban Boshi|#B1-12/13||11:30am-09:30pm
+Katsu-An|#B1-34A||10am-10pm
+KOI ThÉ|#B1-18||11am-9.30pm
+Krispy Kreme|#01-20||10am-8pm
+Kuan Zhai Wan Wan Xiang|#01-38||11.30am-9.30pm
+Laaziiz|#B1-39/40||10am-10pm
+Llaollao|#01-20B||Sun-Thu: 11am-8pm; Fri-Sat: 11am-9pm
+Luckin Coffee|#01-39||7:30am-10pm
+Maison La Manne|#01-20||Mon-Thu: 10:30am-8.30pm; Fri-Sun: 10:30am-9pm
+Maki-San|#B1-21||10am-9.30pm
+Mcdonald's|#01-51/52/53||7.30am-10pm
+Menzo Butao & Kagurazaka Saryo|#B1-34||11.30am-10pm
+Mi Wei Xian Bibimbap|#B1-50||10am-9.30pm
+Monster Chili Grilled Fish & Mala Hotpot|#01-43||11am-10pm
+Mr Bean|#B1-K13||7am-9pm
+Mr. Coconut|#01-K21||11am-9.45pm
+Munchi Pancakes|#B1-K11||8am-9pm
+Nam Kee Pau|#B1-37||8.30am-8.30pm
+Niu Hong Hong|#01-K8
+Nong Geng Ji|#01-26B/27||11:00am-10pm
+Old Chang Kee|#B1-K2||10am-9pm
+Old Tea Hut|#B1-K5||Mon-Fri: 7.30am-6.30pm; Sat-Sun: 8.30am-7.30pm
+Paper Rice|#B1-27||11am-3pm, 5pm-9pm
+Paris Baguette|#01-K28/29||8am-10pm
+Pasta Express|#B1-K14||10.30am-9pm
+PrimaDéli|#B1-05||11.30am-8.30pm
+Qin Ji Rougamo|#01-37||11am-9pm
+R&B Tea|#B1-K10||11am-9pm
+River South (Hoe Nam) Prawn Noodles|#01-27A||10:30am-9pm
+Roll Gaadi|#B1-06||11am-9:30pm
+Saigon Rolls|#01-K27||10.30am-7.30pm
+Saizeriya|#B1-44/45||11am-10pm
+Seoul Garden Hotpot|#01-18/19||11am-9.30pm
+SF Fruits & Juices|#B1-38||11am-9pm
+Shabu Sai|#B1-28/29||11.30am-10pm
+Starbucks Coffee|#01-25||Mon-Fri: 7.30am-10pm; Sat-Sun: 8am-10pm
+Steak 99|#01-48||11.30am-9.30pm
+Stuff'd|#B1-20||10am-8pm
+Sukiya|#01-12||10am-10pm
+Supergreen|#B1-K12||10.30am-8pm
+Sushi Express|#B1-31||11am-9.30pm
+Thai Baang|#01-42||8am-9pm
+The Coffee Bean & Tea Leaf|#01-41||7.30am-10pm
+The Dim Sum Place|#B1-31A||Mon-Thu: 10.30am-9.30pm; Fri-Sun: 10am-10pm
+The Soup Spoon Union|#B1-35A||11am-9.30pm
+The White Tiffin|#01-44||9am-9pm
+Toastbox|#01-K7||7.30am-9.30pm
+Tonkatsu Enbiton|#01-35||11am-10pm
+Uncle John's Makan Place|#B1-35||11am-9:30pm
+Wok Hey|#B1-07||10.30am-10pm
+Wok Master|#01-28||10am-10pm
+Ya Kun Kaya Toast|#B1-K1||7.30am-7.30pm
+Yakiniku Shokudo|#B1-32/33||11.30am-10pm
+Yangguofu|#01-40||10am-10pm
