@@ -72,6 +72,15 @@ nav.tabs button.on{color:var(--chilli)} nav.tabs button.on .ic{filter:none;opaci
 .chip{text-decoration:none;flex:none;padding:8px 13px;border-radius:99px;border:1px solid var(--line);background:var(--card);font-size:13px;font-weight:600;color:var(--ink2);white-space:nowrap;transition:all .12s}
 .chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .chip.person.on{background:var(--chilli);border-color:var(--chilli);color:#fff}
+.chips.wrap{flex-wrap:wrap;overflow:visible;gap:6px}
+.chips.wrap .chip{padding:7px 11px}
+.chip.out{background:var(--chilli-soft);border-color:var(--chilli);color:var(--chilli)}
+.chip.out .nm{text-decoration:line-through;text-decoration-thickness:2px}
+.chip.out .em{display:none}
+.chip.out::before{content:"🚫 "}
+.label-row{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.label-row .clear{font-size:12px;font-weight:700;color:var(--chilli);text-transform:none;letter-spacing:0;padding:2px 4px}
+.label-row .clear[disabled]{color:var(--ink3);opacity:.5}
 .filter-label{font-size:12px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:.06em;margin:14px 2px 6px}
 .toggle{display:flex;align-items:center;justify-content:space-between;padding:10px 2px;font-size:14px}
 .switch{width:44px;height:26px;border-radius:99px;background:var(--line);position:relative;transition:background .15s;flex:none}
@@ -283,7 +292,7 @@ let familyId = LS.get('familyId', null);
 let fam = Object.assign({ members: [], logs: [], wants: [], places_added: [], photos: [] }, LS.get('fam', {})); // raw rows (no header)
 let outbox = LS.get('outbox', []);   // [{tab,row}]
 let guest = LS.get('guest', false);
-let prefs = Object.assign({ meal: 'now', reach: 'near', budget: [1, 2, 3], mode: 'any', cuisines: [], untried: false, mustOnly: false, openOnly: true, eaters: null, spinMode: 'stall', home: null, useGps: false }, LS.get('prefs', {}));
+let prefs = Object.assign({ meal: 'now', reach: 'near', budget: [1, 2, 3], mode: 'any', cuisines: [], cuisinesOut: [], untried: false, mustOnly: false, openOnly: true, eaters: null, spinMode: 'stall', home: null, useGps: false }, LS.get('prefs', {}));
 let tab = 'spin', syncState = 'idle', gps = null, lastResult = null, tokenClient = null, mapObj = null;
 
 /* ---------------- helpers ---------------- */
@@ -382,6 +391,7 @@ function candidates() {
     if (prefs.mode === 'dine' && !p.modes.includes('dine')) return false;
     if (prefs.mode === 'takeaway' && !p.modes.includes('takeaway')) return false;
     if (prefs.cuisines.length && !prefs.cuisines.includes(p.cuisine)) return false;
+    if ((prefs.cuisinesOut || []).includes(p.cuisine)) return false;
     if (prefs.mustOnly && !p.must_try) return false;
     if (prefs.untried && triedBy(p.id, ids)) return false;
     if (prefs.openOnly) { const op = openAt(p, date); if (op.known ? !op.open : !typicalHours(date)) return false; }
@@ -445,7 +455,7 @@ function viewSpin() {
   <div class="filter-label">How far</div>${chipRow(Object.entries(REACH).map(([k, v]) => [k, k === 'walk' ? '🚶 Walkable' : k === 'near' ? '🚌 Short ride' : '🚗 Anywhere']), k => prefs.reach === k, 'setReach')}
   <div class="filter-label">Budget</div>${chipRow([[1, '$ <$8'], [2, '$$ $8–20'], [3, '$$$ $20–50'], [4, '$$$$ $50+']], k => prefs.budget.includes(+k), 'toggleBudget')}
   <div class="filter-label">Eat there or tapau</div>${chipRow([['any', 'Either'], ['dine', '🪑 Dine in'], ['takeaway', '🥡 Tapau']], k => prefs.mode === k, 'setMode')}
-  <div class="filter-label">Craving <span class="faint" style="text-transform:none;letter-spacing:0">(none = anything)</span></div>${chipRow(cuisinesHere.map(c => [c, `${CUISINES[c]?.[0] || '🍽️'} ${cuisineName(c)}`]), k => prefs.cuisines.includes(k), 'toggleCuisine')}
+  ${cravingBlock(cuisinesHere)}
   <div class="card" style="margin-top:16px;padding:6px 14px">
     ${toggleRow('openOnly', 'Only places open at that time')}
     ${toggleRow('untried', ids.length > 1 ? 'Only places none of us have tried' : "Only places I haven't tried")}
@@ -465,7 +475,21 @@ function setMeal(k) { prefs.meal = k; savePrefs(); render(); }
 function setReach(k) { prefs.reach = k; savePrefs(); render(); }
 function setMode(k) { prefs.mode = k; savePrefs(); render(); }
 function toggleBudget(k) { k = +k; prefs.budget = prefs.budget.includes(k) ? prefs.budget.filter(x => x !== k) : [...prefs.budget, k]; savePrefs(); render(); }
-function toggleCuisine(k) { prefs.cuisines = prefs.cuisines.includes(k) ? prefs.cuisines.filter(x => x !== k) : [...prefs.cuisines, k]; savePrefs(); render(); }
+// Craving chips cycle on each tap: anything → want (only these) → don't want (excluded) → anything.
+function cravingBlock(list) {
+  const inc = prefs.cuisines, out = prefs.cuisinesOut || [], n = inc.length + out.length;
+  const hint = inc.length ? `only ${inc.length} picked` : out.length ? 'anything except crossed out' : 'none = anything';
+  return `<div class="filter-label label-row"><span>Craving <span class="faint" style="text-transform:none;letter-spacing:0">(${hint} · tap twice to rule out)</span></span><button class="clear" onclick="clearCuisines()" ${n ? '' : 'disabled'}>✕ Clear${n ? ` (${n})` : ''}</button></div>
+  <div class="chips wrap">${list.map(c => { const st = inc.includes(c) ? 'on' : out.includes(c) ? 'out' : ''; return `<button class="chip ${st}" onclick="toggleCuisine('${c}')" aria-pressed="${st ? (st === 'on' ? 'true' : 'mixed') : 'false'}"><span class="em">${CUISINES[c]?.[0] || '🍽️'} </span><span class="nm">${cuisineName(c)}</span></button>`; }).join('')}</div>`;
+}
+function toggleCuisine(k) {
+  const out = prefs.cuisinesOut || [];
+  if (prefs.cuisines.includes(k)) { prefs.cuisines = prefs.cuisines.filter(x => x !== k); prefs.cuisinesOut = [...out, k]; }
+  else if (out.includes(k)) prefs.cuisinesOut = out.filter(x => x !== k);
+  else prefs.cuisines = [...prefs.cuisines, k];
+  savePrefs(); lastResult = null; render();
+}
+function clearCuisines() { prefs.cuisines = []; prefs.cuisinesOut = []; savePrefs(); lastResult = null; render(); }
 function toggleEater(k) { let e = eaters(); e = e.includes(k) ? e.filter(x => x !== k) : [...e, k]; prefs.eaters = e.length ? e : null; savePrefs(); render(); }
 
 function spin() {
