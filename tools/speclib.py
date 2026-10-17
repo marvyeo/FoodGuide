@@ -63,7 +63,7 @@ def band(ds):
 _CUISINE_KEYWORDS = [  # first match wins; order matters
     ("vegetarian", r"vegan|vegetarian|greendot|elemen|\bveg\b"),
     ("dessert", r"dessert|gelat|ice cream|yogurt|yogost|yole|llaollao|smooy|swensen|baskin|cendol|chendol|durian|mochi|lady m|cheesecake|churros|apple strudel|tart|natural|kones|sweet hut|jin hor|nine fresh|ji de chi|xing fu|frozen|ice lab|pudding"),
-    ("drinks", r"\btea\b|\bthe\b|\bthé\b|koi|liho|chicha|chagee|gong cha|playmade|sharetea|bober|r&b|alley|tuk tuk cha|chatramue|boost|juice|coconut|fruits|kopi|kaya|toast|coffee|starbucks|luckin|huggs|flash coffee|arabica|kopitime|chug|mr bean|xixiang|ya kun|wine connection|bottles|bean\b|hey long|tea pulse|herbal tea|oleh oleh"),
+    ("drinks", r"\btea\b|\bthé\b|koi|liho|chicha|chagee|gong cha|playmade|sharetea|bober|r&b|alley|tuk tuk cha|chatramue|boost|juice|coconut|fruits|kopi|kaya|toast|coffee|starbucks|luckin|huggs|flash coffee|arabica|kopitime|chug|mr bean|xixiang|ya kun|wine connection|bottles|bean\b|hey long|tea pulse|herbal tea|oleh oleh"),
     ("japanese", r"ramen|sushi|\bdon\b|donburi|kaisendon|udon|soba|yakiniku|tonkatsu|katsu|tempura|izakaya|shokudo|teppan|pepper lunch|sukiya|yoshinoya|tenya|ippudo|kanada|keisuke|ajisen|itacho|sushiro|genki|tamago|aburi|ichiban|kajiken|menzo|maki-san|tori-q|toriten|osaka ohsho|gyudon|ichikokudo|tanuki|hoshino|tokyo"),
     ("korean", r"korean|seoul|bibimbap|nene|bonchon|jinjja|kko kko|ajumma|manna|chicken run|pizza maru|seorae|paik|coffeesarang|sarang|kimchi"),
     ("thai", r"thai|sanook|siam|boat noodle|yum yum"),
@@ -116,7 +116,7 @@ KNOWN = {
  "ajiya": "japanese", "singapura heritage": "malay", "jyu yae": "japanese", "eminami": "japanese", "kin kao": "thai", "tiong bahru yong tao": "yong-tau-foo",
  "delifrance": "cafe", "crown prince": "zi-char", "wok": "zi-char", "cha yu fan hou": "rice", "each-a-cup": "drinks", "segar": "malay",
  "kopitiam": "rice", "kopi & tarts": "drinks", "kopifellas": "drinks", "pancake king": "snacks", "munchi": "snacks", "ottie": "snacks", "fragrance bak kwa": "snacks",
- "godiva": "dessert", "laderach": "dessert", "mdm ling": "snacks", "yu cookies": "snacks", "kang ji": "snacks", "eighteen plum": "snacks",
+ "godiva": "dessert", "cat & the fiddle": "dessert", "the summer acai": "dessert", "the jellyhearts": "dessert", "thejellyhearts": "dessert", "the coach": "western", "laderach": "dessert", "mdm ling": "snacks", "yu cookies": "snacks", "kang ji": "snacks", "eighteen plum": "snacks",
  "battercatch": "western", "eighteen plum": "snacks", "hainan second street": "rice", "ji xiang": "snacks", "little pond": "soup", "nespresso": "cafe", "shanghai tan": "dumplings", "xiang xiang hunan": "zi-char", "alchemist": "cafe", "im qalb": "korean", "kenangan": "cafe", "kuan zhai alley": "zi-char", "ygf malatang": "noodles", "delibowl": "rice", "toast & roll": "drinks", "cut butchery": "other", "sgfr": "other", "cellarbration": "other", "57°c mala": "other", "ipot mala": "other", "big fish": "western", "tai er": "zi-char",
 }
 def guess_cuisine(name):

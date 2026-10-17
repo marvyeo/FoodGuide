@@ -616,6 +616,26 @@
    "name": "ntuc-club – Downtown East (E!Hub & E!Avenue) directory",
    "url": "https://www.downtowneast.com.sg/experience/eat/food-beverage",
    "date": "live directory (Food & Beverage)"
+  },
+  "pa-m-our-tampines-hub": {
+   "name": "pa – Our Tampines Hub (shops) directory",
+   "url": "https://www.pa.gov.sg/our-network/our-tampines-hub/festive-mall-directory",
+   "date": "live directory (F&B, accurate as of 1 Oct 2026)"
+  },
+  "kinex-m-kinex": {
+   "name": "kinex – KINEX directory",
+   "url": "https://kinex.com.sg/public/food-beverages",
+   "date": "live directory (Food & Beverages)"
+  },
+  "far-east-m-katong-v": {
+   "name": "far-east – Katong V directory",
+   "url": "https://www.fareastmalls.com.sg/en/katong-v/shops",
+   "date": "live directory (Food & Beverage)"
+  },
+  "far-east-m-siglap-centre": {
+   "name": "far-east – Siglap Centre directory",
+   "url": "https://www.fareastmalls.com.sg/en/siglap-centre/shops",
+   "date": "live directory (Food & Beverage)"
   }
  },
  "clusters": [
@@ -1243,6 +1263,86 @@
    "roster": {
     "source": "ntuc-club-m-downtown-east",
     "count": 70,
+    "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-10-18"
+   }
+  },
+  {
+   "id": "m-our-tampines-hub",
+   "name": "Our Tampines Hub (shops)",
+   "type": "mall",
+   "address": "1 Tampines Walk, S528523",
+   "lat": 1.353134,
+   "lng": 103.940408,
+   "notes": "The restaurants, cafés and kiosks around the community hub (the hawker centre is listed separately).",
+   "zone": "east",
+   "stalls_total": 55,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "roster": {
+    "source": "pa-m-our-tampines-hub",
+    "count": 55,
+    "snapshot": "live directory (F&B, accurate as of 1 Oct 2026)",
+    "fetched": "2026-10-18"
+   }
+  },
+  {
+   "id": "m-kinex",
+   "name": "KINEX",
+   "type": "mall",
+   "address": "11 Tanjong Katong Road, S437157",
+   "lat": 1.314618,
+   "lng": 103.894738,
+   "notes": "Formerly OneKM, next to Paya Lebar MRT. Basement kiosks plus restaurants on Levels 1–2.",
+   "zone": "east",
+   "stalls_total": 35,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "roster": {
+    "source": "kinex-m-kinex",
+    "count": 35,
+    "snapshot": "live directory (Food & Beverages)",
+    "fetched": "2026-10-18"
+   }
+  },
+  {
+   "id": "m-katong-v",
+   "name": "Katong V",
+   "type": "mall",
+   "address": "30 East Coast Road, S428751",
+   "lat": 1.303947,
+   "lng": 103.902826,
+   "notes": "Small Far East mall on East Coast Road; cafés and restaurants on Level 1.",
+   "zone": "east",
+   "stalls_total": 9,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "roster": {
+    "source": "far-east-m-katong-v",
+    "count": 9,
+    "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-10-18"
+   }
+  },
+  {
+   "id": "m-siglap-centre",
+   "name": "Siglap Centre",
+   "type": "mall",
+   "address": "55 Siglap Road, S455871",
+   "lat": 1.312604,
+   "lng": 103.923186,
+   "notes": "Small neighbourhood mall with Cold Storage; a few fast-food outlets.",
+   "zone": "east",
+   "stalls_total": 3,
+   "sources": [
+    "far-east-m-siglap-centre"
+   ],
+   "roster": {
+    "source": "far-east-m-siglap-centre",
+    "count": 3,
     "snapshot": "live directory (Food & Beverage)",
     "fetched": "2026-10-18"
    }
@@ -7134,7 +7234,7 @@
    "cluster": "c-538-bedok-north",
    "name": "The 60s",
    "unit": "#01-113",
-   "cuisine": "drinks",
+   "cuisine": "other",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -31763,7 +31863,7 @@
    "cluster": "m-century-square",
    "name": "The Food Market (Century Square)",
    "unit": "#03-19",
-   "cuisine": "drinks",
+   "cuisine": "rice",
    "dishes": [],
    "hours": [
     [
@@ -31793,7 +31893,7 @@
    "cluster": "m-century-square",
    "name": "The Original Vadai (Century Square)",
    "unit": "#01-37",
-   "cuisine": "drinks",
+   "cuisine": "indian",
    "dishes": [],
    "hours": [
     [
@@ -32327,7 +32427,7 @@
    "cluster": "m-changi-city-point",
    "name": "Li Xin The Fishball Folks (Changi City Point)",
    "unit": "#B1-50",
-   "cuisine": "drinks",
+   "cuisine": "noodles",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -36303,7 +36403,7 @@
    "cluster": "m-jewel",
    "name": "The Backyard Bakers (Jewel Changi Airport)",
    "unit": "#01-234",
-   "cuisine": "drinks",
+   "cuisine": "snacks",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -36356,7 +36456,7 @@
    "cluster": "m-jewel",
    "name": "The Original Vadai (Jewel Changi Airport)",
    "unit": "#B2-267",
-   "cuisine": "drinks",
+   "cuisine": "indian",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -38588,7 +38688,7 @@
    "cluster": "m-paya-lebar-square",
    "name": "The Soup Spoon (Paya Lebar Square)",
    "unit": "#01-09",
-   "cuisine": "drinks",
+   "cuisine": "western",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -39780,7 +39880,7 @@
    "cluster": "m-plq",
    "name": "The Bread Club (Paya Lebar Quarter)",
    "unit": "#B2-13",
-   "cuisine": "drinks",
+   "cuisine": "snacks",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -40857,7 +40957,7 @@
    "cluster": "m-tampines-mall",
    "name": "The Soup Spoon (Tampines Mall)",
    "unit": "#B1-K2",
-   "cuisine": "drinks",
+   "cuisine": "western",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -41848,7 +41948,7 @@
    "cluster": "m-white-sands",
    "name": "The Soup Spoon Union (White Sands)",
    "unit": "#02-33/34",
-   "cuisine": "drinks",
+   "cuisine": "western",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -43197,7 +43297,7 @@
    "cluster": "m-tampines-1",
    "name": "Cat & the Fiddle (Tampines 1)",
    "unit": "#01-41/42",
-   "cuisine": "drinks",
+   "cuisine": "dessert",
    "dishes": [],
    "hours": [
     [
@@ -45594,7 +45694,7 @@
    "cluster": "m-century-square",
    "name": "The SGFR Store (Century Square)",
    "unit": "#B1-04",
-   "cuisine": "drinks",
+   "cuisine": "other",
    "dishes": [],
    "hours": [
     [
@@ -45684,7 +45784,7 @@
    "cluster": "m-century-square",
    "name": "Wok The Fish! (Century Square)",
    "unit": "#03-05/31",
-   "cuisine": "drinks",
+   "cuisine": "zi-char",
    "dishes": [],
    "hours": [
     [
@@ -46829,7 +46929,7 @@
    "cluster": "m-eastpoint",
    "name": "The Tree Cafe (Eastpoint Mall)",
    "unit": "#02-K01",
-   "cuisine": "drinks",
+   "cuisine": "western",
    "dishes": [],
    "hours": [
     [
@@ -48067,7 +48167,7 @@
    "cluster": "m-jewel",
    "name": "The Coach Restaurant (Jewel Changi Airport)",
    "unit": "#01-207",
-   "cuisine": "drinks",
+   "cuisine": "western",
    "dishes": [],
    "hours": [
     [
@@ -50956,7 +51056,7 @@
    "cluster": "m-pasir-ris-mall",
    "name": "The Bread Club (Pasir Ris Mall)",
    "unit": "#01-29",
-   "cuisine": "drinks",
+   "cuisine": "snacks",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -50979,7 +51079,7 @@
    "cluster": "m-pasir-ris-mall",
    "name": "The Seafood Market Place by Song Fish (Pasir Ris Mall)",
    "unit": "#B2-41",
-   "cuisine": "drinks",
+   "cuisine": "zi-char",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -51002,7 +51102,7 @@
    "cluster": "m-pasir-ris-mall",
    "name": "The Tree Cafe (Pasir Ris Mall)",
    "unit": "#B2-35",
-   "cuisine": "drinks",
+   "cuisine": "western",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -53395,7 +53495,7 @@
    "cluster": "m-singpost-centre",
    "name": "The Summer Acai (SingPost Centre)",
    "unit": "#03-104",
-   "cuisine": "drinks",
+   "cuisine": "dessert",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -53903,7 +54003,7 @@
    "cluster": "m-downtown-east",
    "name": "The Summer Açaí (Downtown East)",
    "unit": "#01-404/405 (D'Marquee)",
-   "cuisine": "drinks",
+   "cuisine": "dessert",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -54731,7 +54831,7 @@
    "cluster": "m-downtown-east",
    "name": "The JellyHearts (Downtown East)",
    "unit": "#02-111 (E!Hub)",
-   "cuisine": "drinks",
+   "cuisine": "dessert",
    "dishes": [],
    "hours": [],
    "modes": [
@@ -55025,6 +55125,2354 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-downtown-east-kfc"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Ah Khoo Kopi Toast (Our Tampines Hub)",
+   "unit": "#B1-39/K21",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-ah-khoo-kopi-toast"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Churros Republic (Our Tampines Hub)",
+   "unit": "#B1-K28",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-churros-republic"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Crave (Our Tampines Hub)",
+   "unit": "#01-106",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-crave"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "DJ Bakery (Our Tampines Hub)",
+   "unit": "#01-93",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-dj-bakery"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "D'Penyetz (Our Tampines Hub)",
+   "unit": "#02-90/91",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-d-penyetz"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Dutch Colony Coffee Co. (Our Tampines Hub)",
+   "unit": "#01-K8",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-dutch-colony-coffee-co"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Encik Tan (Our Tampines Hub)",
+   "unit": "#01-12",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-encik-tan"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Estee (Our Tampines Hub)",
+   "unit": "#B1-52",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-estee"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Fish & Co. (Our Tampines Hub)",
+   "unit": "#01-15",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-fish-co"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Fragrance (Our Tampines Hub)",
+   "unit": "#B1-K17/18",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-fragrance"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Good Nectar (Our Tampines Hub)",
+   "unit": "#B1-K12",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-good-nectar"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Guzman Y Gomez (Our Tampines Hub)",
+   "unit": "#01-99",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-guzman-y-gomez"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "House of White Bee Hoon (Our Tampines Hub)",
+   "unit": "#01-86",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-house-of-white-bee-hoon"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Hugabo (Our Tampines Hub)",
+   "unit": "#01-81",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-hugabo"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "iTea (Our Tampines Hub)",
+   "unit": "#B1-K29",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-itea"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Jinjja Kitchen (Our Tampines Hub)",
+   "unit": "#01-101",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-jinjja-kitchen"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Kaffe & Toast (Our Tampines Hub)",
+   "unit": "#B1-K8/K9",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-kaffe-toast"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Kebab Konafa (Our Tampines Hub)",
+   "unit": "#B1-K24",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-kebab-konafa"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Kopi & Tarts (Our Tampines Hub)",
+   "unit": "#B1-K30",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-kopi-tarts"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Kopifellas (Our Tampines Hub)",
+   "unit": "#01-106",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-kopifellas"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "LiHo Tea (Our Tampines Hub)",
+   "unit": "#01-K1",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-liho-tea"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Makan Malah (Our Tampines Hub)",
+   "unit": "#01-96/97",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-makan-malah"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Maslina (Our Tampines Hub)",
+   "unit": "#B1-52B",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-maslina"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "McDonald's (Our Tampines Hub)",
+   "unit": "#01-13/14",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-mcdonald-s"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "MOS Burger (Our Tampines Hub)",
+   "unit": "#01-85",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-mos-burger"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Mr Bean (Our Tampines Hub)",
+   "unit": "#01-83",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-mr-bean"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Nam Kee Pau (Our Tampines Hub)",
+   "unit": "#01-84",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-nam-kee-pau"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Niku Iku (Our Tampines Hub)",
+   "unit": "#B1-K10/K11",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-niku-iku"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Old Chang Kee (Our Tampines Hub)",
+   "unit": "#01-105",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-old-chang-kee"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Ollella (Our Tampines Hub)",
+   "unit": "#B1-K16",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-ollella"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Papa Ayam (Our Tampines Hub)",
+   "unit": "#B1-43",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-papa-ayam"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Pezzo (Our Tampines Hub)",
+   "unit": "#B1-42",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-pezzo"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Purple Panda (Our Tampines Hub)",
+   "unit": "#B1-K5",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-purple-panda"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Qi Ji (Our Tampines Hub)",
+   "unit": "#B1-K6/K7",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-qi-ji"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Ramen Hitoyoshi (Our Tampines Hub)",
+   "unit": "#01-94/95",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-ramen-hitoyoshi"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Rumah Makan Minang (Our Tampines Hub)",
+   "unit": "#B1-47A",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-rumah-makan-minang"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Saap Saap Thai (Our Tampines Hub)",
+   "unit": "#01-100",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-saap-saap-thai"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Salad Crunch (Our Tampines Hub)",
+   "unit": "#B1-K13",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-salad-crunch"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Shake Shake in a Tub (Our Tampines Hub)",
+   "unit": "#B1-44",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-shake-shake-in-a-tub"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Shiok Burger (Our Tampines Hub)",
+   "unit": "#B1-K3",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-shiok-burger"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Smooy (Our Tampines Hub)",
+   "unit": "#01-82",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-smooy"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Starbucks (Our Tampines Hub)",
+   "unit": "#01-104",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-starbucks"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Stuff'd (Our Tampines Hub)",
+   "unit": "#01-81",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-stuff-d"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Subway (Our Tampines Hub)",
+   "unit": "#B1-52A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-subway"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Sushiro (Our Tampines Hub)",
+   "unit": "#01-103/103A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-sushiro"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Swee Heng 1989 Classic (Our Tampines Hub)",
+   "unit": "#B1-40/41",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-swee-heng-1989-classic"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Taste of Indonesia Express (Our Tampines Hub)",
+   "unit": "#B1-K4",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-taste-of-indonesia-express"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Tenderfresh Classic (Our Tampines Hub)",
+   "unit": "#01-102",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-tenderfresh-classic"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "The French American Bakery (Our Tampines Hub)",
+   "unit": "#01-K7",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-the-french-american-bakery"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "The Summer Acai (Our Tampines Hub)",
+   "unit": "#B1-K31",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-the-summer-acai"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "TheJellyHearts (Our Tampines Hub)",
+   "unit": "#B1-K14",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-thejellyhearts"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Wingstop (Our Tampines Hub)",
+   "unit": "#B1-08/09/10",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-wingstop"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Wok Hey (Our Tampines Hub)",
+   "unit": "#01-82A",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-wok-hey"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Xi De Li (Our Tampines Hub)",
+   "unit": "#B1-K15",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-xi-de-li"
+  },
+  {
+   "cluster": "m-our-tampines-hub",
+   "name": "Yoshinoya (Our Tampines Hub)",
+   "unit": "#B1-K1/K2/K22",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "pa-m-our-tampines-hub"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-our-tampines-hub-yoshinoya"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "A Hot Hideout (KINEX)",
+   "unit": "#01-45",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-a-hot-hideout"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "A-Lan Japanese Cuisine & Juice Bar (KINEX)",
+   "unit": "#B1-K6",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-a-lan-japanese-cuisine-juice-bar"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Bashu Sichuan Cuisine (KINEX)",
+   "unit": "#01-14/15 & 28",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-bashu-sichuan-cuisine"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Bibimbap / Dosirak (KINEX)",
+   "unit": "#B1-K5",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-bibimbap-dosirak"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Bingxue Tea & Ice Cream (KINEX)",
+   "unit": "#B1-30",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-bingxue-tea-ice-cream"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Burger King (KINEX)",
+   "unit": "#01-42",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-burger-king"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Cha She (KINEX)",
+   "unit": "#01-49",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-cha-she"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Encik Tan (KINEX)",
+   "unit": "#01-50/51",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-encik-tan"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Geláre (KINEX)",
+   "unit": "#01-K1",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-gel-re"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Good Combo Hotpot & BBQ Buffet (KINEX)",
+   "unit": "#01-60/61/62",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-good-combo-hotpot-bbq-buffet"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Good Day Bakery (KINEX)",
+   "unit": "#B1-29",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-good-day-bakery"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Jing An Inclusive Hotpot & Grill Buffet (KINEX)",
+   "unit": "#02-19",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-jing-an-inclusive-hotpot-grill-buffet"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Kazo (KINEX)",
+   "unit": "#B1-K24/K25",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-kazo"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Kebab #1 (KINEX)",
+   "unit": "#B1-K3",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-kebab-1"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Kucina Italian Restaurant (KINEX)",
+   "unit": "#B1-09/10",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-kucina-italian-restaurant"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Li Fang Congee (KINEX)",
+   "unit": "#B1-K9",
+   "cuisine": "porridge",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-li-fang-congee"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Liho Tea (KINEX)",
+   "unit": "#B1-K19",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-liho-tea"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Maki-San (KINEX)",
+   "unit": "#B1-K7",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-maki-san"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Marais Coffee & Bakes (KINEX)",
+   "unit": "#B1-28",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-marais-coffee-bakes"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Mission Cellar (KINEX)",
+   "unit": "#01-54",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-mission-cellar"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Mukshidonna (KINEX)",
+   "unit": "#01-30",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-mukshidonna"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Muscle Prep (KINEX)",
+   "unit": "#B1-K22/K23",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-muscle-prep"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "New S8 (KINEX)",
+   "unit": "#02-16",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-new-s8"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Pasta Play (KINEX)",
+   "unit": "#B1-K1",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-pasta-play"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Popeyes Famous Louisiana Chicken (KINEX)",
+   "unit": "#01-50/51",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-popeyes-famous-louisiana-chicken"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Qi Ji (KINEX)",
+   "unit": "#B1-K20",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-qi-ji"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Sizzle Whizzle (KINEX)",
+   "unit": "#B1-31",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-sizzle-whizzle"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Starbucks (KINEX)",
+   "unit": "#01-17",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-starbucks"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Sukiya (KINEX)",
+   "unit": "#01-52",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-sukiya"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "The Coffee Edition (KINEX)",
+   "unit": "#B1-K4",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-the-coffee-edition"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "The Morning Catch Seafood (KINEX)",
+   "unit": "#02-21",
+   "cuisine": "bbq-seafood",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-the-morning-catch-seafood"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "US Pizza (KINEX)",
+   "unit": "#01-65/66",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-us-pizza"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Xi'an Impression (KINEX)",
+   "unit": "#01-67",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-xi-an-impression"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Yang's Epok Epok (KINEX)",
+   "unit": "#B1-K8",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-yang-s-epok-epok"
+  },
+  {
+   "cluster": "m-kinex",
+   "name": "Yugoslavia Bakery & Cafe (KINEX)",
+   "unit": "#01-32",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "kinex-m-kinex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kinex-yugoslavia-bakery-cafe"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "Bakery Cuisine Express (Katong V)",
+   "unit": "#01-05",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-bakery-cuisine-express"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "Bread & Hearth (Katong V)",
+   "unit": "#02-27",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-bread-hearth"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "Burrata Joy and Gustavo Lapasta (Katong V)",
+   "unit": "#01-12",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-burrata-joy-and-gustavo-lapasta"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "Hikaru Omakase (Katong V)",
+   "unit": "#01-04",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-hikaru-omakase"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "Le Petit Katong (Katong V)",
+   "unit": "#01-11",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-le-petit-katong"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "Ree.Connect by Ree and Mummy (Katong V)",
+   "unit": "#01-03",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-ree-connect-by-ree-and-mummy"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "The Canopy Cafe (Katong V)",
+   "unit": "#01-01/02",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-the-canopy-cafe"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "Tomi Sushi (Katong V)",
+   "unit": "#02-14",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-tomi-sushi"
+  },
+  {
+   "cluster": "m-katong-v",
+   "name": "Yun Ga Traditional Korean Restaurant (Katong V)",
+   "unit": "#03-09",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-katong-v"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-katong-v-yun-ga-traditional-korean-restaurant"
+  },
+  {
+   "cluster": "m-siglap-centre",
+   "name": "Foca (Siglap Centre)",
+   "unit": "#01-12",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-siglap-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-siglap-centre-foca"
+  },
+  {
+   "cluster": "m-siglap-centre",
+   "name": "McDonald's (Siglap Centre)",
+   "unit": "#01-06",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-siglap-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-siglap-centre-mcdonald-s"
+  },
+  {
+   "cluster": "m-siglap-centre",
+   "name": "Subway (Siglap Centre)",
+   "unit": "#01-13/14",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-siglap-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-siglap-centre-subway"
   }
  ]
 }
