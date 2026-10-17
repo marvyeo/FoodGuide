@@ -8,7 +8,9 @@ Roster files live in data/rosters/<cluster-id>.txt:
 Usage:  python3 tools/merge_roster.py data/rosters/m-bedok-mall.txt [more files...]   (or --all)
 
 Rows may carry an optional third field, a directory note: "Opening Soon" / "New Store" (tagged "new"),
-"Temporarily Closed" (kept open, noted in status_note).
+"Temporarily Closed" (kept open, noted in status_note), and an optional fourth field: the directory's opening
+hours as free text ("Monday to Sunday ; 11am to 10pm"). Hours are parsed with speclib.free_hours (ambiguous text
+is skipped) and fill places with no hours; an official live directory also refreshes non-"detailed" places.
 
 Official live directories (snapshot field starts with "live", e.g. CapitaLand's own store list) are
 authoritative: every row is added (no superseding), and mapped places in that cluster that the directory
@@ -25,7 +27,7 @@ Re-running is safe: already-merged names match and are skipped.
 """
 import sys, os, re, glob
 sys.path.insert(0, os.path.dirname(__file__))
-from speclib import load, save, norm, unit_key, slug, guess_cuisine
+from speclib import load, save, norm, unit_key, slug, guess_cuisine, free_hours
 from validate import validate
 
 def parse(path):
@@ -36,8 +38,8 @@ def parse(path):
             if head is None: head = [x.strip() for x in line[1:].split("|")]
             continue
         if not line.strip(): continue
-        parts = [x.strip() for x in line.split("|")] + ["", ""]
-        rows.append((parts[0], parts[1], parts[2]))
+        parts = [x.strip() for x in line.split("|")] + ["", "", ""]
+        rows.append((parts[0], parts[1], parts[2], parts[3]))
     return head, rows
 
 def merge(D, path):
@@ -57,22 +59,29 @@ def merge(D, path):
     ids = {p["id"] for p in D["places"]}
     official = bool(head and len(head) > 2 and head[2].lower().startswith("live"))
     fetched = c["roster"]["fetched"]
-    stats = {"matched": 0, "added": 0, "superseded": [], "closed": [], "reopened": []}
+    stats = {"matched": 0, "added": 0, "superseded": [], "closed": [], "reopened": [], "hours": 0}
     seen = set()
     def note_it(p, note):
         nl = note.lower()
         if nl in ("opening soon", "new store") and "new" not in p.setdefault("tags", []): p["tags"].append("new")
         if nl == "temporarily closed": p["status_note"] = f"Temporarily closed (directory, {fetched})"
         elif p.get("status_note", "").startswith("Temporarily closed"): p.pop("status_note")
-    for name, unit, note in rows:
+    def hours_it(p, text):
+        h = free_hours(text)
+        if h and (not p.get("hours") or (official and p.get("confidence") != "detailed")):
+            if p.get("hours") != h: stats["hours"] += 1
+            p["hours"] = h
+    for name, unit, note, hrs in rows:
         n = norm(name)
         hit = next((p for p in places if n and (n == norm(p["name"]) or (len(n) >= 5 and (n in norm(p["name"]) or norm(p["name"]) in n)))), None)
+        if not hit and unit_key(unit):   # same unit, same first letters: a respelling ("Gwanjang Gaon" / "Gwangjang GAON")
+            hit = next((p for p in places if p["id"] not in seen and unit_key(p.get("unit")) == unit_key(unit) and len(n) >= 4 and norm(p["name"])[:4] == n[:4]), None)
         if hit:
             stats["matched"] += 1; seen.add(hit["id"])
             if unit and (not hit.get("unit") or official): hit["unit"] = unit
             if official and hit.get("status") == "closed":
                 hit["status"] = "open"; hit.pop("closed_note", None); stats["reopened"].append(hit["name"])
-            note_it(hit, note)
+            note_it(hit, note); hours_it(hit, hrs)
             continue
         uk = unit_key(unit)
         clash = None if official else next((p for p in places if uk and unit_key(p.get("unit")) == uk and p.get("confidence") != "listed"), None)
@@ -84,7 +93,7 @@ def merge(D, path):
         p = {"cluster": cid, "name": display, "unit": unit, "cuisine": guess_cuisine(name), "dishes": [], "hours": [],
              "modes": ["dine", "takeaway"], "diet": [], "tags": [], "must_try": False, "status": "open", "price_band": 1,
              "sources": [key], "verified": "unconfirmed", "confidence": "listed", "id": pid}
-        note_it(p, note)
+        note_it(p, note); hours_it(p, hrs)
         D["places"].append(p); places.append(p); ids.add(pid); seen.add(pid); stats["added"] += 1
     if official:
         for p in places:
@@ -99,7 +108,7 @@ if __name__ == "__main__":
     D = load()
     for f in files:
         cid, total, s = merge(D, f)
-        print(f"{cid}: roster {total} | already mapped {s['matched']} | added {s['added']} | superseded {len(s['superseded'])}")
+        print(f"{cid}: roster {total} | already mapped {s['matched']} | added {s['added']} | superseded {len(s['superseded'])} | closed {len(s['closed'])} | hours set {s['hours']}")
         for x in s["superseded"]: print("   superseded:", x)
         for x in s["closed"]: print("   closed (not in official directory):", x)
         for x in s["reopened"]: print("   reopened:", x)

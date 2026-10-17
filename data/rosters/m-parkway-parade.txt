@@ -1,50 +1,69 @@
-# source: singmalls | https://singmalls.app/en/malls/parkway-parade/directory | snapshot c.2024 (page undated; misses 2025 tenants like Godmama, TANYU) | fetched 2026-10-15
+# source: lendlease | https://www.parkwayparade.com.sg/store-directory/ | live directory (Food & Beverages) | fetched 2026-10-18
+50 Years Taste of Tradition|#B1-111
+AMACHA|#01-11E
 Auntie Anne's|#B1-08
+Bee Cheng Hiang|#B1-88
 Bengawan Solo|#B1-78/79
-Boost Juice|#01-09A
-Burger King|#01-11
-Cafe Q Classified|#01-69A
+Bottles & Bottles|#B1-83K/83L
+BreadTalk|#B1-83P/83Q
+Canton Paradise|#01-34
 Cedele|#B1-83D
+CHAGEE|#01-03–06
 Chalk Farm|#B1-83M
 Chateraise|#03-30B
+Dian Xiao Er|#02-14–17 & 68–70
 Din Tai Fung|#01-15
+Empire Chinese Cuisine|#02-13/13A
 Famous Amos|#B1-61
 Fish Mart Sakuraya|#B1-84D
-Food Republic|#B1-85
-Four Leaves|#B1-80/81
+Four Leaves|#B1-80–82
 Fun Toast|#02-K3
-HOTPOT by Seoul Garden|#03-01/02A
+Godmama Peranakan|#01-69A/K5/K6
+Gokoku Japanese Bakery|#B1-51/52/65
+Gyukatsu Kyoto Katsugyu|#01-11
+HAKKA YU|#01-36
 Hokkaido Baked Cheese Tart|#01-23B
+HoneyWorld|#B1-55
 Ichiban Boshi|#02-12/12A
-Jack's Place|#01-30
-Jollibean|#01-14A
-Kraftwich by Swissbake|#B1-83C
+itea|#B1-83
+Jack's Place|#03-30D
+Ji De Chi Dessert|#B1-83J
+KOI Thé|#01-K32
 Koong Woh Tong|#B1-K4
-KFC|#01-11A
-New Zealand Natural|#01-K1
+Kopitiam Food Hall|#B1-85–87 & 112–146
+LeNu|#01-34
+luckin coffee|#01-16A
+Madam Ang KK|#01-K1 & K41
+Mister Donut|#01-16
+Munchi Pancakes|#03-30C
+Nam Kee Pau|#01-09A
+Nan Yang Dao|#01-17A
 Old Chang Kee|#01-14
-Oleh Oleh Tea House|#01-K3
-PappaRich|#01-17A
 Paradise Classic|#01-35
-Sanook Kitchen|#01-17
-Shang Pin Hot Pot|#01-10
-Sharetea|#B1-21
-Smooy|#B1-83E
-So Pho|#03-30D
-Starbucks|#01-10A
-Sushi Express|#01-17B
-Sushiro|#B1-17/17A
-Swensen's|#B1-33/34
-Tenya|#B1-51/52
-The Coffee Bean & Tea Leaf|#B1-83H
-Tori-Q|#01-14C
-Treasures Yi Dian Xin|#02-14
-Twelve Cupcakes|#01-16
-Putien|#02-13
-Ramen Dining Keisuke Tokyo|#B1-18A
-Rive Gauche Patisserie|#03-30C
+Paris Baguette|#01-K3 & K43
+Pat's Oven|#B1-83N
+Pepper Lunch|#01-35A
+Potato Corner|#01-14A
+PUTIEN|#01-36
+Ramen Hitoyoshi Lobster & Grill|#01-11F/11G
 R&B Tea|#03-30A
-Wok Hey|#01-K9
+Sanook Kitchen|#01-17
+Shake Shack|#01-11A/11C/11D
+Smooy|#B1-83E
+stuff'd|#01-K39
+SUPERGREEN|#01-K9
+Sushi Express|#01-K33/K34
+Sushidan|#01-10
+Swensen's|#B1-33/34
+The Coffee Bean & Tea Leaf|#B1-83H
+Tim Hortons|#01-02 & K42
+Toast Box|#B1-83P/83Q
+Tori Q|#01-14C
+Venchi|#01-07/08
+Wine Connection|#B1-54
+WOK HEY|#01-K39
+Xiang Xiang Hunan Cuisine|#01-30
 Ya Kun Cafe|#01-14B
-Yakiniku-GO|#B1-84B/C
-Mr. Coconut|#B1-83J
+Yakiniku-GO|#B1-84B/84C
+Yeah Gelato|#01-K38
+Zhang Liang Mala Tang|#03-01/02A
