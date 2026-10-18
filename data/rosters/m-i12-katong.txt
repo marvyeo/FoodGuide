@@ -1,30 +1,30 @@
 # source: i12katong | https://www.i12katong.com.sg/stores | live directory (Food & Beverage) | fetched 2026-10-18
 Aroycado|#B1-29
-Bingxue Tea & Ice Cream|#B1-36
-Boost Juice Bars|#B1-42
-Cookboys|#B1-10 & 37
-Edith Patisserie|#B1-30
+Bingxue Tea & Ice Cream|#B1-36||Mon-Thu 11:00-21:00; Fri-Sun 10:30-22:30
+Boost Juice Bars|#B1-42||Daily 10:00-22:00
+Cookboys|#B1-10 & 37||Mon-Fri 11:00-22:00; Sat-Sun 10:00-22:00
+Edith Patisserie|#B1-30||Daily 10:15-21:00
 En Seeds|#B1-50
-Fun Toast|#B1-48/49
-Gelatissimo|#01-22
-Genki Sushi|#02-03
-Greybox Coffee|#02-23/24
-Guzman y Gomez|#01-27 & 31
-Ippudo|#01-04
-Itea|#B1-34
+Fun Toast|#B1-48/49||Mon-Fri 08:00-18:00; Sat-Sun 08:00-20:00
+Gelatissimo|#01-22||Mon-Fri 11:00-21:30; Sat 11:00-22:00; Sun 11:00-21:30
+Genki Sushi|#02-03||Mon-Thu 11:00-21:00; Fri-Sun 11:00-22:00
+Greybox Coffee|#02-23/24||Mon-Fri 09:00-20:00; Sat-Sun 08:00-21:00
+Guzman y Gomez|#01-27 & 31||Mon-Thu 08:00-22:00; Fri-Sat 08:00-00:00; Sun 08:00-22:00
+Ippudo|#01-04||Daily 11:00-22:00
+Itea|#B1-34||Daily 11:00-21:45
 Jiak Thai Poh & My Little Coconut|#04-05/06
-Luckin Coffee|#02-22
-Maki-San|#B1-43
+Luckin Coffee|#02-22||Mon-Fri 10:00-21:30; Sat-Sun 10:00-22:00
+Maki-San|#B1-43||Daily 10:00-21:30
 Nainai Flavor|#02-13/14 & 26/27
-Pancake King & Kopi|#B1-33
+Pancake King & Kopi|#B1-33||Daily 10:00-20:00
 Pizza Maru Express & Omoomo|#01-20
-Rollgaadi|#B1-41
-Saizeriya|#01-11/12/13
-Sg Hawker (Food Court)|#B1-06/07/08
-So Good Bakery|#01-19
-So Good Char Chan Tang|#04-08/09
-Sushi Zanmai|#02-01/02
-Tea Pulse|#B1-47
-Tim Hortons|#01-28
-Wine Connection|#01-10
+Rollgaadi|#B1-41||Daily 11:30-21:30
+Saizeriya|#01-11/12/13||Daily 11:00-22:00
+Sg Hawker (Food Court)|#B1-06/07/08||Daily 10:00-21:00
+So Good Bakery|#01-19||Daily 09:00-20:30
+So Good Char Chan Tang|#04-08/09||Daily 09:00-21:30
+Sushi Zanmai|#02-01/02||Daily 11:30-22:00
+Tea Pulse|#B1-47||Mon-Fri 11:00-20:00; Sat-Sun 10:30-21:30
+Tim Hortons|#01-28||Mon-Fri 10:00-22:00; Sat-Sun 08:00-22:00
+Wine Connection|#01-10||Sun-Thu 11:30-23:00; Fri-Sat 11:30-00:00
 Yo Mama!|#B1-40

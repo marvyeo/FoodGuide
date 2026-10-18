@@ -1,36 +1,36 @@
 # source: kinex | https://kinex.com.sg/public/food-beverages | live directory (Food & Beverages) | fetched 2026-10-18
-A Hot Hideout|#01-45
-A-Lan Japanese Cuisine & Juice Bar|#B1-K6
+A Hot Hideout|#01-45||Daily 11:30-22:00
+A-Lan Japanese Cuisine & Juice Bar|#B1-K6||Daily 10:00-21:30
 Bashu Sichuan Cuisine|#01-14/15 & 28|Opening Soon
-Bibimbap / Dosirak|#B1-K5
-Bingxue Tea & Ice Cream|#B1-30
-Burger King|#01-42
-Cha She|#01-49
-Encik Tan|#01-50/51
-GelÁRe|#01-K1
-Good Combo Hotpot & BBQ Buffet|#01-60/61/62
-Good Day Bakery|#B1-29
-Jing An Inclusive Hotpot & Grill Buffet|#02-19
-Kazo|#B1-K24/K25
-Kebab #1|#B1-K3
-Kucina Italian Restaurant|#B1-09/10
-Li Fang Congee|#B1-K9
-Liho Tea|#B1-K19
-Maki-San|#B1-K7
-Marais Coffee & Bakes|#B1-28
-Mission Cellar|#01-54
-Mukshidonna|#01-30
-Muscle Prep|#B1-K22/K23
-New S8|#02-16
-Pasta Play|#B1-K1
-Popeyes Famous Louisiana Chicken|#01-50/51
-Qi Ji|#B1-K20
-Sizzle Whizzle|#B1-31
-Starbucks|#01-17
-Sukiya|#01-52
-The Coffee Edition|#B1-K4
-The Morning Catch Seafood|#02-21
-Us Pizza|#01-65/66
-Xi'an Impression|#01-67
-Yang's Epok Epok|#B1-K8
-Yugoslavia Bakery & Cafe|#01-32
+Bibimbap / Dosirak|#B1-K5||Daily 11:00-21:00
+Bingxue Tea & Ice Cream|#B1-30||Daily 11:00-21:00
+Burger King|#01-42||Daily 08:00-22:00
+Cha She|#01-49||Daily 11:00-22:00
+Encik Tan|#01-50/51||Daily 10:15-20:45
+GelÁRe|#01-K1||Daily 11:00-21:00
+Good Combo Hotpot & BBQ Buffet|#01-60/61/62||Daily 11:00-21:00
+Good Day Bakery|#B1-29||Daily 10:00-22:00
+Jing An Inclusive Hotpot & Grill Buffet|#02-19||Daily 12:00-22:30
+Kazo|#B1-K24/K25||Daily 10:00-22:00
+Kebab #1|#B1-K3||Daily 11:30-21:00
+Kucina Italian Restaurant|#B1-09/10||Daily 11:30-22:00
+Li Fang Congee|#B1-K9||Daily 09:00-21:00
+Liho Tea|#B1-K19||Daily 11:00-22:00
+Maki-San|#B1-K7||Daily 10:00-21:30
+Marais Coffee & Bakes|#B1-28||Daily 10:00-22:00
+Mission Cellar|#01-54||Tue-Sun 14:00-21:00
+Mukshidonna|#01-30||Daily 11:30-22:00
+Muscle Prep|#B1-K22/K23||Daily 08:30-21:30
+New S8|#02-16||Mon-Sat 12:00-01:00
+Pasta Play|#B1-K1||Daily 10:00-22:00
+Popeyes Famous Louisiana Chicken|#01-50/51||Daily 07:30-02:00
+Qi Ji|#B1-K20||Daily 10:00-21:30
+Sizzle Whizzle|#B1-31||Daily 11:00-21:00
+Starbucks|#01-17||Daily 08:00-23:00
+Sukiya|#01-52||Daily 00:00-24:00
+The Coffee Edition|#B1-K4||Mon-Fri 07:30-19:30; Sat-Sun 08:00-19:30
+The Morning Catch Seafood|#02-21||Daily 11:00-22:30
+Us Pizza|#01-65/66||Daily 11:00-22:00
+Xi'an Impression|#01-67||Daily 11:00-23:00
+Yang's Epok Epok|#B1-K8||Daily 10:00-20:00
+Yugoslavia Bakery & Cafe|#01-32||Daily 09:00-21:00

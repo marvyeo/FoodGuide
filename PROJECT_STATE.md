@@ -1,6 +1,6 @@
 # Makan Map — project state
 
-_Last updated: 18 Oct 2026, ~03:00 SGT (v1.4: craving chips include/exclude; official directories for 17 of 19 Home/East malls; directory hours)_
+_Last updated: 18 Oct 2026, ~10:00 SGT (v1.4: craving chips include/exclude; official directories for 17 of 19 Home/East malls; directory hours)_
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
@@ -168,7 +168,8 @@ Notes:
 - **Hawker coverage %:** NEA counts include drinks stalls and vacant units, so 100% isn't always reachable.
 - **Mall coverage %:**
   - **17 of the 19 malls use the landlord's official live directory** (CapitaLand 15 Oct; the rest 18 Oct). Closed tenants: 199 on 18 Oct (Jewel 47, i12 30, PLQ 26, Century Sq 23, CCP 22, Parkway 20 …). i12 Katong's directory only lists 29 F&B outlets now, so most older i12 entries are closed.
-  - **Opening hours from directories** (Frasers malls, Jewel, Changi City Point): 434 open mall places now have hours, most still `listed` (no dishes).
+  - **Opening hours: 700 of 1,083 open mall places** (18 Oct). From the directory list (Frasers, Jewel, Changi City Point) or per-store pages (Lendlease, Downtown East, i12 Katong, KINEX, Far East, a few SingPost). Most are still `listed` (no dishes).
+  - **No hours published anywhere:** CapitaLand (Bedok Mall 72, Tampines Mall 36, SingPost 46; store pages have no hours), Pasir Ris Mall (53), Our Tampines Hub shops (55). White Sands / Paya Lebar Square (SingMalls) have none either. These rely on family photos or "Still here" confirmations.
   - **Still SingMalls (~2024): White Sands and Paya Lebar Square.** White Sands' site (whitesands.com.sg) returns 403 since FCT sold it; payalebarsquare.com.sg redirects to an unrelated site. Try again later or find the new owners' pages.
   - Mapped can be one below roster when two directory rows match one place (e.g. shared units).
 - **Gaps, in priority order:**
@@ -208,6 +209,13 @@ Notes:
   - **KINEX:** `kinex.com.sg/public/food-beverages`, one static page.
   - **Our Tampines Hub (shops):** People's Association page `pa.gov.sg/our-network/our-tampines-hub/festive-mall-directory` (dated "accurate as of"), readable with WebFetch.
   - Each site needs a one-time **request_access** for the browser pane (all granted as "site").
+- **Per-store opening hours (18 Oct), folded in with `tools/roster_hours.py`:**
+  - **Lendlease:** each store page has a hidden `#panel-opening-times` with one row per weekday (`.flex.justify-between` → day span + slot spans). Watch for landlord typos (PLQ had "Sat 23:30-15:00" and "Thu 11:00-09:30"; corrected to match the other days).
+  - **Downtown East:** detail page text "Operating hours: …" before the location line.
+  - **i12 Katong:** GraphQL `POST https://i12katong.cxcms.ascentis.com.sg/MallsMobile/api/graphql` with `{ outlet(displayinWebsite: true, skip: 0, first: 300, where: {}, orderBy: { displayText: ASC }) { displayText openingHour outletUnitNumber outletCategory { contentItems { displayText } } } }` — no auth.
+  - **KINEX:** `/public/food-beverages/<slug>/<id>` → `.what-detail-list` (unit, hours).
+  - **Far East:** `/en/<mall>/shops/shop?shopName=<NAME with punctuation removed, spaces as +>` → text after "OPENING HOURS".
+  - **CapitaLand:** none (the tenant API and store pages carry no hours).
 - **Fallback mall rosters, SingMalls** (`singmalls.app/en/malls/<slug>/directory`):
   - Complete lists, but an **undated ~2024 snapshot**. It's what we have today for 10 malls.
   - It is stale. Bedok Mall's official list differed by 19 closures and 25 new tenants (incl. Zhang Liang Mala Tang).
@@ -245,6 +253,7 @@ The tools are in `tools/` (Python 3, standard library only). Run them from the r
 | `tools/merge_roster.py` | Merges `data/rosters/<cluster-id>.txt` into `places.json` (see rules below). Use `--all` for every roster file. Safe to re-run. |
 | `tools/validate.py` | Schema and integrity checks. **Run before every push**; it exits non-zero on problems. |
 | `tools/coverage.py` | Coverage report per centre or mall (`--md` for markdown). |
+| `tools/roster_hours.py` | Folds a `Name|hours` list into a roster file's 4th field (for landlords with hours on per-store pages). |
 
 **Roster file format** (`data/rosters/<cluster-id>.txt`):
 
@@ -254,6 +263,8 @@ Stall or outlet name|#unit
 Stall or outlet name|#unit|Opening Soon        (optional note: Opening Soon / New Store → tag "new"; Temporarily Closed → status_note)
 Stall or outlet name|#unit||Monday to Sunday ; 11am to 10pm   (optional 4th field: directory hours, free text)
 ```
+
+When hours live on per-store pages, collect `Name|Mon-Fri 11:00-21:30; Sat-Sun 10:00-21:30` lines and run `python3 tools/roster_hours.py data/rosters/<file>.txt hours.txt` to fill the 4th field, then re-run `merge_roster.py`.
 
 Hours text is parsed by `speclib.free_hours()`; anything ambiguous ("Mon–Thu 7am–9pm; 7am–10pm") is skipped, because wrong hours are worse than none. Directory hours fill places with no hours; an official live directory also refreshes non-`detailed` places. ALL-CAPS directory names go through `speclib.title_if_caps()`.
 
@@ -331,7 +342,8 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 - [x] Official directories for CapitaLand malls (Bedok Mall, Tampines Mall), 15 Oct. PR "Official CapitaLand directories".
 - [x] Official directories for 11 more malls + 4 new malls, 18 Oct (PR "Official directories for the East malls").
 - [ ] **White Sands and Paya Lebar Square** official lists (sites dead/redirecting on 18 Oct).
-- [ ] Enrich the ~900 `listed` mall outlets: hours from CapitaLand/Lendlease store pages (they're per-store), dishes from family menu photos.
+- [x] Per-store hours for Lendlease, Downtown East, i12, KINEX, Far East (18 Oct): mall outlets with hours 434 → 700.
+- [ ] Enrich the ~900 `listed` mall outlets with dishes and prices (family menu photos), and hours where no landlord publishes them (CapitaLand malls, Pasir Ris Mall, Our Tampines Hub).
 - [ ] A **"What's new" view** listing places tagged `new` and recent openings; and clearing `new` tags after ~2 months.
 - [ ] **Close the East gaps** in section 3:
   - Mall directories for Tampines 1, Pasir Ris Mall, Eastpoint (+ Hawkers' Street), SingPost and Downtown East.

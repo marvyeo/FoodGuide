@@ -1,10 +1,10 @@
 # source: far-east | https://www.fareastmalls.com.sg/en/katong-v/shops | live directory (Food & Beverage) | fetched 2026-10-18
-Bakery Cuisine Express|#01-05
-Bread & Hearth|#02-27
-Burrata Joy and Gustavo Lapasta|#01-12
+Bakery Cuisine Express|#01-05||Daily 07:30-21:30
+Bread & Hearth|#02-27||Daily 08:30-20:30
+Burrata Joy and Gustavo Lapasta|#01-12||Daily 11:00-22:00
 Hikaru Omakase|#01-04
-Le Petit Katong|#01-11
+Le Petit Katong|#01-11||Tue-Fri 10:00-21:30; Sat-Sun 09:00-21:30
 Ree.Connect by Ree and Mummy|#01-03
-The Canopy Cafe|#01-01/02
-Tomi Sushi|#02-14
-Yun Ga Traditional Korean Restaurant|#03-09
+The Canopy Cafe|#01-01/02||Daily 10:00-22:00
+Tomi Sushi|#02-14||Daily 10:00-22:00
+Yun Ga Traditional Korean Restaurant|#03-09||Daily 11:00-22:00

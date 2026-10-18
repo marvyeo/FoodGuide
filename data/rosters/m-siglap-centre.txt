@@ -1,4 +1,4 @@
 # source: far-east | https://www.fareastmalls.com.sg/en/siglap-centre/shops | live directory (Food & Beverage) | fetched 2026-10-18
 Foca|#01-12
-Mcdonald's|#01-06
-Subway|#01-13/14
+Mcdonald's|#01-06||Daily 00:00-24:00
+Subway|#01-13/14||Daily 08:00-21:00

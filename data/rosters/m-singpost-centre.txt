@@ -3,7 +3,7 @@ Alchemist|#01-133
 Astons Specialities|#01-115
 Bai Wei Mini Bowl|#03-103
 Beard Papa's|#B1-161
-Bebek Goreng Pak Ndut|#B1-130/131
+Bebek Goreng Pak Ndut|#B1-130/131||Daily 11:00-21:30
 Bibimbap!|#B1-154
 Carl's Jr|#03-105
 Chicken Hotpot|#01-136
@@ -11,7 +11,7 @@ Châteraisé|#01-134/135
 Dough Culture|#01-151A
 Délifrance|#01-141A/141B
 Encik Tan|#B1-156/159
-Eat 3 Bowls|#B1-126
+Eat 3 Bowls|#B1-126||Daily 10:00-22:00
 Fun Toast|#01-126
 Genki Sushi|#01-139
 HJH Maimunah|#B1-147/148/167
@@ -26,9 +26,9 @@ Malaysia Chiak|#B1-151/152
 ManNa Korean Restaurant|#02-138/139
 Mr Teh Tarik Express|#01-131
 Natural Wild Honey|#B1-135
-Old Tea Hut|#01-107A
+Old Tea Hut|#01-107A||Daily 07:00-19:00
 Ottie Pancakes|#01-116
-Pang Pang Kopi|#01-151
+Pang Pang Kopi|#01-151||Daily 08:00-20:30
 PrimaDéli|#B1-164
 Putien|#03-106
 Swensen's|#02-136/137
@@ -40,7 +40,7 @@ Swee Heng 1989 Bakery Café|#B1-158
 Tamoya Udon and Tempura|#01-149A
 Tempura Bar|#01-114
 Texas Chicken|#01-148
-Thai Baang|#B1-136
+Thai Baang|#B1-136||Daily 07:30-22:00
 The Coffee Bean & Tea Leaf|#01-144/145
 The Summer Acai|#03-104
 Thunder Tea Rice|#B1-162/163

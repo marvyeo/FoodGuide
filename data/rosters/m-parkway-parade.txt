@@ -1,69 +1,69 @@
 # source: lendlease | https://www.parkwayparade.com.sg/store-directory/ | live directory (Food & Beverages) | fetched 2026-10-18
-50 Years Taste of Tradition|#B1-111
-AMACHA|#01-11E
-Auntie Anne's|#B1-08
-Bee Cheng Hiang|#B1-88
-Bengawan Solo|#B1-78/79
-Bottles & Bottles|#B1-83K/83L
-BreadTalk|#B1-83P/83Q
-Canton Paradise|#01-34
-Cedele|#B1-83D
-CHAGEE|#01-03–06
-Chalk Farm|#B1-83M
-Chateraise|#03-30B
-Dian Xiao Er|#02-14–17 & 68–70
-Din Tai Fung|#01-15
-Empire Chinese Cuisine|#02-13/13A
-Famous Amos|#B1-61
-Fish Mart Sakuraya|#B1-84D
-Four Leaves|#B1-80–82
-Fun Toast|#02-K3
-Godmama Peranakan|#01-69A/K5/K6
-Gokoku Japanese Bakery|#B1-51/52/65
-Gyukatsu Kyoto Katsugyu|#01-11
-HAKKA YU|#01-36
-Hokkaido Baked Cheese Tart|#01-23B
-HoneyWorld|#B1-55
-Ichiban Boshi|#02-12/12A
-itea|#B1-83
-Jack's Place|#03-30D
-Ji De Chi Dessert|#B1-83J
-KOI Thé|#01-K32
-Koong Woh Tong|#B1-K4
-Kopitiam Food Hall|#B1-85–87 & 112–146
-LeNu|#01-34
-luckin coffee|#01-16A
-Madam Ang KK|#01-K1 & K41
-Mister Donut|#01-16
-Munchi Pancakes|#03-30C
-Nam Kee Pau|#01-09A
-Nan Yang Dao|#01-17A
-Old Chang Kee|#01-14
-Paradise Classic|#01-35
-Paris Baguette|#01-K3 & K43
-Pat's Oven|#B1-83N
-Pepper Lunch|#01-35A
-Potato Corner|#01-14A
-PUTIEN|#01-36
-Ramen Hitoyoshi Lobster & Grill|#01-11F/11G
-R&B Tea|#03-30A
-Sanook Kitchen|#01-17
-Shake Shack|#01-11A/11C/11D
-Smooy|#B1-83E
-stuff'd|#01-K39
-SUPERGREEN|#01-K9
-Sushi Express|#01-K33/K34
-Sushidan|#01-10
-Swensen's|#B1-33/34
-The Coffee Bean & Tea Leaf|#B1-83H
-Tim Hortons|#01-02 & K42
-Toast Box|#B1-83P/83Q
-Tori Q|#01-14C
-Venchi|#01-07/08
-Wine Connection|#B1-54
-WOK HEY|#01-K39
-Xiang Xiang Hunan Cuisine|#01-30
-Ya Kun Cafe|#01-14B
-Yakiniku-GO|#B1-84B/84C
-Yeah Gelato|#01-K38
-Zhang Liang Mala Tang|#03-01/02A
+50 Years Taste of Tradition|#B1-111||Daily 07:00-22:00
+AMACHA|#01-11E||Daily 10:00-21:30
+Auntie Anne's|#B1-08||Daily 11:00-21:00
+Bee Cheng Hiang|#B1-88||Daily 10:00-22:00
+Bengawan Solo|#B1-78/79||Daily 10:30-21:30
+Bottles & Bottles|#B1-83K/83L||Mon-Fri 11:00-21:30; Sat-Sun 10:00-21:30
+BreadTalk|#B1-83P/83Q||Daily 09:00-21:30
+Canton Paradise|#01-34||Mon-Fri 11:00-22:00; Sat-Sun 10:30-22:00
+Cedele|#B1-83D||Daily 09:00-20:30
+CHAGEE|#01-03–06||Daily 09:00-22:00
+Chalk Farm|#B1-83M||Daily 11:00-20:00
+Chateraise|#03-30B||Daily 10:30-21:30
+Dian Xiao Er|#02-14–17 & 68–70||Mon-Thu 11:00-21:30; Fri-Sun 11:00-22:00
+Din Tai Fung|#01-15||Mon-Thu 11:00-21:00; Fri-Sat 11:00-21:15; Sun 11:00-21:00
+Empire Chinese Cuisine|#02-13/13A||Mon-Fri 11:30-15:00,17:30-22:00; Sat-Sun 10:30-17:00,17:30-22:00
+Famous Amos|#B1-61||Daily 11:00-21:30
+Fish Mart Sakuraya|#B1-84D||Daily 10:30-22:00
+Four Leaves|#B1-80–82||Daily 09:00-21:00
+Fun Toast|#02-K3||Daily 08:00-20:30
+Godmama Peranakan|#01-69A/K5/K6||Daily 10:00-22:00
+Gokoku Japanese Bakery|#B1-51/52/65||Daily 10:00-21:30
+Gyukatsu Kyoto Katsugyu|#01-11||Daily 11:00-22:00
+HAKKA YU|#01-36||Daily 11:30-22:00
+Hokkaido Baked Cheese Tart|#01-23B||Daily 10:00-22:00
+HoneyWorld|#B1-55||Daily 10:00-21:30
+Ichiban Boshi|#02-12/12A||Mon-Fri 11:30-22:30; Sat-Sun 11:00-22:30
+itea|#B1-83||Daily 11:00-21:45
+Jack's Place|#03-30D||Daily 11:00-22:00
+Ji De Chi Dessert|#B1-83J||Daily 10:30-22:00
+KOI Thé|#01-K32||Mon-Fri 12:00-22:00; Sat-Sun 11:00-22:00
+Koong Woh Tong|#B1-K4||Daily 10:00-22:00
+Kopitiam Food Hall|#B1-85–87 & 112–146||Daily 07:00-22:00
+LeNu|#01-34||Mon-Fri 11:00-22:00; Sat-Sun 10:30-22:00
+luckin coffee|#01-16A||Daily 08:00-21:30
+Madam Ang KK|#01-K1 & K41||Daily 08:00-21:00
+Mister Donut|#01-16||Daily 11:00-21:00
+Munchi Pancakes|#03-30C||Daily 08:00-21:30
+Nam Kee Pau|#01-09A||Daily 10:00-22:00
+Nan Yang Dao|#01-17A||Daily 10:00-22:00
+Old Chang Kee|#01-14||Daily 10:00-21:00
+Paradise Classic|#01-35||Mon-Fri 11:00-22:00; Sat-Sun 10:30-22:00
+Paris Baguette|#01-K3 & K43||Daily 08:00-22:00
+Pat's Oven|#B1-83N||Daily 10:00-21:30
+Pepper Lunch|#01-35A||Daily 10:00-22:00
+Potato Corner|#01-14A||Daily 11:00-21:00
+PUTIEN|#01-36||Daily 11:30-22:00
+Ramen Hitoyoshi Lobster & Grill|#01-11F/11G||Daily 11:00-21:30
+R&B Tea|#03-30A||Daily 10:00-21:00
+Sanook Kitchen|#01-17||Daily 11:00-22:00
+Shake Shack|#01-11A/11C/11D||Daily 10:00-22:00
+Smooy|#B1-83E||Daily 11:30-22:00
+stuff'd|#01-K39||Daily 10:00-21:00
+SUPERGREEN|#01-K9||Mon-Fri 11:00-20:30; Sat-Sun 10:30-21:00
+Sushi Express|#01-K33/K34||Daily 11:00-21:30
+Sushidan|#01-10||Daily 11:00-22:00
+Swensen's|#B1-33/34||Daily 11:00-22:30
+The Coffee Bean & Tea Leaf|#B1-83H||Daily 08:00-22:00
+Tim Hortons|#01-02 & K42||Daily 08:00-22:00
+Toast Box|#B1-83P/83Q||Daily 07:30-21:30
+Tori Q|#01-14C||Mon-Thu 10:30-21:00; Fri-Sat 10:30-21:30; Sun 10:30-21:00
+Venchi|#01-07/08||Daily 11:00-22:00
+Wine Connection|#B1-54||Daily 10:00-22:00
+WOK HEY|#01-K39||Daily 10:30-22:00
+Xiang Xiang Hunan Cuisine|#01-30||Daily 11:00-22:00
+Ya Kun Cafe|#01-14B||Mon-Thu 07:00-20:00; Fri-Sat 07:00-22:00; Sun 07:00-20:00
+Yakiniku-GO|#B1-84B/84C||Mon-Fri 11:30-22:00; Sat-Sun 11:00-22:00
+Yeah Gelato|#01-K38||Daily 10:00-22:00
+Zhang Liang Mala Tang|#03-01/02A||Daily 11:00-22:00
