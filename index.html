@@ -292,7 +292,7 @@ let familyId = LS.get('familyId', null);
 let fam = Object.assign({ members: [], logs: [], wants: [], places_added: [], photos: [] }, LS.get('fam', {})); // raw rows (no header)
 let outbox = LS.get('outbox', []);   // [{tab,row}]
 let guest = LS.get('guest', false);
-let prefs = Object.assign({ meal: 'now', reach: 'near', budget: [1, 2, 3], mode: 'any', cuisines: [], cuisinesOut: [], untried: false, mustOnly: false, openOnly: true, eaters: null, spinMode: 'stall', home: null, useGps: false }, LS.get('prefs', {}));
+let prefs = Object.assign({ meal: 'now', reach: 'near', budget: [1, 2, 3], mode: 'any', cuisines: [], cuisinesOut: [], spinKinds: [], skipChains: false, untried: false, mustOnly: false, openOnly: true, eaters: null, spinMode: 'stall', home: null, useGps: false }, LS.get('prefs', {}));
 let tab = 'spin', syncState = 'idle', gps = null, lastResult = null, tokenClient = null, mapObj = null;
 
 /* ---------------- helpers ---------------- */
@@ -365,7 +365,7 @@ function familyView() {
 }
 let FV = { members: [], logs: [], wants: [], added: [], photos: [] };
 let PLACES = [], CLUSTERS = [];
-function rebuild() {
+function rebuild() { CHAIN_COUNT = null;
   FV = familyView();
   CLUSTERS = DB.clusters;
   PLACES = [...DB.places, ...FV.added.filter(a => !DB.places.find(p => p.id === a.id)).map(a => ({ ...a, family: true }))];
@@ -392,6 +392,8 @@ function candidates() {
     if (prefs.mode === 'takeaway' && !p.modes.includes('takeaway')) return false;
     if (prefs.cuisines.length && !prefs.cuisines.includes(p.cuisine)) return false;
     if ((prefs.cuisinesOut || []).includes(p.cuisine)) return false;
+    if ((prefs.spinKinds || []).length && !prefs.spinKinds.includes(kindOf(p))) return false;
+    if (prefs.skipChains && isChain(p)) return false;
     if (prefs.mustOnly && !p.must_try) return false;
     if (prefs.untried && triedBy(p.id, ids)) return false;
     if (prefs.openOnly) { const op = openAt(p, date); if (op.known ? !op.open : !typicalHours(date)) return false; }
@@ -408,7 +410,30 @@ function weight(p) {
   if (p.must_try) w += 0.5;
   if (ids.some(m => wanted(p.id, m))) w += 1;
   w -= Math.min(p._d, 10) * 0.06;
-  return Math.max(0.15, w);
+  w = Math.max(0.15, w);
+  // At lunch/dinner, drinks, dessert and snack kiosks are a side, not a meal — unless asked for.
+  if (isMealtime() && SIDES.includes(p.cuisine) && !prefs.cuisines.includes(p.cuisine)) w *= 0.2;
+  return w;
+}
+const SIDES = ['drinks', 'dessert', 'snacks'];
+function isMealtime() { if (prefs.meal === 'lunch' || prefs.meal === 'dinner') return true; if (prefs.meal !== 'now') return false; const h = new Date().getHours(); return (h >= 11 && h < 14) || (h >= 17 && h < 21); }
+// Chains: the same brand in several malls ("Luckin Coffee (Tampines 1)", "Luckin Coffee (Jewel)"). Hawker stalls are never treated as chains.
+const brandOf = p => p.name.replace(/\s*\([^)]*\)\s*$/, '').toLowerCase().replace(/[’'`.]/g, '').replace(/\s+/g, ' ').trim();
+let CHAIN_COUNT = null;
+function isChain(p) {
+  if (kindOf(p) === 'hawker') return false;
+  if (!CHAIN_COUNT) { CHAIN_COUNT = {}; for (const q of PLACES) if (q.status !== 'closed' && kindOf(q) !== 'hawker') { const b = brandOf(q); CHAIN_COUNT[b] = (CHAIN_COUNT[b] || 0) + 1; } }
+  return (CHAIN_COUNT[brandOf(p)] || 0) >= 3;
+}
+// One entry per brand in the stall spin: keep the nearest outlet, so a 10-outlet chain gets one chance, not ten.
+function spinPool(cands) {
+  const best = {}, out = [];
+  for (const p of cands) {
+    if (kindOf(p) === 'hawker') { out.push(p); continue; }
+    const b = brandOf(p);
+    if (!best[b] || p._d < best[b]._d) best[b] = p;
+  }
+  return out.concat(Object.values(best));
 }
 function pickWeighted(list) { const ws = list.map(weight); let r = Math.random() * ws.reduce((a, b) => a + b, 0); for (let i = 0; i < list.length; i++) { r -= ws[i]; if (r <= 0) return list[i]; } return list[list.length - 1]; }
 function clusterCandidates(cands) {
@@ -440,17 +465,18 @@ function viewSpin() {
   const people = FV.members.length ? FV.members : (me ? [me] : []);
   const ids = eaters();
   const cuisinesHere = [...new Set(PLACES.map(p => p.cuisine))].sort((a, b) => cuisineName(a).localeCompare(cuisineName(b)));
-  const nClusters = clusterCandidates(cands).length;
+  const nClusters = clusterCandidates(cands).length, nStall = spinPool(cands).length;
   $('#view').innerHTML = `
   <div class="spin-hero">
     <div class="row between"><h1>What's for ${MEALS[prefs.meal][0] === 'Now' ? 'makan' : MEALS[prefs.meal][0].toLowerCase()}?</h1></div>
-    <div class="match-count">${prefs.spinMode === 'stall' ? `${cands.length} place${cands.length === 1 ? '' : 's'} match` : `${nClusters} food centre${nClusters === 1 ? '' : 's'} match`} · from ${prefs.useGps && gps ? 'where you are' : esc((prefs.home && prefs.home.name) || DB.home.name)}</div>
+    <div class="match-count">${prefs.spinMode === 'stall' ? `${nStall} place${nStall === 1 ? '' : 's'} match` : `${nClusters} food centre${nClusters === 1 ? '' : 's'} match`} · from ${prefs.useGps && gps ? 'where you are' : esc((prefs.home && prefs.home.name) || DB.home.name)}</div>
     <div class="reel"><div class="names" id="reel"><div class="name">${lastResult ? esc(lastResult.name || lastResult.c?.name) : 'Tap spin 🎲'}</div></div></div>
     <button class="spin-btn" onclick="spin()">SPIN</button>
     <div class="mode-switch"><button class="${prefs.spinMode === 'stall' ? 'on' : ''}" onclick="setP('spinMode','stall')">Pick a stall</button><button class="${prefs.spinMode === 'centre' ? 'on' : ''}" onclick="setP('spinMode','centre')">Pick a centre (groups)</button></div>
   </div>
   <div id="result"></div>
   ${people.length > 1 ? `<div class="filter-label">Who's eating</div>${chipRow(people.map(m => [m.id, `${m.emoji || '🙂'} ${esc(m.name)}`]), k => ids.includes(k), 'toggleEater', 'person')}` : ''}
+  <div class="filter-label">Where <span class="faint" style="text-transform:none;letter-spacing:0">(none = all)</span></div>${chipRow(KINDS.filter(([k]) => k !== 'all'), k => (prefs.spinKinds || []).includes(k), 'toggleSpinKind')}
   <div class="filter-label">When</div>${chipRow(Object.entries(MEALS).map(([k, v]) => [k, v[0]]), k => prefs.meal === k, 'setMeal')}
   <div class="filter-label">How far</div>${chipRow(Object.entries(REACH).map(([k, v]) => [k, k === 'walk' ? '🚶 Walkable' : k === 'near' ? '🚌 Short ride' : '🚗 Anywhere']), k => prefs.reach === k, 'setReach')}
   <div class="filter-label">Budget</div>${chipRow([[1, '$ <$8'], [2, '$$ $8–20'], [3, '$$$ $20–50'], [4, '$$$$ $50+']], k => prefs.budget.includes(+k), 'toggleBudget')}
@@ -460,6 +486,7 @@ function viewSpin() {
     ${toggleRow('openOnly', 'Only places open at that time')}
     ${toggleRow('untried', ids.length > 1 ? 'Only places none of us have tried' : "Only places I haven't tried")}
     ${toggleRow('mustOnly', 'Must-try places only ⭐')}
+    ${toggleRow('skipChains', 'Skip chains (brands with 3+ outlets)')}
   </div>`;
   if (lastResult) showResult(lastResult, false);
 }
@@ -490,6 +517,7 @@ function toggleCuisine(k) {
   savePrefs(); lastResult = null; render();
 }
 function clearCuisines() { prefs.cuisines = []; prefs.cuisinesOut = []; savePrefs(); lastResult = null; render(); }
+function toggleSpinKind(k) { const s = prefs.spinKinds || []; prefs.spinKinds = s.includes(k) ? s.filter(x => x !== k) : [...s, k]; savePrefs(); lastResult = null; render(); }
 function toggleEater(k) { let e = eaters(); e = e.includes(k) ? e.filter(x => x !== k) : [...e, k]; prefs.eaters = e.length ? e : null; savePrefs(); render(); }
 
 function spin() {
@@ -502,7 +530,7 @@ function spin() {
     const top = cc.slice(0, 3); winner = top[Math.floor(Math.random() * top.length)];
   } else {
     if (!cands.length) return toast('Nothing matches — loosen a filter');
-    pool = cands.map(p => p.name); winner = pickWeighted(cands);
+    const sp = spinPool(cands); pool = sp.map(p => p.name); winner = pickWeighted(sp);
   }
   const reel = $('#reel'), reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const seq = []; for (let i = 0; i < 14; i++) seq.push(pool[Math.floor(Math.random() * pool.length)]);
