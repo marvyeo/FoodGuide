@@ -7,7 +7,7 @@ Compact specs used by data-entry scripts:
   band(dishes) -> 1..4 price band from the lower-median price ($<8, <20, <50, 50+)
   guess_cuisine("Ajisen Ramen") -> "japanese"  (keyword heuristic for roster-only entries; default "other")
 """
-import re, json, math
+import re, json, math, unicodedata
 
 DAYS = {"sun": 0, "mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6}
 CUISINES = ["chicken-rice", "noodles", "carrot-cake", "yong-tau-foo", "rice", "vegetarian", "braised", "snacks", "drinks", "western",
@@ -63,7 +63,7 @@ def band(ds):
 _CUISINE_KEYWORDS = [  # first match wins; order matters
     ("vegetarian", r"vegan|vegetarian|greendot|elemen|\bveg\b"),
     ("dessert", r"dessert|gelat|ice cream|yogurt|yogost|yole|llaollao|smooy|swensen|baskin|cendol|chendol|durian|mochi|lady m|cheesecake|churros|apple strudel|tart|natural|kones|sweet hut|jin hor|nine fresh|ji de chi|xing fu|frozen|ice lab|pudding"),
-    ("drinks", r"\btea\b|\bthe\b|\bthé\b|koi|liho|chicha|chagee|gong cha|playmade|sharetea|bober|r&b|alley|tuk tuk cha|chatramue|boost|juice|coconut|fruits|kopi|kaya|toast|coffee|starbucks|luckin|huggs|flash coffee|arabica|kopitime|chug|mr bean|xixiang|ya kun|wine connection|bottles|bean\b|hey long|tea pulse|herbal tea|oleh oleh"),
+    ("drinks", r"\btea\b|\bthé\b|koi|liho|chicha|chagee|gong cha|playmade|sharetea|bober|r&b|alley|tuk tuk cha|chatramue|boost|juice|coconut|fruits|kopi|kaya|toast|coffee|starbucks|luckin|huggs|flash coffee|arabica|kopitime|chug|mr bean|xixiang|ya kun|wine connection|bottles|bean\b|hey long|tea pulse|herbal tea|oleh oleh"),
     ("japanese", r"ramen|sushi|\bdon\b|donburi|kaisendon|udon|soba|yakiniku|tonkatsu|katsu|tempura|izakaya|shokudo|teppan|pepper lunch|sukiya|yoshinoya|tenya|ippudo|kanada|keisuke|ajisen|itacho|sushiro|genki|tamago|aburi|ichiban|kajiken|menzo|maki-san|tori-q|toriten|osaka ohsho|gyudon|ichikokudo|tanuki|hoshino|tokyo"),
     ("korean", r"korean|seoul|bibimbap|nene|bonchon|jinjja|kko kko|ajumma|manna|chicken run|pizza maru|seorae|paik|coffeesarang|sarang|kimchi"),
     ("thai", r"thai|sanook|siam|boat noodle|yum yum"),
@@ -93,10 +93,34 @@ KNOWN = {
  "soul alife": "western", "xycd": "drinks", "fun toast": "drinks", "kaffe & toast": "drinks", "toast box": "drinks", "wine connection": "western",
  "the coffee bean": "cafe", "starbucks": "cafe", "huggs": "cafe", "flash coffee": "cafe", "luckin": "cafe", "another bean": "cafe", "arabica": "cafe",
  "hoshino coffee": "japanese", "o'coffee club": "cafe", "paul": "cafe", "delifrance": "cafe", "pazzion": "cafe", "tim hortons": "cafe",
- "tamjai": "noodles", "57°c mala": "other", "ipot mala": "other", "big fish": "western", "tai er": "zi-char",
+ "tamjai": "noodles",
+ # added 18 Oct 2026 with the official mall directories
+ "ipot": "other", "haidilao": "other", "paradise hotpot": "other", "108 matcha": "dessert", "amacha": "drinks", "an acai": "dessert", "acai": "dessert",
+ "brotherbird": "dessert", "churn": "dessert", "collin's": "western", "fieldnotes": "cafe", "grains & co": "rice", "hawkers' street": "rice",
+ "i love taimei": "snacks", "keming": "dumplings", "kuriya": "japanese", "namu bulgogi": "korean", "nippon bite": "japanese", "plum village": "zi-char",
+ "popeyes": "western", "rrooll": "dessert", "shiok pan": "snacks", "sinpopo": "cafe", "tsuzumi": "dessert", "yew kee": "braised",
+ "50 years taste": "drinks", "50 taste": "drinks", "abundance": "zi-char", "auntie peng": "snacks", "butahage": "japanese", "chapanda": "drinks",
+ "ministry of rojak": "snacks", "nan yang dao": "drinks", "57 mala": "other", "a hot hideout": "other", "andes by astons": "western",
+ "butter & cream": "dessert", "koo kee": "noodles", "nandhana": "indian", "primadeli": "snacks", "sakura family": "japanese", "shi li fang": "other",
+ "veggie house": "vegetarian", "xi men jie": "snacks", "baba nyonya": "malay", "cha mulan": "drinks", "creamie sippies": "dessert", "fish & co": "western",
+ "heytea": "drinks", "lotteria": "korean", "monarchs & milkweed": "western", "mrs pho": "noodles", "nong geng ji": "zi-char", "queic": "snacks",
+ "royal host": "western", "sugarbelly": "dessert", "tutto": "western", "wild coco": "drinks", "wu fang zhai": "snacks", "yes lemon": "drinks",
+ "shan 山里有": "zi-char", "home's favourite": "snacks", "kele": "snacks", "dabba street": "indian", "food arena": "rice", "laaziiz": "western",
+ "niu hong hong": "noodles", "roll gaadi": "indian", "saigon": "noodles", "supergreen": "western", "uncle john": "rice", "yangguofu": "noodles",
+ "aroycado": "western", "cookboys": "western", "en seeds": "vegetarian", "nainai": "zi-char", "yo mama": "dessert", "barcook": "snacks",
+ "first bowl": "noodles", "happy bites": "snacks", "khao hom": "thai", "o.bba": "korean", "redman": "snacks", "tsujiri": "dessert",
+ "white restaurant": "noodles", "yayoi": "japanese", "empire chinese": "zi-char", "hakka yu": "zi-char", "honeyworld": "snacks", "lenu": "noodles",
+ "madam ang": "snacks", "pat's oven": "snacks", "bites by scarlett": "snacks", "cedele": "cafe", "chao chao xiang": "zi-char", "chen's": "zi-char",
+ "harrianns": "malay", "henri charpentier": "dessert", "nikutosake": "japanese", "pura brasa": "western", "rumel": "western", "carl's jr": "western",
+ "chateraise": "dessert", "lau wang": "zi-char", "lickers": "dessert", "honeybee": "dessert", "sloppy shack": "western", "hahahotpot": "other",
+ "ajiya": "japanese", "singapura heritage": "malay", "jyu yae": "japanese", "eminami": "japanese", "kin kao": "thai", "tiong bahru yong tao": "yong-tau-foo",
+ "delifrance": "cafe", "crown prince": "zi-char", "wok": "zi-char", "cha yu fan hou": "rice", "each-a-cup": "drinks", "segar": "malay",
+ "kopitiam": "rice", "kopi & tarts": "drinks", "kopifellas": "drinks", "pancake king": "snacks", "munchi": "snacks", "ottie": "snacks", "fragrance bak kwa": "snacks",
+ "godiva": "dessert", "cat & the fiddle": "dessert", "the summer acai": "dessert", "the jellyhearts": "dessert", "thejellyhearts": "dessert", "the coach": "western", "laderach": "dessert", "mdm ling": "snacks", "yu cookies": "snacks", "kang ji": "snacks", "eighteen plum": "snacks",
+ "battercatch": "western", "eighteen plum": "snacks", "hainan second street": "rice", "ji xiang": "snacks", "little pond": "soup", "nespresso": "cafe", "shanghai tan": "dumplings", "xiang xiang hunan": "zi-char", "alchemist": "cafe", "im qalb": "korean", "kenangan": "cafe", "kuan zhai alley": "zi-char", "ygf malatang": "noodles", "delibowl": "rice", "toast & roll": "drinks", "cut butchery": "other", "sgfr": "other", "cellarbration": "other", "57°c mala": "other", "ipot mala": "other", "big fish": "western", "tai er": "zi-char",
 }
 def guess_cuisine(name):
-    n = name.lower()
+    n = unicodedata.normalize("NFKD", re.sub(r"\s*\([^)]*\)$", "", name)).encode("ascii", "ignore").decode().lower().strip()
     for k, v in KNOWN.items():
         if n.startswith(k) or n == k: return v
     for c, pat in _CUISINE_KEYWORDS:
@@ -105,6 +129,7 @@ def guess_cuisine(name):
 
 def norm(s):
     """Brand key for matching: lowercase, drop (...) labels, punctuation, 'the', common suffixes."""
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode() if s.isascii() is False else s
     s = re.sub(r"\([^)]*\)", "", s.lower())
     s = re.sub(r"[’'`]", "", s)
     s = re.sub(r"[^a-z0-9]+", " ", s)
@@ -125,3 +150,87 @@ def km(a, b):
 
 def load(path="data/places.json"): return json.load(open(path))
 def save(D, path="data/places.json"): json.dump(D, open(path, "w"), ensure_ascii=False, indent=1)
+
+# ---- free-text opening hours from mall directories -------------------------------------------
+_DN = {"mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6, "sun": 0}
+_DAYWORD = r"(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?"
+_TIME = r"(\d{1,4})(?:[:.](\d{2}))?\s*(am|pm|noon|midnight)?"
+
+def _t(h, m, ap, end=False):
+    h, m = int(h), int(m or 0)
+    if h > 24 and not m: h, m = h // 100, h % 100            # "930pm" without a separator
+    ap = (ap or "").lower()
+    if ap == "pm" and h < 12: h += 12
+    if ap in ("am", "midnight") and h == 12: h = 0
+    if ap == "noon": h = 12
+    if h == 24: h = 0
+    if not (0 <= h < 24 and 0 <= m < 60): raise ValueError
+    return f"{h:02d}:{m:02d}"
+
+def _dayset(txt):
+    """'Monday to Thursday, Sunday' / 'Mon-Fri' / 'Daily' -> set of ints, or None if no day words."""
+    t = txt.lower()
+    if re.search(r"daily|everyday|every day|mon(day)?\s*(to|-|–)\s*sun(day)?", t) and not re.search(r"except", t): return set(range(7))
+    out, found = set(), False
+    for m in re.finditer(rf"({_DAYWORD})(?:\s*(?:to|-|–)\s*({_DAYWORD}))?", t):
+        found = True
+        a = _DN[m.group(1)[:3]]
+        if m.group(2):
+            b = _DN[m.group(2)[:3]]; i = a
+            while True:
+                out.add(i)
+                if i == b: break
+                i = (i + 1) % 7
+        else: out.add(a)
+    return out if found else None
+
+def free_hours(text):
+    """Best-effort parse of directory opening hours ('Monday to Sunday ; 11am to 10pm (last order 9.30pm)',
+    '(Monday, Tuesday) 08:00 AM - 12:00 AM; (Friday, Saturday) 24 Hours', 'Mon-Fri: 8am-8pm; Sat & Sun: 9am-9pm').
+    Returns the hours() list, or [] when the text is missing or ambiguous (wrong hours are worse than none)."""
+    if not text: return []
+    t = re.sub(r"\([^)]*last order[^)]*\)|last orders?[^;]*|kitchen[^;]*", " ", text, flags=re.I)
+    t = re.sub(r"\(([^)]*)\)", r" \1 ", t)                      # '(Monday, Tuesday)' -> plain
+    t = re.sub(r"\b(and|&)\s*(ph|public holidays?|eve of ph)\b|\bph\b|public holidays?|eve of ph|including", " ", t, flags=re.I)
+    t = t.replace("–", "-").replace("—", "-")
+    t = re.sub(r"24\s*h(ou)?rs?", "00:00 am - 12:00 midnight", t, flags=re.I)
+    t = re.sub(r"12\s*midnight", "12:00 midnight", t, flags=re.I)
+    rng = re.compile(rf"{_TIME}\s*(?:-|to)\s*{_TIME}", re.I)
+    rules, cur, last_end, pending_slots = {}, None, 0, []
+    try:
+        for m in rng.finditer(t):
+            between = t[last_end:m.start()]
+            ds = _dayset(between)
+            if ds is not None: cur = frozenset(ds)
+            elif cur is None: cur = frozenset(range(7))
+            elif rules and not re.fullmatch(r"[\s,;/&]*", between.replace("and", "")): return []
+            elif rules and ";" in between and cur != frozenset(range(7)): return []   # 'Mon-Thu 7am-9pm; 7am-10pm' — which days?
+            sap = m.group(3)
+            if not sap and m.group(6) and m.group(6).lower() == "pm" and int(m.group(1)) < 12 and int(m.group(1)) <= int(m.group(4)): sap = "pm"
+            elif not sap and m.group(6): sap = "am"
+            a = _t(m.group(1), m.group(2), sap)
+            b = _t(m.group(4), m.group(5), m.group(6), end=True)
+            if a == "00:00" and b == "00:00": b = "24:00"
+            rules.setdefault(cur, []).append(f"{a}-{b}")
+            last_end = m.end()
+    except (ValueError, KeyError):
+        return []
+    if not rules: return []
+    seen = set()
+    for ds in rules:
+        if seen & ds: return []                                   # overlapping day sets — ambiguous
+        seen |= ds
+    return [["".join(str(d) for d in sorted(ds)), sl] for ds, sl in rules.items()]
+
+def title_if_caps(name):
+    """'CHICKEN HOTPOT & CO' -> 'Chicken Hotpot & Co' (only for ALL-CAPS directory names)."""
+    letters = [c for c in name if c.isalpha() and c.isascii()]
+    if not letters or not all(c.isupper() for c in letters): return name
+    small = {"and", "of", "by", "the", "at", "x", "y", "&"}
+    keep = {"BBQ", "KFC", "SF", "KOI", "BLVD", "R&B", "YGF", "HJH", "II", "III"}
+    out = []
+    for i, w in enumerate(name.split(" ")):
+        if w in keep: out.append(w)
+        elif i and w.lower() in small: out.append(w.lower())
+        else: out.append(re.sub(r"[A-Za-z][A-Za-z’']*", lambda m: m.group(0)[0] + m.group(0)[1:].lower(), w))
+    return " ".join(out)

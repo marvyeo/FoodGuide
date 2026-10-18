@@ -569,7 +569,8 @@ let exploreSeg = 'centres', exploreQ = '', exploreZone = 'all';
 // Cuisine + venue-type filters shared by Explore and Map (remembered on this device).
 const KINDS = [['all', 'All'], ['hawker', '🏮 Hawker'], ['mall', '🛍️ Malls'], ['solo', '🍽️ Restaurants']];
 const kindOf = p => { if (!p.cluster) return 'solo'; const c = CLUSTERS.find(x => x.id === p.cluster); return c && c.type === 'mall' ? 'mall' : 'hawker'; };
-const browseOK = p => (!prefs.browseCuisines?.length || prefs.browseCuisines.includes(p.cuisine)) && (!prefs.browseKind || prefs.browseKind === 'all' || kindOf(p) === prefs.browseKind);
+const live = p => p.status !== 'closed';
+const browseOK = p => live(p) && (!prefs.browseCuisines?.length || prefs.browseCuisines.includes(p.cuisine)) && (!prefs.browseKind || prefs.browseKind === 'all' || kindOf(p) === prefs.browseKind);
 const browseActive = () => !!(prefs.browseCuisines?.length || (prefs.browseKind && prefs.browseKind !== 'all'));
 function browseChips(after) {
   const cs = [...new Set(PLACES.map(p => p.cuisine))].sort((a, b) => cuisineName(a).localeCompare(cuisineName(b)));
@@ -603,8 +604,8 @@ function placeRow(p) {
   const [hl, hc] = hoursLabel(p); const d = km(origin(), p); const mine = me && logsFor(p.id, me.id)[0];
   const ph = coverPhoto(p.id);
   return `<div class="pcard" onclick="openPlace('${p.id}')"><div class="pemoji">${ph ? photoImg(ph, 160) : emojiOf(p)}</div><div class="grow">
-    <div class="pname ellipsis">${esc(p.name)}${p.confidence === 'listed' ? ' <span class="badge" title="Name and unit only — details unconfirmed">listed</span>' : ''}</div>
-    <div class="meta"><span class="badge ${hc}">${hl}</span><span>${PRICE[p.price_band || 1]}</span><span>${d.toFixed(1)} km</span>${p.unit && p.cluster ? `<span>${esc(p.unit)}</span>` : ''}</div>
+    <div class="pname ellipsis">${esc(p.name)}${p.tags.includes('new') && live(p) ? ' <span class="badge must">🆕 New</span>' : ''}${p.confidence === 'listed' ? ' <span class="badge" title="Name and unit only — details unconfirmed">listed</span>' : ''}</div>
+    <div class="meta"><span class="badge ${live(p) ? hc : 'closed'}">${live(p) ? hl : 'Closed'}</span><span>${PRICE[p.price_band || 1]}</span><span>${d.toFixed(1)} km</span>${p.unit && p.cluster ? `<span>${esc(p.unit)}</span>` : ''}</div>
     <div class="meta">${p.dishes[0] ? `<span class="ellipsis">${esc(p.dishes.map(x => x.name).join(' · '))}</span>` : '<span class="faint">No dish info yet</span>'}</div>
   </div><div style="text-align:right;flex:none">${p.must_try ? '<div>⭐</div>' : ''}${mine ? `<span class="badge tried">★${mine.stars}</span>` : ''}${p.family ? '<div class="tiny faint">family-added</div>' : ''}</div></div>`;
 }
@@ -613,7 +614,7 @@ function exploreList() {
   const o = origin();
   if (exploreSeg === 'centres') {
     const inZone = x => exploreZone === 'all' || x.zone === exploreZone;
-    const rows = CLUSTERS.filter(inZone).map(c => { const all = PLACES.filter(p => p.cluster === c.id); return { c, all, ps: all.filter(browseOK), d: km(o, c) }; })
+    const rows = CLUSTERS.filter(inZone).map(c => { const all = PLACES.filter(p => p.cluster === c.id && live(p)); return { c, all, ps: all.filter(browseOK), d: km(o, c) }; })
       .filter(x => x.ps.length || !browseActive()).filter(x => !q || x.c.name.toLowerCase().includes(q.toLowerCase()) || x.ps.some(p => matchQ(p, q))).sort((a, b) => a.d - b.d);
     const solo = PLACES.filter(p => !p.cluster && inZone(p) && browseOK(p) && matchQ(p, q)).sort((a, b) => km(o, a) - km(o, b));
     if (!rows.length && !solo.length) { box.innerHTML = '<div class="empty"><span class="e">🤷</span>Nothing matches these filters.</div>'; return; }
@@ -650,7 +651,8 @@ function openPlace(id) {
   const bare = p.name.replace(/\s*\([^)]*\)/g, '').trim(); // drop "(Tampines Mall)" style labels for web searches
   const q = encodeURIComponent(bare + ' ' + (c ? c.name : p.address || '') + ' Singapore');
   sheet(`${hero ? `<div class="hero-photo" onclick="viewPhoto('${hero.id}')">${photoImg(hero, 1000)}</div>` : ''}<div class="row" style="gap:14px;margin-right:46px"><div class="big-emoji pemoji" style="width:60px;height:60px;font-size:32px">${emojiOf(p)}</div><div class="grow"><h2>${esc(p.name)}</h2>${p.name_zh ? `<div class="muted small">${esc(p.name_zh)}</div>` : ''}</div></div>
-    <div class="row wrap" style="margin-top:12px;gap:6px"><span class="badge ${hc}">${hl}</span><span class="badge">${PRICE[p.price_band || 1]}</span><span class="badge">${cuisineName(p.cuisine)}</span>${p.must_try ? '<span class="badge must">⭐ Must-try</span>' : ''}${p.modes.includes('dine') ? '<span class="badge">🪑 Dine-in</span>' : ''}${p.modes.includes('takeaway') ? '<span class="badge">🥡 Tapau</span>' : ''}${p.travels_well === true ? '<span class="badge">Travels well</span>' : p.travels_well === false ? '<span class="badge">Best eaten there</span>' : ''}${(p.diet || []).map(d => `<span class="badge">${esc(d)}</span>`).join('')}</div>
+    ${!live(p) ? `<div class="card listed-note small" style="margin-top:12px">🚪 <b>Closed or moved out.</b> ${esc(p.closed_note || '')}</div>` : p.status_note ? `<div class="card listed-note small" style="margin-top:12px">⏸️ ${esc(p.status_note)}</div>` : ''}
+    <div class="row wrap" style="margin-top:12px;gap:6px">${live(p) ? `<span class="badge ${hc}">${hl}</span>` : '<span class="badge closed">Closed</span>'}${p.tags.includes('new') && live(p) ? '<span class="badge must">🆕 New</span>' : ''}<span class="badge">${PRICE[p.price_band || 1]}</span><span class="badge">${cuisineName(p.cuisine)}</span>${p.must_try ? '<span class="badge must">⭐ Must-try</span>' : ''}${p.modes.includes('dine') ? '<span class="badge">🪑 Dine-in</span>' : ''}${p.modes.includes('takeaway') ? '<span class="badge">🥡 Tapau</span>' : ''}${p.travels_well === true ? '<span class="badge">Travels well</span>' : p.travels_well === false ? '<span class="badge">Best eaten there</span>' : ''}${(p.diet || []).map(d => `<span class="badge">${esc(d)}</span>`).join('')}</div>
     <div class="card" style="margin-top:14px">
       <div class="small">${c ? `<a href="#" onclick="event.preventDefault();openCluster('${c.id}')">${esc(c.name)}</a>` : esc(p.address || '')}${p.unit ? ' · ' + esc(p.unit) : ''}</div>
       <div class="small muted" style="margin-top:4px">${distanceLine(p)}</div>
@@ -679,7 +681,8 @@ function openPlace(id) {
 }
 function openCluster(id) {
   const c = CLUSTERS.find(x => x.id === id); if (!c) return;
-  const ps = PLACES.filter(p => p.cluster === id).sort((a, b) => (browseActive() ? browseOK(b) - browseOK(a) : 0) || (!!openAt(b, new Date()).open - !!openAt(a, new Date()).open) || a.name.localeCompare(b.name));
+  const gone = PLACES.filter(p => p.cluster === id && !live(p)).sort((a, b) => a.name.localeCompare(b.name));
+  const ps = PLACES.filter(p => p.cluster === id && live(p)).sort((a, b) => (browseActive() ? browseOK(b) - browseOK(a) : 0) || (!!openAt(b, new Date()).open - !!openAt(a, new Date()).open) || a.name.localeCompare(b.name));
   const total = c.stalls_total;
   sheet(`<div style="margin-right:46px"><span class="badge" style="background:${zone(c.zone).color}22;color:${zone(c.zone).color}">${esc(zone(c.zone).name)}</span><h2 style="margin-top:6px">${esc(c.name)}</h2><div class="small muted">${esc(c.address)}</div></div>
     <div class="small muted" style="margin-top:6px">${distanceLine(c)}</div>
@@ -689,7 +692,8 @@ function openCluster(id) {
       <button class="btn sm" style="margin-top:10px" onclick="openAddStall('${c.id}')">＋ Add a stall</button></div>
     <div class="actions"><a class="btn dark" href="${dirUrl(c)}" target="_blank" rel="noopener">🧭 Directions</a><button class="btn" onclick="closeSheet();prefs.spinMode='stall';lastResult=null;go('spin')">🎲 Spin</button></div>
     <div class="section-title"><h2>Stalls</h2></div>
-    <div class="card list">${ps.length ? ps.map(placeRow).join('') : '<div class="empty"><span class="e">🗺️</span>No stalls mapped yet.</div>'}</div>`);
+    <div class="card list">${ps.length ? ps.map(placeRow).join('') : '<div class="empty"><span class="e">🗺️</span>No stalls mapped yet.</div>'}</div>
+    ${gone.length ? `<details style="margin-top:14px"><summary class="small muted" style="cursor:pointer">Moved out / closed (${gone.length})</summary><div class="card list" style="margin-top:8px;opacity:.75">${gone.map(placeRow).join('')}</div></details>` : ''}`);
 }
 function openAddStall(cid) {
   if (!me) return needSignIn();
@@ -833,7 +837,7 @@ function viewPassport() {
   const who = passportWho || me?.id; const person = people.find(m => m.id === who) || me;
   if (!person) { $('#view').innerHTML = `<h1>Passport</h1><div class="empty"><span class="e">🛂</span>Sign in to start collecting stamps.<br><br><button class="btn primary" onclick="signIn()">Sign in with Google</button></div>${settingsCard()}`; return; }
   const s = statsFor(person.id); const badges = badgeState(person.id);
-  const zoneRows = DB.zones.map(z => { const tot = PLACES.filter(p => p.zone === z.id).length; const got = s.places.filter(p => p.zone === z.id).length; return { z, tot, got }; });
+  const zoneRows = DB.zones.map(z => { const tot = PLACES.filter(p => p.zone === z.id && live(p)).length; const got = s.places.filter(p => p.zone === z.id).length; return { z, tot, got }; });
   const lb = people.map(m => ({ m, s: statsFor(m.id) })).sort((a, b) => b.s.places.length - a.s.places.length);
   const disagree = disagreements();
   $('#view').innerHTML = `<h1>Passport</h1>

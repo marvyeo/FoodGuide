@@ -1,57 +1,53 @@
-# source: singmalls | https://singmalls.app/en/malls/tampines-mall/directory | snapshot c.2024 (page undated) | fetched 2026-10-15
-Ajisen Ramen|#04-19/20
-BBQ Express|#B1-K19
+# source: capitaland | https://www.capitaland.com/sg/malls/tampinesmall/en/stores.html?category=foodandbeverage | live directory (Food & Beverage) | fetched 2026-10-15
+Alchemist|#01-40–41|New Store
 Bee Cheng Hiang|#B1-14
 Bengawan Solo|#B1-15
-Big Fish Small Fish|#B1-K3
-Blackball|#04-26
 BreadTalk|#01-32
-Burger King|#01-42
-Butter Studio|#B1-K8
-Crystal Jade Kitchen|#B1-11
-Din Tai Fung|#02-01
+Casa Vostra|#01-33A
+Cellarbration|#B1-K24/#B1-K8
+Cut Butchery|#B1-16
+Din Tai Fung|#02-01/#02-31
 Dough Culture|#B1-K16
-Express Teppan-Yaki|#B1-K22
 Famous Amos|#B1-K15
 Fei Siong|#B1-K9
 Four Leaves|#B1-22
 Genki Sushi|#03-26/27
-Ho Kee Pau|#B1-K10
-Itacho Sushi|#04-32
-J.Co|#01-38
-Kaffe & Toast|#01-45
+Ging Sun Ho King of Bun|#B1-K17/#B1-K18
+Gokoku Japanese Bakery|#B1-K7
+Im Qalb by Pun Im|#04-02|New Store
+Kenangan Coffee|#01-48
 KFC|#01-47
-KOI The|#02-K3B
-Kopitiam|#04-27
-Lee Wee & Brothers' Foodstuff|#B1-K6
+Koi Thé|#02-K10
+Kopitiam|#04-27/28/29
+Kuan Zhai Alley 宽窄巷子|#01-44–49
+Lee Wee & Brothers|#B1-K6
+Legendary Hong Kong|#B1-11
 LiHO|#B1-K5
-Long John Silver's|#04-23
-McDonald's|#01-33
-MOS Burger|#B1-K1
+Lola's|#01-50/#02-32
+Mango Ice 杨小贤绵绵冰|#02-K3
 Nando's|#01-46
-Old Street Bak Kut Teh|#B1-K17
-Osaka Ohsho|#04-19/20
-Pastamania|#04-21/22
-Pizza Hut|#02-02
+Paris Baguette|#01-33|New Store
+PastaMania|#04-21/22
 Polar Puffs & Cakes|#B1-K14
-Prata Wala|#B1-K21
-Proofer|#B1-K7A
-Putien|#B1-01
-Ritz Apple Strudel|#B1-K24
-Royce|#01-31B
-Seorae|#B1-02
+Putien|#02-02
+Ritz Apple Strudel|#B1-K11
+Royce'|#B1-21
+Ruxu 入续 & Charlie's Tea 茶理宜世|#B1-K2–K3|New Store
+Saap Saap Thai x Kaffe & Toast|#B1-K1
+Seorae Jib / Pocha! Korean Street Dining|#B1-02
 Seoul Garden|#04-01
-Shihlin Taiwan Street Snacks|#B1-K4
 So Pho|#04-30/31
-SF Fruits|#B1-K12
-Starbucks|#01-50
+Steak 99 Plus|#04-19/20
 Stuff'd|#B1-K13
-Swensen's|#03-30
-Tai Chong Kok|#B1-K11
-Tamago-EN|#B1-10
-The Soup Spoon|#B1-K2
+Super Sushi|#B1-K4
+Sushi Zanmai|#04-32
+Swensen's|#03-30|Temporarily Closed
+Talad Thai Banana|#B1-K19
+Tanjong Rhu Pau|#B1-K10
+Teppan-yaki x Alley Wei|#B1-K21/#B1-K22
 Toast Box|#01-32
-Tokyo Shokudo|#04-02
 Tori-Q|#B1-K20
-Yole|#B1-K18
-Yomie's Rice X Yogurt|#02-K3A
+Wingstop|#04-23/24/25
+Yeah Gelato 野人先生|#01-31C
+YGF Malatang|#B1-10
+Yolé|#B1-K12

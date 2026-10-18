@@ -1,79 +1,83 @@
-# source: singmalls | https://singmalls.app/en/malls/paya-lebar-quarter/directory | snapshot c.2024 (page undated) | fetched 2026-10-15
-Ajumma's|#B2-26
-Attap House|#02-28
-Auntie Anne's|#B2-K7
-Bee Cheng Hiang|#B2-30
-Bonchon|#02-09
-Boost Juice Bars|#B2-K10
-BreadTalk|#B2-19
-Cafe Red Ginger|#B2-31
-ChaTraMue|#01-38
-CHICHA San Chen|#02-27
-Chimichanga|#01-37
-Chug Chug|#01-09
-COLLIN'S|#B1-01
-Donburi King|#03-26
-Duckland|#B2-33
-EAT.|#B2-K2
-elemen|#03-13
-Fisher King's Grill|#03-25
-Flash Coffee|#01-K5
-Fluff Stack|#B1-K3
-Fong Sheng Hao|#B2-04
-Haidilao Hot Pot|#03-11/12
-Hanis Cafe & Bakery|#B2-18
-Hot Tomato Cafe & Grill|#04-09
-Huggs Coffeebar|#01-03
-Ichikokudo Hokkaido Ramen|#B1-15/16
-Jimmy Monkey Cafe|#01-10
-Jin Hor Dessert|#01-02
-Joe & Dough|#02-25/26
-Kanada-Ya|#03-30
-KFC|#B1-14
-Killiney Bistro & Bar|#01-10
-KOI The|#B1-02
-KopiTime|#04-11
-Krispy Kreme|#B2-K6
-London Fat Duck|#B2-25
-Maccha House|#02-20
-Melvados|#B2-06
-Mr Bean|#B2-16
-Mr. Coconut|#B2-K8
-myEureka|#B2-34
-Nam Kee Pau|#B2-K4
-Old Chang Kee|#B2-32
-Old Street Bak Kut Teh|#B2-02
-Papa Ayam|#B2-K3
-Paradise Dynasty|#03-08
-Paris Baguette|#01-03
-Pizza Hut|#04-10
-PlayMade|#B2-K5
-Poke Theory|
-Rempapa|#01-01
-Saizeriya|#04-13
-Salvo by Pasta Fresca|#01-05
-Sanook Kitchen|#03-28/29
-Shihlin Taiwan Street Snacks|#B2-K9
-smol|#01-K3
-Smooy|#B2-K1
-Starbucks Reserve|#01-14
-Super Sub|#01-K2
-Sushi Express|#04-12
-Tai Cheong Bakery|#B2-08
-The Bread Club|#B2-13
-The Providore|#01-01B
-Tingkat PeraMakan|#B2-03
-Tipsy Bird Gastrobar|#01-08B
-Toast Box|#B2-19
-Toss & Turn|#01-20
-Tuk Tuk Cha|#01-K4
-TungLok Seafood|#03-09/10
-umisushi|#B2-15
-Wine Connection|#01-07B
-Western Mahua Noodles|#B2-28
-Wursthans Switzerland|#01-39
-XiXiang Kaya Kopitiam|#B2-17
-Yakiniku Like|#B1-28
-YM Bakery|#B2-05
-Zhang Liang Mala Tang|#B2-29
-Zing|#01-06
+# source: lendlease | https://www.payalebarquarter.com/directory/mall/ | live directory (Food and Restaurants) | fetched 2026-10-18
+A Beautiful Day Café|#01-09 (Parkside)||Daily 10:30-23:59
+Ajumma's|#B2-26||Daily 11:30-21:30
+Attap House|#02-28||Daily 07:30-22:00
+Auntie Anne's|#B2-K7||Daily 10:00-22:00
+Bee Cheng Hiang|#B2-30||Daily 10:00-22:00
+Bites by Scarlett|#03-14||Daily 09:00-23:00
+Boost Juice Bars|#B2-K10||Daily 10:00-22:00
+Bottles & Bottles|#01-03A (PLQ 1)||Mon-Fri 11:00-20:00; Sat-Sun 11:00-19:00
+BreadTalk|#B2-19||Daily 07:30-21:30
+Cedele|#01-20||Daily 10:00-22:00
+CHAGEE|#01-39||Daily 11:00-22:00
+Chao Chao Xiang|#01-01 (Parkside)||Mon-Fri 11:00-21:30; Sat 11:00-15:00
+Chen's|#02-20||Daily 11:00-21:30
+CHICHA San Chen|#02-27||Daily 11:00-22:00
+Chimichanga|#01-37||Mon-Thu 12:00-23:00; Fri-Sat 12:00-23:59; Sun 12:00-23:00
+Coco Ichibanya|#03-30||Daily 11:00-21:30
+COLLIN'S|#B1-01||Daily 11:00-22:30
+Compose Coffee|#B1-K3||Mon 08:00-22:00; Tue-Fri 08:00-21:00; Sat-Sun 10:00-21:00
+D'Penyetz|#01-02 (Parkside)||Daily 10:30-21:00
+Don Don Donki
+Donburi King|#03-26||Daily 11:30-15:00,17:00-22:00
+Eat Pizza|#01-K5 (Plaza)||Daily 10:00-22:00
+EAT.|#B2-K2||Daily 09:00-21:00
+elemen|#03-13||Daily 11:30-15:30,17:30-21:30
+Fisher King's Grill|#03-25||Daily 11:30-15:00,17:00-21:30
+Fong Sheng Hao|#B2-04||Daily 07:30-22:00
+Four Leaves|#B2-16||Daily 09:00-21:00
+Haidilao Hot Pot|#03-11/12 & 27||Daily 10:30-03:00
+Hanis Cafe & Bakery|#B2-18||Daily 08:00-22:00
+HarriAnns Nonya Table|#B2-03||Mon-Thu 08:30-20:30; Fri-Sat 08:30-21:00; Sun 08:30-20:30
+Henri Charpentier|#01-07||Daily 10:00-22:00
+heytea|#01-16||Mon-Thu 10:00-21:30; Fri-Sun 10:00-22:00
+Huggs Coffee|#01-03 (PLQ 1)||Mon-Thu 07:30-17:30; Fri 07:30-22:00; Sat-Sun 12:00-17:00
+Kebabs Faktory|#01-K3 (Plaza)||Daily 11:00-21:30
+KFC|#B1-14||Daily 07:00-22:00
+KOI Thé|#B1-02||Daily 10:00-22:00
+Kopitiam|#04-11||Daily 08:00-22:00
+Kott-Don 360|#04-09||Daily 11:00-22:00
+London Fat Duck|#B2-25||Daily 11:30-22:00
+luckin coffee|||Daily 07:30-22:00
+Melvados|#B2-06||Daily 10:30-21:00
+Mr. Coconut|#B2-K8||Daily 10:00-21:45
+Nam Kee Pau|#B2-K4||Daily 08:00-21:00
+Nan Yang Dao|#B2-33||Daily 10:00-21:00
+Nene Neko|||Mon-Thu 11:00-23:00; Fri-Sat 11:00-00:00; Sun 11:00-22:00
+NIKUTOSAKE|#01-38||Mon-Thu 11:00-22:00; Fri-Sat 11:00-00:00; Sun 11:00-22:00
+Old Chang Kee|#B2-32||Daily 10:00-22:00
+Old Street Bak Kut Teh|#B2-02||Daily 10:00-22:00
+Papa Ayam|#B2-K3||Daily 11:00-21:30
+Paradise Dynasty|#03-08||Mon-Wed 11:00-22:00; Thu 11:00-22:30; Fri 11:00-22:00; Sat-Sun 10:30-22:00
+Paris Baguette|#01-03/05/06||Daily 10:00-22:00
+PastaGo|#B2-K1||Daily 11:00-21:00
+Pawa Bakery|#B2-07||Daily 09:30-21:00
+PlayMade|#B2-K5||Daily 11:00-22:00
+Poke Theory|#01-04 (Parkside)||Daily 11:00-21:00
+Polar Puffs & Cakes|#B2-K9||Daily 10:00-22:00
+Pondok Jawa|#02-09||Mon-Thu 11:30-21:30; Fri-Sat 11:30-22:00; Sun 11:30-21:30
+Pura Brasa|||Mon-Thu 11:30-23:00; Fri-Sat 11:30-00:00; Sun 11:30-23:00
+rumeL|#02-25/26||Daily 10:00-22:00
+Saizeriya|#04-13||Daily 11:00-22:00
+Sanook Kitchen|#03-28/29||Daily 11:00-22:00
+Shihlin Taiwan Street Snacks|#B2-K9||Daily 11:30-21:30
+smol|#01-05 (Parkside)||Mon-Fri 11:00-21:30; Sat 11:00-15:00
+Starbucks Reserve|#01-14||Mon-Thu 07:30-22:00; Fri-Sat 07:30-22:30; Sun 07:30-22:00
+Steak 99|#B2-17||Mon-Sat 11:30-22:30; Sun 10:00-22:30
+Sukiya|#B1-15/16||Daily 08:00-22:00
+Super Sub|#01-K2 (Plaza)||Daily 10:00-21:00
+Sushi Express|#04-12||Daily 11:00-22:00
+Tai Cheong Bakery|#B2-08||Daily 10:30-21:00
+TAIER Sichuan Cuisine|#04-10||Daily 11:30-21:00
+Tanglin Cookhouse|#01-06/07 (PLQ 3)||Daily 09:00-22:00
+The Bread Club|#B2-13||Daily 09:00-21:00
+Tipsy Bird Gastrobar|#01-08B (PLQ 2)||Daily 12:00-01:00
+Toast Box|#B2-19||Daily 07:30-21:30
+TOMORO COFFEE|#01-08A (PLQ 3)||Mon-Fri 08:00-20:00
+TungLok Seafood|#03-09–10||Mon-Sat 11:30-22:30; Sun 10:00-22:30
+Wine Connection|#01-07B (PLQ 2)||Daily 10:00-22:30
+Xi Yan Zing|#01-06–08 (Parkside)||Daily 11:30-22:00
+Yakiniku Like|#B1-28||Daily 11:00-22:00
+YM Bakery|#B2-05||Mon-Wed 09:00-19:30; Thu-Sat 09:00-20:30; Sun 09:00-19:30
+Yum Yum Thai|#B2-15||Daily 10:00-22:00
+Zhang Liang Mala Tang|#B2-29||Daily 11:00-22:00
