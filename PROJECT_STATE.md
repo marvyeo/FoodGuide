@@ -1,21 +1,22 @@
 # Makan Map — project state
 
-_Last updated: 18 Oct 2026, ~10:15 SGT (v1.4: craving chips include/exclude; official directories for 17 of 19 Home/East malls; directory hours)_
+_Last updated: 18 Oct 2026, ~10:30 SGT (v1.5: spin Where filter, mealtime weighting, chain de-dup. Data: East malls done; **Central malls in progress on branch `data/central-malls`**)_
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
 > 2. The repo is `marvyeo/FoodGuide`: attach it with push access and clone it. GitHub's REST API works via `gh api` (unset `GH_TOKEN` first; GraphQL is blocked).
 > 3. Data changes go on a branch and into a PR. App changes (`index.html`, `sw.js`; bump `CACHE` in `sw.js`) can go straight to `main`.
-> 4. The owner's next likely asks are in section 7.
+> 4. The owner's next likely asks are in section 7. **Current focus: malls in Central (section 7, "In progress").**
+> 5. Owner's scope (18 Oct): **malls island-wide, zone by zone; hawker centres stay Home ground + East only.**
 
 A family food map of Singapore. You filter by when, how far, budget, dine-in/tapau and craving, then spin for a stall or a food centre. You log and rate meals, and you collect stamps and badges. The app is installable from GitHub Pages and works offline. Day-to-day use costs no AI tokens. Claude is only involved to build or refresh the places data.
 
 - **Repo:** `marvyeo/FoodGuide`
 - **App URL:** https://marvyeo.github.io/FoodGuide/ (GitHub Pages, live)
-- **Status:** v1.4 live (craving chips, 18 Oct).
+- **Status:** v1.5 live (18 Oct: craving chips; spin Where filter, mealtime weighting, chain de-dup).
   - The owner signs in with Google on PC and phone. The family sheet exists.
   - Photos are tested only against mocked Google APIs.
-- **Data:** PRs #1–#4 merged on 15 Oct. **PR #5 (CapitaLand) and the 18 Oct mall PR are open** (the second is stacked on #5; merging it merges both). With them: **1,872 places** (218 closed), 19 hawker centres, 20 malls, 61 standalones, Home ground and East zones only.
+- **Data:** PRs #1–#6 merged (#5 and #6 on 18 Oct). Live: **1,872 places** (218 closed), 19 hawker centres, 20 malls, 61 standalones, Home ground and East zones only.
 
 ---
 
@@ -75,7 +76,7 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 
 ---
 
-## 2. What's built (v1.4)
+## 2. What's built (v1.5)
 
 - **Spin:**
   - Weighted random pick: your family's ratings + a novelty bonus for untried places + must-try + bookmarks − distance. Anyone who rated a place 2★ or less with "not again" vetoes it.
@@ -85,6 +86,9 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
   - Who's eating (multi-select family members), and when (now / breakfast / lunch / dinner / supper, checked against real opening hours).
   - How far: walkable ≤1.3 km, short ride ≤4 km, anywhere.
   - Budget, dine-in/tapau.
+  - **Where (v1.5):** Hawker / Malls / Restaurants chips on Spin (`prefs.spinKinds`, none = all).
+  - **Mealtime weighting (v1.5):** at lunch/dinner (or "Now" at 11–2 / 5–9), `drinks`, `dessert`, `snacks` get 0.2× weight unless picked as a craving (`isMealtime`, `SIDES` in index.html).
+  - **Chains (v1.5):** the stall spin keeps only the nearest outlet per mall/restaurant brand (`spinPool`, `brandOf`); "Skip chains" toggle (`prefs.skipChains`) drops brands with 3+ outlets. Hawker stalls are never chains. The match count shows the de-duplicated number.
   - **Craving (v1.4):** every cuisine chip is shown, wrapped, no scrolling. Tap cycles neutral → **want** (only these) → **rule out** (red 🚫, struck through) → neutral. None picked = anything. **✕ Clear (n)** resets. Stored in `prefs.cuisines` (want) and `prefs.cuisinesOut` (ruled out).
   - Toggles for open-only, untried-only, must-try only.
 - **Explore and Map filters (v1.3):**
@@ -117,7 +121,7 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 
 ## 3. Data coverage
 
-**With the two open PRs (18 Oct 2026, ~10:00):** 1,872 places (218 of them closed), 19 hawker centres, 20 malls and 61 standalone restaurants/cafés, in the **Home ground** and **East** zones. North East, North, Central and West aren't built yet.
+**Live (18 Oct 2026, after PR #6):** 1,872 places (218 of them closed), 19 hawker centres, 20 malls and 61 standalone restaurants/cafés, in the **Home ground** and **East** zones. North East, North, Central and West aren't built yet.
 
 Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the known total: the NEA cooked-food stall count for hawker centres, the directory count for malls. "Mapped" counts open places only; "Closed" are kept for family logs. `?` means no roster yet, i.e. a completeness gap.
 
@@ -338,25 +342,46 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 | 18 Oct | Mall F&B = the directory's F&B category, plus food retail (bakeries, bak kwa, confectionery) where the landlord files it under shops (Jewel); excludes supermarkets, liquor shops, vending | Matches what the family would walk in to eat or buy to eat |
 | 18 Oct | New mall clusters: Our Tampines Hub (shops), KINEX, Katong V, Siglap Centre, Djitsun Mall Bedok |
 | 18 Oct | **No opening hours from Google Maps**, and no in-app "Hours on Google" link (owner declined) | Google's terms forbid copying Maps data into our dataset and scraping it; hours come only from landlords, dated guides and family photos |
-| 18 Oct | Loyang Point and City Plaza left out | Owner's call; no usable directory either | Each had a current official list; the OTH hawker centre stays its own cluster |
+| 18 Oct | Loyang Point and City Plaza left out | Owner's call; no usable directory either |
+| 18 Oct | Spin: Where filter, 0.2× weight for drinks/dessert/snacks at mealtimes, one entry per chain | Malls became ~2/3 of places; spins were drowning in chain kiosks |
+| 18 Oct | Scope: malls island-wide (zone by zone, Central first); hawker centres only Home ground + East | Owner rarely travels far for hawker food | Each had a current official list; the OTH hawker centre stays its own cluster |
 
 ## 7. Next up / ideas
-**Done 15–18 Oct:** official directories for 17 malls, 5 new malls, directory and per-store hours (700 of 1,087 open mall outlets), craving chips with exclude. See PRs #5 and #6.
+**Done 15–18 Oct:** official directories for 17 East/Home malls + 5 new malls, directory and per-store hours (700 of 1,087 open mall outlets), craving chips with exclude, spin Where filter / mealtime weighting / chain de-dup. PRs #5 and #6 merged.
+
+### In progress: Central malls (branch `data/central-malls`)
+Owner's call (18 Oct): **map malls zone by zone, starting with Central; no more hawker centres outside Home ground + East.**
+
+**Collected so far** (in `data/rosters-pending/` on the branch; see its README): Plaza Singapura 88, Raffles City 95, Funan 75, Bugis Junction 81, Bugis+ 37, Junction 8 62, Clarke Quay 32 (CapitaLand, no hours); The Centrepoint 28, Tiong Bahru Plaza 64 (Frasers, with hours). 562 outlets.
+
+**To finish the Central PR:**
+1. Check out `data/central-malls`. For each pending file: add the cluster to `places.json` (`type: "mall"`, `zone: "central"`, OneMap geocode, short `notes`), move the file to `data/rosters/`, then `python3 tools/merge_roster.py data/rosters/<file>`.
+2. Add Central MRT stations to `mrt[]` (Dhoby Ghaut, Somerset, Orchard, City Hall, Bugis, Esplanade, Promenade, Bayfront, Raffles Place, Tanjong Pagar, Chinatown, Outram Park, Tiong Bahru, HarbourFront, Novena, Toa Payoh, Bishan, Clarke Quay, Bras Basah, Marina Bay, Holland Village, Botanic Gardens, Stevens, Newton…).
+3. **Malls still to collect** (one browser `request_access` per new site):
+   - **Lendlease:** 313@somerset (`/store-directory/` + per-store `#panel-opening-times`, same as Parkway; access already granted).
+   - **Far East:** Orchard Central, Square 2, Lucky Chinatown, Far East Square, Clarke Quay Central, Riverside Point, Pacific Plaza, Icon Village, One Holland Village (`fareastmalls.com.sg/en/<mall>/shops` + per-shop "OPENING HOURS").
+   - **Independents:** ION Orchard, Ngee Ann City / Takashimaya, Paragon, Wisma Atria, Mandarin Gallery, Orchard Gateway, Lucky Plaza, Far East Plaza, Great World, VivoCity + HarbourFront Centre (Mapletree), Suntec City, Marina Square, Millenia Walk, Marina Bay Sands Shoppes, Esplanade Mall, Capitol Singapore, CHIJMES, South Beach, Chinatown Point, Velocity@Novena Square, United Square, Thomson Plaza, Toa Payoh HDB Hub, Tanjong Pagar Centre / Guoco Tower, Marina One, Holland Village. Look for the store-list XHR on each site (section 3 recipes).
+4. Validate, coverage, one PR ("Central malls"), update this file.
+
+**Tips learned on 18 Oct:**
+- **CapitaLand API entity names differ from URL slugs** (Raffles City = `rafflescitysingaporeshoppingcentre`, Funan = `funan_1640709664`, Junction 8 = `junction`, Bugis+ = `bugis`). Load the mall's stores page and read the `properties/<entity>/cl%3Aentity/tenants` request to find it. Bugis Street (`bugis-street`) and the slug list come from `/sg/malls.html`.
+- **Getting browser data into the workspace without retyping:** have `javascript_tool` return text that starts with a unique marker (e.g. `@@CLC@@`), then read that tool result back from the session transcript (`~/.claude/projects/<cwd-slug>/<session-id>.jsonl`, the `tool_result` containing the marker) with a few lines of Python. `tools/clean_directory.py` has the unit/name cleaners.
+- Leave out nightclubs, bars-only, wine/liquor shops and vending; keep food retail (bakeries, bak kwa, confectionery).
+- **No Google Maps hours** (decision log): only landlord sites, dated guides, family photos.
 
 **Spin quality (app; malls are now ~2/3 of all places, so the spin leans to mall chains and kiosks):**
-- [ ] **Venue filter on Spin** (Hawker / Malls / Restaurants), reusing the Explore/Map `browseKind` chips.
-- [ ] **Meal-aware spin:** for lunch/dinner, down-weight `drinks`, `dessert` and `snacks` kiosks (434 of 1,654 open places) unless the craving picks them.
-- [ ] **Chain de-duplication:** one "Luckin Coffee" (11 outlets), "McDonald's" (10), Saizeriya (9)… per spin, nearest outlet; optional "Skip chains" toggle.
+- [x] Venue (Where) filter, mealtime weighting, chain de-dup — 18 Oct (v1.5).
 - [ ] **Hotpot & mala** as its own cuisine (16 of the 49 "Other" places), so it can be picked or ruled out.
 - [ ] **"What's new" view** for places tagged `new` (directory "Opening Soon / New Store"), with tags cleared after ~2 months.
 
 **Data, in priority order:**
-1. [ ] **Hawker rosters** for the centres under 40%: Old Airport Rd (41/168), Haig Rd (15/72), Bedok Interchange 208B (19/70, Home ground), Changi Village (28/87), Bedok Corner (10/32), Marine Parade (19/55), Fengshan 85 (26/72, Home ground). Hawker.guide pages fail for several; try the built-in browser on hawker.guide, or NEA stall tender lists.
+0. [ ] **Malls zone by zone: Central (in progress, above), then North East, West, North.**
+1. [ ] **Hawker rosters** (Home ground + East only, owner's scope) for the centres under 40%: Old Airport Rd (41/168), Haig Rd (15/72), Bedok Interchange 208B (19/70, Home ground), Changi Village (28/87), Bedok Corner (10/32), Marine Parade (19/55), Fengshan 85 (26/72, Home ground). Hawker.guide pages fail for several; try the built-in browser on hawker.guide, or NEA stall tender lists.
 2. [ ] **NEA counts** for Our Tampines Hub and Pasir Ris Central hawker centres.
 3. [ ] **Unbuilt East hawker centres:** Sims Place, Circuit Road ×3, Aljunied Ave 2, Geylang Bahru, Upper Boon Keng, Blk 58 New Upper Changi Rd, Marine Terrace 50A, Kallang Estate.
 4. [ ] **"Worth the trip" island-wide list** from the Michelin Bib Gourmand 2026 hawker selection, as `must_try` places in other zones. Sources: https://danielfooddiary.com/2026/07/28/bibgourmand2026/ and https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/singapore-bib-gourmand-2026
 5. [ ] **White Sands and Paya Lebar Square** official lists (sites dead/redirecting on 18 Oct; retry at the monthly refresh).
-6. [ ] **Next zones:** North East, North, Central, West, using the section 5 pipeline (roster first).
+6. [ ] ~~Hawker centres in other zones~~ — out of scope (owner, 18 Oct). Only the Bib Gourmand list (item 4) goes island-wide.
 
 **Upkeep:**
 - [ ] **Monthly refresh as a scheduled task.** Re-run the mall recipes in section 3 (needs the PC with the desktop app open for the browser), diff rosters, close/open places. Needs a decision on reading the family Sheet's `places_added` and `photos` tabs.
