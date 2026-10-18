@@ -636,6 +636,11 @@
    "name": "far-east – Siglap Centre directory",
    "url": "https://www.fareastmalls.com.sg/en/siglap-centre/shops",
    "date": "live directory (Food & Beverage)"
+  },
+  "visitbedok-m-djitsun-mall": {
+   "name": "visitbedok – Djitsun Mall Bedok directory",
+   "url": "https://visitbedok.com/djitsun-mall-bedok/shops",
+   "date": "directory (Food & Dining; undated third-party site, no units)"
   }
  },
  "clusters": [
@@ -1344,6 +1349,26 @@
     "source": "far-east-m-siglap-centre",
     "count": 3,
     "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-10-18"
+   }
+  },
+  {
+   "id": "m-djitsun-mall",
+   "name": "Djitsun Mall Bedok",
+   "type": "mall",
+   "address": "445 Bedok North Street 1, S469661",
+   "lat": 1.32612,
+   "lng": 103.929554,
+   "notes": "Small mall next to Bedok Mall and the bus interchange (Golden Village, enrichment centres). Only a handful of food outlets.",
+   "stalls_total": 4,
+   "sources": [
+    "visitbedok-m-djitsun-mall"
+   ],
+   "zone": "home",
+   "roster": {
+    "source": "visitbedok-m-djitsun-mall",
+    "count": 4,
+    "snapshot": "directory (Food & Dining; undated third-party site, no units)",
     "fetched": "2026-10-18"
    }
   }
@@ -59738,6 +59763,98 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-siglap-centre-subway"
+  },
+  {
+   "cluster": "m-djitsun-mall",
+   "name": "Deliz Cafe (Djitsun Mall Bedok)",
+   "unit": "",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "visitbedok-m-djitsun-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-djitsun-mall-deliz-cafe"
+  },
+  {
+   "cluster": "m-djitsun-mall",
+   "name": "Mala Boss (Djitsun Mall Bedok)",
+   "unit": "",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "visitbedok-m-djitsun-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-djitsun-mall-mala-boss"
+  },
+  {
+   "cluster": "m-djitsun-mall",
+   "name": "So Green (Djitsun Mall Bedok)",
+   "unit": "",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "visitbedok-m-djitsun-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-djitsun-mall-so-green"
+  },
+  {
+   "cluster": "m-djitsun-mall",
+   "name": "Saizeriya (Djitsun Mall Bedok)",
+   "unit": "",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "visitbedok-m-djitsun-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-djitsun-mall-saizeriya"
   }
  ]
 }

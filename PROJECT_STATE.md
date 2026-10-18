@@ -173,7 +173,7 @@ Notes:
   - **Still SingMalls (~2024): White Sands and Paya Lebar Square.** White Sands' site (whitesands.com.sg) returns 403 since FCT sold it; payalebarsquare.com.sg redirects to an unrelated site. Try again later or find the new owners' pages.
   - Mapped can be one below roster when two directory rows match one place (e.g. shared units).
 - **Gaps, in priority order:**
-  1. **Malls:** White Sands and Paya Lebar Square need an official list (see above). **Not added (no roster found):** Djitsun Mall Bedok, Loyang Point, City Plaza, Elias Mall, Heartbeat@Bedok; Changi Airport T1–T4 left out on purpose (airside/terminal food).
+  1. **Malls:** White Sands and Paya Lebar Square need an official list (see above). **Djitsun Mall Bedok** added 18 Oct from visitbedok.com (undated third-party list, 4 food outlets, no units). **Loyang Point and City Plaza excluded** (owner's call). Not added: Elias Mall, Heartbeat@Bedok; Changi Airport T1–T4 left out on purpose (airside/terminal food).
   2. **Hawker centres under 40%:** Old Airport Rd (41/168), Haig Rd (15/72), Bedok Interchange (19/70), Changi Village (28/87), Bedok Corner (10/32), Marine Parade (19/55), Fengshan 85 (26/72). They need a stall roster; see the source notes.
   3. **No NEA count:** Our Tampines Hub and Pasir Ris Central (both new-generation centres not on the 2024 list).
   4. **East centres not built at all:** Sims Place, Circuit Road ×3, Aljunied Ave 2, Geylang Bahru, Upper Boon Keng, Blk 58 New Upper Changi Rd, Marine Terrace 50A, Kallang Estate. Plus coffeeshops, which have no official list.
@@ -335,7 +335,7 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 | 18 Oct | Craving chips: tap cycles want → rule out → neutral, all chips wrapped, Clear button | Owner wanted no sideways scroll, a way to exclude, and a quick reset |
 | 18 Oct | Official directories for every Home/East mall that has one; directory hours parsed into `hours` | Same reasoning as CapitaLand; hours make "Only open" and centre picks work for mall outlets |
 | 18 Oct | Mall F&B = the directory's F&B category, plus food retail (bakeries, bak kwa, confectionery) where the landlord files it under shops (Jewel); excludes supermarkets, liquor shops, vending | Matches what the family would walk in to eat or buy to eat |
-| 18 Oct | New mall clusters: Our Tampines Hub (shops), KINEX, Katong V, Siglap Centre | Each had a current official list; the OTH hawker centre stays its own cluster |
+| 18 Oct | New mall clusters: Our Tampines Hub (shops), KINEX, Katong V, Siglap Centre, Djitsun Mall Bedok | Each had a current official list; the OTH hawker centre stays its own cluster |
 
 ## 7. Next up / ideas
 **Most likely next asks (in order):**
