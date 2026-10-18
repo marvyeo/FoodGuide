@@ -1,22 +1,46 @@
 # Makan Map — project state
 
-_Last updated: 18 Oct 2026, ~10:30 SGT (v1.5: spin Where filter, mealtime weighting, chain de-dup. Data: East malls done; **Central malls in progress on branch `data/central-malls`**)_
+_Last updated: 19 Oct 2026, ~01:00 SGT (wave 1 done: 9 Central malls, 4 CBD food centres, office origins in app v1.6). Previously 18 Oct 2026, ~10:30 SGT (v1.5: spin Where filter, mealtime weighting, chain de-dup. Data: East malls done; **Central malls in progress on branch `data/central-malls`**)_
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
 > 2. The repo is `marvyeo/FoodGuide`: attach it with push access and clone it. GitHub's REST API works via `gh api` (unset `GH_TOKEN` first; GraphQL is blocked).
 > 3. Data changes go on a branch and into a PR. App changes (`index.html`, `sw.js`; bump `CACHE` in `sw.js`) can go straight to `main`.
 > 4. The owner's next likely asks are in section 7. **Current focus: malls in Central (section 7, "In progress").**
-> 5. Owner's scope (18 Oct): **malls island-wide, zone by zone; hawker centres stay Home ground + East only.**
+> 5. Owner's scope (18 Oct): **malls island-wide, zone by zone; hawker centres stay Home ground + East only**, plus the 19 Oct exception: Lau Pa Sat, Amoy Street, Maxwell and Market Street food centres (near the owner's office).
+> 6. **Follow the usage safeguards (section 0) on every working session.**
 
 A family food map of Singapore. You filter by when, how far, budget, dine-in/tapau and craving, then spin for a stall or a food centre. You log and rate meals, and you collect stamps and badges. The app is installable from GitHub Pages and works offline. Day-to-day use costs no AI tokens. Claude is only involved to build or refresh the places data.
 
 - **Repo:** `marvyeo/FoodGuide`
 - **App URL:** https://marvyeo.github.io/FoodGuide/ (GitHub Pages, live)
-- **Status:** v1.5 live (18 Oct: craving chips; spin Where filter, mealtime weighting, chain de-dup).
+- **Status:** v1.6 live (19 Oct: distances from Home / two offices / Here). v1.5 (18 Oct): craving chips; spin Where filter, mealtime weighting, chain de-dup.
   - The owner signs in with Google on PC and phone. The family sheet exists.
   - Photos are tested only against mocked Google APIs.
 - **Data:** PRs #1–#6 merged (#5 and #6 on 18 Oct). Live: **1,872 places** (218 closed), 19 hawker centres, 20 malls, 61 standalones, Home ground and East zones only.
+
+## 0. Usage safeguards (owner, 19 Oct): read before any work
+
+This project must not eat the owner's usage limits; other projects need room. Claude cannot see the owner's usage meter (only the owner can, in Settings → Usage), so these budgets stand in for "stop before 50%":
+- **Work in waves.** One wave = one landlord group or ~8 malls, capped at **~40 browser/web calls**. Prefer one bulk `javascript_tool` fetch over many page loads (e.g. geocode everything in one script).
+- **End every wave** with commit + push to the branch and a short note here, then stop. Never start a second wave in the same 5-hour window.
+- **At most 3 waves a day.** Start the next wave only when the owner says so, or via a scheduled resume set 5+ hours later.
+- If the owner says **"pause"**, stop at once, save what's collected on the branch, write the resume point here, and don't schedule anything.
+- **Site approvals:** request every site a wave needs in one go at the start (scope "site"), so the rest of the wave runs unattended. Browser waves need the owner's PC with the desktop app open.
+- Keep sessions short; a fresh chat that reads this file is cheaper than a very long one.
+
+### Resume point (19 Oct ~01:00, after wave 1; ~20 web calls used)
+Done in wave 1 (owner asleep, no PC needed):
+- 9 Central malls merged (556 outlets), 44 Central MRT stations, ~145 brand cuisines added to `KNOWN`.
+- CBD food centres (owner's exception): Lau Pa Sat (21 stalls, roster count 80 from its 2024 press release), Amoy Street (30/134), Maxwell (30/103), Market Street (10/56). Built by `tools/build_cbd_centres.py` from Eatbook Sep 2026 / Jul 2026 (hours kept) and Seth Lui May 2022 (no hours).
+- App v1.6 on `main`: distances from Home / IOI CBT / DSTA / Here (`CONFIG.OFFICES`, `prefs.from`), switch on Spin, Explore and Settings.
+- PR opened for this part (see section 7).
+
+Next waves:
+1. **Browser wave (needs PC + desktop app):** request all site approvals first. 313@somerset, then the Far East group (9 malls, one recipe).
+2. Browser wave: Orchard independents (ION, Ngee Ann City, Paragon, Wisma Atria, Mandarin Gallery, Orchard Gateway, Lucky Plaza, Far East Plaza).
+3. Browser wave: CBD + Marina/Civic (Asia Square, OUE Downtown, One Raffles Place, Marina Bay Link Mall, CapitaSpring, Tanjong Pagar Centre, Marina One, Suntec, Marina Square, Millenia Walk, MBS, Esplanade, Capitol, CHIJMES, South Beach). Also the Lau Pa Sat stall directory (laupasat.sg) and full rosters for Amoy/Maxwell/Market Street (hawker.guide pages need the browser; WebFetch refuses URLs not seen in chat).
+4. Browser wave: the rest (Great World, VivoCity, HarbourFront Centre, Chinatown Point, Velocity, United Square, Thomson Plaza, Toa Payoh Hub, Holland Village).
 
 ---
 
@@ -127,6 +151,19 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 
 | Zone | Type | Name | Mapped (open) | Roster | Detailed | Partial | Listed | Closed | Roster source |
 |---|---|---|---|---|---|---|---|---|---|
+| central | hawker | Amoy Street Food Centre | 30 | 134 (22%) | 30 | 0 | 0 | 0 | NEA count |
+| central | hawker | Lau Pa Sat | 21 | 80 (26%) | 19 | 2 | 0 | 0 | NEA count |
+| central | hawker | Market Street Hawker Centre | 10 | 56 (18%) | 0 | 10 | 0 | 0 | NEA count |
+| central | hawker | Maxwell Food Centre | 30 | 103 (29%) | 30 | 0 | 0 | 0 | NEA count |
+| central | mall | Bugis Junction | 81 | 81 (100%) | 0 | 0 | 81 | 0 | capitaland-m-bugis-junction |
+| central | mall | Bugis+ | 37 | 37 (100%) | 0 | 0 | 37 | 0 | capitaland-m-bugis-plus |
+| central | mall | Clarke Quay | 32 | 32 (100%) | 0 | 0 | 32 | 0 | capitaland-m-clarke-quay |
+| central | mall | Funan | 74 | 75 (99%) | 0 | 0 | 74 | 0 | capitaland-m-funan |
+| central | mall | Junction 8 | 61 | 62 (98%) | 0 | 0 | 61 | 0 | capitaland-m-junction-8 |
+| central | mall | Plaza Singapura | 87 | 88 (99%) | 0 | 0 | 87 | 0 | capitaland-m-plaza-singapura |
+| central | mall | Raffles City | 91 | 94 (97%) | 0 | 0 | 91 | 0 | capitaland-m-raffles-city |
+| central | mall | The Centrepoint | 28 | 28 (100%) | 0 | 0 | 28 | 0 | frasers-m-the-centrepoint |
+| central | mall | Tiong Bahru Plaza | 64 | 64 (100%) | 0 | 0 | 64 | 0 | frasers-m-tiong-bahru-plaza |
 | east | hawker | Bedok Corner Food Centre | 10 | 32 (31%) | 10 | 0 | 0 | 0 | NEA count |
 | east | hawker | Changi Village Hawker Centre | 28 | 87 (32%) | 11 | 0 | 17 | 0 | NEA count |
 | east | hawker | Dunman Food Centre | 25 | 30 (83%) | 10 | 2 | 13 | 0 | NEA count |
@@ -167,7 +204,7 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 | home | mall | Bedok Mall | 78 | 78 (100%) | 6 | 6 | 66 | 19 | capitaland-m-bedok-mall |
 | home | mall | Djitsun Mall Bedok | 4 | 4 (100%) | 0 | 0 | 4 | 0 | visitbedok-m-djitsun-mall |
 
-Standalone restaurants/cafés: 61 | Total places: 1872 | Gaps (no roster): 2
+Standalone restaurants/cafés: 61 | Total places: 2518 | Gaps (no roster): 2
 
 Notes:
 - **Hawker coverage %:** NEA counts include drinks stalls and vacant units, so 100% isn't always reachable.
@@ -344,6 +381,9 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 | 18 Oct | **No opening hours from Google Maps**, and no in-app "Hours on Google" link (owner declined) | Google's terms forbid copying Maps data into our dataset and scraping it; hours come only from landlords, dated guides and family photos |
 | 18 Oct | Loyang Point and City Plaza left out | Owner's call; no usable directory either |
 | 18 Oct | Spin: Where filter, 0.2× weight for drinks/dessert/snacks at mealtimes, one entry per chain | Malls became ~2/3 of places; spins were drowning in chain kiosks |
+| 19 Oct | Hawker exception: Lau Pa Sat, Amoy Street, Maxwell, Market Street food centres | Near the owner's office (IOI Central Boulevard Towers) |
+| 19 Oct | Two office origins (IOI Central Boulevard Towers, DSTA Integrated Complex) with a Home / Office / Here switch | Lunch near work, not just near home |
+| 19 Oct | Usage safeguards: waves, ~40 calls each, one per 5-hour window, max 3 a day, pause on request | Owner's other projects need usage headroom |
 | 18 Oct | Scope: malls island-wide (zone by zone, Central first); hawker centres only Home ground + East | Owner rarely travels far for hawker food | Each had a current official list; the OTH hawker centre stays its own cluster |
 
 ## 7. Next up / ideas
@@ -352,7 +392,7 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 ### In progress: Central malls (branch `data/central-malls`)
 Owner's call (18 Oct): **map malls zone by zone, starting with Central; no more hawker centres outside Home ground + East.**
 
-**Collected so far** (in `data/rosters-pending/` on the branch; see its README): Plaza Singapura 88, Raffles City 95, Funan 75, Bugis Junction 81, Bugis+ 37, Junction 8 62, Clarke Quay 32 (CapitaLand, no hours); The Centrepoint 28, Tiong Bahru Plaza 64 (Frasers, with hours). 562 outlets.
+**Merged 19 Oct (wave 1):** the 9 malls below, now in `data/rosters/`. Collected earlier: Plaza Singapura 88, Raffles City 95, Funan 75, Bugis Junction 81, Bugis+ 37, Junction 8 62, Clarke Quay 32 (CapitaLand, no hours); The Centrepoint 28, Tiong Bahru Plaza 64 (Frasers, with hours). 562 outlets.
 
 **To finish the Central PR:**
 1. Check out `data/central-malls`. For each pending file: add the cluster to `places.json` (`type: "mall"`, `zone: "central"`, OneMap geocode, short `notes`), move the file to `data/rosters/`, then `python3 tools/merge_roster.py data/rosters/<file>`.
