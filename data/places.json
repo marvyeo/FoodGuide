@@ -931,6 +931,11 @@
    "name": "Seth Lui – Market Street Hawker Centre guide",
    "url": "https://sethlui.com/market-street-hawker-centre-guide-singapore/",
    "date": "2022-05"
+  },
+  "lps-pr": {
+   "name": "Lau Pa Sat press release (reopening, 80+ food stalls)",
+   "url": "https://www.laupasat.sg/wp-content/uploads/2024/04/Press-Release-Iconic-Heritage-Food-Hall-Lau-Pa-Sat-Welcomes-Visitors-Back-with-Over-80-Food-Stalls-100-Retail-Brands-and-2000-Local-Products.pdf",
+   "date": "2024-04"
   }
  },
  "clusters": [
@@ -1850,10 +1855,11 @@
    "lat": 1.280594,
    "lng": 103.850408,
    "zone": "central",
-   "stalls_total": null,
+   "stalls_total": 80,
    "sources": [
     "eb-lps",
-    "cn-lps"
+    "cn-lps",
+    "lps-pr"
    ],
    "notes": "Victorian cast-iron market (national monument), privately run, so not on NEA's list. Several stalls open 24 hours. Satay Street on Boon Tat Street opens in the evening."
   },
