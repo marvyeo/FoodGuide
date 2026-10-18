@@ -906,6 +906,31 @@
    "name": "frasers – Tiong Bahru Plaza directory",
    "url": "https://www.tampines1.com.sg/stores (Frasers store search, all Frasers malls)",
    "date": "live directory (Food & Restaurants)"
+  },
+  "eb-maxwell": {
+   "name": "Eatbook – Maxwell Food Centre guide",
+   "url": "https://eatbook.sg/maxwell-food-centre/",
+   "date": "2026-09"
+  },
+  "eb-amoy": {
+   "name": "Eatbook – Amoy Street Food Centre guide",
+   "url": "https://eatbook.sg/?p=28638",
+   "date": "2026-07"
+  },
+  "eb-lps": {
+   "name": "Eatbook – Lau Pa Sat food guide",
+   "url": "https://eatbook.sg/lau-pa-sat/",
+   "date": "2026-09"
+  },
+  "cn-lps": {
+   "name": "City Nomads – Lau Pa Sat guide",
+   "url": "https://citynomads.com/lau-pa-sat-hawker-centre-guide-8-stalls-for-authentic-hawker-fare-in-this-national-monument/",
+   "date": "2020-02"
+  },
+  "sl-mkt": {
+   "name": "Seth Lui – Market Street Hawker Centre guide",
+   "url": "https://sethlui.com/market-street-hawker-centre-guide-singapore/",
+   "date": "2022-05"
   }
  },
  "clusters": [
@@ -1816,6 +1841,66 @@
     "snapshot": "live directory (Food & Restaurants)",
     "fetched": "2026-10-18"
    }
+  },
+  {
+   "id": "c-lau-pa-sat",
+   "name": "Lau Pa Sat",
+   "type": "hawker",
+   "address": "18 Raffles Quay, S048582",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "stalls_total": null,
+   "sources": [
+    "eb-lps",
+    "cn-lps"
+   ],
+   "notes": "Victorian cast-iron market (national monument), privately run, so not on NEA's list. Several stalls open 24 hours. Satay Street on Boon Tat Street opens in the evening."
+  },
+  {
+   "id": "c-amoy-street",
+   "name": "Amoy Street Food Centre",
+   "type": "hawker",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "stalls_total": 134,
+   "sources": [
+    "nea",
+    "eb-amoy"
+   ],
+   "notes": "Two floors of CBD lunch favourites. Many stalls are weekday-lunch only and close by 2:30–3pm."
+  },
+  {
+   "id": "c-maxwell",
+   "name": "Maxwell Food Centre",
+   "type": "hawker",
+   "address": "1 Kadayanallur Street, S069184",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "stalls_total": 103,
+   "sources": [
+    "nea",
+    "eb-maxwell"
+   ],
+   "notes": "Chinatown's famous centre (Tian Tian chicken rice). Busy with tourists; open most of the day."
+  },
+  {
+   "id": "c-market-street",
+   "name": "Market Street Hawker Centre",
+   "type": "hawker",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "stalls_total": 56,
+   "sources": [
+    "nea",
+    "sl-mkt"
+   ],
+   "notes": "Reopened in CapitaSpring in 2022 (56 stalls, levels 2–3; NEA's 2024 list still shows 76 at the old Golden Shoe site). Mostly weekday breakfast and lunch."
   }
  ],
  "places": [
@@ -73768,6 +73853,4179 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-tiong-bahru-plaza-zuya-vegetarian"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Ye Lai Xiang Tasty Barbecue",
+   "unit": "#01-94",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Hainanese-Western set",
+     "price": 10.5,
+     "price_note": "from $10.50"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "12:00-14:30",
+      "18:00-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-maxwell-ye-lai-xiang-tasty-barbecue",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Danlao",
+   "unit": "#01-73",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Tomato egg rice",
+     "price": 5.0
+    },
+    {
+     "name": "Luncheon meat egg rice",
+     "price": 5.5
+    },
+    {
+     "name": "Chicken cutlet egg rice",
+     "price": 6.5
+    },
+    {
+     "name": "Char siew egg rice",
+     "price": 6.5
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "11:00-20:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-16:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-danlao",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Ah Tai Hainanese Chicken Rice",
+   "unit": "#01-07",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "11:00-19:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-ah-tai-hainanese-chicken-rice",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Fish Village",
+   "unit": "#01-32",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "HK-style steamed red grouper",
+     "price": 25.0
+    },
+    {
+     "name": "HK-style steamed prawns",
+     "price": 9.0,
+     "price_note": "from $9"
+    },
+    {
+     "name": "Thai sauce scallops",
+     "price": 14.0
+    },
+    {
+     "name": "Stir-fry kai lan",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "11:00-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-maxwell-fish-village",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "The 1950s Coffee",
+   "unit": "#01-90",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Iced milk coffee",
+     "price": 1.9
+    },
+    {
+     "name": "Kopi C siew dai",
+     "price": 1.4
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "08:30-16:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-the-1950s-coffee",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Mr Appam",
+   "unit": "#01-99",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Original appam (two)",
+     "price": 4.0
+    },
+    {
+     "name": "Princess appam",
+     "price": 4.3
+    },
+    {
+     "name": "Butterfly pea gula melaka appam",
+     "price": 3.2
+    },
+    {
+     "name": "Cempedak appam",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "013456",
+     [
+      "09:00-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-mr-appam",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "75 China Street Peanuts Soup",
+   "unit": "#01-57",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Peanut soup",
+     "price": 1.4
+    },
+    {
+     "name": "Red bean soup",
+     "price": 1.4
+    },
+    {
+     "name": "Tau suan",
+     "price": 1.4
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "07:30-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast",
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-75-china-street-peanuts-soup",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Taste Of Jiang Nan",
+   "unit": "#01-62",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Xiao long bao (six)",
+     "price": 5.0
+    },
+    {
+     "name": "Pork wanton in chilli oil with noodles",
+     "price": 5.5
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "11:30-20:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-taste-of-jiang-nan",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Tong Xin Ju Special Shanghai Tim Sum",
+   "unit": "#01-92",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Fried dumplings (eight)",
+     "price": 5.6
+    },
+    {
+     "name": "Hot & sour soup",
+     "price": 4.0,
+     "price_note": "$4/$5/$6"
+    },
+    {
+     "name": "Peking noodles/hor fun",
+     "price": 4.0,
+     "price_note": "$4/$5/$6"
+    }
+   ],
+   "hours": [
+    [
+     "02456",
+     [
+      "11:30-20:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-tong-xin-ju-special-shanghai-tim-sum",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Tian Tian Hainanese Chicken Rice",
+   "unit": "#01-10/11",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Chicken rice",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "10:00-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-tian-tian-hainanese-chicken-rice",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Lakeview (Upper Thomson) Kim Goreng Pisang",
+   "unit": "#01-30",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "You tiao",
+     "price": 1.0,
+     "price_note": "from $1"
+    },
+    {
+     "name": "Butterfly bun",
+     "price": 1.0,
+     "price_note": "from $1"
+    },
+    {
+     "name": "Ham chim peng",
+     "price": 1.0,
+     "price_note": "from $1"
+    },
+    {
+     "name": "Goreng pisang",
+     "price": 1.0,
+     "price_note": "from $1"
+    },
+    {
+     "name": "Fried nian gao",
+     "price": 1.0,
+     "price_note": "from $1"
+    }
+   ],
+   "hours": [
+    [
+     "023456",
+     [
+      "00:00-24:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper",
+    "24h"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-lakeview-upper-thomson-kim-goreng-pisang",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Old Nyonya",
+   "unit": "#01-04",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Rendang chicken rice/nasi lemak",
+     "price": 7.0
+    },
+    {
+     "name": "Laksa",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-old-nyonya",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Sisaket Thai Food",
+   "unit": "#01-85",
+   "cuisine": "thai",
+   "dishes": [
+    {
+     "name": "Green curry chicken/beef rice",
+     "price": 8.0
+    },
+    {
+     "name": "Phad Thai",
+     "price": 6.5
+    },
+    {
+     "name": "Basil chicken/beef rice",
+     "price": 7.5,
+     "price_note": "$7.50/$8.50"
+    }
+   ],
+   "hours": [
+    [
+     "1",
+     [
+      "00:00-08:30"
+     ]
+    ],
+    [
+     "23456",
+     [
+      "10:00-20:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-00:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-sisaket-thai-food",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Zhen Zhen Porridge",
+   "unit": "#01-54",
+   "cuisine": "porridge",
+   "dishes": [
+    {
+     "name": "Sliced fish, shredded chicken and century egg porridge",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    }
+   ],
+   "hours": [
+    [
+     "0356",
+     [
+      "05:30-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-zhen-zhen-porridge",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Yi Jia Teochew Fish Porridge Fish Soup",
+   "unit": "#01-66",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Batang fish soup/porridge",
+     "price": 4.0,
+     "price_note": "from $4"
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "10:30-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-yi-jia-teochew-fish-porridge-fish-soup",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Maxwell Fuzhou Oyster Cake",
+   "unit": "#01-05",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Fuzhou oyster cake",
+     "price": 2.5
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "09:00-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-maxwell-fuzhou-oyster-cake",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Taste Fusion Hainanese Chicken Chop",
+   "unit": "#01-24",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Hainanese chicken chop set",
+     "price": 8.8
+    },
+    {
+     "name": "Pork chop rice",
+     "price": 6.8,
+     "price_note": "from $6.80"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "12:00-21:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-taste-fusion-hainanese-chicken-chop",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Ri Xin Snack Delights",
+   "unit": "#01-55",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Ang ku kueh",
+     "price": 1.0
+    },
+    {
+     "name": "Wa kueh",
+     "price": 2.0
+    },
+    {
+     "name": "Huat kueh",
+     "price": 2.5,
+     "price_note": "from $2.50"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "18:00-22:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-ri-xin-snack-delights",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Fu Shun Jin Ji Shao La Mian Jia",
+   "unit": "#01-71",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Roast meat rice/noodles",
+     "price": 4.0,
+     "price_note": "from $4"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "12:00-17:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-fu-shun-jin-ji-shao-la-mian-jia",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Hup Kee Wu Xiang Guan Chang",
+   "unit": "#01-97",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Ngoh hiang",
+     "price": 0.5,
+     "price_note": "from $0.50 a piece"
+    }
+   ],
+   "hours": [
+    [
+     "012456",
+     [
+      "12:00-18:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-hup-kee-wu-xiang-guan-chang",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Jin Hua Fish Head Bee Hoon",
+   "unit": "#01-77",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Fish soup bee hoon",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "11:30-19:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-jin-hua-fish-head-bee-hoon",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Heng Heng Ondeh-Ondeh & Tapioca Cake",
+   "unit": "#01-31",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Ondeh ondeh (five)",
+     "price": 3.7
+    },
+    {
+     "name": "Tapioca cake",
+     "price": 0.8
+    },
+    {
+     "name": "Kueh lapis",
+     "price": 2.2
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "07:00-13:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-heng-heng-ondeh-ondeh-tapioca-cake",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Fu Ji Fuzhou Fish Ball Wanton Noodles",
+   "unit": "#01-06",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Spinach mee",
+     "price": 5.0,
+     "price_note": "$5/$6/$7"
+    },
+    {
+     "name": "Fuzhou fishball rou yan soup",
+     "price": 5.0,
+     "price_note": "$5/$6/$7"
+    },
+    {
+     "name": "Fishball wanton mee",
+     "price": 5.0,
+     "price_note": "$5/$6/$7"
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "11:30-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-fu-ji-fuzhou-fish-ball-wanton-noodles",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Pakistani Dum Biryani",
+   "unit": "#01-69",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Chicken biryani",
+     "price": 8.0
+    },
+    {
+     "name": "Mutton biryani",
+     "price": 9.0
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "10:30-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-maxwell-pakistani-dum-biryani",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Hock Lai Seng",
+   "unit": "#01-26",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fishball bak chor mee",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "07:00-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-hock-lai-seng",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Somerset Delicacies",
+   "unit": "#01-60",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Belachan fried rice",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Mixed seafood hor fun",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-somerset-delicacies",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Sichuan Cuisine",
+   "unit": "#01-87",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Grilled fish on paper",
+     "price": 22.0
+    },
+    {
+     "name": "La zi ji",
+     "price": 11.0
+    },
+    {
+     "name": "Cumin beef/pork",
+     "price": 11.0
+    },
+    {
+     "name": "Mapo tofu",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-maxwell-sichuan-cuisine",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Welcome Ren Min",
+   "unit": "#01-33",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Craft beer by the glass",
+     "price": 11.0,
+     "price_note": "$11–15"
+    },
+    {
+     "name": "by the pint",
+     "price": 13.0,
+     "price_note": "$13–19"
+    }
+   ],
+   "hours": [
+    [
+     "1",
+     [
+      "17:30-22:30"
+     ]
+    ],
+    [
+     "234",
+     [
+      "12:00-22:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "12:00-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "12:00-21:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-maxwell-welcome-ren-min",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Sultan Kebab",
+   "unit": "#01-86",
+   "cuisine": "other",
+   "dishes": [
+    {
+     "name": "Kebab wraps",
+     "price": 9.0,
+     "price_note": "from $9"
+    },
+    {
+     "name": "Tombik",
+     "price": 10.0,
+     "price_note": "from $10"
+    },
+    {
+     "name": "Kunefe",
+     "price": 14.0
+    }
+   ],
+   "hours": [
+    [
+     "012346",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-maxwell-sultan-kebab",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-maxwell",
+   "name": "Ah Zhong Roasted Delights",
+   "unit": "#01-93",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Two-meat rice/noodles",
+     "price": 5.0
+    },
+    {
+     "name": "Three-combo set",
+     "price": 10.0,
+     "price_note": "from $10"
+    }
+   ],
+   "hours": [
+    [
+     "01456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-maxwell"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-maxwell-ah-zhong-roasted-delights",
+   "lat": 1.280331,
+   "lng": 103.844747,
+   "zone": "central",
+   "address": "1 Kadayanallur Street, S069184",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Big Bowls Project",
+   "unit": "#02-90",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Szechuan black bean salmon bowl",
+     "price": 8.0
+    },
+    {
+     "name": "Mentaiko salmon bowl",
+     "price": 9.5
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:30-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-amoy-street-big-bowls-project",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Pepper Bowl",
+   "unit": "#02-102",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Spring onion pork rice",
+     "price": 6.3
+    },
+    {
+     "name": "Black pepper beef rice",
+     "price": 6.8
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "10:30-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-pepper-bowl",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Lagoon In A Bowl",
+   "unit": "#01-48",
+   "cuisine": "japanese",
+   "dishes": [
+    {
+     "name": "Mentaiko salmon bowl",
+     "price": 11.0
+    }
+   ],
+   "hours": [
+    [
+     "1234",
+     [
+      "11:00-15:00",
+      "18:00-20:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-amoy-street-lagoon-in-a-bowl",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Han Kee Fish Soup",
+   "unit": "#02-129",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Sliced fish soup",
+     "price": 6.0,
+     "price_note": "from $6"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-han-kee-fish-soup",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "A Noodle Story",
+   "unit": "#01-39",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Singapore-style ramen",
+     "price": 10.8
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "10:00-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-amoy-street-a-noodle-story",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Piao Ji Fish Porridge",
+   "unit": "#02-100",
+   "cuisine": "soup",
+   "dishes": [
+    {
+     "name": "Fish soup",
+     "price": 8.0
+    },
+    {
+     "name": "Fish soup with prawns",
+     "price": 10.0
+    }
+   ],
+   "hours": [
+    [
+     "012356",
+     [
+      "10:30-15:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-amoy-street-piao-ji-fish-porridge",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Lian Hup Heng",
+   "unit": "#02-128",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Orh nee tart",
+     "price": 3.8
+    },
+    {
+     "name": "Almond financier",
+     "price": 2.2
+    },
+    {
+     "name": "Lemon meringue tart",
+     "price": 3.8
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "10:30-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-lian-hup-heng",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Hong Kee Beef Noodles",
+   "unit": "#01-42",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Beef noodles soup",
+     "price": 6.0,
+     "price_note": "from $6"
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-hong-kee-beef-noodles",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "J2 Famous Crispy Curry Puff",
+   "unit": "#01-21",
+   "cuisine": "snacks",
+   "dishes": [
+    {
+     "name": "Curry puff",
+     "price": 2.0,
+     "price_note": "from $2"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "08:00-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-j2-famous-crispy-curry-puff",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Coffee Break",
+   "unit": "#02-78",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi",
+     "price": 1.9
+    },
+    {
+     "name": "Teh",
+     "price": 1.9
+    },
+    {
+     "name": "Hazelnut mocha",
+     "price": 4.0
+    },
+    {
+     "name": "Black sesame toast",
+     "price": 3.5
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "07:30-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-coffee-break",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Ah Seng (Hai Nam) Coffee",
+   "unit": "#02-95",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kaya toast (two)",
+     "price": 2.4
+    },
+    {
+     "name": "French toast",
+     "price": 4.0
+    },
+    {
+     "name": "Kopi O",
+     "price": 1.0
+    }
+   ],
+   "hours": [
+    [
+     "016",
+     [
+      "05:30-15:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "06:00-15:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "05:30-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-ah-seng-hai-nam-coffee",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Life Coffee",
+   "unit": "#02-134",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Matcha latte",
+     "price": 3.8
+    },
+    {
+     "name": "Egg cream hojicha",
+     "price": 3.8
+    },
+    {
+     "name": "Vietnamese coffee"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "06:30-16:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "08:00-15:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "07:30-15:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-life-coffee",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Ah Ter Teochew Fishball Noodles",
+   "unit": "#01-14",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fishball noodles",
+     "price": 4.5,
+     "price_note": "$4.50/$10"
+    },
+    {
+     "name": "Fishball soup",
+     "price": 6.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-ah-ter-teochew-fishball-noodles",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Amoy Street Fried Kway Teow",
+   "unit": "#01-01",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow",
+     "price": 4.5,
+     "price_note": "from $4.50"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "07:00-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-amoy-street-fried-kway-teow",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Rayyan's Waroeng Upnormal",
+   "unit": "#02-86",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Ayam penyet",
+     "price": 6.0
+    },
+    {
+     "name": "Balinese gyudon",
+     "price": 7.5
+    },
+    {
+     "name": "Tempura prawn egg bowl",
+     "price": 7.5
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "09:00-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-rayyan-s-waroeng-upnormal",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Mad Roaster",
+   "unit": "#02-107",
+   "cuisine": "cafe",
+   "dishes": [
+    {
+     "name": "Cold brew",
+     "price": 5.5,
+     "price_note": "from $5.50"
+    },
+    {
+     "name": "Honey butter latte",
+     "price": 4.6
+    },
+    {
+     "name": "Kaya toast set",
+     "price": 4.9
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "08:00-15:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "09:00-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-mad-roaster",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Quan Ji",
+   "unit": "#01-56/57",
+   "cuisine": "zi-char",
+   "dishes": [
+    {
+     "name": "Sweet and sour pork ribs",
+     "price": 13.0,
+     "price_note": "from $13"
+    },
+    {
+     "name": "Lala bee hoon",
+     "price": 16.0
+    },
+    {
+     "name": "Prawn omelette",
+     "price": 13.0,
+     "price_note": "from $13"
+    }
+   ],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-13:30"
+     ]
+    ],
+    [
+     "2345",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "15:00-21:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-amoy-street-quan-ji",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Terry Katong Laksa",
+   "unit": "#01-28",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Laksa",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "08:30-17:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-terry-katong-laksa",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Swan City Noodle House",
+   "unit": "#02-105",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Sarawak kampua noodles",
+     "price": 5.0
+    },
+    {
+     "name": "Kolo mee",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "07:30-14:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "08:00-13:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-swan-city-noodle-house",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Pho Hanoi",
+   "unit": "#02-104",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Beef and brisket pho",
+     "price": 7.2
+    },
+    {
+     "name": "Beef ball pho",
+     "price": 6.5
+    },
+    {
+     "name": "Grilled pork vermicelli",
+     "price": 6.5,
+     "price_note": "from $6.50"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-16:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-pho-hanoi",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Grandma Ban Mee",
+   "unit": "#01-07",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Chilli ban mee",
+     "price": 5.8
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "10:00-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-grandma-ban-mee",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Spicy Wife Nasi Lemak",
+   "unit": "#02-119",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Aromatic chicken nasi lemak",
+     "price": 6.5
+    }
+   ],
+   "hours": [
+    [
+     "12",
+     [
+      "10:45-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-spicy-wife-nasi-lemak",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Chun Feng Man Mian",
+   "unit": "#02-114",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Truffle char siu noodles",
+     "price": 9.0
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "09:30-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-amoy-street-chun-feng-man-mian",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "James Quesadillas & Brunch",
+   "unit": "#02-79",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Pulled pork burrito",
+     "price": 6.5,
+     "price_note": "$6.50/$8"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "07:30-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-james-quesadillas-brunch",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Good Day",
+   "unit": "#01-25",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Beef hor fun",
+     "price": 5.0
+    },
+    {
+     "name": "Sin chow hor fun",
+     "price": 5.0
+    },
+    {
+     "name": "Sliced fish hor fun",
+     "price": 5.0
+    }
+   ],
+   "hours": [
+    [
+     "1345",
+     [
+      "07:00-16:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "07:00-14:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-good-day",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Gan Lao Zai",
+   "unit": "#02-123",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Chilli crab noodles",
+     "price": 8.0
+    },
+    {
+     "name": "Honey-glazed pork belly noodles",
+     "price": 6.5
+    }
+   ],
+   "hours": [
+    [
+     "123456",
+     [
+      "10:30-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-gan-lao-zai",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Petit Krumbs",
+   "unit": "#02-133",
+   "cuisine": "cafe",
+   "dishes": [
+    {
+     "name": "Butter croissant",
+     "price": 2.7
+    },
+    {
+     "name": "Taro mochi egg tart",
+     "price": 2.5
+    },
+    {
+     "name": "Sourdough brownie",
+     "price": 2.0
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "08:30-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-petit-krumbs",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Taco Liberation Co",
+   "unit": "#02-117",
+   "cuisine": "western",
+   "dishes": [
+    {
+     "name": "Veggie taco box",
+     "price": 5.9,
+     "price_note": "from $5.90"
+    },
+    {
+     "name": "Meat taco box",
+     "price": 8.5,
+     "price_note": "from $8.50"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "08:30-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-taco-liberation-co",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Pan's Kopi",
+   "unit": "#02-98",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Taro butter toast",
+     "price": 3.5
+    },
+    {
+     "name": "Iced matcha latte",
+     "price": 3.5
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "07:00-15:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "08:30-15:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-pan-s-kopi",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-amoy-street",
+   "name": "Wah Kee Noodle",
+   "unit": "#02-125",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton mee",
+     "price": 5.0,
+     "price_note": "from $5"
+    },
+    {
+     "name": "Mushroom noodles",
+     "price": 5.0,
+     "price_note": "from $5"
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "07:00-14:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-amoy"
+   ],
+   "verified": "2026-07",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-amoy-street-wah-kee-noodle",
+   "lat": 1.279354,
+   "lng": 103.846196,
+   "zone": "central",
+   "address": "7 Maxwell Road (National Development Bldg Annex B), S069111",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Chef Lup Roasted",
+   "unit": "Stall 4",
+   "cuisine": "chicken-rice",
+   "dishes": [
+    {
+     "name": "Signature roast duck",
+     "price": 59.0
+    },
+    {
+     "name": "Three-meat combo",
+     "price": 20.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "00:00-24:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "24h",
+    "supper",
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 3,
+   "id": "p-c-lau-pa-sat-chef-lup-roasted",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Lao Fu Zi Fried Kway Teow",
+   "unit": "Stall 74-75",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Char kway teow",
+     "price": 7.5,
+     "price_note": "from $7.50"
+    },
+    {
+     "name": "Laksa",
+     "price": 7.5
+    },
+    {
+     "name": "Boiled cockles",
+     "price": 10.0,
+     "price_note": "from $10"
+    }
+   ],
+   "hours": [
+    [
+     "012345",
+     [
+      "11:45-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "13:00-22:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-lao-fu-zi-fried-kway-teow",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Thunder Tea Rice",
+   "unit": "Stall 25",
+   "cuisine": "vegetarian",
+   "dishes": [
+    {
+     "name": "Thunder tea rice",
+     "price": 6.2
+    },
+    {
+     "name": "Thunder tea special",
+     "price": 9.9
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "00:00-24:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [
+    "vegetarian"
+   ],
+   "tags": [
+    "24h",
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-thunder-tea-rice",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Warong Pak Sapari",
+   "unit": "Stall 58",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Mee soto",
+     "price": 5.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-warong-pak-sapari",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Nasi Lemak Ayam Taliwang",
+   "unit": "Stall 71",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak ayam taliwang",
+     "price": 9.2
+    },
+    {
+     "name": "Chicken fillet curry rice",
+     "price": 7.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-00:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-nasi-lemak-ayam-taliwang",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Delhi Express Indian Cuisine",
+   "unit": "Stall 11",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Paneer butter masala",
+     "price": 6.0,
+     "price_note": "from $6"
+    },
+    {
+     "name": "Garlic naan",
+     "price": 3.0
+    },
+    {
+     "name": "Butter chicken",
+     "price": 8.0
+    }
+   ],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "12:00-22:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-delhi-express-indian-cuisine",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Seng Kee Local Delights",
+   "unit": "Stall 10",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Fried kway teow",
+     "price": 7.2
+    },
+    {
+     "name": "Laksa",
+     "price": 7.5
+    },
+    {
+     "name": "Hokkien mee",
+     "price": 7.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-seng-kee-local-delights",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Qiu Lian Ban Mian",
+   "unit": "Stall 16",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Ban mian",
+     "price": 5.9
+    },
+    {
+     "name": "Tom yum ban mian",
+     "price": 6.4
+    },
+    {
+     "name": "Dry noodles",
+     "price": 7.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-20:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-qiu-lian-ban-mian",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Rokus a.g.b.",
+   "unit": "Stall 24",
+   "cuisine": "korean",
+   "dishes": [
+    {
+     "name": "Tteokbokki burger",
+     "price": 13.9
+    },
+    {
+     "name": "Jumeokbap rice bowl",
+     "price": 8.9
+    },
+    {
+     "name": "Folded kimbap",
+     "price": 5.9
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-lau-pa-sat-rokus-a-g-b",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "iEat Kitchen",
+   "unit": "Stall 56",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Salted egg chicken rice",
+     "price": 10.0
+    },
+    {
+     "name": "Chicken cutlet hor fun",
+     "price": 6.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-ieat-kitchen",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Kallang Airport Wanton Noodle",
+   "unit": "Stall 57",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton noodles",
+     "price": 6.2
+    },
+    {
+     "name": "Fried wantons",
+     "price": 5.0,
+     "price_note": "$5/$7"
+    },
+    {
+     "name": "Fried chicken wings",
+     "price": 7.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-kallang-airport-wanton-noodle",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Ri Ri Hong Mala Hot Pot",
+   "unit": "Stall 61-62",
+   "cuisine": "other",
+   "dishes": [
+    {
+     "name": "Mala hot pot"
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-ri-ri-hong-mala-hot-pot",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Swatow Bai Le Braised Duck",
+   "unit": "Stall 9",
+   "cuisine": "braised",
+   "dishes": [
+    {
+     "name": "Braised duck rice",
+     "price": 5.0
+    },
+    {
+     "name": "Braised duck noodle set",
+     "price": 5.5
+    },
+    {
+     "name": "Kway chap set",
+     "price": 5.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-00:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-swatow-bai-le-braised-duck",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Maya's Veggie Delight",
+   "unit": "Stall 47",
+   "cuisine": "vegetarian",
+   "dishes": [
+    {
+     "name": "Vegetarian butter chicken",
+     "price": 8.0
+    },
+    {
+     "name": "Garlic naan",
+     "price": 3.0
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [
+    "vegetarian"
+   ],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-maya-s-veggie-delight",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Creme & Cone",
+   "unit": "Stall 79-87",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Ice cream single",
+     "price": 5.3,
+     "price_note": "$5.30 / double $6.30"
+    },
+    {
+     "name": "Lemon mango tart",
+     "price": 7.9
+    }
+   ],
+   "hours": [
+    [
+     "012346",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "09:00-22:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-creme-cone",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Butter & Cream Bakery",
+   "unit": "Stall 5-6",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Choco explosion doffin",
+     "price": 3.6
+    },
+    {
+     "name": "Classic cheese tart",
+     "price": 2.9
+    }
+   ],
+   "hours": [
+    [
+     "1234",
+     [
+      "10:00-21:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:30-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-21:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-butter-cream-bakery",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Nakoko",
+   "unit": "C-01",
+   "cuisine": "dessert",
+   "dishes": [
+    {
+     "name": "Acai bowl medium",
+     "price": 6.5,
+     "price_note": "$6.50 / large $8.20"
+    },
+    {
+     "name": "Yoghurt bowl",
+     "price": 6.2,
+     "price_note": "from $6.20"
+    },
+    {
+     "name": "Sundae",
+     "price": 9.5
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-22:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "dessert"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-nakoko",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Yuen Kee Dumpling",
+   "unit": "Stall 9A",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Shrimp and pork dumplings (10)",
+     "price": 9.8
+    },
+    {
+     "name": "Chilli oil la mian",
+     "price": 11.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:30"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 2,
+   "id": "p-c-lau-pa-sat-yuen-kee-dumpling",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Sing HK Kitchen",
+   "unit": "Stall 12",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Scrambled egg garlic pork chop rice",
+     "price": 7.3
+    },
+    {
+     "name": "Baked chicken dry noodles",
+     "price": 6.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-23:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-sing-hk-kitchen",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Lion City Dim Sum",
+   "unit": "Stall 18",
+   "cuisine": "dumplings",
+   "dishes": [
+    {
+     "name": "Large pork bao",
+     "price": 2.3
+    },
+    {
+     "name": "Otah siew mai",
+     "price": 2.8
+    }
+   ],
+   "hours": [
+    [
+     "0123456",
+     [
+      "00:00-24:00"
+     ]
+    ]
+   ],
+   "sources": [
+    "eb-lps"
+   ],
+   "verified": "2026-09",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "24h",
+    "supper",
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-lion-city-dim-sum",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "detailed"
+  },
+  {
+   "cluster": "c-lau-pa-sat",
+   "name": "Satay Club (Satay Street)",
+   "unit": "Stalls 7 & 8, Boon Tat St",
+   "cuisine": "bbq-seafood",
+   "dishes": [
+    {
+     "name": "Chicken, mutton, beef satay",
+     "price": 0.7,
+     "price_note": "$0.70 a stick (min 10)"
+    },
+    {
+     "name": "Rice cake",
+     "price": 1.0
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "cn-lps"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "supper",
+    "group"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-lau-pa-sat-satay-club-satay-street",
+   "lat": 1.280594,
+   "lng": 103.850408,
+   "zone": "central",
+   "address": "18 Raffles Quay, S048582",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Golden Nur",
+   "unit": "#03-11/12",
+   "cuisine": "indian",
+   "dishes": [
+    {
+     "name": "Crispy chicken briyani",
+     "price": 6.5
+    },
+    {
+     "name": "Curry chicken briyani",
+     "price": 6.5
+    },
+    {
+     "name": "Soto ayam",
+     "price": 3.5,
+     "price_note": "$3.50/$4"
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-golden-nur",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Hock Gooi Hainanese Curry Rice",
+   "unit": "#02-03",
+   "cuisine": "rice",
+   "dishes": [
+    {
+     "name": "Pork chop set",
+     "price": 3.5
+    },
+    {
+     "name": "Braised pork set",
+     "price": 3.5
+    },
+    {
+     "name": "Curry chicken wing set",
+     "price": 3.5
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-hock-gooi-hainanese-curry-rice",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Sunrise Traditional Coffee & Toast",
+   "unit": "#02-15",
+   "cuisine": "drinks",
+   "dishes": [
+    {
+     "name": "Kopi O",
+     "price": 1.1
+    },
+    {
+     "name": "Kaya toast set",
+     "price": 3.5
+    },
+    {
+     "name": "Soft bun set",
+     "price": 3.5
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "breakfast"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-sunrise-traditional-coffee-toast",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Tiong Bahru Wanton Mee",
+   "unit": "#02-19",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Wanton noodles",
+     "price": 4.5,
+     "price_note": "$4.50/$5.50"
+    },
+    {
+     "name": "Shredded chicken hor fun",
+     "price": 4.5,
+     "price_note": "$4.50/$5.50"
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-tiong-bahru-wanton-mee",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Wei Nan Wang Hock Kian Lor Mee",
+   "unit": "#02-05",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Lor mee",
+     "price": 3.5,
+     "price_note": "$3.50/$4"
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-wei-nan-wang-hock-kian-lor-mee",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Ah Liang Ipoh Hor Fun",
+   "unit": "#02-04",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Seafood hor fun",
+     "price": 5.0,
+     "price_note": "$5/$6"
+    },
+    {
+     "name": "Crab meat hor fun",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    },
+    {
+     "name": "Shredded chicken hor fun",
+     "price": 4.0,
+     "price_note": "$4/$5"
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-ah-liang-ipoh-hor-fun",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Tian Ci Traditional Prawn Noodle",
+   "unit": "#03-18",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Prawn noodles",
+     "price": 4.0,
+     "price_note": "from $4"
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-tian-ci-traditional-prawn-noodle",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Yummy Nyonya Peranakan",
+   "unit": "#02-22",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Beef rendang, chap chye and chye sim plate",
+     "price": 5.0
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-yummy-nyonya-peranakan",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Heng's Authentic Teochew Mee Pok",
+   "unit": "#02-20",
+   "cuisine": "noodles",
+   "dishes": [
+    {
+     "name": "Mee pok",
+     "price": 4.0,
+     "price_note": "$4/$5/$6"
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-heng-s-authentic-teochew-mee-pok",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
+  },
+  {
+   "cluster": "c-market-street",
+   "name": "Market Street Nasi Lemak",
+   "unit": "#03-22",
+   "cuisine": "malay",
+   "dishes": [
+    {
+     "name": "Nasi lemak sets",
+     "price": 3.5,
+     "price_note": "$3.50–$4.30"
+    }
+   ],
+   "hours": [],
+   "sources": [
+    "sl-mkt"
+   ],
+   "verified": "unconfirmed",
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "id": "p-c-market-street-market-street-nasi-lemak",
+   "lat": 1.284059,
+   "lng": 103.849882,
+   "zone": "central",
+   "address": "86 Market Street (CapitaSpring), Levels 2–3",
+   "confidence": "partial"
   }
  ]
 }
