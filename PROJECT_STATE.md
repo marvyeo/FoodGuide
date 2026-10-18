@@ -1,6 +1,6 @@
 # Makan Map — project state
 
-_Last updated: 18 Oct 2026, ~10:00 SGT (v1.4: craving chips include/exclude; official directories for 17 of 19 Home/East malls; directory hours)_
+_Last updated: 18 Oct 2026, ~10:15 SGT (v1.4: craving chips include/exclude; official directories for 17 of 19 Home/East malls; directory hours)_
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
@@ -15,7 +15,7 @@ A family food map of Singapore. You filter by when, how far, budget, dine-in/tap
 - **Status:** v1.4 live (craving chips, 18 Oct).
   - The owner signs in with Google on PC and phone. The family sheet exists.
   - Photos are tested only against mocked Google APIs.
-- **Data:** PRs #1–#4 merged on 15 Oct. **PR #5 (CapitaLand) and the 18 Oct mall PR are open** (the second is stacked on #5; merging it merges both). With them: **1,868 places** (218 closed), 19 hawker centres, 19 malls, 61 standalones, Home ground and East zones only.
+- **Data:** PRs #1–#4 merged on 15 Oct. **PR #5 (CapitaLand) and the 18 Oct mall PR are open** (the second is stacked on #5; merging it merges both). With them: **1,872 places** (218 closed), 19 hawker centres, 20 malls, 61 standalones, Home ground and East zones only.
 
 ---
 
@@ -117,7 +117,7 @@ Price bands: 1 = under $8, 2 = $8–20, 3 = $20–50, 4 = $50+.
 
 ## 3. Data coverage
 
-**With the two open PRs (18 Oct 2026, ~03:00):** 1,868 places (218 of them closed), 19 hawker centres, 19 malls and 61 standalone restaurants/cafés, in the **Home ground** and **East** zones. North East, North, Central and West aren't built yet.
+**With the two open PRs (18 Oct 2026, ~10:00):** 1,872 places (218 of them closed), 19 hawker centres, 20 malls and 61 standalone restaurants/cafés, in the **Home ground** and **East** zones. North East, North, Central and West aren't built yet.
 
 Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the known total: the NEA cooked-food stall count for hawker centres, the directory count for malls. "Mapped" counts open places only; "Closed" are kept for family logs. `?` means no roster yet, i.e. a completeness gap.
 
@@ -161,13 +161,14 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 | home | hawker | Kaki Bukit 511 Market & Food Centre | 34 | 42 (81%) | 16 | 0 | 18 | 0 | NEA count |
 | home | hawker | Pasar Makan @ Reservoir (Blk 630) | 31 | 36 (86%) | 11 | 5 | 15 | 0 | NEA count |
 | home | mall | Bedok Mall | 78 | 78 (100%) | 6 | 6 | 66 | 19 | capitaland-m-bedok-mall |
+| home | mall | Djitsun Mall Bedok | 4 | 4 (100%) | 0 | 0 | 4 | 0 | visitbedok-m-djitsun-mall |
 
-Standalone restaurants/cafés: 61 | Total places: 1868 | Gaps (no roster): 2
+Standalone restaurants/cafés: 61 | Total places: 1872 | Gaps (no roster): 2
 
 Notes:
 - **Hawker coverage %:** NEA counts include drinks stalls and vacant units, so 100% isn't always reachable.
 - **Mall coverage %:**
-  - **17 of the 19 malls use the landlord's official live directory** (CapitaLand 15 Oct; the rest 18 Oct). Closed tenants: 199 on 18 Oct (Jewel 47, i12 30, PLQ 26, Century Sq 23, CCP 22, Parkway 20 …). i12 Katong's directory only lists 29 F&B outlets now, so most older i12 entries are closed.
+  - **17 of the 20 malls use the landlord's official live directory** (Djitsun Mall Bedok uses a third-party list) (CapitaLand 15 Oct; the rest 18 Oct). Closed tenants: 199 on 18 Oct (Jewel 47, i12 30, PLQ 26, Century Sq 23, CCP 22, Parkway 20 …). i12 Katong's directory only lists 29 F&B outlets now, so most older i12 entries are closed.
   - **Opening hours: 700 of 1,083 open mall places** (18 Oct). From the directory list (Frasers, Jewel, Changi City Point) or per-store pages (Lendlease, Downtown East, i12 Katong, KINEX, Far East, a few SingPost). Most are still `listed` (no dishes).
   - **No hours published anywhere:** CapitaLand (Bedok Mall 72, Tampines Mall 36, SingPost 46; store pages have no hours), Pasir Ris Mall (53), Our Tampines Hub shops (55). White Sands / Paya Lebar Square (SingMalls) have none either. These rely on family photos or "Still here" confirmations.
   - **Still SingMalls (~2024): White Sands and Paya Lebar Square.** White Sands' site (whitesands.com.sg) returns 403 since FCT sold it; payalebarsquare.com.sg redirects to an unrelated site. Try again later or find the new owners' pages.
@@ -335,29 +336,35 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 | 18 Oct | Craving chips: tap cycles want → rule out → neutral, all chips wrapped, Clear button | Owner wanted no sideways scroll, a way to exclude, and a quick reset |
 | 18 Oct | Official directories for every Home/East mall that has one; directory hours parsed into `hours` | Same reasoning as CapitaLand; hours make "Only open" and centre picks work for mall outlets |
 | 18 Oct | Mall F&B = the directory's F&B category, plus food retail (bakeries, bak kwa, confectionery) where the landlord files it under shops (Jewel); excludes supermarkets, liquor shops, vending | Matches what the family would walk in to eat or buy to eat |
-| 18 Oct | New mall clusters: Our Tampines Hub (shops), KINEX, Katong V, Siglap Centre, Djitsun Mall Bedok | Each had a current official list; the OTH hawker centre stays its own cluster |
+| 18 Oct | New mall clusters: Our Tampines Hub (shops), KINEX, Katong V, Siglap Centre, Djitsun Mall Bedok |
+| 18 Oct | **No opening hours from Google Maps**, and no in-app "Hours on Google" link (owner declined) | Google's terms forbid copying Maps data into our dataset and scraping it; hours come only from landlords, dated guides and family photos |
+| 18 Oct | Loyang Point and City Plaza left out | Owner's call; no usable directory either | Each had a current official list; the OTH hawker centre stays its own cluster |
 
 ## 7. Next up / ideas
-**Most likely next asks (in order):**
-- [x] Official directories for CapitaLand malls (Bedok Mall, Tampines Mall), 15 Oct. PR "Official CapitaLand directories".
-- [x] Official directories for 11 more malls + 4 new malls, 18 Oct (PR "Official directories for the East malls").
-- [ ] **White Sands and Paya Lebar Square** official lists (sites dead/redirecting on 18 Oct).
-- [x] Per-store hours for Lendlease, Downtown East, i12, KINEX, Far East (18 Oct): mall outlets with hours 434 → 700.
-- [ ] Enrich the ~900 `listed` mall outlets with dishes and prices (family menu photos), and hours where no landlord publishes them (CapitaLand malls, Pasir Ris Mall, Our Tampines Hub).
-- [ ] A **"What's new" view** listing places tagged `new` and recent openings; and clearing `new` tags after ~2 months.
-- [ ] **Close the East gaps** in section 3:
-  - Mall directories for Tampines 1, Pasir Ris Mall, Eastpoint (+ Hawkers' Street), SingPost and Downtown East.
-  - Stall rosters for Old Airport Rd, Haig Rd, Bedok Interchange, Changi Village and Fengshan.
-  - The unbuilt Geylang-area centres.
-- [ ] **"Worth the trip" island-wide list** from the **Michelin Bib Gourmand 2026** hawker selection. These would be `must_try` places in other zones, and the zone map already supports them. Sources:
-  - https://danielfooddiary.com/2026/07/28/bibgourmand2026/
-  - https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/singapore-bib-gourmand-2026
-- [ ] **Next zones:** North East, North, Central, West. Use the section 5 pipeline: roster first.
-- [ ] **Monthly refresh as a scheduled task.** It needs a decision on how it reads the family Sheet's `places_added` and `photos` tabs.
+**Done 15–18 Oct:** official directories for 17 malls, 5 new malls, directory and per-store hours (700 of 1,087 open mall outlets), craving chips with exclude. See PRs #5 and #6.
+
+**Spin quality (app; malls are now ~2/3 of all places, so the spin leans to mall chains and kiosks):**
+- [ ] **Venue filter on Spin** (Hawker / Malls / Restaurants), reusing the Explore/Map `browseKind` chips.
+- [ ] **Meal-aware spin:** for lunch/dinner, down-weight `drinks`, `dessert` and `snacks` kiosks (434 of 1,654 open places) unless the craving picks them.
+- [ ] **Chain de-duplication:** one "Luckin Coffee" (11 outlets), "McDonald's" (10), Saizeriya (9)… per spin, nearest outlet; optional "Skip chains" toggle.
+- [ ] **Hotpot & mala** as its own cuisine (16 of the 49 "Other" places), so it can be picked or ruled out.
+- [ ] **"What's new" view** for places tagged `new` (directory "Opening Soon / New Store"), with tags cleared after ~2 months.
+
+**Data, in priority order:**
+1. [ ] **Hawker rosters** for the centres under 40%: Old Airport Rd (41/168), Haig Rd (15/72), Bedok Interchange 208B (19/70, Home ground), Changi Village (28/87), Bedok Corner (10/32), Marine Parade (19/55), Fengshan 85 (26/72, Home ground). Hawker.guide pages fail for several; try the built-in browser on hawker.guide, or NEA stall tender lists.
+2. [ ] **NEA counts** for Our Tampines Hub and Pasir Ris Central hawker centres.
+3. [ ] **Unbuilt East hawker centres:** Sims Place, Circuit Road ×3, Aljunied Ave 2, Geylang Bahru, Upper Boon Keng, Blk 58 New Upper Changi Rd, Marine Terrace 50A, Kallang Estate.
+4. [ ] **"Worth the trip" island-wide list** from the Michelin Bib Gourmand 2026 hawker selection, as `must_try` places in other zones. Sources: https://danielfooddiary.com/2026/07/28/bibgourmand2026/ and https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/singapore-bib-gourmand-2026
+5. [ ] **White Sands and Paya Lebar Square** official lists (sites dead/redirecting on 18 Oct; retry at the monthly refresh).
+6. [ ] **Next zones:** North East, North, Central, West, using the section 5 pipeline (roster first).
+
+**Upkeep:**
+- [ ] **Monthly refresh as a scheduled task.** Re-run the mall recipes in section 3 (needs the PC with the desktop app open for the browser), diff rosters, close/open places. Needs a decision on reading the family Sheet's `places_added` and `photos` tabs.
+- [ ] `listed` places (1,153 open) have no dishes; family menu photos are the main way to fill them. Hours are still missing for CapitaLand malls (Bedok Mall 72, Tampines Mall 36, SingPost 46), Pasir Ris Mall (53), Our Tampines Hub (55).
+- [ ] `places.json` is 1.1 MB (97 KB gzipped). Fine for now; if new zones push it past ~3 MB, split per zone.
 
 **Later / ideas:**
 - [ ] Coffeeshops: there's no official list. Map them per area from guides, plus the family's *Add a stall*.
 - [ ] NEA cleaning/closure dates per centre (data.gov.sg) to hide centres during cleaning weeks.
 - [ ] A "Still here ✓" quick confirm for `listed` stalls; it would feed the refresh.
-- [ ] Google Places photos/menus in-app. This needs a paid Google Maps Platform key, so it's deferred.
 - [ ] Owner: real two-account test of the family invite flow; photo upload on a phone.
