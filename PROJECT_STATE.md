@@ -393,3 +393,5 @@ Owner's call (18 Oct): **map malls zone by zone, starting with Central; no more 
 - [ ] NEA cleaning/closure dates per centre (data.gov.sg) to hide centres during cleaning weeks.
 - [ ] A "Still here ✓" quick confirm for `listed` stalls; it would feed the refresh.
 - [ ] Owner: real two-account test of the family invite flow; photo upload on a phone.
+
+- 2026-10-21 (conductor): new app icon from the ecosystem icon set.
