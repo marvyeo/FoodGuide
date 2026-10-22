@@ -395,3 +395,5 @@ Owner's call (18 Oct): **map malls zone by zone, starting with Central; no more 
 - [ ] Owner: real two-account test of the family invite flow; photo upload on a phone.
 
 - 2026-10-21 (conductor): new app icon from the ecosystem icon set.
+
+- 2026-10-22 (conductor): manifest `id` changed from "./" to "/FoodGuide/". "./" resolved to the site root, which TV World also claimed, so Android treated the apps as one. Reinstall once.
