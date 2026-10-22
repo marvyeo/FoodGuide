@@ -1,5 +1,7 @@
 # Notes for Claude
 
+**FIRST, before anything else:** start your first reply with "Rename this chat to: **FoodGuide ver N**", taking N from the **Next chat name** line at the top of `PROJECT_STATE.md`. Then bump that number by 1 in your first commit.
+
 Read `PROJECT_STATE.md` first. It has the architecture, data schemas, source-reliability notes and the refresh procedure.
 
 - `data/places.json` is the source of truth for places. Change it through a pull request (the owner approves by merging). Never delete a place, because family logs reference place ids; set `"status": "closed"` instead.

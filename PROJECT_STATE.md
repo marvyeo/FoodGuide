@@ -1,5 +1,8 @@
 # Makan Map — project state
 
+> **Next chat name: `FoodGuide ver 2`**
+> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 2**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
+
 _Last updated: 18 Oct 2026, ~10:30 SGT (v1.5: spin Where filter, mealtime weighting, chain de-dup. Data: East malls done; **Central malls in progress on branch `data/central-malls`**)_
 
 > **New chat? Start here.**
