@@ -48,6 +48,8 @@ a{color:inherit}
 
 /* layout */
 #app{max-width:560px;margin:0 auto;padding:calc(var(--safe-t) + 14px) 16px calc(var(--nav) + var(--safe-b) + 24px)}
+:root{--lp-bg:var(--bg);--lp-surface:var(--card);--lp-text:var(--ink);--lp-muted:var(--ink2);--lp-accent:var(--chilli)}
+.lp-back{flex:none;margin-right:2px;color:var(--lp-muted);text-decoration:none}
 .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .brand{display:flex;align-items:center;gap:10px}
 .brand-mark{width:34px;height:34px;border-radius:11px;background:var(--chilli);display:grid;place-items:center;color:#fff;font-size:18px}
@@ -219,7 +221,7 @@ nav.tabs button.on{color:var(--chilli)} nav.tabs button.on .ic{filter:none;opaci
 
 <main id="app" class="hidden">
   <header class="topbar">
-    <div class="brand"><div class="brand-mark">🍜</div><div><h2 style="font-size:19px">Makan Map</h2><div class="tiny faint" id="hello"></div></div></div>
+    <div class="brand"><a class="iconbtn lp-back" href="https://marvyeo.github.io/LifePlan/" aria-label="Back to Life Plan">←</a><div class="brand-mark">🍜</div><div><h2 style="font-size:19px">Makan Map</h2><div class="tiny faint" id="hello"></div></div></div>
     <button class="sync" id="syncChip" onclick="syncNow(true)"><span class="dot" id="syncDot"></span><span id="syncText">Offline</span></button>
   </header>
   <div id="view"></div>

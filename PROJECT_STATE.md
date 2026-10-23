@@ -400,3 +400,5 @@ Owner's call (18 Oct): **map malls zone by zone, starting with Central; no more 
 - 2026-10-21 (conductor): new app icon from the ecosystem icon set.
 
 - 2026-10-22 (conductor): manifest `id` changed from "./" to "/FoodGuide/". "./" resolved to the site root, which TV World also claimed, so Android treated the apps as one. Reinstall once.
+
+- 2026-10-23 (conductor, Sprint 13.2): added the "←" back-to-Life-Plan button in the top bar (it was the only app without one) and shared theme tokens `--lp-bg/--lp-surface/--lp-text/--lp-muted/--lp-accent` mapped to this app's palette; `sw.js` cache `makanmap-v14`. Tile-only app: no `lp-sso` or Life Plan feed. Not tested live.
