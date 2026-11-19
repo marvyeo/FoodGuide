@@ -1,0 +1,43 @@
+{
+  "_note": "OneMap geocodes fetched 19 Oct 2026 via the built-in browser (same-origin fetch on onemap.gov.sg). Not yet in places.json. CHECK: Tiong Bahru Plaza (postal 168898 matched Tiong Bahru Market, re-geocode with 168898 'TIONG BAHRU PLAZA' / 302 Tiong Bahru Rd); Orchard MRT matched Orchard Boulevard (re-query 'ORCHARD MRT STATION (NS22)'); Esplanade matched an exit.",
+  "clusters": {
+    "m-plaza-singapura": ["68 Orchard Road, S238839", 1.300748, 103.845048],
+    "m-raffles-city": ["252 North Bridge Road, S179103", 1.294076, 103.853332],
+    "m-funan": ["107 North Bridge Road, S179105", 1.291348, 103.84999],
+    "m-bugis-junction": ["200 Victoria Street, S188021", 1.299113, 103.855411],
+    "m-bugis-plus": ["201 Victoria Street, S188067", 1.299604, 103.854242],
+    "m-junction-8": ["9 Bishan Place, S579837", 1.350481, 103.84876],
+    "m-clarke-quay": ["3E River Valley Road, S179024", 1.290314, 103.846728],
+    "m-the-centrepoint": ["176 Orchard Road, S238843", 1.301978, 103.839759],
+    "c-lau-pa-sat": ["18 Raffles Quay, S048582", 1.280594, 103.850408],
+    "c-amoy-street": ["7 Maxwell Road (National Development Bldg Annex B), S069111", 1.279354, 103.846196],
+    "c-maxwell": ["1 Kadayanallur Street, S069184", 1.280331, 103.844747],
+    "c-market-street": ["86 Market Street (CapitaSpring)", 1.284059, 103.849882]
+  },
+  "offices": {
+    "o-ioi-cbt": ["IOI Central Boulevard Towers, 2 Central Boulevard, S018916", 1.279777, 103.851513],
+    "o-dsta": ["DSTA Integrated Complex, 1 Depot Road", 1.279662, 103.816499]
+  },
+  "nea": {
+    "c-amoy-street": {"stalls": 135, "cooked": 134},
+    "c-maxwell": {"stalls": 103, "cooked": 103},
+    "c-market-street": {"stalls": 76, "cooked": 76, "note": "NEA Jun 2024 list still shows the old Golden Shoe address; centre is now in CapitaSpring (86 Market St)"},
+    "c-lau-pa-sat": {"note": "not on NEA list (privately run); roster from laupasat.sg"}
+  },
+  "mrt": [
+    ["Dhoby Ghaut", 1.298912, 103.846293], ["Somerset", 1.300253, 103.839158], ["City Hall", 1.29299, 103.852543],
+    ["Bugis", 1.300465, 103.855707], ["Promenade", 1.293998, 103.86035], ["Bayfront", 1.281874, 103.85908],
+    ["Raffles Place", 1.283933, 103.851463], ["Tanjong Pagar", 1.276561, 103.845725], ["Chinatown", 1.283964, 103.843142],
+    ["Outram Park", 1.280242, 103.840052], ["Tiong Bahru", 1.286195, 103.826999], ["HarbourFront", 1.265311, 103.820557],
+    ["Novena", 1.320441, 103.843826], ["Toa Payoh", 1.332629, 103.847502], ["Bishan", 1.351019, 103.850057],
+    ["Clarke Quay", 1.287452, 103.846119], ["Bras Basah", 1.296862, 103.850667], ["Marina Bay", 1.276311, 103.854605],
+    ["Holland Village", 1.31224, 103.796399], ["Botanic Gardens", 1.322387, 103.815385], ["Stevens", 1.320066, 103.826024],
+    ["Newton", 1.31257, 103.838032], ["Downtown", 1.279446, 103.852841], ["Telok Ayer", 1.282069, 103.848649],
+    ["Shenton Way", 1.277717, 103.850368], ["Maxwell", 1.280533, 103.843884], ["Fort Canning", 1.292482, 103.844331],
+    ["Orchard Boulevard", 1.302422, 103.823869], ["Great World", 1.293948, 103.833721], ["Telok Blangah", 1.270706, 103.809762],
+    ["Labrador Park", 1.272368, 103.803416], ["Caldecott", 1.337347, 103.839544], ["Marymount", 1.348707, 103.839423],
+    ["Upper Thomson", 1.354416, 103.832898], ["Little India", 1.307244, 103.849842], ["Rochor", 1.303852, 103.852769],
+    ["Nicoll Highway", 1.299767, 103.863637], ["Gardens by the Bay", 1.278487, 103.867455], ["Havelock", 1.288505, 103.833586],
+    ["Farrer Road", 1.317439, 103.807379], ["Tanjong Rhu", 1.297265, 103.873453], ["Kent Ridge", 1.293533, 103.784573]
+  ]
+}
