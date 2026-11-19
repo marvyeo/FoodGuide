@@ -936,6 +936,41 @@
    "name": "Lau Pa Sat press release (reopening, 80+ food stalls)",
    "url": "https://www.laupasat.sg/wp-content/uploads/2024/04/Press-Release-Iconic-Heritage-Food-Hall-Lau-Pa-Sat-Welcomes-Visitors-Back-with-Over-80-Food-Stalls-100-Retail-Brands-and-2000-Local-Products.pdf",
    "date": "2024-04"
+  },
+  "ion-m-ion-orchard": {
+   "name": "ion – ION Orchard directory",
+   "url": "https://www.ionorchard.com/en/dine.html (GetStoresByType Dine)",
+   "date": "live directory (Dine)"
+  },
+  "ngee-ann-city-m-ngee-ann-city": {
+   "name": "ngee-ann-city – Ngee Ann City directory",
+   "url": "https://www.ngeeanncity.com.sg/shopdirectory/ (Cafés, Food Specialty, Gourmet Confectionery, Restaurants)",
+   "date": "live directory (official, undated static site)"
+  },
+  "wisma-m-wisma-atria": {
+   "name": "wisma – Wisma Atria directory",
+   "url": "https://www.wismaonline.com/ (store_category Food & Beverages + store pages)",
+   "date": "live directory (Food & Beverages)"
+  },
+  "paragon-m-paragon": {
+   "name": "paragon – Paragon directory",
+   "url": "https://paragon.com.sg/store-directory/",
+   "date": "live directory (Food & Beverages)"
+  },
+  "lendlease-m-313-somerset": {
+   "name": "lendlease – 313@somerset directory",
+   "url": "https://www.313somerset.com.sg/store-directory/ (+ store pages)",
+   "date": "live directory (Food & Beverages)"
+  },
+  "far-east-m-orchard-central": {
+   "name": "far-east – Orchard Central directory",
+   "url": "https://www.fareastmalls.com.sg/en/orchard-central/shops (+ shop pages)",
+   "date": "live directory (Food & Beverage)"
+  },
+  "orchardgateway-m-orchard-gateway": {
+   "name": "orchardgateway – Orchard Gateway directory",
+   "url": "https://orchardgateway.sg/directory",
+   "date": "live directory (Food & Beverage)"
   }
  },
  "clusters": [
@@ -1907,6 +1942,146 @@
     "sl-mkt"
    ],
    "notes": "Reopened in CapitaSpring in 2022 (56 stalls, levels 2–3; NEA's 2024 list still shows 76 at the old Golden Shoe site). Mostly weekday breakfast and lunch."
+  },
+  {
+   "id": "m-ion-orchard",
+   "name": "ION Orchard",
+   "type": "mall",
+   "address": "2 Orchard Turn, S238801",
+   "lat": 1.30402,
+   "lng": 103.83193,
+   "zone": "central",
+   "stalls_total": 66,
+   "notes": "Above Orchard MRT. Most food is in B3–B4 (Food Opera food court, takeaways); restaurants on L3–L4 and 1-Atico on L55. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "roster": {
+    "source": "ion-m-ion-orchard",
+    "count": 66,
+    "snapshot": "live directory (Dine)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-ngee-ann-city",
+   "name": "Ngee Ann City",
+   "type": "mall",
+   "address": "391 Orchard Road, S238872",
+   "lat": 1.30235,
+   "lng": 103.83457,
+   "zone": "central",
+   "stalls_total": 41,
+   "notes": "Takashimaya's mall. Restaurants on L4–L5 and B2; the Takashimaya food hall (B2) is the department store's and not in this list. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "roster": {
+    "source": "ngee-ann-city-m-ngee-ann-city",
+    "count": 41,
+    "snapshot": "live directory (official, undated static site)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-wisma-atria",
+   "name": "Wisma Atria",
+   "type": "mall",
+   "address": "435 Orchard Road, S238877",
+   "lat": 1.30359,
+   "lng": 103.833,
+   "zone": "central",
+   "stalls_total": 33,
+   "notes": "Linked to ION and Orchard MRT. Food Republic on L4, Haidilao open till 4am. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "roster": {
+    "source": "wisma-m-wisma-atria",
+    "count": 33,
+    "snapshot": "live directory (Food & Beverages)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-paragon",
+   "name": "Paragon",
+   "type": "mall",
+   "address": "290 Orchard Road, S238859",
+   "lat": 1.30387,
+   "lng": 103.83571,
+   "zone": "central",
+   "stalls_total": 58,
+   "notes": "Upmarket mall; most food is in the B1 food hall, restaurants on L4–L5. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "roster": {
+    "source": "paragon-m-paragon",
+    "count": 58,
+    "snapshot": "live directory (Food & Beverages)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-313-somerset",
+   "name": "313@somerset",
+   "type": "mall",
+   "address": "313 Orchard Road, S238895",
+   "lat": 1.30106,
+   "lng": 103.83849,
+   "zone": "central",
+   "stalls_total": 57,
+   "notes": "Above Somerset MRT. Lots of casual food in B3, Food Republic on L5. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "roster": {
+    "source": "lendlease-m-313-somerset",
+    "count": 57,
+    "snapshot": "live directory (Food & Beverages)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-orchard-central",
+   "name": "Orchard Central",
+   "type": "mall",
+   "address": "181 Orchard Road, S238896",
+   "lat": 1.30066,
+   "lng": 103.83979,
+   "zone": "central",
+   "stalls_total": 30,
+   "notes": "Restaurants spread up to L12 (rooftop); buffets on L7–L8. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "roster": {
+    "source": "far-east-m-orchard-central",
+    "count": 30,
+    "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-orchard-gateway",
+   "name": "Orchard Gateway",
+   "type": "mall",
+   "address": "277 Orchard Road, S238858",
+   "lat": 1.30046,
+   "lng": 103.83931,
+   "zone": "central",
+   "stalls_total": 32,
+   "notes": "Linked to 313@somerset and Somerset MRT; casual food on B1–B2 and L1. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "roster": {
+    "source": "orchardgateway-m-orchard-gateway",
+    "count": 32,
+    "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-11-20"
+   }
   }
  ],
  "places": [
@@ -78032,6 +78207,10535 @@
    "zone": "central",
    "address": "86 Market Street (CapitaSpring), Levels 2–3",
    "confidence": "partial"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Shihlin Taiwan Street Food (ION Orchard)",
+   "unit": "#B4-63",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-shihlin-taiwan-street-food"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Talad Thai Banana (ION Orchard)",
+   "unit": "#B4-62",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-talad-thai-banana"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Gatten Sushi (ION Orchard)",
+   "unit": "#B3-20",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-gatten-sushi"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Tai Cheong Bakery (ION Orchard)",
+   "unit": "#B4-45/46",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-tai-cheong-bakery"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Kyo Watami (ION Orchard)",
+   "unit": "#B3-23",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-kyo-watami"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Osteria Mozza (ION Orchard)",
+   "unit": "#03-14B to 15B",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-osteria-mozza"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Blue Box Cafe (ION Orchard)",
+   "unit": "#03-11/12",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-blue-box-cafe"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "I'm Donut? (ION Orchard)",
+   "unit": "#B2-19",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-i-m-donut"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "R-Slice by Roberta's (ION Orchard)",
+   "unit": "#B3-18",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-r-slice-by-roberta-s"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Din Tai Fung (ION Orchard)",
+   "unit": "#B4-03",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-din-tai-fung"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Prada Caffè (ION Orchard)",
+   "unit": "#02-15",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-prada-caff"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Yee3 I Coconut Beverage Shop (ION Orchard)",
+   "unit": "#B4-70",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-yee3-i-coconut-beverage-shop"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Age.3 (ION Orchard)",
+   "unit": "#B4-64/65",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-age-3"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "1-Atico by 1-Altitude (ION Orchard)",
+   "unit": "#55-01/#56-01",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-1-atico-by-1-altitude"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Awfully Chocolate (ION Orchard)",
+   "unit": "#B4-50",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-awfully-chocolate"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Bacha Coffee (ION Orchard)",
+   "unit": "#01-15/16",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-bacha-coffee"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Bao Bao (ION Orchard)",
+   "unit": "#B4-34",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-bao-bao"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Bengawan Solo (ION Orchard)",
+   "unit": "#B4-38",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-bengawan-solo"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Boost (ION Orchard)",
+   "unit": "#B4-61",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-boost",
+   "status_note": "Temporarily closed (directory, 2026-11-20)"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Breadtalk (ION Orchard)",
+   "unit": "#B2-73",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1234",
+     [
+      "09:00-21:30"
+     ]
+    ],
+    [
+     "56",
+     [
+      "09:00-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "09:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-breadtalk"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Cafe Nesuto (ION Orchard)",
+   "unit": "#04-27/28/29/30/31/32",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-cafe-nesuto"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Canton Paradise+ (ION Orchard)",
+   "unit": "#B3-17",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-canton-paradise"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Common Man Coffee Roasters On the Go (ION Orchard)",
+   "unit": "#B3-27/28",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-common-man-coffee-roasters-on-the-go"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Donq Editer/Mini One (ION Orchard)",
+   "unit": "#B4-08/09",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-donq-editer-mini-one"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Dunkin' Donuts (ION Orchard)",
+   "unit": "#B4-60",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-dunkin-donuts"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Each A Cup (ION Orchard)",
+   "unit": "#B4-69",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-each-a-cup"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Food Opera (ION Orchard)",
+   "unit": "#B4-04",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-food-opera"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Guzman y Gomez Mexican Kitchen (ION Orchard)",
+   "unit": "#B4-55",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-guzman-y-gomez-mexican-kitchen"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Hang Heung Hong Kong (ION Orchard)",
+   "unit": "#B4-33",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "10:00-21:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "10:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-hang-heung-hong-kong"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Hawkers' Street (ION Orchard)",
+   "unit": "#B4-66",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-hawkers-street"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Heytea (ION Orchard)",
+   "unit": "#B4-29",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-heytea"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Hoshino Coffee (ION Orchard)",
+   "unit": "#B3-22",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-hoshino-coffee"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Imperial Treasure Fine Teochew Cuisine (ION Orchard)",
+   "unit": "#03-05",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:30-15:00",
+      "18:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-15:00",
+      "18:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-15:00",
+      "18:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-imperial-treasure-fine-teochew-cuisine"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Imperial Treasure Huaiyang Cuisine (ION Orchard)",
+   "unit": "#04-12A",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:30-15:00",
+      "18:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-15:00",
+      "18:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-15:00",
+      "18:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-imperial-treasure-huaiyang-cuisine"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Jasons Deli (ION Orchard)",
+   "unit": "#B4-01",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-jasons-deli"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Jumbo Seafood (ION Orchard)",
+   "unit": "#04-09/10",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-jumbo-seafood"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "KOI the (ION Orchard)",
+   "unit": "#B4-35",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-koi-the"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "LÄDerach (ION Orchard)",
+   "unit": "#B2-49",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-l-derach"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Lavender (ION Orchard)",
+   "unit": "#B4-39/40/41/42",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-lavender"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Lee Wee & Brothers (ION Orchard)",
+   "unit": "#B4-72",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-lee-wee-brothers"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Letao / Tokyo Milk Cheese Factory (ION Orchard)",
+   "unit": "#B4-05",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "10:00-21:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "10:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-letao-tokyo-milk-cheese-factory"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Lim Chee Guan (ION Orchard)",
+   "unit": "#B4-37",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-lim-chee-guan"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Marutama Ramen (ION Orchard)",
+   "unit": "#B4-54",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-marutama-ramen"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Monster Curry (ION Orchard)",
+   "unit": "#B4-52",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-monster-curry"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Mos Japanese Fine Foods (ION Orchard)",
+   "unit": "#B4-06/06A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-mos-japanese-fine-foods"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Old Chang Kee (ION Orchard)",
+   "unit": "#B4-36",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-old-chang-kee"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Paris Baguette (ION Orchard)",
+   "unit": "#B1-15B/15C",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-paris-baguette"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Pocha! Korean Street Dining (ION Orchard)",
+   "unit": "#B4-67/68",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-pocha-korean-street-dining"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Poulet + Brasserie (ION Orchard)",
+   "unit": "#B3-21",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-poulet-brasserie"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Royce' (ION Orchard)",
+   "unit": "#B4-10",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-royce"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Rive Gauche Patisserie (ION Orchard)",
+   "unit": "#B4-71",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-rive-gauche-patisserie"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Sanook Kitchen (ION Orchard)",
+   "unit": "#B3-19",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-sanook-kitchen"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Sen-Ryo (ION Orchard)",
+   "unit": "#03-17/18",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-sen-ryo"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Starbucks Coffee (ION Orchard)",
+   "unit": "#B3-59",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "08:00-21:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-starbucks-coffee"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Super Sushi (ION Orchard)",
+   "unit": "#B4-51",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-super-sushi"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Taste Paradise (ION Orchard)",
+   "unit": "#04-07",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-15:00",
+      "18:00-22:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "10:30-16:30",
+      "18:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-taste-paradise"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Tempura Tendon Tenya (ION Orchard)",
+   "unit": "#B4-56",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-tempura-tendon-tenya"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "The 1872 Clipper Tea Co. (ION Orchard)",
+   "unit": "#B4-07",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-the-1872-clipper-tea-co"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "The Marmalade Pantry (ION Orchard)",
+   "unit": "#04-11",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-the-marmalade-pantry"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "The Soup Spoon (ION Orchard)",
+   "unit": "#B4-58/59",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-the-soup-spoon"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Tori-Q (ION Orchard)",
+   "unit": "#B4-53",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-tori-q"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Twg Tea (ION Orchard)",
+   "unit": "#02-20/21",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-twg-tea"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Twyst (ION Orchard)",
+   "unit": "#B4-57",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-twyst"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Venchi (ION Orchard)",
+   "unit": "#B1-25A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-venchi"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Violet Oon Singapore (ION Orchard)",
+   "unit": "#04-12",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-violet-oon-singapore"
+  },
+  {
+   "cluster": "m-ion-orchard",
+   "name": "Ya Kun Kaya Toast (ION Orchard)",
+   "unit": "#B4-49",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ion-m-ion-orchard"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ion-orchard-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Dulcet & Studio (Ngee Ann City)",
+   "unit": "#04-34",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-dulcet-studio"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "fieldnotes (Ngee Ann City)",
+   "unit": "#03-15",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-fieldnotes"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Henri Charpentier (Ngee Ann City)",
+   "unit": "#05-12",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-henri-charpentier"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Hvala (Ngee Ann City)",
+   "unit": "#B2-28",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-hvala"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Ladurée Paris (Ngee Ann City)",
+   "unit": "#B1-13/13A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-ladur-e-paris"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "LUMU Cafe (Ngee Ann City)",
+   "unit": "#03-09/13B",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-lumu-cafe"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Paul (Ngee Ann City)",
+   "unit": "#04-21",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-paul"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Rituel Café (Ngee Ann City)",
+   "unit": "#03-10A/11D",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-rituel-caf"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Tag Espresso (Ngee Ann City)",
+   "unit": "#02-11",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-tag-espresso"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "TCC - The Connoisseur Concerto (Ngee Ann City)",
+   "unit": "#B1-56",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-tcc-the-connoisseur-concerto"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Toast Box (Ngee Ann City)",
+   "unit": "#B2-30",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-toast-box"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "CHICHA San Chen (Ngee Ann City)",
+   "unit": "#B2-03",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-chicha-san-chen"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "KOI The Express (Ngee Ann City)",
+   "unit": "#B2-37C",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-koi-the-express"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Mr. Bucket Chocolaterie (Ngee Ann City)",
+   "unit": "#B2-10A/11",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-mr-bucket-chocolaterie"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Project Acaí (Ngee Ann City)",
+   "unit": "#B2-32A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-project-aca"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "The Dark Gallery (Ngee Ann City)",
+   "unit": "#B2-29",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-the-dark-gallery"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Warabi-mochi Kamakura (Ngee Ann City)",
+   "unit": "#B2-34",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-warabi-mochi-kamakura"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Sunnyhills (Ngee Ann City)",
+   "unit": "#B2-27A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-sunnyhills"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Angus House (Ngee Ann City)",
+   "unit": "#04-25",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-angus-house"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Bali Thai (Ngee Ann City)",
+   "unit": "#05-29",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-bali-thai"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Crystal Jade Hong Kong Kitchen (Ngee Ann City)",
+   "unit": "#B2-37A/37B/38",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-crystal-jade-hong-kong-kitchen"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Crystal Jade Palace (Ngee Ann City)",
+   "unit": "#04-19",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-crystal-jade-palace"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Hazuki Kaiseki (Ngee Ann City)",
+   "unit": "#04-18A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-hazuki-kaiseki"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Kai Duck (Ngee Ann City)",
+   "unit": "#05-10/11",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-kai-duck"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Linkus Hokkien Flavor (Ngee Ann City)",
+   "unit": "#04-22",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-linkus-hokkien-flavor"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Ma Maison (Ngee Ann City)",
+   "unit": "#04-27",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-ma-maison"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Mizuki Sushi & Tempura (Ngee Ann City)",
+   "unit": "#05-32",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-mizuki-sushi-tempura"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Moon Moon Food (Ngee Ann City)",
+   "unit": "#05-30",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-moon-moon-food"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Paradise Teochew Restaurant (Ngee Ann City)",
+   "unit": "#03-10",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-paradise-teochew-restaurant"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Royal Host (Ngee Ann City)",
+   "unit": "#B2-25/26",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-royal-host"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "So Good Seafood Restaurant (Ngee Ann City)",
+   "unit": "#05-13/14",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-so-good-seafood-restaurant"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Tampopo Grand Sushi & Shabu Shabu (Ngee Ann City)",
+   "unit": "#B2-33/33A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-tampopo-grand-sushi-shabu-shabu"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "The Sushi Bar Dining (Ngee Ann City)",
+   "unit": "#05-34/35",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-the-sushi-bar-dining"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Tiong Bahru Hainanese Chicken Rice (Ngee Ann City)",
+   "unit": "#B2-36A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-tiong-bahru-hainanese-chicken-rice"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Tofu G (Ngee Ann City)",
+   "unit": "#B1-29",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-tofu-g"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Tokyo Yakiniku Heijoen (Ngee Ann City)",
+   "unit": "#05-31",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-tokyo-yakiniku-heijoen"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Tonkatsu Daiki (Ngee Ann City)",
+   "unit": "#05-33",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-tonkatsu-daiki"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Tonkichi (Ngee Ann City)",
+   "unit": "#04-24/24A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-tonkichi"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Udon Shin (Ngee Ann City)",
+   "unit": "#B2-32",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-udon-shin"
+  },
+  {
+   "cluster": "m-ngee-ann-city",
+   "name": "Unazen (Ngee Ann City)",
+   "unit": "#B2-33/33A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ngee-ann-city-m-ngee-ann-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ngee-ann-city-unazen"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Xiao Jiao Tian (Wisma Atria)",
+   "unit": "#03-32/33/34",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-xiao-jiao-tian"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Dabba Street (Wisma Atria)",
+   "unit": "#B1-50",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-dabba-street"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "HECHA (Wisma Atria)",
+   "unit": "#03-15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-04:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-hecha"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "itea (Wisma Atria)",
+   "unit": "#B1-02",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-21:45"
+     ]
+    ],
+    [
+     "06",
+     [
+      "10:30-21:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-itea"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Century Bakkwa (Wisma Atria)",
+   "unit": "#B1-44",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-century-bakkwa"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "LeTAO le chocolat (Wisma Atria)",
+   "unit": "#B1-58",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-letao-le-chocolat"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Lucia The Brownie Bar (Wisma Atria)",
+   "unit": "#B1-59",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-lucia-the-brownie-bar"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Awfully Chocolate Experience Cafe (Wisma Atria)",
+   "unit": "#03-12 to 13",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-awfully-chocolate-experience-cafe"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Chicken Pie Kitchen & Don Signature Crab (Wisma Atria)",
+   "unit": "#B1-46",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-chicken-pie-kitchen-don-signature-crab"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Happy Lili Cafe (Wisma Atria)",
+   "unit": "#01-42/49/50",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-happy-lili-cafe"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Gochi-So Shokudo (Wisma Atria)",
+   "unit": "#01-37 to 41",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-gochi-so-shokudo"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Tun Xiang Hokkien Delights (Wisma Atria)",
+   "unit": "#01-02/03",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-tun-xiang-hokkien-delights"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Fun Toast (Wisma Atria)",
+   "unit": "#01-04/05pt",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-fun-toast"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Starbucks (Wisma Atria)",
+   "unit": "#01-34 to 36",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-starbucks"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Tiong Bahru Bakery (Wisma Atria)",
+   "unit": "#03-35 to 40",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-tiong-bahru-bakery"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Gokoku Japanese Bakery (Wisma Atria)",
+   "unit": "#B1-52A/53/62/63",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-gokoku-japanese-bakery"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Sushiro (Wisma Atria)",
+   "unit": "#02-08 to 13",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-sushiro"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Super Sushi (Wisma Atria)",
+   "unit": "#B1-50",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-super-sushi"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Subway (Wisma Atria)",
+   "unit": "#B1-17",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-subway"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Nya Nya (Wisma Atria)",
+   "unit": "",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-nya-nya"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Casa Vostra (Wisma Atria)",
+   "unit": "#02-02/03/48/53",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-casa-vostra"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "The Coffee Bean & Tea Leaf (Wisma Atria)",
+   "unit": "#02-18",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-the-coffee-bean-tea-leaf"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Paradise Dynasty (Wisma Atria)",
+   "unit": "#01-18",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-paradise-dynasty"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Haidilao Hot Pot (Wisma Atria)",
+   "unit": "#03-15",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-04:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-haidilao-hot-pot"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Garrett Popcorn Shops (Wisma Atria)",
+   "unit": "#B1-56 to 57",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-garrett-popcorn-shops"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "MIKI MIZU (Wisma Atria)",
+   "unit": "#B1-45",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-miki-mizu"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Food Republic (Wisma Atria)",
+   "unit": "#04-31 to 38",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-food-republic"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Famous Amos (Wisma Atria)",
+   "unit": "#B1-43",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-famous-amos"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Din Tai Fung (Wisma Atria)",
+   "unit": "#04-00",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-din-tai-fung"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Beryl's (Wisma Atria)",
+   "unit": "#B1-06",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-beryl-s"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "llaollao (Wisma Atria)",
+   "unit": "#B1-48",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-llaollao"
+  },
+  {
+   "cluster": "m-wisma-atria",
+   "name": "Mr. Coconut (Wisma Atria)",
+   "unit": "#B1-49",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "wisma-m-wisma-atria"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wisma-atria-mr-coconut"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Aburi-EN Grand (Paragon)",
+   "unit": "#B1-45/46",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-aburi-en-grand"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Akashi Japanese Restaurant (Paragon)",
+   "unit": "#B1-01/02",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-akashi-japanese-restaurant"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Avenue on 3 Café (Paragon)",
+   "unit": "#03-48/56",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-avenue-on-3-caf"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Bee Cheng Hiang (Paragon)",
+   "unit": "#B1-10A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-bee-cheng-hiang"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Blue Bottle Coffee (Paragon)",
+   "unit": "#01-37",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-blue-bottle-coffee"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Boost Juice (Paragon)",
+   "unit": "#B1-K31",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-boost-juice"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Burnt Cones Gelato & Coffee (Paragon)",
+   "unit": "#B1-15",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-burnt-cones-gelato-coffee"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Cedele (Paragon)",
+   "unit": "#B1-09",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-cedele"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Chalk Farm (Paragon)",
+   "unit": "#B1-K5/K6",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-chalk-farm"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Chen's Kitchen (Paragon)",
+   "unit": "#B1-43",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-chen-s-kitchen"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "coast & roast (Paragon)",
+   "unit": "#B1-35/36",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-coast-roast"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Crystal Jade Golden Palace (Paragon)",
+   "unit": "#05-21/22/23",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-crystal-jade-golden-palace"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Da Paolo Gastronomia (Paragon)",
+   "unit": "#B1-K8",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-da-paolo-gastronomia"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Din Tai Fung (Paragon)",
+   "unit": "#B1-03/05",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-din-tai-fung"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "H&C Cafe (Paragon)",
+   "unit": "#B1-11/12",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-h-c-cafe"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Henri Charpentier (Paragon)",
+   "unit": "#B1-K32/33",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-henri-charpentier"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Imperial Treasure Super Peking Duck (Paragon)",
+   "unit": "#05-42/45",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-imperial-treasure-super-peking-duck"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Janice Wong Singapore (Paragon)",
+   "unit": "#B1-K28",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-janice-wong-singapore"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Kin No Mame (Paragon)",
+   "unit": "#B1-K2",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-kin-no-mame"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "KOI Thé (Paragon)",
+   "unit": "#B1-33",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-koi-th"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Krispy Kreme (Paragon)",
+   "unit": "#B1-K7",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-krispy-kreme"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Kuriya Japanese Market (Paragon)",
+   "unit": "#B1-K26",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-kuriya-japanese-market"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Kuroki (Paragon)",
+   "unit": "#05-03",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-kuroki"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Le Shrimp Ramen (Paragon)",
+   "unit": "#B1-42",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-le-shrimp-ramen"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "llaollao (Paragon)",
+   "unit": "#B1-K34",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-llaollao"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Madam Ang KK (Paragon)",
+   "unit": "#B1-K12",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-madam-ang-kk"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Patisserie Woo (Paragon)",
+   "unit": "#B1-20A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-patisserie-woo"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Matsukiya (Paragon)",
+   "unit": "#05-04",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-matsukiya"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "O'Coffee Club Indulgence (Paragon)",
+   "unit": "#05-46, #05-K3/K4",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-o-coffee-club-indulgence"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Old Chang Kee (Paragon)",
+   "unit": "#B1-10",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-old-chang-kee"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Old Seng Choong (Paragon)",
+   "unit": "#B1-14",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-old-seng-choong"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Paris Baguette (Paragon)",
+   "unit": "#B1-28",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-paris-baguette"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Maison PAUL (Paragon)",
+   "unit": "#02-08/09/K1",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-maison-paul"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "PS.Cafe (Paragon)",
+   "unit": "#B1-K3/29/30",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-ps-cafe"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "R-slice by Roberta's (Paragon)",
+   "unit": "#B1-32",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-r-slice-by-roberta-s"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Sanchos taqueria (Paragon)",
+   "unit": "#B1-20",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-sanchos-taqueria"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Sanpoutei Ramen (Paragon)",
+   "unit": "#B1-47",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-sanpoutei-ramen"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Shimbashi Soba (Paragon)",
+   "unit": "#B1-41",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-shimbashi-soba"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Six Hands Daily (Paragon)",
+   "unit": "#B1-K25",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-six-hands-daily"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Sláinte (Paragon)",
+   "unit": "#04-09/K1",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-sl-inte"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Song Fa Signatures (Paragon)",
+   "unit": "#B1-06",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-song-fa-signatures"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Soup Restaurant (Paragon)",
+   "unit": "#B1-07",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-soup-restaurant"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Starbucks (Paragon)",
+   "unit": "#B1-34",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-starbucks"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Subway (Paragon)",
+   "unit": "#B1-39/40",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-subway"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Sushi Tei (Paragon)",
+   "unit": "#05-05",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-sushi-tei"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Swish Rolls (Paragon)",
+   "unit": "#B1-K4",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-swish-rolls"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Tambuah Mas Indonesian Restaurant (Paragon)",
+   "unit": "#B1-44",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-tambuah-mas-indonesian-restaurant"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Toast Box (Paragon)",
+   "unit": "#02-08A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-toast-box"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Tokyo Milk Cheese Factory (Paragon)",
+   "unit": "#B1-37",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-tokyo-milk-cheese-factory"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Tomacado (Paragon)",
+   "unit": "#01-22",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-tomacado"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Tori-Q (Paragon)",
+   "unit": "#B1-K1",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-tori-q"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Treasures - Yi Dian Xin by Imperial Treasure (Paragon)",
+   "unit": "#B1-08",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-treasures-yi-dian-xin-by-imperial-treasure"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Ultimate Midas Meal (Paragon)",
+   "unit": "#04-10/11/12",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-ultimate-midas-meal"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Venchi (Paragon)",
+   "unit": "#B1-25",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-venchi"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Wu Pao Chun (Paragon)",
+   "unit": "#B1-11/12",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-wu-pao-chun"
+  },
+  {
+   "cluster": "m-paragon",
+   "name": "Ya Kun Kaya Toast (Paragon)",
+   "unit": "#B1-38 & #K11",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "paragon-m-paragon"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-paragon-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "% Arabica (313@somerset)",
+   "unit": "#01-14/15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-20:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-20:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-20:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-20:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-21:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-21:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-arabica"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "5:59 (313@somerset)",
+   "unit": "#01-28",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-23:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:30-23:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-5-59"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "An Acai Affair (313@somerset)",
+   "unit": "#B3-48",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-an-acai-affair"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "An Nyeong (313@somerset)",
+   "unit": "#B3-11",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:30-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:30-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:30-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:30-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-an-nyeong"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Bari Bari Steak (313@somerset)",
+   "unit": "#B3-25",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-bari-bari-steak"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Black Tree (313@somerset)",
+   "unit": "#01-26",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:30-21:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:30-21:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:30-21:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:30-21:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-black-tree"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Boost Juice Bars (313@somerset)",
+   "unit": "#B3-52",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-boost-juice-bars"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "BreadTalk (313@somerset)",
+   "unit": "#B2-33",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "08:00-20:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "08:00-20:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "08:00-20:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "08:00-20:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "08:00-20:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "08:00-20:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "08:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-breadtalk"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Café de Paris (313@somerset)",
+   "unit": "#B1-37",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-caf-de-paris"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "CHACHAO (313@somerset)",
+   "unit": "#B3-54",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-chachao"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "CHICHA San Chen (313@somerset)",
+   "unit": "#03-41",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-chicha-san-chen"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Chimi's (313@somerset)",
+   "unit": "#01-25B",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "12:00-00:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "12:00-00:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "12:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-chimi-s"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Eat Pizza (313@somerset)",
+   "unit": "#B3-48A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-eat-pizza"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Food Republic (313@somerset)",
+   "unit": "#05-01",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-food-republic"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Garrett Popcorn Shops (313@somerset)",
+   "unit": "#01-38",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-garrett-popcorn-shops"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Genki Sushi (313@somerset)",
+   "unit": "#B2-01",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-genki-sushi"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Haidilao Huoguo (313@somerset)",
+   "unit": "#04-23/24",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:30-23:45"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:30-23:45"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:30-23:45"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:30-23:45"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:30-23:45"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:30-23:45"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-23:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-haidilao-huoguo"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Hi Noodle (313@somerset)",
+   "unit": "#B3-19/20",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-hi-noodle"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Ichikokudo Hokkaido Ramen (313@somerset)",
+   "unit": "#B3-35/36",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:30-22:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-ichikokudo-hokkaido-ramen"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Josh's Grill (313@somerset)",
+   "unit": "#B2-15",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-josh-s-grill"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Kang Ji Sugar Coated Fruits (313@somerset)",
+   "unit": "#B3-42",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-kang-ji-sugar-coated-fruits"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "KOI Express (313@somerset)",
+   "unit": "#B3-51",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:30-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-koi-express"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "luckin coffee (313@somerset)",
+   "unit": "#B3-50 & #53",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-luckin-coffee"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Marché (313@somerset)",
+   "unit": "#01-40",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-march"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Mister Donut (313@somerset)",
+   "unit": "#B3-46",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-mister-donut"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Mrs Pho (313@somerset)",
+   "unit": "#01-16/17",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-mrs-pho"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Noodle Villa (313@somerset)",
+   "unit": "#B3-10",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-noodle-villa"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "O'ma Spoon (313@somerset)",
+   "unit": "#04-20 & #32",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:30-23:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:30-23:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:30-23:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-23:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:30-23:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-23:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:30-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-o-ma-spoon"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Old Chang Kee (313@somerset)",
+   "unit": "#B3-24",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "07:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "07:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "07:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "07:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "07:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-old-chang-kee"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "One Fermented Rice (313@somerset)",
+   "unit": "#B3-41",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-one-fermented-rice"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Papa Ayam (313@somerset)",
+   "unit": "#B3-49",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-papa-ayam"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "PlayMade (313@somerset)",
+   "unit": "#B3-08",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-playmade"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Potato Corner (313@somerset)",
+   "unit": "#B3-45",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-potato-corner"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Riverside Indonesian BBQ (313@somerset)",
+   "unit": "#B3-44",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-riverside-indonesian-bbq"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Sake + (313@somerset)",
+   "unit": "#01-27",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "12:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "12:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-sake"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Shihlin Taiwan Street Snacks (313@somerset)",
+   "unit": "#B3-50A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-shihlin-taiwan-street-snacks"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Starbucks (313@somerset)",
+   "unit": "#02-38/39 & #51",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "07:30-23:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "08:00-23:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "08:00-23:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-starbucks"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Stuff'd (313@somerset)",
+   "unit": "#B3-47",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:30-21:45"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:30-21:45"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:30-21:45"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:30-21:45"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:30-21:45"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:30-21:45"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-21:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-stuff-d"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Subway (313@somerset)",
+   "unit": "#B3-01",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "09:30-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "09:30-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "09:30-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "09:30-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "09:30-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "09:30-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "09:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-subway"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Sukiya (313@somerset)",
+   "unit": "#B3-33/34",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-sukiya"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Supergreen (313@somerset)",
+   "unit": "#B3-09",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-supergreen"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Sushi Plus (313@somerset)",
+   "unit": "#B3-28/29",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-sushi-plus"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Swee Heng 1989 Signature (313@somerset)",
+   "unit": "#B3-23",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-swee-heng-1989-signature"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Tai Er (313@somerset)",
+   "unit": "#B3-39/40",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:30-21:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:30-21:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:30-21:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-21:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:30-21:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-21:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-tai-er"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Tan Yu (313@somerset)",
+   "unit": "#B3-30",
+   "cuisine": "bbq-seafood",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-tan-yu"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Tim Hortons (313@somerset)",
+   "unit": "#01-29",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-tim-hortons"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Toast Box (313@somerset)",
+   "unit": "#B2-31",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "07:30-21:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "07:30-21:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "07:30-21:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "07:30-21:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "07:30-21:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "08:00-21:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "08:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-toast-box"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Tsuta (313@somerset)",
+   "unit": "#01-16/17",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-tsuta"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Van Diemens Land Creamery (313@somerset)",
+   "unit": "#B3-43A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "12:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "12:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-van-diemens-land-creamery"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Vanda Botanical Desserts (313@somerset)",
+   "unit": "#01-16/17",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-23:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-vanda-botanical-desserts"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Wanpo Tea Shop (313@somerset)",
+   "unit": "#B3-10A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-wanpo-tea-shop"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Wokker by A-Roy Thai Restaurant (313@somerset)",
+   "unit": "#B3-43",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-wokker-by-a-roy-thai-restaurant"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Xiang Xiang Hunan Cuisine (313@somerset)",
+   "unit": "#B3-02",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-xiang-xiang-hunan-cuisine"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Xiao Noodles (313@somerset)",
+   "unit": "#B3-37/38",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-xiao-noodles"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Ya Kun Kaya Toast (313@somerset)",
+   "unit": "#01-32",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "07:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "Yakiniku Like (313@somerset)",
+   "unit": "#B2-01",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "2",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "3",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "4",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-yakiniku-like"
+  },
+  {
+   "cluster": "m-313-somerset",
+   "name": "YIMANFEN (313@somerset)",
+   "unit": "#02-50 & #02-K4",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "1",
+     [
+      "12:00-22:30"
+     ]
+    ],
+    [
+     "2",
+     [
+      "12:00-22:30"
+     ]
+    ],
+    [
+     "3",
+     [
+      "12:00-22:30"
+     ]
+    ],
+    [
+     "4",
+     [
+      "12:00-22:30"
+     ]
+    ],
+    [
+     "5",
+     [
+      "12:00-22:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "12:00-22:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "12:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lendlease-m-313-somerset"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-313-somerset-yimanfen"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Armoury Steaks and Craft Beer (Orchard Central)",
+   "unit": "#11-03/04",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "012",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "3456",
+     [
+      "11:30-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-armoury-steaks-and-craft-beer"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Battercatch (Orchard Central)",
+   "unit": "#04-30",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-battercatch"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Cafe One O (Orchard Central)",
+   "unit": "#10-01",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-cafe-one-o"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Clayful Cafe (Orchard Central)",
+   "unit": "#03-23",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-clayful-cafe"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Dancing Crab (Orchard Central)",
+   "unit": "#07-15",
+   "cuisine": "bbq-seafood",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-15:00",
+      "17:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-dancing-crab"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "De Taste (Orchard Central)",
+   "unit": "#02-24/25/25A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-de-taste"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "FYP (Orchard Central)",
+   "unit": "#04-22",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-fyp"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Gangnam Story (Orchard Central)",
+   "unit": "#08-04",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-06:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-gangnam-story"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Helen's Orchard Central (Orchard Central)",
+   "unit": "#12-02",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-helen-s-orchard-central"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Henri Charpentier (Orchard Central)",
+   "unit": "#01-18",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-henri-charpentier"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Heytea (Orchard Central)",
+   "unit": "#01-26",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-heytea"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Humble Seeds (Orchard Central)",
+   "unit": "#02-16",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-humble-seeds"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Huo Lu Huo (Orchard Central)",
+   "unit": "#08-06 to 08",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-huo-lu-huo"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "K. Cook Korean BBQ Buffet (Orchard Central)",
+   "unit": "#07-01",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-k-cook-korean-bbq-buffet"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Kimchi Dining (Orchard Central)",
+   "unit": "#06-10",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-kimchi-dining"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Kiseki Japanese Buffet Restaurant (Orchard Central)",
+   "unit": "#08-01",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-15:00",
+      "18:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-kiseki-japanese-buffet-restaurant"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Maccha House (Orchard Central)",
+   "unit": "#B1-44",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-maccha-house"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Molly Tea (Orchard Central)",
+   "unit": "#01-17A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-molly-tea"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Nantsuttei (Orchard Central)",
+   "unit": "#07-13",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-nantsuttei"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Nothing But Cheeseburger (Orchard Central)",
+   "unit": "#04-22A/23",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-nothing-but-cheeseburger"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Overscoop (Orchard Central)",
+   "unit": "#02-12",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-overscoop"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Real Food (Orchard Central)",
+   "unit": "#02-17",
+   "cuisine": "vegetarian",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-real-food"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Sanook Kitchen (Orchard Central)",
+   "unit": "#04-08",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-sanook-kitchen"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Shabu Sai (Orchard Central)",
+   "unit": "#08-09",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-shabu-sai"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Shi Li Fang (Orchard Central)",
+   "unit": "#08-13",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-shi-li-fang"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Tanuki Raw (Orchard Central)",
+   "unit": "#04-01",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-tanuki-raw"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Tenya (Orchard Central)",
+   "unit": "#B1-01",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-tenya"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Tung Lok Peking Duck (Orchard Central)",
+   "unit": "#07-07/08/09",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-15:00",
+      "18:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-tung-lok-peking-duck"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Tung Lok Seafood Restaurant (Orchard Central)",
+   "unit": "#11-05",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-tung-lok-seafood-restaurant"
+  },
+  {
+   "cluster": "m-orchard-central",
+   "name": "Yo-Chi (Orchard Central)",
+   "unit": "#01-06/19/20",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-m-orchard-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-central-yo-chi"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "@i Mango Cotton Ice Fresh Milk Tea (Orchard Gateway)",
+   "unit": "#B1-12",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-i-mango-cotton-ice-fresh-milk-tea"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "4Fingers Crispy Chicken (Orchard Gateway)",
+   "unit": "#01-04/05",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-4fingers-crispy-chicken"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Bonding Kitchen (Orchard Gateway)",
+   "unit": "#02-18",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-bonding-kitchen"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Chagee (Orchard Gateway)",
+   "unit": "#01-18",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-chagee"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Chan Susu 1994 (Orchard Gateway)",
+   "unit": "#01-10",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-chan-susu-1994"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Coffee by Dlike (Orchard Gateway)",
+   "unit": "#B2-18/18A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-coffee-by-dlike"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Cotti Coffee (Orchard Gateway)",
+   "unit": "#B2-06",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-cotti-coffee"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "D'Life (Orchard Gateway)",
+   "unit": "#B2-04A/05",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-d-life"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Doran Chicken (Orchard Gateway)",
+   "unit": "#04-19",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-doran-chicken"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Eatalley (Orchard Gateway)",
+   "unit": "#B2-12",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-eatalley"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Fun TOAST (Orchard Gateway)",
+   "unit": "#B2-07/08",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-fun-toast"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Guzman Y Gomez (Orchard Gateway)",
+   "unit": "#01-03/K2",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-guzman-y-gomez"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Ice Talk Signature Tea (Orchard Gateway)",
+   "unit": "#01-15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-ice-talk-signature-tea"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Irvins (Orchard Gateway)",
+   "unit": "#01-K3",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-irvins"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Jian Cha (Orchard Gateway)",
+   "unit": "#B1-01",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-jian-cha"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Kanshoku Ramen (Orchard Gateway)",
+   "unit": "#01-06",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-kanshoku-ramen"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Kin No Mame (Orchard Gateway)",
+   "unit": "#01-K1",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-kin-no-mame"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Misato (Orchard Gateway)",
+   "unit": "#B1-11",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-misato"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Mr. Coconut (Orchard Gateway)",
+   "unit": "#01-02",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-mr-coconut"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Nasty Cookie (Orchard Gateway)",
+   "unit": "#B2-10",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-nasty-cookie"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "noci bakehouse (Orchard Gateway)",
+   "unit": "#01-09/09A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-noci-bakehouse"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Nong Geng Ji (Orchard Gateway)",
+   "unit": "#B1-13",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-nong-geng-ji"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Now Pizza (Orchard Gateway)",
+   "unit": "#01-07",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-now-pizza"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Onori (Orchard Gateway)",
+   "unit": "#B2-13/13A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-onori"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Saizeriya Ristorante E Caffe (Orchard Gateway)",
+   "unit": "#B2-11/11A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-saizeriya-ristorante-e-caffe"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Seoul Tofu (Orchard Gateway)",
+   "unit": "#01-12/13/14/K4",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-seoul-tofu"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Signs A Taste of Vietnam Pho (Orchard Gateway)",
+   "unit": "#B2-15",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-signs-a-taste-of-vietnam-pho"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Starbucks (Orchard Gateway)",
+   "unit": "#B2-04",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-starbucks"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Supply & Demand (Orchard Gateway)",
+   "unit": "#02-13/14/K2/K3",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-supply-demand"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Sushiro (Orchard Gateway)",
+   "unit": "#B1-07/08",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-sushiro"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "Wewa (Orchard Gateway)",
+   "unit": "#01-17",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-wewa"
+  },
+  {
+   "cluster": "m-orchard-gateway",
+   "name": "YGF Malatang (Orchard Gateway)",
+   "unit": "#01-16",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "orchardgateway-m-orchard-gateway"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-orchard-gateway-ygf-malatang"
   }
  ]
 }
