@@ -3,7 +3,7 @@
 > **Next chat name: `FoodGuide ver 3`**
 > Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 3**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
-_Last updated: 20 Nov 2026 (owner's mall list split into sprints, section 0). 19 Oct: wave 1 done (9 Central malls, 4 CBD food centres, office origins in app v1.6), PR #7 open, not merged._
+_Last updated: 20 Nov 2026, ~01:30 SGT. **Sprint 1 (Orchard, big) done** on branch `data/sprint1-orchard` (7 malls, 313 outlets). PR #7 merged 20 Nov. Next: sprint 2 (section 0). Earliest start: 20 Nov ~06:30 (one wave per 5-hour window)._
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
@@ -42,12 +42,12 @@ Done in wave 1 (owner asleep, no PC needed):
 ### Mall sprints (owner's list, 20 Nov 2026)
 The owner gave a 63-entry list of malls to map (it replaces the zone-by-zone order). Status on 20 Nov:
 - **Live (17):** Tampines Mall, Tampines 1, Century Square, Our Tampines Hub, Bedok Mall, White Sands*, Pasir Ris Mall, Downtown East, Jewel, Changi City Point, Eastpoint, PLQ, Paya Lebar Square*, SingPost Centre, i12 Katong, Parkway Parade, KINEX. (*still the ~2024 SingMalls list.)
-- **In PR #7, not merged (8):** Plaza Singapura, Raffles City, Funan, Bugis Junction, Bugis+, The Centrepoint, Tiong Bahru Plaza, Junction 8 (plus Clarke Quay, not on the list).
+- **Merged in PR #7 on 20 Nov (8):** Plaza Singapura, Raffles City, Funan, Bugis Junction, Bugis+, The Centrepoint, Tiong Bahru Plaza, Junction 8 (plus Clarke Quay, not on the list).
 - **To do (38 + Changi T1–T4)**, one sprint = one wave from section 0 (≤~40 calls, needs the PC + desktop app; request all the sprint's sites at the start):
 
 | Sprint | Malls | Notes |
 |---|---|---|
-| 1 Orchard, big | ION Orchard, Ngee Ann City, Wisma Atria, Paragon, 313@somerset, Orchard Central, Orchard Gateway | 313 = Lendlease recipe; Orchard Central = Far East recipe |
+| ~~1 Orchard, big~~ ✅ 20 Nov | ION Orchard 66, Ngee Ann City 40, Wisma Atria 32, Paragon 56, 313@somerset 57, Orchard Central 30, Orchard Gateway 32 | ~41 browser calls. Hours for ION, Wisma, 313, Orchard Central; none published for Ngee Ann City, Paragon, Orchard Gateway. **Map pins approximate** (OneMap search returned nothing on 20 Nov): re-geocode. |
 | 2 Orchard, smaller | Far East Plaza, Lucky Plaza, Mandarin Gallery, Palais Renaissance, Scotts Square, Tanglin Mall, Wheelock Place, Shaw House | Strata malls may have no official directory → SingMalls fallback, flagged |
 | 3 Marina / Civic | Suntec City, Marina Square, Millenia Walk, Marina Bay Link Mall, Shoppes at Marina Bay Sands, Capitol Singapore | Suntec and MBS are large |
 | 4 Chinatown / river | 100AM, Chinatown Point, Clarke Quay Central, UE Square, Great World | Clarke Quay Central = Far East recipe |
@@ -179,6 +179,13 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 | central | mall | Raffles City | 91 | 94 (97%) | 0 | 0 | 91 | 0 | capitaland-m-raffles-city |
 | central | mall | The Centrepoint | 28 | 28 (100%) | 0 | 0 | 28 | 0 | frasers-m-the-centrepoint |
 | central | mall | Tiong Bahru Plaza | 64 | 64 (100%) | 0 | 0 | 64 | 0 | frasers-m-tiong-bahru-plaza |
+| central | mall | 313@somerset | 57 | 57 (100%) | 0 | 0 | 57 | 0 | lendlease-m-313-somerset |
+| central | mall | ION Orchard | 66 | 66 (100%) | 0 | 0 | 66 | 0 | ion-m-ion-orchard |
+| central | mall | Ngee Ann City | 40 | 41 (98%) | 0 | 0 | 40 | 0 | ngee-ann-city-m-ngee-ann-city |
+| central | mall | Orchard Central | 30 | 30 (100%) | 0 | 0 | 30 | 0 | far-east-m-orchard-central |
+| central | mall | Orchard Gateway | 32 | 32 (100%) | 0 | 0 | 32 | 0 | orchardgateway-m-orchard-gateway |
+| central | mall | Paragon | 56 | 58 (97%) | 0 | 0 | 56 | 0 | paragon-m-paragon |
+| central | mall | Wisma Atria | 32 | 33 (97%) | 0 | 0 | 32 | 0 | wisma-m-wisma-atria |
 | east | hawker | Bedok Corner Food Centre | 10 | 32 (31%) | 10 | 0 | 0 | 0 | NEA count |
 | east | hawker | Changi Village Hawker Centre | 28 | 87 (32%) | 11 | 0 | 17 | 0 | NEA count |
 | east | hawker | Dunman Food Centre | 25 | 30 (83%) | 10 | 2 | 13 | 0 | NEA count |
@@ -219,7 +226,7 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 | home | mall | Bedok Mall | 78 | 78 (100%) | 6 | 6 | 66 | 19 | capitaland-m-bedok-mall |
 | home | mall | Djitsun Mall Bedok | 4 | 4 (100%) | 0 | 0 | 4 | 0 | visitbedok-m-djitsun-mall |
 
-Standalone restaurants/cafés: 61 | Total places: 2518 | Gaps (no roster): 2
+Standalone restaurants/cafés: 61 | Total places: 2831 | Gaps (no roster): 2
 
 Notes:
 - **Hawker coverage %:** NEA counts include drinks stalls and vacant units, so 100% isn't always reachable.
@@ -266,6 +273,15 @@ Notes:
   - **KINEX:** `kinex.com.sg/public/food-beverages`, one static page.
   - **Our Tampines Hub (shops):** People's Association page `pa.gov.sg/our-network/our-tampines-hub/festive-mall-directory` (dated "accurate as of"), readable with WebFetch.
   - Each site needs a one-time **request_access** for the browser pane (all granted as "site").
+- **Sprint 1 recipes (20 Nov, built-in browser, same-origin fetch):**
+  - **ION Orchard:** `GET /graphql/execute.json/ion/GetStoresByType;storeType=Dine` → `data.ionStoreList.items[]` (`storeName, unitNumber[], status, operatinghours[].html`). 70 rows incl. 7-Eleven / Bluebird Travel / Eu Yan Sang (dropped).
+  - **Ngee Ann City:** old static site; `GET /shopdirectory/body_shopdirectory.html`, table rows under the headings Cafés, Food Specialty, Gourmet Confectionery, Restaurants. No hours. Takashimaya's own food hall isn't listed.
+  - **Wisma Atria:** WordPress `GET /wp-json/wp/v2/store?per_page=100&store_category=5` (Food & Beverages, English), then each store page: unit is the `#…` just before "Operating Hours:".
+  - **Paragon:** `/store-directory/?store_category=food-beverage`, click `#load_more_button` until gone; each `.paragon-store-archive-loop` textContent is "…<category><name>#unit" (the filter doesn't apply, so filter "Food & Beverages" yourself). No hours.
+  - **313@somerset (Lendlease):** the `<directory v-bind>` JSON is only in the **fetched** HTML (Vue replaces it in the live DOM); units and `#panel-opening-times` come from each store page.
+  - **Orchard Central (Far East):** shops list text + `/en/orchard-central/shops/shop?shopName=<NAME, punctuation removed, + for spaces>` → text after "OPENING HOURS".
+  - **Orchard Gateway:** `/directory`, 7 numbered pages (click 2…7), blocks "name / # unit / category". No hours.
+  - Helpers: `tools/grab.py @@MARKER@@ out.txt` pulls a JS result out of the transcript; `tools/make_roster.py raw.rows <cluster-id> "<source>"` cleans `name|unit|status|hours` rows into a roster file.
 - **Per-store opening hours (18 Oct), folded in with `tools/roster_hours.py`:**
   - **Lendlease:** each store page has a hidden `#panel-opening-times` with one row per weekday (`.flex.justify-between` → day span + slot spans). Watch for landlord typos (PLQ had "Sat 23:30-15:00" and "Thu 11:00-09:30"; corrected to match the other days).
   - **Downtown East:** detail page text "Operating hours: …" before the location line.
@@ -398,6 +414,7 @@ Rough effort: about 1 session per zone of ~15 centres plus malls. The East took 
 | 18 Oct | Spin: Where filter, 0.2× weight for drinks/dessert/snacks at mealtimes, one entry per chain | Malls became ~2/3 of places; spins were drowning in chain kiosks |
 | 19 Oct | Hawker exception: Lau Pa Sat, Amoy Street, Maxwell, Market Street food centres | Near the owner's office (IOI Central Boulevard Towers) |
 | 19 Oct | Two office origins (IOI Central Boulevard Towers, DSTA Integrated Complex) with a Home / Office / Here switch | Lunch near work, not just near home |
+| 20 Nov | Owner's 63-mall list replaces zone-by-zone; 7 sprints, one PR each | Owner's priority list |
 | 19 Oct | Usage safeguards: waves, ~40 calls each, one per 5-hour window, max 3 a day, pause on request | Owner's other projects need usage headroom |
 | 18 Oct | Scope: malls island-wide (zone by zone, Central first); hawker centres only Home ground + East | Owner rarely travels far for hawker food | Each had a current official list; the OTH hawker centre stays its own cluster |
 
