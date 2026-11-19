@@ -1,6 +1,9 @@
 # Makan Map — project state
 
-_Last updated: 19 Oct 2026, ~01:00 SGT (wave 1 done: 9 Central malls, 4 CBD food centres, office origins in app v1.6). Previously 18 Oct 2026, ~10:30 SGT (v1.5: spin Where filter, mealtime weighting, chain de-dup. Data: East malls done; **Central malls in progress on branch `data/central-malls`**)_
+> **Next chat name: `FoodGuide ver 3`**
+> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 3**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
+
+_Last updated: 20 Nov 2026 (owner's mall list split into sprints, section 0). 19 Oct: wave 1 done (9 Central malls, 4 CBD food centres, office origins in app v1.6), PR #7 open, not merged._
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
@@ -36,11 +39,23 @@ Done in wave 1 (owner asleep, no PC needed):
 - App v1.6 on `main`: distances from Home / IOI CBT / DSTA / Here (`CONFIG.OFFICES`, `prefs.from`), switch on Spin, Explore and Settings.
 - PR opened for this part (see section 7).
 
-Next waves:
-1. **Browser wave (needs PC + desktop app):** request all site approvals first. 313@somerset, then the Far East group (9 malls, one recipe).
-2. Browser wave: Orchard independents (ION, Ngee Ann City, Paragon, Wisma Atria, Mandarin Gallery, Orchard Gateway, Lucky Plaza, Far East Plaza).
-3. Browser wave: CBD + Marina/Civic (Asia Square, OUE Downtown, One Raffles Place, Marina Bay Link Mall, CapitaSpring, Tanjong Pagar Centre, Marina One, Suntec, Marina Square, Millenia Walk, MBS, Esplanade, Capitol, CHIJMES, South Beach). Also the Lau Pa Sat stall directory (laupasat.sg) and full rosters for Amoy/Maxwell/Market Street (hawker.guide pages need the browser; WebFetch refuses URLs not seen in chat).
-4. Browser wave: the rest (Great World, VivoCity, HarbourFront Centre, Chinatown Point, Velocity, United Square, Thomson Plaza, Toa Payoh Hub, Holland Village).
+### Mall sprints (owner's list, 20 Nov 2026)
+The owner gave a 63-entry list of malls to map (it replaces the zone-by-zone order). Status on 20 Nov:
+- **Live (17):** Tampines Mall, Tampines 1, Century Square, Our Tampines Hub, Bedok Mall, White Sands*, Pasir Ris Mall, Downtown East, Jewel, Changi City Point, Eastpoint, PLQ, Paya Lebar Square*, SingPost Centre, i12 Katong, Parkway Parade, KINEX. (*still the ~2024 SingMalls list.)
+- **In PR #7, not merged (8):** Plaza Singapura, Raffles City, Funan, Bugis Junction, Bugis+, The Centrepoint, Tiong Bahru Plaza, Junction 8 (plus Clarke Quay, not on the list).
+- **To do (38 + Changi T1–T4)**, one sprint = one wave from section 0 (≤~40 calls, needs the PC + desktop app; request all the sprint's sites at the start):
+
+| Sprint | Malls | Notes |
+|---|---|---|
+| 1 Orchard, big | ION Orchard, Ngee Ann City, Wisma Atria, Paragon, 313@somerset, Orchard Central, Orchard Gateway | 313 = Lendlease recipe; Orchard Central = Far East recipe |
+| 2 Orchard, smaller | Far East Plaza, Lucky Plaza, Mandarin Gallery, Palais Renaissance, Scotts Square, Tanglin Mall, Wheelock Place, Shaw House | Strata malls may have no official directory → SingMalls fallback, flagged |
+| 3 Marina / Civic | Suntec City, Marina Square, Millenia Walk, Marina Bay Link Mall, Shoppes at Marina Bay Sands, Capitol Singapore | Suntec and MBS are large |
+| 4 Chinatown / river | 100AM, Chinatown Point, Clarke Quay Central, UE Square, Great World | Clarke Quay Central = Far East recipe |
+| 5 Novena / Kallang | Velocity@Novena Square, Square 2, United Square, City Square Mall, Zhongshan Mall, Aperia Mall, Kallang Wave Mall | Square 2 = Far East recipe |
+| 6 South / north / west | VivoCity, The Star Vista, Thomson Plaza, Waterway Point, NEX | Check the Frasers feed first (one call covers all Frasers malls) |
+| 7 Airport + East refresh | Changi Airport T1–T4 (reverses the 18 Oct exclusion), official lists for White Sands and Paya Lebar Square | Decide public-area vs transit outlets |
+
+Each sprint ends with validate + coverage, its own PR, and an update here. New zones are set per mall (Waterway Point, NEX = northeast; Star Vista = west; the rest central). `places.json` may approach the ~3 MB split threshold by sprint 6.
 
 ---
 
@@ -433,3 +448,9 @@ Owner's call (18 Oct): **map malls zone by zone, starting with Central; no more 
 - [ ] NEA cleaning/closure dates per centre (data.gov.sg) to hide centres during cleaning weeks.
 - [ ] A "Still here ✓" quick confirm for `listed` stalls; it would feed the refresh.
 - [ ] Owner: real two-account test of the family invite flow; photo upload on a phone.
+
+- 2026-10-21 (conductor): new app icon from the ecosystem icon set.
+
+- 2026-10-22 (conductor): manifest `id` changed from "./" to "/FoodGuide/". "./" resolved to the site root, which TV World also claimed, so Android treated the apps as one. Reinstall once.
+
+- 2026-10-23 (conductor, Sprint 13.2): added the "←" back-to-Life-Plan button in the top bar (it was the only app without one) and shared theme tokens `--lp-bg/--lp-surface/--lp-text/--lp-muted/--lp-accent` mapped to this app's palette; `sw.js` cache `makanmap-v14`. Tile-only app: no `lp-sso` or Life Plan feed. Not tested live.
