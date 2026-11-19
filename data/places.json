@@ -971,6 +971,41 @@
    "name": "orchardgateway – Orchard Gateway directory",
    "url": "https://orchardgateway.sg/directory",
    "date": "live directory (Food & Beverage)"
+  },
+  "far-east-plaza-m-far-east-plaza": {
+   "name": "far-east-plaza – Far East Plaza directory",
+   "url": "https://www.fareastplaza.com.sg/store-directory (Food & Beverages)",
+   "date": "live directory (Food & Beverages)"
+  },
+  "lucky-plaza-m-lucky-plaza": {
+   "name": "lucky-plaza – Lucky Plaza directory",
+   "url": "https://www.luckyplaza.com.sg/store-guide (Dining & Gourmet, Confectionery & Snacks, Beverage)",
+   "date": "live directory (Dining & Gourmet)"
+  },
+  "oue-m-mandarin-gallery": {
+   "name": "oue – Mandarin Gallery directory",
+   "url": "https://mandaringallery.com.sg/directory?type=category&label=food-beverages",
+   "date": "live directory (Food & Beverages)"
+  },
+  "cdl-m-palais-renaissance": {
+   "name": "cdl – Palais Renaissance directory",
+   "url": "https://www.palais.sg/directory/",
+   "date": "live directory (Food & Beverage)"
+  },
+  "tanglin-mall-m-tanglin-mall": {
+   "name": "tanglin-mall – Tanglin Mall directory",
+   "url": "https://www.tanglinmall.com.sg/dine/",
+   "date": "live directory (Dine)"
+  },
+  "singmalls-m-scotts-square": {
+   "name": "singmalls – Scotts Square directory",
+   "url": "https://singmalls.app/en/malls/scotts-square/directory",
+   "date": "~2024 snapshot (Dining)"
+  },
+  "singmalls-m-wheelock-place": {
+   "name": "singmalls – Wheelock Place directory",
+   "url": "https://singmalls.app/en/malls/wheelock-place/directory",
+   "date": "~2024 snapshot (Food & Drink)"
   }
  },
  "clusters": [
@@ -2080,6 +2115,146 @@
     "source": "orchardgateway-m-orchard-gateway",
     "count": 32,
     "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-far-east-plaza",
+   "name": "Far East Plaza",
+   "type": "mall",
+   "address": "14 Scotts Road, S228213",
+   "lat": 1.30725,
+   "lng": 103.83335,
+   "zone": "central",
+   "stalls_total": 54,
+   "notes": "Older strata mall off Scotts Road: lots of small local eateries and cafés, plus a basement-to-L5 mix of Thai, Indonesian and Japanese. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "roster": {
+    "source": "far-east-plaza-m-far-east-plaza",
+    "count": 54,
+    "snapshot": "live directory (Food & Beverages)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-lucky-plaza",
+   "name": "Lucky Plaza",
+   "type": "mall",
+   "address": "304 Orchard Road, S238863",
+   "lat": 1.30448,
+   "lng": 103.83417,
+   "zone": "central",
+   "stalls_total": 39,
+   "notes": "Busy strata mall, the Filipino and Indonesian hub of Orchard (Jollibee, nasi padang, ayam penyet), plus Lucky Food Centre in B1. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "roster": {
+    "source": "lucky-plaza-m-lucky-plaza",
+    "count": 39,
+    "snapshot": "live directory (Dining & Gourmet)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-mandarin-gallery",
+   "name": "Mandarin Gallery",
+   "type": "mall",
+   "address": "333A Orchard Road, S238897",
+   "lat": 1.30182,
+   "lng": 103.83654,
+   "zone": "central",
+   "stalls_total": 16,
+   "notes": "Next to Hilton/Mandarin Orchard; upmarket restaurants on L2 and L4. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "roster": {
+    "source": "oue-m-mandarin-gallery",
+    "count": 16,
+    "snapshot": "live directory (Food & Beverages)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-palais-renaissance",
+   "name": "Palais Renaissance",
+   "type": "mall",
+   "address": "390 Orchard Road, S238871",
+   "lat": 1.30676,
+   "lng": 103.82905,
+   "zone": "central",
+   "stalls_total": 12,
+   "notes": "Small luxury mall (CDL). PS.Cafe, Si Yan Teochew, a few Japanese restaurants. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "roster": {
+    "source": "cdl-m-palais-renaissance",
+    "count": 12,
+    "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-tanglin-mall",
+   "name": "Tanglin Mall",
+   "type": "mall",
+   "address": "163 Tanglin Road, S247933",
+   "lat": 1.305,
+   "lng": 103.8238,
+   "zone": "central",
+   "stalls_total": 23,
+   "notes": "Expat-favourite mall at the top of Orchard; cafés, bakeries and a B1 food hall. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "roster": {
+    "source": "tanglin-mall-m-tanglin-mall",
+    "count": 23,
+    "snapshot": "live directory (Dine)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-scotts-square",
+   "name": "Scotts Square",
+   "type": "mall",
+   "address": "6 Scotts Road, S228209",
+   "lat": 1.30586,
+   "lng": 103.83328,
+   "zone": "central",
+   "stalls_total": 10,
+   "notes": "Small mall under the Scotts Square residences; food on B1, L1 and L3. List from SingMalls (~2024), no official directory found. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "roster": {
+    "source": "singmalls-m-scotts-square",
+    "count": 10,
+    "snapshot": "~2024 snapshot (Dining)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-wheelock-place",
+   "name": "Wheelock Place",
+   "type": "mall",
+   "address": "501 Orchard Road, S238880",
+   "lat": 1.30487,
+   "lng": 103.83063,
+   "zone": "central",
+   "stalls_total": 16,
+   "notes": "Glass-cone mall next to ION/Orchard MRT. List from SingMalls (~2024); the old official site domain now points to an unrelated site. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "roster": {
+    "source": "singmalls-m-wheelock-place",
+    "count": 16,
+    "snapshot": "~2024 snapshot (Food & Drink)",
     "fetched": "2026-11-20"
    }
   }
@@ -88736,6 +88911,3899 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-orchard-gateway-ygf-malatang"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Age Ya (Far East Plaza)",
+   "unit": "#05-99",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-age-ya"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "All About Tiramisu (Far East Plaza)",
+   "unit": "#01-69",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-all-about-tiramisu"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Amazing Thai Food (Far East Plaza)",
+   "unit": "#01-20",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-amazing-thai-food"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Aru (Far East Plaza)",
+   "unit": "#01-40",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-aru"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Cahaya Muslim Restaurant (Far East Plaza)",
+   "unit": "#05-69/91/92",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-cahaya-muslim-restaurant"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Cha Ca Café Pte Ltd (Far East Plaza)",
+   "unit": "#01-16D",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-cha-ca-caf-pte-ltd"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Chippy (Far East Plaza)",
+   "unit": "#01-16C",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-chippy"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Cross Straits (Far East Plaza)",
+   "unit": "#05-119",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-cross-straits"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Dunkin Donuts (Far East Plaza)",
+   "unit": "#01-03",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-dunkin-donuts"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Fan's Café (Far East Plaza)",
+   "unit": "#01-41",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-fan-s-caf"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Far East Fried Chicken (Far East Plaza)",
+   "unit": "#04-96",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-far-east-fried-chicken"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Good Morning Nanyang Café (Far East Plaza)",
+   "unit": "#02-23",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-good-morning-nanyang-caf"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Hainanese Delicacy (Far East Plaza)",
+   "unit": "#05-116",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-hainanese-delicacy"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Hong Hu Express /Wang Xing Mala Kitchen (Far East Plaza)",
+   "unit": "#05-96/97",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-hong-hu-express-wang-xing-mala-kitchen"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Hup Ka Foon (Far East Plaza)",
+   "unit": "#05-12",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-hup-ka-foon"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Indo Rasa (Far East Plaza)",
+   "unit": "#01-23",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-indo-rasa"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Isle Café (Far East Plaza)",
+   "unit": "#02-66/67",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-isle-caf"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Kang Su Vegetarian (Far East Plaza)",
+   "unit": "#05-98",
+   "cuisine": "vegetarian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-kang-su-vegetarian"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "KFC (Far East Plaza)",
+   "unit": "#01-06",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-kfc"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Korean Cuisine (Far East Plaza)",
+   "unit": "#01-24/37",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-korean-cuisine"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Kra Pow (Far East Plaza)",
+   "unit": "#03-26/27",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-kra-pow"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "LiHo (Far East Plaza)",
+   "unit": "#01-16F",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-liho"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Lim Kee Yong Tau Foo (Far East Plaza)",
+   "unit": "#05-111",
+   "cuisine": "yong-tau-foo",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-lim-kee-yong-tau-foo"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Luckin Coffee (Far East Plaza)",
+   "unit": "#Kiosk 14E",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-luckin-coffee"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Maddie's Kitchen (Far East Plaza)",
+   "unit": "#02-10/11/12/13",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-maddie-s-kitchen"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Mansor D'Café (Far East Plaza)",
+   "unit": "#04-34",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-mansor-d-caf"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Mighty Kopi (Far East Plaza)",
+   "unit": "#05-100/101",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-mighty-kopi"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Mr Coconut (Far East Plaza)",
+   "unit": "#Kiosk 14C",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-mr-coconut"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "MS BANH MI By Ba Buong (Far East Plaza)",
+   "unit": "#03-89",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-ms-banh-mi-by-ba-buong"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Nana Thai Restaurant (Far East Plaza)",
+   "unit": "#04-22/23/24",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-nana-thai-restaurant"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Nanbantei Japanese Restaurant (Far East Plaza)",
+   "unit": "#05-129/130/131/132",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-nanbantei-japanese-restaurant"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "New Station Snack Bar (Far East Plaza)",
+   "unit": "#05-95",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-new-station-snack-bar"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "ninetea (Far East Plaza)",
+   "unit": "#01-39",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-ninetea"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "OC Mai Vietnamese & Western Cuisines (Far East Plaza)",
+   "unit": "#05-26/26A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-oc-mai-vietnamese-western-cuisines"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Old Chang Kee (Far East Plaza)",
+   "unit": "#Kiosk 14D",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-old-chang-kee"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Pancake & Friends (Far East Plaza)",
+   "unit": "#01-34",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-pancake-friends"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Piccoco by Hei Kim (Far East Plaza)",
+   "unit": "#03-22",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-piccoco-by-hei-kim"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Picnic (Far East Plaza)",
+   "unit": "#01-08/09/10/11/12/13/14",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-picnic"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Pondok Jawa Timur (Far East Plaza)",
+   "unit": "#05-22/23",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-pondok-jawa-timur"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Puncak Best Noodle (Far East Plaza)",
+   "unit": "#05-93/94",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-puncak-best-noodle"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Satay Club By Essen (Far East Plaza)",
+   "unit": "#Kiosk 14A",
+   "cuisine": "bbq-seafood",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-satay-club-by-essen"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Shu Xiang (Far East Plaza)",
+   "unit": "#01-22",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-shu-xiang"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Smoochie Creamery (Far East Plaza)",
+   "unit": "#01-27",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-smoochie-creamery"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Subway (Far East Plaza)",
+   "unit": "#01-36",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-subway"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Susan Chan Food (Far East Plaza)",
+   "unit": "#05-51",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-susan-chan-food"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Sushi Bar (Far East Plaza)",
+   "unit": "#04-28",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-sushi-bar"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "The Community Coffee (Far East Plaza)",
+   "unit": "#02-94",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-the-community-coffee"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "The Fresh (Far East Plaza)",
+   "unit": "#05-113",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-the-fresh"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "The Mediterranean Deli Turk (Far East Plaza)",
+   "unit": "#01-17/18/19",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-the-mediterranean-deli-turk"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Wasabi Tei Japanese Cuisine (Far East Plaza)",
+   "unit": "#05-68",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-wasabi-tei-japanese-cuisine"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Ya Kun Kaya Toast (Far East Plaza)",
+   "unit": "#01-16",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Yan Ji Seafood Soup (Far East Plaza)",
+   "unit": "#01-16A/16B",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-yan-ji-seafood-soup"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Yusof & Arni (Far East Plaza)",
+   "unit": "#05-67",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-yusof-arni"
+  },
+  {
+   "cluster": "m-far-east-plaza",
+   "name": "Zhang Liang Mala Tang (Far East Plaza)",
+   "unit": "#01-07A",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "far-east-plaza-m-far-east-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-far-east-plaza-zhang-liang-mala-tang"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "A Wen Mianshi (Lucky Plaza)",
+   "unit": "#01-41",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-a-wen-mianshi"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Al Zouq Restaurant (Lucky Plaza)",
+   "unit": "#01-92/99",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-al-zouq-restaurant"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Aristocrat Cuisine (Lucky Plaza)",
+   "unit": "#03-16/18",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-aristocrat-cuisine"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Ayam Penyet President (Lucky Plaza)",
+   "unit": "#03-36/37",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-ayam-penyet-president"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Ayam Penyet Ria (Lucky Plaza)",
+   "unit": "#04-25 to 27",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-ayam-penyet-ria"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Barrio Fiesta Eatery (Lucky Plaza)",
+   "unit": "#04-35 / 37",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-barrio-fiesta-eatery"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Bebek Goreng Pak Ndut (Lucky Plaza)",
+   "unit": "#01-42 to 44",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-bebek-goreng-pak-ndut"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Bodega Bistro (Lucky Plaza)",
+   "unit": "#06-14D",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-bodega-bistro"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Cipta Rasa Caféria (Lucky Plaza)",
+   "unit": "#01-75/108/90",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-cipta-rasa-caf-ria"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Clunythai Restaurant & Bar (Lucky Plaza)",
+   "unit": "#02-111",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-clunythai-restaurant-bar"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Cocoa Pods (Lucky Plaza)",
+   "unit": "#01-29/32",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-cocoa-pods"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Delicate & Juicy (Lucky Plaza)",
+   "unit": "#02-92",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-delicate-juicy"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Fiie's Café (Lucky Plaza)",
+   "unit": "#06-52",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-fiie-s-caf"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Hello Fruit Juice (Lucky Plaza)",
+   "unit": "#02-54",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-hello-fruit-juice"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Inasal Restaurant And Bakery (Lucky Plaza)",
+   "unit": "#04-49/51",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-inasal-restaurant-and-bakery"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Jollibee Singapore (Lucky Plaza)",
+   "unit": "#B1-19-24/44-46",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-jollibee-singapore"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Kabayan Filipino Restaurant (Lucky Plaza)",
+   "unit": "#03-25",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-kabayan-filipino-restaurant"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Killiney Kopitiam @ Orchard (Lucky Plaza)",
+   "unit": "#01-10",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-killiney-kopitiam-orchard"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Kimly Food Court (Lucky Plaza)",
+   "unit": "#06-48(A)",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-kimly-food-court"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Kingz Bar & Bistro (Lucky Plaza)",
+   "unit": "#01-48",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-kingz-bar-bistro"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Long Ji Fruits (Lucky Plaza)",
+   "unit": "#01-04(A)",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-long-ji-fruits"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Luci's Kitchen (Lucky Plaza)",
+   "unit": "#02-58/59",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-luci-s-kitchen"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Luckin Coffee (Lucky Plaza)",
+   "unit": "#01-02",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-luckin-coffee"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Lucky Chicken Rice (Lucky Plaza)",
+   "unit": "#02-110",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-lucky-chicken-rice"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Lucky Food Centre (Lucky Plaza)",
+   "unit": "#B1-95/101",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-lucky-food-centre"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Makan Yuk! Food Court (Lucky Plaza)",
+   "unit": "#01-67/68/69/71/72",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-makan-yuk-food-court"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Mamita's Kitchen (Lucky Plaza)",
+   "unit": "#02-60/78",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-mamita-s-kitchen"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Manise Indo Cuisine (Lucky Plaza)",
+   "unit": "#03-39",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-manise-indo-cuisine"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Minang House Traditional Nasi Padang (Lucky Plaza)",
+   "unit": "#02-66/67",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-minang-house-traditional-nasi-padang"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "My Favourite Café (Lucky Plaza)",
+   "unit": "#06-46/47",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-my-favourite-caf"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Pan De Marie (Lucky Plaza)",
+   "unit": "#03-54",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-pan-de-marie"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Paris Van Java (Lucky Plaza)",
+   "unit": "#01-45 to 47",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-paris-van-java"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Pinoy Ave Sg (Lucky Plaza)",
+   "unit": "#06-14(C)",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-pinoy-ave-sg"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Rabbit Brand Seafood Delicacies (Lucky Plaza)",
+   "unit": "#02-114",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-rabbit-brand-seafood-delicacies"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Share Tea (Lucky Plaza)",
+   "unit": "#Kiosk 2",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-share-tea"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Special Nasi Padang Berlian (Lucky Plaza)",
+   "unit": "#02-04 & #02-06",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-special-nasi-padang-berlian"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Turkish Doner Kebab (Lucky Plaza)",
+   "unit": "#Kiosk 1",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-turkish-doner-kebab"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Tushiok Tushiok (Lucky Plaza)",
+   "unit": "#06-14",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-tushiok-tushiok"
+  },
+  {
+   "cluster": "m-lucky-plaza",
+   "name": "Zagu Food-Drinks (Lucky Plaza)",
+   "unit": "#04-20",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "lucky-plaza-m-lucky-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-lucky-plaza-zagu-food-drinks"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Arteastiq Tea Lounge (Mandarin Gallery)",
+   "unit": "#04-14",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-arteastiq-tea-lounge"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Blue Label Pizza & Wine (Mandarin Gallery)",
+   "unit": "#03-02",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-blue-label-pizza-wine"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Bouillon Gavroche (Mandarin Gallery)",
+   "unit": "#01-16/17",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-bouillon-gavroche"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Cafe Ma Maison (Mandarin Gallery)",
+   "unit": "#02-35/36",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-cafe-ma-maison"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "D'rim Korean Steak House (Mandarin Gallery)",
+   "unit": "#02-14/15/16",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-d-rim-korean-steak-house"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Ippudo (Mandarin Gallery)",
+   "unit": "#04-02/03/04",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-ippudo"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Lawry's the Prime Rib (Mandarin Gallery)",
+   "unit": "#04-01/31",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-lawry-s-the-prime-rib"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Modu Korean Restaurant (Mandarin Gallery)",
+   "unit": "#02-37",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-modu-korean-restaurant"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Suju Japanese Restaurant (Mandarin Gallery)",
+   "unit": "#04-05/06/07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-suju-japanese-restaurant"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Sushi Ayumu by Masa Ishibashi (Mandarin Gallery)",
+   "unit": "#04-16",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-sushi-ayumu-by-masa-ishibashi"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "The City Bakery Orchard (Mandarin Gallery)",
+   "unit": "#02-05/06/07 & #24/25",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-the-city-bakery-orchard"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Tofu G (Mandarin Gallery)",
+   "unit": "#02-26",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-tofu-g"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Wild Honey (Mandarin Gallery)",
+   "unit": "#03-01/02",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-wild-honey"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Yakiniquest (Mandarin Gallery)",
+   "unit": "#04-08/09/10",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-yakiniquest"
+  },
+  {
+   "cluster": "m-mandarin-gallery",
+   "name": "Yan's Dining Fine Shanghai Cuisine (Mandarin Gallery)",
+   "unit": "#04-23",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "oue-m-mandarin-gallery"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-mandarin-gallery-yan-s-dining-fine-shanghai-cuisine"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Binary (Palais Renaissance)",
+   "unit": "#01-01A",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-binary"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Cakebar (Palais Renaissance)",
+   "unit": "#01-07A/07B",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-cakebar"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "French Fold (Palais Renaissance)",
+   "unit": "#01-02",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-french-fold"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Ishinomaki Dining (Palais Renaissance)",
+   "unit": "#B1-08/09",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-ishinomaki-dining"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "LingZhi Greens (Palais Renaissance)",
+   "unit": "#B1-04/05",
+   "cuisine": "vegetarian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-lingzhi-greens"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Mare Hachikyo (Palais Renaissance)",
+   "unit": "#01-07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-mare-hachikyo"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Merci Marcel (Palais Renaissance)",
+   "unit": "#01-03/04",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-merci-marcel"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Ps.Cafe (Palais Renaissance)",
+   "unit": "#02-09A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-ps-cafe"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Shatoburian Yakiniku (Palais Renaissance)",
+   "unit": "#02-08/09",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-shatoburian-yakiniku"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Si Yan Teochew Dining (Palais Renaissance)",
+   "unit": "#B1-01 to 03",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-si-yan-teochew-dining"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Siam Smith (Palais Renaissance)",
+   "unit": "#01-01",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-siam-smith"
+  },
+  {
+   "cluster": "m-palais-renaissance",
+   "name": "Tempura Ensei (Palais Renaissance)",
+   "unit": "#B1-06/07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "cdl-m-palais-renaissance"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-palais-renaissance-tempura-ensei"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Araya Shouten (Tanglin Mall)",
+   "unit": "#B1-115",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-araya-shouten"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Boost Juice Bars (Tanglin Mall)",
+   "unit": "#B1-114",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-boost-juice-bars"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Caffe Beviamo (Tanglin Mall)",
+   "unit": "#02-127",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-caffe-beviamo"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Cedele Bakery (Tanglin Mall)",
+   "unit": "#B1-130",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-cedele-bakery"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Greybox Coffee (Tanglin Mall)",
+   "unit": "#02-152",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-greybox-coffee"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Kebabs Faktory (Tanglin Mall)",
+   "unit": "#B1-129",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-kebabs-faktory"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Konjiki Hototogisu Ramen (Tanglin Mall)",
+   "unit": "#01-110",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-konjiki-hototogisu-ramen"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Little Farms Table (Tanglin Mall)",
+   "unit": "#02-138",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-little-farms-table"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Nando's (Tanglin Mall)",
+   "unit": "#01-115",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-nando-s"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Nick Vina Artisan Bakery (Tanglin Mall)",
+   "unit": "#B1-113",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-nick-vina-artisan-bakery"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Pano Kato (Tanglin Mall)",
+   "unit": "#02-142",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-pano-kato"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Paul (Tanglin Mall)",
+   "unit": "#01-118",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-paul"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Poke Theory (Tanglin Mall)",
+   "unit": "#02-126",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-poke-theory"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Sarai (Tanglin Mall)",
+   "unit": "#03-121",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-sarai"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Seoul Tofu (Tanglin Mall)",
+   "unit": "#01-132",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-seoul-tofu"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Starbucks (Tanglin Mall)",
+   "unit": "#01-113",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-starbucks"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Tanamera Coffee (Tanglin Mall)",
+   "unit": "#02-130",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-tanamera-coffee"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Tanglin Cookhouse (Tanglin Mall)",
+   "unit": "#01-106",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-tanglin-cookhouse"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "The Candy Store (Tanglin Mall)",
+   "unit": "#01-101",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-the-candy-store"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "The Food Place (Tanglin Mall)",
+   "unit": "#B1-119",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-the-food-place"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Tung Lok Peking Duck (Tanglin Mall)",
+   "unit": "#03-128",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-tung-lok-peking-duck"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Yantra (Tanglin Mall)",
+   "unit": "#01-129",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-yantra"
+  },
+  {
+   "cluster": "m-tanglin-mall",
+   "name": "Wine Connection Bistro (Tanglin Mall)",
+   "unit": "#01-103",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "tanglin-mall-m-tanglin-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-tanglin-mall-wine-connection-bistro"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "Eggslut (Scotts Square)",
+   "unit": "#01-12 to 15",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-eggslut"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "Kakushin (Scotts Square)",
+   "unit": "#02-03",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-kakushin"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "London Fat Duck (Scotts Square)",
+   "unit": "#B1-16/17",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-london-fat-duck"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "Maison Kayser (Scotts Square)",
+   "unit": "#B1-25",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-maison-kayser"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "Paradise Teochew (Scotts Square)",
+   "unit": "#03-04 to 07",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-paradise-teochew"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "PizzaExpress (Scotts Square)",
+   "unit": "#B1-08/09",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-pizzaexpress"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "The Oatberry Café (Scotts Square)",
+   "unit": "#B1-K1",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-the-oatberry-caf"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "Tiong Bahru Bakery (Scotts Square)",
+   "unit": "#01-06/07",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-tiong-bahru-bakery"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "Toast Box (Scotts Square)",
+   "unit": "#B1-13",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-toast-box"
+  },
+  {
+   "cluster": "m-scotts-square",
+   "name": "Wild Honey (Scotts Square)",
+   "unit": "#03-K1 & #03-01/02",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-scotts-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-scotts-square-wild-honey"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "BreadTalk (Wheelock Place)",
+   "unit": "#B2-01",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-breadtalk"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Cafe At Zall Bookstore (Wheelock Place)",
+   "unit": "#01-02/03",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-cafe-at-zall-bookstore"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Café Bakeaholic (Wheelock Place)",
+   "unit": "#02-19",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-caf-bakeaholic"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Cedele All Day Dining (Wheelock Place)",
+   "unit": "#03-13A/14",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-cedele-all-day-dining"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "CHICHA San Chen (Wheelock Place)",
+   "unit": "#B1-05",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-chicha-san-chen"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Gumption Coffee (Wheelock Place)",
+   "unit": "#02-01",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-gumption-coffee"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Kei Kaisendon (Wheelock Place)",
+   "unit": "#B1-05A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-kei-kaisendon"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "M&S Café (Wheelock Place)",
+   "unit": "#01-K2",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-m-s-caf"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "NamNam Noodle Bar (Wheelock Place)",
+   "unit": "#B2-02",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-namnam-noodle-bar"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Pistachio Middle Eastern & Mediterranean Grill (Wheelock Place)",
+   "unit": "#02-04/05",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-pistachio-middle-eastern-mediterranean-gril"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Privé (Wheelock Place)",
+   "unit": "#01-K1",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-priv"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Starbucks (Wheelock Place)",
+   "unit": "#B1-01",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-starbucks"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Sun with Moon Japanese Dining & Café (Wheelock Place)",
+   "unit": "#03-15 to 17",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-sun-with-moon-japanese-dining-caf"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "The Humble Pie & The Ugly Cake Shop (Wheelock Place)",
+   "unit": "#02-01A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-the-humble-pie-the-ugly-cake-shop"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Toast Box (Wheelock Place)",
+   "unit": "#B2-01",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-toast-box"
+  },
+  {
+   "cluster": "m-wheelock-place",
+   "name": "Uya (Wheelock Place)",
+   "unit": "#02-15/16",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-wheelock-place"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-wheelock-place-uya"
   }
  ]
 }

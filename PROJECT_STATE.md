@@ -3,7 +3,7 @@
 > **Next chat name: `FoodGuide ver 3`**
 > Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 3**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
-_Last updated: 20 Nov 2026, ~01:30 SGT. **Sprint 1 (Orchard, big) done** on branch `data/sprint1-orchard` (7 malls, 313 outlets). PR #7 merged 20 Nov. Next: sprint 2 (section 0). Earliest start: 20 Nov ~06:30 (one wave per 5-hour window)._
+_Last updated: 20 Nov 2026, ~02:00 SGT. **Sprints 1–2 (Orchard) done**: PR #8 merged; sprint 2 on branch `data/sprint2-orchard-small` (7 malls, 169 outlets). Owner ran sprint 2 straight after sprint 1 (overrode the 5-hour gap). Next: sprint 3 (section 0)._
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
@@ -48,7 +48,7 @@ The owner gave a 63-entry list of malls to map (it replaces the zone-by-zone ord
 | Sprint | Malls | Notes |
 |---|---|---|
 | ~~1 Orchard, big~~ ✅ 20 Nov | ION Orchard 66, Ngee Ann City 40, Wisma Atria 32, Paragon 56, 313@somerset 57, Orchard Central 30, Orchard Gateway 32 | ~41 browser calls. Hours for ION, Wisma, 313, Orchard Central; none published for Ngee Ann City, Paragon, Orchard Gateway. **Map pins approximate** (OneMap search returned nothing on 20 Nov): re-geocode. |
-| 2 Orchard, smaller | Far East Plaza, Lucky Plaza, Mandarin Gallery, Palais Renaissance, Scotts Square, Tanglin Mall, Wheelock Place, Shaw House | Strata malls may have no official directory → SingMalls fallback, flagged |
+| ~~2 Orchard, smaller~~ ✅ 20 Nov | Far East Plaza 54, Lucky Plaza 39, Mandarin Gallery 15, Palais Renaissance 12, Tanglin Mall 23 (official); Scotts Square 10, Wheelock Place 16 (SingMalls ~2024) | ~33 calls. **Shaw House: no list anywhere** (no mall site, not on SingMalls, Isetan page lists none) → gap. wheelockplace.com now redirects to a gambling spam site: never open it. No hours from any of these sites. Pins approximate. |
 | 3 Marina / Civic | Suntec City, Marina Square, Millenia Walk, Marina Bay Link Mall, Shoppes at Marina Bay Sands, Capitol Singapore | Suntec and MBS are large |
 | 4 Chinatown / river | 100AM, Chinatown Point, Clarke Quay Central, UE Square, Great World | Clarke Quay Central = Far East recipe |
 | 5 Novena / Kallang | Velocity@Novena Square, Square 2, United Square, City Square Mall, Zhongshan Mall, Aperia Mall, Kallang Wave Mall | Square 2 = Far East recipe |
@@ -186,6 +186,13 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 | central | mall | Orchard Gateway | 32 | 32 (100%) | 0 | 0 | 32 | 0 | orchardgateway-m-orchard-gateway |
 | central | mall | Paragon | 56 | 58 (97%) | 0 | 0 | 56 | 0 | paragon-m-paragon |
 | central | mall | Wisma Atria | 32 | 33 (97%) | 0 | 0 | 32 | 0 | wisma-m-wisma-atria |
+| central | mall | Far East Plaza | 54 | 54 (100%) | 0 | 0 | 54 | 0 | far-east-plaza-m-far-east-plaza |
+| central | mall | Lucky Plaza | 39 | 39 (100%) | 0 | 0 | 39 | 0 | lucky-plaza-m-lucky-plaza |
+| central | mall | Mandarin Gallery | 15 | 16 (94%) | 0 | 0 | 15 | 0 | oue-m-mandarin-gallery |
+| central | mall | Palais Renaissance | 12 | 12 (100%) | 0 | 0 | 12 | 0 | cdl-m-palais-renaissance |
+| central | mall | Scotts Square | 10 | 10 (100%) | 0 | 0 | 10 | 0 | singmalls-m-scotts-square |
+| central | mall | Tanglin Mall | 23 | 23 (100%) | 0 | 0 | 23 | 0 | tanglin-mall-m-tanglin-mall |
+| central | mall | Wheelock Place | 16 | 16 (100%) | 0 | 0 | 16 | 0 | singmalls-m-wheelock-place |
 | east | hawker | Bedok Corner Food Centre | 10 | 32 (31%) | 10 | 0 | 0 | 0 | NEA count |
 | east | hawker | Changi Village Hawker Centre | 28 | 87 (32%) | 11 | 0 | 17 | 0 | NEA count |
 | east | hawker | Dunman Food Centre | 25 | 30 (83%) | 10 | 2 | 13 | 0 | NEA count |
@@ -226,7 +233,7 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 | home | mall | Bedok Mall | 78 | 78 (100%) | 6 | 6 | 66 | 19 | capitaland-m-bedok-mall |
 | home | mall | Djitsun Mall Bedok | 4 | 4 (100%) | 0 | 0 | 4 | 0 | visitbedok-m-djitsun-mall |
 
-Standalone restaurants/cafés: 61 | Total places: 2831 | Gaps (no roster): 2
+Standalone restaurants/cafés: 61 | Total places: 3000 | Gaps (no roster): 2
 
 Notes:
 - **Hawker coverage %:** NEA counts include drinks stalls and vacant units, so 100% isn't always reachable.
@@ -282,6 +289,12 @@ Notes:
   - **Orchard Central (Far East):** shops list text + `/en/orchard-central/shops/shop?shopName=<NAME, punctuation removed, + for spaces>` → text after "OPENING HOURS".
   - **Orchard Gateway:** `/directory`, 7 numbered pages (click 2…7), blocks "name / # unit / category". No hours.
   - Helpers: `tools/grab.py @@MARKER@@ out.txt` pulls a JS result out of the transcript; `tools/make_roster.py raw.rows <cluster-id> "<source>"` cleans `name|unit|status|hours` rows into a roster file.
+- **Sprint 2 recipes (20 Nov):**
+  - **Far East Plaza:** React app (adactive). Open the home page and click "Store Directory" (direct URL gives 403); page through 22 pages with the last `w-10` button next to the "NN/22" counter; blocks are CATEGORY / name / #unit. Don't use the credentials in its `config.json`.
+  - **Lucky Plaza:** SilverStripe `/store-guide?start=0,12,…,564` (48 pages, fetch in parallel); `.featured-store-item` with `.badge` categories (Dining & Gourmet, Confectionery & Snacks, Beverage).
+  - **Mandarin Gallery (OUE):** `/directory?type=category&label=food-beverages` text, name / #unit pairs.
+  - **Palais Renaissance (CDL):** `palais.sg/directory/` text, name / #unit / category (palais.com.sg is not theirs).
+  - **Tanglin Mall:** `/dine/` and `/dine/page/2/`, blocks level / #unit / category / NAME (opening notes like "(OPENING IN NOV)").
 - **Per-store opening hours (18 Oct), folded in with `tools/roster_hours.py`:**
   - **Lendlease:** each store page has a hidden `#panel-opening-times` with one row per weekday (`.flex.justify-between` → day span + slot spans). Watch for landlord typos (PLQ had "Sat 23:30-15:00" and "Thu 11:00-09:30"; corrected to match the other days).
   - **Downtown East:** detail page text "Operating hours: …" before the location line.
