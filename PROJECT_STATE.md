@@ -48,7 +48,7 @@ The owner gave a 63-entry list of malls to map (it replaces the zone-by-zone ord
 | Sprint | Malls | Notes |
 |---|---|---|
 | ~~1 Orchard, big~~ ✅ 20 Nov | ION Orchard 66, Ngee Ann City 40, Wisma Atria 32, Paragon 56, 313@somerset 57, Orchard Central 30, Orchard Gateway 32 | ~41 browser calls. Hours for ION, Wisma, 313, Orchard Central; none published for Ngee Ann City, Paragon, Orchard Gateway. **Map pins approximate** (OneMap search returned nothing on 20 Nov): re-geocode. |
-| ~~2 Orchard, smaller~~ ✅ 20 Nov | Far East Plaza 54, Lucky Plaza 39, Mandarin Gallery 15, Palais Renaissance 12, Tanglin Mall 23 (official); Scotts Square 10, Wheelock Place 16 (SingMalls ~2024) | ~33 calls. **Shaw House: no list anywhere** (no mall site, not on SingMalls, Isetan page lists none) → gap. wheelockplace.com now redirects to a gambling spam site: never open it. No hours from any of these sites. Pins approximate. |
+| ~~2 Orchard, smaller~~ ✅ 20 Nov | Far East Plaza 54, Lucky Plaza 39, Mandarin Gallery 15, Palais Renaissance 12, Tanglin Mall 23 (official); Scotts Square 10, Wheelock Place 16 (SingMalls ~2024, matches the independent guide thewheelockplace.com), **Shaw Centre 21** (shawcentre.sg/dine + tenant pages, added at the owner's pointer) | ~40 calls. **Shaw House (350 Orchard Rd, Isetan Scotts) is a different building from Shaw Centre (1 Scotts Rd); it still has no list** → gap. wheelockplace.com now redirects to a gambling spam site: never open it. No hours from any of these sites. Pins approximate. |
 | 3 Marina / Civic | Suntec City, Marina Square, Millenia Walk, Marina Bay Link Mall, Shoppes at Marina Bay Sands, Capitol Singapore | Suntec and MBS are large |
 | 4 Chinatown / river | 100AM, Chinatown Point, Clarke Quay Central, UE Square, Great World | Clarke Quay Central = Far East recipe |
 | 5 Novena / Kallang | Velocity@Novena Square, Square 2, United Square, City Square Mall, Zhongshan Mall, Aperia Mall, Kallang Wave Mall | Square 2 = Far East recipe |
@@ -190,6 +190,7 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 | central | mall | Lucky Plaza | 39 | 39 (100%) | 0 | 0 | 39 | 0 | lucky-plaza-m-lucky-plaza |
 | central | mall | Mandarin Gallery | 15 | 16 (94%) | 0 | 0 | 15 | 0 | oue-m-mandarin-gallery |
 | central | mall | Palais Renaissance | 12 | 12 (100%) | 0 | 0 | 12 | 0 | cdl-m-palais-renaissance |
+| central | mall | Shaw Centre | 21 | 22 (95%) | 0 | 0 | 21 | 0 | shaw-m-shaw-centre |
 | central | mall | Scotts Square | 10 | 10 (100%) | 0 | 0 | 10 | 0 | singmalls-m-scotts-square |
 | central | mall | Tanglin Mall | 23 | 23 (100%) | 0 | 0 | 23 | 0 | tanglin-mall-m-tanglin-mall |
 | central | mall | Wheelock Place | 16 | 16 (100%) | 0 | 0 | 16 | 0 | singmalls-m-wheelock-place |
@@ -233,7 +234,7 @@ Regenerate this table with `python3 tools/coverage.py --md`. "Roster" is the kno
 | home | mall | Bedok Mall | 78 | 78 (100%) | 6 | 6 | 66 | 19 | capitaland-m-bedok-mall |
 | home | mall | Djitsun Mall Bedok | 4 | 4 (100%) | 0 | 0 | 4 | 0 | visitbedok-m-djitsun-mall |
 
-Standalone restaurants/cafés: 61 | Total places: 3000 | Gaps (no roster): 2
+Standalone restaurants/cafés: 61 | Total places: 3021 | Gaps (no roster): 2
 
 Notes:
 - **Hawker coverage %:** NEA counts include drinks stalls and vacant units, so 100% isn't always reachable.

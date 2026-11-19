@@ -1006,6 +1006,16 @@
    "name": "singmalls – Wheelock Place directory",
    "url": "https://singmalls.app/en/malls/wheelock-place/directory",
    "date": "~2024 snapshot (Food & Drink)"
+  },
+  "twp-guide": {
+   "name": "The Wheelock Place – independent visitor guide (Food & Drink)",
+   "url": "https://thewheelockplace.com/food-and-drink/",
+   "date": "2026-11"
+  },
+  "shaw-m-shaw-centre": {
+   "name": "shaw – Shaw Centre directory",
+   "url": "https://shawcentre.sg/dine/ (+ tenant pages)",
+   "date": "live directory (Dine)"
   }
  },
  "clusters": [
@@ -2247,7 +2257,7 @@
    "lng": 103.83063,
    "zone": "central",
    "stalls_total": 16,
-   "notes": "Glass-cone mall next to ION/Orchard MRT. List from SingMalls (~2024); the old official site domain now points to an unrelated site. (Map pin approximate; re-geocode with OneMap.)",
+   "notes": "Glass-cone mall next to ION/Orchard MRT. List from SingMalls (~2024), matching the independent guide thewheelockplace.com (not the official site, undated). The old official domain wheelockplace.com now points to an unrelated site. (Map pin approximate; re-geocode with OneMap.)",
    "sources": [
     "singmalls-m-wheelock-place"
    ],
@@ -2255,6 +2265,26 @@
     "source": "singmalls-m-wheelock-place",
     "count": 16,
     "snapshot": "~2024 snapshot (Food & Drink)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-shaw-centre",
+   "name": "Shaw Centre",
+   "type": "mall",
+   "address": "1 Scotts Road, S228208",
+   "lat": 1.30589,
+   "lng": 103.83153,
+   "zone": "central",
+   "stalls_total": 22,
+   "notes": "Scotts Road, opposite Far East Plaza (not the same building as Shaw House / Isetan Scotts). Mostly sit-down Japanese and fine dining, plus Food Republic. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "roster": {
+    "source": "shaw-m-shaw-centre",
+    "count": 22,
+    "snapshot": "live directory (Dine)",
     "fetched": "2026-11-20"
    }
   }
@@ -92454,7 +92484,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92477,7 +92508,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92500,7 +92532,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92523,7 +92556,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92546,7 +92580,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92569,7 +92604,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92592,7 +92628,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92615,7 +92652,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92638,7 +92676,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92661,7 +92700,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92684,7 +92724,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92707,7 +92748,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92730,7 +92772,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92753,7 +92796,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92776,7 +92820,8 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
@@ -92799,11 +92844,495 @@
    "status": "open",
    "price_band": 1,
    "sources": [
-    "singmalls-m-wheelock-place"
+    "singmalls-m-wheelock-place",
+    "twp-guide"
    ],
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-wheelock-place-uya"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Mui Kee (Shaw Centre)",
+   "unit": "#03-09",
+   "cuisine": "porridge",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-mui-kee"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Food Republic (Shaw Centre)",
+   "unit": "",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-food-republic"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Bistro Du Vin (Shaw Centre)",
+   "unit": "#01-14",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-bistro-du-vin"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Shabu Jin (Shaw Centre)",
+   "unit": "#01-15",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-shabu-jin"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Les Amis Restaurant (Shaw Centre)",
+   "unit": "#01-16/17/18 & #02-14/15/16",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-les-amis-restaurant"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "La Taperia Wine & Tapas (Shaw Centre)",
+   "unit": "#02-08/09/10/11",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-la-taperia-wine-tapas"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Jinjo (Shaw Centre)",
+   "unit": "#02-18/19/20",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-jinjo"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Tenjin (Shaw Centre)",
+   "unit": "#03-08",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-tenjin"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Xi Yan (Shaw Centre)",
+   "unit": "#03-12/13",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-xi-yan"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "The Ship Restaurant & Bar (Shaw Centre)",
+   "unit": "#03-16/17/18",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-the-ship-restaurant-bar"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "8 Korean BBQ (Shaw Centre)",
+   "unit": "#04-20/21",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-8-korean-bbq"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Ippudo (Shaw Centre)",
+   "unit": "#04-23",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-ippudo"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Picolino (Shaw Centre)",
+   "unit": "#03-23/24",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-picolino"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Wagyu Jin (Shaw Centre)",
+   "unit": "",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-wagyu-jin"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Sushi Jin (Shaw Centre)",
+   "unit": "#03-07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-sushi-jin"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Scotts Grill (Shaw Centre)",
+   "unit": "#01-13",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-scotts-grill"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Unagi Yondaime Kikukawa (Shaw Centre)",
+   "unit": "#01-12",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-unagi-yondaime-kikukawa"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Fi Woodfire Thai (Shaw Centre)",
+   "unit": "#03-14/15",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-fi-woodfire-thai"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Jiin Omakase (Shaw Centre)",
+   "unit": "#01-07/11",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-jiin-omakase"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "SukiyakiJIN (Shaw Centre)",
+   "unit": "#01-07/11",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-sukiyakijin"
+  },
+  {
+   "cluster": "m-shaw-centre",
+   "name": "Sushi Ryujin (Shaw Centre)",
+   "unit": "",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "shaw-m-shaw-centre"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shaw-centre-sushi-ryujin"
   }
  ]
 }
