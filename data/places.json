@@ -1016,6 +1016,31 @@
    "name": "shaw – Shaw Centre directory",
    "url": "https://shawcentre.sg/dine/ (+ tenant pages)",
    "date": "live directory (Dine)"
+  },
+  "suntec-city-m-suntec-city": {
+   "name": "suntec-city – Suntec City directory",
+   "url": "https://www.sunteccity.com.sg/store_categories/dining",
+   "date": "live directory (Dining)"
+  },
+  "marina-square-m-marina-square": {
+   "name": "marina-square – Marina Square directory",
+   "url": "https://www.marinasquare.com.sg/stores (Food)",
+   "date": "live directory (Food)"
+  },
+  "singmalls-m-millenia-walk": {
+   "name": "singmalls – Millenia Walk directory",
+   "url": "https://singmalls.app/en/malls/millenia-walk/directory",
+   "date": "SingMalls directory, undated (official site unreachable)"
+  },
+  "mbs-m-shoppes-mbs": {
+   "name": "mbs – The Shoppes at Marina Bay Sands directory",
+   "url": "https://www.marinabaysands.com/restaurants/view-all.html + /shopping/store-directory.html (Quick Bites)",
+   "date": "live directory (Restaurants in The Shoppes + Quick Bites)"
+  },
+  "capitol-singapore-m-capitol-singapore": {
+   "name": "capitol-singapore – Capitol Singapore directory",
+   "url": "https://capitolsingapore.com/directory/?category=3 (Restaurants & Cafes)",
+   "date": "live directory (Restaurants & Cafes)"
   }
  },
  "clusters": [
@@ -2285,6 +2310,106 @@
     "source": "shaw-m-shaw-centre",
     "count": 22,
     "snapshot": "live directory (Dine)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-suntec-city",
+   "name": "Suntec City",
+   "type": "mall",
+   "address": "3 Temasek Boulevard, S038983",
+   "lat": 1.29515,
+   "lng": 103.85845,
+   "zone": "central",
+   "stalls_total": 163,
+   "notes": "Five towers and a convention centre; F&B on B1 (Food Republic, Gourmet/value eateries), L1–L3. Connected to Promenade and City Hall MRT. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "roster": {
+    "source": "suntec-city-m-suntec-city",
+    "count": 163,
+    "snapshot": "live directory (Dining)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-marina-square",
+   "name": "Marina Square",
+   "type": "mall",
+   "address": "6 Raffles Boulevard, S039594",
+   "lat": 1.29135,
+   "lng": 103.85755,
+   "zone": "central",
+   "stalls_total": 61,
+   "notes": "Next to Esplanade and Promenade MRT. Gourmet Paradise food court and The Dining Edition on L2. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "roster": {
+    "source": "marina-square-m-marina-square",
+    "count": 61,
+    "snapshot": "live directory (Food)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-millenia-walk",
+   "name": "Millenia Walk",
+   "type": "mall",
+   "address": "9 Raffles Boulevard, S039596",
+   "lat": 1.29155,
+   "lng": 103.86065,
+   "zone": "central",
+   "stalls_total": 50,
+   "notes": "Mostly Japanese sit-down restaurants, bars and Koufu. List is from SingMalls (undated); the landlord site was unreachable, so re-check against it. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "roster": {
+    "source": "singmalls-m-millenia-walk",
+    "count": 50,
+    "snapshot": "SingMalls directory, undated (official site unreachable)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-shoppes-mbs",
+   "name": "The Shoppes at Marina Bay Sands",
+   "type": "mall",
+   "address": "2 Bayfront Avenue, S018972",
+   "lat": 1.28425,
+   "lng": 103.85915,
+   "zone": "central",
+   "stalls_total": 38,
+   "notes": "Celebrity-chef restaurants plus Rasapura Masters food court (B2) and quick bites. Hotel-tower restaurants (Spago, LAVO, etc.) are not included. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "roster": {
+    "source": "mbs-m-shoppes-mbs",
+    "count": 38,
+    "snapshot": "live directory (Restaurants in The Shoppes + Quick Bites)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-capitol-singapore",
+   "name": "Capitol Singapore",
+   "type": "mall",
+   "address": "13 Stamford Road, S178905",
+   "lat": 1.29385,
+   "lng": 103.85085,
+   "zone": "central",
+   "stalls_total": 25,
+   "notes": "Arcade @ The Capitol Kempinski plus basement F&B; City Hall MRT. Directory's Restaurants & Cafes category only (Capitol Bistro and Famous Treasure are listed elsewhere, so not yet counted). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "roster": {
+    "source": "capitol-singapore-m-capitol-singapore",
+    "count": 25,
+    "snapshot": "live directory (Restaurants & Cafes)",
     "fetched": "2026-11-20"
    }
   }
@@ -93333,6 +93458,7613 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-shaw-centre-sushi-ryujin"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "2Gather (Suntec City)",
+   "unit": "#01-505",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-2gather"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "365 Juices Bar (Suntec City)",
+   "unit": "#B1-137",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-365-juices-bar"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Aburi-En (Suntec City)",
+   "unit": "#B1-121",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-aburi-en"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Aj's Teh Tarik (Suntec City)",
+   "unit": "#B1-144",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-aj-s-teh-tarik"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Astons Specialities (Suntec City)",
+   "unit": "#B1-161",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-astons-specialities"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Bakery Cuisine (Suntec City)",
+   "unit": "#B1-153",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-bakery-cuisine"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Bali Thai (Suntec City)",
+   "unit": "#B1-121A/B",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-bali-thai"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Bgm (Suntec City)",
+   "unit": "#03-306",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-bgm"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Bibim Deli (Suntec City)",
+   "unit": "#B1-172",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-bibim-deli"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Big Fish Small Fish (Suntec City)",
+   "unit": "#02-606",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-big-fish-small-fish"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Bingxue Tea & Ice Cream (Suntec City)",
+   "unit": "#B1-K13",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-bingxue-tea-ice-cream"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Boost Juice Bars (Suntec City)",
+   "unit": "#B1-K9",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-boost-juice-bars"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Bulgogi Syo (Suntec City)",
+   "unit": "#B1-133",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-bulgogi-syo"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Burger King (Suntec City)",
+   "unit": "#03-371",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-burger-king"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Butahage (Suntec City)",
+   "unit": "#01-625",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-butahage"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Byd by 1826 (Suntec City)",
+   "unit": "#01-458",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-byd-by-1826"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "CafÉ Usagi Tokyo (Suntec City)",
+   "unit": "#02-615A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-caf-usagi-tokyo"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Canopy & Coals (Suntec City)",
+   "unit": "#03-308",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-canopy-coals"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Cha Mulan (Suntec City)",
+   "unit": "#B1-K2",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-cha-mulan"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Chada by Tin Box (Suntec City)",
+   "unit": "#01-503",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-chada-by-tin-box"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Chagee (Suntec City)",
+   "unit": "#01-308",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-chagee"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Chao Yuan (Suntec City)",
+   "unit": "#03-323",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-chao-yuan"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Chicha San Chen (Suntec City)",
+   "unit": "#B1-169",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-chicha-san-chen"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Coca (Suntec City)",
+   "unit": "#02-440",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-coca"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Coco Ichibanya (Suntec City)",
+   "unit": "#02-605",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-coco-ichibanya"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Coffeesmith (Suntec City)",
+   "unit": "#02-413",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-coffeesmith"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Compose Coffee (Suntec City)",
+   "unit": "#01-623",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-compose-coffee"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Deliturk by Chef Celal (Suntec City)",
+   "unit": "#B1-147",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-deliturk-by-chef-celal"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Din Tai Fung (Suntec City)",
+   "unit": "#02-302",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-din-tai-fung"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Dookki (Suntec City)",
+   "unit": "#B1-107",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-dookki"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Dunkin' (Suntec City)",
+   "unit": "#01-K6",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-dunkin"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Echo (Suntec City)",
+   "unit": "#03-318",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-echo"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "En Yeoh's Bak Kut Teh (Suntec City)",
+   "unit": "#B1-122A",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-en-yeoh-s-bak-kut-teh"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Fish & Co. (Suntec City)",
+   "unit": "#B1-145",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-fish-co"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Fong Sheng Hao+ (Suntec City)",
+   "unit": "#01-312",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-fong-sheng-hao"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Food Arena by Yew Kee Group (Suntec City)",
+   "unit": "#03-367",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-food-arena-by-yew-kee-group"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Food Republic (Suntec City)",
+   "unit": "#B1-115",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-food-republic"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Four Leaves (Suntec City)",
+   "unit": "#B1-K3",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-four-leaves"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Fried Chicken Master (Suntec City)",
+   "unit": "#02-601",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-fried-chicken-master"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Fu Lin (Suntec City)",
+   "unit": "#B1-139",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-fu-lin"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Fun Toast (Suntec City)",
+   "unit": "#01-432A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-fun-toast"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Genki Sushi (Suntec City)",
+   "unit": "#02-456",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-genki-sushi"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Ghost Kakigori (Suntec City)",
+   "unit": "#02-600",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-ghost-kakigori"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Glo (Suntec City)",
+   "unit": "#03-321",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-glo"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Go-Ang Pratunam Chicken Rice (Suntec City)",
+   "unit": "#B1-126",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-go-ang-pratunam-chicken-rice"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Godiva (Suntec City)",
+   "unit": "#02-307",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-godiva"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Gong Yuan Ma La Tang (Suntec City)",
+   "unit": "#B1-175",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-gong-yuan-ma-la-tang"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Gopizza (Suntec City)",
+   "unit": "#01-365",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-gopizza"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Guerilla Coffee (Suntec City)",
+   "unit": "#01-506",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-guerilla-coffee"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Guzman y Gomez Mexican Kitchen (Suntec City)",
+   "unit": "#02-474",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-guzman-y-gomez-mexican-kitchen"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Harrianns Nonya Table (Suntec City)",
+   "unit": "#01-416A",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-harrianns-nonya-table"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Hej Cake (Suntec City)",
+   "unit": "#01-K9",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-hej-cake"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Hoffee (Suntec City)",
+   "unit": "#03-323",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-hoffee"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Hoshino Coffee (Suntec City)",
+   "unit": "#01-651",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-hoshino-coffee"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Ichigo by Tea Cottage (Suntec City)",
+   "unit": "#B1-136",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-ichigo-by-tea-cottage"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Ichikokudo Ramen (Suntec City)",
+   "unit": "#B1-135",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-ichikokudo-ramen"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Isteaks (Suntec City)",
+   "unit": "#02-472",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-isteaks"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Jollibee (Suntec City)",
+   "unit": "#B1-123",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-jollibee"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Jyu Lae (Suntec City)",
+   "unit": "#01-315",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-jyu-lae"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Kazo (Suntec City)",
+   "unit": "#01-K7",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-kazo"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Kebabchi Charcoal BBQ (Suntec City)",
+   "unit": "#B1-146",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-kebabchi-charcoal-bbq"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Kei Kaisendon (Suntec City)",
+   "unit": "#02-372",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-kei-kaisendon"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Killiney CafÉ (Suntec City)",
+   "unit": "#01-504",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-killiney-caf"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Kind Kones (Suntec City)",
+   "unit": "#01-K11",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-kind-kones"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Kiwami Ramen & Gyoza Bar (Suntec City)",
+   "unit": "#02-458",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-kiwami-ramen-gyoza-bar"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Kopi & Tarts (Suntec City)",
+   "unit": "#01-648",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-kopi-tarts"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Krispy Kreme (Suntec City)",
+   "unit": "#01-419",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-krispy-kreme"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Laderach (Suntec City)",
+   "unit": "#01-340",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-laderach"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Liho Tea (Suntec City)",
+   "unit": "#B1-175",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-liho-tea"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Linkus Hokkien Flavor (Suntec City)",
+   "unit": "#01-436",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-linkus-hokkien-flavor"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Llao Llao (Suntec City)",
+   "unit": "#01-312A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-llao-llao"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Longjing (Suntec City)",
+   "unit": "#01-384",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-longjing"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Luckin Coffee (Suntec City)",
+   "unit": "#02-375",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-luckin-coffee"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Mai Ge Wen (Suntec City)",
+   "unit": "#02-476",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-mai-ge-wen"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Mamma Mia Trattoria E CaffÈ (Suntec City)",
+   "unit": "#B1-126A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-mamma-mia-trattoria-e-caff"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "MarchÉ (Suntec City)",
+   "unit": "#01-612",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-march"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Matchaya (Suntec City)",
+   "unit": "#02-737",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-matchaya"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Matsuya (Suntec City)",
+   "unit": "#B1-149",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-matsuya"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Mcdonald's (Suntec City)",
+   "unit": "#02-732",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-mcdonald-s"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Meet 2 Wine Bar & Restaurant (Suntec City)",
+   "unit": "#01-606",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-meet-2-wine-bar-restaurant"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Menya Kokoro (Suntec City)",
+   "unit": "#03-313",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-menya-kokoro"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Mister Wheel (Suntec City)",
+   "unit": "#01-K13",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-mister-wheel"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Monster Curry (Suntec City)",
+   "unit": "#02-377",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-monster-curry"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Moreyogurt (Suntec City)",
+   "unit": "#02-600",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-moreyogurt"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Morganfield's (Suntec City)",
+   "unit": "#01-645",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-morganfield-s"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Mr. Coconut (Suntec City)",
+   "unit": "#01-K3",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-mr-coconut"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Ningji (Suntec City)",
+   "unit": "#B1-106",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-ningji"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "No.1 Jd Crispy Roti (Suntec City)",
+   "unit": "#B1-138",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-no-1-jd-crispy-roti"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Noci (Suntec City)",
+   "unit": "#01-604",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-noci"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Olivia & Co. (Suntec City)",
+   "unit": "#01-481",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-olivia-co"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Onggii (Suntec City)",
+   "unit": "#02-300",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-onggii"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Osg (Suntec City)",
+   "unit": "#福筵 FÚ YÁN",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "01:00-05:10"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-osg"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Ottie Pancakes (Suntec City)",
+   "unit": "#B1-121C",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-ottie-pancakes"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Paradise Dynasty (Suntec City)",
+   "unit": "#B1-110",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-paradise-dynasty"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Paul (Suntec City)",
+   "unit": "#01-302",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-paul"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Pawa Bakery (Suntec City)",
+   "unit": "#02-616A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-pawa-bakery"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Penang Place (Suntec City)",
+   "unit": "#02-314",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-penang-place"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Peperoni Pizzeria (Suntec City)",
+   "unit": "#B1-130",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-peperoni-pizzeria"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Playmade (Suntec City)",
+   "unit": "#B1-151",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-playmade"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Plum Village (Suntec City)",
+   "unit": "#B1-103",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-plum-village"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Potato Corner (Suntec City)",
+   "unit": "#02-475A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-potato-corner"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Putien (Suntec City)",
+   "unit": "#02-389",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-putien"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Retroholics by Tin Box (Suntec City)",
+   "unit": "#01-512",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-retroholics-by-tin-box"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Sanook Kitchen (Suntec City)",
+   "unit": "#B1-134",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-sanook-kitchen"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Sbcd Korean Rice House (Suntec City)",
+   "unit": "#02-475",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-sbcd-korean-rice-house"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Sen-Ryo (Suntec City)",
+   "unit": "#01-434",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-sen-ryo"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Seoul Noodle Shop (Suntec City)",
+   "unit": "#01-301",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-seoul-noodle-shop"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Shake Shack (Suntec City)",
+   "unit": "#01-357",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-shake-shack"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Signature KOI & KOI ThÉ (Suntec City)",
+   "unit": "#01-429",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-signature-koi-koi-th"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Simply Retro by Tin Box (Suntec City)",
+   "unit": "#01-500",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-simply-retro-by-tin-box"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Song Fa Bak Kut Teh (Suntec City)",
+   "unit": "#B1-132",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-song-fa-bak-kut-teh"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Sotbox (Suntec City)",
+   "unit": "#B1-157",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-sotbox"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Sotpot (Suntec City)",
+   "unit": "#03-304",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-sotpot"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Soup Cup (Suntec City)",
+   "unit": "#B1-K10",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-soup-cup"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Soup Restaurant (Suntec City)",
+   "unit": "#03-315",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-soup-restaurant"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Starbucks (Suntec City)",
+   "unit": "#01-433",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-starbucks"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Stuff'd (Suntec City)",
+   "unit": "#02-615",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-stuff-d"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Subway (Suntec City)",
+   "unit": "#B1-173",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-subway"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Sukiya (Suntec City)",
+   "unit": "#01-647",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-sukiya"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Super Sub (Suntec City)",
+   "unit": "#B1-K8",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-super-sub"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Supergreen (Suntec City)",
+   "unit": "#B1-K4",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-supergreen"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Sushiro (Suntec City)",
+   "unit": "#01-649",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-sushiro"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Synthesis (Suntec City)",
+   "unit": "#01-643",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-synthesis"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tai Er Suancai & Fish (Suntec City)",
+   "unit": "#B1-108",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tai-er-suancai-fish"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tamoya Udon and Tempura (Suntec City)",
+   "unit": "#B1-148",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tamoya-udon-and-tempura"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tangled (Suntec City)",
+   "unit": "#02-601A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tangled"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tempura-En (Suntec City)",
+   "unit": "#02-305",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tempura-en"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "The Cocoa Trees (Suntec City)",
+   "unit": "#02-430",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-the-cocoa-trees"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "The Coffee Bean & Tea Leaf (Suntec City)",
+   "unit": "#01-341",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-the-coffee-bean-tea-leaf"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "The Cookie Museum at the Gallery (Suntec City)",
+   "unit": "#01-313",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-the-cookie-museum-at-the-gallery"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "The Whale Tea (Suntec City)",
+   "unit": "#02-470",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-the-whale-tea"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tim Hortons Coffee House Est. 1964 (Suntec City)",
+   "unit": "#01-314",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tim-hortons-coffee-house-est-1964"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Toast & Roll by Swee Heng (Suntec City)",
+   "unit": "#02-471",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-toast-roll-by-swee-heng"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Toast Box (Suntec City)",
+   "unit": "#B1-167",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-toast-box"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tofu G (Suntec City)",
+   "unit": "#B1-K5",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tofu-g"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tongue Tip Lanzhou Beef Noodles (Suntec City)",
+   "unit": "#B1-165",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tongue-tip-lanzhou-beef-noodles"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tonkatsu Enbiton (Suntec City)",
+   "unit": "#B1-170",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tonkatsu-enbiton"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Tonshou (Suntec City)",
+   "unit": "#02-473",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-tonshou"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "True Cost (Suntec City)",
+   "unit": "#03-302",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-true-cost"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Turkish Lezzet House (Suntec City)",
+   "unit": "#B1-105",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-turkish-lezzet-house"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Um Yong Baek (Suntec City)",
+   "unit": "#01-641",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-um-yong-baek"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Uncle Fong Hotpot Restaurant (Suntec City)",
+   "unit": "#02-391",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-uncle-fong-hotpot-restaurant"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Vox (Suntec City)",
+   "unit": "#03-309",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-vox"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Wanpo Tea Shop (Suntec City)",
+   "unit": "#02-616",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-wanpo-tea-shop"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "White Restaurant (Suntec City)",
+   "unit": "#B1-131",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-white-restaurant"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Wok Hey (Suntec City)",
+   "unit": "#02-615",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-wok-hey"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Wonderful Bap Sang (Suntec City)",
+   "unit": "#02-609",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-wonderful-bap-sang"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Xiang Xiang Hunan Cuisine (Suntec City)",
+   "unit": "#B1-159",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-xiang-xiang-hunan-cuisine"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Xin Wang Hong Kong Cafe (Suntec City)",
+   "unit": "#B1-128",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-xin-wang-hong-kong-cafe"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Ya Kun Kaya Toast (Suntec City)",
+   "unit": "#02-349",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Yakiniku Like (Suntec City)",
+   "unit": "#02-603",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-yakiniku-like"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Yakiniku-Go Plus (Suntec City)",
+   "unit": "#01-353",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-yakiniku-go-plus"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Yakitori One (Suntec City)",
+   "unit": "#01-514",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-yakitori-one"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Yew Kee Specialities (Suntec City)",
+   "unit": "#B1-169A",
+   "cuisine": "braised",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-yew-kee-specialities"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Yong Fu (Suntec City)",
+   "unit": "#01-444",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-yong-fu"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Yong Xing Teochew Porridge (Suntec City)",
+   "unit": "#B1-158",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-yong-xing-teochew-porridge"
+  },
+  {
+   "cluster": "m-suntec-city",
+   "name": "Zhou's Claypot Rice Noodles (Suntec City)",
+   "unit": "#B1-122",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "suntec-city-m-suntec-city"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-suntec-city-zhou-s-claypot-rice-noodles"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "365 Juices Bar (Marina Square)",
+   "unit": "#02-253B",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-365-juices-bar"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "ASTONS Steak & Salad (Marina Square)",
+   "unit": "#03-145/146",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-astons-steak-salad"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Betsubara (Marina Square)",
+   "unit": "#02-300",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-betsubara"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Beyond Pancakes (Marina Square)",
+   "unit": "#03-131A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-beyond-pancakes"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "BHC Chicken (Marina Square)",
+   "unit": "#02-332A/332F",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-bhc-chicken"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Bone Broth Vermicelli by Xian Tai Ye Gu Tang Mixian (Marina Square)",
+   "unit": "#02-230A/231A",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-bone-broth-vermicelli-by-xian-tai-ye-gu-tang"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Burger King @ The Dining Edition (Marina Square)",
+   "unit": "#02-105",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-burger-king-the-dining-edition"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Cellarbration (Marina Square)",
+   "unit": "#03-216A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-cellarbration"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "CHIC-A-BOO Chicken Specialty (Marina Square)",
+   "unit": "#03-147/148",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-chic-a-boo-chicken-specialty"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "CHICHA San Chen (Marina Square)",
+   "unit": "#02-208",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-chicha-san-chen"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Coco Veggie Nyonya Cuisine (Marina Square)",
+   "unit": "#03-122",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-coco-veggie-nyonya-cuisine"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Collin's (Marina Square)",
+   "unit": "#01-204/205",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-collin-s"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "dal.komm COFFEE (Marina Square)",
+   "unit": "#02-272/273",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-dal-komm-coffee"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Dian Xiao Er (Marina Square)",
+   "unit": "#02-200",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-dian-xiao-er"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Encik Tan / Popeyes Famous Louisiana Chicken (Marina Square)",
+   "unit": "#02-275",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-encik-tan-popeyes-famous-louisiana-chicken"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Good Chance Cafe (Marina Square)",
+   "unit": "#03-132/133/133K",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-good-chance-cafe"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Gourmet Paradise @ The Dining Edition (Marina Square)",
+   "unit": "#02-180/181/182/183",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-gourmet-paradise-the-dining-edition"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Haidilao Hot Pot (Marina Square)",
+   "unit": "#01-19/25",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-haidilao-hot-pot"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Han's (Marina Square)",
+   "unit": "#02-206",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-han-s"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Hannaembi (Marina Square)",
+   "unit": "#02-105B",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-hannaembi"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Hoe Nam Signatures (Marina Square)",
+   "unit": "#02-203/204",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-hoe-nam-signatures"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Hong Kong Zhai Dim Sum (Marina Square)",
+   "unit": "#02-234/235/236",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-hong-kong-zhai-dim-sum"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Jia He Xing (Marina Square)",
+   "unit": "#03-128",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-jia-he-xing"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Kai Garden (Marina Square)",
+   "unit": "#03-128A/128B",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-kai-garden"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Kei Kaisendon (Marina Square)",
+   "unit": "#02-226A/B",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-kei-kaisendon"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Keitaku (Marina Square)",
+   "unit": "#02-301",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-keitaku"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Killiney (Marina Square)",
+   "unit": "#B1-16",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-killiney"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Krush (Marina Square)",
+   "unit": "#01-01",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-krush"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Lam Heung Ling (Marina Square)",
+   "unit": "#02-280",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-lam-heung-ling"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Liv.Eat (Marina Square)",
+   "unit": "#02-223/225A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-liv-eat"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Luckin Coffee (Marina Square)",
+   "unit": "#02-153",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-luckin-coffee"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Luli Tea & Coffee (Marina Square)",
+   "unit": "#02-184/185",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-luli-tea-coffee"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Made's A Café (Marina Square)",
+   "unit": "#B1-18",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-made-s-a-caf"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "MAKAN MAKAN By D'PENYETZ GROUP (Marina Square)",
+   "unit": "#02-201",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-makan-makan-by-d-penyetz-group"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Malts (Marina Square)",
+   "unit": "#01-07/08",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-malts"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "McDonald's (Marina Square)",
+   "unit": "#02-156/157/166",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-mcdonald-s"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Nasty Cookie and Nasty Bakehouse (Marina Square)",
+   "unit": "#02-271/271A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-nasty-cookie-and-nasty-bakehouse"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Olive Vine (Marina Square)",
+   "unit": "#B1-17",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-olive-vine"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Paris Baguette (Marina Square)",
+   "unit": "#02-152/152K",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-paris-baguette"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Pizza Hut (Marina Square)",
+   "unit": "#03-211",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-pizza-hut"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Putien (Marina Square)",
+   "unit": "#02-205",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-putien"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Rolling Rice @ The Dining Edition (Marina Square)",
+   "unit": "#02-105A",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-rolling-rice-the-dining-edition"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Saizeriya (Marina Square)",
+   "unit": "#02-207",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-saizeriya"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Seoul Garden (Marina Square)",
+   "unit": "#03-210",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-seoul-garden"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Singapura Nanyang Coffee (Marina Square)",
+   "unit": "#02-220A/222A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-singapura-nanyang-coffee"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "SOFRA Turkish Cafe & Restaurant (Marina Square)",
+   "unit": "#03-129A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-sofra-turkish-cafe-restaurant"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Starbucks Coffee (Marina Square)",
+   "unit": "#03-217/218",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-starbucks-coffee"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Suki-Ya @ The Dining Edition (Marina Square)",
+   "unit": "#02-183A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-suki-ya-the-dining-edition"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Sushi-GO (Marina Square)",
+   "unit": "#02-277",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-sushi-go"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Taliwang Restaurant (Marina Square)",
+   "unit": "#03-131",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-taliwang-restaurant"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Tanamera Coffee (Marina Square)",
+   "unit": "#02-192",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-tanamera-coffee"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Tang Tea House (Marina Square)",
+   "unit": "#03-212/213/214",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-tang-tea-house"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Tenkaichi Japanese BBQ (Marina Square)",
+   "unit": "#03-129",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-tenkaichi-japanese-bbq"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "The Tree Cafe (Marina Square)",
+   "unit": "#02-100A/100B",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-the-tree-cafe"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "The Vermilion House (Marina Square)",
+   "unit": "#02-03/04",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-the-vermilion-house"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Victoria Bakery & Cafe (Marina Square)",
+   "unit": "#02-302/303",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-victoria-bakery-cafe"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Ya Kun Kaya Toast (Marina Square)",
+   "unit": "#02-207A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "YangGuoFu Malatang (Marina Square)",
+   "unit": "#01-202",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-yangguofu-malatang"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Yechun Xiao Jiang Nan @ The Dining Edition (Marina Square)",
+   "unit": "#02-106A/B",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-yechun-xiao-jiang-nan-the-dining-edition"
+  },
+  {
+   "cluster": "m-marina-square",
+   "name": "Yi Zun Noodle (Marina Square)",
+   "unit": "#02-103",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "marina-square-m-marina-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-marina-square-yi-zun-noodle"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Bistro G (Millenia Walk)",
+   "unit": "#01-79/80",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-bistro-g"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Black Knight Hotpot (Millenia Walk)",
+   "unit": "#02-02/03",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-black-knight-hotpot"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Boost (Millenia Walk)",
+   "unit": "#01-107A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-boost"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Châteraisé Premium YATSUDOKI (Millenia Walk)",
+   "unit": "#01-93/94",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-ch-terais-premium-yatsudoki"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Chirashi King Kong (Millenia Walk)",
+   "unit": "#02-17",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-chirashi-king-kong"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Coconut Queen (Millenia Walk)",
+   "unit": "#01-91A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-coconut-queen"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Commune Café (Millenia Walk)",
+   "unit": "#02-50",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-commune-caf"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Dönergy Turkish Kebab (Millenia Walk)",
+   "unit": "#01-91B",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-d-nergy-turkish-kebab"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "elemen (Millenia Walk)",
+   "unit": "#01-75/76",
+   "cuisine": "vegetarian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-elemen"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Flash Coffee (Millenia Walk)",
+   "unit": "#01-K15",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-flash-coffee"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Gochi-So Shokudo (Millenia Walk)",
+   "unit": "#02-16",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-gochi-so-shokudo"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Gong Cha (Millenia Walk)",
+   "unit": "#01-91A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-gong-cha"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Gyu Jin Shabu Shabu and Sukiyaki (Millenia Walk)",
+   "unit": "#02-09",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-gyu-jin-shabu-shabu-and-sukiyaki"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Heavenly WANG (Millenia Walk)",
+   "unit": "#01-91",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-heavenly-wang"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Highlander Bar (Millenia Walk)",
+   "unit": "#01-03/05",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-highlander-bar"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Huggs Coffee (Millenia Walk)",
+   "unit": "#01-92",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-huggs-coffee"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Joe & Dough (Millenia Walk)",
+   "unit": "#01-86/87",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-joe-dough"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Kith (Millenia Walk)",
+   "unit": "#01-44/45",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-kith"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "KOI Cafe (Millenia Walk)",
+   "unit": "#01-85",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-koi-cafe"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Koufu (Millenia Walk)",
+   "unit": "#01-46/50",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-koufu"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Kurama Robatayaki & Yoi Sake Bar (Millenia Walk)",
+   "unit": "#02-07",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-kurama-robatayaki-yoi-sake-bar"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Kyo-Ya Dining (Millenia Walk)",
+   "unit": "#01-11/13",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-kyo-ya-dining"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Marutama Ramen & Dining (Millenia Walk)",
+   "unit": "#02-16A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-marutama-ramen-dining"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "MEIDI-YA (Millenia Walk)",
+   "unit": "#01-56",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-meidi-ya"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Milkfish (Millenia Walk)",
+   "unit": "#01-106",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-milkfish"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "MOS Burger (Millenia Walk)",
+   "unit": "#01-99/100",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-mos-burger"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Nature's Nutrition (Millenia Walk)",
+   "unit": "#01-101",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-nature-s-nutrition"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "nozomi by YOSHI (Millenia Walk)",
+   "unit": "#02-06",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-nozomi-by-yoshi"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Olé Bar & Kitchen (Millenia Walk)",
+   "unit": "#01-23",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-ol-bar-kitchen"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Patisserie G (Millenia Walk)",
+   "unit": "#01-40",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-patisserie-g"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Paulaner Bräuhaus Singapore (Millenia Walk)",
+   "unit": "#01-01/03",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-paulaner-br-uhaus-singapore"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Pullman Bakery (Millenia Walk)",
+   "unit": "#01-97/98",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-pullman-bakery"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Quinn's The Irish Tavern (Millenia Walk)",
+   "unit": "#01-20/22",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-quinn-s-the-irish-tavern"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "R&B Tea Premier (Millenia Walk)",
+   "unit": "#01-K15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-r-b-tea-premier"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Saboten (Millenia Walk)",
+   "unit": "#02-14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-saboten"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Sandaime Bunji (Millenia Walk)",
+   "unit": "#01-14/15",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-sandaime-bunji"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Sandaime Hiraki (Millenia Walk)",
+   "unit": "#02-10",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-sandaime-hiraki"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Sapporo Misono (Millenia Walk)",
+   "unit": "#02-15",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-sapporo-misono"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "SBCD Korean Tofu House (Millenia Walk)",
+   "unit": "#01-114",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-sbcd-korean-tofu-house"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Starbucks Coffee (Millenia Walk)",
+   "unit": "#01-K7",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-starbucks-coffee"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Sushi Murasaki (Millenia Walk)",
+   "unit": "#02-07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-sushi-murasaki"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Tenshima (Millenia Walk)",
+   "unit": "#01-09/10",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-tenshima"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Teppei Syokudo (Millenia Walk)",
+   "unit": "#01-105",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-teppei-syokudo"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Thai Affair (Millenia Walk)",
+   "unit": "#01-103",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-thai-affair"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "The Coffee Academics (Millenia Walk)",
+   "unit": "#01-28/K17",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-the-coffee-academics"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "The Dark Gallery (Millenia Walk)",
+   "unit": "#01-K5",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-the-dark-gallery"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Tomi Sushi (Millenia Walk)",
+   "unit": "#02-12/13",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-tomi-sushi"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "VietSmith (Millenia Walk)",
+   "unit": "#01-88/90",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-vietsmith"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Wine Universe Restaurant & Wine Bar (Millenia Walk)",
+   "unit": "#01-109",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-wine-universe-restaurant-wine-bar"
+  },
+  {
+   "cluster": "m-millenia-walk",
+   "name": "Yen Bar (Millenia Walk)",
+   "unit": "#01-16/19",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-millenia-walk"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-millenia-walk-yen-bar"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Maison Boulud by Daniel Boulud (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-15/#01-83",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-maison-boulud-by-daniel-boulud"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Waku Ghin by Tetsuya Wakuda (The Shoppes at Marina Bay Sands)",
+   "unit": "#02-03",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-waku-ghin-by-tetsuya-wakuda"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Black Tap Craft Burgers & Beer (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-80",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-black-tap-craft-burgers-beer"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Bread Street Kitchen by Gordon Ramsay (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-81",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-bread-street-kitchen-by-gordon-ramsay"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "CUT by Wolfgang Puck (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-71",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-cut-by-wolfgang-puck"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "estiatorio Milos (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-48",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-estiatorio-milos"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "KOMA Singapore (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-67",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-koma-singapore"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Mott 32 Singapore (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-42/44",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-mott-32-singapore"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Yardbird Southern Table & Bar (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-07",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-yardbird-southern-table-bar"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Angelina (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-89",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-angelina"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Beanstro (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-20",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-beanstro"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Blossom Restaurant at Marina Bay Sands (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-29",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-blossom-restaurant-at-marina-bay-sands"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Café Nesuto (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-87",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-caf-nesuto"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Canton Paradise (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-02",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-canton-paradise"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Dallas Cafe & Bar (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-85",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-dallas-cafe-bar"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Din Tai Fung (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-01",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-din-tai-fung"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Haidilao Hot Pot (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-01A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-haidilao-hot-pot"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Imperial Treasure Fine Chinese Cuisine (The Shoppes at Marina Bay Sands)",
+   "unit": "#02-04",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-imperial-treasure-fine-chinese-cuisine"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Imperial Treasure Fine Teochew Cuisine (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-26",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-imperial-treasure-fine-teochew-cuisine"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Ippudo (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-54",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-ippudo"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Jumbo Signatures (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-01B",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-jumbo-signatures"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Le Noir (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-84",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-le-noir"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "PS.Cafe (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-119",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-ps-cafe"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Punjab Grill (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-01A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-punjab-grill"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Ralph's Coffee (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-71",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-ralph-s-coffee"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Rasapura Masters (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-50",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-rasapura-masters"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Roberta's Pizza (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-45",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-roberta-s-pizza"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Sen of Japan (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-86",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-sen-of-japan"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Tim Ho Wan Peak (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-02",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-tim-ho-wan-peak"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Toast Box (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-01E",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-toast-box"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "TWG Tea Salon & Boutique (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-65",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-twg-tea-salon-boutique"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "% Arabica (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-75",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-arabica"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "BreadTalk (The Shoppes at Marina Bay Sands)",
+   "unit": "#B1-01F",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-breadtalk"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "HeyTea (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-73",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-heytea"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Jasons Deli (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-48",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-jasons-deli"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Läderach (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-K3",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-l-derach"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Old Seng Choong (The Shoppes at Marina Bay Sands)",
+   "unit": "#01-72",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-old-seng-choong"
+  },
+  {
+   "cluster": "m-shoppes-mbs",
+   "name": "Venchi (The Shoppes at Marina Bay Sands)",
+   "unit": "#B2-56A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "mbs-m-shoppes-mbs"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-shoppes-mbs-venchi"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "15 Stamford (Capitol Singapore)",
+   "unit": "",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-15-stamford"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "50 Years Taste of Tradition (Capitol Singapore)",
+   "unit": "#B2-24",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-50-years-taste-of-tradition"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "800 Bowls (Capitol Singapore)",
+   "unit": "#B1-32A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-800-bowls"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Addiction Cafe (Capitol Singapore)",
+   "unit": "#B2-29/30",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-addiction-cafe"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Amacha (Capitol Singapore)",
+   "unit": "#B2-31",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-amacha"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Bari Bari Grand (Capitol Singapore)",
+   "unit": "#01-82",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-bari-bari-grand"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Bold Thai (Capitol Singapore)",
+   "unit": "#B2-55",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-bold-thai"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Café Kitsuné (Capitol Singapore)",
+   "unit": "#01-11",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-caf-kitsun"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Coffee Hive (Capitol Singapore)",
+   "unit": "#B1-15/16",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-coffee-hive"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Dough (Capitol Singapore)",
+   "unit": "#01-K1/K2",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-dough"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "HolyCrab (Capitol Singapore)",
+   "unit": "#01-85",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-holycrab"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Hopscotch (Capitol Singapore)",
+   "unit": "#01-83",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-hopscotch"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "King Grouper (Capitol Singapore)",
+   "unit": "#B1-31",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-king-grouper"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Muyuu (Capitol Singapore)",
+   "unit": "#B2-27/28",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-muyuu"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Nalan Restaurant (Capitol Singapore)",
+   "unit": "#B2-54",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-nalan-restaurant"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Onori (Capitol Singapore)",
+   "unit": "#B2-25",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-onori"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Ponggol Nasi Lemak (Capitol Singapore)",
+   "unit": "#B1-36/36A",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-ponggol-nasi-lemak"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Ramen Dining Keisuke Tokyo (Capitol Singapore)",
+   "unit": "#B1-35",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-ramen-dining-keisuke-tokyo"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Scaled by Ah Hua Kelong (Capitol Singapore)",
+   "unit": "#01-86",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-scaled-by-ah-hua-kelong"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Sichuan Alley (Capitol Singapore)",
+   "unit": "#B1-29/30",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-sichuan-alley"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Stirling Steaks (Capitol Singapore)",
+   "unit": "#B2-53",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-stirling-steaks"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Supergreen (Capitol Singapore)",
+   "unit": "#B2-26",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-supergreen"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Sushi Ryujiro (Capitol Singapore)",
+   "unit": "#01-88",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-sushi-ryujiro"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "The Gem of Nyonya (Capitol Singapore)",
+   "unit": "#B1-32",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-the-gem-of-nyonya"
+  },
+  {
+   "cluster": "m-capitol-singapore",
+   "name": "Two Cranes (Capitol Singapore)",
+   "unit": "#B2-33/34",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitol-singapore-m-capitol-singapore"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-capitol-singapore-two-cranes"
   }
  ]
 }
