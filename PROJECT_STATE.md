@@ -1,7 +1,7 @@
 # Makan Map — project state
 
-> **Next chat name: `FoodGuide ver 8`**
-> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 8**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
+> **Next chat name: `FoodGuide ver 9`**
+> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 9**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
 _Last updated: 20 Nov 2026, SGT (ver 7 session). **Sprint 6a done: Waterway Point (91 new, Frasers feed with hours; 3,961 places), PR open from `data/sprint-6`. Start here next (6b): VivoCity, The Star Vista, Thomson Plaza, NEX.** Frasers feed covers none of these four. Star Vista was sold by CapitaLand (not on capitaland.com; use its own site). VivoCity: `vivocity.com.sg/find-a-store` is an Algolia-style page; click `a.selectable.store` with text Restaurants/Cafes/Fast Food/Food Courts/Food Specialties/Confectionery & Snacks (Restaurants = 83 results); cards `.ais-Hits-item` show name / #unit / category, 12 per page, **paging control not found yet** (no pagination/load-more in the DOM; try screenshot or scroll the window container, or per-category so each is <=12... it is not). Do not read page-source search config or keys. OneMap search still needs a token (re-geocoding blocked).
 
