@@ -1066,6 +1066,31 @@
    "name": "great-world – Great World directory",
    "url": "https://shop.greatworld.com.sg/dine/",
    "date": "live directory (Dine)"
+  },
+  "velocity-m-velocity-novena": {
+   "name": "velocity – Velocity@Novena Square directory",
+   "url": "https://www.velocitynovena.com/tenant-category/food-beverages/",
+   "date": "live directory (Food & Beverages)"
+  },
+  "fareastmalls-m-square-2": {
+   "name": "fareastmalls – Square 2 directory",
+   "url": "https://www.fareastmalls.com.sg/en/square-2/shops",
+   "date": "live directory (F&B categories)"
+  },
+  "unitedsquare-m-united-square": {
+   "name": "unitedsquare – United Square directory",
+   "url": "https://www.unitedsquare.com.sg/stores-category/food-beverages/",
+   "date": "live directory (Food & Beverages)"
+  },
+  "citysquaremall-m-city-square-mall": {
+   "name": "citysquaremall – City Square Mall directory",
+   "url": "https://www.citysquaremall.com.sg/shops/food-beverage/",
+   "date": "live directory (Food & Beverage)"
+  },
+  "zhongshanmall-m-zhongshan-mall": {
+   "name": "zhongshanmall – Zhongshan Mall directory",
+   "url": "https://zhongshanmall.com.sg/food-beverage/",
+   "date": "live page (Food & Beverage)"
   }
  },
  "clusters": [
@@ -2535,6 +2560,106 @@
     "source": "great-world-m-great-world",
     "count": 87,
     "snapshot": "live directory (Dine)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-velocity-novena",
+   "name": "Velocity@Novena Square",
+   "type": "mall",
+   "address": "238 Thomson Road, S307683",
+   "lat": 1.3203,
+   "lng": 103.8438,
+   "zone": "central",
+   "stalls_total": 52,
+   "notes": "Novena MRT. Official F&B directory (no hours). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "roster": {
+    "source": "velocity-m-velocity-novena",
+    "count": 52,
+    "snapshot": "live directory (Food & Beverages)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-square-2",
+   "name": "Square 2",
+   "type": "mall",
+   "address": "10 Sinaran Drive, S307506",
+   "lat": 1.3208,
+   "lng": 103.844,
+   "zone": "central",
+   "stalls_total": 47,
+   "notes": "Novena MRT. Official shop directory, F&B categories only; the L4 Hawkers' Street food court is not in the directory (gap). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "roster": {
+    "source": "fareastmalls-m-square-2",
+    "count": 47,
+    "snapshot": "live directory (F&B categories)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-united-square",
+   "name": "United Square",
+   "type": "mall",
+   "address": "101 Thomson Road, S307591",
+   "lat": 1.3177,
+   "lng": 103.8435,
+   "zone": "central",
+   "stalls_total": 38,
+   "notes": "Novena MRT. Official F&B directory (wine shop left out). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "roster": {
+    "source": "unitedsquare-m-united-square",
+    "count": 38,
+    "snapshot": "live directory (Food & Beverages)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-city-square-mall",
+   "name": "City Square Mall",
+   "type": "mall",
+   "address": "180 Kitchener Road, S208539",
+   "lat": 1.3115,
+   "lng": 103.8568,
+   "zone": "central",
+   "stalls_total": 78,
+   "notes": "Farrer Park MRT. Official F&B directory (~79 tenants). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "roster": {
+    "source": "citysquaremall-m-city-square-mall",
+    "count": 78,
+    "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-zhongshan-mall",
+   "name": "Zhongshan Mall",
+   "type": "mall",
+   "address": "20 Ah Hood Road, S329984",
+   "lat": 1.327,
+   "lng": 103.846,
+   "zone": "central",
+   "stalls_total": 13,
+   "notes": "Toa Payoh/Novena side; Zhongshan Park. Official F&B page (13 outlets; page looks stale). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "roster": {
+    "source": "zhongshanmall-m-zhongshan-mall",
+    "count": 13,
+    "snapshot": "live page (Food & Beverage)",
     "fetched": "2026-11-20"
    }
   }
@@ -106832,6 +106957,5114 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-great-world-zok-noodle-house"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "A-Roy Thai Restaurant (Velocity@Novena Square)",
+   "unit": "#03-61/62/63/64",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-a-roy-thai-restaurant"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "BreadTalk (Velocity@Novena Square)",
+   "unit": "#01-26",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-breadtalk"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Cedele (Velocity@Novena Square)",
+   "unit": "#01-22",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-cedele"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Chagee (Velocity@Novena Square)",
+   "unit": "#01-59/61",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-chagee"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "CHICHA San Chen (Velocity@Novena Square)",
+   "unit": "#01-07",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-chicha-san-chen"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Cookhouse by Koufu (Velocity@Novena Square)",
+   "unit": "#03-47/56",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-cookhouse-by-koufu"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Curry Times (Velocity@Novena Square)",
+   "unit": "#02-33/34/41/42",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-curry-times"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Din Tai Fung (Velocity@Novena Square)",
+   "unit": "#01-05/06",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-din-tai-fung"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Four Leaves (Velocity@Novena Square)",
+   "unit": "#01-77/78",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-four-leaves"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Guzman Y Gomez (Velocity@Novena Square)",
+   "unit": "#01-68/69",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-guzman-y-gomez"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Han's Café (Velocity@Novena Square)",
+   "unit": "#01-19/21",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-han-s-caf"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Hana K-Food (Velocity@Novena Square)",
+   "unit": "#02-25",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-hana-k-food"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Hundred Grains (Velocity@Novena Square)",
+   "unit": "#01-89/90",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-hundred-grains"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Ichiban Boshi (Velocity@Novena Square)",
+   "unit": "#02-13/14",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-ichiban-boshi"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Josh's Grill (Velocity@Novena Square)",
+   "unit": "#02-68/72",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-josh-s-grill"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "KFC (Velocity@Novena Square)",
+   "unit": "#01-16/18",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-kfc"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Lady M Pop-up (Velocity@Novena Square)",
+   "unit": "",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-lady-m-pop-up"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Longjing (Velocity@Novena Square)",
+   "unit": "#03-09/10",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-longjing"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Love, Joy & Coffee (Velocity@Novena Square)",
+   "unit": "#02-K9",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-love-joy-coffee"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Mala Boss (Velocity@Novena Square)",
+   "unit": "#01-26",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-mala-boss"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Mei Heong Yuen Dessert (Velocity@Novena Square)",
+   "unit": "#02-03",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-mei-heong-yuen-dessert"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Mister Donut (Velocity@Novena Square)",
+   "unit": "#01-72/73",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-mister-donut"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Mmmm! (Velocity@Novena Square)",
+   "unit": "#01-79/80",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-mmmm"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Monster Curry (Velocity@Novena Square)",
+   "unit": "#02-78/79",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-monster-curry"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Mr. Coconut (Velocity@Novena Square)",
+   "unit": "#01-26A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-mr-coconut"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Mun Zuk by Li Fang Congee (Velocity@Novena Square)",
+   "unit": "#01-86/87",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-mun-zuk-by-li-fang-congee"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Munchi Pancakes (Velocity@Novena Square)",
+   "unit": "#02-10",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-munchi-pancakes"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "NiKU iKU (Velocity@Novena Square)",
+   "unit": "#01-24",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-niku-iku"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Nong Geng Ji Hunan Cuisine (Velocity@Novena Square)",
+   "unit": "#03-11",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-nong-geng-ji-hunan-cuisine"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Nunsaram Korean Dessert Café (Velocity@Novena Square)",
+   "unit": "#01-54/55",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-nunsaram-korean-dessert-caf"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Old Chang Kee (Velocity@Novena Square)",
+   "unit": "#01-70/71",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-old-chang-kee"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Old Tea Hut (Velocity@Novena Square)",
+   "unit": "#03-K1",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-old-tea-hut"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Pepper Lunch (Velocity@Novena Square)",
+   "unit": "#01-48/49",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-pepper-lunch"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "PlayMade (Velocity@Novena Square)",
+   "unit": "#02-52",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-playmade"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Poke Theory (Velocity@Novena Square)",
+   "unit": "#01-53",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-poke-theory"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Re.juve (Velocity@Novena Square)",
+   "unit": "#02-K2",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-re-juve"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "SaladStop! (Velocity@Novena Square)",
+   "unit": "#02-24",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-saladstop"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "SAM SAM SAM Samgyetang (Velocity@Novena Square)",
+   "unit": "#02-46",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-sam-sam-sam-samgyetang"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "So Pho (Velocity@Novena Square)",
+   "unit": "#02-43/45",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-so-pho"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Song Fa Bak Kut Teh (Velocity@Novena Square)",
+   "unit": "#01-56/57/58",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-song-fa-bak-kut-teh"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Starbucks Coffee (Velocity@Novena Square)",
+   "unit": "#02-K7/K8",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-starbucks-coffee"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Subway (Velocity@Novena Square)",
+   "unit": "#02-28/29",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-subway"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "The Coffee Bean & Tea Leaf (Velocity@Novena Square)",
+   "unit": "#02-04/K1",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-the-coffee-bean-tea-leaf"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "The Soup Spoon Union (Velocity@Novena Square)",
+   "unit": "#01-62/63",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-the-soup-spoon-union"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Toast & Roll by Swee Heng (Velocity@Novena Square)",
+   "unit": "#01-91/92",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-toast-roll-by-swee-heng"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Toast Box (Velocity@Novena Square)",
+   "unit": "#01-15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-toast-box"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Tomi Sushi (Velocity@Novena Square)",
+   "unit": "#02-73/77",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-tomi-sushi"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Tori-Q (Velocity@Novena Square)",
+   "unit": "#01-88",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-tori-q"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "TungLok Peking Duck (Velocity@Novena Square)",
+   "unit": "#02-11/12",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-tunglok-peking-duck"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Unatoto (Velocity@Novena Square)",
+   "unit": "#01-84/85",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-unatoto"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Wok Hey (Velocity@Novena Square)",
+   "unit": "#01-23",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-wok-hey"
+  },
+  {
+   "cluster": "m-velocity-novena",
+   "name": "Xin Wang Hong Kong Cafe (Velocity@Novena Square)",
+   "unit": "#01-08/09",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "velocity-m-velocity-novena"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-velocity-novena-xin-wang-hong-kong-cafe"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Alchemist (Square 2)",
+   "unit": "#01-172",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-alchemist"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Awfully Chocolate (Square 2)",
+   "unit": "#01-14",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-awfully-chocolate"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Barcook Bakery (Square 2)",
+   "unit": "#01-17",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-barcook-bakery"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Boon Lay Power Nasi Lemak (Square 2)",
+   "unit": "#B1-125",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-boon-lay-power-nasi-lemak"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Cakebar (Square 2)",
+   "unit": "#01-168/169",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-cakebar"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Chateraise (Square 2)",
+   "unit": "#01-19/20",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-chateraise"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Coffee Hive Signatures (Square 2)",
+   "unit": "#B1-86",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-coffee-hive-signatures"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "D'life Signature (Square 2)",
+   "unit": "#B1-129",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-d-life-signature"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Dunkin' (Square 2)",
+   "unit": "#01-162",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-dunkin"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Eat. (Square 2)",
+   "unit": "#02-01/02/03",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-eat"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Gochi-So Shokudo (Square 2)",
+   "unit": "#03-66",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-gochi-so-shokudo"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Gong Yuan Ma La Tang (Square 2)",
+   "unit": "#03-06/07/08",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-gong-yuan-ma-la-tang"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Ijooz (Square 2)",
+   "unit": "#04-53",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-ijooz"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Indosoup Padang (Square 2)",
+   "unit": "#04-02",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-indosoup-padang"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Ishiro Fushion Bowl (Square 2)",
+   "unit": "#B1-131",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-ishiro-fushion-bowl"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Ji De Chi & Otter Pizza (Square 2)",
+   "unit": "#01-22",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-ji-de-chi-otter-pizza"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Jollibee (Square 2)",
+   "unit": "#01-165",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-jollibee"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Kei Kaisendon (Square 2)",
+   "unit": "#02-96",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-kei-kaisendon"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Killiney (Square 2)",
+   "unit": "#02-04/06",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-killiney"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "KOI Express (Square 2)",
+   "unit": "#B1-115",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-koi-express"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Lao Beijing (Square 2)",
+   "unit": "#02-80",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-lao-beijing"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Madam Ang Kk (Square 2)",
+   "unit": "#01-170",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-madam-ang-kk"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Maji Curry (Square 2)",
+   "unit": "#02-07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-maji-curry"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Mr Bean (Square 2)",
+   "unit": "#01-21",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-mr-bean"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Nature's Nutrition (Square 2)",
+   "unit": "#03-45/46",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-nature-s-nutrition"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Once Upon A Thyme (Square 2)",
+   "unit": "#B1-120",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-once-upon-a-thyme"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Paris Baguette (Square 2)",
+   "unit": "#01-156/157/158/159",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-paris-baguette"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Polar Puffs & Cakes (Square 2)",
+   "unit": "#B1-127",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-polar-puffs-cakes"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Sanook Kitchen (Square 2)",
+   "unit": "#02-65/66/67",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-sanook-kitchen"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Shihlin Taiwan Street Snacks (Square 2)",
+   "unit": "#B1-126",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-shihlin-taiwan-street-snacks"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Soupcup (Square 2)",
+   "unit": "#02-08/09",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-soupcup"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Spicy Chef (Square 2)",
+   "unit": "#02-85/86/87/88/89",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-spicy-chef"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Stuff'd (Square 2)",
+   "unit": "#B1-117",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-stuff-d"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Sukiya (Square 2)",
+   "unit": "#01-47",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-sukiya"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Super Fried Rice (Square 2)",
+   "unit": "#B1-121/123",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-super-fried-rice"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Supergreen (Square 2)",
+   "unit": "#B1-111/112",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-supergreen"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Tai Cheong Bakery (Square 2)",
+   "unit": "#01-15",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-tai-cheong-bakery"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Tiong Hoe Specialty Coffee (Square 2)",
+   "unit": "#B1-113",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-tiong-hoe-specialty-coffee"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Tomoro Coffee (Square 2)",
+   "unit": "#01-49/50",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-tomoro-coffee"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Ton Coffee (Square 2)",
+   "unit": "#B1-130",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-ton-coffee"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Tonkotsu Kazan (Square 2)",
+   "unit": "#02-68",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-tonkotsu-kazan"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Tun Xiang Hokkien Delights (Square 2)",
+   "unit": "#03-66",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-tun-xiang-hokkien-delights"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Tung Lok Teahouse (Square 2)",
+   "unit": "#01-73",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-tung-lok-teahouse"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Wewa (Square 2)",
+   "unit": "#01-151/152/153/154/155",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-wewa"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Wonder Juice (Square 2)",
+   "unit": "#B1-128",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-wonder-juice"
+  },
+  {
+   "cluster": "m-square-2",
+   "name": "Yakiniku Shokudo (Square 2)",
+   "unit": "#02-92",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-square-2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-square-2-yakiniku-shokudo"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "101 Pot Noodles (United Square)",
+   "unit": "#B1-03",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-101-pot-noodles"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "328 Katong Laksa (United Square)",
+   "unit": "#01-K1",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-328-katong-laksa"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "50 Taste of Tradition (United Square)",
+   "unit": "#01-58",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-50-taste-of-tradition"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "85 Redhill (United Square)",
+   "unit": "#01-79",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-85-redhill"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Anteroom (United Square)",
+   "unit": "#02-K2",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-anteroom"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Brauhaus Restaurant & Pub (United Square)",
+   "unit": "#B1-13",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-brauhaus-restaurant-pub"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "BreadTalk (United Square)",
+   "unit": "#01-75A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-breadtalk"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Burger King (United Square)",
+   "unit": "#01-02",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-burger-king"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Burnt Cones (United Square)",
+   "unit": "#01-K9",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-burnt-cones"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Duke Bakery (United Square)",
+   "unit": "#B1-61",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-duke-bakery"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Food Dynasty (United Square)",
+   "unit": "#B1-02",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-food-dynasty"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Genki Sushi (United Square)",
+   "unit": "#B1-07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-genki-sushi"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Hao Wei Lai (United Square)",
+   "unit": "#B1-09",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-hao-wei-lai"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "itea (United Square)",
+   "unit": "#01-59",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-itea"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "KOI Thé (United Square)",
+   "unit": "#B1-60",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-koi-th"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Luckin Coffee (United Square)",
+   "unit": "#01-62",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-luckin-coffee"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "McDonald's (United Square)",
+   "unit": "#B1-11",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-mcdonald-s"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Nam Kee Pau (United Square)",
+   "unit": "#01-77",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-nam-kee-pau"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Old Chang Kee (United Square)",
+   "unit": "#01-K2",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-old-chang-kee"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Peperoni Pizzeria (United Square)",
+   "unit": "#01-07",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-peperoni-pizzeria"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Plum Village (United Square)",
+   "unit": "#B1-K5",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-plum-village"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Pockets (United Square)",
+   "unit": "#01-K17",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-pockets"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "R&B Tea (United Square)",
+   "unit": "#02-K1",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-r-b-tea"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Ramen Hitoyoshi (United Square)",
+   "unit": "#B1-04",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-ramen-hitoyoshi"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Saizeriya (United Square)",
+   "unit": "#B1-32",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-saizeriya"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Soup Restaurant (United Square)",
+   "unit": "#B1-60A",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-soup-restaurant"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Starbucks (United Square)",
+   "unit": "#01-01",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-starbucks"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Toast Box (United Square)",
+   "unit": "#01-81",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-toast-box"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Tora- San (United Square)",
+   "unit": "#01-12",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-tora-san"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Victoria Bakery (United Square)",
+   "unit": "#01-K8",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-victoria-bakery"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "VietFresh (United Square)",
+   "unit": "#B1-06",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-vietfresh"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Wee Nam Kee Chicken Rice (United Square)",
+   "unit": "#01-08",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-wee-nam-kee-chicken-rice"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Woo Tang (United Square)",
+   "unit": "#02-02",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-woo-tang"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Ya Kun Kaya Toast (United Square)",
+   "unit": "#B1-38",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "YAYOI Japanese Teishoku Restaurant (United Square)",
+   "unit": "#B1-54",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-yayoi-japanese-teishoku-restaurant"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Yes Lemon (United Square)",
+   "unit": "#01-01B",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-yes-lemon"
+  },
+  {
+   "cluster": "m-united-square",
+   "name": "Yolé (United Square)",
+   "unit": "#01-K14",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "unitedsquare-m-united-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-united-square-yol"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "@ i Mango (City Square Mall)",
+   "unit": "#03-56",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-i-mango"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Astons Steak & Salad (City Square Mall)",
+   "unit": "#04-14/16",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-astons-steak-salad"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "BakeInc (City Square Mall)",
+   "unit": "#B1-35",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-bakeinc"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Bakery Cuisine (City Square Mall)",
+   "unit": "#B2-22",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-bakery-cuisine"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Baskin-Robbins (City Square Mall)",
+   "unit": "#02-55",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-baskin-robbins"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Beutea (City Square Mall)",
+   "unit": "#01-12",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-beutea"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Beyond Pancakes (City Square Mall)",
+   "unit": "#02-35/36",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-beyond-pancakes"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Boost Juice Bars (City Square Mall)",
+   "unit": "#B1-K16",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-boost-juice-bars"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "BreadTalk (City Square Mall)",
+   "unit": "#01-41",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-breadtalk"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Canton Paradise (City Square Mall)",
+   "unit": "#02-51/52",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-canton-paradise"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Cat & The Fiddle (City Square Mall)",
+   "unit": "#02-50",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-cat-the-fiddle"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Cedele Bakery Cafe (City Square Mall)",
+   "unit": "#01-24/25",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-cedele-bakery-cafe"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Chateraise (City Square Mall)",
+   "unit": "#B2-21A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-chateraise"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Chef Vo Quoc Vietnamese Cuisines (City Square Mall)",
+   "unit": "#04-41",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-chef-vo-quoc-vietnamese-cuisines"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Chocolate Origin (City Square Mall)",
+   "unit": "#B2-K9A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-chocolate-origin"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "CocoCane (City Square Mall)",
+   "unit": "#B1-K7",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-cococane"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Crave (City Square Mall)",
+   "unit": "#B1-K19",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-crave"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Daily (City Square Mall)",
+   "unit": "#B1-01/02/03",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-daily"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Dian Xiao Er (City Square Mall)",
+   "unit": "#03-37/38",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-dian-xiao-er"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Din Tai Fung (City Square Mall)",
+   "unit": "#01-10/11",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-din-tai-fung"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Dunkin' (City Square Mall)",
+   "unit": "#B1-K12",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-dunkin"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Eat. (City Square Mall)",
+   "unit": "#01-01/03",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-eat"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Flipper's (City Square Mall)",
+   "unit": "",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-flipper-s"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Food Republic (City Square Mall)",
+   "unit": "#B3-04",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-food-republic"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Fragrance Foodstuff (City Square Mall)",
+   "unit": "#B2-K6",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-fragrance-foodstuff"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Fun Toast (City Square Mall)",
+   "unit": "#04-30",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-fun-toast"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Genki Sushi (City Square Mall)",
+   "unit": "#02-37/38",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-genki-sushi"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "GyoGyo (City Square Mall)",
+   "unit": "#02-39/40",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-gyogyo"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Hankang Pocha (City Square Mall)",
+   "unit": "#B1-04/05/06",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-hankang-pocha"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Holla Juice & Acai (City Square Mall)",
+   "unit": "#B1-K9",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-holla-juice-acai"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Ippudo (City Square Mall)",
+   "unit": "#04-44/45",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-ippudo"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Jack's Place (City Square Mall)",
+   "unit": "#04-39/40",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-jack-s-place"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Jollibee (City Square Mall)",
+   "unit": "#B1-07",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-jollibee"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "KFC (City Square Mall)",
+   "unit": "#B1-29/30",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-kfc"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Koi Cafe Express (City Square Mall)",
+   "unit": "#B1-K6",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-koi-cafe-express"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Kok Sen Restaurant (City Square Mall)",
+   "unit": "#04-31/32",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-kok-sen-restaurant"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Kopi & Tarts (City Square Mall)",
+   "unit": "#B1-23",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-kopi-tarts"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "LeNu (City Square Mall)",
+   "unit": "#02-53/54",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-lenu"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Luckin Coffee (City Square Mall)",
+   "unit": "#B2-K1/K2",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-luckin-coffee"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "McDonald's (City Square Mall)",
+   "unit": "#01-19/23",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-mcdonald-s"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Mei Heong Yuen Dessert (City Square Mall)",
+   "unit": "#B3-03",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-mei-heong-yuen-dessert"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Mr Bean (City Square Mall)",
+   "unit": "#B1-K8",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-mr-bean"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Mr. Coconut Go (City Square Mall)",
+   "unit": "#B2-18A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-mr-coconut-go"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Munchi Pancakes (City Square Mall)",
+   "unit": "#B2-K8",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-munchi-pancakes"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Nam Kee Pau (City Square Mall)",
+   "unit": "#B1-K2",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-nam-kee-pau"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Nong Geng Ji Hunan Home-Style Cuisine (City Square Mall)",
+   "unit": "#04-35/36",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-nong-geng-ji-hunan-home-style-cuisine"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Old Chang Kee (City Square Mall)",
+   "unit": "#B1-K5",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-old-chang-kee"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Omega Pork Noodle (City Square Mall)",
+   "unit": "#B2-04",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-omega-pork-noodle"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Papa Ayam (City Square Mall)",
+   "unit": "#B1-26",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-papa-ayam"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "PastaMania (City Square Mall)",
+   "unit": "#02-21/22",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-pastamania"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "PlayMade (City Square Mall)",
+   "unit": "#B2-K10",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-playmade"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Rich & Good Cake Shop (City Square Mall)",
+   "unit": "#B2-K22",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-rich-good-cake-shop"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Saap Saap Thai (City Square Mall)",
+   "unit": "#B2-K3/K4/K5",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-saap-saap-thai"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Saizeriya Ristorante E Caffe (City Square Mall)",
+   "unit": "#B2-55/56",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-saizeriya-ristorante-e-caffe"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Sanook Kitchen (City Square Mall)",
+   "unit": "#02-33/56",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-sanook-kitchen"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Saute-san (City Square Mall)",
+   "unit": "#03-23/24",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-saute-san"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Seoul Garden (City Square Mall)",
+   "unit": "#B2-03",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-seoul-garden"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "SnacKing Retro Biscuits (City Square Mall)",
+   "unit": "#B1-K15",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-snacking-retro-biscuits"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Starbucks (City Square Mall)",
+   "unit": "#01-38",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-starbucks"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Stuff'd (City Square Mall)",
+   "unit": "#B1-K1",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-stuff-d"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Subway (City Square Mall)",
+   "unit": "#B3-02",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-subway"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Super Dario Lasagne Cafe (City Square Mall)",
+   "unit": "#04-17",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-super-dario-lasagne-cafe"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Super Sushi (City Square Mall)",
+   "unit": "#B1-27",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-super-sushi"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Talad Thai Banana (City Square Mall)",
+   "unit": "#B2-K7",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-talad-thai-banana"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "The Soup Spoon Union (City Square Mall)",
+   "unit": "#B1-K10/K11/K13",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-the-soup-spoon-union"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Tim Hortons (City Square Mall)",
+   "unit": "#01-30/31",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-tim-hortons"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Toast Box (City Square Mall)",
+   "unit": "#01-42/43",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-toast-box"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Wingstop (City Square Mall)",
+   "unit": "#B1-33/34",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-wingstop"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Wok Hey (City Square Mall)",
+   "unit": "#B1-36",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-wok-hey"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Xiao Jiao Tian Sichuan Cuisine (City Square Mall)",
+   "unit": "#04-37",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-xiao-jiao-tian-sichuan-cuisine"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Xiao Noodles (City Square Mall)",
+   "unit": "#B1-32/33",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-xiao-noodles"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Ya Kun Kaya Toast (City Square Mall)",
+   "unit": "#B1-K18",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Yang Guo Fu Malatang (City Square Mall)",
+   "unit": "#B2-53/54",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-yang-guo-fu-malatang"
+  },
+  {
+   "cluster": "m-city-square-mall",
+   "name": "Yi Zun Noodle (City Square Mall)",
+   "unit": "#03-21",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "citysquaremall-m-city-square-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-city-square-mall-yi-zun-noodle"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Qin Wei Guan (Zhongshan Mall)",
+   "unit": "#01-15",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-qin-wei-guan"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Food Fair (Zhongshan Mall)",
+   "unit": "#01-02",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-food-fair"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Thai Tai (Zhongshan Mall)",
+   "unit": "#01-08A",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-thai-tai"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "BreadTalk (Zhongshan Mall)",
+   "unit": "#01-10/13",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-breadtalk"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Toast Box (Zhongshan Mall)",
+   "unit": "#01-11/14",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-toast-box"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Otou-San (Zhongshan Mall)",
+   "unit": "#01-12",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-otou-san"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "McDonald's (Zhongshan Mall)",
+   "unit": "#01-16",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-mcdonald-s"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Sanook Kitchen (Zhongshan Mall)",
+   "unit": "#01-17",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-sanook-kitchen"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Starbucks Coffee (Zhongshan Mall)",
+   "unit": "#01-18A",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-starbucks-coffee"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Subway (Zhongshan Mall)",
+   "unit": "#01-33/34",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-subway"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "SevenDaze (Zhongshan Mall)",
+   "unit": "#01-02/03",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-sevendaze"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Yu Dong Lai Hotpot (Zhongshan Mall)",
+   "unit": "#01-01",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-yu-dong-lai-hotpot"
+  },
+  {
+   "cluster": "m-zhongshan-mall",
+   "name": "Luckin Coffee (Zhongshan Mall)",
+   "unit": "#01-07",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "zhongshanmall-m-zhongshan-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-zhongshan-mall-luckin-coffee"
   }
  ]
 }

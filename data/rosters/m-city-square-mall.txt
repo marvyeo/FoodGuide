@@ -1,0 +1,79 @@
+# source: citysquaremall | https://www.citysquaremall.com.sg/shops/food-beverage/ | live directory (Food & Beverage) | fetched 2026-11-20
+@ i Mango|#03-56
+Astons Steak & Salad|#04-14/16
+BakeInc|#B1-35
+Bakery Cuisine|#B2-22
+Baskin-Robbins|#02-55
+Beutea|#01-12
+Beyond Pancakes|#02-35/36
+Boost Juice Bars|#B1-K16
+BreadTalk|#01-41
+Canton Paradise|#02-51/52
+Cat & The Fiddle|#02-50
+Cedele Bakery Cafe|#01-24/25
+Chateraise|#B2-21A
+Chef Vo Quoc Vietnamese Cuisines|#04-41
+Chocolate Origin|#B2-K9A
+CocoCane|#B1-K7
+Crave|#B1-K19
+Daily|#04-42/47
+Daily Dim Sum|#B1-01/02/03
+Dian Xiao Er|#03-37/38
+Din Tai Fung|#01-10/11
+Dunkin'|#B1-K12
+Eat.|#B1-K3
+Flipper's
+Food Republic|#B3-04
+Fragrance Foodstuff|#B2-K6
+Fun Toast|#04-30
+Genki Sushi|#02-37/38
+GyoGyo|#02-39/40
+Hankang Pocha|#B1-04/05/06
+Holla Juice & Acai|#B1-K9
+Ippudo|#04-44/45
+Jack's Place|#04-39/40
+Jollibee|#B1-07
+KFC|#B1-29/30
+Koi Cafe Express|#B1-K6
+Kok Sen Restaurant|#04-31/32
+Kopi & Tarts|#B1-23
+LeNu|#02-53/54
+Luckin Coffee|#B2-K1/K2
+McDonald's|#01-19/23
+Mei Heong Yuen Dessert|#B3-03
+Mr Bean|#B1-K8
+Mr. Coconut Go|#B2-18A
+Munchi Pancakes|#B2-K8
+Nam Kee Pau|#B1-K2
+Nong Geng Ji Hunan Home-Style Cuisine|#04-35/36
+Old Chang Kee|#B1-K5
+Omega Pork Noodle|#B2-04
+Papa Ayam|#B1-26
+PastaMania|#02-21/22
+PlayMade|#B2-K10
+Rich & Good Cake Shop|#B2-21
+Saap Saap Thai|#B2-K3/K4/K5
+Saizeriya Ristorante E Caffe|#B2-55/56
+Sanook Kitchen|#02-33/56
+Saute-san|#03-23/24
+Seoul Garden|#B2-02
+Seoul Garden HOTPOT & Café|#B2-03
+SnacKing Retro Biscuits|#B1-K15
+Starbucks|#01-38
+Streats Cafe|#01-01/03
+Stuff'd|#B1-K1
+Subway|#B3-02
+Super Dario Lasagne Cafe|#04-17
+Super Sushi|#B1-27
+Talad Thai Banana|#B2-K7
+The Cake Shop|#B2-K22
+The Soup Spoon Union|#B1-K10/K11/K13
+Tim Hortons|#01-30/31
+Toast Box|#01-42/43
+Wingstop|#B1-33/34
+Wok Hey|#B1-36
+Xiao Jiao Tian Sichuan Cuisine|#04-37
+Xiao Noodles|#B1-32/33
+Ya Kun Kaya Toast|#B1-K18
+Yang Guo Fu Malatang|#B2-53/54
+Yi Zun Noodle|#03-21
