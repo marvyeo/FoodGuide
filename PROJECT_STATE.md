@@ -3,7 +3,7 @@
 > **Next chat name: `FoodGuide ver 8`**
 > Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 8**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
-_Last updated: 20 Nov 2026, SGT (ver 6 session). **Sprint 5b done (Aperia 43 + Kallang Wave 23), PR open from `data/central-sprint-5b` (3,870 places). Start here next: sprint 6 (VivoCity, Star Vista, Thomson Plaza, Waterway Point, NEX; check the Frasers store feed first).** OneMap search still needs a token (re-geocoding of ~32 approximate pins blocked).
+_Last updated: 20 Nov 2026, SGT (ver 7 session). **Sprint 6a done: Waterway Point (91 new, Frasers feed with hours; 3,961 places), PR open from `data/sprint-6`. Start here next (6b): VivoCity, The Star Vista, Thomson Plaza, NEX.** Frasers feed covers none of these four. Star Vista was sold by CapitaLand (not on capitaland.com; use its own site). VivoCity: `vivocity.com.sg/find-a-store` is an Algolia-style page; click `a.selectable.store` with text Restaurants/Cafes/Fast Food/Food Courts/Food Specialties/Confectionery & Snacks (Restaurants = 83 results); cards `.ais-Hits-item` show name / #unit / category, 12 per page, **paging control not found yet** (no pagination/load-more in the DOM; try screenshot or scroll the window container, or per-category so each is <=12... it is not). Do not read page-source search config or keys. OneMap search still needs a token (re-geocoding blocked).
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
