@@ -1041,6 +1041,31 @@
    "name": "capitol-singapore – Capitol Singapore directory",
    "url": "https://capitolsingapore.com/directory/?category=3 (Restaurants & Cafes)",
    "date": "live directory (Restaurants & Cafes)"
+  },
+  "fareastmalls-m-clarke-quay-central": {
+   "name": "fareastmalls – Clarke Quay Central directory",
+   "url": "https://www.fareastmalls.com.sg/en/clarke-quay-central/shops",
+   "date": "live directory (Food & Beverage, with hours)"
+  },
+  "100am-m-100am": {
+   "name": "100am – 100AM directory",
+   "url": "https://www.100am.com.sg/dine/",
+   "date": "live directory (Dine)"
+  },
+  "chinatown-point-m-chinatown-point": {
+   "name": "chinatown-point – Chinatown Point directory",
+   "url": "https://chinatownpoint.com.sg/stores/?category=restaurant",
+   "date": "live directory (Restaurant)"
+  },
+  "ue-square-m-ue-square": {
+   "name": "ue-square – UE Square directory",
+   "url": "https://uesquare.com.sg/store-categories/food-beverage/",
+   "date": "live directory (Food & Beverage)"
+  },
+  "great-world-m-great-world": {
+   "name": "great-world – Great World directory",
+   "url": "https://shop.greatworld.com.sg/dine/",
+   "date": "live directory (Dine)"
   }
  },
  "clusters": [
@@ -2410,6 +2435,106 @@
     "source": "capitol-singapore-m-capitol-singapore",
     "count": 25,
     "snapshot": "live directory (Restaurants & Cafes)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-100am",
+   "name": "100AM",
+   "type": "mall",
+   "address": "100 Tras Street, S079027",
+   "lat": 1.2745,
+   "lng": 103.8434,
+   "zone": "central",
+   "stalls_total": 35,
+   "notes": "Tanjong Pagar; Tanjong Pagar MRT. Food floors 1-4 incl. Itadakimasu by PARCO. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "100am-m-100am"
+   ],
+   "roster": {
+    "source": "100am-m-100am",
+    "count": 35,
+    "snapshot": "live directory (Dine)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-chinatown-point",
+   "name": "Chinatown Point",
+   "type": "mall",
+   "address": "133 New Bridge Road, S059413",
+   "lat": 1.28545,
+   "lng": 103.84425,
+   "zone": "central",
+   "stalls_total": 44,
+   "notes": "Chinatown MRT. Restaurant category only (4 'coming soon' units not counted). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "roster": {
+    "source": "chinatown-point-m-chinatown-point",
+    "count": 44,
+    "snapshot": "live directory (Restaurant)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-clarke-quay-central",
+   "name": "Clarke Quay Central",
+   "type": "mall",
+   "address": "6 Eu Tong Sen Street, S059817",
+   "lat": 1.2886,
+   "lng": 103.84605,
+   "zone": "central",
+   "stalls_total": 43,
+   "notes": "Far East mall above Clarke Quay MRT; separate from the riverside Clarke Quay cluster. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "roster": {
+    "source": "fareastmalls-m-clarke-quay-central",
+    "count": 43,
+    "snapshot": "live directory (Food & Beverage, with hours)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-ue-square",
+   "name": "UE Square",
+   "type": "mall",
+   "address": "207 River Valley Road, S238275",
+   "lat": 1.2934,
+   "lng": 103.8352,
+   "zone": "central",
+   "stalls_total": 23,
+   "notes": "Food & Beverage category (3 pages). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "roster": {
+    "source": "ue-square-m-ue-square",
+    "count": 23,
+    "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-great-world",
+   "name": "Great World",
+   "type": "mall",
+   "address": "1 Kim Seng Promenade, S237994",
+   "lat": 1.29345,
+   "lng": 103.8315,
+   "zone": "central",
+   "stalls_total": 87,
+   "notes": "Dine directory (8 pages); Great World MRT. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "roster": {
+    "source": "great-world-m-great-world",
+    "count": 87,
+    "snapshot": "live directory (Dine)",
     "fetched": "2026-11-20"
    }
   }
@@ -101065,6 +101190,5648 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-capitol-singapore-two-cranes"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Astons Specialities (Clarke Quay Central)",
+   "unit": "#03-85",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-astons-specialities"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Azabu Sabo Hokkaido Ice-Cream Shop (Clarke Quay Central)",
+   "unit": "#01-46",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-azabu-sabo-hokkaido-ice-cream-shop"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Baba Nyonya (Clarke Quay Central)",
+   "unit": "#02-84 to 86",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-baba-nyonya"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Banh Mi Society (Clarke Quay Central)",
+   "unit": "#B1-K9",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-20:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-banh-mi-society"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Barcook Bakery (Clarke Quay Central)",
+   "unit": "#01-67",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-barcook-bakery"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Blu Jaz (Clarke Quay Central)",
+   "unit": "#02-01",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "012",
+     [
+      "12:00-00:00"
+     ]
+    ],
+    [
+     "345",
+     [
+      "12:00-03:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "12:00-04:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-blu-jaz"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Breadtalk (Clarke Quay Central)",
+   "unit": "#01-27/28/38",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-breadtalk"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Burger King (Clarke Quay Central)",
+   "unit": "#01-23",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "08:00-23:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "08:00-00:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-burger-king"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Casabites (Clarke Quay Central)",
+   "unit": "#02-78/91",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-casabites"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Chagee (Clarke Quay Central)",
+   "unit": "#01-53/54/61/62/63",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "10:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-chagee"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Chef x @ Clarke Quay Central (Clarke Quay Central)",
+   "unit": "#03-103",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "12",
+     [
+      "11:30-21:00"
+     ]
+    ],
+    [
+     "03456",
+     [
+      "11:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-chef-x-clarke-quay-central"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Chia Puddies (Clarke Quay Central)",
+   "unit": "#01-41",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-chia-puddies"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Craftsmen Specialty Coffee (Clarke Quay Central)",
+   "unit": "#01-58",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-20:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-craftsmen-specialty-coffee"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "E!Ght Korean BBQ (Clarke Quay Central)",
+   "unit": "#02-90",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-e-ght-korean-bbq"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Hitoyoshi Yoshi Sushi (Clarke Quay Central)",
+   "unit": "#01-68",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-hitoyoshi-yoshi-sushi"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Huggs Coffee (Clarke Quay Central)",
+   "unit": "#01-60",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "07:30-21:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "08:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-huggs-coffee"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "L'atelier Tiramisu (Clarke Quay Central)",
+   "unit": "#B1-09",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-l-atelier-tiramisu"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Lizoo (Clarke Quay Central)",
+   "unit": "#01-33",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-lizoo"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Madlygood Japanese Cafe (Clarke Quay Central)",
+   "unit": "#02-82/83",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-madlygood-japanese-cafe"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Man Man Japanese Unagi Restaurant (Clarke Quay Central)",
+   "unit": "#B1-52",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-man-man-japanese-unagi-restaurant"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Marutama Ramen (Clarke Quay Central)",
+   "unit": "#03-90",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-marutama-ramen"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Mitsuba Japanese Restaurant (Clarke Quay Central)",
+   "unit": "#03-88",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-mitsuba-japanese-restaurant"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Mr Coconut (Clarke Quay Central)",
+   "unit": "#01-37",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-mr-coconut"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Ng Ah Sio Bak Kut Teh (Clarke Quay Central)",
+   "unit": "#01-07",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [
+    [
+     "1234",
+     [
+      "09:00-22:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "09:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-ng-ah-sio-bak-kut-teh"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Nomvnom Bistro (Clarke Quay Central)",
+   "unit": "#03-105/106/107",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-nomvnom-bistro"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Oni Kimbap / Obba Jjajang Express (Clarke Quay Central)",
+   "unit": "#B1-K1 to K3",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-oni-kimbap-obba-jjajang-express"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Pizza Kita (Clarke Quay Central)",
+   "unit": "#02-54",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-pizza-kita"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Rapusodi (Clarke Quay Central)",
+   "unit": "#03-99",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "12:00-14:00",
+      "18:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-rapusodi"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Rendezvous Restaurant Hock Lock Kee (Clarke Quay Central)",
+   "unit": "#02-72",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-rendezvous-restaurant-hock-lock-kee"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Siam Square Mookata (Clarke Quay Central)",
+   "unit": "#01-15",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-siam-square-mookata",
+   "status_note": "Temporarily closed (directory, 2026-11-20)"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Sinfoodie Food Court (Clarke Quay Central)",
+   "unit": "#B1-K5",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-sinfoodie-food-court"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Sque Rotisserie & Alehouse (Clarke Quay Central)",
+   "unit": "#01-70",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "11:30-23:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "11:30-00:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-sque-rotisserie-alehouse"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Starbucks (Clarke Quay Central)",
+   "unit": "#01-29",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "07:30-22:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "07:30-00:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-starbucks"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Subway (Clarke Quay Central)",
+   "unit": "#01-66",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-subway"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Sushi Kenshin (Clarke Quay Central)",
+   "unit": "#03-96",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-sushi-kenshin"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Tendon Kohaku (Clarke Quay Central)",
+   "unit": "#B1-53",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-tendon-kohaku"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "The Acai Teahouse (Clarke Quay Central)",
+   "unit": "#02-55",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "11:30-21:30"
+     ]
+    ],
+    [
+     "56",
+     [
+      "11:30-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-the-acai-teahouse"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Tsui Wah Restaurant (Clarke Quay Central)",
+   "unit": "#01-08",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "08:00-22:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "08:00-02:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-tsui-wah-restaurant"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Tsujiri (Clarke Quay Central)",
+   "unit": "#01-74",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-tsujiri"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Tung Lok Signatures (Clarke Quay Central)",
+   "unit": "#02-88",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-tung-lok-signatures"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Ya Kun Kaya Toast (Clarke Quay Central)",
+   "unit": "#01-31",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-19:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Yi Fang Taiwan Fruit Tea (Clarke Quay Central)",
+   "unit": "#01-47",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-23:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-yi-fang-taiwan-fruit-tea"
+  },
+  {
+   "cluster": "m-clarke-quay-central",
+   "name": "Tomato Hotpot (Clarke Quay Central)",
+   "unit": "#03-87",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "fareastmalls-m-clarke-quay-central"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-clarke-quay-central-tomato-hotpot"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Halo – Ube & Matcha (100AM)",
+   "unit": "#01-05",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-halo-ube-matcha"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Henri Charpentier (100AM)",
+   "unit": "#01-13",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-henri-charpentier"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Jian Cha (100AM)",
+   "unit": "#01-11",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-jian-cha"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Luckin Coffee (100AM)",
+   "unit": "#01-13A",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-luckin-coffee"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Mincheng Bibimbap (100AM)",
+   "unit": "#01-06",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-mincheng-bibimbap"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Mos Burger (100AM)",
+   "unit": "#01-12",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-mos-burger"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Nam Kee Pau (100AM)",
+   "unit": "#01-07",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-nam-kee-pau"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Nanyang Dao (100AM)",
+   "unit": "#01-04",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-nanyang-dao"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Pullman Bakery (100AM)",
+   "unit": "#01-03",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-pullman-bakery"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "So Good Bakery (100AM)",
+   "unit": "#01-10/14A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-so-good-bakery"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Subway (100AM)",
+   "unit": "#01-15",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-subway"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Takagi Coffee (100AM)",
+   "unit": "#01-14B",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-takagi-coffee"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "The Public Izakaya by Hachi (100AM)",
+   "unit": "#01-08/09",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-the-public-izakaya-by-hachi"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "The Tree Cafe (100AM)",
+   "unit": "#04-04/05",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-the-tree-cafe"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "The Whale Tea (100AM)",
+   "unit": "#01-15A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-the-whale-tea"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Healthy Soba IKI (100AM)",
+   "unit": "#02-15/28",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-healthy-soba-iki"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Hoe Nam Vintage (100AM)",
+   "unit": "#02-09",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-hoe-nam-vintage"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Ma Maison Kitchen (100AM)",
+   "unit": "#02-11",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-ma-maison-kitchen"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Menya Kokoro Mazesoba Ramen and Izakaya (100AM)",
+   "unit": "#02-10",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-menya-kokoro-mazesoba-ramen-and-izakaya"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Spicy Chef – Hunan Cuisine (100AM)",
+   "unit": "#02-14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-spicy-chef-hunan-cuisine"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Supergreen (100AM)",
+   "unit": "#02-27B",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-supergreen"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Superjuice (100AM)",
+   "unit": "#02-27B",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-superjuice"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Ya Kun Kaya Toast (100AM)",
+   "unit": "#02-16",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Zhang Liang Malatang (100AM)",
+   "unit": "#02-17/18/19/20/21",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-zhang-liang-malatang"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Maguro Brothers (100AM)",
+   "unit": "#03-K1",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-maguro-brothers"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Ramen Keisuke Tori King (100AM)",
+   "unit": "#03-15",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-ramen-keisuke-tori-king"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Sabar (100AM)",
+   "unit": "#03-14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-sabar"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Sweet Dots Desserts (100AM)",
+   "unit": "#03-16",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-sweet-dots-desserts"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Tachibana (100AM)",
+   "unit": "#03-13",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-tachibana"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Yakiniku Gyubei (100AM)",
+   "unit": "#03-11",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-yakiniku-gyubei"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Yakitori GO GO FIVE (100AM)",
+   "unit": "#03-10",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-yakitori-go-go-five"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Yayoi (100AM)",
+   "unit": "#03-12",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-yayoi"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Cheng Ji Seafood Restaurant (100AM)",
+   "unit": "#04-04",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-cheng-ji-seafood-restaurant"
+  },
+  {
+   "cluster": "m-100am",
+   "name": "Sushiro (100AM)",
+   "unit": "#04-07/08",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "100am-m-100am"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-100am-sushiro"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "5 Little Bears (Chinatown Point)",
+   "unit": "#B1-49/52B",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-5-little-bears"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "A-One Signature (Chinatown Point)",
+   "unit": "#B1-13",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-a-one-signature"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Burger King (Chinatown Point)",
+   "unit": "#01-29/30",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-burger-king"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "D'life Signature (Chinatown Point)",
+   "unit": "#02-37",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-d-life-signature"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Din Tai Fung (Chinatown Point)",
+   "unit": "#02-01/02",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-din-tai-fung"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "En Yeoh's Bak Kut Teh (Chinatown Point)",
+   "unit": "#01-44",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-en-yeoh-s-bak-kut-teh"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Fast Soup (Chinatown Point)",
+   "unit": "#B1-48",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-fast-soup"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Genki Sushi (Chinatown Point)",
+   "unit": "#B1-14/15",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-genki-sushi"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Gochi-So Shokudo (Chinatown Point)",
+   "unit": "#02-41/42",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-gochi-so-shokudo"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Gong Yuan Ma La Tang (Chinatown Point)",
+   "unit": "#02-43/44",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-gong-yuan-ma-la-tang"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Han's (Chinatown Point)",
+   "unit": "#B2-34/35/36",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-han-s"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Hawkers' Street (Chinatown Point)",
+   "unit": "#B1-16",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-hawkers-street"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Janggut Laksa (Chinatown Point)",
+   "unit": "#B1-49A",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-janggut-laksa"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Jia Li Seafood Soup (Chinatown Point)",
+   "unit": "#B1-51/51C",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-jia-li-seafood-soup"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Kei Kaisendon (Chinatown Point)",
+   "unit": "#B1-23",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-kei-kaisendon"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "KFC (Chinatown Point)",
+   "unit": "#01-35",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-kfc"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Kiwami & Aburi-En (Chinatown Point)",
+   "unit": "#02-38",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-kiwami-aburi-en"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Kohaku Sabo (Chinatown Point)",
+   "unit": "#02-34",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-kohaku-sabo"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Kra Pow (Chinatown Point)",
+   "unit": "#02-39",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-kra-pow"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Lixin Teochew Fishball Noodles (Chinatown Point)",
+   "unit": "#B1-47",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-lixin-teochew-fishball-noodles"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Makan Prata (Chinatown Point)",
+   "unit": "#B1-44/45",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-makan-prata"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Mcdonald's (Chinatown Point)",
+   "unit": "#01-03",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-mcdonald-s"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Mdm Yap's Cafe (Chinatown Point)",
+   "unit": "#02-13/14/K3",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-mdm-yap-s-cafe"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Mei Heong Yuen Dessert (Chinatown Point)",
+   "unit": "#B2-32/33",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-mei-heong-yuen-dessert"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Mi Bibimbap (Chinatown Point)",
+   "unit": "#B1-12",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-mi-bibimbap"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Nanbantei (Chinatown Point)",
+   "unit": "#02-40",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-nanbantei"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Nasi Lemak Ayam Taliwang (Chinatown Point)",
+   "unit": "#B1-51B",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-nasi-lemak-ayam-taliwang"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Paris Baguette (Chinatown Point)",
+   "unit": "#01-07/09",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-paris-baguette"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Peach Garden (Chinatown Point)",
+   "unit": "#02-36",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-peach-garden"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Ramen King (Chinatown Point)",
+   "unit": "#B1-50/50A/50C",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-ramen-king"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Saizeriya (Chinatown Point)",
+   "unit": "#02-10",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-saizeriya"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Segar Restaurant (Chinatown Point)",
+   "unit": "#B2-39/40/41",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-segar-restaurant"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Shi Li Fang (Chinatown Point)",
+   "unit": "#B2-17",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-shi-li-fang"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Song Fa Bak Kut Teh (Chinatown Point)",
+   "unit": "#01-04",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-song-fa-bak-kut-teh"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Starbucks (Chinatown Point)",
+   "unit": "#01-08",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-starbucks"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Subway (Chinatown Point)",
+   "unit": "#B1-37",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-subway"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Sukiya (Chinatown Point)",
+   "unit": "#02-45/46",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-sukiya"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Sushiro (Chinatown Point)",
+   "unit": "#02-35",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-sushiro"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Toast Box (Chinatown Point)",
+   "unit": "#01-45/46",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-toast-box"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Tongue Tip Lanzhou Beef Noodles (Chinatown Point)",
+   "unit": "#01-43",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-tongue-tip-lanzhou-beef-noodles"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Wu Wang Guo Hotpot (Chinatown Point)",
+   "unit": "#03-09 to 14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-wu-wang-guo-hotpot"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Ya Kun Kaya Toast (Chinatown Point)",
+   "unit": "#B2-14/15/16",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Yenney Express (Chinatown Point)",
+   "unit": "#B1-47C",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-yenney-express"
+  },
+  {
+   "cluster": "m-chinatown-point",
+   "name": "Yuen Kee Dumpling (Chinatown Point)",
+   "unit": "#B1-52/52A",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "chinatown-point-m-chinatown-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-chinatown-point-yuen-kee-dumpling"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Singapore Straits Wine (UE Square)",
+   "unit": "#01-11",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-singapore-straits-wine"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Greybox Coffee (UE Square)",
+   "unit": "#01-12",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-greybox-coffee"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Fish & Bones (UE Square)",
+   "unit": "#01-13",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-fish-bones"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Lean & Rich (UE Square)",
+   "unit": "#01-14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-lean-rich"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Caffe Italia Singapore (UE Square)",
+   "unit": "#01-15/16/17",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-caffe-italia-singapore"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Whuchu Korean Dining (UE Square)",
+   "unit": "#01-18",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-whuchu-korean-dining"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Tofug (UE Square)",
+   "unit": "#01-19",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-tofug"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Dutch Colony Coffee Co. (UE Square)",
+   "unit": "#01-21",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-dutch-colony-coffee-co"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "La Pasteleria Kitchen & Bar (UE Square)",
+   "unit": "#01-22",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-la-pasteleria-kitchen-bar"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Moc Quan (UE Square)",
+   "unit": "#01-23",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-moc-quan"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Starbucks Coffee (UE Square)",
+   "unit": "#01-31",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-starbucks-coffee"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "The Cheese Shop (UE Square)",
+   "unit": "#01-35/36",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-the-cheese-shop"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Xyco Studio (UE Square)",
+   "unit": "#01-51/52/53/54",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-xyco-studio"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Ippudo (UE Square)",
+   "unit": "#01-55/56",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-ippudo"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Vibez (UE Square)",
+   "unit": "#01-57",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-vibez"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Mobomoga (UE Square)",
+   "unit": "#01-58",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-mobomoga"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Wild/Fire (UE Square)",
+   "unit": "#01-59",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-wild-fire"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Wabi-Sabi Dining (UE Square)",
+   "unit": "#01-60",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-wabi-sabi-dining"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "SUIKO Japanese Charcoal-grill (UE Square)",
+   "unit": "#01-61",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-suiko-japanese-charcoal-grill"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "The Connoisseur Divan (UE Square)",
+   "unit": "#01-62",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-the-connoisseur-divan"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Torikin (UE Square)",
+   "unit": "#01-75",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-torikin"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Moutai (UE Square)",
+   "unit": "#01-76",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-moutai"
+  },
+  {
+   "cluster": "m-ue-square",
+   "name": "Shin Minori Japanese Restaurant (UE Square)",
+   "unit": "#03-15/16",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "ue-square-m-ue-square"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-ue-square-shin-minori-japanese-restaurant"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "365 Juices Bar (Great World)",
+   "unit": "#B1-K112",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-365-juices-bar"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Awfully Chocolate CafÉ (Great World)",
+   "unit": "#01-K102",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-awfully-chocolate-caf"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Bakery Cuisine Express (Great World)",
+   "unit": "#B2-K122",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-bakery-cuisine-express"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Bangkok Jam (Great World)",
+   "unit": "#02-127",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-bangkok-jam"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Bari Bari Steak (Great World)",
+   "unit": "#B1-112/113",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-bari-bari-steak"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Battercatch (Great World)",
+   "unit": "#01-106",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-battercatch"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Beard Papa's (Great World)",
+   "unit": "#B1-K126",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-beard-papa-s"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Bee Cheng Hiang (Great World)",
+   "unit": "#B1-130",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-bee-cheng-hiang"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Bengawan Solo (Great World)",
+   "unit": "#B1-K115",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-bengawan-solo"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Bibik Violet (Great World)",
+   "unit": "#02-K101/K102",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-bibik-violet"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Boost Juice Bars (Great World)",
+   "unit": "#B1-K127",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-boost-juice-bars"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Bottles & Bottles (Great World)",
+   "unit": "#01-K101",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-bottles-bottles"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Breadtalk (Great World)",
+   "unit": "#B1-105",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-breadtalk"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Chagee (Great World)",
+   "unit": "#01-121",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-chagee"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Da Paolo Gastronomia (Great World)",
+   "unit": "#01-163",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-da-paolo-gastronomia"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Dian Xiao Er (Great World)",
+   "unit": "#01-140",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-dian-xiao-er"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Din Tai Fung (Great World)",
+   "unit": "#01-138",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-din-tai-fung"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Dulcet & Studio (Great World)",
+   "unit": "#B1-K103",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-dulcet-studio"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Food Junction (Great World)",
+   "unit": "#03-116",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-food-junction"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "French Fold (Great World)",
+   "unit": "#01-153",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-french-fold"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Gokoku Japanese Bakery (Great World)",
+   "unit": "#B1-136",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-gokoku-japanese-bakery"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Gong Yuan Ma La Tang (Great World)",
+   "unit": "#01-141",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-gong-yuan-ma-la-tang"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Greybox Coffee (Great World)",
+   "unit": "#01-K108/K109",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-greybox-coffee"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Guzman y Gomez (Great World)",
+   "unit": "#B1-K119/K135",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-guzman-y-gomez"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Haku Sushi (Great World)",
+   "unit": "#B1-135",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-haku-sushi"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Hansang Korean Family Restaurant (Great World)",
+   "unit": "#B2-101 TO 107",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-hansang-korean-family-restaurant"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Henri Charpentier (Great World)",
+   "unit": "#01-K103",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-henri-charpentier"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Honeyworld (Great World)",
+   "unit": "#B1-K108",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-honeyworld"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Hong Lim Curry Puff (Great World)",
+   "unit": "#B1-K128",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-hong-lim-curry-puff"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Hototogisu Ramen (Great World)",
+   "unit": "#01-143",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-hototogisu-ramen"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Ichiban Boshi (Great World)",
+   "unit": "#B1-131",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-ichiban-boshi"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Imperial Treasure Bar + Grill (Great World)",
+   "unit": "#02-111/112",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-imperial-treasure-bar-grill"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Imperial Treasure Cantonese Cuisine (Great World)",
+   "unit": "#02-111/112",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-imperial-treasure-cantonese-cuisine"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Kaffe & Toast To-Go (Great World)",
+   "unit": "#B2-K107/K108",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-kaffe-toast-to-go"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Kedaikuekue (Great World)",
+   "unit": "#B1-K107",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-kedaikuekue"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Kei Kaisendon (Great World)",
+   "unit": "#B1-129",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-kei-kaisendon"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Khao (Great World)",
+   "unit": "#B1-K101",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-khao"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Kin No Mame (Great World)",
+   "unit": "#B1-K105",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-kin-no-mame"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "KOI ThÉ (Great World)",
+   "unit": "#01-125",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-koi-th"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Kou Teppan (Great World)",
+   "unit": "#B1-134",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-kou-teppan"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Krispy Kreme (Great World)",
+   "unit": "#B1-K110",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-krispy-kreme"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Kuriya Dining (Great World)",
+   "unit": "#01-127",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-kuriya-dining"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Kuriya Japanese Market (Great World)",
+   "unit": "#B1-132",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-kuriya-japanese-market"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Llaollao (Great World)",
+   "unit": "#B1-K125",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-llaollao"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "M&S Food (Great World)",
+   "unit": "#B1-142",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-m-s-food"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Maki-San (Great World)",
+   "unit": "#B1-K104",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-maki-san"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Malaysia Boleh! (Great World)",
+   "unit": "#B1-102/103",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-malaysia-boleh"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Mavrx Coffee (Great World)",
+   "unit": "#01-129",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-mavrx-coffee"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Mcdonald's (Great World)",
+   "unit": "#01-124",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-mcdonald-s"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Namnam (Great World)",
+   "unit": "#B1-K116",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-namnam"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Nong Geng Ji Hunan Home-Style Cuisine (Great World)",
+   "unit": "#01-115/116",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-nong-geng-ji-hunan-home-style-cuisine"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Okinawan Diner Nirai-Kanai (Great World)",
+   "unit": "#01-107/108",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-okinawan-diner-nirai-kanai"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Ps.Cafe (Great World)",
+   "unit": "#01-155/156",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-ps-cafe"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Putien (Great World)",
+   "unit": "#02-149/150",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-putien"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Re.Juve (Great World)",
+   "unit": "#B1-K124",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-re-juve"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Rollgaadi (Great World)",
+   "unit": "#B1-K109",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-rollgaadi"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Ryan's Grocery (Great World)",
+   "unit": "#B1-144/145",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-ryan-s-grocery"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Ryan's Kitchen (Great World)",
+   "unit": "#B1-146",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-ryan-s-kitchen"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Saladstop! (Great World)",
+   "unit": "#B1-128",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-saladstop"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Shake Shack (Great World)",
+   "unit": "#01-101",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-shake-shack"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Ssada Gimbab (Great World)",
+   "unit": "#01-109/110",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-ssada-gimbab"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Starbucks Coffee (Great World)",
+   "unit": "#02-K104/106",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-starbucks-coffee"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Stuff'd (Great World)",
+   "unit": "#B1-K121",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-stuff-d"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Subway (Great World)",
+   "unit": "#01-142",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-subway"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Sukiya (Great World)",
+   "unit": "#01-111",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-sukiya"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Sushiro (Great World)",
+   "unit": "#01-112 TO 114",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-sushiro"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tai Er (Great World)",
+   "unit": "#01-122",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tai-er"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tajimaya Yakiniku (Great World)",
+   "unit": "#B1-114/115",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tajimaya-yakiniku"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tambuah Mas Indonesian Restaurant (Great World)",
+   "unit": "#B1-110/111",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tambuah-mas-indonesian-restaurant"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tan Ser Seng Herbal Soup Restaurant (Great World)",
+   "unit": "#B1-106/107",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tan-ser-seng-herbal-soup-restaurant"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tanjong Rhu Pau (Great World)",
+   "unit": "#B1-K102",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tanjong-rhu-pau"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tcc – the Connoisseur Concerto (Great World)",
+   "unit": "#01-119",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tcc-the-connoisseur-concerto"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "The Berry Spot (Great World)",
+   "unit": "#B1-K111",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-the-berry-spot"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "The Oaks Cellars (Great World)",
+   "unit": "#B2-108/110",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-the-oaks-cellars"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tim Ho Wan (Great World)",
+   "unit": "#01-139",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tim-ho-wan"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tipo Strada (Great World)",
+   "unit": "#02-152/153",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tipo-strada"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Toast Box (Great World)",
+   "unit": "#B1-104/105",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-toast-box"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tofu G (Great World)",
+   "unit": "#01-K107/K110",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tofu-g"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tori Sanwa (Great World)",
+   "unit": "#B1-K117",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tori-sanwa"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tori-Q (Great World)",
+   "unit": "#B1-K118",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tori-q"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Tsujiri Premium (Great World)",
+   "unit": "#01-117/118",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-tsujiri-premium"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Uncle Fong Hot Pot Restaurant (Great World)",
+   "unit": "#B1-108/109",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-uncle-fong-hot-pot-restaurant"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Warabimochi Kamakura (Great World)",
+   "unit": "#B1-K123",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-warabimochi-kamakura"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Windowsill Pies (Great World)",
+   "unit": "#B1-K114",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-windowsill-pies"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Wok Hey (Great World)",
+   "unit": "#B1-K120",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-wok-hey"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Ya Kun Kaya Toast (Great World)",
+   "unit": "#01-135",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-great-world",
+   "name": "Zok Noodle House (Great World)",
+   "unit": "#01-128",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "great-world-m-great-world"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-great-world-zok-noodle-house"
   }
  ]
 }
