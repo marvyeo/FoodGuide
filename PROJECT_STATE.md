@@ -1,7 +1,7 @@
 # Makan Map — project state
 
-> **Next chat name: `FoodGuide ver 5`**
-> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 5**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
+> **Next chat name: `FoodGuide ver 6`**
+> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 6**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
 _Last updated: 20 Nov 2026, SGT (ver 3 session). **Sprint 3 (Marina / Civic) done except Marina Bay Link Mall** (PR open from `data/central-sprint-3`; 3,351 places after merge). **Sprint 4 (Chinatown / river) done (PR open from `data/central-sprint-4`, 3,582 places). Start here next: sprint 5 (Novena / Kallang), section 0.** NEW: OneMap search now returns 401 (needs an API token from an account the owner would have to create), so re-geocoding of ~25 approximate pins is blocked until the owner supplies a token or approves another geocoder. Millenia Walk's official site was refused again. Carry-over gaps: (a) Marina Bay Link Mall has no public directory (mbfc.com.sg/retail has none; marinabaylink.com.sg redirects to bythebay.com.sg); SingMalls fallback was not fetched (approval unanswered); (b) Millenia Walk uses SingMalls (undated) because millenia-walk.com refused the browser pane; re-check against the landlord; (c) Capitol Singapore: only the Restaurants & Cafes category (25); Capitol Bistro / Famous Treasure not counted; (d) 20 malls with approximate pins to re-geocode with OneMap (15 Orchard + 5 new); (e) Shaw House still has no list._
 
