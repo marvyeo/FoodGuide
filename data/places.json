@@ -1106,6 +1106,26 @@
    "name": "frasers – Waterway Point directory",
    "url": "https://www.tampines1.com.sg/stores",
    "date": "live directory (Food & Restaurants)"
+  },
+  "official-m-vivocity": {
+   "name": "official – VivoCity directory",
+   "url": "https://www.vivocity.com.sg/find-a-store",
+   "date": "live directory (Restaurants, Cafes, Fast Food, Food Courts, Food Specialties, Confectionery & Snacks); excluded Nespresso, Bottles & Bottles, King Brand sauces"
+  },
+  "official-m-thomson-plaza": {
+   "name": "official – Thomson Plaza directory",
+   "url": "https://www.thomsonplaza.com.sg/store-directory/?filter=5",
+   "date": "live directory (Confectionary, Food & Beverages; the only food category; wine shop, honey shop and Valu$ left out)"
+  },
+  "official-m-nex": {
+   "name": "official – NEX directory",
+   "url": "https://www.nex.com.sg/Directory/Category",
+   "date": "live directory (Bakery & Confectionery, Food Court, Restaurant Cafe & Fast Food, Snacks & Specialties; Comvita and Kuriya Japanese Market left out)"
+  },
+  "singmalls-m-the-star-vista": {
+   "name": "singmalls – The Star Vista directory",
+   "url": "https://singmalls.app/en/malls/the-star-vista/directory",
+   "date": "undated third-party directory (food outlets only; J-mart and RedMan left out); official site not found"
   }
  },
  "clusters": [
@@ -2735,6 +2755,86 @@
     "source": "frasers-m-waterway-point",
     "count": 92,
     "snapshot": "live directory (Food & Restaurants)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-vivocity",
+   "name": "VivoCity",
+   "type": "mall",
+   "address": "1 HarbourFront Walk, S098585",
+   "lat": 1.2644,
+   "lng": 103.8222,
+   "zone": "central",
+   "stalls_total": 154,
+   "notes": "Next to HarbourFront MRT, gateway to Sentosa. Official live directory (6 food categories; Nespresso, Bottles & Bottles and a sauce shop left out). No hours. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "roster": {
+    "source": "official-m-vivocity",
+    "count": 154,
+    "snapshot": "live directory (Restaurants, Cafes, Fast Food, Food Courts, Food Specialties, Confectionery & Snacks); excluded Nespresso, Bottles & Bottles, King Brand sauces",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-thomson-plaza",
+   "name": "Thomson Plaza",
+   "type": "mall",
+   "address": "301 Upper Thomson Road, S574408",
+   "lat": 1.3547,
+   "lng": 103.8316,
+   "zone": "central",
+   "stalls_total": 12,
+   "notes": "Upper Thomson, family mall. Official directory has only one food category and looks incomplete (12 outlets), so more may exist. No hours. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "roster": {
+    "source": "official-m-thomson-plaza",
+    "count": 12,
+    "snapshot": "live directory (Confectionary, Food & Beverages; the only food category; wine shop, honey shop and Valu$ left out)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-nex",
+   "name": "NEX",
+   "type": "mall",
+   "address": "23 Serangoon Central, S556083",
+   "lat": 1.3506,
+   "lng": 103.8723,
+   "zone": "northeast",
+   "stalls_total": 104,
+   "notes": "Serangoon MRT, the north-east's biggest mall. Official directory (4 food categories, no hours). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "official-m-nex"
+   ],
+   "roster": {
+    "source": "official-m-nex",
+    "count": 104,
+    "snapshot": "live directory (Bakery & Confectionery, Food Court, Restaurant Cafe & Fast Food, Snacks & Specialties; Comvita and Kuriya Japanese Market left out)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-the-star-vista",
+   "name": "The Star Vista",
+   "type": "mall",
+   "address": "1 Vista Exchange Green, S138617",
+   "lat": 1.3068,
+   "lng": 103.7905,
+   "zone": "central",
+   "stalls_total": 62,
+   "notes": "Next to Buona Vista MRT. Sold by CapitaLand, so no landlord feed; list from SingMalls (undated, may be stale), re-check against an official source. No hours. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "roster": {
+    "source": "singmalls-m-the-star-vista",
+    "count": 62,
+    "snapshot": "undated third-party directory (food outlets only; J-mart and RedMan left out); official site not found",
     "fetched": "2026-11-20"
    }
   }
@@ -116486,6 +116586,7550 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-waterway-point-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "A-ROY THAI (VivoCity)",
+   "unit": "#01-165",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-a-roy-thai"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Aburi-En (VivoCity)",
+   "unit": "#01-159",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-aburi-en"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Alijiang Silk Road Cuisine and Western Mahua (VivoCity)",
+   "unit": "#03-11",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-alijiang-silk-road-cuisine-and-western-mahua"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Astons Specialities (VivoCity)",
+   "unit": "#02-113",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-astons-specialities"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Bari Bari Steak (VivoCity)",
+   "unit": "#01-52",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-bari-bari-steak"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Barossa Bar & Grill (VivoCity)",
+   "unit": "#01-161",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-barossa-bar-grill"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Battercatch (VivoCity)",
+   "unit": "#01-171",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-battercatch"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Brotzeit German Bier Bar & Restaurant (VivoCity)",
+   "unit": "#01-149",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-brotzeit-german-bier-bar-restaurant"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Canton Paradise+ 樂天小香港小品 (VivoCity)",
+   "unit": "#B2-37",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-canton-paradise"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Chimichanga (VivoCity)",
+   "unit": "#01-157",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-chimichanga"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "COLLIN’S® (VivoCity)",
+   "unit": "#01-52A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-collin-s"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Crystal Jade Pavilion (VivoCity)",
+   "unit": "#01-112",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-crystal-jade-pavilion"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Dancing Crab (VivoCity)",
+   "unit": "#03-10",
+   "cuisine": "bbq-seafood",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-dancing-crab"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "DaXi Taiwan Noodle & Dumpling (VivoCity)",
+   "unit": "#02-83",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-daxi-taiwan-noodle-dumpling"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Dian Xiao Er 店小二 (新加坡药材烤鸭) (VivoCity)",
+   "unit": "#02-138",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-dian-xiao-er"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Din Tai Fung (VivoCity)",
+   "unit": "#B2-38",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-din-tai-fung"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Encik Tan (VivoCity)",
+   "unit": "#B2-45",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-encik-tan"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Fruit Paradise (VivoCity)",
+   "unit": "#01-59",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-fruit-paradise"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Genki Sushi (VivoCity)",
+   "unit": "#02-65",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-genki-sushi"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Go Noodle House (VivoCity)",
+   "unit": "#B2-24",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-go-noodle-house"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Go-Ang Pratunam Chicken Rice (VivoCity)",
+   "unit": "#B2-30",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-go-ang-pratunam-chicken-rice"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Gong Yuan Ma La Tang (VivoCity)",
+   "unit": "#B2-31",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-gong-yuan-ma-la-tang"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Greenwood Fish Market Bistro (VivoCity)",
+   "unit": "#01-188",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-greenwood-fish-market-bistro"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "GUZMAN Y GOMEZ (VivoCity)",
+   "unit": "#B2-33A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-guzman-y-gomez"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Gyogyo (VivoCity)",
+   "unit": "#02-48",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-gyogyo"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "HaiDiLao HotPot (VivoCity)",
+   "unit": "#03-09",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-haidilao-hotpot"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "HAKKA YU – 客語客家菜 HAKKA CUISINE (VivoCity)",
+   "unit": "#02-141",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-hakka-yu-hakka-cuisine"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Hikiniku to Come (VivoCity)",
+   "unit": "#01-102",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-hikiniku-to-come"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Hokkaido-Ya (VivoCity)",
+   "unit": "#02-153",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-hokkaido-ya"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Hundred Grains 百米香 (VivoCity)",
+   "unit": "#B2-23F",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-hundred-grains"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Jiak Ba Food Heaven 甲霸食堂 (VivoCity)",
+   "unit": "#B2-K27",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-jiak-ba-food-heaven"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Kaji (VivoCity)",
+   "unit": "#02-145",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-kaji"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Kei Kaisendon (VivoCity)",
+   "unit": "#02-136",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-kei-kaisendon"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Kikanbo 鬼金棒 カラシビ味噌ら一麺 (VivoCity)",
+   "unit": "#B2-36",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-kikanbo"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Kott-Don 360 꽃돈 360 (花豚) (VivoCity)",
+   "unit": "#02-123",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-kott-don-360-360"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Le Shrimp Ramen (VivoCity)",
+   "unit": "#B2-25",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-le-shrimp-ramen"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "LeNu Chef Wai’s Noodle Bar (VivoCity)",
+   "unit": "#02-91",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-lenu-chef-wai-s-noodle-bar"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "LITTLE POND 小鱼塘 PRAWN & FISH DELIGHTS (VivoCity)",
+   "unit": "#02-142",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-little-pond-prawn-fish-delights"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Mamma Mia! Trattoria E Caffe (VivoCity)",
+   "unit": "#01-116",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-mamma-mia-trattoria-e-caffe"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Marché Food Lovers’ Place (VivoCity)",
+   "unit": "#03-14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-march-food-lovers-place"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Mincheng Bibimbap 민정비빔밥 敏丁拌饭 (VivoCity)",
+   "unit": "#B2-26A",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-mincheng-bibimbap"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Monster Curry (VivoCity)",
+   "unit": "#02-126",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-monster-curry"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Mr Hainan 海南先生 – Hainan Cuisine (VivoCity)",
+   "unit": "#02-116",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-mr-hainan-hainan-cuisine"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "NG KUAN CHILLI PAN MEE 伍坤辣椒板面 (VivoCity)",
+   "unit": "#B2-23B",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-ng-kuan-chilli-pan-mee"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "PappaRich (VivoCity)",
+   "unit": "#B2-23E",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-papparich"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Paradise Dynasty (VivoCity)",
+   "unit": "#02-128",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-paradise-dynasty"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Paradise Hotpot (VivoCity)",
+   "unit": "#03-08A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-paradise-hotpot"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Poulét (VivoCity)",
+   "unit": "#01-175",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-poul-t"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "PUTIEN (VivoCity)",
+   "unit": "#02-131",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-putien"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Riverside Canton Claypot Cuisine (VivoCity)",
+   "unit": "#02-150",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-riverside-canton-claypot-cuisine"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Saboten (VivoCity)",
+   "unit": "#02-49",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-saboten"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Sagye Lite (VivoCity)",
+   "unit": "#01-167",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-sagye-lite"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Sanook Kitchen (VivoCity)",
+   "unit": "#B2-23C",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-sanook-kitchen"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "sen-ryo (VivoCity)",
+   "unit": "#01-106",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-sen-ryo"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Seoul Noodle Shop (VivoCity)",
+   "unit": "#B2-34",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-seoul-noodle-shop"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "SERVUS German Burger Grill (VivoCity)",
+   "unit": "#01-57",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-servus-german-burger-grill"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Shabu Suki 99 (VivoCity)",
+   "unit": "#01-99",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-shabu-suki-99"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Song Fa Bak Kut Teh 松發肉骨茶 (VivoCity)",
+   "unit": "#B2-13",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-song-fa-bak-kut-teh"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Soup Restaurant (VivoCity)",
+   "unit": "#B2-26",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-soup-restaurant"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Surrey Hills Grocer (VivoCity)",
+   "unit": "#03-02",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-surrey-hills-grocer"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Sushi Tei (VivoCity)",
+   "unit": "#02-152",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-sushi-tei"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Sushi-Go (VivoCity)",
+   "unit": "#B2-07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-sushi-go"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Swensen’s Unlimited (VivoCity)",
+   "unit": "#02-117",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-swensen-s-unlimited"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "TCC – The Connoisseur Concerto (VivoCity)",
+   "unit": "#02-149",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-tcc-the-connoisseur-concerto"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Tempura-EN (VivoCity)",
+   "unit": "#02-111",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-tempura-en"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "The Original Beach Road Scissors Cut Curry Rice Since 1930 (VivoCity)",
+   "unit": "#B2-23A",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-the-original-beach-road-scissors-cut-curry-rice-s"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Tonkatsu ENbiton (VivoCity)",
+   "unit": "#B2-27",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-tonkatsu-enbiton"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "TORIKIZOKU (VivoCity)",
+   "unit": "#01-102",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-torikizoku"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Una Una (VivoCity)",
+   "unit": "#02-94",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-una-una"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Vicoletto Osteria (VivoCity)",
+   "unit": "#01-100",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-vicoletto-osteria"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "VietSmith (VivoCity)",
+   "unit": "#02-108",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-vietsmith"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Waa Cow! (VivoCity)",
+   "unit": "#01-188C",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-waa-cow"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "WHITE 三巴旺白米粉 (VivoCity)",
+   "unit": "#02-121",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-white"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Wine Connection (VivoCity)",
+   "unit": "#01-152",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-wine-connection"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "XIANG XIANG HUNAN CUISINE 湘香湖南菜 (VivoCity)",
+   "unit": "#B2-28",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-xiang-xiang-hunan-cuisine"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Yakiniku Like (VivoCity)",
+   "unit": "#02-60",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-yakiniku-like"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "YANG MING SEAFOOD (KELONG) (VivoCity)",
+   "unit": "#02-158",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-yang-ming-seafood-kelong"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Yappari Steak (VivoCity)",
+   "unit": "#02-110",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-yappari-steak"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Yew Kee Specialities (VivoCity)",
+   "unit": "#B2-47",
+   "cuisine": "braised",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-yew-kee-specialities"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Zhen Shun (VivoCity)",
+   "unit": "#01-169",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-zhen-shun"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "农耕记 Nong Geng Ji (VivoCity)",
+   "unit": "#01-51A",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-nong-geng-ji"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "雙月 Moon Moon Food (VivoCity)",
+   "unit": "#02-85",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-moon-moon-food"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Awfully Chocolate (VivoCity)",
+   "unit": "#01-155",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-awfully-chocolate"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Cedele (VivoCity)",
+   "unit": "#01-113",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-cedele"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "CHAGEE (VivoCity)",
+   "unit": "#01-98",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-chagee"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Flipper’s (VivoCity)",
+   "unit": "#01-188A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-flipper-s"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Henri Charpentier (VivoCity)",
+   "unit": "#02-K4",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-henri-charpentier"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Paris Baguette (VivoCity)",
+   "unit": "#B2-55",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-paris-baguette"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Starbucks Coffee (VivoCity)",
+   "unit": "#01-43",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-starbucks-coffee"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "The Coffee Bean & Tea Leaf (VivoCity)",
+   "unit": "#02-04",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-the-coffee-bean-tea-leaf"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Tim Hortons (VivoCity)",
+   "unit": "#01-207",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-tim-hortons"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Tiong Bahru Bakery (VivoCity)",
+   "unit": "#01-188B",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-tiong-bahru-bakery"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Toast Box (VivoCity)",
+   "unit": "#B2-54",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-toast-box"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Ya Kun Kaya Toast (VivoCity)",
+   "unit": "#B2-K28",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "4Fingers Crispy Chicken (VivoCity)",
+   "unit": "#02-120",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-4fingers-crispy-chicken"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "A&W (VivoCity)",
+   "unit": "#B2-43",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-a-w"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Burger King (VivoCity)",
+   "unit": "#B2-41",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-burger-king"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Jollibee (VivoCity)",
+   "unit": "#B2-42",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-jollibee"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "KFC (VivoCity)",
+   "unit": "#B2-32",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-kfc"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "McDonald’s (VivoCity)",
+   "unit": "#B2-44",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-mcdonald-s"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Shake Shack (VivoCity)",
+   "unit": "#01-163",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-shake-shack"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Food Republic (VivoCity)",
+   "unit": "#03-01",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-food-republic"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Kopitiam Food Hall (VivoCity)",
+   "unit": "#B2-40",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-kopitiam-food-hall"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "AMACHA 阿嬷茶语 (VivoCity)",
+   "unit": "#02-133",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-amacha"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "ARTEASG (VivoCity)",
+   "unit": "#B2-K19",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-arteasg"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Bake It Babe (VivoCity)",
+   "unit": "#01-58",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-bake-it-babe"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Birds of Paradise Gelato Boutique (VivoCity)",
+   "unit": "#B2-35",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-birds-of-paradise-gelato-boutique"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Boost Express (VivoCity)",
+   "unit": "#02-134",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-boost-express"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Cakebar (VivoCity)",
+   "unit": "#B2-52",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-cakebar"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Candy Empire (VivoCity)",
+   "unit": "#B2-03",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-candy-empire"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "ChaPanda 茶百道 (VivoCity)",
+   "unit": "#B2-23D",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-chapanda"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Chou Niang Fermented Rice (VivoCity)",
+   "unit": "#B2-05",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-chou-niang-fermented-rice"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Garrett Popcorn Shops (VivoCity)",
+   "unit": "#02-63",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-garrett-popcorn-shops"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Ichigo by Tea Cottage (VivoCity)",
+   "unit": "#B2-K25",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-ichigo-by-tea-cottage"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "LiHO TEA (VivoCity)",
+   "unit": "#02-95",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-liho-tea"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "llaollao (VivoCity)",
+   "unit": "#B2-04A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-llaollao"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "luckin coffee (VivoCity)",
+   "unit": "#02-119",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-luckin-coffee"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Mister Donut (VivoCity)",
+   "unit": "#B2-51",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-mister-donut"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Mr. Coconut (VivoCity)",
+   "unit": "#B2-46",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-mr-coconut"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Nasty Cookie (VivoCity)",
+   "unit": "#B2-49",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-nasty-cookie"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Ningji (VivoCity)",
+   "unit": "#02-135",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-ningji"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "PlayMade (VivoCity)",
+   "unit": "#02-118",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-playmade"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Project Acai (VivoCity)",
+   "unit": "#01-92",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-project-acai"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "SF Juice (VivoCity)",
+   "unit": "#B2-05A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-sf-juice"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Tai Cheong Bakery (VivoCity)",
+   "unit": "#B2-02",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-tai-cheong-bakery"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Ah Mah Homemade Cake (VivoCity)",
+   "unit": "#B2-K8",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-ah-mah-homemade-cake"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Auntie Anne’s (VivoCity)",
+   "unit": "#B2-K6",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-auntie-anne-s"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "BEARD PAPA’S (VivoCity)",
+   "unit": "#B2-K11",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-beard-papa-s"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Bee Cheng Hiang (VivoCity)",
+   "unit": "#B2-48",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-bee-cheng-hiang"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Ben & Jerry’s (VivoCity)",
+   "unit": "#02-K1",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-ben-jerry-s"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "BreadTalk (VivoCity)",
+   "unit": "#B2-50",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-breadtalk"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Butter & Cream (VivoCity)",
+   "unit": "#B2-K10",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-butter-cream"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "DOUGH MAGIC 扑面而来 (VivoCity)",
+   "unit": "#B2-K21",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-dough-magic"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Eat Pizza (VivoCity)",
+   "unit": "#B2-K24",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-eat-pizza"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Fragrance (VivoCity)",
+   "unit": "#B2-K22",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-fragrance"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Gokoku Japanese Bakery (VivoCity)",
+   "unit": "#B2-09",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-gokoku-japanese-bakery"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Imperial KongFu Roti (VivoCity)",
+   "unit": "#B2-K14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-imperial-kongfu-roti"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Kazo (VivoCity)",
+   "unit": "#B2-K9",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-kazo"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Koong Woh Tong (VivoCity)",
+   "unit": "#B2-06",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-koong-woh-tong"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Krispy Kreme (VivoCity)",
+   "unit": "#B2-K26",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-krispy-kreme"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Old Chang Kee (VivoCity)",
+   "unit": "#B2-K15",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-old-chang-kee"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Pastago and CHICHA San Chen (VivoCity)",
+   "unit": "#B2-53",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-pastago-and-chicha-san-chen"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Polar Puffs & Cakes (VivoCity)",
+   "unit": "#B2-K5",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-polar-puffs-cakes"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Potato Corner (VivoCity)",
+   "unit": "#B2-K16",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-potato-corner"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Seremban Kee Mei Siew Pow (VivoCity)",
+   "unit": "#B2-K12",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-seremban-kee-mei-siew-pow"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Stuff’d (VivoCity)",
+   "unit": "#B2-K17",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-stuff-d"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "TALAD THAI BANANA ตลาดไทย (VivoCity)",
+   "unit": "#B2-K13",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-talad-thai-banana"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Tsuzumi Dango つづみ団子 (VivoCity)",
+   "unit": "#B2-K20",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-tsuzumi-dango"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Venchi (VivoCity)",
+   "unit": "#01-K22",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-venchi"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "WOK HEY (VivoCity)",
+   "unit": "#B2-K23",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-wok-hey"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "Yamazaki (VivoCity)",
+   "unit": "#B2-10",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-yamazaki"
+  },
+  {
+   "cluster": "m-vivocity",
+   "name": "南记 Nam Kee Pau (VivoCity)",
+   "unit": "#B2-K18",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-vivocity"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-vivocity-nam-kee-pau"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "Chateraise (Thomson Plaza)",
+   "unit": "#01-02",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-chateraise"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "DJ Bakery (Thomson Plaza)",
+   "unit": "#01-73",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-dj-bakery"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "Four Leaves (Thomson Plaza)",
+   "unit": "#01-03/04",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-four-leaves"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "KOI THÉ (Thomson Plaza)",
+   "unit": "#01-18",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-koi-th"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "Omoté (Thomson Plaza)",
+   "unit": "#03-24A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-omot"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "Rocky Master (Thomson Plaza)",
+   "unit": "#01-38/39",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-rocky-master"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "Shi Li Fang Hot Pot (Thomson Plaza)",
+   "unit": "#01-40/41/42",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-shi-li-fang-hot-pot"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "Shift Bar & Kitchen by CommonFolks (Thomson Plaza)",
+   "unit": "#01-59",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-shift-bar-kitchen-by-commonfolks"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "Sushiro (Thomson Plaza)",
+   "unit": "#02-24/25/26/27/28/29",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-sushiro"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "Swensen’s (Thomson Plaza)",
+   "unit": "#03-23/23A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-swensen-s"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "The Coriander Cafe (Thomson Plaza)",
+   "unit": "#02-08",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-the-coriander-cafe"
+  },
+  {
+   "cluster": "m-thomson-plaza",
+   "name": "The Grumpy Bear (Thomson Plaza)",
+   "unit": "#02-10",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-thomson-plaza"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-thomson-plaza-the-grumpy-bear"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BARCOOK (NEX)",
+   "unit": "#03-K18",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-barcook"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BENGAWAN SOLO (NEX)",
+   "unit": "#B2-69",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-bengawan-solo"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BREADTALK (BREADTALK FAMILY) (NEX)",
+   "unit": "#B2-58/59",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-breadtalk-breadtalk-family"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "CHATERAISE (NEX)",
+   "unit": "#B2-49A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-chateraise"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "FOUR LEAVES (NEX)",
+   "unit": "#B2-43",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-four-leaves"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "GOKOKU JAPANESE BAKERY (&JOY JAPANESE FOOD STREET) (NEX)",
+   "unit": "#B1-K1",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-gokoku-japanese-bakery-joy-japanese-food-street"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "POLAR PUFFS & CAKES (NEX)",
+   "unit": "#03-K3/K4",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-polar-puffs-cakes"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "RIVE GAUCHE PATISSERIE (NEX)",
+   "unit": "#B1-16",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-rive-gauche-patisserie"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "THYE MOH CHAN (BREADTALK FAMILY) (NEX)",
+   "unit": "#B2-58/59",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-thye-moh-chan-breadtalk-family"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "UMAI (NEX)",
+   "unit": "#03-01",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-umai"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "FOOD JUNCTION (NEX)",
+   "unit": "#04-36/37",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-food-junction"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "FOOD REPUBLIC (NEX)",
+   "unit": "#B2-63/64/65/66/70/71/72",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-food-republic"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "4FINGERS CRISPY CHICKEN (NEX)",
+   "unit": "#B2-50/51",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-4fingers-crispy-chicken"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "A HOT HIDEOUT (NEX)",
+   "unit": "#B1-76/77",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-a-hot-hideout"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "ABURI-EN (NEX)",
+   "unit": "#01-63/64/65",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-aburi-en"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "ALLGOOD GOURMET (NEX)",
+   "unit": "#B2-49",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-allgood-gourmet"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "AYAM PENYET RIA (NEX)",
+   "unit": "#01-57",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-ayam-penyet-ria"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BASKIN ROBBINS (NEX)",
+   "unit": "#01-K4/K5",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-baskin-robbins"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BATTERCATCH (NEX)",
+   "unit": "#B1-34/35",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-battercatch"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BEAUTY IN THE POT (NEX)",
+   "unit": "#02-01/02/03",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-beauty-in-the-pot"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BURGER KING (NEX)",
+   "unit": "#B1-30/31",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-burger-king"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "CANTON PARADISE (NEX)",
+   "unit": "#02-04/05/06",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-canton-paradise"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "CHAGEE (NEX)",
+   "unit": "#02-K2/K3/K4",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-chagee"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "CHARCOAL GRILL SHINPACHI (NEX)",
+   "unit": "#B1-80A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-charcoal-grill-shinpachi"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "CHIN MEE CHIN (NEX)",
+   "unit": "#B2-60/61",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-chin-mee-chin"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "COLLIN'S® (NEX)",
+   "unit": "#B1-27",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-collin-s"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "DELIBOWL EXPRESS (NEX)",
+   "unit": "#04-15/16",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-delibowl-express"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "DIAN XIAO ER (NEX)",
+   "unit": "#02-09/10",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-dian-xiao-er"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "DIN TAI FUNG (NEX)",
+   "unit": "#B1-10/11/12",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-din-tai-fung"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "EAT 3 BOWLS (NEX)",
+   "unit": "#B1-13/14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-eat-3-bowls"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "MI BIBIMBAP (NEX)",
+   "unit": "#B1-75",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-mi-bibimbap"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "MONSTER CURRY (NEX)",
+   "unit": "#B1-08",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-monster-curry"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "MOS BURGER (NEX)",
+   "unit": "#B2-02/03",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-mos-burger"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "ONGGII (NEX)",
+   "unit": "#02-13",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-onggii"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "ORIENTAL KOPI (NEX)",
+   "unit": "#B1-15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-oriental-kopi"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "PARIS BAGUETTE (NEX)",
+   "unit": "#01-67",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-paris-baguette"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "PEPPER LUNCH (NEX)",
+   "unit": "#B1-45",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-pepper-lunch"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "PUTIEN (NEX)",
+   "unit": "#02-18/19",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-putien"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "QI JI (NEX)",
+   "unit": "#03-10",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-qi-ji"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "RAMEN KIOU (&JOY JAPANESE FOOD STREET) (NEX)",
+   "unit": "#B1-80B",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-ramen-kiou-joy-japanese-food-street"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SAIZERIYA (NEX)",
+   "unit": "#01-61/62",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-saizeriya"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SEORAE JIB (NEX)",
+   "unit": "#B1-73/74",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-seorae-jib"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SEOUL NOODLE SHOP (NEX)",
+   "unit": "#B2-58/59",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-seoul-noodle-shop"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SHABU SAI (NEX)",
+   "unit": "#03-07",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-shabu-sai"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SOUP RESTAURANT (NEX)",
+   "unit": "#02-15/16",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-soup-restaurant"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "STARBUCKS (NEX)",
+   "unit": "#02-K1",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-starbucks"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "STEAK 99 (NEX)",
+   "unit": "#03-06",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-steak-99"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SUBWAY (NEX)",
+   "unit": "#02-11",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-subway"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SUSHI EXPRESS (NEX)",
+   "unit": "#B2-40",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-sushi-express"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SWENSEN'S (NEX)",
+   "unit": "#02-07/08",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-swensen-s"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "TAI ER (NEX)",
+   "unit": "#03-11/12/13",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-tai-er"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "TAMAGO-EN (NEX)",
+   "unit": "#02-K5/K6",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-tamago-en"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "TEXAS CHICKEN (NEX)",
+   "unit": "#04-18/19/20",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-texas-chicken"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "THE COFFEE BEAN AND TEA LEAF (NEX)",
+   "unit": "#02-K7/K8/K9/K10/K11/K12/K13",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-the-coffee-bean-and-tea-leaf"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "TIM HORTONS (NEX)",
+   "unit": "#01-10",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-tim-hortons"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "TOAST BOX (BREADTALK FAMILY) (NEX)",
+   "unit": "#B2-58/59",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-toast-box-breadtalk-family"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "TUK TUK CHA TREASURES (NEX)",
+   "unit": "#02-12",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-tuk-tuk-cha-treasures"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "XIANG XIANG HUNAN CUISINE (NEX)",
+   "unit": "#B1-41/42/43",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-xiang-xiang-hunan-cuisine"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "YA KUN KAYA TOAST (NEX)",
+   "unit": "#B2-46",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "YAKI YAKI BO (&JOY JAPANESE FOOD STREET) (NEX)",
+   "unit": "#B1-79",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-yaki-yaki-bo-joy-japanese-food-street"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "YAKINIKU-GO (&JOY JAPANESE FOOD STREET) (NEX)",
+   "unit": "#B1-78",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-yakiniku-go-joy-japanese-food-street"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "YEW KEE SPECIALITIES (NEX)",
+   "unit": "#B1-46A",
+   "cuisine": "braised",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-yew-kee-specialities"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "YOSHINOYA (NEX)",
+   "unit": "#B1-36/37",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-yoshinoya"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "AN ACAI AFFAIR (NEX)",
+   "unit": "#B2-53",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-an-acai-affair"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "AUNTIE ANNE'S (NEX)",
+   "unit": "#03-K10",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-auntie-anne-s"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BEE CHENG HIANG (NEX)",
+   "unit": "#B2-11",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-bee-cheng-hiang"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BOOST JUICE BARS (NEX)",
+   "unit": "#B2-48B",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-boost-juice-bars"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "BUTTER & CREAM (NEX)",
+   "unit": "#B2-47",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-butter-cream"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "CHICHA SAN CHEN (NEX)",
+   "unit": "#02-13A",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-chicha-san-chen"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "CHINATOWN TAN'S TUTU COCONUT CAKE (NEX)",
+   "unit": "#03-K15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-chinatown-tan-s-tutu-coconut-cake"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "CRAVE (NEX)",
+   "unit": "#B2-67",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-crave"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "DOUGH CULTURE (NEX)",
+   "unit": "#B2-09",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-dough-culture"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "FAMOUS AMOS (NEX)",
+   "unit": "#03-K5/K6",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-famous-amos"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "FRAGRANCE (NEX)",
+   "unit": "#03-14",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-fragrance"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "HO KEE PAU (NEX)",
+   "unit": "#B2-42",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-ho-kee-pau"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "I LOVE TAIMEI (NEX)",
+   "unit": "#B2-48A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-i-love-taimei"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "KOI THE (NEX)",
+   "unit": "#B1-07",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-koi-the"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "KOONG WOH TONG (NEX)",
+   "unit": "#B2-48",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-koong-woh-tong"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "KRISPY KREME (NEX)",
+   "unit": "#03-K13",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-krispy-kreme"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "LEE WEE & BROTHERS (NEX)",
+   "unit": "#03-K11",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-lee-wee-brothers"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "LIHO (NEX)",
+   "unit": "#04-K22",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-liho"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "LIZOO (NEX)",
+   "unit": "#B2-39",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-lizoo"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "MR BEAN (NEX)",
+   "unit": "#B2-04",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-mr-bean"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "MR. COCONUT (NEX)",
+   "unit": "#03-K16/K17",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-mr-coconut"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "MUNCHI PANCAKES (NEX)",
+   "unit": "#03-K7/K8",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-munchi-pancakes"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "NINE FRESH (NEX)",
+   "unit": "#03-K14",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-nine-fresh"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "OLD CHANG KEE (NEX)",
+   "unit": "#B2-12",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-old-chang-kee"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "ORIENTAL HERBAL TEA (NEX)",
+   "unit": "#B2-68",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-oriental-herbal-tea"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "PLAYMADE (NEX)",
+   "unit": "#04-17",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-playmade"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "PLUM VILLAGE (NEX)",
+   "unit": "#04-K3",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-plum-village"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "PULL-TAB COFFEE (NEX)",
+   "unit": "#B1-44",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-pull-tab-coffee"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "RITZ APPLE STRUDEL (NEX)",
+   "unit": "#03-K9",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-ritz-apple-strudel"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "ROYCE' (NEX)",
+   "unit": "#B2-33",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-royce"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SF FRUITS (NEX)",
+   "unit": "#03-K1/K2",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-sf-fruits"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SHIHLIN TAIWAN STREET FOOD (NEX)",
+   "unit": "#03-K12",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-shihlin-taiwan-street-food"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "SMOOY (NEX)",
+   "unit": "#04-39",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-smooy"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "STUFF'D (NEX)",
+   "unit": "#B2-47A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-stuff-d"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "TORI-Q (NEX)",
+   "unit": "#B2-52",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-tori-q"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "WANPO TEA SHOP (NEX)",
+   "unit": "#B2-57",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-wanpo-tea-shop"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "WINE CONNECTION (NEX)",
+   "unit": "#B2-41",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-wine-connection"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "WOK HEY (NEX)",
+   "unit": "#B2-10",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-wok-hey"
+  },
+  {
+   "cluster": "m-nex",
+   "name": "YOLE (NEX)",
+   "unit": "#03-K19/K20/K21",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-nex"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-nex-yole"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "5 SENSES BISTRO (The Star Vista)",
+   "unit": "#02-21",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-5-senses-bistro"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Akimitsu (The Star Vista)",
+   "unit": "#B1-08",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-akimitsu"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "An Açaí Affair (The Star Vista)",
+   "unit": "#02-28",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-an-a-a-affair"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Awfully Chocolate (The Star Vista)",
+   "unit": "#02-18",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-awfully-chocolate"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Beauty in The Pot (The Star Vista)",
+   "unit": "#02-24",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-beauty-in-the-pot"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Boon Tong Kee Happynest (The Star Vista)",
+   "unit": "#B1-07/B1-41",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-boon-tong-kee-happynest"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Boost Juice Bars (The Star Vista)",
+   "unit": "#B1-40",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-boost-juice-bars"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Canton Paradise (The Star Vista)",
+   "unit": "#B1-45/46",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-canton-paradise"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Carl's Jr. (The Star Vista)",
+   "unit": "#B1-10",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-carl-s-jr"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Catbake (The Star Vista)",
+   "unit": "#B1-43",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-catbake"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Cedele (The Star Vista)",
+   "unit": "#01-19",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-cedele"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Chen's Mapo Tofu (The Star Vista)",
+   "unit": "#02-08",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-chen-s-mapo-tofu"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Chi-Bing (The Star Vista)",
+   "unit": "#01-43",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-chi-bing"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "CHICHA San Chen (The Star Vista)",
+   "unit": "#02-28B",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-chicha-san-chen"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "CoCo ICHIBANYA (The Star Vista)",
+   "unit": "#02-06",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-coco-ichibanya"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "CRAVE (The Star Vista)",
+   "unit": "#B1-42",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-crave"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Dan's Steaks (The Star Vista)",
+   "unit": "#02-22",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-dan-s-steaks"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Dewgather Coffee House (The Star Vista)",
+   "unit": "#01-46",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-dewgather-coffee-house"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "EAT. (The Star Vista)",
+   "unit": "#B1-38",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-eat"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Eighteen Chefs (The Star Vista)",
+   "unit": "#02-12/13/14/15",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-eighteen-chefs"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Fatburger & Buffalo's (The Star Vista)",
+   "unit": "#01-33/01-K2",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-fatburger-buffalo-s"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Four Leaves (The Star Vista)",
+   "unit": "#B1-33",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-four-leaves"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Freshly Cold Noodle Bar (The Star Vista)",
+   "unit": "#01-48",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-freshly-cold-noodle-bar"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Friends by PONTIAN (The Star Vista)",
+   "unit": "#B1-37/37A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-friends-by-pontian"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Fun Toast (The Star Vista)",
+   "unit": "#02-03",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-fun-toast"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Geláre (The Star Vista)",
+   "unit": "#02-27",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-gel-re"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Guzman y Gomez (The Star Vista)",
+   "unit": "#01-31/32/01-K1",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-guzman-y-gomez"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Gyu-Kaku Japanese BBQ (The Star Vista)",
+   "unit": "#02-17",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-gyu-kaku-japanese-bbq"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Imakatsu (The Star Vista)",
+   "unit": "#01-17",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-imakatsu"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Iminho Roasted House (The Star Vista)",
+   "unit": "#01-20/21",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-iminho-roasted-house"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "IPPUDO (The Star Vista)",
+   "unit": "#02-19",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-ippudo"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "iSTEAKS Diner (The Star Vista)",
+   "unit": "#01-42/K3/01-K8",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-isteaks-diner"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Itacho Sushi (The Star Vista)",
+   "unit": "#B1-12",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-itacho-sushi"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Ji De Chi Dessert (The Star Vista)",
+   "unit": "#B1-37B",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-ji-de-chi-dessert"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Killiney (The Star Vista)",
+   "unit": "#01-49",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-killiney"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Lao Huo Tang (The Star Vista)",
+   "unit": "#B1-31A",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-lao-huo-tang"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Le Shrimp Ramen (The Star Vista)",
+   "unit": "#02-24",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-le-shrimp-ramen"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Lemuel Chocolate (The Star Vista)",
+   "unit": "#01-04/05",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-lemuel-chocolate"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "LiHO Tea (The Star Vista)",
+   "unit": "#B1-39",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-liho-tea"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Monki Taiwan Cafe (The Star Vista)",
+   "unit": "#01-41",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-monki-taiwan-cafe"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Morganfield's (The Star Vista)",
+   "unit": "#02-23",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-morganfield-s"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Nam Kee Pau (The Star Vista)",
+   "unit": "#B1-40A",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-nam-kee-pau"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Nando's (The Star Vista)",
+   "unit": "#B1-09",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-nando-s"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "NeNe Chicken (The Star Vista)",
+   "unit": "#01-24",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-nene-chicken"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Nozomi (The Star Vista)",
+   "unit": "#02-20",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-nozomi"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Plan A Dessert Cafe (The Star Vista)",
+   "unit": "#02-27A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-plan-a-dessert-cafe"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Rive Gauche Patisserie (The Star Vista)",
+   "unit": "#B1-37C",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-rive-gauche-patisserie"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Rollie Olie (The Star Vista)",
+   "unit": "#02-05",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-rollie-olie"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Saizeriya (The Star Vista)",
+   "unit": "#01-44/45",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-saizeriya"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Shake Shake In A Tub (The Star Vista)",
+   "unit": "#B1-37D",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-shake-shake-in-a-tub"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Shi Li Fang (The Star Vista)",
+   "unit": "#02-09",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-shi-li-fang"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Signature KOI (The Star Vista)",
+   "unit": "#01-06",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-signature-koi"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "So Pho (The Star Vista)",
+   "unit": "#B1-11",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-so-pho"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Subway (The Star Vista)",
+   "unit": "#01-22",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-subway"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Texas Chicken (The Star Vista)",
+   "unit": "#B1-13",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-texas-chicken"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "The Cocoa Trees (The Star Vista)",
+   "unit": "#01-12",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-the-cocoa-trees"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Twelve Cupcakes (The Star Vista)",
+   "unit": "#01-47",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-twelve-cupcakes"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Warm Up Cafe (The Star Vista)",
+   "unit": "#02-10",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-warm-up-cafe"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Watami (The Star Vista)",
+   "unit": "#02-16",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-watami"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "YAYOI (The Star Vista)",
+   "unit": "#02-01/02",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-yayoi"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Yew Kee Specialities (The Star Vista)",
+   "unit": "#B1-31",
+   "cuisine": "braised",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-yew-kee-specialities"
+  },
+  {
+   "cluster": "m-the-star-vista",
+   "name": "Zaffron Kitchen (The Star Vista)",
+   "unit": "#02-04",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "singmalls-m-the-star-vista"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-the-star-vista-zaffron-kitchen"
   }
  ]
 }
