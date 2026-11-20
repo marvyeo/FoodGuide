@@ -1,9 +1,9 @@
 # Makan Map — project state
 
-> **Next chat name: `FoodGuide ver 3`**
-> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 3**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
+> **Next chat name: `FoodGuide ver 4`**
+> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 4**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
-_Last updated: 20 Nov 2026, ~09:00 SGT. **Sprints 1–2 (Orchard) done and merged** (PRs #8, #9; 3,021 places live). **Start here next: sprint 3 (Marina / Civic), section 0.** Before it, also: (a) re-geocode the 15 Orchard malls whose pins are approximate (notes say "Map pin approximate"); OneMap search returned nothing on 20 Nov, retry it; (b) Shaw House (350 Orchard Rd) still has no list — ask the owner for a link._
+_Last updated: 20 Nov 2026, SGT (ver 3 session). **Sprint 3 (Marina / Civic) done except Marina Bay Link Mall** (PR open from `data/central-sprint-3`; 3,351 places after merge). **Start here next: sprint 4 (Chinatown / river), section 0.** Carry-over gaps: (a) Marina Bay Link Mall has no public directory (mbfc.com.sg/retail has none; marinabaylink.com.sg redirects to bythebay.com.sg); SingMalls fallback was not fetched (approval unanswered); (b) Millenia Walk uses SingMalls (undated) because millenia-walk.com refused the browser pane; re-check against the landlord; (c) Capitol Singapore: only the Restaurants & Cafes category (25); Capitol Bistro / Famous Treasure not counted; (d) 20 malls with approximate pins to re-geocode with OneMap (15 Orchard + 5 new); (e) Shaw House still has no list._
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
@@ -49,7 +49,7 @@ The owner gave a 63-entry list of malls to map (it replaces the zone-by-zone ord
 |---|---|---|
 | ~~1 Orchard, big~~ ✅ 20 Nov | ION Orchard 66, Ngee Ann City 40, Wisma Atria 32, Paragon 56, 313@somerset 57, Orchard Central 30, Orchard Gateway 32 | ~41 browser calls. Hours for ION, Wisma, 313, Orchard Central; none published for Ngee Ann City, Paragon, Orchard Gateway. **Map pins approximate** (OneMap search returned nothing on 20 Nov): re-geocode. |
 | ~~2 Orchard, smaller~~ ✅ 20 Nov | Far East Plaza 54, Lucky Plaza 39, Mandarin Gallery 15, Palais Renaissance 12, Tanglin Mall 23 (official); Scotts Square 10, Wheelock Place 16 (SingMalls ~2024, matches the independent guide thewheelockplace.com), **Shaw Centre 21** (shawcentre.sg/dine + tenant pages, added at the owner's pointer) | ~40 calls. **Shaw House (350 Orchard Rd, Isetan Scotts) is a different building from Shaw Centre (1 Scotts Rd); it still has no list** → gap. wheelockplace.com now redirects to a gambling spam site: never open it. No hours from any of these sites. Pins approximate. |
-| 3 Marina / Civic | Suntec City, Marina Square, Millenia Walk, Marina Bay Link Mall, Shoppes at Marina Bay Sands, Capitol Singapore | Suntec and MBS are large |
+| ~~3 Marina / Civic~~ ✅ 20 Nov (MBLM open) | Suntec City 163 (official), Marina Square 61 (official, Food), Millenia Walk 50 (SingMalls), Shoppes at MBS 38 (official restaurants view-all + Quick Bites; hotel-tower restaurants excluded), Capitol Singapore 25 (official Restaurants & Cafes) | ~45 calls. No hours from any. **Marina Bay Link Mall: no directory found → gap.** Recipes: Suntec `/store_categories/dining` (name / #unit pairs in `main`); Marina Square `/stores` (name / level / `#unit \| Food`); Capitol `/directory/?category=3&page=N`; MBS `/restaurants/view-all.html` cards + `/shopping/store-directory.html` (QUICK BITES), class `restauranttitlefilter__container--carddetails__card`. Note: `tools/grab.py` finds no transcript in cloud sessions; rows were pasted via heredoc into `make_roster.py`. |
 | 4 Chinatown / river | 100AM, Chinatown Point, Clarke Quay Central, UE Square, Great World | Clarke Quay Central = Far East recipe |
 | 5 Novena / Kallang | Velocity@Novena Square, Square 2, United Square, City Square Mall, Zhongshan Mall, Aperia Mall, Kallang Wave Mall | Square 2 = Far East recipe |
 | 6 South / north / west | VivoCity, The Star Vista, Thomson Plaza, Waterway Point, NEX | Check the Frasers feed first (one call covers all Frasers malls) |
