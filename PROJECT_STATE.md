@@ -1,7 +1,7 @@
 # Makan Map — project state
 
-> **Next chat name: `FoodGuide ver 9`**
-> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 9**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
+> **Next chat name: `FoodGuide ver 10`**
+> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 10**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
 _Last updated: 20 Nov 2026, SGT (ver 8 session). **Sprint 6 done (6a Waterway Point PR #14 merged; 6b open from `data/sprint-6b`): VivoCity 152, Thomson Plaza 12, NEX 102, The Star Vista 62; 4,289 places.** VivoCity recipe that worked: on `vivocity.com.sg/find-a-store` click each category `a.selectable.store`, then scroll the window to the bottom repeatedly (infinite scroll loads 12 per step); collect `.ais-Hits-item` text. NEX: `nex.com.sg/Directory/Category/...` pages use client-side pagination (`.pagination a.page-link`); click each page and parse name/#unit lines. Thomson Plaza: only one food category (`store-directory/?filter=5`, 'load more'), 12 outlets: looks incomplete. Star Vista: no official site found, uses SingMalls (undated). **Start here next: Sprint 7 (Changi Airport T1-T4, White Sands, Paya Lebar Square), or west malls (JEM, Westgate, Jurong Point, IMM, Bukit Panjang Plaza, etc.) as a new sprint; ask the owner which.** Carry-overs: OneMap token (pins approximate), Millenia Walk site refused, Marina Bay Link Mall and Shaw House no directory, Square 2 Hawkers' Street missing.
 
