@@ -1126,6 +1126,26 @@
    "name": "singmalls – The Star Vista directory",
    "url": "https://singmalls.app/en/malls/the-star-vista/directory",
    "date": "undated third-party directory (food outlets only; J-mart and RedMan left out); official site not found"
+  },
+  "official-m-changi-t1": {
+   "name": "official – Changi Airport Terminal 1 (public area) directory",
+   "url": "https://www.changiairport.com/en/dine-and-shop/dining-directory.html",
+   "date": "live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out)"
+  },
+  "official-m-changi-t2": {
+   "name": "official – Changi Airport Terminal 2 (public area) directory",
+   "url": "https://www.changiairport.com/en/dine-and-shop/dining-directory.html",
+   "date": "live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out)"
+  },
+  "official-m-changi-t3": {
+   "name": "official – Changi Airport Terminal 3 (public area) directory",
+   "url": "https://www.changiairport.com/en/dine-and-shop/dining-directory.html",
+   "date": "live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out)"
+  },
+  "official-m-changi-t4": {
+   "name": "official – Changi Airport Terminal 4 (public area) directory",
+   "url": "https://www.changiairport.com/en/dine-and-shop/dining-directory.html",
+   "date": "live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out)"
   }
  },
  "clusters": [
@@ -2835,6 +2855,86 @@
     "source": "singmalls-m-the-star-vista",
     "count": 62,
     "snapshot": "undated third-party directory (food outlets only; J-mart and RedMan left out); official site not found",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-changi-t1",
+   "name": "Changi Airport Terminal 1 (public area)",
+   "type": "mall",
+   "address": "78 Airport Boulevard, T1, S819642",
+   "lat": 1.3574,
+   "lng": 103.9887,
+   "zone": "east",
+   "stalls_total": 8,
+   "notes": "Public-area (landside) food outlets from Changi's official dining directory; no airside/transit outlets. Paid parking. Open-hour outlets vary, many 24h. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "roster": {
+    "source": "official-m-changi-t1",
+    "count": 8,
+    "snapshot": "live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-changi-t2",
+   "name": "Changi Airport Terminal 2 (public area)",
+   "type": "mall",
+   "address": "60 Airport Boulevard, T2, S819643",
+   "lat": 1.3541,
+   "lng": 103.9886,
+   "zone": "east",
+   "stalls_total": 19,
+   "notes": "Public-area (landside) food outlets from Changi's official dining directory; no airside/transit outlets. Paid parking. Open-hour outlets vary, many 24h. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "roster": {
+    "source": "official-m-changi-t2",
+    "count": 19,
+    "snapshot": "live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-changi-t3",
+   "name": "Changi Airport Terminal 3 (public area)",
+   "type": "mall",
+   "address": "65 Airport Boulevard, T3, S819663",
+   "lat": 1.3562,
+   "lng": 103.9858,
+   "zone": "east",
+   "stalls_total": 23,
+   "notes": "Public-area (landside) food outlets from Changi's official dining directory; no airside/transit outlets. Paid parking. Open-hour outlets vary, many 24h. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "roster": {
+    "source": "official-m-changi-t3",
+    "count": 23,
+    "snapshot": "live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-changi-t4",
+   "name": "Changi Airport Terminal 4 (public area)",
+   "type": "mall",
+   "address": "10 Airport Boulevard, T4, S819665",
+   "lat": 1.3396,
+   "lng": 103.984,
+   "zone": "east",
+   "stalls_total": 1,
+   "notes": "Public-area (landside) food outlets from Changi's official dining directory; no airside/transit outlets. Paid parking. Open-hour outlets vary, many 24h. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "official-m-changi-t4"
+   ],
+   "roster": {
+    "source": "official-m-changi-t4",
+    "count": 1,
+    "snapshot": "live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out)",
     "fetched": "2026-11-20"
    }
   }
@@ -124130,6 +124230,1041 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-the-star-vista-zaffron-kitchen"
+  },
+  {
+   "cluster": "m-changi-t1",
+   "name": "ANJAPPAR (Changi Airport Terminal 1)",
+   "unit": "#03-20",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t1-anjappar"
+  },
+  {
+   "cluster": "m-changi-t1",
+   "name": "MA MUM TO GO (Changi Airport Terminal 1)",
+   "unit": "#01-K23",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t1-ma-mum-to-go"
+  },
+  {
+   "cluster": "m-changi-t1",
+   "name": "ORCHIS CAFETERIA (Changi Airport Terminal 1)",
+   "unit": "#B1-12A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t1-orchis-cafeteria"
+  },
+  {
+   "cluster": "m-changi-t1",
+   "name": "PENANG CULTURE (Changi Airport Terminal 1)",
+   "unit": "#03-19A",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t1-penang-culture"
+  },
+  {
+   "cluster": "m-changi-t1",
+   "name": "SABOTEN (Changi Airport Terminal 1)",
+   "unit": "#03-21",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t1-saboten"
+  },
+  {
+   "cluster": "m-changi-t1",
+   "name": "TERRACE CHINESE KITCHEN (Changi Airport Terminal 1)",
+   "unit": "#03-22",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t1-terrace-chinese-kitchen"
+  },
+  {
+   "cluster": "m-changi-t1",
+   "name": "VE/LA (Changi Airport Terminal 1)",
+   "unit": "#01-K22",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t1-ve-la"
+  },
+  {
+   "cluster": "m-changi-t1",
+   "name": "WOKE RAMEN (Changi Airport Terminal 1)",
+   "unit": "#03-19B",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t1"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t1-woke-ramen"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "A-ROY THAI RESTAURANT (Changi Airport Terminal 2)",
+   "unit": "#03-14",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-a-roy-thai-restaurant"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "CHAGEE (Changi Airport Terminal 2)",
+   "unit": "#02-01",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-chagee"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "CAFE O (Changi Airport Terminal 2)",
+   "unit": "#01-09C",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-cafe-o"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "KIMCHI MAMA (Changi Airport Terminal 2)",
+   "unit": "#03-10",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-kimchi-mama"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "PEACH GARDEN (Changi Airport Terminal 2)",
+   "unit": "#03-16",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-peach-garden"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "PASTAMANIA (Changi Airport Terminal 2)",
+   "unit": "#03-22A",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-pastamania"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "PIZZA MARU (Changi Airport Terminal 2)",
+   "unit": "#03-09",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-pizza-maru"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "RAMEN KEISUKE SINGAPORE (Changi Airport Terminal 2)",
+   "unit": "#03-15A",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-ramen-keisuke-singapore"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "STUFF'D (Changi Airport Terminal 2)",
+   "unit": "#01-09B",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-stuff-d"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "SUKIYA (Changi Airport Terminal 2)",
+   "unit": "#02-02",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-sukiya"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "SWENSEN'S UNLIMITED (Changi Airport Terminal 2)",
+   "unit": "#01-03",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-swensen-s-unlimited"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "TAIWAN CULTURE (Changi Airport Terminal 2)",
+   "unit": "#03-11A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-taiwan-culture"
+  },
+  {
+   "cluster": "m-changi-t2",
+   "name": "XW WESTERN GRILL (Changi Airport Terminal 2)",
+   "unit": "#03-23",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t2"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t2-xw-western-grill"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "7CAFE (Changi Airport Terminal 3)",
+   "unit": "#B2-05",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-7cafe"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "365 JUICES BAR (Changi Airport Terminal 3)",
+   "unit": "#B2-27",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-365-juices-bar"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "886 TAIWAN YE SHI (Changi Airport Terminal 3)",
+   "unit": "#B2-40/40A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-886-taiwan-ye-shi"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "ALLORA RISTORANTE & BAR (Changi Airport Terminal 3)",
+   "unit": "#01-999",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-allora-ristorante-bar"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "BIKANERVALA (Changi Airport Terminal 3)",
+   "unit": "#04-01",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-bikanervala"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "CENTRAL THAI (Changi Airport Terminal 3)",
+   "unit": "#03-30/31",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-central-thai"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "EIGHTEEN CHEFS (Changi Airport Terminal 3)",
+   "unit": "#B2-02",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-eighteen-chefs"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "HOKKAIDO BAKED CHEESE TART (Changi Airport Terminal 3)",
+   "unit": "#B2-11",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-hokkaido-baked-cheese-tart"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "ICHIKOKUDO HOKKAIDO RAMEN (Changi Airport Terminal 3)",
+   "unit": "#B2-58",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-ichikokudo-hokkaido-ramen"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "ITEA (Changi Airport Terminal 3)",
+   "unit": "#B2-30",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-itea"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "KOI THE (Changi Airport Terminal 3)",
+   "unit": "#B2-12",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-koi-the"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "KOREA CULTURE (Changi Airport Terminal 3)",
+   "unit": "#03-33",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-korea-culture"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "MALA MIA (Changi Airport Terminal 3)",
+   "unit": "#B2-49/50",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-mala-mia"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "MR TEH TARIK EXPRESS (Changi Airport Terminal 3)",
+   "unit": "#B2-22",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-mr-teh-tarik-express"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "NAMNAM (Changi Airport Terminal 3)",
+   "unit": "#02-91",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-namnam"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "PARADISE DYNASTY (Changi Airport Terminal 3)",
+   "unit": "#03-32",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-paradise-dynasty"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "RASAMALA (Changi Airport Terminal 3)",
+   "unit": "#03-21",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-rasamala"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "ROTIBOY (Changi Airport Terminal 3)",
+   "unit": "#B2-28",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-rotiboy"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "SWENSEN'S (Changi Airport Terminal 3)",
+   "unit": "#B2-31/32",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-swensen-s"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "THEJELLYHEARTS (Changi Airport Terminal 3)",
+   "unit": "#B2-29",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-thejellyhearts"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "TIM HORTONS SG (Changi Airport Terminal 3)",
+   "unit": "#B2-13",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-tim-hortons-sg"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "TP TEA (Changi Airport Terminal 3)",
+   "unit": "#02-93B",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-tp-tea"
+  },
+  {
+   "cluster": "m-changi-t3",
+   "name": "YA KUN FAMILY CAFE (Changi Airport Terminal 3)",
+   "unit": "#B2-07",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t3"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t3-ya-kun-family-cafe"
+  },
+  {
+   "cluster": "m-changi-t4",
+   "name": "MA MUM (Changi Airport Terminal 4)",
+   "unit": "#01-04",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "official-m-changi-t4"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-changi-t4-ma-mum"
   }
  ]
 }

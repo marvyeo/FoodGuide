@@ -1,0 +1,9 @@
+# source: official | https://www.changiairport.com/en/dine-and-shop/dining-directory.html | live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out) | fetched 2026-11-20
+ANJAPPAR|#03-20
+MA MUM TO GO|#01-K23
+ORCHIS CAFETERIA|#B1-12A
+PENANG CULTURE|#03-19A
+SABOTEN|#03-21
+TERRACE CHINESE KITCHEN|#03-22
+VE/LA|#01-K22
+WOKE RAMEN|#03-19B

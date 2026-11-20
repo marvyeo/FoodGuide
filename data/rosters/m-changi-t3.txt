@@ -1,0 +1,24 @@
+# source: official | https://www.changiairport.com/en/dine-and-shop/dining-directory.html | live directory, Public-area outlets with a stated unit only (Transit/airside outlets, multi-outlet cards without units, Jewel and pub/bar-only entries left out) | fetched 2026-11-20
+7CAFE|#B2-05
+365 JUICES BAR|#B2-27
+886 TAIWAN YE SHI|#B2-40/40A
+ALLORA RISTORANTE & BAR|#01-999
+BIKANERVALA|#04-01
+CENTRAL THAI|#03-30/31
+EIGHTEEN CHEFS|#B2-02
+HOKKAIDO BAKED CHEESE TART|#B2-11
+ICHIKOKUDO HOKKAIDO RAMEN|#B2-58
+ITEA|#B2-30
+KOI THE|#B2-12
+KOREA CULTURE|#03-33
+MALA MIA|#B2-49/50
+MR TEH TARIK EXPRESS|#B2-22
+NAMNAM|#02-91
+PARADISE DYNASTY|#03-32
+RASAMALA|#03-21
+ROTIBOY|#B2-28
+SWENSEN'S|#B2-31/32
+THEJELLYHEARTS|#B2-29
+TIM HORTONS SG|#B2-13
+TP TEA|#02-93B
+YA KUN FAMILY CAFE|#B2-07
