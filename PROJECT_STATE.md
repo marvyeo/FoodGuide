@@ -3,7 +3,7 @@
 > **Next chat name: `FoodGuide ver 3`**
 > Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 3**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
-_Last updated: 20 Nov 2026, ~02:00 SGT. **Sprints 1–2 (Orchard) done**: PR #8 merged; sprint 2 on branch `data/sprint2-orchard-small` (7 malls, 169 outlets). Owner ran sprint 2 straight after sprint 1 (overrode the 5-hour gap). Next: sprint 3 (section 0)._
+_Last updated: 20 Nov 2026, ~09:00 SGT. **Sprints 1–2 (Orchard) done and merged** (PRs #8, #9; 3,021 places live). **Start here next: sprint 3 (Marina / Civic), section 0.** Before it, also: (a) re-geocode the 15 Orchard malls whose pins are approximate (notes say "Map pin approximate"); OneMap search returned nothing on 20 Nov, retry it; (b) Shaw House (350 Orchard Rd) still has no list — ask the owner for a link._
 
 > **New chat? Start here.**
 > 1. Read this file. Then `CLAUDE.md`. Then run `python3 tools/coverage.py` for live coverage.
