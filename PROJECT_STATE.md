@@ -1,7 +1,7 @@
 # Makan Map — project state
 
-> **Next chat name: `FoodGuide ver 7`**
-> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 7**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
+> **Next chat name: `FoodGuide ver 8`**
+> Claude: your FIRST reply in a new chat must start with "Rename this chat to: **FoodGuide ver 8**" (you can't rename chats yourself). In your first commit this session, bump the number here by 1.
 
 _Last updated: 20 Nov 2026, SGT (ver 6 session). **Sprint 5b done (Aperia 43 + Kallang Wave 23), PR open from `data/central-sprint-5b` (3,870 places). Start here next: sprint 6 (VivoCity, Star Vista, Thomson Plaza, Waterway Point, NEX; check the Frasers store feed first).** OneMap search still needs a token (re-geocoding of ~32 approximate pins blocked).
 
