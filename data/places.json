@@ -1091,6 +1091,16 @@
    "name": "zhongshanmall – Zhongshan Mall directory",
    "url": "https://zhongshanmall.com.sg/food-beverage/",
    "date": "live page (Food & Beverage)"
+  },
+  "capitaland-aperia-m-aperia-mall": {
+   "name": "capitaland-aperia – Aperia Mall directory",
+   "url": "https://www.capitaland.com/sg/malls/aperia/en/stores.html",
+   "date": "live directory (Food & Beverage)"
+  },
+  "thekallang-kallang-wave-m-kallang-wave-mall": {
+   "name": "thekallang-kallang-wave – Kallang Wave Mall directory",
+   "url": "https://www.thekallang.com.sg/en/mall-and-offers/directory.html",
+   "date": "live directory (F&B picked by name; site has no category field)"
   }
  },
  "clusters": [
@@ -2660,6 +2670,46 @@
     "source": "zhongshanmall-m-zhongshan-mall",
     "count": 13,
     "snapshot": "live page (Food & Beverage)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-aperia-mall",
+   "name": "Aperia Mall",
+   "type": "mall",
+   "address": "12 Kallang Avenue, S339511",
+   "lat": 1.3186,
+   "lng": 103.8644,
+   "zone": "east",
+   "stalls_total": 43,
+   "notes": "Kallang MRT / Geylang side. Official CapitaLand store list (F&B only). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "roster": {
+    "source": "capitaland-aperia-m-aperia-mall",
+    "count": 43,
+    "snapshot": "live directory (Food & Beverage)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-kallang-wave-mall",
+   "name": "Kallang Wave Mall",
+   "type": "mall",
+   "address": "1 Stadium Place, S397628",
+   "lat": 1.3032,
+   "lng": 103.8737,
+   "zone": "central",
+   "stalls_total": 23,
+   "notes": "Next to National Stadium / Stadium MRT. Official directory; F&B picked by name (no category field). Mall under enhancement works to 2028; FairPrice closed for renovation. Tiara Waterfront (Indoor Stadium) left out. (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "roster": {
+    "source": "thekallang-kallang-wave-m-kallang-wave-mall",
+    "count": 23,
+    "snapshot": "live directory (F&B picked by name; site has no category field)",
     "fetched": "2026-11-20"
    }
   }
@@ -112065,6 +112115,1528 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-zhongshan-mall-luckin-coffee"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "A HOT HIDEOUT (Aperia Mall)",
+   "unit": "#01-58 to 59",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-a-hot-hideout"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Bakery Cuisine (Aperia Mall)",
+   "unit": "#01-23",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-bakery-cuisine"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Banzai Izakaya Live House (Aperia Mall)",
+   "unit": "#01-44/45",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-banzai-izakaya-live-house"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "BEUTEA (Aperia Mall)",
+   "unit": "#01-71",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-beutea"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Blanco Court Beef Noodle (Aperia Mall)",
+   "unit": "#01-39",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-blanco-court-beef-noodle"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Chef Foong Restaurant (Aperia Mall)",
+   "unit": "#02-09",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-chef-foong-restaurant"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "EPIKebabs (Aperia Mall)",
+   "unit": "#01-42",
+   "cuisine": "indian",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-epikebabs"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "FM Food Master (Aperia Mall)",
+   "unit": "#02-16",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-fm-food-master"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Folks Collective & Slurp Noodle Bar (Aperia Mall)",
+   "unit": "#01-09 to 15, 17 to 19",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-folks-collective-slurp-noodle-bar"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Ha Jun (Aperia Mall)",
+   "unit": "#01-28, 31A",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-ha-jun"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Hao Lai Ke (Aperia Mall)",
+   "unit": "#01-39",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-hao-lai-ke"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Heritage Tanglin Puff (Aperia Mall)",
+   "unit": "#01-42A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-heritage-tanglin-puff"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Hoe Nam Signatures (Aperia Mall)",
+   "unit": "#01-68 to 69",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-hoe-nam-signatures"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Hundred Grains 百米香 (Aperia Mall)",
+   "unit": "#01-65 to 66",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-hundred-grains"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "IM-EM Thai Kitchen (Aperia Mall)",
+   "unit": "#01-40",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-im-em-thai-kitchen"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Kaeden Cafe (Aperia Mall)",
+   "unit": "#01-25",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-kaeden-cafe"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Kenangan Coffee (Aperia Mall)",
+   "unit": "#01-72",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-kenangan-coffee"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "KOI THE (Aperia Mall)",
+   "unit": "#01-27",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-koi-the"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Kopi & Tarts (Aperia Mall)",
+   "unit": "#01-41",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-kopi-tarts"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "luckin coffee (Aperia Mall)",
+   "unit": "#01-34",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-luckin-coffee"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Madeleine's (Aperia Mall)",
+   "unit": "#01-54",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-madeleine-s"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Martina's Kitchen (Aperia Mall)",
+   "unit": "#01-60 to 61",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-martina-s-kitchen"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "McDonald's (Aperia Mall)",
+   "unit": "#01-24",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-mcdonald-s"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Nai Nai Flavor (Aperia Mall)",
+   "unit": "#01-57",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-nai-nai-flavor"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Nana Original Thai Food (Aperia Mall)",
+   "unit": "#01-53A, K11",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-nana-original-thai-food"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Ottie Pancakes (Aperia Mall)",
+   "unit": "#01-22",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-ottie-pancakes"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "PARIS BAGUETTE Cafe (Aperia Mall)",
+   "unit": "#01-35",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-paris-baguette-cafe"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "PINWEI MALA 品味麻辣 (Aperia Mall)",
+   "unit": "#01-38",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-pinwei-mala"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Pohang Seafood & Butchery (Aperia Mall)",
+   "unit": "#02-10",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-pohang-seafood-butchery"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Saizeriya (Aperia Mall)",
+   "unit": "#02-14, 15",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-saizeriya"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Seoul Garden+ (Aperia Mall)",
+   "unit": "#01-55 to 56",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-seoul-garden"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Shihlin Taiwan Street Food (Aperia Mall)",
+   "unit": "#01-30A",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-shihlin-taiwan-street-food"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Starbucks (Aperia Mall)",
+   "unit": "#01-26",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-starbucks"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Steam By Local Coffee People (Aperia Mall)",
+   "unit": "#01-70",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-steam-by-local-coffee-people"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Subway (Aperia Mall)",
+   "unit": "#01-64",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-subway"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Supergreen (Aperia Mall)",
+   "unit": "#01-67",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-supergreen"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "TALAD THAI BANANA (Aperia Mall)",
+   "unit": "#01-09 to 15, 17 to 19",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-talad-thai-banana"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "The Pack Protein & Salad bar (Aperia Mall)",
+   "unit": "#01-30",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-the-pack-protein-salad-bar"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Tim Ho Wan (Aperia Mall)",
+   "unit": "#01-01/02/03",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-tim-ho-wan"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "TTEOK Sang (Aperia Mall)",
+   "unit": "#01-37",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-tteok-sang"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Wang Fu Dim Sum (Aperia Mall)",
+   "unit": "#01-43, 43A",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-wang-fu-dim-sum"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Wonder Juice (Aperia Mall)",
+   "unit": "#01-31",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-wonder-juice"
+  },
+  {
+   "cluster": "m-aperia-mall",
+   "name": "Ya Kun Kaya Toast (Aperia Mall)",
+   "unit": "#01-28B, 33",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "capitaland-aperia-m-aperia-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-aperia-mall-ya-kun-kaya-toast"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "A-One Signature (Kallang Wave Mall)",
+   "unit": "#01-33/34",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-a-one-signature"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Al Capone's (Kallang Wave Mall)",
+   "unit": "#01-15/K7",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-al-capone-s"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "ASTONS Specialities (Kallang Wave Mall)",
+   "unit": "#02-04",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-astons-specialities"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Ayam Penyet President (Kallang Wave Mall)",
+   "unit": "#01-23/K12",
+   "cuisine": "malay",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-ayam-penyet-president"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Blue Fern Grill & Sake (Kallang Wave Mall)",
+   "unit": "#01-20/K9",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-blue-fern-grill-sake"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Boost Juice Bars (Kallang Wave Mall)",
+   "unit": "#02-13",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-boost-juice-bars"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "CHICHA San Chen (Kallang Wave Mall)",
+   "unit": "#01-52",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-chicha-san-chen"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Chocolate Origin With CACAOCAT (Kallang Wave Mall)",
+   "unit": "#01-31",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-chocolate-origin-with-cacaocat"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Fun Toast (Kallang Wave Mall)",
+   "unit": "#01-39",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-fun-toast"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "MK Levure Naturelle (Kallang Wave Mall)",
+   "unit": "#01-30",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-mk-levure-naturelle"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Munchi Pancakes (Kallang Wave Mall)",
+   "unit": "#01-38",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-munchi-pancakes"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Old Street Bak Kut Teh. You Tiao. Soya Milk. (Kallang Wave Mall)",
+   "unit": "#01-22",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-old-street-bak-kut-teh-you-tiao-soya-mil"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "PastaMania (Kallang Wave Mall)",
+   "unit": "#01-21/K10",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-pastamania"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Popeyes Louisiana Kitchen (Kallang Wave Mall)",
+   "unit": "#02-02",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-popeyes-louisiana-kitchen"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Poulet (Kallang Wave Mall)",
+   "unit": "#01-17/K18",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-poulet"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Rocking Rickshaw (Kallang Wave Mall)",
+   "unit": "#01-12",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-rocking-rickshaw"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Sanook Kitchen (Kallang Wave Mall)",
+   "unit": "#01-16/K8",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-sanook-kitchen"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Starbucks (Kallang Wave Mall)",
+   "unit": "#01-56",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-starbucks"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Subway (Kallang Wave Mall)",
+   "unit": "#01-55",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-subway"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Supergreen (Kallang Wave Mall)",
+   "unit": "#01-37",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-supergreen"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Yew Kee Specialties (Kallang Wave Mall)",
+   "unit": "#02-12",
+   "cuisine": "braised",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-yew-kee-specialties"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "Yunomori Onsen Cafe (Kallang Wave Mall)",
+   "unit": "#02-17/18",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-yunomori-onsen-cafe"
+  },
+  {
+   "cluster": "m-kallang-wave-mall",
+   "name": "极鲜 Seafood & HK Dim Sum Express (Kallang Wave Mall)",
+   "unit": "#02-15/16A",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "thekallang-kallang-wave-m-kallang-wave-mall"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-kallang-wave-mall-seafood-hk-dim-sum-express"
   }
  ]
 }
