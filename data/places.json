@@ -1101,6 +1101,11 @@
    "name": "thekallang-kallang-wave – Kallang Wave Mall directory",
    "url": "https://www.thekallang.com.sg/en/mall-and-offers/directory.html",
    "date": "live directory (F&B picked by name; site has no category field)"
+  },
+  "frasers-m-waterway-point": {
+   "name": "frasers – Waterway Point directory",
+   "url": "https://www.tampines1.com.sg/stores",
+   "date": "live directory (Food & Restaurants)"
   }
  },
  "clusters": [
@@ -2710,6 +2715,26 @@
     "source": "thekallang-kallang-wave-m-kallang-wave-mall",
     "count": 23,
     "snapshot": "live directory (F&B picked by name; site has no category field)",
+    "fetched": "2026-11-20"
+   }
+  },
+  {
+   "id": "m-waterway-point",
+   "name": "Waterway Point",
+   "type": "mall",
+   "address": "83 Punggol Central, S828761",
+   "lat": 1.4067,
+   "lng": 103.9021,
+   "zone": "northeast",
+   "stalls_total": 92,
+   "notes": "Punggol. Frasers store feed (F&B with hours). (Map pin approximate; re-geocode with OneMap.)",
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "roster": {
+    "source": "frasers-m-waterway-point",
+    "count": 92,
+    "snapshot": "live directory (Food & Restaurants)",
     "fetched": "2026-11-20"
    }
   }
@@ -113637,6 +113662,2830 @@
    "verified": "unconfirmed",
    "confidence": "listed",
    "id": "p-m-kallang-wave-mall-seafood-hk-dim-sum-express"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "A&W (Waterway Point)",
+   "unit": "#B1-22",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-a-w"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Ajumma's (Waterway Point)",
+   "unit": "#02-26",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:15"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-ajumma-s"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "An Acai Affair (Waterway Point)",
+   "unit": "#02-36A",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "56",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-an-acai-affair"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Au Croissant (Waterway Point)",
+   "unit": "#01-K16",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-au-croissant"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Auntie Anne's (Waterway Point)",
+   "unit": "#B1-K13",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-auntie-anne-s"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Bee Cheng Hiang (Waterway Point)",
+   "unit": "#B2-K05/K06",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-bee-cheng-hiang"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Boost Juice Bars (Waterway Point)",
+   "unit": "#B1-K01",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-boost-juice-bars"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "BreadTalk/Toast Box (Waterway Point)",
+   "unit": "#B1-15",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-breadtalk-toast-box"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Buddy Hoagies Café & Grill (Waterway Point)",
+   "unit": "#02-22",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-buddy-hoagies-caf-grill"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Burger King (Waterway Point)",
+   "unit": "#01-26",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-02:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-burger-king"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Butter & Cream (Waterway Point)",
+   "unit": "#B2-K02",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-butter-cream"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Cakebar (Waterway Point)",
+   "unit": "#01-76",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-cakebar"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Cedele (Waterway Point)",
+   "unit": "#01-17",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-cedele"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Chagee (Waterway Point)",
+   "unit": "#B1-43/44",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "10:00-22:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "10:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-chagee"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Chateraise (Waterway Point)",
+   "unit": "#B1-01",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-chateraise"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "CHICHA San Chen (Waterway Point)",
+   "unit": "#01-42",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-chicha-san-chen"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Chicken Ka Kee (Waterway Point)",
+   "unit": "#01-29",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-chicken-ka-kee"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Chocolate Origin & Cacaocat (Waterway Point)",
+   "unit": "#01-K11",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-chocolate-origin-cacaocat"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "CocoCane (Waterway Point)",
+   "unit": "#B2-K07",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-cococane"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Cookhouse by Koufu (Waterway Point)",
+   "unit": "#02-20",
+   "cuisine": "rice",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-cookhouse-by-koufu"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Country Brot by Four Leaves (Waterway Point)",
+   "unit": "#B2-31",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-country-brot-by-four-leaves"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Crave (Waterway Point)",
+   "unit": "#B1-K07",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-crave"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Daily Chicken (Waterway Point)",
+   "unit": "#01-66",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-daily-chicken"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Délifrance (Waterway Point)",
+   "unit": "#01-17A",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "01234",
+     [
+      "08:00-21:00"
+     ]
+    ],
+    [
+     "56",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-d-lifrance"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Dian Xiao Er (Waterway Point)",
+   "unit": "#01-30",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "1234",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "056",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-dian-xiao-er"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Din Tai Fung (Waterway Point)",
+   "unit": "#01-22",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-din-tai-fung"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Dough Culture (Waterway Point)",
+   "unit": "#01-K05",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-dough-culture"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Dunkin' Donuts (Waterway Point)",
+   "unit": "#B1-K03",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-dunkin-donuts"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Encik Tan (Waterway Point)",
+   "unit": "#B2-03",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "00:00-24:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-encik-tan"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Famous Amos (Waterway Point)",
+   "unit": "#B2-K11",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-famous-amos"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Fish & Co. (Waterway Point)",
+   "unit": "#B1-18",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-fish-co"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Genki Sushi (Waterway Point)",
+   "unit": "#01-25",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-genki-sushi"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Gong Yuan Ma La Tang (Waterway Point)",
+   "unit": "#02-21",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-gong-yuan-ma-la-tang"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Guzman y Gomez (Waterway Point)",
+   "unit": "#B2-05",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-guzman-y-gomez"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Han's (Waterway Point)",
+   "unit": "#B2-01",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-han-s"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Henri Charpentier (Waterway Point)",
+   "unit": "#01-K13/K14",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-henri-charpentier"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "I Love Taimei (Waterway Point)",
+   "unit": "#B1-K05",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-i-love-taimei"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Ichiban Boshi (Waterway Point)",
+   "unit": "#B1-19",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:30-22:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-ichiban-boshi"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Jollibee (Waterway Point)",
+   "unit": "#B2-06",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-jollibee"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "KOI Thé Express (Waterway Point)",
+   "unit": "#B1-K02",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-koi-th-express"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Kuriya Japanese Market (Waterway Point)",
+   "unit": "#B1-20",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-kuriya-japanese-market"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "LiHO Tea (Waterway Point)",
+   "unit": "#B2-K10",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-liho-tea"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Luckin Coffee (Waterway Point)",
+   "unit": "#01-K12/K15",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-luckin-coffee"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Mamma Mia Trattoria E Caffè (Waterway Point)",
+   "unit": "#01-64",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-mamma-mia-trattoria-e-caff"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "McDonald's (Waterway Point)",
+   "unit": "#B2-07/K04",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "06:00-02:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-mcdonald-s"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Mister Donut (Waterway Point)",
+   "unit": "#B1-20",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-mister-donut"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Monster Curry (Waterway Point)",
+   "unit": "#02-25",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-monster-curry"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "MoreYogurt (Waterway Point)",
+   "unit": "#01-63",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-moreyogurt"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "MOS Burger (Waterway Point)",
+   "unit": "#B1-K09",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "09:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-mos-burger"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Mr Bean (Waterway Point)",
+   "unit": "#01-K01",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-mr-bean"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Mr. Coconut (Waterway Point)",
+   "unit": "#01-K07",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-mr-coconut"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Nam Kee Pau (Waterway Point)",
+   "unit": "#01-K03",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-21:40"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-nam-kee-pau"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Nine Fresh (Waterway Point)",
+   "unit": "#B1-K24",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-nine-fresh"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "O.BBa BBQ & Jjajang (Waterway Point)",
+   "unit": "#01-33",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-o-bba-bbq-jjajang"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Old Chang Kee (Waterway Point)",
+   "unit": "#01-K02",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "07:00-22:00"
+     ]
+    ],
+    [
+     "6",
+     [
+      "08:00-22:00"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-old-chang-kee"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Paik's Noodle (Waterway Point)",
+   "unit": "#02-21",
+   "cuisine": "korean",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-paik-s-noodle"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Pasta Play (Waterway Point)",
+   "unit": "#B1-K08",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-pasta-play"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Pezzo (Waterway Point)",
+   "unit": "#B2-K08",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-pezzo"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "PlayMade (Waterway Point)",
+   "unit": "#B1-K06",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-22:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-playmade"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Polar Puffs & Cakes (Waterway Point)",
+   "unit": "#01-K04",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-polar-puffs-cakes"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "PrimaDéli (Waterway Point)",
+   "unit": "#B1-K11",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-primad-li"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Putien (Waterway Point)",
+   "unit": "#B1-21",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-putien"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Red Ginger Coffeehouse (Waterway Point)",
+   "unit": "#B1-17",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-red-ginger-coffeehouse"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Sanook Kitchen (Waterway Point)",
+   "unit": "#B1-13",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-sanook-kitchen"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Shihlin Taiwan Street Food (Waterway Point)",
+   "unit": "#B2-K03",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-shihlin-taiwan-street-food"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "snacKING Retro Biscuits (Waterway Point)",
+   "unit": "#02-32",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-snacking-retro-biscuits"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "So Do Fun (Waterway Point)",
+   "unit": "#01-23",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-so-do-fun"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "So Pho (Waterway Point)",
+   "unit": "#01-28",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-so-pho"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Song Fa Bak Kut Teh (Waterway Point)",
+   "unit": "#01-24",
+   "cuisine": "soup",
+   "dishes": [],
+   "hours": [
+    [
+     "1234",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "5",
+     [
+      "11:00-21:30"
+     ]
+    ],
+    [
+     "6",
+     [
+      "10:30-21:30"
+     ]
+    ],
+    [
+     "0",
+     [
+      "10:30-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-song-fa-bak-kut-teh"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Starbucks (Waterway Point)",
+   "unit": "#01-67",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "1234",
+     [
+      "08:00-22:00"
+     ]
+    ],
+    [
+     "056",
+     [
+      "08:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-starbucks"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Steak 99 (Waterway Point)",
+   "unit": "#01-65",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-steak-99"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Stuff'd (Waterway Point)",
+   "unit": "#B2-K01",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-stuff-d"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Subway (Waterway Point)",
+   "unit": "#B1-16",
+   "cuisine": "western",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "08:30-22:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "08:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-subway"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Sukiya (Waterway Point)",
+   "unit": "#B1-23",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-sukiya"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Sushiro (Waterway Point)",
+   "unit": "#01-31/32",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-sushiro"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Swensen's (Waterway Point)",
+   "unit": "#02-35",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-swensen-s"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Tai Chong Kok (Waterway Point)",
+   "unit": "#B2-24",
+   "cuisine": "snacks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-tai-chong-kok"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Talad Thai Banana (Waterway Point)",
+   "unit": "#B1-K04",
+   "cuisine": "thai",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-talad-thai-banana"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "The Coffee Bean & Tea Leaf (Waterway Point)",
+   "unit": "#01-27",
+   "cuisine": "cafe",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "00:00-24:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-the-coffee-bean-tea-leaf"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "The SGFR Store (Waterway Point)",
+   "unit": "#B1-36",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-the-sgfr-store"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Tim Ho Wan (Waterway Point)",
+   "unit": "#01-62",
+   "cuisine": "dumplings",
+   "dishes": [],
+   "hours": [
+    [
+     "12345",
+     [
+      "11:00-21:00"
+     ]
+    ],
+    [
+     "06",
+     [
+      "10:00-21:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-tim-ho-wan"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Tofu G (Waterway Point)",
+   "unit": "#01-53",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-tofu-g"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Tori-Q (Waterway Point)",
+   "unit": "#B1-K12",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-tori-q"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Torikizoku (Waterway Point)",
+   "unit": "#B1-14",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [
+    "new"
+   ],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-torikizoku"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Towkay Kia (Waterway Point)",
+   "unit": "#02-36",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-towkay-kia"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "umisushi (Waterway Point)",
+   "unit": "#B2-02",
+   "cuisine": "japanese",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-umisushi"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Wanglu Hot Pot (Waterway Point)",
+   "unit": "#B2-K08",
+   "cuisine": "other",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-wanglu-hot-pot"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Warabimochi Kamakura (Waterway Point)",
+   "unit": "#01-72/73",
+   "cuisine": "dessert",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:30-21:30"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-warabimochi-kamakura"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Wen Zhang Lao Mian (Waterway Point)",
+   "unit": "#B2-04",
+   "cuisine": "noodles",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "11:00-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-wen-zhang-lao-mian"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Wok Hey (Waterway Point)",
+   "unit": "#01-K06",
+   "cuisine": "zi-char",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "10:30-22:00"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-wok-hey"
+  },
+  {
+   "cluster": "m-waterway-point",
+   "name": "Ya Kun Kaya Toast (Waterway Point)",
+   "unit": "#B2-K12",
+   "cuisine": "drinks",
+   "dishes": [],
+   "hours": [
+    [
+     "0123456",
+     [
+      "07:30-21:45"
+     ]
+    ]
+   ],
+   "modes": [
+    "dine",
+    "takeaway"
+   ],
+   "diet": [],
+   "tags": [],
+   "must_try": false,
+   "status": "open",
+   "price_band": 1,
+   "sources": [
+    "frasers-m-waterway-point"
+   ],
+   "verified": "unconfirmed",
+   "confidence": "listed",
+   "id": "p-m-waterway-point-ya-kun-kaya-toast"
   }
  ]
 }
